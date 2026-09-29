@@ -1,0 +1,14 @@
+{
+  "name": "quiz-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Quiz platform with server-side answer checking",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

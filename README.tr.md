@@ -2,32 +2,49 @@
 
 [English](README.md) | **Türkçe**
 
-Sade HTML, CSS ve JavaScript ile yazılmış, soruları Türkçe ve İngilizce JSON dosyalarından okuyan, süreli bir bilgi yarışması.
+Bilgini arada bir test edebileceğin bir yarışma platformu:
+- Eğitim seviyesine göre zorluk
+- Yazılım konuları
+- Herkese aynı gelen günün sorusu
+- Gerçek veriden anlık üretilen sorular
+
+Cevaplar sunucuda kalır, bu yüzden tarayıcıdan bakılarak hile yapılamaz.
 
 > Geliştirme sürüyor. Aşağıdaki plan, proje v1.0'a ulaştığında tam README'ye dönüşecek.
 
 ## Özellikler (plan)
 
-**MVP**
-- [ ] Her birinde 25 soru olan 8 kategori (genel kültür, bilim, tarih, coğrafya, teknoloji, spor, sanat ve edebiyat, sinema ve müzik); Türkçe ve İngilizce için ayrı dosyalar, toplam 400 soru
-- [ ] Bir kategoriden ya da bütün kategorilerden karışık 10 rastgele soruluk tur; şıkların sırası karıştırılır
-- [ ] Her soru için 20 saniyelik süre; süre biterse cevap yanlış sayılır
-- [ ] Puanlama: doğru cevaba 10 puan ve hız bonusu
-- [ ] Her cevaptan sonra doğru şık gösterilir
-- [ ] Sonuç ekranı: puan, doğru sayısı, süre ve her sorunun gözden geçirilmesi
-- [ ] Her kategori için en yüksek puan; sayfa yenilense de korunur
-- [ ] Klavyeyle oynama (cevap için 1-4, sonraki soru için Enter) ve ekran okuyucu duyuruları
-- [ ] Türkçe ve İngilizce arayüz, portfolyo sitemle uyumlu koyu ve açık tema
-- [ ] Yarışma mantığı ayrı modüllerde, Node'un yerleşik test aracıyla test edilir
-- [ ] Vercel'de yayında
+**Sorular**
+- [ ] Genel konular (Matematik, Fen, Tarih, Coğrafya, Edebiyat ve Sanat, Genel Kültür), 5 seviyede: İlkokul, Ortaokul, Lise, Üniversite, Yüksek Lisans
+- [ ] Uzmanlık dalları: Yazılım → JavaScript, Python, SQL, Git, HTML ve CSS, Web Güvenliği, Algoritmalar, C# (Başlangıç / Orta / İleri)
+- [ ] Wikidata'dan alınan gerçek verilerle (kişiler, ülkeler, kitaplar ve filmler, elementler) şablonlardan anlık üretilen sorular; matematik soruları da üreteçle hazırlanır
+- [ ] Soru tipleri:
+  - Çoktan seçmeli
+  - Bayrak sorusu
+  - Kronolojik sıralama (sürükle-bırak ya da klavye)
+  - "Bu kod ne yazdırır?"
+- [ ] Her cevaptan sonra doğru cevap ve kısa bir açıklama gösterilir
+
+**Oyun**
+- [ ] 10 soruluk turlar, süre ve hız bonusu; jokerler (50:50, +10 sn)
+- [ ] Günün sorusu: herkese aynı soru, sonucu emoji ile paylaşma
+- [ ] Günlük seri, konu ve seviye başına istatistik, başarım rozetleri
+- [ ] "Hatalarım" modu: yanlış cevaplanan sorular doğru cevaplanana kadar tekrar gelir
+
+**Güvenlik ve altyapı**
+- [ ] Soru üretimi, cevap kontrolü ve puanlama Vercel sunucu fonksiyonlarında yapılır; tarayıcı cevabı önceden göremez
+- [ ] Tur durumu şifreli (AES-256-GCM) ve tek kullanımlık bir jetonda tutulur; rate limit ve sunucu tarafı doğrulama
+- [ ] Türkçe ve İngilizce arayüz, portfolyo sitemle uyumlu koyu ve açık tema, klavye ve ekran okuyucu desteği
+- [ ] Mantık ayrı modüllerde, Node'un yerleşik test aracıyla test edilir
 
 **Sonra eklenecekler**
-- %50 joker hakkı
-- Zorluk seviyeleri
-- Sonucu paylaşma
+- Yapay zekâ ile "kendi konunu yaz" turu
+- Hesap sistemiyle cihazlar arası seri
+- Yeni uzmanlık dalları
+- Doğrulanabilir sonuç paylaşma linki
 
 ## Kullanılan Teknolojiler
 
 - HTML, CSS, JavaScript (ES modülleri, framework yok, derleme adımı yok)
+- Vercel sunucu fonksiyonları (Node.js), Upstash Redis
 - Birim testleri için `node --test`
-- Yayın için Vercel
