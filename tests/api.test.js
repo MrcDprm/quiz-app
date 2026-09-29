@@ -167,3 +167,20 @@ test('the daily question has no jokers', async () => {
   assert.equal((await call(api.joker, { token: daily.body.token, kind: 'fifty' })).status, 400);
   assert.equal((await call(api.daily, { lang: 'de' })).status, 400);
 });
+
+test('a review round asks the saved questions again', async () => {
+  const { api } = setup();
+  const { status, body } = await call(api.review, { ids: ['science:high:001', 'science:high:999', 'gen:who:high:Q1'], lang: 'en' });
+  assert.equal(status, 200);
+  assert.equal(body.question.total, 1);
+  const answered = await call(api.answer, { token: body.token, choice: answerOf(body.token) });
+  assert.equal(answered.body.result.id, 'science:high:001');
+});
+
+test('review requests are validated', async () => {
+  const { api } = setup();
+  assert.equal((await call(api.review, { ids: [], lang: 'en' })).status, 400);
+  assert.equal((await call(api.review, { ids: Array(11).fill('science:high:001'), lang: 'en' })).status, 400);
+  assert.equal((await call(api.review, { ids: ['science:high:001~5'], lang: 'en' })).status, 400);
+  assert.equal((await call(api.review, { ids: ['nope:high:001'], lang: 'en' })).status, 404);
+});

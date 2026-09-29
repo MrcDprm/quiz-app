@@ -8,7 +8,7 @@ import { extname, join, resolve, sep } from 'node:path';
 const PORT = Number(process.env.PORT) || 5173;
 const ROOT = resolve(import.meta.dirname, '..');
 const PUBLIC_DIR = join(ROOT, 'public');
-const API_NAMES = ['round', 'daily', 'answer', 'joker'];
+const API_NAMES = ['round', 'daily', 'review', 'answer', 'joker'];
 const TYPES = {
   '.html': 'text/html; charset=utf-8',
   '.css': 'text/css; charset=utf-8',
