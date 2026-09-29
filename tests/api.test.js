@@ -32,7 +32,7 @@ function setup() {
   clock.advance = (ms) => { now += ms; };
   const store = createMemoryStore(clock);
   const api = createApi({
-    catalog: createCatalog(async (topic) => FILES[topic] ?? { questions: [] }),
+    catalog: createCatalog(async (topic) => FILES[topic] ?? { questions: [] }, async () => ({ people: [] })),
     getStore: () => store,
     getKey: () => KEY,
     now: clock,

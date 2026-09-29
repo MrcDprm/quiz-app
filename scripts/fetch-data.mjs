@@ -86,6 +86,7 @@ const PEOPLE_GROUPS = {
   politician: ['Q82955'],
   explorer: ['Q11900058'],
   astronaut: ['Q11631'],
+  royalty: ['Q116', 'Q12097', 'Q39018'],
 };
 const PEOPLE_PER_GROUP = 70;
 const MIN_SITELINKS = 60;
