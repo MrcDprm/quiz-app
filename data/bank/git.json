@@ -1,0 +1,653 @@
+{
+  "topic": "git",
+  "questions": [
+    {
+      "id": "git:high:001",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir klasörü Git deposuna çeviren komut hangisidir?",
+        "en": "Which command turns a folder into a Git repository?"
+      },
+      "options": {
+        "tr": [
+          "git init",
+          "git start",
+          "git new",
+          "git create"
+        ],
+        "en": [
+          "git init",
+          "git start",
+          "git new",
+          "git create"
+        ]
+      },
+      "explain": {
+        "tr": "git init klasörde gizli bir .git dizini oluşturur.",
+        "en": "git init creates a hidden .git directory."
+      }
+    },
+    {
+      "id": "git:high:002",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Değişiklikleri bir sonraki commit’e eklemek (hazırlamak) için hangi komut kullanılır?",
+        "en": "Which command stages changes for the next commit?"
+      },
+      "options": {
+        "tr": [
+          "git add",
+          "git push",
+          "git save",
+          "git stage-all"
+        ],
+        "en": [
+          "git add",
+          "git push",
+          "git save",
+          "git stage-all"
+        ]
+      },
+      "explain": {
+        "tr": "git add değişiklikleri hazırlık alanına (staging area) alır.",
+        "en": "git add moves changes into the staging area."
+      }
+    },
+    {
+      "id": "git:high:003",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Hazırlanan değişiklikleri bir mesajla kaydeden komut hangisidir?",
+        "en": "Which command records the staged changes with a message?"
+      },
+      "options": {
+        "tr": [
+          "git commit -m \"mesaj\"",
+          "git push -m \"mesaj\"",
+          "git log -m \"mesaj\"",
+          "git add -m \"mesaj\""
+        ],
+        "en": [
+          "git commit -m \"message\"",
+          "git push -m \"message\"",
+          "git log -m \"message\"",
+          "git add -m \"message\""
+        ]
+      },
+      "explain": {
+        "tr": "Commit, projenin o anki hâlinin bir anlık görüntüsüdür.",
+        "en": "A commit is a snapshot of the project at that moment."
+      }
+    },
+    {
+      "id": "git:high:004",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Yerel commit’leri GitHub gibi uzak depoya gönderen komut hangisidir?",
+        "en": "Which command sends local commits to a remote such as GitHub?"
+      },
+      "options": {
+        "tr": [
+          "git push",
+          "git pull",
+          "git fetch",
+          "git clone"
+        ],
+        "en": [
+          "git push",
+          "git pull",
+          "git fetch",
+          "git clone"
+        ]
+      },
+      "explain": {
+        "tr": "push gönderir, pull ise uzaktaki değişiklikleri alıp birleştirir.",
+        "en": "push uploads; pull downloads and merges remote changes."
+      }
+    },
+    {
+      "id": "git:high:005",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Hangi dosyaların değiştiğini ve hazırlandığını gösteren komut hangisidir?",
+        "en": "Which command shows changed and staged files?"
+      },
+      "options": {
+        "tr": [
+          "git status",
+          "git show",
+          "git diff --all",
+          "git info"
+        ],
+        "en": [
+          "git status",
+          "git show",
+          "git diff --all",
+          "git info"
+        ]
+      },
+      "explain": {
+        "tr": "git status çalışma alanının özetini verir.",
+        "en": "git status summarises the working tree."
+      }
+    },
+    {
+      "id": "git:high:006",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Git’in izlemesini istemediğiniz dosyalar hangi dosyaya yazılır?",
+        "en": "Which file lists the files Git should ignore?"
+      },
+      "options": {
+        "tr": [
+          ".gitignore",
+          ".gitconfig",
+          ".gitkeep",
+          "README.md"
+        ],
+        "en": [
+          ".gitignore",
+          ".gitconfig",
+          ".gitkeep",
+          "README.md"
+        ]
+      },
+      "explain": {
+        "tr": ".env, node_modules gibi dosyalar .gitignore’a yazılır.",
+        "en": "Files like .env and node_modules go into .gitignore."
+      }
+    },
+    {
+      "id": "git:high:007",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Uzak bir depoyu bilgisayara ilk kez indiren komut hangisidir?",
+        "en": "Which command downloads a remote repository for the first time?"
+      },
+      "options": {
+        "tr": [
+          "git clone",
+          "git init",
+          "git pull",
+          "git copy"
+        ],
+        "en": [
+          "git clone",
+          "git init",
+          "git pull",
+          "git copy"
+        ]
+      },
+      "explain": {
+        "tr": "git clone URL deponun tüm geçmişiyle bir kopyasını oluşturur.",
+        "en": "git clone URL makes a full copy with its history."
+      }
+    },
+    {
+      "id": "git:high:008",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Commit geçmişini listeleyen komut hangisidir?",
+        "en": "Which command lists the commit history?"
+      },
+      "options": {
+        "tr": [
+          "git log",
+          "git history",
+          "git list",
+          "git past"
+        ],
+        "en": [
+          "git log",
+          "git history",
+          "git list",
+          "git past"
+        ]
+      },
+      "explain": {
+        "tr": "git log --oneline geçmişi kısa biçimde gösterir.",
+        "en": "git log --oneline shows a compact history."
+      }
+    },
+    {
+      "id": "git:university:001",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Ana koddan bağımsız çalışmak için ayrı bir geliştirme hattı açmaya ne denir?",
+        "en": "What is opening a separate line of development called?"
+      },
+      "options": {
+        "tr": [
+          "Dal (branch) oluşturmak",
+          "Etiketlemek",
+          "Stash’lemek",
+          "Klonlamak"
+        ],
+        "en": [
+          "Creating a branch",
+          "Tagging",
+          "Stashing",
+          "Cloning"
+        ]
+      },
+      "explain": {
+        "tr": "git switch -c yeni-ozellik yeni bir dal açar ve ona geçer.",
+        "en": "git switch -c new-feature creates a branch and switches to it."
+      }
+    },
+    {
+      "id": "git:university:002",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Aynı satır iki dalda farklı değiştirilip birleştirilmeye çalışılırsa ne olur?",
+        "en": "What happens when two branches change the same line and you merge them?"
+      },
+      "options": {
+        "tr": [
+          "Birleştirme çakışması (merge conflict)",
+          "Git değişikliklerden birini sessizce siler",
+          "Depo bozulur",
+          "İki satır da otomatik kalır"
+        ],
+        "en": [
+          "A merge conflict",
+          "Git silently drops one change",
+          "The repository breaks",
+          "Both lines are kept automatically"
+        ]
+      },
+      "explain": {
+        "tr": "Çakışmayı geliştirici elle çözer, sonra dosyayı ekleyip commit’ler.",
+        "en": "The developer resolves it by hand, then adds and commits the file."
+      }
+    },
+    {
+      "id": "git:university:003",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Yarım kalan değişiklikleri commit’lemeden geçici olarak saklayan komut hangisidir?",
+        "en": "Which command temporarily shelves unfinished changes without committing?"
+      },
+      "options": {
+        "tr": [
+          "git stash",
+          "git reset",
+          "git revert",
+          "git tag"
+        ],
+        "en": [
+          "git stash",
+          "git reset",
+          "git revert",
+          "git tag"
+        ]
+      },
+      "explain": {
+        "tr": "git stash pop ile saklanan değişiklikler geri getirilir.",
+        "en": "git stash pop brings the shelved changes back."
+      }
+    },
+    {
+      "id": "git:university:004",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Yayınlanmış bir commit’i geçmişi silmeden geri almak için hangisi kullanılır?",
+        "en": "Which undoes a published commit without rewriting history?"
+      },
+      "options": {
+        "tr": [
+          "git revert",
+          "git reset --hard",
+          "git commit --amend",
+          "git rebase -i"
+        ],
+        "en": [
+          "git revert",
+          "git reset --hard",
+          "git commit --amend",
+          "git rebase -i"
+        ]
+      },
+      "explain": {
+        "tr": "revert, eski commit’in tersini yapan yeni bir commit oluşturur; paylaşılan dallar için güvenlidir.",
+        "en": "revert adds a new commit that undoes the old one; it is safe on shared branches."
+      }
+    },
+    {
+      "id": "git:university:005",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "GitHub’da bir dalın ana dala birleştirilmesi için açılan istek hangisidir?",
+        "en": "On GitHub, what do you open to ask for a branch to be merged into main?"
+      },
+      "options": {
+        "tr": [
+          "Pull request",
+          "Issue",
+          "Fork",
+          "Release"
+        ],
+        "en": [
+          "Pull request",
+          "Issue",
+          "Fork",
+          "Release"
+        ]
+      },
+      "explain": {
+        "tr": "Pull request’te kod incelenir, tartışılır ve testler çalışır.",
+        "en": "In a pull request the code is reviewed, discussed and tested."
+      }
+    },
+    {
+      "id": "git:university:006",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Belirli bir sürümü (ör. v1.0.0) işaretlemek için ne kullanılır?",
+        "en": "What marks a specific version such as v1.0.0?"
+      },
+      "options": {
+        "tr": [
+          "Etiket (tag)",
+          "Dal",
+          "Stash",
+          "Remote"
+        ],
+        "en": [
+          "Tag",
+          "Branch",
+          "Stash",
+          "Remote"
+        ]
+      },
+      "explain": {
+        "tr": "git tag v1.0.0 ve git push --tags ile sürümler işaretlenir.",
+        "en": "git tag v1.0.0 and git push --tags mark releases."
+      }
+    },
+    {
+      "id": "git:university:007",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Uzak depodaki değişiklikleri birleştirmeden sadece indiren komut hangisidir?",
+        "en": "Which command downloads remote changes without merging them?"
+      },
+      "options": {
+        "tr": [
+          "git fetch",
+          "git pull",
+          "git push",
+          "git merge"
+        ],
+        "en": [
+          "git fetch",
+          "git pull",
+          "git push",
+          "git merge"
+        ]
+      },
+      "explain": {
+        "tr": "pull = fetch + merge. fetch yalnızca indirir.",
+        "en": "pull = fetch + merge; fetch only downloads."
+      }
+    },
+    {
+      "id": "git:university:008",
+      "level": "university",
+      "type": "order",
+      "q": {
+        "tr": "Tipik bir Git iş akışını sırala.",
+        "en": "Order a typical Git workflow."
+      },
+      "items": {
+        "tr": [
+          "Dosyayı düzenle",
+          "git add",
+          "git commit",
+          "git push"
+        ],
+        "en": [
+          "Edit the file",
+          "git add",
+          "git commit",
+          "git push"
+        ]
+      },
+      "explain": {
+        "tr": "Değişiklik yapılır, hazırlanır, kaydedilir ve uzak depoya gönderilir.",
+        "en": "You change, stage, commit and then push."
+      }
+    },
+    {
+      "id": "git:masters:001",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "rebase ile merge arasındaki temel fark nedir?",
+        "en": "What is the key difference between rebase and merge?"
+      },
+      "options": {
+        "tr": [
+          "rebase commit’leri yeni tabanın üzerine yeniden yazar, merge birleştirme commit’i oluşturur",
+          "rebase dalları siler",
+          "merge geçmişi yeniden yazar",
+          "İkisi aynıdır"
+        ],
+        "en": [
+          "rebase rewrites commits onto a new base; merge creates a merge commit",
+          "rebase deletes branches",
+          "merge rewrites history",
+          "They are the same"
+        ]
+      },
+      "explain": {
+        "tr": "Paylaşılmış commit’leri rebase etmek başkalarının geçmişini bozabilir.",
+        "en": "Rebasing shared commits can break other people’s history."
+      }
+    },
+    {
+      "id": "git:masters:002",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Hatayı ilk getiren commit’i ikili aramayla bulan Git komutu hangisidir?",
+        "en": "Which Git command finds the commit that introduced a bug using binary search?"
+      },
+      "options": {
+        "tr": [
+          "git bisect",
+          "git blame",
+          "git grep",
+          "git reflog"
+        ],
+        "en": [
+          "git bisect",
+          "git blame",
+          "git grep",
+          "git reflog"
+        ]
+      },
+      "explain": {
+        "tr": "bisect iyi ve kötü commit arasında her adımda aralığı yarıya indirir.",
+        "en": "bisect halves the range between a good and a bad commit at each step."
+      }
+    },
+    {
+      "id": "git:masters:003",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "reset --hard ile kaybolmuş gibi görünen commit’leri bulmaya yarayan kayıt hangisidir?",
+        "en": "Which log helps recover commits that seem lost after reset --hard?"
+      },
+      "options": {
+        "tr": [
+          "git reflog",
+          "git log --all",
+          "git fsck --lost",
+          "git stash list"
+        ],
+        "en": [
+          "git reflog",
+          "git log --all",
+          "git fsck --lost",
+          "git stash list"
+        ]
+      },
+      "explain": {
+        "tr": "reflog, HEAD’in yakın zamanda gösterdiği her konumu tutar.",
+        "en": "reflog records every place HEAD recently pointed to."
+      }
+    },
+    {
+      "id": "git:masters:004",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Git bir dosyanın içeriğini hangi nesne türüyle saklar?",
+        "en": "Which object type does Git use to store file contents?"
+      },
+      "options": {
+        "tr": [
+          "Blob",
+          "Tree",
+          "Commit",
+          "Tag"
+        ],
+        "en": [
+          "Blob",
+          "Tree",
+          "Commit",
+          "Tag"
+        ]
+      },
+      "explain": {
+        "tr": "Blob içerik, tree klasör yapısı, commit ise bir tree’ye işaret eden anlık görüntüdür.",
+        "en": "A blob is content, a tree is a folder, a commit points to a tree."
+      }
+    },
+    {
+      "id": "git:masters:005",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Commit’lerin gerçekten kimden geldiğini doğrulamak için ne kullanılır?",
+        "en": "What verifies who really made a commit?"
+      },
+      "options": {
+        "tr": [
+          "GPG ya da SSH ile imzalı commit",
+          "Uzun commit mesajı",
+          "git config user.name",
+          "Pull request başlığı"
+        ],
+        "en": [
+          "GPG or SSH signed commits",
+          "A long commit message",
+          "git config user.name",
+          "The pull request title"
+        ]
+      },
+      "explain": {
+        "tr": "user.name herkes tarafından yazılabilir; imza ise anahtarla doğrulanır.",
+        "en": "Anyone can set user.name; a signature is checked against a key."
+      }
+    },
+    {
+      "id": "git:masters:006",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Yanlışlıkla commit’lenmiş bir API anahtarı için doğru ilk adım nedir?",
+        "en": "What is the right first step after committing an API key by mistake?"
+      },
+      "options": {
+        "tr": [
+          "Anahtarı hemen iptal edip yenisini üretmek",
+          "Sadece dosyayı silip yeni commit atmak",
+          "Depoyu gizli yapmak",
+          "Commit mesajını değiştirmek"
+        ],
+        "en": [
+          "Revoke and rotate the key immediately",
+          "Just delete the file in a new commit",
+          "Make the repository private",
+          "Edit the commit message"
+        ]
+      },
+      "explain": {
+        "tr": "Anahtar geçmişte kalır ve kopyalanmış olabilir; önce iptal edilir, sonra geçmiş temizlenir.",
+        "en": "The key stays in history and may already be copied, so revoke it first, then clean history."
+      }
+    },
+    {
+      "id": "git:masters:007",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Büyük ikili dosyaları (video, model) Git’te verimli saklamak için ne kullanılır?",
+        "en": "What stores large binary files (video, models) efficiently with Git?"
+      },
+      "options": {
+        "tr": [
+          "Git LFS",
+          "git gc",
+          "git archive",
+          "Submodule"
+        ],
+        "en": [
+          "Git LFS",
+          "git gc",
+          "git archive",
+          "Submodule"
+        ]
+      },
+      "explain": {
+        "tr": "Git LFS büyük dosyaların yerine küçük işaretçiler saklar.",
+        "en": "Git LFS stores small pointers in place of large files."
+      }
+    },
+    {
+      "id": "git:masters:008",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Bir depoyu başka bir deponun içine bağımlı olarak eklemenin yolu hangisidir?",
+        "en": "How do you embed one repository inside another as a dependency?"
+      },
+      "options": {
+        "tr": [
+          "git submodule",
+          "git branch",
+          "git stash",
+          "git worktree"
+        ],
+        "en": [
+          "git submodule",
+          "git branch",
+          "git stash",
+          "git worktree"
+        ]
+      },
+      "explain": {
+        "tr": "Submodule, dış deponun belirli bir commit’ine işaret eder.",
+        "en": "A submodule points to a specific commit of the other repository."
+      }
+    }
+  ]
+}

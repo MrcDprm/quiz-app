@@ -1,0 +1,653 @@
+{
+  "topic": "sql",
+  "questions": [
+    {
+      "id": "sql:high:001",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir tablodan veri okumak için hangi SQL komutu kullanılır?",
+        "en": "Which SQL command reads data from a table?"
+      },
+      "options": {
+        "tr": [
+          "SELECT",
+          "INSERT",
+          "UPDATE",
+          "DELETE"
+        ],
+        "en": [
+          "SELECT",
+          "INSERT",
+          "UPDATE",
+          "DELETE"
+        ]
+      },
+      "explain": {
+        "tr": "SELECT ad FROM ogrenciler; tablodaki adları getirir.",
+        "en": "SELECT name FROM students; returns the names in the table."
+      }
+    },
+    {
+      "id": "sql:high:002",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Tabloya yeni bir satır eklemek için hangi komut kullanılır?",
+        "en": "Which command adds a new row to a table?"
+      },
+      "options": {
+        "tr": [
+          "INSERT INTO",
+          "ADD ROW",
+          "UPDATE",
+          "CREATE"
+        ],
+        "en": [
+          "INSERT INTO",
+          "ADD ROW",
+          "UPDATE",
+          "CREATE"
+        ]
+      },
+      "explain": {
+        "tr": "INSERT INTO ogrenciler (ad) VALUES ('Ayşe'); yeni satır ekler.",
+        "en": "INSERT INTO students (name) VALUES ('Ayşe'); adds a new row."
+      }
+    },
+    {
+      "id": "sql:high:003",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Sonuçları belirli bir koşula göre süzmek için hangi ifade kullanılır?",
+        "en": "Which clause filters rows by a condition?"
+      },
+      "options": {
+        "tr": [
+          "WHERE",
+          "ORDER BY",
+          "GROUP BY",
+          "FROM"
+        ],
+        "en": [
+          "WHERE",
+          "ORDER BY",
+          "GROUP BY",
+          "FROM"
+        ]
+      },
+      "explain": {
+        "tr": "SELECT * FROM urunler WHERE fiyat > 100; pahalı ürünleri getirir.",
+        "en": "SELECT * FROM products WHERE price > 100; returns the expensive products."
+      }
+    },
+    {
+      "id": "sql:high:004",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Sonuçları sıralamak için hangi ifade kullanılır?",
+        "en": "Which clause sorts the results?"
+      },
+      "options": {
+        "tr": [
+          "ORDER BY",
+          "SORT",
+          "GROUP BY",
+          "ARRANGE"
+        ],
+        "en": [
+          "ORDER BY",
+          "SORT",
+          "GROUP BY",
+          "ARRANGE"
+        ]
+      },
+      "explain": {
+        "tr": "ORDER BY fiyat DESC büyükten küçüğe sıralar.",
+        "en": "ORDER BY price DESC sorts from highest to lowest."
+      }
+    },
+    {
+      "id": "sql:high:005",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir tablodaki her satırı benzersiz biçimde tanımlayan sütuna ne denir?",
+        "en": "What is the column that uniquely identifies each row?"
+      },
+      "options": {
+        "tr": [
+          "Birincil anahtar (primary key)",
+          "Yabancı anahtar",
+          "İndeks adı",
+          "Görünüm"
+        ],
+        "en": [
+          "Primary key",
+          "Foreign key",
+          "Index name",
+          "View"
+        ]
+      },
+      "explain": {
+        "tr": "Birincil anahtar boş ve tekrarlı olamaz.",
+        "en": "A primary key cannot be empty or repeated."
+      }
+    },
+    {
+      "id": "sql:high:006",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir tablodaki satır sayısını veren fonksiyon hangisidir?",
+        "en": "Which function returns the number of rows?"
+      },
+      "options": {
+        "tr": [
+          "COUNT(*)",
+          "SUM(*)",
+          "LEN(*)",
+          "SIZE(*)"
+        ],
+        "en": [
+          "COUNT(*)",
+          "SUM(*)",
+          "LEN(*)",
+          "SIZE(*)"
+        ]
+      },
+      "explain": {
+        "tr": "SELECT COUNT(*) FROM ogrenciler; öğrenci sayısını verir.",
+        "en": "SELECT COUNT(*) FROM students; returns the number of students."
+      }
+    },
+    {
+      "id": "sql:high:007",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Var olan satırları değiştirmek için hangi komut kullanılır?",
+        "en": "Which command changes existing rows?"
+      },
+      "options": {
+        "tr": [
+          "UPDATE",
+          "ALTER",
+          "CHANGE",
+          "INSERT"
+        ],
+        "en": [
+          "UPDATE",
+          "ALTER",
+          "CHANGE",
+          "INSERT"
+        ]
+      },
+      "explain": {
+        "tr": "UPDATE ... SET ... WHERE ...; WHERE unutulursa bütün satırlar değişir!",
+        "en": "UPDATE ... SET ... WHERE ...; without WHERE every row changes!"
+      }
+    },
+    {
+      "id": "sql:high:008",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Metinde \"A ile başlayanlar\" gibi desen aramak için hangi işleç kullanılır?",
+        "en": "Which operator searches for a pattern such as “starts with A”?"
+      },
+      "options": {
+        "tr": [
+          "LIKE 'A%'",
+          "= 'A*'",
+          "IN ('A')",
+          "BETWEEN 'A'"
+        ],
+        "en": [
+          "LIKE 'A%'",
+          "= 'A*'",
+          "IN ('A')",
+          "BETWEEN 'A'"
+        ]
+      },
+      "explain": {
+        "tr": "% sıfır ya da daha fazla karakter, _ tek karakter demektir.",
+        "en": "% means any number of characters and _ means exactly one."
+      }
+    },
+    {
+      "id": "sql:university:001",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "İki tabloda eşleşen satırları birleştiren JOIN türü hangisidir?",
+        "en": "Which JOIN returns only rows that match in both tables?"
+      },
+      "options": {
+        "tr": [
+          "INNER JOIN",
+          "LEFT JOIN",
+          "FULL OUTER JOIN",
+          "CROSS JOIN"
+        ],
+        "en": [
+          "INNER JOIN",
+          "LEFT JOIN",
+          "FULL OUTER JOIN",
+          "CROSS JOIN"
+        ]
+      },
+      "explain": {
+        "tr": "INNER JOIN yalnızca iki tarafta da karşılığı olan satırları döndürür.",
+        "en": "INNER JOIN returns only rows that have a match on both sides."
+      }
+    },
+    {
+      "id": "sql:university:002",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Sol tablonun tüm satırlarını, eşleşme yoksa NULL ile getiren JOIN hangisidir?",
+        "en": "Which JOIN keeps every row of the left table, filling NULL when there is no match?"
+      },
+      "options": {
+        "tr": [
+          "LEFT JOIN",
+          "INNER JOIN",
+          "RIGHT JOIN",
+          "SELF JOIN"
+        ],
+        "en": [
+          "LEFT JOIN",
+          "INNER JOIN",
+          "RIGHT JOIN",
+          "SELF JOIN"
+        ]
+      },
+      "explain": {
+        "tr": "LEFT JOIN, örneğin siparişi olmayan müşterileri de listeler.",
+        "en": "LEFT JOIN also lists, for example, customers with no orders."
+      }
+    },
+    {
+      "id": "sql:university:003",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "GROUP BY ile oluşturulan gruplara koşul koymak için hangisi kullanılır?",
+        "en": "Which clause filters groups made with GROUP BY?"
+      },
+      "options": {
+        "tr": [
+          "HAVING",
+          "WHERE",
+          "FILTER",
+          "LIMIT"
+        ],
+        "en": [
+          "HAVING",
+          "WHERE",
+          "FILTER",
+          "LIMIT"
+        ]
+      },
+      "explain": {
+        "tr": "WHERE satırları gruplamadan önce, HAVING grupları gruplamadan sonra süzer.",
+        "en": "WHERE filters rows before grouping; HAVING filters groups after it."
+      }
+    },
+    {
+      "id": "sql:university:004",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "SQL enjeksiyonunu önlemenin doğru yolu hangisidir?",
+        "en": "What is the right way to prevent SQL injection?"
+      },
+      "options": {
+        "tr": [
+          "Parametreli sorgular (prepared statements)",
+          "Kullanıcı girdisini sorguya birleştirmek",
+          "Sorguyu büyük harfle yazmak",
+          "Tablo adlarını gizlemek"
+        ],
+        "en": [
+          "Parameterised queries (prepared statements)",
+          "Concatenating user input into the query",
+          "Writing SQL in capitals",
+          "Hiding table names"
+        ]
+      },
+      "explain": {
+        "tr": "Parametreler veriyi komuttan ayırır; girdi asla SQL olarak çalışmaz.",
+        "en": "Parameters keep data separate from the command, so input never runs as SQL."
+      }
+    },
+    {
+      "id": "sql:university:005",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Başka bir tablonun birincil anahtarına işaret eden sütuna ne denir?",
+        "en": "What is a column that points to another table’s primary key?"
+      },
+      "options": {
+        "tr": [
+          "Yabancı anahtar (foreign key)",
+          "Birincil anahtar",
+          "Bileşik anahtar",
+          "Tetikleyici"
+        ],
+        "en": [
+          "Foreign key",
+          "Primary key",
+          "Composite key",
+          "Trigger"
+        ]
+      },
+      "explain": {
+        "tr": "Yabancı anahtar tablolar arası ilişkiyi ve bütünlüğü korur.",
+        "en": "A foreign key keeps relationships between tables consistent."
+      }
+    },
+    {
+      "id": "sql:university:006",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Aramaları hızlandırmak için sütun üzerinde oluşturulan yapıya ne denir?",
+        "en": "What structure speeds up lookups on a column?"
+      },
+      "options": {
+        "tr": [
+          "İndeks",
+          "Görünüm",
+          "Tetikleyici",
+          "Şema"
+        ],
+        "en": [
+          "Index",
+          "View",
+          "Trigger",
+          "Schema"
+        ]
+      },
+      "explain": {
+        "tr": "İndeks okumayı hızlandırır ama yazma işlemlerine biraz maliyet ekler.",
+        "en": "An index speeds up reads but adds some cost to writes."
+      }
+    },
+    {
+      "id": "sql:university:007",
+      "level": "university",
+      "type": "order",
+      "q": {
+        "tr": "Bir SELECT sorgusunun mantıksal çalışma sırasını düzenle.",
+        "en": "Order the logical processing steps of a SELECT query."
+      },
+      "items": {
+        "tr": [
+          "FROM",
+          "WHERE",
+          "GROUP BY",
+          "SELECT"
+        ],
+        "en": [
+          "FROM",
+          "WHERE",
+          "GROUP BY",
+          "SELECT"
+        ]
+      },
+      "explain": {
+        "tr": "Önce kaynak tablo (FROM), sonra satır süzme (WHERE), gruplama (GROUP BY) ve en son seçim (SELECT) gelir.",
+        "en": "First the source (FROM), then row filtering (WHERE), grouping (GROUP BY) and finally the projection (SELECT)."
+      }
+    },
+    {
+      "id": "sql:university:008",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "NULL değer kontrolü nasıl yapılır?",
+        "en": "How do you check for NULL?"
+      },
+      "options": {
+        "tr": [
+          "IS NULL",
+          "= NULL",
+          "== NULL",
+          "EQUALS NULL"
+        ],
+        "en": [
+          "IS NULL",
+          "= NULL",
+          "== NULL",
+          "EQUALS NULL"
+        ]
+      },
+      "explain": {
+        "tr": "NULL bilinmeyen değerdir; = NULL karşılaştırması hiçbir zaman doğru olmaz.",
+        "en": "NULL means unknown; = NULL is never true."
+      }
+    },
+    {
+      "id": "sql:masters:001",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "ACID’deki \"I\" (Isolation) neyi garanti eder?",
+        "en": "What does the “I” (Isolation) in ACID guarantee?"
+      },
+      "options": {
+        "tr": [
+          "Eşzamanlı işlemlerin birbirini beklenmedik biçimde etkilememesini",
+          "Verinin şifrelenmesini",
+          "Verinin yedeklenmesini",
+          "Sorgunun hızlı olmasını"
+        ],
+        "en": [
+          "Concurrent transactions do not interfere in unexpected ways",
+          "Data is encrypted",
+          "Data is backed up",
+          "Queries are fast"
+        ]
+      },
+      "explain": {
+        "tr": "Yalıtım seviyeleri (READ COMMITTED, SERIALIZABLE…) bu garantinin gücünü belirler.",
+        "en": "Isolation levels (READ COMMITTED, SERIALIZABLE…) set how strong it is."
+      }
+    },
+    {
+      "id": "sql:masters:002",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Tekrarlayan veriyi azaltmak için tabloları ayırma işlemine ne denir?",
+        "en": "What is splitting tables to reduce duplicated data called?"
+      },
+      "options": {
+        "tr": [
+          "Normalizasyon",
+          "İndeksleme",
+          "Parçalama (sharding)",
+          "Önbellekleme"
+        ],
+        "en": [
+          "Normalisation",
+          "Indexing",
+          "Sharding",
+          "Caching"
+        ]
+      },
+      "explain": {
+        "tr": "Normal formlar (1NF, 2NF, 3NF) veri tekrarını ve güncelleme hatalarını azaltır.",
+        "en": "Normal forms (1NF, 2NF, 3NF) reduce duplication and update anomalies."
+      }
+    },
+    {
+      "id": "sql:masters:003",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Bir işlemin okuduğu veriyi başka bir işlemin henüz onaylanmamış değişikliğinden okumasına ne denir?",
+        "en": "What is reading another transaction’s uncommitted change called?"
+      },
+      "options": {
+        "tr": [
+          "Kirli okuma (dirty read)",
+          "Hayalet okuma",
+          "Kilitlenme",
+          "Tekrarlanabilir okuma"
+        ],
+        "en": [
+          "Dirty read",
+          "Phantom read",
+          "Deadlock",
+          "Repeatable read"
+        ]
+      },
+      "explain": {
+        "tr": "READ UNCOMMITTED seviyesinde kirli okuma mümkündür.",
+        "en": "Dirty reads are possible at READ UNCOMMITTED."
+      }
+    },
+    {
+      "id": "sql:masters:004",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Pencere fonksiyonlarında satırları gruplayıp her grup için sıra numarası veren ifade hangisidir?",
+        "en": "Which window expression numbers rows within each group?"
+      },
+      "options": {
+        "tr": [
+          "ROW_NUMBER() OVER (PARTITION BY ...)",
+          "GROUP BY ... COUNT()",
+          "DISTINCT ON",
+          "UNION ALL"
+        ],
+        "en": [
+          "ROW_NUMBER() OVER (PARTITION BY ...)",
+          "GROUP BY ... COUNT()",
+          "DISTINCT ON",
+          "UNION ALL"
+        ]
+      },
+      "explain": {
+        "tr": "Pencere fonksiyonları satırları birleştirmeden grup içi hesap yapar.",
+        "en": "Window functions compute per group without collapsing the rows."
+      }
+    },
+    {
+      "id": "sql:masters:005",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Veritabanında EXPLAIN komutu ne işe yarar?",
+        "en": "What does the EXPLAIN command do?"
+      },
+      "options": {
+        "tr": [
+          "Sorgunun çalıştırma planını gösterir",
+          "Tabloyu yedekler",
+          "Sorguyu iptal eder",
+          "Şemayı belgeler"
+        ],
+        "en": [
+          "Shows the query execution plan",
+          "Backs up the table",
+          "Cancels the query",
+          "Documents the schema"
+        ]
+      },
+      "explain": {
+        "tr": "Plan, indekslerin kullanılıp kullanılmadığını ve maliyeti gösterir.",
+        "en": "The plan shows whether indexes are used and the estimated cost."
+      }
+    },
+    {
+      "id": "sql:masters:006",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "İki işlemin birbirinin kilidini bekleyerek sonsuza dek takılmasına ne denir?",
+        "en": "What is two transactions waiting on each other’s locks forever called?"
+      },
+      "options": {
+        "tr": [
+          "Kilitlenme (deadlock)",
+          "Kirli okuma",
+          "Yetim kayıt",
+          "Normalizasyon"
+        ],
+        "en": [
+          "Deadlock",
+          "Dirty read",
+          "Orphan record",
+          "Normalisation"
+        ]
+      },
+      "explain": {
+        "tr": "Veritabanı kilitlenmeyi fark edince işlemlerden birini geri alır.",
+        "en": "The database detects it and rolls one transaction back."
+      }
+    },
+    {
+      "id": "sql:masters:007",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "CAP teoremine göre ağ bölünmesi (partition) olduğunda hangi ikisi arasında seçim yapılır?",
+        "en": "By the CAP theorem, what must you choose between during a network partition?"
+      },
+      "options": {
+        "tr": [
+          "Tutarlılık ve erişilebilirlik",
+          "Hız ve bellek",
+          "Güvenlik ve maliyet",
+          "İndeks ve görünüm"
+        ],
+        "en": [
+          "Consistency and availability",
+          "Speed and memory",
+          "Security and cost",
+          "Index and view"
+        ]
+      },
+      "explain": {
+        "tr": "Bölünme sırasında sistem ya tutarlı (C) ya da erişilebilir (A) kalabilir.",
+        "en": "During a partition a system can stay either consistent (C) or available (A)."
+      }
+    },
+    {
+      "id": "sql:masters:008",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Kayıtları birden çok sunucuya bölerek yatay ölçekleme yapmaya ne denir?",
+        "en": "What is splitting records across several servers for horizontal scaling called?"
+      },
+      "options": {
+        "tr": [
+          "Sharding",
+          "Normalizasyon",
+          "Replikasyon",
+          "Vakumlama"
+        ],
+        "en": [
+          "Sharding",
+          "Normalisation",
+          "Replication",
+          "Vacuuming"
+        ]
+      },
+      "explain": {
+        "tr": "Sharding yazma yükünü dağıtır; replikasyon ise aynı verinin kopyalarını tutar.",
+        "en": "Sharding spreads writes; replication keeps copies of the same data."
+      }
+    }
+  ]
+}

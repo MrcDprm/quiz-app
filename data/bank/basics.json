@@ -1,0 +1,653 @@
+{
+  "topic": "basics",
+  "questions": [
+    {
+      "id": "basics:primary:001",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Bir işi adım adım anlatan talimatlar dizisine ne denir?",
+        "en": "What do we call a list of step-by-step instructions for doing a task?"
+      },
+      "options": {
+        "tr": [
+          "Algoritma",
+          "Klavye",
+          "Ekran",
+          "Dosya"
+        ],
+        "en": [
+          "Algorithm",
+          "Keyboard",
+          "Screen",
+          "File"
+        ]
+      },
+      "explain": {
+        "tr": "Algoritma, bir problemi çözmek için izlenen sıralı adımlardır.",
+        "en": "An algorithm is an ordered set of steps for solving a problem."
+      }
+    },
+    {
+      "id": "basics:primary:002",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Bir komutun belirli sayıda tekrar edilmesine ne denir?",
+        "en": "What do we call repeating a command a certain number of times?"
+      },
+      "options": {
+        "tr": [
+          "Döngü",
+          "Hata",
+          "Değişken",
+          "Yorum"
+        ],
+        "en": [
+          "Loop",
+          "Bug",
+          "Variable",
+          "Comment"
+        ]
+      },
+      "explain": {
+        "tr": "Döngü, aynı adımları tekrar tekrar çalıştırır.",
+        "en": "A loop runs the same steps again and again."
+      }
+    },
+    {
+      "id": "basics:primary:003",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Programdaki hataya genellikle ne ad verilir?",
+        "en": "What is a mistake in a program usually called?"
+      },
+      "options": {
+        "tr": [
+          "Bug",
+          "Pixel",
+          "Byte",
+          "Link"
+        ],
+        "en": [
+          "Bug",
+          "Pixel",
+          "Byte",
+          "Link"
+        ]
+      },
+      "explain": {
+        "tr": "Programdaki hatalara \"bug\" denir; hatayı bulup düzeltmeye \"debug\" denir.",
+        "en": "Mistakes in programs are called bugs; finding and fixing them is called debugging."
+      }
+    },
+    {
+      "id": "basics:primary:004",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Blokları sürükleyip bırakarak kod yazılan, çocuklar için tasarlanmış dil hangisidir?",
+        "en": "Which children’s programming language uses drag-and-drop blocks?"
+      },
+      "options": {
+        "tr": [
+          "Scratch",
+          "SQL",
+          "C#",
+          "Assembly"
+        ],
+        "en": [
+          "Scratch",
+          "SQL",
+          "C#",
+          "Assembly"
+        ]
+      },
+      "explain": {
+        "tr": "Scratch, MIT’nin geliştirdiği blok tabanlı bir programlama ortamıdır.",
+        "en": "Scratch is a block-based programming environment made at MIT."
+      }
+    },
+    {
+      "id": "basics:primary:005",
+      "level": "primary",
+      "type": "order",
+      "q": {
+        "tr": "Diş fırçalama algoritmasını doğru sıraya koy.",
+        "en": "Put the tooth-brushing algorithm in the right order."
+      },
+      "items": {
+        "tr": [
+          "Fırçayı ıslat",
+          "Macun sür",
+          "Dişlerini fırçala",
+          "Ağzını çalkala"
+        ],
+        "en": [
+          "Wet the brush",
+          "Add toothpaste",
+          "Brush your teeth",
+          "Rinse your mouth"
+        ]
+      },
+      "explain": {
+        "tr": "Algoritmada sıra önemlidir: önce hazırlık, sonra iş, en son bitiş adımı gelir.",
+        "en": "Order matters in an algorithm: preparation first, then the task, then the final step."
+      }
+    },
+    {
+      "id": "basics:primary:006",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "“Eğer yağmur yağıyorsa şemsiye al.” cümlesi programlamada neye örnektir?",
+        "en": "“If it is raining, take an umbrella.” is an example of what in programming?"
+      },
+      "options": {
+        "tr": [
+          "Koşul",
+          "Döngü",
+          "Değişken",
+          "Fonksiyon"
+        ],
+        "en": [
+          "Condition",
+          "Loop",
+          "Variable",
+          "Function"
+        ]
+      },
+      "explain": {
+        "tr": "“Eğer … ise” ifadeleri koşuldur; program duruma göre farklı yol seçer.",
+        "en": "“If … then” statements are conditions: the program chooses a path based on the situation."
+      }
+    },
+    {
+      "id": "basics:primary:007",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Bilgisayarın beyni olarak bilinen parça hangisidir?",
+        "en": "Which part is known as the brain of the computer?"
+      },
+      "options": {
+        "tr": [
+          "İşlemci (CPU)",
+          "Fare",
+          "Hoparlör",
+          "Yazıcı"
+        ],
+        "en": [
+          "Processor (CPU)",
+          "Mouse",
+          "Speaker",
+          "Printer"
+        ]
+      },
+      "explain": {
+        "tr": "İşlemci, komutları çalıştıran ve hesapları yapan parçadır.",
+        "en": "The processor runs instructions and does the calculations."
+      }
+    },
+    {
+      "id": "basics:primary:008",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Scratch’te bir karakter 10 adım ileri gidip bunu 4 kez tekrarlarsa toplam kaç adım gider?",
+        "en": "In Scratch, a sprite moves 10 steps and repeats this 4 times. How many steps does it move in total?"
+      },
+      "options": {
+        "tr": [
+          "40",
+          "14",
+          "10",
+          "4"
+        ],
+        "en": [
+          "40",
+          "14",
+          "10",
+          "4"
+        ]
+      },
+      "explain": {
+        "tr": "Tekrar bloğu 4 kez çalışır: 4 × 10 = 40 adım.",
+        "en": "The repeat block runs 4 times: 4 × 10 = 40 steps."
+      }
+    },
+    {
+      "id": "basics:middle:001",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Program çalışırken değeri değişebilen, veri saklayan isimli alana ne denir?",
+        "en": "What is a named place that stores data and whose value can change while a program runs?"
+      },
+      "options": {
+        "tr": [
+          "Değişken",
+          "Döngü",
+          "Derleyici",
+          "Klasör"
+        ],
+        "en": [
+          "Variable",
+          "Loop",
+          "Compiler",
+          "Folder"
+        ]
+      },
+      "explain": {
+        "tr": "Değişkenler bir değeri bir ad altında saklar, örneğin puan = 10.",
+        "en": "Variables store a value under a name, for example score = 10."
+      }
+    },
+    {
+      "id": "basics:middle:002",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Bilgisayarlar veriyi temelde hangi sayı sistemiyle saklar?",
+        "en": "Which number system do computers basically use to store data?"
+      },
+      "options": {
+        "tr": [
+          "İkili (0 ve 1)",
+          "Onluk",
+          "Sekizlik",
+          "Romen rakamları"
+        ],
+        "en": [
+          "Binary (0 and 1)",
+          "Decimal",
+          "Octal",
+          "Roman numerals"
+        ]
+      },
+      "explain": {
+        "tr": "Bilgisayar devreleri iki durumla çalışır: açık (1) ve kapalı (0).",
+        "en": "Computer circuits work with two states: on (1) and off (0)."
+      }
+    },
+    {
+      "id": "basics:middle:003",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "1 bayt kaç bitten oluşur?",
+        "en": "How many bits are in one byte?"
+      },
+      "options": {
+        "tr": [
+          "8",
+          "2",
+          "10",
+          "16"
+        ],
+        "en": [
+          "8",
+          "2",
+          "10",
+          "16"
+        ]
+      },
+      "explain": {
+        "tr": "1 bayt = 8 bit. Bir bit 0 ya da 1 değerini tutar.",
+        "en": "1 byte = 8 bits. A bit holds either 0 or 1."
+      }
+    },
+    {
+      "id": "basics:middle:004",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Belirli bir işi yapan ve istenildiğinde çağrılabilen kod bloğuna ne denir?",
+        "en": "What is a block of code that does a specific job and can be called when needed?"
+      },
+      "options": {
+        "tr": [
+          "Fonksiyon",
+          "Piksel",
+          "Tarayıcı",
+          "Sunucu"
+        ],
+        "en": [
+          "Function",
+          "Pixel",
+          "Browser",
+          "Server"
+        ]
+      },
+      "explain": {
+        "tr": "Fonksiyonlar kodun tekrar kullanılmasını sağlar.",
+        "en": "Functions let you reuse code."
+      }
+    },
+    {
+      "id": "basics:middle:005",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Aşağıdakilerden hangisi bir programlama dili değildir?",
+        "en": "Which of these is not a programming language?"
+      },
+      "options": {
+        "tr": [
+          "HTML",
+          "Python",
+          "Java",
+          "C"
+        ],
+        "en": [
+          "HTML",
+          "Python",
+          "Java",
+          "C"
+        ]
+      },
+      "explain": {
+        "tr": "HTML bir işaretleme dilidir; sayfanın yapısını tanımlar ama algoritma çalıştırmaz.",
+        "en": "HTML is a markup language: it describes page structure but does not run algorithms."
+      }
+    },
+    {
+      "id": "basics:middle:006",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Onluk sistemdeki 5 sayısının ikili (binary) karşılığı nedir?",
+        "en": "What is the decimal number 5 in binary?"
+      },
+      "options": {
+        "tr": [
+          "101",
+          "110",
+          "100",
+          "111"
+        ],
+        "en": [
+          "101",
+          "110",
+          "100",
+          "111"
+        ]
+      },
+      "explain": {
+        "tr": "5 = 4 + 1 = 1·2² + 0·2¹ + 1·2⁰ → 101.",
+        "en": "5 = 4 + 1 = 1·2² + 0·2¹ + 1·2⁰ → 101."
+      }
+    },
+    {
+      "id": "basics:middle:007",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Bir koşul doğru değilse çalışacak kısmı hangi anahtar kelime belirtir?",
+        "en": "Which keyword marks the part that runs when a condition is not true?"
+      },
+      "options": {
+        "tr": [
+          "else",
+          "loop",
+          "print",
+          "return"
+        ],
+        "en": [
+          "else",
+          "loop",
+          "print",
+          "return"
+        ]
+      },
+      "explain": {
+        "tr": "if koşulu yanlışsa else bloğu çalışır.",
+        "en": "If the if condition is false, the else block runs."
+      }
+    },
+    {
+      "id": "basics:middle:008",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Kodun içine yazılan ama çalıştırılmayan açıklama satırlarına ne denir?",
+        "en": "What are notes written in code that are not run called?"
+      },
+      "options": {
+        "tr": [
+          "Yorum satırı",
+          "Değişken",
+          "Hata",
+          "Döngü"
+        ],
+        "en": [
+          "Comments",
+          "Variables",
+          "Bugs",
+          "Loops"
+        ]
+      },
+      "explain": {
+        "tr": "Yorumlar kodu okuyan insanlar içindir; bilgisayar onları yok sayar.",
+        "en": "Comments are for people reading the code; the computer ignores them."
+      }
+    },
+    {
+      "id": "basics:high:001",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Yazılan kodu makinenin çalıştırabileceği koda bütün hâlinde çeviren programa ne denir?",
+        "en": "What is the program that translates source code into machine code all at once?"
+      },
+      "options": {
+        "tr": [
+          "Derleyici",
+          "Tarayıcı",
+          "İşletim sistemi",
+          "Metin editörü"
+        ],
+        "en": [
+          "Compiler",
+          "Browser",
+          "Operating system",
+          "Text editor"
+        ]
+      },
+      "explain": {
+        "tr": "Derleyici kaynak kodu önceden çevirir; yorumlayıcı ise satır satır çalıştırır.",
+        "en": "A compiler translates source code ahead of time; an interpreter runs it line by line."
+      }
+    },
+    {
+      "id": "basics:high:002",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Doğru ya da yanlış (true/false) değer alan veri tipine ne denir?",
+        "en": "What is the data type that holds true or false called?"
+      },
+      "options": {
+        "tr": [
+          "Boolean",
+          "Integer",
+          "String",
+          "Float"
+        ],
+        "en": [
+          "Boolean",
+          "Integer",
+          "String",
+          "Float"
+        ]
+      },
+      "explain": {
+        "tr": "Boolean yalnızca iki değer alır: true ve false.",
+        "en": "A Boolean has only two values: true and false."
+      }
+    },
+    {
+      "id": "basics:high:003",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Metin (karakter dizisi) tutan veri tipine genellikle ne ad verilir?",
+        "en": "What is the data type for text usually called?"
+      },
+      "options": {
+        "tr": [
+          "String",
+          "Boolean",
+          "Integer",
+          "Array"
+        ],
+        "en": [
+          "String",
+          "Boolean",
+          "Integer",
+          "Array"
+        ]
+      },
+      "explain": {
+        "tr": "String, \"merhaba\" gibi karakter dizilerini tutar.",
+        "en": "A string holds text such as \"hello\"."
+      }
+    },
+    {
+      "id": "basics:high:004",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Onaltılık (hexadecimal) sistemde \"F\" hangi sayıya karşılık gelir?",
+        "en": "In hexadecimal, what value does “F” represent?"
+      },
+      "options": {
+        "tr": [
+          "15",
+          "16",
+          "10",
+          "6"
+        ],
+        "en": [
+          "15",
+          "16",
+          "10",
+          "6"
+        ]
+      },
+      "explain": {
+        "tr": "Onaltılık sistemde A=10 … F=15’tir.",
+        "en": "In hexadecimal, A=10 … F=15."
+      }
+    },
+    {
+      "id": "basics:high:005",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir dizinin (array) ilk elemanının indeksi çoğu programlama dilinde kaçtır?",
+        "en": "In most programming languages, what is the index of the first element of an array?"
+      },
+      "options": {
+        "tr": [
+          "0",
+          "1",
+          "-1",
+          "10"
+        ],
+        "en": [
+          "0",
+          "1",
+          "-1",
+          "10"
+        ]
+      },
+      "explain": {
+        "tr": "C, Java, Python ve JavaScript gibi dillerde indeksler 0’dan başlar.",
+        "en": "In languages like C, Java, Python and JavaScript, indexes start at 0."
+      }
+    },
+    {
+      "id": "basics:high:006",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Kendi kendini çağıran fonksiyona ne denir?",
+        "en": "What is a function that calls itself called?"
+      },
+      "options": {
+        "tr": [
+          "Özyinelemeli (recursive) fonksiyon",
+          "Anonim fonksiyon",
+          "Yapıcı (constructor)",
+          "Olay (event)"
+        ],
+        "en": [
+          "Recursive function",
+          "Anonymous function",
+          "Constructor",
+          "Event"
+        ]
+      },
+      "explain": {
+        "tr": "Özyineleme, problemi küçülterek aynı fonksiyonu tekrar çağırır; bir durma koşulu gerekir.",
+        "en": "Recursion calls the same function on a smaller problem and needs a stopping condition."
+      }
+    },
+    {
+      "id": "basics:high:007",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Nesne yönelimli programlamada nesnelerin şablonuna ne denir?",
+        "en": "In object-oriented programming, what is the template for objects called?"
+      },
+      "options": {
+        "tr": [
+          "Sınıf (class)",
+          "Döngü",
+          "Paket",
+          "Dosya"
+        ],
+        "en": [
+          "Class",
+          "Loop",
+          "Package",
+          "File"
+        ]
+      },
+      "explain": {
+        "tr": "Sınıf, nesnelerin hangi verileri ve davranışları taşıyacağını tanımlar.",
+        "en": "A class defines the data and behaviour its objects have."
+      }
+    },
+    {
+      "id": "basics:high:008",
+      "level": "high",
+      "type": "order",
+      "q": {
+        "tr": "Yazılım geliştirme adımlarını doğru sıraya koy.",
+        "en": "Put these software development steps in order."
+      },
+      "items": {
+        "tr": [
+          "Problemi anla",
+          "Algoritmayı tasarla",
+          "Kodu yaz",
+          "Test et"
+        ],
+        "en": [
+          "Understand the problem",
+          "Design the algorithm",
+          "Write the code",
+          "Test it"
+        ]
+      },
+      "explain": {
+        "tr": "Önce ne istendiği anlaşılır, sonra çözüm planlanır, kodlanır ve test edilir.",
+        "en": "First understand what is needed, then plan the solution, code it and test it."
+      }
+    }
+  ]
+}

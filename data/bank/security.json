@@ -1,0 +1,653 @@
+{
+  "topic": "security",
+  "questions": [
+    {
+      "id": "security:high:001",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Aşağıdaki şifrelerden hangisi en güçlüdür?",
+        "en": "Which of these passwords is the strongest?"
+      },
+      "options": {
+        "tr": [
+          "k7#Rq!2mPz9$Lw",
+          "123456",
+          "sifre2024",
+          "qwerty"
+        ],
+        "en": [
+          "k7#Rq!2mPz9$Lw",
+          "123456",
+          "sifre2024",
+          "qwerty"
+        ]
+      },
+      "explain": {
+        "tr": "Uzun, tahmin edilemez ve farklı karakter türleri içeren şifreler güçlüdür.",
+        "en": "Long, unpredictable passwords with mixed characters are strong."
+      }
+    },
+    {
+      "id": "security:high:002",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Adres çubuğunda \"https\" görmek neyi gösterir?",
+        "en": "What does “https” in the address bar show?"
+      },
+      "options": {
+        "tr": [
+          "Bağlantının şifreli olduğunu",
+          "Sitenin kesinlikle güvenilir olduğunu",
+          "Sitenin devlete ait olduğunu",
+          "Sitede reklam olmadığını"
+        ],
+        "en": [
+          "The connection is encrypted",
+          "The site is certainly trustworthy",
+          "The site is government-owned",
+          "The site has no ads"
+        ]
+      },
+      "explain": {
+        "tr": "HTTPS trafiği şifreler ama sahte bir site de HTTPS kullanabilir.",
+        "en": "HTTPS encrypts traffic, but a fake site can use HTTPS too."
+      }
+    },
+    {
+      "id": "security:high:003",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Kişiyi kandırarak şifresini sahte bir sayfaya girdirmeye ne denir?",
+        "en": "What is tricking someone into entering their password on a fake page called?"
+      },
+      "options": {
+        "tr": [
+          "Oltalama (phishing)",
+          "Yedekleme",
+          "Şifreleme",
+          "Güncelleme"
+        ],
+        "en": [
+          "Phishing",
+          "Backup",
+          "Encryption",
+          "Updating"
+        ]
+      },
+      "explain": {
+        "tr": "Oltalamada gönderen adresi ve bağlantının gittiği alan adı dikkatle kontrol edilmelidir.",
+        "en": "Check the sender and the real domain of links to spot phishing."
+      }
+    },
+    {
+      "id": "security:high:004",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "İki adımlı doğrulama (2FA) ne sağlar?",
+        "en": "What does two-factor authentication (2FA) provide?"
+      },
+      "options": {
+        "tr": [
+          "Şifre çalınsa bile ikinci bir doğrulama ister",
+          "İnterneti hızlandırır",
+          "Şifreyi hatırlatır",
+          "Virüsleri siler"
+        ],
+        "en": [
+          "A second check even if the password is stolen",
+          "Faster internet",
+          "Password reminders",
+          "Virus removal"
+        ]
+      },
+      "explain": {
+        "tr": "Şifre + telefondaki kod gibi iki ayrı faktör hesabı korur.",
+        "en": "A password plus a code on your phone protects the account."
+      }
+    },
+    {
+      "id": "security:high:005",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Yazılım güncellemeleri güvenlik için neden önemlidir?",
+        "en": "Why do software updates matter for security?"
+      },
+      "options": {
+        "tr": [
+          "Bilinen açıkları kapatırlar",
+          "Sadece renkleri değiştirirler",
+          "Bilgisayarı yavaşlatırlar",
+          "Önemli değildir"
+        ],
+        "en": [
+          "They fix known vulnerabilities",
+          "They only change colours",
+          "They slow the computer",
+          "They do not matter"
+        ]
+      },
+      "explain": {
+        "tr": "Saldırganlar yamanmamış bilinen açıkları hedefler.",
+        "en": "Attackers target known, unpatched flaws."
+      }
+    },
+    {
+      "id": "security:high:006",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Şifre yöneticisi kullanmanın faydası nedir?",
+        "en": "What is the benefit of a password manager?"
+      },
+      "options": {
+        "tr": [
+          "Her site için farklı ve güçlü şifre saklamak",
+          "Tek şifreyi her yerde kullanmak",
+          "Şifreleri e-postayla göndermek",
+          "Şifreleri kâğıda yazmak"
+        ],
+        "en": [
+          "Keeping a different strong password for each site",
+          "Using one password everywhere",
+          "Emailing passwords",
+          "Writing passwords on paper"
+        ]
+      },
+      "explain": {
+        "tr": "Bir sitede sızan şifre, diğer hesaplarınızı tehlikeye atmaz.",
+        "en": "A password leaked from one site then cannot unlock your other accounts."
+      }
+    },
+    {
+      "id": "security:high:007",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Halka açık Wi-Fi ağlarında hangisinden kaçınmak daha güvenlidir?",
+        "en": "On public Wi-Fi, what is safer to avoid?"
+      },
+      "options": {
+        "tr": [
+          "Şifreli olmayan sitelere şifre girmek",
+          "Haber okumak",
+          "Hava durumuna bakmak",
+          "Müzik dinlemek"
+        ],
+        "en": [
+          "Entering passwords on unencrypted sites",
+          "Reading news",
+          "Checking the weather",
+          "Listening to music"
+        ]
+      },
+      "explain": {
+        "tr": "Açık ağlarda şifrelenmemiş trafik başkaları tarafından izlenebilir.",
+        "en": "Unencrypted traffic on open networks can be watched by others."
+      }
+    },
+    {
+      "id": "security:high:008",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Tanımadığınız birinden gelen e-postadaki eki açmadan önce ne yapmalısınız?",
+        "en": "What should you do before opening an attachment from a stranger?"
+      },
+      "options": {
+        "tr": [
+          "Göndereni doğrulamak ve şüpheliyse açmamak",
+          "Hemen açmak",
+          "Arkadaşlara iletmek",
+          "Antivirüsü kapatmak"
+        ],
+        "en": [
+          "Verify the sender and skip it if suspicious",
+          "Open it right away",
+          "Forward it to friends",
+          "Turn off the antivirus"
+        ]
+      },
+      "explain": {
+        "tr": "Zararlı yazılımlar sıkça e-posta ekleriyle yayılır.",
+        "en": "Malware often spreads through email attachments."
+      }
+    },
+    {
+      "id": "security:university:001",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Kullanıcı girdisinin sayfada kod olarak çalıştırılmasıyla oluşan saldırı hangisidir?",
+        "en": "Which attack runs user input as code in the page?"
+      },
+      "options": {
+        "tr": [
+          "XSS (Cross-Site Scripting)",
+          "DDoS",
+          "Brute force",
+          "Man-in-the-middle"
+        ],
+        "en": [
+          "XSS (Cross-Site Scripting)",
+          "DDoS",
+          "Brute force",
+          "Man-in-the-middle"
+        ]
+      },
+      "explain": {
+        "tr": "Girdiyi kaçışlamak ya da textContent kullanmak XSS’i önler.",
+        "en": "Escaping input or using textContent prevents XSS."
+      }
+    },
+    {
+      "id": "security:university:002",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Şifreler veritabanında nasıl saklanmalıdır?",
+        "en": "How should passwords be stored in a database?"
+      },
+      "options": {
+        "tr": [
+          "bcrypt ya da Argon2 gibi yavaş, tuzlu (salted) bir hash ile",
+          "Düz metin olarak",
+          "Base64 ile kodlanarak",
+          "MD5 ile"
+        ],
+        "en": [
+          "With a slow, salted hash such as bcrypt or Argon2",
+          "As plain text",
+          "Base64-encoded",
+          "With MD5"
+        ]
+      },
+      "explain": {
+        "tr": "Base64 şifreleme değildir; MD5 çok hızlı olduğu için kaba kuvvete dayanıksızdır.",
+        "en": "Base64 is not encryption; MD5 is too fast to resist brute force."
+      }
+    },
+    {
+      "id": "security:university:003",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Kullanıcının oturumunu kullanarak onun adına istek gönderten saldırı hangisidir?",
+        "en": "Which attack makes a logged-in user’s browser send unwanted requests?"
+      },
+      "options": {
+        "tr": [
+          "CSRF",
+          "XSS",
+          "SQL enjeksiyonu",
+          "Phishing"
+        ],
+        "en": [
+          "CSRF",
+          "XSS",
+          "SQL injection",
+          "Phishing"
+        ]
+      },
+      "explain": {
+        "tr": "CSRF’e karşı SameSite çerez, CSRF token ve Origin kontrolü kullanılır.",
+        "en": "SameSite cookies, CSRF tokens and Origin checks defend against CSRF."
+      }
+    },
+    {
+      "id": "security:university:004",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Oturum çerezinin JavaScript tarafından okunmasını engelleyen bayrak hangisidir?",
+        "en": "Which cookie flag stops JavaScript from reading a session cookie?"
+      },
+      "options": {
+        "tr": [
+          "HttpOnly",
+          "Secure",
+          "SameSite",
+          "Path"
+        ],
+        "en": [
+          "HttpOnly",
+          "Secure",
+          "SameSite",
+          "Path"
+        ]
+      },
+      "explain": {
+        "tr": "HttpOnly çerez XSS olsa bile document.cookie ile çalınamaz.",
+        "en": "An HttpOnly cookie cannot be stolen through document.cookie, even with XSS."
+      }
+    },
+    {
+      "id": "security:university:005",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Bir API’ye kısa sürede çok fazla istek atılmasını sınırlayan önleme ne denir?",
+        "en": "What limits how many requests can hit an API in a short time?"
+      },
+      "options": {
+        "tr": [
+          "Rate limiting",
+          "Caching",
+          "Logging",
+          "Hashing"
+        ],
+        "en": [
+          "Rate limiting",
+          "Caching",
+          "Logging",
+          "Hashing"
+        ]
+      },
+      "explain": {
+        "tr": "Rate limiting kaba kuvvet ve kötüye kullanım saldırılarını yavaşlatır.",
+        "en": "Rate limiting slows brute-force and abuse."
+      }
+    },
+    {
+      "id": "security:university:006",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "CORS ayarında Access-Control-Allow-Origin: * neden risklidir?",
+        "en": "Why is Access-Control-Allow-Origin: * risky?"
+      },
+      "options": {
+        "tr": [
+          "Her sitenin API yanıtlarını okumasına izin verir",
+          "Sayfayı yavaşlatır",
+          "Çerezleri siler",
+          "HTTPS’i kapatır"
+        ],
+        "en": [
+          "It lets any site read the API responses",
+          "It slows the page",
+          "It deletes cookies",
+          "It disables HTTPS"
+        ]
+      },
+      "explain": {
+        "tr": "İzin yalnızca gereken kaynaklara verilmelidir.",
+        "en": "Access should be granted only to the origins that need it."
+      }
+    },
+    {
+      "id": "security:university:007",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "API anahtarları neden tarayıcıda çalışan koda konmamalıdır?",
+        "en": "Why should API keys not be put in browser code?"
+      },
+      "options": {
+        "tr": [
+          "Herkes kaynak koddan okuyup kullanabilir",
+          "Tarayıcı anahtarları siler",
+          "Kod yavaşlar",
+          "Anahtarlar sadece mobilde çalışır"
+        ],
+        "en": [
+          "Anyone can read and use them from the source",
+          "Browsers delete them",
+          "The code gets slower",
+          "Keys only work on mobile"
+        ]
+      },
+      "explain": {
+        "tr": "Gizli anahtarlar sunucuda kalmalı; tarayıcı sunucu üzerinden istek yapmalıdır.",
+        "en": "Secret keys stay on the server; the browser should call the server instead."
+      }
+    },
+    {
+      "id": "security:university:008",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Sıralı (1, 2, 3…) kayıt kimliklerini dışarı açmanın riski nedir?",
+        "en": "What is the risk of exposing sequential record IDs (1, 2, 3…)?"
+      },
+      "options": {
+        "tr": [
+          "Saldırgan diğer kayıtları tahmin edip deneyebilir",
+          "Veritabanı yavaşlar",
+          "Kimlikler tükenir",
+          "Risk yoktur"
+        ],
+        "en": [
+          "Attackers can guess and try other records",
+          "The database slows down",
+          "IDs run out",
+          "There is no risk"
+        ]
+      },
+      "explain": {
+        "tr": "Tahmin edilemez kimlikler (UUID) ve her istekte yetki kontrolü gerekir.",
+        "en": "Use unguessable IDs (UUIDs) and check authorisation on every request."
+      }
+    },
+    {
+      "id": "security:masters:001",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Bir web kancasının (webhook) gerçekten beklenen servisten geldiği nasıl doğrulanır?",
+        "en": "How do you verify a webhook really came from the expected service?"
+      },
+      "options": {
+        "tr": [
+          "Gövdenin HMAC imzasını paylaşılan sırla kontrol ederek",
+          "IP adresine bakarak",
+          "User-Agent başlığına bakarak",
+          "Gövdenin JSON olmasına bakarak"
+        ],
+        "en": [
+          "Checking an HMAC signature of the body with a shared secret",
+          "Looking at the IP address",
+          "Looking at the User-Agent",
+          "Checking the body is JSON"
+        ]
+      },
+      "explain": {
+        "tr": "İmza, gövde değiştirilirse ya da sahte gönderilirse tutmaz.",
+        "en": "The signature fails if the body is changed or forged."
+      }
+    },
+    {
+      "id": "security:masters:002",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "AES-GCM gibi kimlik doğrulamalı şifrelemenin (AEAD) sağladığı iki özellik nedir?",
+        "en": "What two properties does authenticated encryption (AEAD) such as AES-GCM give?"
+      },
+      "options": {
+        "tr": [
+          "Gizlilik ve bütünlük",
+          "Hız ve sıkıştırma",
+          "Anonimlik ve ölçeklenebilirlik",
+          "Yedeklilik ve erişilebilirlik"
+        ],
+        "en": [
+          "Confidentiality and integrity",
+          "Speed and compression",
+          "Anonymity and scalability",
+          "Redundancy and availability"
+        ]
+      },
+      "explain": {
+        "tr": "Veri okunamaz ve tek bayt değişse bile şifre çözme başarısız olur.",
+        "en": "Data cannot be read, and decryption fails if even one byte changes."
+      }
+    },
+    {
+      "id": "security:masters:003",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "AES-GCM’de aynı anahtarla aynı nonce’u (IV) iki kez kullanmak neden tehlikelidir?",
+        "en": "Why is reusing the same nonce (IV) with the same key in AES-GCM dangerous?"
+      },
+      "options": {
+        "tr": [
+          "Gizlilik ve bütünlük garantileri çöker",
+          "Şifreleme sadece yavaşlar",
+          "Hiçbir etkisi yoktur",
+          "Anahtar otomatik yenilenir"
+        ],
+        "en": [
+          "Confidentiality and integrity guarantees break",
+          "Encryption only gets slower",
+          "It has no effect",
+          "The key renews itself"
+        ]
+      },
+      "explain": {
+        "tr": "Nonce tekrarı, iki mesajın XOR’unu ve kimlik doğrulama anahtarını sızdırabilir.",
+        "en": "Nonce reuse can leak the XOR of messages and the authentication key."
+      }
+    },
+    {
+      "id": "security:masters:004",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Zamanlama saldırılarını önlemek için gizli değerler nasıl karşılaştırılmalıdır?",
+        "en": "How should secret values be compared to avoid timing attacks?"
+      },
+      "options": {
+        "tr": [
+          "Sabit zamanlı karşılaştırmayla (ör. timingSafeEqual)",
+          "== ile",
+          "Uzunlukları karşılaştırarak",
+          "Önce ilk karakteri kontrol ederek"
+        ],
+        "en": [
+          "With a constant-time comparison (e.g. timingSafeEqual)",
+          "With ==",
+          "By comparing lengths",
+          "By checking the first character"
+        ]
+      },
+      "explain": {
+        "tr": "Normal karşılaştırma ilk farkta durur; süre farkı gizli değeri sızdırabilir.",
+        "en": "A normal comparison stops at the first difference, leaking timing information."
+      }
+    },
+    {
+      "id": "security:masters:005",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "SSRF (Server-Side Request Forgery) saldırısında ne olur?",
+        "en": "What happens in an SSRF (Server-Side Request Forgery) attack?"
+      },
+      "options": {
+        "tr": [
+          "Saldırgan, sunucunun iç ağdaki adreslere istek atmasını sağlar",
+          "Kullanıcının tarayıcısında script çalışır",
+          "Veritabanı sorgusu değiştirilir",
+          "Şifre tahmin edilir"
+        ],
+        "en": [
+          "The attacker makes the server request internal addresses",
+          "A script runs in the user’s browser",
+          "A database query is altered",
+          "A password is guessed"
+        ]
+      },
+      "explain": {
+        "tr": "Sunucunun istek attığı adresler izin listesiyle sınırlandırılmalıdır.",
+        "en": "The addresses a server may fetch should be restricted by an allowlist."
+      }
+    },
+    {
+      "id": "security:masters:006",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Tedarik zinciri saldırılarına karşı hangisi etkili bir önlemdir?",
+        "en": "Which is an effective defence against supply-chain attacks?"
+      },
+      "options": {
+        "tr": [
+          "Bağımlılıkları kilit dosyası ve bütünlük kontrolüyle sabitlemek",
+          "Her zaman en son sürümü otomatik yüklemek",
+          "Bağımlılık sayısını artırmak",
+          "npm audit’i kapatmak"
+        ],
+        "en": [
+          "Pinning dependencies with a lockfile and integrity checks",
+          "Always auto-installing the latest version",
+          "Adding more dependencies",
+          "Turning off npm audit"
+        ]
+      },
+      "explain": {
+        "tr": "Az ve denetlenmiş bağımlılık, saldırı yüzeyini küçültür.",
+        "en": "Fewer, audited dependencies shrink the attack surface."
+      }
+    },
+    {
+      "id": "security:masters:007",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Kullanıcının yalnızca işi için gereken yetkilere sahip olması ilkesine ne denir?",
+        "en": "What is the principle of giving users only the access they need?"
+      },
+      "options": {
+        "tr": [
+          "En az yetki ilkesi",
+          "Derinlemesine savunma",
+          "Güvenlik belirsizlikle sağlanır",
+          "Sıfır bilgi"
+        ],
+        "en": [
+          "Least privilege",
+          "Defence in depth",
+          "Security through obscurity",
+          "Zero knowledge"
+        ]
+      },
+      "explain": {
+        "tr": "Bir hesap ele geçirilse bile zarar sınırlı kalır.",
+        "en": "If an account is compromised, the damage stays limited."
+      }
+    },
+    {
+      "id": "security:masters:008",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "JWT’de \"alg\": \"none\" kabul etmek neden tehlikelidir?",
+        "en": "Why is accepting \"alg\": \"none\" in a JWT dangerous?"
+      },
+      "options": {
+        "tr": [
+          "İmzasız sahte jetonlar geçerli sayılır",
+          "Jeton çok büyür",
+          "Jeton daha hızlı süresi dolar",
+          "Tarayıcı jetonu siler"
+        ],
+        "en": [
+          "Unsigned forged tokens are accepted",
+          "The token gets huge",
+          "The token expires faster",
+          "Browsers delete it"
+        ]
+      },
+      "explain": {
+        "tr": "Sunucu beklediği algoritmayı sabitlemeli ve imzayı her zaman doğrulamalıdır.",
+        "en": "The server should pin the expected algorithm and always verify the signature."
+      }
+    }
+  ]
+}

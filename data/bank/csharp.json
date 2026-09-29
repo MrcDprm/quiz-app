@@ -1,0 +1,660 @@
+{
+  "topic": "csharp",
+  "questions": [
+    {
+      "id": "csharp:high:001",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "C#’ta ekrana yazı yazdırıp alt satıra geçen komut hangisidir?",
+        "en": "Which C# statement prints text and moves to a new line?"
+      },
+      "options": {
+        "tr": [
+          "Console.WriteLine()",
+          "Console.Write()",
+          "print()",
+          "System.out.println()"
+        ],
+        "en": [
+          "Console.WriteLine()",
+          "Console.Write()",
+          "print()",
+          "System.out.println()"
+        ]
+      },
+      "explain": {
+        "tr": "Write alt satıra geçmez; WriteLine geçer. System.out.println Java’dır.",
+        "en": "Write stays on the same line; WriteLine adds a new line. System.out.println is Java."
+      }
+    },
+    {
+      "id": "csharp:high:002",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "C#’ta tam sayı tutan temel veri tipi hangisidir?",
+        "en": "Which basic C# type holds whole numbers?"
+      },
+      "options": {
+        "tr": [
+          "int",
+          "string",
+          "bool",
+          "double"
+        ],
+        "en": [
+          "int",
+          "string",
+          "bool",
+          "double"
+        ]
+      },
+      "explain": {
+        "tr": "int 32 bitlik tam sayıdır; ondalıklı sayılar için double kullanılır.",
+        "en": "int is a 32-bit integer; double is for decimals."
+      }
+    },
+    {
+      "id": "csharp:high:003",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "int a = 7;\nint b = 2;\nConsole.WriteLine(a / b);",
+      "options": {
+        "tr": [
+          "3",
+          "3.5",
+          "4",
+          "3,5"
+        ],
+        "en": [
+          "3",
+          "3.5",
+          "4",
+          "3,5"
+        ]
+      },
+      "explain": {
+        "tr": "İki int bölünürse sonuç da int olur; ondalık kısım atılır.",
+        "en": "Dividing two ints gives an int; the fraction is dropped."
+      }
+    },
+    {
+      "id": "csharp:high:004",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "string ad = \"Ali\";\nConsole.WriteLine($\"Merhaba {ad}\");",
+      "options": {
+        "tr": [
+          "Merhaba Ali",
+          "Merhaba {ad}",
+          "Merhaba ad",
+          "Hata"
+        ],
+        "en": [
+          "Merhaba Ali",
+          "Merhaba {ad}",
+          "Merhaba ad",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "$ ile başlayan metinlerde {ad} değişkenin değeriyle değiştirilir (string interpolation).",
+        "en": "In $-strings, {ad} is replaced with the variable’s value (string interpolation)."
+      }
+    },
+    {
+      "id": "csharp:high:005",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Windows Forms’ta bir düğmeye tıklanınca çalışan metot hangi olaya bağlanır?",
+        "en": "In Windows Forms, which event runs a method when a button is clicked?"
+      },
+      "options": {
+        "tr": [
+          "Click",
+          "Load",
+          "Paint",
+          "KeyDown"
+        ],
+        "en": [
+          "Click",
+          "Load",
+          "Paint",
+          "KeyDown"
+        ]
+      },
+      "explain": {
+        "tr": "Tasarımcıda düğmeye çift tıklamak button1_Click metodunu oluşturur.",
+        "en": "Double-clicking a button in the designer creates a button1_Click handler."
+      }
+    },
+    {
+      "id": "csharp:high:006",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "int toplam = 0;\nfor (int i = 1; i <= 4; i++)\n{\n    toplam += i;\n}\nConsole.WriteLine(toplam);",
+      "options": {
+        "tr": [
+          "10",
+          "4",
+          "0",
+          "5"
+        ],
+        "en": [
+          "10",
+          "4",
+          "0",
+          "5"
+        ]
+      },
+      "explain": {
+        "tr": "Döngü 1’den 4’e kadar sayıları toplar: 1 + 2 + 3 + 4 = 10.",
+        "en": "The loop adds 1 to 4: 1 + 2 + 3 + 4 = 10."
+      }
+    },
+    {
+      "id": "csharp:high:007",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Metni tam sayıya güvenle çeviren ve başarısız olursa hata fırlatmayan metot hangisidir?",
+        "en": "Which method safely converts text to an int without throwing on failure?"
+      },
+      "options": {
+        "tr": [
+          "int.TryParse",
+          "int.Parse",
+          "Convert.ToInt32",
+          "(int)"
+        ],
+        "en": [
+          "int.TryParse",
+          "int.Parse",
+          "Convert.ToInt32",
+          "(int)"
+        ]
+      },
+      "explain": {
+        "tr": "TryParse başarılıysa true döndürür, sonucu out parametresine yazar.",
+        "en": "TryParse returns true on success and writes the value to an out parameter."
+      }
+    },
+    {
+      "id": "csharp:high:008",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "int not = 75;\nif (not >= 50)\n    Console.WriteLine(\"Geçti\");\nelse\n    Console.WriteLine(\"Kaldı\");",
+      "options": {
+        "tr": [
+          "Geçti",
+          "Kaldı",
+          "Geçti Kaldı",
+          "Hata"
+        ],
+        "en": [
+          "Geçti",
+          "Kaldı",
+          "Geçti Kaldı",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "75 >= 50 olduğu için if bloğu çalışır.",
+        "en": "75 >= 50, so the if block runs."
+      }
+    },
+    {
+      "id": "csharp:university:001",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "C#’ta class ile struct arasındaki temel fark nedir?",
+        "en": "What is the key difference between class and struct in C#?"
+      },
+      "options": {
+        "tr": [
+          "class referans tipi, struct değer tipidir",
+          "struct kalıtım destekler",
+          "class yalnızca metot içerir",
+          "Fark yoktur"
+        ],
+        "en": [
+          "class is a reference type; struct is a value type",
+          "struct supports inheritance",
+          "class only has methods",
+          "There is no difference"
+        ]
+      },
+      "explain": {
+        "tr": "struct atamada kopyalanır; class atamada aynı nesneyi gösterir.",
+        "en": "A struct is copied on assignment; a class variable points to the same object."
+      }
+    },
+    {
+      "id": "csharp:university:002",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Bir listeyi koşula göre süzmek için LINQ’da hangi metot kullanılır?",
+        "en": "Which LINQ method filters a list by a condition?"
+      },
+      "options": {
+        "tr": [
+          "Where",
+          "Select",
+          "OrderBy",
+          "GroupBy"
+        ],
+        "en": [
+          "Where",
+          "Select",
+          "OrderBy",
+          "GroupBy"
+        ]
+      },
+      "explain": {
+        "tr": "sayilar.Where(x => x > 5) beşten büyükleri döndürür.",
+        "en": "numbers.Where(x => x > 5) returns those greater than 5."
+      }
+    },
+    {
+      "id": "csharp:university:003",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "var sayilar = new List<int> { 1, 2, 3, 4 };\nvar ciftler = sayilar.Where(x => x % 2 == 0);\nConsole.WriteLine(string.Join(\", \", ciftler));",
+      "options": {
+        "tr": [
+          "2, 4",
+          "1, 2, 3, 4",
+          "1, 3",
+          "4"
+        ],
+        "en": [
+          "2, 4",
+          "1, 2, 3, 4",
+          "1, 3",
+          "4"
+        ]
+      },
+      "explain": {
+        "tr": "Where çiftleri seçer, string.Join aralarına virgül koyar.",
+        "en": "Where keeps the even numbers and string.Join adds commas."
+      }
+    },
+    {
+      "id": "csharp:university:004",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Bir sınıfın uygulaması gereken metotları tanımlayan ama kod içermeyen yapı hangisidir?",
+        "en": "Which construct declares methods a class must implement, without implementing them?"
+      },
+      "options": {
+        "tr": [
+          "interface",
+          "enum",
+          "struct",
+          "namespace"
+        ],
+        "en": [
+          "interface",
+          "enum",
+          "struct",
+          "namespace"
+        ]
+      },
+      "explain": {
+        "tr": "Arayüzler (IDisposable, IEnumerable…) sözleşme tanımlar.",
+        "en": "Interfaces (IDisposable, IEnumerable…) define a contract."
+      }
+    },
+    {
+      "id": "csharp:university:005",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "using bloğunun (using var ...) asıl amacı nedir?",
+        "en": "What is the main purpose of a using block?"
+      },
+      "options": {
+        "tr": [
+          "IDisposable nesnelerin işi bitince Dispose edilmesi",
+          "Kütüphane indirmek",
+          "Döngü kurmak",
+          "Değişken tanımlamak"
+        ],
+        "en": [
+          "Disposing IDisposable objects when done",
+          "Downloading libraries",
+          "Writing loops",
+          "Declaring variables"
+        ]
+      },
+      "explain": {
+        "tr": "Dosya ve veritabanı bağlantıları hata olsa bile kapatılır.",
+        "en": "Files and database connections are closed even if an error occurs."
+      }
+    },
+    {
+      "id": "csharp:university:006",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "int a = 5;\nint b = a;\nb = 10;\nConsole.WriteLine(a);",
+      "options": {
+        "tr": [
+          "5",
+          "10",
+          "0",
+          "Hata"
+        ],
+        "en": [
+          "5",
+          "10",
+          "0",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "int değer tipidir; b’ye kopya atanır, a değişmez.",
+        "en": "int is a value type; b gets a copy, so a does not change."
+      }
+    },
+    {
+      "id": "csharp:university:007",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Bir metodun işlemi beklerken iş parçacığını bloke etmemesi için hangi anahtar kelimeler kullanılır?",
+        "en": "Which keywords let a method wait without blocking the thread?"
+      },
+      "options": {
+        "tr": [
+          "async / await",
+          "lock / unlock",
+          "try / catch",
+          "get / set"
+        ],
+        "en": [
+          "async / await",
+          "lock / unlock",
+          "try / catch",
+          "get / set"
+        ]
+      },
+      "explain": {
+        "tr": "await, Task tamamlanana kadar metodu askıya alır; arayüz donmaz.",
+        "en": "await suspends the method until the Task completes, so the UI stays responsive."
+      }
+    },
+    {
+      "id": "csharp:university:008",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "C#’ta null olabilecek bir int nasıl tanımlanır?",
+        "en": "How do you declare an int that can be null in C#?"
+      },
+      "options": {
+        "tr": [
+          "int?",
+          "int!",
+          "null int",
+          "int[]"
+        ],
+        "en": [
+          "int?",
+          "int!",
+          "null int",
+          "int[]"
+        ]
+      },
+      "explain": {
+        "tr": "int? aslında Nullable<int>’in kısaltmasıdır.",
+        "en": "int? is short for Nullable<int>."
+      }
+    },
+    {
+      "id": "csharp:masters:001",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "C#’ta Span<T>’nin temel faydası nedir?",
+        "en": "What is the main benefit of Span<T> in C#?"
+      },
+      "options": {
+        "tr": [
+          "Bellek kopyalamadan bir dizinin bir bölümüyle çalışmak",
+          "Dizileri otomatik sıralamak",
+          "Veritabanına bağlanmak",
+          "Çoklu kalıtım sağlamak"
+        ],
+        "en": [
+          "Working with part of an array without copying",
+          "Sorting arrays automatically",
+          "Connecting to databases",
+          "Multiple inheritance"
+        ]
+      },
+      "explain": {
+        "tr": "Span yığın (stack) üzerinde yaşayan, kopyasız bir bellek görünümüdür.",
+        "en": "Span is a copy-free view over memory that lives on the stack."
+      }
+    },
+    {
+      "id": "csharp:masters:002",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": ".NET’te çöp toplayıcı (GC) nesneleri neden kuşaklara (generation 0, 1, 2) ayırır?",
+        "en": "Why does the .NET garbage collector split objects into generations?"
+      },
+      "options": {
+        "tr": [
+          "Kısa ömürlü nesneleri daha sık ve hızlı toplamak için",
+          "Nesneleri diske yazmak için",
+          "Kalıtımı yönetmek için",
+          "İş parçacıklarını sıralamak için"
+        ],
+        "en": [
+          "To collect short-lived objects more often and cheaply",
+          "To write objects to disk",
+          "To manage inheritance",
+          "To schedule threads"
+        ]
+      },
+      "explain": {
+        "tr": "Çoğu nesne kısa ömürlüdür; genç kuşak sık, yaşlı kuşak seyrek taranır.",
+        "en": "Most objects die young, so young generations are collected often and old ones rarely."
+      }
+    },
+    {
+      "id": "csharp:masters:003",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "var a = new List<int>();\nvar b = a;\nb.Add(42);\nConsole.WriteLine($\"{a.Count} {b.Count}\");",
+      "options": {
+        "tr": [
+          "1 1",
+          "0 1",
+          "1 0",
+          "Hata"
+        ],
+        "en": [
+          "1 1",
+          "0 1",
+          "1 0",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Liste bir referans tiptir; b ve a aynı listeyi gösterir.",
+        "en": "List is a reference type; a and b point to the same list."
+      }
+    },
+    {
+      "id": "csharp:masters:004",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "LINQ sorgularının \"ertelenmiş çalıştırma\" (deferred execution) özelliği ne demektir?",
+        "en": "What does deferred execution mean for LINQ queries?"
+      },
+      "options": {
+        "tr": [
+          "Sorgu, sonuç numaralandırılana kadar çalışmaz",
+          "Sorgu hemen iki kez çalışır",
+          "Sorgu sadece derleme anında çalışır",
+          "Sorgu arka planda sürekli çalışır"
+        ],
+        "en": [
+          "The query runs only when the results are enumerated",
+          "The query runs twice immediately",
+          "The query runs at compile time",
+          "The query keeps running in the background"
+        ]
+      },
+      "explain": {
+        "tr": "ToList() gibi bir çağrı sorguyu o anda çalıştırır.",
+        "en": "Calling ToList() makes the query run at that moment."
+      }
+    },
+    {
+      "id": "csharp:masters:005",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "async metotlarda ConfigureAwait(false) ne işe yarar?",
+        "en": "What does ConfigureAwait(false) do in async methods?"
+      },
+      "options": {
+        "tr": [
+          "Devamın orijinal senkronizasyon bağlamına dönmesini gerektirmez",
+          "Görevi iptal eder",
+          "Görevi senkron yapar",
+          "Hataları gizler"
+        ],
+        "en": [
+          "The continuation does not need to return to the original context",
+          "Cancels the task",
+          "Makes it synchronous",
+          "Hides exceptions"
+        ]
+      },
+      "explain": {
+        "tr": "Kütüphane kodunda kilitlenme riskini ve gereksiz bağlam geçişini azaltır.",
+        "en": "In library code it avoids deadlocks and needless context switches."
+      }
+    },
+    {
+      "id": "csharp:masters:006",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "record tipi class’tan hangi açıdan farklıdır?",
+        "en": "How does a record differ from a class?"
+      },
+      "options": {
+        "tr": [
+          "Değer tabanlı eşitlik ve değiştirilemezlik için tasarlanmıştır",
+          "Metot içeremez",
+          "Kalıtım alamaz ve veremez",
+          "Sadece int tutar"
+        ],
+        "en": [
+          "It is designed for value-based equality and immutability",
+          "It cannot have methods",
+          "It cannot inherit",
+          "It only holds ints"
+        ]
+      },
+      "explain": {
+        "tr": "İki record aynı değerleri taşıyorsa == true döner; with ifadesiyle kopyalanır.",
+        "en": "Two records with the same values are == equal; they are copied with with-expressions."
+      }
+    },
+    {
+      "id": "csharp:masters:007",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Birden fazla iş parçacığının aynı sayacı güvenle artırması için en uygun yol hangisidir?",
+        "en": "What is the best way for several threads to increment the same counter safely?"
+      },
+      "options": {
+        "tr": [
+          "Interlocked.Increment",
+          "sayac++",
+          "Thread.Sleep",
+          "volatile olmayan statik alan"
+        ],
+        "en": [
+          "Interlocked.Increment",
+          "counter++",
+          "Thread.Sleep",
+          "A non-volatile static field"
+        ]
+      },
+      "explain": {
+        "tr": "counter++ atomik değildir; Interlocked işlemi tek adımda yapar.",
+        "en": "counter++ is not atomic; Interlocked does it in one step."
+      }
+    },
+    {
+      "id": "csharp:masters:008",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "C#’ta bir koleksiyonu tembel (lazy) olarak eleman eleman üretmek için ne kullanılır?",
+        "en": "In C#, what produces a sequence lazily, one item at a time?"
+      },
+      "options": {
+        "tr": [
+          "yield return",
+          "return new List",
+          "goto",
+          "params"
+        ],
+        "en": [
+          "yield return",
+          "return new List",
+          "goto",
+          "params"
+        ]
+      },
+      "explain": {
+        "tr": "yield return, IEnumerable<T> döndüren bir yineleyici oluşturur.",
+        "en": "yield return creates an iterator returning IEnumerable<T>."
+      }
+    }
+  ]
+}

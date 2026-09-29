@@ -1,0 +1,669 @@
+{
+  "topic": "javascript",
+  "questions": [
+    {
+      "id": "javascript:high:001",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "console.log(\"5\" + 3);",
+      "options": {
+        "tr": [
+          "53",
+          "8",
+          "NaN",
+          "Hata"
+        ],
+        "en": [
+          "53",
+          "8",
+          "NaN",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Metin + sayı işleminde sayı metne çevrilir ve yan yana eklenir.",
+        "en": "With a string and a number, + converts the number to text and joins them."
+      }
+    },
+    {
+      "id": "javascript:high:002",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "console.log(\"5\" - 3);",
+      "options": {
+        "tr": [
+          "2",
+          "53",
+          "NaN",
+          "Hata"
+        ],
+        "en": [
+          "2",
+          "53",
+          "NaN",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "- işleci metni sayıya çevirir: 5 - 3 = 2.",
+        "en": "The - operator converts the string to a number: 5 - 3 = 2."
+      }
+    },
+    {
+      "id": "javascript:high:003",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "JavaScript’te değeri sonradan değiştirilemeyen değişken hangi anahtar kelimeyle tanımlanır?",
+        "en": "Which keyword declares a variable that cannot be reassigned in JavaScript?"
+      },
+      "options": {
+        "tr": [
+          "const",
+          "let",
+          "var",
+          "static"
+        ],
+        "en": [
+          "const",
+          "let",
+          "var",
+          "static"
+        ]
+      },
+      "explain": {
+        "tr": "const ile tanımlanan değişkene yeni değer atanamaz.",
+        "en": "A const variable cannot be reassigned."
+      }
+    },
+    {
+      "id": "javascript:high:004",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "console.log(1 === \"1\");",
+      "options": {
+        "tr": [
+          "false",
+          "true",
+          "1",
+          "Hata"
+        ],
+        "en": [
+          "false",
+          "true",
+          "1",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "=== hem değeri hem tipi karşılaştırır; sayı ile metin farklı tiptedir.",
+        "en": "=== compares value and type; a number and a string are different types."
+      }
+    },
+    {
+      "id": "javascript:high:005",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "console.log([10, 20, 30].length);",
+      "options": {
+        "tr": [
+          "3",
+          "2",
+          "4",
+          "undefined"
+        ],
+        "en": [
+          "3",
+          "2",
+          "4",
+          "undefined"
+        ]
+      },
+      "explain": {
+        "tr": "length dizideki eleman sayısını verir.",
+        "en": "length gives the number of items in the array."
+      }
+    },
+    {
+      "id": "javascript:high:006",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Tarayıcıda bir HTML öğesini kimliğiyle (id) bulan metot hangisidir?",
+        "en": "Which method finds an HTML element by its id in the browser?"
+      },
+      "options": {
+        "tr": [
+          "document.getElementById()",
+          "document.findId()",
+          "window.getId()",
+          "html.select()"
+        ],
+        "en": [
+          "document.getElementById()",
+          "document.findId()",
+          "window.getId()",
+          "html.select()"
+        ]
+      },
+      "explain": {
+        "tr": "getElementById sayfadaki id’si verilen öğeyi döndürür.",
+        "en": "getElementById returns the element with the given id."
+      }
+    },
+    {
+      "id": "javascript:high:007",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "console.log([1, 2, 3].map((x) => x * 2).join(\", \"));",
+      "options": {
+        "tr": [
+          "2, 4, 6",
+          "1, 2, 3",
+          "6",
+          "undefined"
+        ],
+        "en": [
+          "2, 4, 6",
+          "1, 2, 3",
+          "6",
+          "undefined"
+        ]
+      },
+      "explain": {
+        "tr": "map her elemana fonksiyonu uygulayıp yeni dizi döndürür; join elemanları metne çevirir.",
+        "en": "map applies the function to each item and returns a new array; join turns it into text."
+      }
+    },
+    {
+      "id": "javascript:high:008",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Kullanıcı bir düğmeye tıkladığında kod çalıştırmak için hangi metot kullanılır?",
+        "en": "Which method runs code when the user clicks a button?"
+      },
+      "options": {
+        "tr": [
+          "addEventListener",
+          "setTimeout",
+          "querySelector",
+          "JSON.parse"
+        ],
+        "en": [
+          "addEventListener",
+          "setTimeout",
+          "querySelector",
+          "JSON.parse"
+        ]
+      },
+      "explain": {
+        "tr": "button.addEventListener(\"click\", fn) tıklamada fn’i çalıştırır.",
+        "en": "button.addEventListener(\"click\", fn) runs fn on click."
+      }
+    },
+    {
+      "id": "javascript:university:001",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "const out = [];\nout.push(1);\nsetTimeout(() => {\n  out.push(2);\n  console.log(out.join(\" \"));\n}, 0);\nout.push(3);",
+      "options": {
+        "tr": [
+          "1 3 2",
+          "1 2 3",
+          "3 2 1",
+          "2 1 3"
+        ],
+        "en": [
+          "1 3 2",
+          "1 2 3",
+          "3 2 1",
+          "2 1 3"
+        ]
+      },
+      "explain": {
+        "tr": "setTimeout 0 ms olsa bile geri çağrı, mevcut kod bittikten sonra olay döngüsünde çalışır.",
+        "en": "Even with 0 ms, the setTimeout callback runs after the current code, via the event loop."
+      }
+    },
+    {
+      "id": "javascript:university:002",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "console.log(typeof null);",
+      "options": {
+        "tr": [
+          "object",
+          "null",
+          "undefined",
+          "number"
+        ],
+        "en": [
+          "object",
+          "null",
+          "undefined",
+          "number"
+        ]
+      },
+      "explain": {
+        "tr": "typeof null \"object\" döndürür; bu, dilin ilk sürümünden kalma bilinen bir tuhaflıktır.",
+        "en": "typeof null is \"object\"; it is a well-known quirk from the first version of the language."
+      }
+    },
+    {
+      "id": "javascript:university:003",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "const out = [];\nfor (var i = 0; i < 3; i++) {\n  setTimeout(() => {\n    out.push(i);\n    if (out.length === 3) console.log(out.join(\" \"));\n  });\n}",
+      "options": {
+        "tr": [
+          "3 3 3",
+          "0 1 2",
+          "0 0 0",
+          "2 2 2"
+        ],
+        "en": [
+          "3 3 3",
+          "0 1 2",
+          "0 0 0",
+          "2 2 2"
+        ]
+      },
+      "explain": {
+        "tr": "var fonksiyon kapsamlıdır; üç geri çağrı da döngü bittikten sonra aynı i’yi (3) okur. let kullanılsaydı 0 1 2 olurdu.",
+        "en": "var is function-scoped, so all callbacks read the same i (3) after the loop; with let it would be 0 1 2."
+      }
+    },
+    {
+      "id": "javascript:university:004",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Bir Promise’in sonucunu beklemek için async fonksiyon içinde hangi anahtar kelime kullanılır?",
+        "en": "Which keyword waits for a Promise inside an async function?"
+      },
+      "options": {
+        "tr": [
+          "await",
+          "yield",
+          "defer",
+          "wait"
+        ],
+        "en": [
+          "await",
+          "yield",
+          "defer",
+          "wait"
+        ]
+      },
+      "explain": {
+        "tr": "await, Promise tamamlanana kadar fonksiyonun devamını bekletir.",
+        "en": "await pauses the function until the Promise settles."
+      }
+    },
+    {
+      "id": "javascript:university:005",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "console.log([1, 2, 3].reduce((sum, x) => sum + x, 0));",
+      "options": {
+        "tr": [
+          "6",
+          "123",
+          "[1, 2, 3]",
+          "undefined"
+        ],
+        "en": [
+          "6",
+          "123",
+          "[1, 2, 3]",
+          "undefined"
+        ]
+      },
+      "explain": {
+        "tr": "reduce elemanları toplayarak tek bir değere indirir: 0 + 1 + 2 + 3.",
+        "en": "reduce folds the items into one value: 0 + 1 + 2 + 3."
+      }
+    },
+    {
+      "id": "javascript:university:006",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "console.log([10, 1, 2].sort().join(\", \"));",
+      "options": {
+        "tr": [
+          "1, 10, 2",
+          "1, 2, 10",
+          "10, 2, 1",
+          "Hata"
+        ],
+        "en": [
+          "1, 10, 2",
+          "1, 2, 10",
+          "10, 2, 1",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Karşılaştırma fonksiyonu olmadan sort sayıları metin gibi sıralar: \"1\" < \"10\" < \"2\". Doğrusu sort((a, b) => a - b).",
+        "en": "Without a compare function, sort compares numbers as strings: \"1\" < \"10\" < \"2\". Use sort((a, b) => a - b)."
+      }
+    },
+    {
+      "id": "javascript:university:007",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Kullanıcı verisini sayfaya yazarken XSS’i önlemek için hangisi tercih edilir?",
+        "en": "Which is preferred to avoid XSS when writing user data to a page?"
+      },
+      "options": {
+        "tr": [
+          "textContent",
+          "innerHTML",
+          "document.write",
+          "eval"
+        ],
+        "en": [
+          "textContent",
+          "innerHTML",
+          "document.write",
+          "eval"
+        ]
+      },
+      "explain": {
+        "tr": "textContent veriyi düz metin olarak yazar; HTML ya da script olarak çalıştırmaz.",
+        "en": "textContent writes plain text; it never runs it as HTML or script."
+      }
+    },
+    {
+      "id": "javascript:university:008",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "const base = { a: 1, b: 2 };\nconsole.log(JSON.stringify({ ...base, b: 3 }));",
+      "options": {
+        "tr": [
+          "{\"a\":1,\"b\":3}",
+          "{\"a\":1,\"b\":2}",
+          "{\"b\":3}",
+          "Hata"
+        ],
+        "en": [
+          "{\"a\":1,\"b\":3}",
+          "{\"a\":1,\"b\":2}",
+          "{\"b\":3}",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Yayma (spread) ile sonradan gelen b değeri öncekinin üzerine yazar.",
+        "en": "With spread, the later b overwrites the earlier one."
+      }
+    },
+    {
+      "id": "javascript:masters:001",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "const out = [];\nout.push(\"A\");\nsetTimeout(() => {\n  out.push(\"B\");\n  console.log(out.join(\" \"));\n}, 0);\nPromise.resolve().then(() => out.push(\"C\"));\nout.push(\"D\");",
+      "options": {
+        "tr": [
+          "A D C B",
+          "A B C D",
+          "A D B C",
+          "A C D B"
+        ],
+        "en": [
+          "A D C B",
+          "A B C D",
+          "A D B C",
+          "A C D B"
+        ]
+      },
+      "explain": {
+        "tr": "Senkron kod önce çalışır (A, D); sonra mikro görev (Promise, C), en son makro görev (setTimeout, B).",
+        "en": "Synchronous code runs first (A, D), then microtasks (Promise, C), then macrotasks (setTimeout, B)."
+      }
+    },
+    {
+      "id": "javascript:masters:002",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "console.log(NaN === NaN, Object.is(NaN, NaN));",
+      "options": {
+        "tr": [
+          "false true",
+          "true true",
+          "false false",
+          "true false"
+        ],
+        "en": [
+          "false true",
+          "true true",
+          "false false",
+          "true false"
+        ]
+      },
+      "explain": {
+        "tr": "NaN kendisine bile eşit değildir; Object.is ise NaN’ı NaN’a eşit sayar.",
+        "en": "NaN is not equal even to itself; Object.is treats NaN as equal to NaN."
+      }
+    },
+    {
+      "id": "javascript:masters:003",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "console.log(0.1 + 0.2);",
+      "options": {
+        "tr": [
+          "0.30000000000000004",
+          "0.3",
+          "0.30",
+          "Hata"
+        ],
+        "en": [
+          "0.30000000000000004",
+          "0.3",
+          "0.30",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Sayılar IEEE 754 ikili kayan nokta ile saklanır; 0.1 ve 0.2 tam olarak temsil edilemez.",
+        "en": "Numbers are IEEE 754 binary floating point; 0.1 and 0.2 cannot be represented exactly."
+      }
+    },
+    {
+      "id": "javascript:masters:004",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Bir nesnenin özelliklerine erişimi yakalayıp değiştirmeye yarayan yerleşik yapı hangisidir?",
+        "en": "Which built-in lets you intercept and customise property access on an object?"
+      },
+      "options": {
+        "tr": [
+          "Proxy",
+          "Symbol",
+          "WeakMap",
+          "Generator"
+        ],
+        "en": [
+          "Proxy",
+          "Symbol",
+          "WeakMap",
+          "Generator"
+        ]
+      },
+      "explain": {
+        "tr": "Proxy, get/set gibi işlemler için “tuzak” (trap) fonksiyonları tanımlamayı sağlar.",
+        "en": "Proxy lets you define traps for operations such as get and set."
+      }
+    },
+    {
+      "id": "javascript:masters:005",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "WeakMap’in Map’ten temel farkı nedir?",
+        "en": "What is the key difference between WeakMap and Map?"
+      },
+      "options": {
+        "tr": [
+          "Anahtarlar zayıf tutulur; başka referans kalmazsa çöp toplanabilir",
+          "Daha hızlı sıralama yapar",
+          "Anahtarlar sadece metin olabilir",
+          "Elemanları kalıcı olarak diske yazar"
+        ],
+        "en": [
+          "Keys are held weakly and can be garbage-collected",
+          "It sorts faster",
+          "Keys must be strings",
+          "It writes items to disk"
+        ]
+      },
+      "explain": {
+        "tr": "WeakMap anahtarları nesnedir ve bellek sızıntısını önlemek için zayıf tutulur.",
+        "en": "WeakMap keys are objects held weakly to avoid memory leaks."
+      }
+    },
+    {
+      "id": "javascript:masters:006",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "function counter() {\n  let count = 0;\n  return () => ++count;\n}\nconst a = counter();\nconst b = counter();\nb();\nconsole.log(a(), b());",
+      "options": {
+        "tr": [
+          "1 2",
+          "2 2",
+          "1 1",
+          "undefined 2"
+        ],
+        "en": [
+          "1 2",
+          "2 2",
+          "1 1",
+          "undefined 2"
+        ]
+      },
+      "explain": {
+        "tr": "Her çağrı kendi count değişkenini kapatır (closure); iki ayrı sayaç bağımsızdır, ikinci sayaç iki kez artar.",
+        "en": "Each call closes over its own count; the counters are independent, and the second one is incremented twice."
+      }
+    },
+    {
+      "id": "javascript:masters:007",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "JavaScript’te bir modülü yalnızca ihtiyaç anında yüklemek için ne kullanılır?",
+        "en": "What loads a JavaScript module only when needed?"
+      },
+      "options": {
+        "tr": [
+          "import() (dinamik import)",
+          "require.cache",
+          "eval",
+          "document.write"
+        ],
+        "en": [
+          "import() (dynamic import)",
+          "require.cache",
+          "eval",
+          "document.write"
+        ]
+      },
+      "explain": {
+        "tr": "import(\"./modul.js\") bir Promise döndürür ve modülü o anda indirir.",
+        "en": "import(\"./module.js\") returns a Promise and loads the module at that moment."
+      }
+    },
+    {
+      "id": "javascript:masters:008",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "\"use strict\";\nconst user = {\n  name: \"Ada\",\n  greet: () => this?.name,\n};\nconsole.log(user.greet());",
+      "options": {
+        "tr": [
+          "undefined",
+          "Ada",
+          "null",
+          "Hata"
+        ],
+        "en": [
+          "undefined",
+          "Ada",
+          "null",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Ok fonksiyonları kendi this’ini almaz; burada this modül kapsamındaki undefined’dır ve ?. hatayı önler.",
+        "en": "Arrow functions do not get their own this; here this is undefined at module level and ?. avoids an error."
+      }
+    }
+  ]
+}

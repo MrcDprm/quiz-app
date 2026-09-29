@@ -1,0 +1,869 @@
+{
+  "topic": "html-css",
+  "questions": [
+    {
+      "id": "html-css:middle:001",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "HTML’nin açılımındaki \"M\" harfi neyi ifade eder?",
+        "en": "What does the “M” in HTML stand for?"
+      },
+      "options": {
+        "tr": [
+          "Markup (işaretleme)",
+          "Machine (makine)",
+          "Memory (bellek)",
+          "Media (medya)"
+        ],
+        "en": [
+          "Markup",
+          "Machine",
+          "Memory",
+          "Media"
+        ]
+      },
+      "explain": {
+        "tr": "HTML: HyperText Markup Language, yani hiper metin işaretleme dili.",
+        "en": "HTML stands for HyperText Markup Language."
+      }
+    },
+    {
+      "id": "html-css:middle:002",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Bir web sayfasına bağlantı (link) eklemek için hangi etiket kullanılır?",
+        "en": "Which tag adds a link to a web page?"
+      },
+      "options": {
+        "tr": [
+          "<a>",
+          "<link>",
+          "<p>",
+          "<img>"
+        ],
+        "en": [
+          "<a>",
+          "<link>",
+          "<p>",
+          "<img>"
+        ]
+      },
+      "explain": {
+        "tr": "<a href=\"...\"> tıklanabilir bir bağlantı oluşturur.",
+        "en": "<a href=\"...\"> creates a clickable link."
+      }
+    },
+    {
+      "id": "html-css:middle:003",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Sayfaya resim eklemek için hangi etiket kullanılır?",
+        "en": "Which tag adds an image to a page?"
+      },
+      "options": {
+        "tr": [
+          "<img>",
+          "<pic>",
+          "<image>",
+          "<src>"
+        ],
+        "en": [
+          "<img>",
+          "<pic>",
+          "<image>",
+          "<src>"
+        ]
+      },
+      "explain": {
+        "tr": "<img src=\"resim.png\" alt=\"açıklama\"> sayfaya resim ekler.",
+        "en": "<img src=\"picture.png\" alt=\"description\"> adds an image."
+      }
+    },
+    {
+      "id": "html-css:middle:004",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "En büyük başlık etiketi hangisidir?",
+        "en": "Which is the largest heading tag?"
+      },
+      "options": {
+        "tr": [
+          "<h1>",
+          "<h6>",
+          "<head>",
+          "<title>"
+        ],
+        "en": [
+          "<h1>",
+          "<h6>",
+          "<head>",
+          "<title>"
+        ]
+      },
+      "explain": {
+        "tr": "Başlıklar <h1>’den <h6>’ya küçülür.",
+        "en": "Headings get smaller from <h1> to <h6>."
+      }
+    },
+    {
+      "id": "html-css:middle:005",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Web sayfasının renk ve yazı tipi gibi görünüşünü hangi dil belirler?",
+        "en": "Which language controls the look of a web page, such as colours and fonts?"
+      },
+      "options": {
+        "tr": [
+          "CSS",
+          "HTML",
+          "SQL",
+          "Python"
+        ],
+        "en": [
+          "CSS",
+          "HTML",
+          "SQL",
+          "Python"
+        ]
+      },
+      "explain": {
+        "tr": "HTML yapıyı, CSS görünüşü, JavaScript davranışı belirler.",
+        "en": "HTML gives structure, CSS gives style and JavaScript gives behaviour."
+      }
+    },
+    {
+      "id": "html-css:middle:006",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Numarasız (madde işaretli) liste hangi etiketle oluşturulur?",
+        "en": "Which tag creates a bulleted (unordered) list?"
+      },
+      "options": {
+        "tr": [
+          "<ul>",
+          "<ol>",
+          "<li>",
+          "<list>"
+        ],
+        "en": [
+          "<ul>",
+          "<ol>",
+          "<li>",
+          "<list>"
+        ]
+      },
+      "explain": {
+        "tr": "<ul> madde işaretli, <ol> numaralı listedir; maddeler <li> ile yazılır.",
+        "en": "<ul> is bulleted and <ol> is numbered; items use <li>."
+      }
+    },
+    {
+      "id": "html-css:middle:007",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "CSS’te yazının rengini değiştiren özellik hangisidir?",
+        "en": "Which CSS property changes the text colour?"
+      },
+      "options": {
+        "tr": [
+          "color",
+          "background",
+          "font-color",
+          "text-style"
+        ],
+        "en": [
+          "color",
+          "background",
+          "font-color",
+          "text-style"
+        ]
+      },
+      "explain": {
+        "tr": "color: red; yazıyı kırmızı yapar.",
+        "en": "color: red; makes the text red."
+      }
+    },
+    {
+      "id": "html-css:middle:008",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Resmin yüklenemediği durumda gösterilen ve ekran okuyucuların okuduğu özellik hangisidir?",
+        "en": "Which attribute describes an image for screen readers and when it fails to load?"
+      },
+      "options": {
+        "tr": [
+          "alt",
+          "src",
+          "title",
+          "href"
+        ],
+        "en": [
+          "alt",
+          "src",
+          "title",
+          "href"
+        ]
+      },
+      "explain": {
+        "tr": "alt metni erişilebilirlik için zorunludur.",
+        "en": "Alt text is essential for accessibility."
+      }
+    },
+    {
+      "id": "html-css:high:001",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "CSS’te id seçicisi hangi karakterle yazılır?",
+        "en": "Which character starts an id selector in CSS?"
+      },
+      "options": {
+        "tr": [
+          "#",
+          ".",
+          "*",
+          "@"
+        ],
+        "en": [
+          "#",
+          ".",
+          "*",
+          "@"
+        ]
+      },
+      "explain": {
+        "tr": "#menu id’si \"menu\" olan öğeyi, .menu ise \"menu\" sınıfındakileri seçer.",
+        "en": "#menu selects the element with id \"menu\"; .menu selects elements with that class."
+      }
+    },
+    {
+      "id": "html-css:high:002",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Kutu modelinde (box model) içerik ile kenarlık (border) arasındaki boşluğa ne denir?",
+        "en": "In the box model, what is the space between the content and the border?"
+      },
+      "options": {
+        "tr": [
+          "padding",
+          "margin",
+          "outline",
+          "gap"
+        ],
+        "en": [
+          "padding",
+          "margin",
+          "outline",
+          "gap"
+        ]
+      },
+      "explain": {
+        "tr": "padding içeride, margin kenarlığın dışında kalan boşluktur.",
+        "en": "padding is inside the border; margin is outside it."
+      }
+    },
+    {
+      "id": "html-css:high:003",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Öğeleri tek bir satırda ya da sütunda kolayca hizalamak için hangi CSS düzeni kullanılır?",
+        "en": "Which CSS layout arranges items easily in a single row or column?"
+      },
+      "options": {
+        "tr": [
+          "Flexbox",
+          "Float",
+          "Table",
+          "Position: absolute"
+        ],
+        "en": [
+          "Flexbox",
+          "Float",
+          "Table",
+          "Position: absolute"
+        ]
+      },
+      "explain": {
+        "tr": "display: flex tek boyutlu hizalama için tasarlanmıştır.",
+        "en": "display: flex is designed for one-dimensional alignment."
+      }
+    },
+    {
+      "id": "html-css:high:004",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Sayfanın telefon gibi dar ekranlarda farklı görünmesini sağlayan CSS yapısı hangisidir?",
+        "en": "Which CSS feature makes a page look different on narrow screens such as phones?"
+      },
+      "options": {
+        "tr": [
+          "Medya sorgusu (@media)",
+          "@import",
+          "!important",
+          "z-index"
+        ],
+        "en": [
+          "Media query (@media)",
+          "@import",
+          "!important",
+          "z-index"
+        ]
+      },
+      "explain": {
+        "tr": "@media (max-width: 600px) { ... } dar ekranlara özel kurallar tanımlar.",
+        "en": "@media (max-width: 600px) { ... } defines rules for narrow screens."
+      }
+    },
+    {
+      "id": "html-css:high:005",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir form alanının etiketini ekran okuyuculara bağlayan etiket hangisidir?",
+        "en": "Which tag connects a text label to a form field for screen readers?"
+      },
+      "options": {
+        "tr": [
+          "<label for=\"...\">",
+          "<span>",
+          "<legend>",
+          "<caption>"
+        ],
+        "en": [
+          "<label for=\"...\">",
+          "<span>",
+          "<legend>",
+          "<caption>"
+        ]
+      },
+      "explain": {
+        "tr": "label’ın for değeri input’un id’siyle eşleşir; etikete tıklamak alanı da seçer.",
+        "en": "The label’s for value matches the input’s id; clicking the label focuses the field."
+      }
+    },
+    {
+      "id": "html-css:high:006",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "HTML5’te sayfanın ana içeriğini belirten anlamsal (semantic) etiket hangisidir?",
+        "en": "Which semantic HTML5 tag marks the main content of a page?"
+      },
+      "options": {
+        "tr": [
+          "<main>",
+          "<div>",
+          "<span>",
+          "<body>"
+        ],
+        "en": [
+          "<main>",
+          "<div>",
+          "<span>",
+          "<body>"
+        ]
+      },
+      "explain": {
+        "tr": "Anlamsal etiketler (<header>, <main>, <footer>) erişilebilirliği ve SEO’yu iyileştirir.",
+        "en": "Semantic tags (<header>, <main>, <footer>) improve accessibility and SEO."
+      }
+    },
+    {
+      "id": "html-css:high:007",
+      "level": "high",
+      "type": "order",
+      "q": {
+        "tr": "CSS seçicilerini özgüllüğü (specificity) düşükten yükseğe sırala.",
+        "en": "Order these CSS selectors from lowest to highest specificity."
+      },
+      "items": {
+        "tr": [
+          "p",
+          ".note",
+          "#intro",
+          "style=\"...\" (satır içi)"
+        ],
+        "en": [
+          "p",
+          ".note",
+          "#intro",
+          "style=\"...\" (inline)"
+        ]
+      },
+      "explain": {
+        "tr": "Etiket < sınıf < id < satır içi stil.",
+        "en": "Element < class < id < inline style."
+      }
+    },
+    {
+      "id": "html-css:high:008",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir öğeyi gizleyip yerini de boşaltan CSS kuralı hangisidir?",
+        "en": "Which CSS rule hides an element and removes the space it took?"
+      },
+      "options": {
+        "tr": [
+          "display: none",
+          "visibility: hidden",
+          "opacity: 0",
+          "color: transparent"
+        ],
+        "en": [
+          "display: none",
+          "visibility: hidden",
+          "opacity: 0",
+          "color: transparent"
+        ]
+      },
+      "explain": {
+        "tr": "visibility: hidden ve opacity: 0 öğeyi görünmez yapar ama yeri kalır.",
+        "en": "visibility: hidden and opacity: 0 make it invisible but keep its space."
+      }
+    },
+    {
+      "id": "html-css:university:001",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "İki boyutlu (satır ve sütun) düzenler için tasarlanmış CSS sistemi hangisidir?",
+        "en": "Which CSS system is designed for two-dimensional (row and column) layouts?"
+      },
+      "options": {
+        "tr": [
+          "CSS Grid",
+          "Flexbox",
+          "Float",
+          "Inline-block"
+        ],
+        "en": [
+          "CSS Grid",
+          "Flexbox",
+          "Float",
+          "Inline-block"
+        ]
+      },
+      "explain": {
+        "tr": "Grid satır ve sütunları birlikte kontrol eder; Flexbox tek eksenlidir.",
+        "en": "Grid controls rows and columns together; Flexbox works on one axis."
+      }
+    },
+    {
+      "id": "html-css:university:002",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "box-sizing: border-box ne değiştirir?",
+        "en": "What does box-sizing: border-box change?"
+      },
+      "options": {
+        "tr": [
+          "Genişliğe padding ve border da dahil edilir",
+          "Kenarlık kalınlaşır",
+          "Kutu yuvarlak olur",
+          "Taşan içerik gizlenir"
+        ],
+        "en": [
+          "Width includes padding and border",
+          "The border gets thicker",
+          "The box becomes round",
+          "Overflow is hidden"
+        ]
+      },
+      "explain": {
+        "tr": "Böylece width: 200px verilen kutu padding eklense de 200px kalır.",
+        "en": "A box with width: 200px stays 200px even with padding."
+      }
+    },
+    {
+      "id": "html-css:university:003",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "CSS değişkenleri (custom properties) nasıl tanımlanır?",
+        "en": "How are CSS custom properties defined?"
+      },
+      "options": {
+        "tr": [
+          "--renk: #333; ve var(--renk) ile kullanılır",
+          "$renk: #333;",
+          "@renk = #333;",
+          "let renk = #333;"
+        ],
+        "en": [
+          "--color: #333; and used with var(--color)",
+          "$color: #333;",
+          "@color = #333;",
+          "let color = #333;"
+        ]
+      },
+      "explain": {
+        "tr": "Tema geçişleri genellikle :root üzerindeki CSS değişkenleriyle yapılır.",
+        "en": "Theme switching is usually done with custom properties on :root."
+      }
+    },
+    {
+      "id": "html-css:university:004",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Klavye kullanıcıları için odaklanan öğeyi belirgin gösteren seçici hangisidir?",
+        "en": "Which selector highlights the focused element for keyboard users?"
+      },
+      "options": {
+        "tr": [
+          ":focus-visible",
+          ":hover",
+          ":active",
+          ":visited"
+        ],
+        "en": [
+          ":focus-visible",
+          ":hover",
+          ":active",
+          ":visited"
+        ]
+      },
+      "explain": {
+        "tr": ":focus-visible yalnızca klavyeyle gezinirken odak halkası gösterir.",
+        "en": ":focus-visible shows the focus ring mainly when navigating by keyboard."
+      }
+    },
+    {
+      "id": "html-css:university:005",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Ekran okuyucuya öğenin işlevini anlatmak için hangi özellik kullanılır?",
+        "en": "Which attribute tells a screen reader what an element is for?"
+      },
+      "options": {
+        "tr": [
+          "aria-label",
+          "data-label",
+          "title-text",
+          "alt-text"
+        ],
+        "en": [
+          "aria-label",
+          "data-label",
+          "title-text",
+          "alt-text"
+        ]
+      },
+      "explain": {
+        "tr": "ARIA özellikleri erişilebilirlik bilgisi ekler; mümkünse önce doğru HTML etiketi seçilmelidir.",
+        "en": "ARIA attributes add accessibility information; the right HTML element comes first."
+      }
+    },
+    {
+      "id": "html-css:university:006",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Content Security Policy (CSP) başlığı ne işe yarar?",
+        "en": "What does the Content Security Policy (CSP) header do?"
+      },
+      "options": {
+        "tr": [
+          "Sayfanın hangi kaynaklardan script, stil ve görsel yükleyebileceğini sınırlar",
+          "Sayfayı sıkıştırır",
+          "Çerezleri şifreler",
+          "Önbelleği temizler"
+        ],
+        "en": [
+          "Limits where the page may load scripts, styles and images from",
+          "Compresses the page",
+          "Encrypts cookies",
+          "Clears the cache"
+        ]
+      },
+      "explain": {
+        "tr": "CSP, XSS saldırılarında dışarıdan kod yüklenmesini zorlaştırır.",
+        "en": "CSP makes it harder for XSS attacks to load outside code."
+      }
+    },
+    {
+      "id": "html-css:university:007",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Kaydırınca belli bir noktada ekrana yapışan konumlandırma hangisidir?",
+        "en": "Which positioning sticks an element once you scroll past a point?"
+      },
+      "options": {
+        "tr": [
+          "position: sticky",
+          "position: static",
+          "position: relative",
+          "float: top"
+        ],
+        "en": [
+          "position: sticky",
+          "position: static",
+          "position: relative",
+          "float: top"
+        ]
+      },
+      "explain": {
+        "tr": "sticky, öğe belirlenen konuma gelince onu orada sabitler.",
+        "en": "sticky pins the element once it reaches the given offset."
+      }
+    },
+    {
+      "id": "html-css:university:008",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Kapsayıcının genişliğine göre stil değiştiren yeni CSS özelliği hangisidir?",
+        "en": "Which newer CSS feature changes styles based on the container’s width?"
+      },
+      "options": {
+        "tr": [
+          "Container query (@container)",
+          "Media query (@media)",
+          "@supports",
+          "@layer"
+        ],
+        "en": [
+          "Container query (@container)",
+          "Media query (@media)",
+          "@supports",
+          "@layer"
+        ]
+      },
+      "explain": {
+        "tr": "Container query, bileşenin yerleştiği alana göre uyum sağlar.",
+        "en": "Container queries adapt a component to the space it is placed in."
+      }
+    },
+    {
+      "id": "html-css:masters:001",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Tarayıcının sayfayı çizme sırası doğru hangisidir?",
+        "en": "What is the correct order of the browser rendering steps?"
+      },
+      "options": {
+        "tr": [
+          "DOM ve CSSOM → render tree → layout → paint → composite",
+          "Paint → layout → DOM → CSSOM",
+          "Layout → DOM → paint → CSSOM",
+          "Composite → paint → layout → DOM"
+        ],
+        "en": [
+          "DOM ve CSSOM → render tree → layout → paint → composite",
+          "Paint → layout → DOM → CSSOM",
+          "Layout → DOM → paint → CSSOM",
+          "Composite → paint → layout → DOM"
+        ]
+      },
+      "explain": {
+        "tr": "Kritik oluşturma yolu (critical rendering path) bu adımlardan oluşur.",
+        "en": "These steps form the critical rendering path."
+      }
+    },
+    {
+      "id": "html-css:masters:002",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Animasyonda yeniden yerleşim (reflow) tetiklemeden en performanslı özellikler hangileridir?",
+        "en": "Which properties animate most efficiently without triggering layout?"
+      },
+      "options": {
+        "tr": [
+          "transform ve opacity",
+          "width ve height",
+          "top ve left",
+          "margin ve padding"
+        ],
+        "en": [
+          "transform and opacity",
+          "width and height",
+          "top and left",
+          "margin and padding"
+        ]
+      },
+      "explain": {
+        "tr": "transform ve opacity yalnızca birleştirme (composite) aşamasını etkiler.",
+        "en": "transform and opacity only affect the composite step."
+      }
+    },
+    {
+      "id": "html-css:masters:003",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Cumulative Layout Shift (CLS) neyi ölçer?",
+        "en": "What does Cumulative Layout Shift (CLS) measure?"
+      },
+      "options": {
+        "tr": [
+          "Yükleme sırasında içeriğin beklenmedik kaymasını",
+          "Sayfanın indirme süresini",
+          "JavaScript hata sayısını",
+          "Sunucu gecikmesini"
+        ],
+        "en": [
+          "Unexpected movement of content during loading",
+          "Page download time",
+          "JavaScript errors",
+          "Server latency"
+        ]
+      },
+      "explain": {
+        "tr": "Resimlere boyut vermek ve yer ayırmak CLS’yi düşürür.",
+        "en": "Giving images dimensions and reserving space lowers CLS."
+      }
+    },
+    {
+      "id": "html-css:masters:004",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "CSS @layer kuralı neyi çözer?",
+        "en": "What problem does the CSS @layer rule solve?"
+      },
+      "options": {
+        "tr": [
+          "Stil katmanlarının öncelik sırasını açıkça belirlemeyi",
+          "Resimleri sıkıştırmayı",
+          "Yazı tiplerini yüklemeyi",
+          "Tarayıcı önbelleğini"
+        ],
+        "en": [
+          "Explicitly ordering the priority of style layers",
+          "Image compression",
+          "Font loading",
+          "Browser cache"
+        ]
+      },
+      "explain": {
+        "tr": "Cascade layers, özgüllük savaşları yerine katman sırasına göre öncelik verir.",
+        "en": "Cascade layers decide priority by layer order instead of specificity battles."
+      }
+    },
+    {
+      "id": "html-css:masters:005",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Shadow DOM’un Web Components’taki temel faydası nedir?",
+        "en": "What is the main benefit of Shadow DOM in Web Components?"
+      },
+      "options": {
+        "tr": [
+          "Bileşenin stil ve yapısını sayfanın geri kalanından yalıtması",
+          "Sayfayı daha hızlı indirmesi",
+          "SEO’yu otomatik iyileştirmesi",
+          "Veriyi şifrelemesi"
+        ],
+        "en": [
+          "Isolating the component’s styles and markup from the page",
+          "Faster downloads",
+          "Automatic SEO",
+          "Encrypting data"
+        ]
+      },
+      "explain": {
+        "tr": "Shadow DOM içindeki stiller dışarı sızmaz, dışarıdakiler de içeri girmez.",
+        "en": "Styles inside the shadow tree do not leak out, and outside styles do not leak in."
+      }
+    },
+    {
+      "id": "html-css:masters:006",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "rel=\"noopener\" neden target=\"_blank\" bağlantılarında kullanılır?",
+        "en": "Why is rel=\"noopener\" used with target=\"_blank\" links?"
+      },
+      "options": {
+        "tr": [
+          "Açılan sayfanın window.opener ile asıl sayfayı değiştirmesini engeller",
+          "Bağlantıyı hızlandırır",
+          "SEO puanını artırır",
+          "Bağlantıyı yeni pencerede açar"
+        ],
+        "en": [
+          "It stops the new page from controlling the original through window.opener",
+          "It speeds up the link",
+          "It boosts SEO",
+          "It opens a new window"
+        ]
+      },
+      "explain": {
+        "tr": "Bu, \"tabnabbing\" denen oltalama saldırısını önler.",
+        "en": "This prevents a phishing attack known as tabnabbing."
+      }
+    },
+    {
+      "id": "html-css:masters:007",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "WCAG’ye göre normal metin için en az kontrast oranı kaçtır (AA seviyesi)?",
+        "en": "Under WCAG, what is the minimum contrast ratio for normal text (level AA)?"
+      },
+      "options": {
+        "tr": [
+          "4.5:1",
+          "2:1",
+          "7:1",
+          "1.5:1"
+        ],
+        "en": [
+          "4.5:1",
+          "2:1",
+          "7:1",
+          "1.5:1"
+        ]
+      },
+      "explain": {
+        "tr": "AA için 4.5:1, büyük metin için 3:1, AAA için 7:1 gerekir.",
+        "en": "AA needs 4.5:1, large text 3:1, and AAA 7:1."
+      }
+    },
+    {
+      "id": "html-css:masters:008",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "srcset ve sizes özellikleri ne işe yarar?",
+        "en": "What are the srcset and sizes attributes for?"
+      },
+      "options": {
+        "tr": [
+          "Tarayıcının ekrana uygun boyutta resmi seçmesini sağlar",
+          "Resmi şifreler",
+          "Resme animasyon ekler",
+          "Resmi önbellekten siler"
+        ],
+        "en": [
+          "Letting the browser pick an image of the right size",
+          "Encrypting the image",
+          "Animating the image",
+          "Removing it from the cache"
+        ]
+      },
+      "explain": {
+        "tr": "Duyarlı resimler telefonlarda gereksiz büyük dosya indirilmesini önler.",
+        "en": "Responsive images stop phones from downloading oversized files."
+      }
+    }
+  ]
+}

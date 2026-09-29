@@ -1,0 +1,869 @@
+{
+  "topic": "algorithms",
+  "questions": [
+    {
+      "id": "algorithms:middle:001",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Sıralı bir listede aradığını her adımda ortadan ikiye bölerek bulan yönteme ne denir?",
+        "en": "What is the search method that halves a sorted list at each step?"
+      },
+      "options": {
+        "tr": [
+          "İkili arama",
+          "Doğrusal arama",
+          "Kabarcık sıralaması",
+          "Rastgele arama"
+        ],
+        "en": [
+          "Binary search",
+          "Linear search",
+          "Bubble sort",
+          "Random search"
+        ]
+      },
+      "explain": {
+        "tr": "İkili arama sadece sıralı verilerde çalışır ve çok hızlıdır.",
+        "en": "Binary search only works on sorted data and is very fast."
+      }
+    },
+    {
+      "id": "algorithms:middle:002",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Bir listede aranan elemanı baştan sona tek tek bakarak bulan yöntem hangisidir?",
+        "en": "Which method finds an item by checking every element from start to end?"
+      },
+      "options": {
+        "tr": [
+          "Doğrusal arama",
+          "İkili arama",
+          "Hızlı sıralama",
+          "Hash tablosu"
+        ],
+        "en": [
+          "Linear search",
+          "Binary search",
+          "Quicksort",
+          "Hash table"
+        ]
+      },
+      "explain": {
+        "tr": "Doğrusal arama sırasız listelerde de çalışır ama yavaştır.",
+        "en": "Linear search works on unsorted lists but is slow."
+      }
+    },
+    {
+      "id": "algorithms:middle:003",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Akış şemasında karar (evet/hayır) adımı hangi şekille gösterilir?",
+        "en": "Which shape shows a decision (yes/no) in a flowchart?"
+      },
+      "options": {
+        "tr": [
+          "Eşkenar dörtgen",
+          "Dikdörtgen",
+          "Oval",
+          "Paralelkenar"
+        ],
+        "en": [
+          "Diamond",
+          "Rectangle",
+          "Oval",
+          "Parallelogram"
+        ]
+      },
+      "explain": {
+        "tr": "Dikdörtgen işlem, oval başla/bitir, paralelkenar giriş/çıkış, eşkenar dörtgen karardır.",
+        "en": "Rectangle = process, oval = start/end, parallelogram = input/output, diamond = decision."
+      }
+    },
+    {
+      "id": "algorithms:middle:004",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "16 elemanlı sıralı bir listede ikili arama en fazla kaç karşılaştırmada sonuç verir?",
+        "en": "Binary search on a sorted list of 16 items needs at most how many comparisons?"
+      },
+      "options": {
+        "tr": [
+          "5",
+          "16",
+          "8",
+          "2"
+        ],
+        "en": [
+          "5",
+          "16",
+          "8",
+          "2"
+        ]
+      },
+      "explain": {
+        "tr": "Her adımda liste yarıya iner: 16 → 8 → 4 → 2 → 1, en fazla 5 karşılaştırma.",
+        "en": "Each step halves the list: 16 → 8 → 4 → 2 → 1, at most 5 comparisons."
+      }
+    },
+    {
+      "id": "algorithms:middle:005",
+      "level": "middle",
+      "type": "order",
+      "q": {
+        "tr": "Veri birimlerini küçükten büyüğe sırala.",
+        "en": "Order these units of data from smallest to largest."
+      },
+      "items": {
+        "tr": [
+          "Bit",
+          "Bayt",
+          "Kilobayt",
+          "Megabayt"
+        ],
+        "en": [
+          "Bit",
+          "Byte",
+          "Kilobyte",
+          "Megabyte"
+        ]
+      },
+      "explain": {
+        "tr": "8 bit = 1 bayt, 1024 bayt = 1 kilobayt, 1024 kilobayt = 1 megabayt.",
+        "en": "8 bits = 1 byte, 1024 bytes = 1 kilobyte, 1024 kilobytes = 1 megabyte."
+      }
+    },
+    {
+      "id": "algorithms:middle:006",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Yan yana duran iki elemanı karşılaştırıp gerekirse yer değiştiren basit sıralama hangisidir?",
+        "en": "Which simple sort compares neighbours and swaps them if needed?"
+      },
+      "options": {
+        "tr": [
+          "Kabarcık sıralaması",
+          "Birleştirme sıralaması",
+          "İkili arama",
+          "Yığın (heap) sıralaması"
+        ],
+        "en": [
+          "Bubble sort",
+          "Merge sort",
+          "Binary search",
+          "Heap sort"
+        ]
+      },
+      "explain": {
+        "tr": "Büyük elemanlar her turda baloncuk gibi sona doğru yükselir.",
+        "en": "Large items “bubble up” to the end on each pass."
+      }
+    },
+    {
+      "id": "algorithms:middle:007",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Bir problemi daha küçük ve çözmesi kolay alt problemlere bölmeye ne denir?",
+        "en": "What is splitting a problem into smaller, easier sub-problems called?"
+      },
+      "options": {
+        "tr": [
+          "Ayrıştırma",
+          "Derleme",
+          "Şifreleme",
+          "Sıkıştırma"
+        ],
+        "en": [
+          "Decomposition",
+          "Compilation",
+          "Encryption",
+          "Compression"
+        ]
+      },
+      "explain": {
+        "tr": "Ayrıştırma bilgisayarca düşünmenin temel adımlarından biridir.",
+        "en": "Decomposition is a core step of computational thinking."
+      }
+    },
+    {
+      "id": "algorithms:middle:008",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "İlk giren ilk çıkar (FIFO) mantığıyla çalışan veri yapısı hangisidir?",
+        "en": "Which data structure works first in, first out (FIFO)?"
+      },
+      "options": {
+        "tr": [
+          "Kuyruk",
+          "Yığın",
+          "Ağaç",
+          "Graf"
+        ],
+        "en": [
+          "Queue",
+          "Stack",
+          "Tree",
+          "Graph"
+        ]
+      },
+      "explain": {
+        "tr": "Kuyruk, markettaki sıra gibi çalışır: ilk gelen ilk çıkar.",
+        "en": "A queue works like a line at a shop: first come, first served."
+      }
+    },
+    {
+      "id": "algorithms:high:001",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Son giren ilk çıkar (LIFO) mantığıyla çalışan veri yapısı hangisidir?",
+        "en": "Which data structure works last in, first out (LIFO)?"
+      },
+      "options": {
+        "tr": [
+          "Yığın (stack)",
+          "Kuyruk",
+          "Bağlı liste",
+          "Hash tablosu"
+        ],
+        "en": [
+          "Stack",
+          "Queue",
+          "Linked list",
+          "Hash table"
+        ]
+      },
+      "explain": {
+        "tr": "Yığın, üst üste konan tabaklar gibidir: en son konan ilk alınır.",
+        "en": "A stack is like a pile of plates: the last one placed is taken first."
+      }
+    },
+    {
+      "id": "algorithms:high:002",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "İkili aramanın zaman karmaşıklığı nedir?",
+        "en": "What is the time complexity of binary search?"
+      },
+      "options": {
+        "tr": [
+          "O(log n)",
+          "O(n)",
+          "O(n²)",
+          "O(1)"
+        ],
+        "en": [
+          "O(log n)",
+          "O(n)",
+          "O(n²)",
+          "O(1)"
+        ]
+      },
+      "explain": {
+        "tr": "Her adımda arama alanı yarıya indiği için log₂ n adım yeter.",
+        "en": "The search space halves each step, so log₂ n steps are enough."
+      }
+    },
+    {
+      "id": "algorithms:high:003",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Kabarcık sıralamasının en kötü durumdaki zaman karmaşıklığı nedir?",
+        "en": "What is the worst-case time complexity of bubble sort?"
+      },
+      "options": {
+        "tr": [
+          "O(n²)",
+          "O(n log n)",
+          "O(n)",
+          "O(log n)"
+        ],
+        "en": [
+          "O(n²)",
+          "O(n log n)",
+          "O(n)",
+          "O(log n)"
+        ]
+      },
+      "explain": {
+        "tr": "İç içe iki döngü her elemanı diğerleriyle karşılaştırır.",
+        "en": "Two nested loops compare every item with the others."
+      }
+    },
+    {
+      "id": "algorithms:high:004",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Fibonacci dizisinde 1, 1, 2, 3, 5, 8’den sonra hangi sayı gelir?",
+        "en": "In the Fibonacci sequence 1, 1, 2, 3, 5, 8, which number comes next?"
+      },
+      "options": {
+        "tr": [
+          "13",
+          "11",
+          "16",
+          "10"
+        ],
+        "en": [
+          "13",
+          "11",
+          "16",
+          "10"
+        ]
+      },
+      "explain": {
+        "tr": "Her sayı önceki iki sayının toplamıdır: 5 + 8 = 13.",
+        "en": "Each number is the sum of the two before it: 5 + 8 = 13."
+      }
+    },
+    {
+      "id": "algorithms:high:005",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Her düğümün en fazla iki çocuğu olan ağaç yapısına ne denir?",
+        "en": "What is a tree where each node has at most two children called?"
+      },
+      "options": {
+        "tr": [
+          "İkili ağaç",
+          "Bağlı liste",
+          "Yığın",
+          "Kuyruk"
+        ],
+        "en": [
+          "Binary tree",
+          "Linked list",
+          "Stack",
+          "Queue"
+        ]
+      },
+      "explain": {
+        "tr": "İkili ağaçta düğümlerin sol ve sağ olmak üzere en fazla iki çocuğu vardır.",
+        "en": "In a binary tree each node has at most a left and a right child."
+      }
+    },
+    {
+      "id": "algorithms:high:006",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "n! (faktöriyel) hesaplayan özyinelemeli fonksiyonun durma koşulu genellikle nedir?",
+        "en": "What is the usual base case of a recursive factorial function?"
+      },
+      "options": {
+        "tr": [
+          "n 0 ya da 1 ise 1 döndür",
+          "n 10 ise dur",
+          "n negatifse n döndür",
+          "Durma koşulu gerekmez"
+        ],
+        "en": [
+          "If n is 0 or 1, return 1",
+          "Stop when n is 10",
+          "Return n if negative",
+          "No base case is needed"
+        ]
+      },
+      "explain": {
+        "tr": "Durma koşulu olmazsa fonksiyon kendini sonsuza kadar çağırır.",
+        "en": "Without a base case the function would call itself forever."
+      }
+    },
+    {
+      "id": "algorithms:high:007",
+      "level": "high",
+      "type": "order",
+      "q": {
+        "tr": "Zaman karmaşıklıklarını hızlıdan yavaşa sırala.",
+        "en": "Order these time complexities from fastest to slowest."
+      },
+      "items": {
+        "tr": [
+          "O(1)",
+          "O(log n)",
+          "O(n)",
+          "O(n²)"
+        ],
+        "en": [
+          "O(1)",
+          "O(log n)",
+          "O(n)",
+          "O(n²)"
+        ]
+      },
+      "explain": {
+        "tr": "Sabit < logaritmik < doğrusal < karesel.",
+        "en": "Constant < logarithmic < linear < quadratic."
+      }
+    },
+    {
+      "id": "algorithms:high:008",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Anahtara göre ortalama O(1) sürede erişim sağlayan veri yapısı hangisidir?",
+        "en": "Which data structure gives average O(1) access by key?"
+      },
+      "options": {
+        "tr": [
+          "Hash tablosu",
+          "Bağlı liste",
+          "Sıralı dizi",
+          "İkili ağaç"
+        ],
+        "en": [
+          "Hash table",
+          "Linked list",
+          "Sorted array",
+          "Binary tree"
+        ]
+      },
+      "explain": {
+        "tr": "Hash fonksiyonu anahtarı doğrudan bir konuma çevirir.",
+        "en": "A hash function turns the key directly into a position."
+      }
+    },
+    {
+      "id": "algorithms:university:001",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Birleştirme sıralamasının (merge sort) zaman karmaşıklığı nedir?",
+        "en": "What is the time complexity of merge sort?"
+      },
+      "options": {
+        "tr": [
+          "O(n log n)",
+          "O(n²)",
+          "O(n)",
+          "O(log n)"
+        ],
+        "en": [
+          "O(n log n)",
+          "O(n²)",
+          "O(n)",
+          "O(log n)"
+        ]
+      },
+      "explain": {
+        "tr": "Liste log n kez ikiye bölünür, her seviyede n eleman birleştirilir.",
+        "en": "The list is split log n times and n items are merged at each level."
+      }
+    },
+    {
+      "id": "algorithms:university:002",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Ağırlıklı ve negatif kenarı olmayan bir grafta en kısa yolu bulan algoritma hangisidir?",
+        "en": "Which algorithm finds shortest paths in a graph with non-negative edge weights?"
+      },
+      "options": {
+        "tr": [
+          "Dijkstra",
+          "Kruskal",
+          "Kabarcık sıralaması",
+          "KMP"
+        ],
+        "en": [
+          "Dijkstra",
+          "Kruskal",
+          "Kabarcık sıralaması",
+          "KMP"
+        ]
+      },
+      "explain": {
+        "tr": "Dijkstra en yakın ziyaret edilmemiş düğümden genişleyerek ilerler.",
+        "en": "Dijkstra expands from the closest unvisited node."
+      }
+    },
+    {
+      "id": "algorithms:university:003",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Minimum yayılan ağaç (MST) bulan algoritma hangisidir?",
+        "en": "Which algorithm finds a minimum spanning tree?"
+      },
+      "options": {
+        "tr": [
+          "Kruskal",
+          "Dijkstra",
+          "İkili arama",
+          "Floyd döngü algılama"
+        ],
+        "en": [
+          "Kruskal",
+          "Dijkstra",
+          "Binary search",
+          "Floyd cycle detection"
+        ]
+      },
+      "explain": {
+        "tr": "Kruskal kenarları ağırlığa göre sıralar ve döngü oluşturmayanları ekler.",
+        "en": "Kruskal sorts edges by weight and adds those that do not form a cycle."
+      }
+    },
+    {
+      "id": "algorithms:university:004",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Alt problemlerin sonuçlarını saklayıp tekrar hesaplamayı önleyen yönteme ne denir?",
+        "en": "What is the method that stores sub-problem results to avoid recomputing them?"
+      },
+      "options": {
+        "tr": [
+          "Dinamik programlama",
+          "Açgözlü algoritma",
+          "Kaba kuvvet",
+          "Geri izleme"
+        ],
+        "en": [
+          "Dynamic programming",
+          "Greedy algorithm",
+          "Brute force",
+          "Backtracking"
+        ]
+      },
+      "explain": {
+        "tr": "Dinamik programlama örtüşen alt problemleri bir kez çözer.",
+        "en": "Dynamic programming solves overlapping sub-problems once."
+      }
+    },
+    {
+      "id": "algorithms:university:005",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Bir grafı katman katman (önce komşular) gezen arama hangisidir?",
+        "en": "Which graph search visits nodes level by level (neighbours first)?"
+      },
+      "options": {
+        "tr": [
+          "Genişlik öncelikli arama (BFS)",
+          "Derinlik öncelikli arama (DFS)",
+          "İkili arama",
+          "A* olmayan rastgele arama"
+        ],
+        "en": [
+          "Breadth-first search (BFS)",
+          "Depth-first search (DFS)",
+          "Binary search",
+          "Random walk"
+        ]
+      },
+      "explain": {
+        "tr": "BFS kuyruk kullanır; ağırlıksız graflarda en kısa yolu bulur.",
+        "en": "BFS uses a queue and finds shortest paths in unweighted graphs."
+      }
+    },
+    {
+      "id": "algorithms:university:006",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Hızlı sıralamanın (quicksort) en kötü durumdaki zaman karmaşıklığı nedir?",
+        "en": "What is quicksort’s worst-case time complexity?"
+      },
+      "options": {
+        "tr": [
+          "O(n²)",
+          "O(n log n)",
+          "O(n)",
+          "O(log n)"
+        ],
+        "en": [
+          "O(n²)",
+          "O(n log n)",
+          "O(n)",
+          "O(log n)"
+        ]
+      },
+      "explain": {
+        "tr": "Pivot hep en küçük ya da en büyük seçilirse bölmeler dengesiz olur.",
+        "en": "If the pivot is always the smallest or largest, the partitions are unbalanced."
+      }
+    },
+    {
+      "id": "algorithms:university:007",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Yönlü döngüsüz bir grafta (DAG) bağımlılıklara göre sıralama yapan işleme ne denir?",
+        "en": "What is ordering the nodes of a DAG by their dependencies called?"
+      },
+      "options": {
+        "tr": [
+          "Topolojik sıralama",
+          "Kabarcık sıralaması",
+          "Hash’leme",
+          "Dengeleme"
+        ],
+        "en": [
+          "Topological sort",
+          "Bubble sort",
+          "Hashing",
+          "Balancing"
+        ]
+      },
+      "explain": {
+        "tr": "Topolojik sıralama, derleme sırası ya da ders ön koşulları gibi problemlerde kullanılır.",
+        "en": "Topological sort is used for build order or course prerequisites."
+      }
+    },
+    {
+      "id": "algorithms:university:008",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Dengeli bir ikili arama ağacında arama işleminin karmaşıklığı nedir?",
+        "en": "What is the search complexity in a balanced binary search tree?"
+      },
+      "options": {
+        "tr": [
+          "O(log n)",
+          "O(n)",
+          "O(1)",
+          "O(n²)"
+        ],
+        "en": [
+          "O(log n)",
+          "O(n)",
+          "O(1)",
+          "O(n²)"
+        ]
+      },
+      "explain": {
+        "tr": "Dengeli ağacın yüksekliği log n olduğu için arama log n adım sürer.",
+        "en": "A balanced tree has height log n, so search takes log n steps."
+      }
+    },
+    {
+      "id": "algorithms:masters:001",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "P = NP problemi neyi sorar?",
+        "en": "What does the P = NP question ask?"
+      },
+      "options": {
+        "tr": [
+          "Çözümü hızlı doğrulanabilen her problemin hızlı çözülüp çözülemeyeceğini",
+          "Her problemin çözülüp çözülemeyeceğini",
+          "Paralel bilgisayarların daha hızlı olup olmadığını",
+          "Özyinelemenin döngüden hızlı olup olmadığını"
+        ],
+        "en": [
+          "Whether every problem whose solution can be checked quickly can also be solved quickly",
+          "Whether every problem can be solved",
+          "Whether parallel computers are faster",
+          "Whether recursion is faster than loops"
+        ]
+      },
+      "explain": {
+        "tr": "Hâlâ çözülmemiş bu soru bilgisayar biliminin en ünlü açık problemidir.",
+        "en": "This is the most famous open problem in computer science."
+      }
+    },
+    {
+      "id": "algorithms:masters:002",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Aşağıdakilerden hangisi NP-tam bir problemdir?",
+        "en": "Which of these problems is NP-complete?"
+      },
+      "options": {
+        "tr": [
+          "Gezgin satıcı problemi (karar sürümü)",
+          "Sıralama",
+          "İkili arama",
+          "En kısa yol (Dijkstra)"
+        ],
+        "en": [
+          "Travelling salesman (decision version)",
+          "Sorting",
+          "Binary search",
+          "Shortest path (Dijkstra)"
+        ]
+      },
+      "explain": {
+        "tr": "Sıralama ve en kısa yol polinom zamanda çözülür; TSP’nin karar sürümü NP-tamdır.",
+        "en": "Sorting and shortest path are polynomial; the decision version of TSP is NP-complete."
+      }
+    },
+    {
+      "id": "algorithms:masters:003",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Karşılaştırmaya dayalı sıralama algoritmalarının alt sınırı nedir?",
+        "en": "What is the lower bound for comparison-based sorting?"
+      },
+      "options": {
+        "tr": [
+          "Ω(n log n)",
+          "Ω(n)",
+          "Ω(n²)",
+          "Ω(log n)"
+        ],
+        "en": [
+          "Ω(n log n)",
+          "Ω(n)",
+          "Ω(n²)",
+          "Ω(log n)"
+        ]
+      },
+      "explain": {
+        "tr": "n! sıralamayı ayırt etmek için log₂(n!) ≈ n log n karşılaştırma gerekir.",
+        "en": "Distinguishing n! orderings needs log₂(n!) ≈ n log n comparisons."
+      }
+    },
+    {
+      "id": "algorithms:masters:004",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Amortize analiz neyi ölçer?",
+        "en": "What does amortized analysis measure?"
+      },
+      "options": {
+        "tr": [
+          "Bir dizi işlemin işlem başına ortalama maliyetini",
+          "Sadece en iyi durumu",
+          "Bellek sızıntılarını",
+          "Paralel hızlanmayı"
+        ],
+        "en": [
+          "The average cost per operation over a sequence",
+          "Only the best case",
+          "Memory leaks",
+          "Parallel speed-up"
+        ]
+      },
+      "explain": {
+        "tr": "Örneğin dinamik diziye ekleme, arada bir büyüme olsa da amortize O(1)’dir.",
+        "en": "For example, appending to a dynamic array is amortized O(1) despite occasional resizing."
+      }
+    },
+    {
+      "id": "algorithms:masters:005",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Bellman-Ford algoritmasının Dijkstra’dan farkı nedir?",
+        "en": "How does Bellman-Ford differ from Dijkstra?"
+      },
+      "options": {
+        "tr": [
+          "Negatif ağırlıklı kenarlarla çalışabilir",
+          "Daha hızlıdır",
+          "Sadece ağaçlarda çalışır",
+          "Yönsüz graf gerektirir"
+        ],
+        "en": [
+          "It handles negative edge weights",
+          "It is faster",
+          "It only works on trees",
+          "It needs an undirected graph"
+        ]
+      },
+      "explain": {
+        "tr": "Bellman-Ford O(V·E) sürer ama negatif kenarlarla ve negatif döngü tespitiyle çalışır.",
+        "en": "Bellman-Ford takes O(V·E) but works with negative edges and detects negative cycles."
+      }
+    },
+    {
+      "id": "algorithms:masters:006",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Master teoremine göre T(n) = 2T(n/2) + n yinelemesinin çözümü nedir?",
+        "en": "By the master theorem, what is the solution of T(n) = 2T(n/2) + n?"
+      },
+      "options": {
+        "tr": [
+          "Θ(n log n)",
+          "Θ(n)",
+          "Θ(n²)",
+          "Θ(log n)"
+        ],
+        "en": [
+          "Θ(n log n)",
+          "Θ(n)",
+          "Θ(n²)",
+          "Θ(log n)"
+        ]
+      },
+      "explain": {
+        "tr": "a = 2, b = 2, f(n) = n = n^(log_b a) → Θ(n log n). Birleştirme sıralaması budur.",
+        "en": "a = 2, b = 2, f(n) = n = n^(log_b a) → Θ(n log n), as in merge sort."
+      }
+    },
+    {
+      "id": "algorithms:masters:007",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Bloom filtresinin özelliği nedir?",
+        "en": "What is a property of a Bloom filter?"
+      },
+      "options": {
+        "tr": [
+          "Yanlış pozitif verebilir ama yanlış negatif vermez",
+          "Hiç hata yapmaz",
+          "Yanlış negatif verebilir ama yanlış pozitif vermez",
+          "Elemanları sıralı tutar"
+        ],
+        "en": [
+          "It can give false positives but never false negatives",
+          "It never errs",
+          "It can give false negatives but never false positives",
+          "It keeps items sorted"
+        ]
+      },
+      "explain": {
+        "tr": "Az bellekle “kesinlikle yok” ya da “muhtemelen var” cevabı verir.",
+        "en": "It answers “definitely not” or “probably yes” using little memory."
+      }
+    },
+    {
+      "id": "algorithms:masters:008",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Bir yaklaşık algoritmanın yaklaşım oranı 2 ise ne anlama gelir?",
+        "en": "What does an approximation ratio of 2 mean?"
+      },
+      "options": {
+        "tr": [
+          "Bulunan çözüm en iyi çözümün en fazla 2 katı kötüdür",
+          "Algoritma 2 kat hızlıdır",
+          "Çözüm 2 adımda bulunur",
+          "Hata olasılığı %2’dir"
+        ],
+        "en": [
+          "The solution is at most twice as bad as the optimum",
+          "The algorithm is twice as fast",
+          "The solution takes 2 steps",
+          "The error chance is 2%"
+        ]
+      },
+      "explain": {
+        "tr": "Örneğin tepe örtüsü için basit eşleşme algoritması 2-yaklaşımdır.",
+        "en": "For example, the simple matching algorithm is a 2-approximation for vertex cover."
+      }
+    }
+  ]
+}
