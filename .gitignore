@@ -1,0 +1,15 @@
+# Node
+node_modules/
+
+# Vercel yerel ayarları
+.vercel/
+
+# Gizli bilgiler
+.env
+.env.local
+
+# Editör ve işletim sistemi dosyaları
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
