@@ -8,6 +8,7 @@ import { loadSettings, saveSettings, topicsOf } from './storage.js';
 import { translate } from './i18n.js';
 import { applyTheme, nextTheme } from './theme.js';
 import { post } from './api-client.js';
+import { enableDrag } from './order-drag.js';
 
 const browserLang = navigator.language?.toLowerCase().startsWith('tr') ? 'tr' : 'en';
 const settings = loadSettings(undefined, browserLang);
@@ -45,6 +46,7 @@ const el = {
   prompt: $('prompt'),
   code: $('code'),
   codeText: $('code-text'),
+  questionImage: $('question-image'),
   options: $('options'),
   order: $('order'),
   feedback: $('feedback'),
@@ -285,6 +287,9 @@ function renderQuestion() {
   el.roundCount.textContent = t('questionOf', { index: question.index + 1, total: question.total });
   el.roundScore.textContent = round.score;
   el.prompt.textContent = question.prompt;
+  el.questionImage.hidden = !question.image;
+  el.questionImage.alt = question.image ? t('flagAlt') : '';
+  if (question.image) el.questionImage.src = question.image;
   el.code.hidden = question.type !== 'code';
   el.codeText.textContent = question.code ?? '';
   el.feedback.replaceChildren();
@@ -321,8 +326,12 @@ function renderOrder() {
     ...round.order.map((itemIndex, position) => {
       const item = node('li', 'order-item');
       const text = items[itemIndex];
+      item.dataset.item = itemIndex;
       item.append(node('span', 'order-text', text));
       if (round.answered) return item; // cevaptan sonra taşıma düğmeleri gösterilmez
+      const handle = node('span', 'order-handle', '⠿');
+      handle.setAttribute('aria-hidden', 'true'); // klavye ve ekran okuyucu için ↑/↓ düğmeleri var
+      item.prepend(handle);
       const up = node('button', 'order-move', '↑');
       const down = node('button', 'order-move', '↓');
       for (const [button, step, label] of [[up, -1, 'moveUp'], [down, 1, 'moveDown']]) {
@@ -541,6 +550,12 @@ function showResult(summary) {
       const item = node('li', result.correct ? 'review-item good' : 'review-item bad');
       item.append(node('p', 'review-prompt', question.prompt));
       if (question.code) item.append(node('pre', 'code small', question.code));
+      if (question.image) {
+        const image = node('img', 'question-image small');
+        image.src = question.image;
+        image.alt = t('flagAlt');
+        item.append(image);
+      }
       if (!result.correct) item.append(node('p', 'review-line', `${t('yourAnswer')}: ${answerText(question, choice)}`));
       item.append(
         node('p', 'review-line', `${t('correctAnswer')}: ${answerText(question, result.answer)}`),
@@ -593,6 +608,11 @@ el.order.addEventListener('click', (event) => {
   if (button && !isBusy(button)) moveItem(Number(button.dataset.position), Number(button.dataset.step));
 });
 el.confirmOrder.addEventListener('click', () => submit([...round.order]));
+enableDrag(el.order, (order) => {
+  if (!round || round.answered) return;
+  round.order = order;
+  renderOrder();
+});
 el.next.addEventListener('click', goNext);
 el.jokerFifty.addEventListener('click', () => useJoker('fifty'));
 el.jokerTime.addEventListener('click', () => useJoker('time'));

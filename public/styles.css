@@ -663,6 +663,23 @@ select:hover {
   outline: none;
 }
 
+/* Bayrak sorusu: resim sorunun içinde data URL olarak gelir */
+.question-image {
+  display: block;
+  width: min(16rem, 70%);
+  aspect-ratio: 4 / 3;
+  margin: 0 auto 1.1rem;
+  border: 1px solid rgb(var(--c-line));
+  border-radius: 0.5rem;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.25);
+}
+.question-image.small {
+  width: 6rem;
+  margin: 0.4rem 0;
+  box-shadow: none;
+}
+
 .code {
   margin: 0 0 1rem;
   padding: 0.85rem 1rem;
@@ -766,6 +783,22 @@ select:hover {
 }
 .order-text {
   flex: 1;
+}
+/* Sürükleme tutamacı: dokunmatik ekranda sürüklerken sayfa kaymasın */
+.order-handle {
+  padding: 0.35rem 0.2rem;
+  color: rgb(var(--c-subtle));
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+.order-item.dragging {
+  border-color: rgb(var(--c-accent));
+  background: rgb(var(--c-accent) / 0.12);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.25);
+}
+.order-item.dragging .order-handle {
+  cursor: grabbing;
 }
 .order-move {
   width: 2.2rem;

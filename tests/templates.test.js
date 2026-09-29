@@ -123,3 +123,20 @@ test('maths answers are right', () => {
   assert.equal(equation.options[equation.answer], '5');
   assert.equal(generators.build('gen:hypotenuse:high:6.9', 3, 'en'), null);
 });
+
+test('flag questions carry the image and never the country code', async () => {
+  const { readGeneratedFiles } = await import('../lib/catalog.js');
+  const { toPublic } = await import('../lib/questions.js');
+  const real = createGenerators(await readGeneratedFiles());
+  const ids = real.pick('geography', 'primary', mulberry32(3), 40).filter((id) => id.startsWith('gen:flag:'));
+  assert.ok(ids.length > 0);
+  for (const id of ids) {
+    const question = real.build(id, 9, 'en');
+    const view = toPublic(question);
+    assert.equal(view.type, 'image');
+    assert.match(view.image, /^data:image\/svg\+xml;base64,/);
+    const svg = Buffer.from(view.image.split(',')[1], 'base64').toString('utf8');
+    const code = id.split(':').at(-1).toLowerCase();
+    assert.ok(!svg.includes('flag-icons') && !svg.includes(`id="${code}-`), id);
+  }
+});
