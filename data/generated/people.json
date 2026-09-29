@@ -1,0 +1,6721 @@
+{
+ "source": "Wikidata",
+ "license": "CC0-1.0",
+ "fetchedAt": "2026-09-29",
+ "items": [
+  {
+   "id": "Q868",
+   "name": {
+    "tr": "Aristoteles",
+    "en": "Aristotle"
+   },
+   "born": -384,
+   "groups": [
+    "philosopher"
+   ],
+   "fame": 319
+  },
+  {
+   "id": "Q7747",
+   "name": {
+    "tr": "Vladimir Putin",
+    "en": "Vladimir Putin"
+   },
+   "born": 1952,
+   "groups": [
+    "politician"
+   ],
+   "fame": 315
+  },
+  {
+   "id": "Q4604",
+   "name": {
+    "tr": "Konfüçyüs",
+    "en": "Confucius"
+   },
+   "born": -551,
+   "groups": [
+    "philosopher",
+    "writer"
+   ],
+   "fame": 313
+  },
+  {
+   "id": "Q935",
+   "name": {
+    "tr": "Isaac Newton",
+    "en": "Isaac Newton"
+   },
+   "born": 1643,
+   "groups": [
+    "scientist",
+    "philosopher"
+   ],
+   "fame": 303
+  },
+  {
+   "id": "Q859",
+   "name": {
+    "tr": "Platon",
+    "en": "Plato"
+   },
+   "born": -429,
+   "groups": [
+    "writer",
+    "philosopher"
+   ],
+   "fame": 302
+  },
+  {
+   "id": "Q91",
+   "name": {
+    "tr": "Abraham Lincoln",
+    "en": "Abraham Lincoln"
+   },
+   "born": 1809,
+   "groups": [
+    "writer",
+    "politician"
+   ],
+   "fame": 296
+  },
+  {
+   "id": "Q8023",
+   "name": {
+    "tr": "Nelson Mandela",
+    "en": "Nelson Mandela"
+   },
+   "born": 1918,
+   "groups": [
+    "politician"
+   ],
+   "fame": 295
+  },
+  {
+   "id": "Q1394",
+   "name": {
+    "tr": "Vladimir Lenin",
+    "en": "Vladimir Lenin"
+   },
+   "born": 1870,
+   "groups": [
+    "politician"
+   ],
+   "fame": 295
+  },
+  {
+   "id": "Q1001",
+   "name": {
+    "tr": "Mohandas Karamçand Gandi",
+    "en": "Mahatma Gandhi"
+   },
+   "born": 1869,
+   "groups": [
+    "writer",
+    "politician",
+    "philosopher"
+   ],
+   "fame": 287
+  },
+  {
+   "id": "Q517",
+   "name": {
+    "tr": "Napolyon Bonapart",
+    "en": "Napoleon"
+   },
+   "born": 1769,
+   "groups": [
+    "politician"
+   ],
+   "fame": 287
+  },
+  {
+   "id": "Q7243",
+   "name": {
+    "tr": "Lev Tolstoy",
+    "en": "Leo Tolstoy"
+   },
+   "born": 1828,
+   "groups": [
+    "writer",
+    "philosopher"
+   ],
+   "fame": 282
+  },
+  {
+   "id": "Q1048",
+   "name": {
+    "tr": "Jül Sezar",
+    "en": "Julius Caesar"
+   },
+   "born": -100,
+   "groups": [
+    "writer",
+    "politician"
+   ],
+   "fame": 281
+  },
+  {
+   "id": "Q855",
+   "name": {
+    "tr": "Josef Stalin",
+    "en": "Joseph Stalin"
+   },
+   "born": 1878,
+   "groups": [
+    "politician"
+   ],
+   "fame": 279
+  },
+  {
+   "id": "Q5879",
+   "name": {
+    "tr": "Goethe",
+    "en": "Johann Wolfgang von Goethe"
+   },
+   "born": 1749,
+   "groups": [
+    "writer",
+    "composer",
+    "politician",
+    "scientist",
+    "painter",
+    "philosopher"
+   ],
+   "fame": 278
+  },
+  {
+   "id": "Q9441",
+   "name": {
+    "tr": "Gotama Buda",
+    "en": "The Buddha"
+   },
+   "born": -501,
+   "groups": [
+    "writer",
+    "philosopher"
+   ],
+   "fame": 276
+  },
+  {
+   "id": "Q913",
+   "name": {
+    "tr": "Sokrates",
+    "en": "Socrates"
+   },
+   "born": -470,
+   "groups": [
+    "writer",
+    "philosopher"
+   ],
+   "fame": 276
+  },
+  {
+   "id": "Q255",
+   "name": {
+    "tr": "Ludwig van Beethoven",
+    "en": "Ludwig van Beethoven"
+   },
+   "born": 1770,
+   "groups": [
+    "composer"
+   ],
+   "fame": 273
+  },
+  {
+   "id": "Q307",
+   "name": {
+    "tr": "Galileo Galilei",
+    "en": "Galileo Galilei"
+   },
+   "born": 1564,
+   "groups": [
+    "scientist",
+    "politician",
+    "philosopher"
+   ],
+   "fame": 270
+  },
+  {
+   "id": "Q5582",
+   "name": {
+    "tr": "Vincent van Gogh",
+    "en": "Vincent van Gogh"
+   },
+   "born": 1853,
+   "groups": [
+    "painter"
+   ],
+   "fame": 266
+  },
+  {
+   "id": "Q882",
+   "name": {
+    "tr": "Charlie Chaplin",
+    "en": "Charlie Chaplin"
+   },
+   "born": 1889,
+   "groups": [
+    "actor",
+    "writer",
+    "composer",
+    "director"
+   ],
+   "fame": 262
+  },
+  {
+   "id": "Q8409",
+   "name": {
+    "tr": "İskender",
+    "en": "Alexander the Great"
+   },
+   "born": -356,
+   "groups": [
+    "politician"
+   ],
+   "fame": 262
+  },
+  {
+   "id": "Q8016",
+   "name": {
+    "tr": "Winston Churchill",
+    "en": "Winston Churchill"
+   },
+   "born": 1874,
+   "groups": [
+    "politician"
+   ],
+   "fame": 261
+  },
+  {
+   "id": "Q5592",
+   "name": {
+    "tr": "Michelangelo",
+    "en": "Michelangelo"
+   },
+   "born": 1475,
+   "groups": [
+    "writer",
+    "painter"
+   ],
+   "fame": 259
+  },
+  {
+   "id": "Q9554",
+   "name": {
+    "tr": "Martin Luther",
+    "en": "Martin Luther"
+   },
+   "born": 1483,
+   "groups": [
+    "writer",
+    "composer",
+    "philosopher"
+   ],
+   "fame": 259
+  },
+  {
+   "id": "Q1339",
+   "name": {
+    "tr": "Johann Sebastian Bach",
+    "en": "Johann Sebastian Bach"
+   },
+   "born": 1685,
+   "groups": [
+    "composer"
+   ],
+   "fame": 259
+  },
+  {
+   "id": "Q991",
+   "name": {
+    "tr": "Fyodor Dostoyevski",
+    "en": "Fyodor Dostoyevsky"
+   },
+   "born": 1821,
+   "groups": [
+    "philosopher",
+    "writer"
+   ],
+   "fame": 256
+  },
+  {
+   "id": "Q8743",
+   "name": {
+    "tr": "Thomas Edison",
+    "en": "Thomas Edison"
+   },
+   "born": 1847,
+   "groups": [
+    "scientist",
+    "director"
+   ],
+   "fame": 254
+  },
+  {
+   "id": "Q5152",
+   "name": {
+    "tr": "Mustafa Kemal Atatürk",
+    "en": "Mustafa Kemal Atatürk"
+   },
+   "born": 1881,
+   "groups": [
+    "writer",
+    "politician"
+   ],
+   "fame": 253
+  },
+  {
+   "id": "Q5686",
+   "name": {
+    "tr": "Charles Dickens",
+    "en": "Charles Dickens"
+   },
+   "born": 1812,
+   "groups": [
+    "writer"
+   ],
+   "fame": 250
+  },
+  {
+   "id": "Q5682",
+   "name": {
+    "tr": "Miguel de Cervantes",
+    "en": "Miguel de Cervantes"
+   },
+   "born": 1547,
+   "groups": [
+    "writer"
+   ],
+   "fame": 249
+  },
+  {
+   "id": "Q9696",
+   "name": {
+    "tr": "John F. Kennedy",
+    "en": "John F. Kennedy"
+   },
+   "born": 1917,
+   "groups": [
+    "writer",
+    "politician"
+   ],
+   "fame": 249
+  },
+  {
+   "id": "Q8027",
+   "name": {
+    "tr": "Martin Luther King",
+    "en": "Martin Luther King Jr."
+   },
+   "born": 1929,
+   "groups": [
+    "writer",
+    "politician"
+   ],
+   "fame": 248
+  },
+  {
+   "id": "Q5577",
+   "name": {
+    "tr": "Salvador Dalí",
+    "en": "Salvador Dalí"
+   },
+   "born": 1904,
+   "groups": [
+    "actor",
+    "writer",
+    "painter",
+    "director"
+   ],
+   "fame": 247
+  },
+  {
+   "id": "Q8739",
+   "name": {
+    "tr": "Arşimet",
+    "en": "Archimedes"
+   },
+   "born": -287,
+   "groups": [
+    "scientist",
+    "philosopher"
+   ],
+   "fame": 246
+  },
+  {
+   "id": "Q7241",
+   "name": {
+    "tr": "Rabindranath Tagore",
+    "en": "Rabindranath Tagore"
+   },
+   "born": 1861,
+   "groups": [
+    "director",
+    "philosopher",
+    "writer",
+    "actor",
+    "composer",
+    "singer",
+    "painter"
+   ],
+   "fame": 246
+  },
+  {
+   "id": "Q1398",
+   "name": {
+    "tr": "Virgil",
+    "en": "Virgil"
+   },
+   "born": -70,
+   "groups": [
+    "writer"
+   ],
+   "fame": 245
+  },
+  {
+   "id": "Q1405",
+   "name": {
+    "tr": "Augustus",
+    "en": "Augustus"
+   },
+   "born": -63,
+   "groups": [
+    "politician"
+   ],
+   "fame": 245
+  },
+  {
+   "id": "Q7322",
+   "name": {
+    "tr": "Kristof Kolomb",
+    "en": "Christopher Columbus"
+   },
+   "born": 1451,
+   "groups": [
+    "scientist",
+    "explorer"
+   ],
+   "fame": 244
+  },
+  {
+   "id": "Q5673",
+   "name": {
+    "tr": "Hans Christian Andersen",
+    "en": "Hans Christian Andersen"
+   },
+   "born": 1805,
+   "groups": [
+    "writer"
+   ],
+   "fame": 244
+  },
+  {
+   "id": "Q7200",
+   "name": {
+    "tr": "Aleksandr Puşkin",
+    "en": "Alexander Pushkin"
+   },
+   "born": 1799,
+   "groups": [
+    "writer"
+   ],
+   "fame": 244
+  },
+  {
+   "id": "Q905",
+   "name": {
+    "tr": "Franz Kafka",
+    "en": "Franz Kafka"
+   },
+   "born": 1883,
+   "groups": [
+    "writer"
+   ],
+   "fame": 242
+  },
+  {
+   "id": "Q4616",
+   "name": {
+    "tr": "Marilyn Monroe",
+    "en": "Marilyn Monroe"
+   },
+   "born": 1926,
+   "groups": [
+    "actor",
+    "singer"
+   ],
+   "fame": 241
+  },
+  {
+   "id": "Q5685",
+   "name": {
+    "tr": "Anton Çehov",
+    "en": "Anton Chekhov"
+   },
+   "born": 1860,
+   "groups": [
+    "writer"
+   ],
+   "fame": 240
+  },
+  {
+   "id": "Q450675",
+   "name": {
+    "tr": "Franciscus",
+    "en": "Pope Francis"
+   },
+   "born": 1936,
+   "groups": [
+    "writer",
+    "politician",
+    "philosopher",
+    "actor"
+   ],
+   "fame": 236
+  },
+  {
+   "id": "Q5816",
+   "name": {
+    "tr": "Mao Zedung",
+    "en": "Mao Zedong"
+   },
+   "born": 1893,
+   "groups": [
+    "writer",
+    "politician",
+    "philosopher"
+   ],
+   "fame": 232
+  },
+  {
+   "id": "Q8018",
+   "name": {
+    "tr": "Augustinus",
+    "en": "Augustine of Hippo"
+   },
+   "born": 354,
+   "groups": [
+    "writer",
+    "philosopher"
+   ],
+   "fame": 227
+  },
+  {
+   "id": "Q687",
+   "name": {
+    "tr": "Molière",
+    "en": "Molière"
+   },
+   "born": 1622,
+   "groups": [
+    "actor",
+    "writer"
+   ],
+   "fame": 226
+  },
+  {
+   "id": "Q11812",
+   "name": {
+    "tr": "Thomas Jefferson",
+    "en": "Thomas Jefferson"
+   },
+   "born": 1743,
+   "groups": [
+    "writer",
+    "politician",
+    "scientist",
+    "philosopher"
+   ],
+   "fame": 225
+  },
+  {
+   "id": "Q16867",
+   "name": {
+    "tr": "Edgar Allan Poe",
+    "en": "Edgar Allan Poe"
+   },
+   "born": 1809,
+   "groups": [
+    "writer"
+   ],
+   "fame": 225
+  },
+  {
+   "id": "Q615",
+   "name": {
+    "tr": "Lionel Messi",
+    "en": "Lionel Messi"
+   },
+   "born": 1987,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 225
+  },
+  {
+   "id": "Q4617",
+   "name": {
+    "tr": "Corbin Bleu",
+    "en": "Corbin Bleu"
+   },
+   "born": 1989,
+   "groups": [
+    "actor",
+    "singer"
+   ],
+   "fame": 224
+  },
+  {
+   "id": "Q1124",
+   "name": {
+    "tr": "Bill Clinton",
+    "en": "Bill Clinton"
+   },
+   "born": 1946,
+   "groups": [
+    "writer",
+    "politician"
+   ],
+   "fame": 223
+  },
+  {
+   "id": "Q30875",
+   "name": {
+    "tr": "Oscar Wilde",
+    "en": "Oscar Wilde"
+   },
+   "born": 1854,
+   "groups": [
+    "writer"
+   ],
+   "fame": 223
+  },
+  {
+   "id": "Q2042",
+   "name": {
+    "tr": "Charles de Gaulle",
+    "en": "Charles de Gaulle"
+   },
+   "born": 1890,
+   "groups": [
+    "politician"
+   ],
+   "fame": 222
+  },
+  {
+   "id": "Q383541",
+   "name": {
+    "tr": "Basshunter",
+    "en": "Basshunter"
+   },
+   "born": 1984,
+   "groups": [
+    "composer",
+    "singer"
+   ],
+   "fame": 221
+  },
+  {
+   "id": "Q9036",
+   "name": {
+    "tr": "Nikola Tesla",
+    "en": "Nikola Tesla"
+   },
+   "born": 1856,
+   "groups": [
+    "scientist"
+   ],
+   "fame": 219
+  },
+  {
+   "id": "Q8442",
+   "name": {
+    "tr": "Otto von Bismarck",
+    "en": "Otto von Bismarck"
+   },
+   "born": 1815,
+   "groups": [
+    "writer",
+    "politician"
+   ],
+   "fame": 219
+  },
+  {
+   "id": "Q5679",
+   "name": {
+    "tr": "Lord Byron",
+    "en": "Lord Byron"
+   },
+   "born": 1788,
+   "groups": [
+    "writer",
+    "politician"
+   ],
+   "fame": 219
+  },
+  {
+   "id": "Q1615",
+   "name": {
+    "tr": "Neil Armstrong",
+    "en": "Neil Armstrong"
+   },
+   "born": 1930,
+   "groups": [
+    "astronaut"
+   ],
+   "fame": 219
+  },
+  {
+   "id": "Q157",
+   "name": {
+    "tr": "François Hollande",
+    "en": "François Hollande"
+   },
+   "born": 1954,
+   "groups": [
+    "politician"
+   ],
+   "fame": 218
+  },
+  {
+   "id": "Q8704",
+   "name": {
+    "tr": "Walt Disney",
+    "en": "Walt Disney"
+   },
+   "born": 1901,
+   "groups": [
+    "actor",
+    "writer",
+    "scientist",
+    "painter",
+    "director"
+   ],
+   "fame": 217
+  },
+  {
+   "id": "Q34969",
+   "name": {
+    "tr": "Benjamin Franklin",
+    "en": "Benjamin Franklin"
+   },
+   "born": 1706,
+   "groups": [
+    "writer",
+    "politician"
+   ],
+   "fame": 216
+  },
+  {
+   "id": "Q303",
+   "name": {
+    "tr": "Elvis Presley",
+    "en": "Elvis Presley"
+   },
+   "born": 1935,
+   "groups": [
+    "singer"
+   ],
+   "fame": 216
+  },
+  {
+   "id": "Q11571",
+   "name": {
+    "tr": "Cristiano Ronaldo",
+    "en": "Cristiano Ronaldo"
+   },
+   "born": 1985,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 215
+  },
+  {
+   "id": "Q619",
+   "name": {
+    "tr": "Nicolaus Copernicus",
+    "en": "Nicolaus Copernicus"
+   },
+   "born": 1473,
+   "groups": [
+    "scientist",
+    "writer",
+    "painter",
+    "philosopher"
+   ],
+   "fame": 214
+  },
+  {
+   "id": "Q7235",
+   "name": {
+    "tr": "Sofokles",
+    "en": "Sophocles"
+   },
+   "born": -496,
+   "groups": [
+    "writer",
+    "politician",
+    "philosopher"
+   ],
+   "fame": 214
+  },
+  {
+   "id": "Q3874799",
+   "name": {
+    "tr": "Volodimir Zelenski",
+    "en": "Volodymyr Zelenskyy"
+   },
+   "born": 1978,
+   "groups": [
+    "politician"
+   ],
+   "fame": 214
+  },
+  {
+   "id": "Q529",
+   "name": {
+    "tr": "Louis Pasteur",
+    "en": "Louis Pasteur"
+   },
+   "born": 1822,
+   "groups": [
+    "scientist"
+   ],
+   "fame": 213
+  },
+  {
+   "id": "Q9333",
+   "name": {
+    "tr": "Laozi",
+    "en": "Laozi"
+   },
+   "born": -580,
+   "groups": [
+    "writer",
+    "philosopher"
+   ],
+   "fame": 213
+  },
+  {
+   "id": "Q3335",
+   "name": {
+    "tr": "George Orwell",
+    "en": "George Orwell"
+   },
+   "born": 1903,
+   "groups": [
+    "writer"
+   ],
+   "fame": 212
+  },
+  {
+   "id": "Q6101",
+   "name": {
+    "tr": "Marco Polo",
+    "en": "Marco Polo"
+   },
+   "born": 1254,
+   "groups": [
+    "writer",
+    "explorer"
+   ],
+   "fame": 212
+  },
+  {
+   "id": "Q10261",
+   "name": {
+    "tr": "Pisagor",
+    "en": "Pythagoras"
+   },
+   "born": -583,
+   "groups": [
+    "politician",
+    "philosopher",
+    "writer",
+    "scientist"
+   ],
+   "fame": 209
+  },
+  {
+   "id": "Q9438",
+   "name": {
+    "tr": "Akinolu Thomas",
+    "en": "Thomas Aquinas"
+   },
+   "born": 1225,
+   "groups": [
+    "writer",
+    "philosopher"
+   ],
+   "fame": 208
+  },
+  {
+   "id": "Q23434",
+   "name": {
+    "tr": "Ernest Hemingway",
+    "en": "Ernest Hemingway"
+   },
+   "born": 1899,
+   "groups": [
+    "writer",
+    "director"
+   ],
+   "fame": 208
+  },
+  {
+   "id": "Q989",
+   "name": {
+    "tr": "II. Johannes Paulus",
+    "en": "John Paul II"
+   },
+   "born": 1920,
+   "groups": [
+    "writer",
+    "politician",
+    "philosopher"
+   ],
+   "fame": 207
+  },
+  {
+   "id": "Q5598",
+   "name": {
+    "tr": "Rembrandt",
+    "en": "Rembrandt"
+   },
+   "born": 1606,
+   "groups": [
+    "painter"
+   ],
+   "fame": 207
+  },
+  {
+   "id": "Q6882",
+   "name": {
+    "tr": "James Joyce",
+    "en": "James Joyce"
+   },
+   "born": 1882,
+   "groups": [
+    "writer"
+   ],
+   "fame": 207
+  },
+  {
+   "id": "Q9047",
+   "name": {
+    "tr": "Gottfried Leibniz",
+    "en": "Gottfried Wilhelm Leibniz"
+   },
+   "born": 1646,
+   "groups": [
+    "writer",
+    "scientist",
+    "philosopher"
+   ],
+   "fame": 206
+  },
+  {
+   "id": "Q1511",
+   "name": {
+    "tr": "Richard Wagner",
+    "en": "Richard Wagner"
+   },
+   "born": 1813,
+   "groups": [
+    "writer",
+    "composer"
+   ],
+   "fame": 206
+  },
+  {
+   "id": "Q11256",
+   "name": {
+    "tr": "Fidel Castro",
+    "en": "Fidel Castro"
+   },
+   "born": 1926,
+   "groups": [
+    "politician",
+    "actor"
+   ],
+   "fame": 206
+  },
+  {
+   "id": "Q34670",
+   "name": {
+    "tr": "Albert Camus",
+    "en": "Albert Camus"
+   },
+   "born": 1913,
+   "groups": [
+    "actor",
+    "writer",
+    "footballer",
+    "philosopher"
+   ],
+   "fame": 205
+  },
+  {
+   "id": "Q7327",
+   "name": {
+    "tr": "Yuri Gagarin",
+    "en": "Yuri Gagarin"
+   },
+   "born": 1934,
+   "groups": [
+    "astronaut",
+    "politician",
+    "explorer"
+   ],
+   "fame": 205
+  },
+  {
+   "id": "Q8747",
+   "name": {
+    "tr": "Öklit",
+    "en": "Euclid"
+   },
+   "born": -334,
+   "groups": [
+    "writer",
+    "scientist"
+   ],
+   "fame": 203
+  },
+  {
+   "id": "Q8768",
+   "name": {
+    "tr": "Henry Ford",
+    "en": "Henry Ford"
+   },
+   "born": 1863,
+   "groups": [
+    "writer",
+    "politician",
+    "scientist"
+   ],
+   "fame": 202
+  },
+  {
+   "id": "Q5676",
+   "name": {
+    "tr": "Matsuo Bashō",
+    "en": "Matsuo Bashō"
+   },
+   "born": 1644,
+   "groups": [
+    "writer",
+    "painter"
+   ],
+   "fame": 202
+  },
+  {
+   "id": "Q4612",
+   "name": {
+    "tr": "Marlene Dietrich",
+    "en": "Marlene Dietrich"
+   },
+   "born": 1901,
+   "groups": [
+    "actor",
+    "singer"
+   ],
+   "fame": 202
+  },
+  {
+   "id": "Q30487",
+   "name": {
+    "tr": "Mihail Gorbaçov",
+    "en": "Mikhail Gorbachev"
+   },
+   "born": 1931,
+   "groups": [
+    "politician",
+    "actor"
+   ],
+   "fame": 202
+  },
+  {
+   "id": "Q1541",
+   "name": {
+    "tr": "Marcus Tullius Cicero",
+    "en": "Cicero"
+   },
+   "born": -107,
+   "groups": [
+    "writer",
+    "politician",
+    "philosopher"
+   ],
+   "fame": 202
+  },
+  {
+   "id": "Q317521",
+   "name": {
+    "tr": "Elon Musk",
+    "en": "Elon Musk"
+   },
+   "born": 1971,
+   "groups": [
+    "politician",
+    "scientist"
+   ],
+   "fame": 201
+  },
+  {
+   "id": "Q23559",
+   "name": {
+    "tr": "Benito Mussolini",
+    "en": "Benito Mussolini"
+   },
+   "born": 1883,
+   "groups": [
+    "politician"
+   ],
+   "fame": 201
+  },
+  {
+   "id": "Q6722",
+   "name": {
+    "tr": "Carl Friedrich Gauss",
+    "en": "Carl Friedrich Gauss"
+   },
+   "born": 1777,
+   "groups": [
+    "scientist"
+   ],
+   "fame": 200
+  },
+  {
+   "id": "Q4724",
+   "name": {
+    "tr": "Le Corbusier",
+    "en": "Le Corbusier"
+   },
+   "born": 1887,
+   "groups": [
+    "writer",
+    "painter"
+   ],
+   "fame": 200
+  },
+  {
+   "id": "Q5588",
+   "name": {
+    "tr": "Frida Kahlo",
+    "en": "Frida Kahlo"
+   },
+   "born": 1907,
+   "groups": [
+    "painter"
+   ],
+   "fame": 200
+  },
+  {
+   "id": "Q1268",
+   "name": {
+    "tr": "Frédéric Chopin",
+    "en": "Frédéric Chopin"
+   },
+   "born": 1810,
+   "groups": [
+    "composer"
+   ],
+   "fame": 200
+  },
+  {
+   "id": "Q2494",
+   "name": {
+    "tr": "XVI. Benedictus",
+    "en": "Benedict XVI"
+   },
+   "born": 1927,
+   "groups": [
+    "philosopher"
+   ],
+   "fame": 200
+  },
+  {
+   "id": "Q34787",
+   "name": {
+    "tr": "Friedrich Engels",
+    "en": "Friedrich Engels"
+   },
+   "born": 1820,
+   "groups": [
+    "writer",
+    "philosopher"
+   ],
+   "fame": 200
+  },
+  {
+   "id": "Q23685",
+   "name": {
+    "tr": "Jimmy Carter",
+    "en": "Jimmy Carter"
+   },
+   "born": 1924,
+   "groups": [
+    "writer",
+    "politician"
+   ],
+   "fame": 200
+  },
+  {
+   "id": "Q7071",
+   "name": {
+    "tr": "Li Bai",
+    "en": "Li Bai"
+   },
+   "born": 701,
+   "groups": [
+    "writer",
+    "philosopher"
+   ],
+   "fame": 198
+  },
+  {
+   "id": "Q11613",
+   "name": {
+    "tr": "Harry S. Truman",
+    "en": "Harry S. Truman"
+   },
+   "born": 1884,
+   "groups": [
+    "politician"
+   ],
+   "fame": 198
+  },
+  {
+   "id": "Q1496",
+   "name": {
+    "tr": "Ferdinand Macellan",
+    "en": "Ferdinand Magellan"
+   },
+   "born": 1480,
+   "groups": [
+    "explorer"
+   ],
+   "fame": 197
+  },
+  {
+   "id": "Q7192",
+   "name": {
+    "tr": "Çin Şi Huang",
+    "en": "Qin Shi Huang"
+   },
+   "born": -259,
+   "groups": [
+    "politician"
+   ],
+   "fame": 196
+  },
+  {
+   "id": "Q23505",
+   "name": {
+    "tr": "George H. W. Bush",
+    "en": "George H. W. Bush"
+   },
+   "born": 1924,
+   "groups": [
+    "politician"
+   ],
+   "fame": 196
+  },
+  {
+   "id": "Q1290",
+   "name": {
+    "tr": "Blaise Pascal",
+    "en": "Blaise Pascal"
+   },
+   "born": 1623,
+   "groups": [
+    "writer",
+    "scientist",
+    "philosopher"
+   ],
+   "fame": 195
+  },
+  {
+   "id": "Q5597",
+   "name": {
+    "tr": "Raffaello Sanzio",
+    "en": "Raphael"
+   },
+   "born": 1483,
+   "groups": [
+    "painter"
+   ],
+   "fame": 195
+  },
+  {
+   "id": "Q4605",
+   "name": {
+    "tr": "Sarah Bernhardt",
+    "en": "Sarah Bernhardt"
+   },
+   "born": 1844,
+   "groups": [
+    "actor",
+    "writer",
+    "painter"
+   ],
+   "fame": 194
+  },
+  {
+   "id": "Q8011",
+   "name": {
+    "tr": "İbn-i Sina",
+    "en": "Avicenna"
+   },
+   "born": 980,
+   "groups": [
+    "scientist",
+    "writer",
+    "philosopher"
+   ],
+   "fame": 193
+  },
+  {
+   "id": "Q1744",
+   "name": {
+    "tr": "Madonna",
+    "en": "Madonna"
+   },
+   "born": 1958,
+   "groups": [
+    "actor",
+    "singer"
+   ],
+   "fame": 193
+  },
+  {
+   "id": "Q329",
+   "name": {
+    "tr": "Nicolas Sarkozy",
+    "en": "Nicolas Sarkozy"
+   },
+   "born": 1955,
+   "groups": [
+    "politician"
+   ],
+   "fame": 193
+  },
+  {
+   "id": "Q23810",
+   "name": {
+    "tr": "Alfred Nobel",
+    "en": "Alfred Nobel"
+   },
+   "born": 1833,
+   "groups": [
+    "scientist"
+   ],
+   "fame": 192
+  },
+  {
+   "id": "Q7315",
+   "name": {
+    "tr": "Pyotr İlyiç Çaykovski",
+    "en": "Pyotr Ilyich Tchaikovsky"
+   },
+   "born": 1840,
+   "groups": [
+    "composer"
+   ],
+   "fame": 192
+  },
+  {
+   "id": "Q1047",
+   "name": {
+    "tr": "Cevahirlal Nehru",
+    "en": "Jawaharlal Nehru"
+   },
+   "born": 1889,
+   "groups": [
+    "writer",
+    "politician"
+   ],
+   "fame": 192
+  },
+  {
+   "id": "Q33866",
+   "name": {
+    "tr": "Theodore Roosevelt",
+    "en": "Theodore Roosevelt"
+   },
+   "born": 1858,
+   "groups": [
+    "writer",
+    "politician",
+    "explorer"
+   ],
+   "fame": 192
+  },
+  {
+   "id": "Q7604",
+   "name": {
+    "tr": "Leonhard Euler",
+    "en": "Leonhard Euler"
+   },
+   "born": 1707,
+   "groups": [
+    "scientist",
+    "writer"
+   ],
+   "fame": 191
+  },
+  {
+   "id": "Q9916",
+   "name": {
+    "tr": "Dwight Eisenhower",
+    "en": "Dwight D. Eisenhower"
+   },
+   "born": 1890,
+   "groups": [
+    "writer",
+    "politician"
+   ],
+   "fame": 191
+  },
+  {
+   "id": "Q926",
+   "name": {
+    "tr": "Roald Amundsen",
+    "en": "Roald Amundsen"
+   },
+   "born": 1872,
+   "groups": [
+    "writer",
+    "director",
+    "explorer"
+   ],
+   "fame": 190
+  },
+  {
+   "id": "Q9588",
+   "name": {
+    "tr": "Richard Nixon",
+    "en": "Richard Nixon"
+   },
+   "born": 1913,
+   "groups": [
+    "politician"
+   ],
+   "fame": 190
+  },
+  {
+   "id": "Q15031",
+   "name": {
+    "tr": "Şi Cinping",
+    "en": "Xi Jinping"
+   },
+   "born": 1953,
+   "groups": [
+    "politician"
+   ],
+   "fame": 190
+  },
+  {
+   "id": "Q34296",
+   "name": {
+    "tr": "Woodrow Wilson",
+    "en": "Woodrow Wilson"
+   },
+   "born": 1856,
+   "groups": [
+    "writer",
+    "politician"
+   ],
+   "fame": 190
+  },
+  {
+   "id": "Q7374",
+   "name": {
+    "tr": "Alfred Hitchcock",
+    "en": "Alfred Hitchcock"
+   },
+   "born": 1899,
+   "groups": [
+    "actor",
+    "writer",
+    "director"
+   ],
+   "fame": 188
+  },
+  {
+   "id": "Q9049",
+   "name": {
+    "tr": "Noam Chomsky",
+    "en": "Noam Chomsky"
+   },
+   "born": 1928,
+   "groups": [
+    "writer",
+    "philosopher"
+   ],
+   "fame": 188
+  },
+  {
+   "id": "Q37388",
+   "name": {
+    "tr": "Francis Bacon",
+    "en": "Francis Bacon"
+   },
+   "born": 1561,
+   "groups": [
+    "writer",
+    "politician",
+    "philosopher"
+   ],
+   "fame": 188
+  },
+  {
+   "id": "Q5580",
+   "name": {
+    "tr": "Albrecht Dürer",
+    "en": "Albrecht Dürer"
+   },
+   "born": 1471,
+   "groups": [
+    "scientist",
+    "painter"
+   ],
+   "fame": 187
+  },
+  {
+   "id": "Q8440",
+   "name": {
+    "tr": "Hugo Chávez",
+    "en": "Hugo Chávez"
+   },
+   "born": 1954,
+   "groups": [
+    "politician"
+   ],
+   "fame": 187
+  },
+  {
+   "id": "Q11806",
+   "name": {
+    "tr": "John Adams",
+    "en": "John Adams"
+   },
+   "born": 1735,
+   "groups": [
+    "writer",
+    "politician"
+   ],
+   "fame": 187
+  },
+  {
+   "id": "Q8963",
+   "name": {
+    "tr": "Johannes Kepler",
+    "en": "Johannes Kepler"
+   },
+   "born": 1572,
+   "groups": [
+    "scientist",
+    "writer",
+    "philosopher"
+   ],
+   "fame": 186
+  },
+  {
+   "id": "Q5432",
+   "name": {
+    "tr": "Francisco Goya",
+    "en": "Francisco Goya"
+   },
+   "born": 1746,
+   "groups": [
+    "painter"
+   ],
+   "fame": 186
+  },
+  {
+   "id": "Q7324",
+   "name": {
+    "tr": "James Cook",
+    "en": "James Cook"
+   },
+   "born": 1728,
+   "groups": [
+    "explorer"
+   ],
+   "fame": 186
+  },
+  {
+   "id": "Q33760",
+   "name": {
+    "tr": "Bertrand Russell",
+    "en": "Bertrand Russell"
+   },
+   "born": 1872,
+   "groups": [
+    "writer",
+    "scientist",
+    "politician",
+    "philosopher"
+   ],
+   "fame": 185
+  },
+  {
+   "id": "Q1203",
+   "name": {
+    "tr": "John Lennon",
+    "en": "John Lennon"
+   },
+   "born": 1940,
+   "groups": [
+    "actor",
+    "writer",
+    "composer",
+    "singer",
+    "director"
+   ],
+   "fame": 185
+  },
+  {
+   "id": "Q19878",
+   "name": {
+    "tr": "Muammer Kaddafi",
+    "en": "Muammar Gaddafi"
+   },
+   "born": 1942,
+   "groups": [
+    "writer",
+    "politician"
+   ],
+   "fame": 185
+  },
+  {
+   "id": "Q33391",
+   "name": {
+    "tr": "Lev Troçki",
+    "en": "Leon Trotsky"
+   },
+   "born": 1879,
+   "groups": [
+    "writer",
+    "politician",
+    "philosopher"
+   ],
+   "fame": 184
+  },
+  {
+   "id": "Q7328",
+   "name": {
+    "tr": "Vasco da Gama",
+    "en": "Vasco da Gama"
+   },
+   "born": 1460,
+   "groups": [
+    "explorer"
+   ],
+   "fame": 184
+  },
+  {
+   "id": "Q8958",
+   "name": {
+    "tr": "Johannes Gutenberg",
+    "en": "Johannes Gutenberg"
+   },
+   "born": 1400,
+   "groups": [
+    "scientist"
+   ],
+   "fame": 183
+  },
+  {
+   "id": "Q9021",
+   "name": {
+    "tr": "Max Planck",
+    "en": "Max Planck"
+   },
+   "born": 1858,
+   "groups": [
+    "scientist",
+    "philosopher"
+   ],
+   "fame": 183
+  },
+  {
+   "id": "Q12897",
+   "name": {
+    "tr": "Pelé",
+    "en": "Pelé"
+   },
+   "born": 1940,
+   "groups": [
+    "politician",
+    "footballer",
+    "actor",
+    "composer"
+   ],
+   "fame": 183
+  },
+  {
+   "id": "Q7742",
+   "name": {
+    "tr": "XIV. Louis",
+    "en": "Louis XIV of France"
+   },
+   "born": 1638,
+   "groups": [
+    "actor",
+    "politician"
+   ],
+   "fame": 183
+  },
+  {
+   "id": "Q22670",
+   "name": {
+    "tr": "Friedrich Schiller",
+    "en": "Friedrich Schiller"
+   },
+   "born": 1759,
+   "groups": [
+    "writer",
+    "philosopher"
+   ],
+   "fame": 183
+  },
+  {
+   "id": "Q5589",
+   "name": {
+    "tr": "Henri Matisse",
+    "en": "Henri Matisse"
+   },
+   "born": 1869,
+   "groups": [
+    "painter"
+   ],
+   "fame": 181
+  },
+  {
+   "id": "Q8750",
+   "name": {
+    "tr": "Michael Faraday",
+    "en": "Michael Faraday"
+   },
+   "born": 1791,
+   "groups": [
+    "writer",
+    "scientist"
+   ],
+   "fame": 180
+  },
+  {
+   "id": "Q9106",
+   "name": {
+    "tr": "Dimitri Mendeleyev",
+    "en": "Dmitri Mendeleev"
+   },
+   "born": 1834,
+   "groups": [
+    "scientist"
+   ],
+   "fame": 179
+  },
+  {
+   "id": "Q5603",
+   "name": {
+    "tr": "Andy Warhol",
+    "en": "Andy Warhol"
+   },
+   "born": 1928,
+   "groups": [
+    "painter",
+    "director"
+   ],
+   "fame": 179
+  },
+  {
+   "id": "Q7317",
+   "name": {
+    "tr": "Giuseppe Verdi",
+    "en": "Giuseppe Verdi"
+   },
+   "born": 1813,
+   "groups": [
+    "writer",
+    "composer",
+    "politician"
+   ],
+   "fame": 179
+  },
+  {
+   "id": "Q5683",
+   "name": {
+    "tr": "Geoffrey Chaucer",
+    "en": "Geoffrey Chaucer"
+   },
+   "born": 1343,
+   "groups": [
+    "writer",
+    "politician",
+    "philosopher"
+   ],
+   "fame": 179
+  },
+  {
+   "id": "Q1779",
+   "name": {
+    "tr": "Louis Armstrong",
+    "en": "Louis Armstrong"
+   },
+   "born": 1901,
+   "groups": [
+    "actor",
+    "writer",
+    "singer"
+   ],
+   "fame": 178
+  },
+  {
+   "id": "Q8006",
+   "name": {
+    "tr": "Akira Kurosava",
+    "en": "Akira Kurosawa"
+   },
+   "born": 1910,
+   "groups": [
+    "writer",
+    "painter",
+    "director"
+   ],
+   "fame": 177
+  },
+  {
+   "id": "Q5586",
+   "name": {
+    "tr": "Katsushika Hokusai",
+    "en": "Katsushika Hokusai"
+   },
+   "born": 1760,
+   "groups": [
+    "painter"
+   ],
+   "fame": 177
+  },
+  {
+   "id": "Q35802",
+   "name": {
+    "tr": "Baruch Spinoza",
+    "en": "Benedictus de Spinoza"
+   },
+   "born": 1632,
+   "groups": [
+    "philosopher"
+   ],
+   "fame": 177
+  },
+  {
+   "id": "Q15869",
+   "name": {
+    "tr": "Freddie Mercury",
+    "en": "Freddie Mercury"
+   },
+   "born": 1946,
+   "groups": [
+    "composer",
+    "writer",
+    "singer",
+    "painter"
+   ],
+   "fame": 176
+  },
+  {
+   "id": "Q1430",
+   "name": {
+    "tr": "Marcus Aurelius",
+    "en": "Marcus Aurelius"
+   },
+   "born": 121,
+   "groups": [
+    "writer",
+    "politician",
+    "philosopher"
+   ],
+   "fame": 176
+  },
+  {
+   "id": "Q11813",
+   "name": {
+    "tr": "James Madison",
+    "en": "James Madison"
+   },
+   "born": 1751,
+   "groups": [
+    "writer",
+    "politician",
+    "philosopher"
+   ],
+   "fame": 176
+  },
+  {
+   "id": "Q5599",
+   "name": {
+    "tr": "Peter Paul Rubens",
+    "en": "Peter Paul Rubens"
+   },
+   "born": 1577,
+   "groups": [
+    "painter"
+   ],
+   "fame": 175
+  },
+  {
+   "id": "Q83287",
+   "name": {
+    "tr": "Selena Gomez",
+    "en": "Selena Gomez"
+   },
+   "born": 1992,
+   "groups": [
+    "actor"
+   ],
+   "fame": 175
+  },
+  {
+   "id": "Q17515",
+   "name": {
+    "tr": "Diego Maradona",
+    "en": "Diego Maradona"
+   },
+   "born": 1960,
+   "groups": [
+    "actor",
+    "footballer"
+   ],
+   "fame": 175
+  },
+  {
+   "id": "Q5264",
+   "name": {
+    "tr": "Hipokrat",
+    "en": "Hippocrates"
+   },
+   "born": -460,
+   "groups": [
+    "philosopher"
+   ],
+   "fame": 175
+  },
+  {
+   "id": "Q38193",
+   "name": {
+    "tr": "Arthur Schopenhauer",
+    "en": "Arthur Schopenhauer"
+   },
+   "born": 1788,
+   "groups": [
+    "writer",
+    "philosopher"
+   ],
+   "fame": 175
+  },
+  {
+   "id": "Q9123",
+   "name": {
+    "tr": "Ernest Rutherford",
+    "en": "Ernest Rutherford"
+   },
+   "born": 1871,
+   "groups": [
+    "politician",
+    "scientist"
+   ],
+   "fame": 174
+  },
+  {
+   "id": "Q6109517",
+   "name": {
+    "tr": "XIV. Leo",
+    "en": "Leo XIV"
+   },
+   "born": 1955,
+   "groups": [
+    "scientist"
+   ],
+   "fame": 174
+  },
+  {
+   "id": "Q7312",
+   "name": {
+    "tr": "Franz Schubert",
+    "en": "Franz Schubert"
+   },
+   "born": 1797,
+   "groups": [
+    "composer"
+   ],
+   "fame": 173
+  },
+  {
+   "id": "Q8753",
+   "name": {
+    "tr": "Enrico Fermi",
+    "en": "Enrico Fermi"
+   },
+   "born": 1901,
+   "groups": [
+    "scientist"
+   ],
+   "fame": 171
+  },
+  {
+   "id": "Q8877",
+   "name": {
+    "tr": "Steven Spielberg",
+    "en": "Steven Spielberg"
+   },
+   "born": 1946,
+   "groups": [
+    "actor",
+    "writer",
+    "director"
+   ],
+   "fame": 171
+  },
+  {
+   "id": "Q7326",
+   "name": {
+    "tr": "Hernan Cortes",
+    "en": "Hernán Cortés"
+   },
+   "born": 1485,
+   "groups": [
+    "writer",
+    "explorer"
+   ],
+   "fame": 171
+  },
+  {
+   "id": "Q2908",
+   "name": {
+    "tr": "Antoine de Saint-Exupéry",
+    "en": "Antoine de Saint-Exupéry"
+   },
+   "born": 1900,
+   "groups": [
+    "writer",
+    "scientist",
+    "philosopher"
+   ],
+   "fame": 170
+  },
+  {
+   "id": "Q6512",
+   "name": {
+    "tr": "Søren Kierkegaard",
+    "en": "Søren Kierkegaard"
+   },
+   "born": 1813,
+   "groups": [
+    "writer",
+    "philosopher"
+   ],
+   "fame": 170
+  },
+  {
+   "id": "Q6197",
+   "name": {
+    "tr": "Horatius",
+    "en": "Horace"
+   },
+   "born": -65,
+   "groups": [
+    "writer",
+    "philosopher"
+   ],
+   "fame": 169
+  },
+  {
+   "id": "Q35900",
+   "name": {
+    "tr": "Ömer Hayyam",
+    "en": "Omar Khayyám"
+   },
+   "born": 1048,
+   "groups": [
+    "scientist",
+    "writer",
+    "philosopher"
+   ],
+   "fame": 168
+  },
+  {
+   "id": "Q1340",
+   "name": {
+    "tr": "Antonio Vivaldi",
+    "en": "Antonio Vivaldi"
+   },
+   "born": 1678,
+   "groups": [
+    "composer"
+   ],
+   "fame": 168
+  },
+  {
+   "id": "Q44403",
+   "name": {
+    "tr": "Heinrich Heine",
+    "en": "Heinrich Heine"
+   },
+   "born": 1797,
+   "groups": [
+    "writer",
+    "composer"
+   ],
+   "fame": 168
+  },
+  {
+   "id": "Q78516",
+   "name": {
+    "tr": "Anna Netrebko",
+    "en": "Anna Netrebko"
+   },
+   "born": 1971,
+   "groups": [
+    "actor",
+    "singer"
+   ],
+   "fame": 168
+  },
+  {
+   "id": "Q297",
+   "name": {
+    "tr": "Diego Velázquez",
+    "en": "Diego Velázquez"
+   },
+   "born": 1599,
+   "groups": [
+    "painter"
+   ],
+   "fame": 167
+  },
+  {
+   "id": "Q9038",
+   "name": {
+    "tr": "Hârizmî",
+    "en": "Muḥammad ibn Musa al-Khwarizmi"
+   },
+   "born": 780,
+   "groups": [
+    "scientist",
+    "philosopher"
+   ],
+   "fame": 166
+  },
+  {
+   "id": "Q7314",
+   "name": {
+    "tr": "Igor Stravinsky",
+    "en": "Igor Stravinsky"
+   },
+   "born": 1882,
+   "groups": [
+    "composer"
+   ],
+   "fame": 166
+  },
+  {
+   "id": "Q16397",
+   "name": {
+    "tr": "Bruce Lee",
+    "en": "Bruce Lee"
+   },
+   "born": 1940,
+   "groups": [
+    "actor",
+    "writer",
+    "director"
+   ],
+   "fame": 166
+  },
+  {
+   "id": "Q7331",
+   "name": {
+    "tr": "İbn Battuta",
+    "en": "Ibn Battuta"
+   },
+   "born": 1304,
+   "groups": [
+    "writer",
+    "explorer"
+   ],
+   "fame": 166
+  },
+  {
+   "id": "Q41585",
+   "name": {
+    "tr": "David Hilbert",
+    "en": "David Hilbert"
+   },
+   "born": 1862,
+   "groups": [
+    "scientist",
+    "philosopher"
+   ],
+   "fame": 165
+  },
+  {
+   "id": "Q9130",
+   "name": {
+    "tr": "Erwin Schrödinger",
+    "en": "Erwin Schrödinger"
+   },
+   "born": 1887,
+   "groups": [
+    "scientist"
+   ],
+   "fame": 164
+  },
+  {
+   "id": "Q409",
+   "name": {
+    "tr": "Bob Marley",
+    "en": "Bob Marley"
+   },
+   "born": 1945,
+   "groups": [
+    "composer",
+    "singer"
+   ],
+   "fame": 164
+  },
+  {
+   "id": "Q80",
+   "name": {
+    "tr": "Tim Berners-Lee",
+    "en": "Tim Berners-Lee"
+   },
+   "born": 1955,
+   "groups": [
+    "scientist"
+   ],
+   "fame": 163
+  },
+  {
+   "id": "Q9095",
+   "name": {
+    "tr": "James Clerk Maxwell",
+    "en": "James Clerk Maxwell"
+   },
+   "born": 1831,
+   "groups": [
+    "scientist"
+   ],
+   "fame": 163
+  },
+  {
+   "id": "Q25973",
+   "name": {
+    "tr": "Hermann Hesse",
+    "en": "Hermann Hesse"
+   },
+   "born": 1877,
+   "groups": [
+    "writer",
+    "painter",
+    "philosopher"
+   ],
+   "fame": 163
+  },
+  {
+   "id": "Q7546",
+   "name": {
+    "tr": "Ingmar Bergman",
+    "en": "Ingmar Bergman"
+   },
+   "born": 1918,
+   "groups": [
+    "actor",
+    "writer",
+    "director"
+   ],
+   "fame": 163
+  },
+  {
+   "id": "Q41513",
+   "name": {
+    "tr": "William Blake",
+    "en": "William Blake"
+   },
+   "born": 1757,
+   "groups": [
+    "writer",
+    "painter",
+    "philosopher"
+   ],
+   "fame": 162
+  },
+  {
+   "id": "Q7371",
+   "name": {
+    "tr": "Federico Fellini",
+    "en": "Federico Fellini"
+   },
+   "born": 1920,
+   "groups": [
+    "writer",
+    "director"
+   ],
+   "fame": 162
+  },
+  {
+   "id": "Q7321",
+   "name": {
+    "tr": "Jacques Cartier",
+    "en": "Jacques Cartier"
+   },
+   "born": 1492,
+   "groups": [
+    "politician",
+    "scientist",
+    "explorer"
+   ],
+   "fame": 161
+  },
+  {
+   "id": "Q7294",
+   "name": {
+    "tr": "Johannes Brahms",
+    "en": "Johannes Brahms"
+   },
+   "born": 1833,
+   "groups": [
+    "composer"
+   ],
+   "fame": 161
+  },
+  {
+   "id": "Q83338",
+   "name": {
+    "tr": "Robin Williams",
+    "en": "Robin Williams"
+   },
+   "born": 1951,
+   "groups": [
+    "actor"
+   ],
+   "fame": 161
+  },
+  {
+   "id": "Q36970",
+   "name": {
+    "tr": "Jackie Chan",
+    "en": "Jackie Chan"
+   },
+   "born": 1954,
+   "groups": [
+    "actor",
+    "director"
+   ],
+   "fame": 161
+  },
+  {
+   "id": "Q9041",
+   "name": {
+    "tr": "James Watt",
+    "en": "James Watt"
+   },
+   "born": 1736,
+   "groups": [
+    "scientist"
+   ],
+   "fame": 160
+  },
+  {
+   "id": "Q37621",
+   "name": {
+    "tr": "Thomas Hobbes",
+    "en": "Thomas Hobbes"
+   },
+   "born": 1588,
+   "groups": [
+    "writer",
+    "politician",
+    "scientist",
+    "philosopher"
+   ],
+   "fame": 160
+  },
+  {
+   "id": "Q5105",
+   "name": {
+    "tr": "Celine Dion",
+    "en": "Céline Dion"
+   },
+   "born": 1968,
+   "groups": [
+    "composer",
+    "singer"
+   ],
+   "fame": 160
+  },
+  {
+   "id": "Q7302",
+   "name": {
+    "tr": "George Frideric Handel",
+    "en": "George Frideric Handel"
+   },
+   "born": 1685,
+   "groups": [
+    "composer"
+   ],
+   "fame": 160
+  },
+  {
+   "id": "Q2001",
+   "name": {
+    "tr": "Stanley Kubrick",
+    "en": "Stanley Kubrick"
+   },
+   "born": 1928,
+   "groups": [
+    "writer",
+    "director"
+   ],
+   "fame": 160
+  },
+  {
+   "id": "Q34836",
+   "name": {
+    "tr": "Ulysses S. Grant",
+    "en": "Ulysses S. Grant"
+   },
+   "born": 1822,
+   "groups": [
+    "writer",
+    "politician",
+    "explorer"
+   ],
+   "fame": 160
+  },
+  {
+   "id": "Q37150",
+   "name": {
+    "tr": "Lana Del Rey",
+    "en": "Lana Del Rey"
+   },
+   "born": 1985,
+   "groups": [
+    "actor",
+    "singer"
+   ],
+   "fame": 159
+  },
+  {
+   "id": "Q47737",
+   "name": {
+    "tr": "Cibran Halil Cibran",
+    "en": "Kahlil Gibran"
+   },
+   "born": 1883,
+   "groups": [
+    "writer",
+    "painter",
+    "philosopher"
+   ],
+   "fame": 158
+  },
+  {
+   "id": "Q7349",
+   "name": {
+    "tr": "Joseph Haydn",
+    "en": "Joseph Haydn"
+   },
+   "born": 1732,
+   "groups": [
+    "composer"
+   ],
+   "fame": 158
+  },
+  {
+   "id": "Q25089",
+   "name": {
+    "tr": "Woody Allen",
+    "en": "Woody Allen"
+   },
+   "born": 1935,
+   "groups": [
+    "actor",
+    "writer",
+    "composer",
+    "director"
+   ],
+   "fame": 158
+  },
+  {
+   "id": "Q34012",
+   "name": {
+    "tr": "Marlon Brando",
+    "en": "Marlon Brando"
+   },
+   "born": 1924,
+   "groups": [
+    "actor",
+    "writer"
+   ],
+   "fame": 158
+  },
+  {
+   "id": "Q35149",
+   "name": {
+    "tr": "Wilhelm Conrad Röntgen",
+    "en": "Wilhelm Röntgen"
+   },
+   "born": 1845,
+   "groups": [
+    "scientist"
+   ],
+   "fame": 157
+  },
+  {
+   "id": "Q38082",
+   "name": {
+    "tr": "Lewis Carroll",
+    "en": "Lewis Carroll"
+   },
+   "born": 1832,
+   "groups": [
+    "writer",
+    "scientist",
+    "philosopher"
+   ],
+   "fame": 157
+  },
+  {
+   "id": "Q142794",
+   "name": {
+    "tr": "Neymar",
+    "en": "Neymar"
+   },
+   "born": 1992,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 156
+  },
+  {
+   "id": "Q296",
+   "name": {
+    "tr": "Claude Monet",
+    "en": "Claude Monet"
+   },
+   "born": 1840,
+   "groups": [
+    "painter"
+   ],
+   "fame": 155
+  },
+  {
+   "id": "Q38757",
+   "name": {
+    "tr": "Bertolt Brecht",
+    "en": "Bertolt Brecht"
+   },
+   "born": 1898,
+   "groups": [
+    "actor",
+    "writer",
+    "director"
+   ],
+   "fame": 155
+  },
+  {
+   "id": "Q10132",
+   "name": {
+    "tr": "Rafael Nadal",
+    "en": "Rafael Nadal"
+   },
+   "born": 1986,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 154
+  },
+  {
+   "id": "Q7333",
+   "name": {
+    "tr": "Zheng He",
+    "en": "Zheng He"
+   },
+   "born": 1371,
+   "groups": [
+    "explorer"
+   ],
+   "fame": 154
+  },
+  {
+   "id": "Q34253",
+   "name": {
+    "tr": "Linus Torvalds",
+    "en": "Linus Torvalds"
+   },
+   "born": 1969,
+   "groups": [
+    "writer",
+    "scientist"
+   ],
+   "fame": 153
+  },
+  {
+   "id": "Q11637",
+   "name": {
+    "tr": "Judy Garland",
+    "en": "Judy Garland"
+   },
+   "born": 1922,
+   "groups": [
+    "actor",
+    "singer"
+   ],
+   "fame": 153
+  },
+  {
+   "id": "Q41980",
+   "name": {
+    "tr": "Demokritos",
+    "en": "Democritus"
+   },
+   "born": -461,
+   "groups": [
+    "scientist",
+    "philosopher"
+   ],
+   "fame": 152
+  },
+  {
+   "id": "Q41532",
+   "name": {
+    "tr": "Carl Gustav Jung",
+    "en": "Carl Jung"
+   },
+   "born": 1875,
+   "groups": [
+    "painter"
+   ],
+   "fame": 152
+  },
+  {
+   "id": "Q36268",
+   "name": {
+    "tr": "Brigitte Bardot",
+    "en": "Brigitte Bardot"
+   },
+   "born": 1934,
+   "groups": [
+    "actor",
+    "writer",
+    "singer"
+   ],
+   "fame": 152
+  },
+  {
+   "id": "Q36330",
+   "name": {
+    "tr": "Giordano Bruno",
+    "en": "Giordano Bruno"
+   },
+   "born": 1548,
+   "groups": [
+    "scientist",
+    "writer",
+    "philosopher"
+   ],
+   "fame": 151
+  },
+  {
+   "id": "Q7298",
+   "name": {
+    "tr": "Antonín Dvořák",
+    "en": "Antonín Dvořák"
+   },
+   "born": 1841,
+   "groups": [
+    "composer"
+   ],
+   "fame": 151
+  },
+  {
+   "id": "Q7304",
+   "name": {
+    "tr": "Gustav Mahler",
+    "en": "Gustav Mahler"
+   },
+   "born": 1860,
+   "groups": [
+    "composer"
+   ],
+   "fame": 151
+  },
+  {
+   "id": "Q6105",
+   "name": {
+    "tr": "Hebe Camargo",
+    "en": "Hebe Camargo"
+   },
+   "born": 1929,
+   "groups": [
+    "singer",
+    "actor"
+   ],
+   "fame": 151
+  },
+  {
+   "id": "Q44301",
+   "name": {
+    "tr": "Jim Morrison",
+    "en": "Jim Morrison"
+   },
+   "born": 1943,
+   "groups": [
+    "actor",
+    "composer",
+    "writer",
+    "singer"
+   ],
+   "fame": 150
+  },
+  {
+   "id": "Q2599",
+   "name": {
+    "tr": "Paul McCartney",
+    "en": "Paul McCartney"
+   },
+   "born": 1942,
+   "groups": [
+    "composer",
+    "singer",
+    "painter",
+    "director",
+    "actor"
+   ],
+   "fame": 149
+  },
+  {
+   "id": "Q42786",
+   "name": {
+    "tr": "Audrey Hepburn",
+    "en": "Audrey Hepburn"
+   },
+   "born": 1929,
+   "groups": [
+    "actor",
+    "singer"
+   ],
+   "fame": 149
+  },
+  {
+   "id": "Q221310",
+   "name": {
+    "tr": "Anggun",
+    "en": "Anggun"
+   },
+   "born": 1974,
+   "groups": [
+    "actor",
+    "singer"
+   ],
+   "fame": 149
+  },
+  {
+   "id": "Q17892",
+   "name": {
+    "tr": "Sappho",
+    "en": "Sappho"
+   },
+   "born": -651,
+   "groups": [
+    "writer",
+    "composer"
+   ],
+   "fame": 148
+  },
+  {
+   "id": "Q1362169",
+   "name": {
+    "tr": "Agnes Monica",
+    "en": "Agnez Mo"
+   },
+   "born": 1986,
+   "groups": [
+    "actor",
+    "singer"
+   ],
+   "fame": 148
+  },
+  {
+   "id": "Q8003",
+   "name": {
+    "tr": "Sergey Eisenstein",
+    "en": "Sergei Eisenstein"
+   },
+   "born": 1898,
+   "groups": [
+    "actor",
+    "scientist",
+    "director"
+   ],
+   "fame": 147
+  },
+  {
+   "id": "Q7311",
+   "name": {
+    "tr": "Giacomo Puccini",
+    "en": "Giacomo Puccini"
+   },
+   "born": 1858,
+   "groups": [
+    "composer",
+    "politician"
+   ],
+   "fame": 147
+  },
+  {
+   "id": "Q35332",
+   "name": {
+    "tr": "Brad Pitt",
+    "en": "Brad Pitt"
+   },
+   "born": 1963,
+   "groups": [
+    "actor"
+   ],
+   "fame": 147
+  },
+  {
+   "id": "Q37175",
+   "name": {
+    "tr": "Johnny Depp",
+    "en": "Johnny Depp"
+   },
+   "born": 1963,
+   "groups": [
+    "actor",
+    "director"
+   ],
+   "fame": 147
+  },
+  {
+   "id": "Q41155",
+   "name": {
+    "tr": "Heraklitos",
+    "en": "Heraclitus"
+   },
+   "born": -535,
+   "groups": [
+    "writer",
+    "scientist",
+    "philosopher"
+   ],
+   "fame": 146
+  },
+  {
+   "id": "Q11975",
+   "name": {
+    "tr": "Britney Spears",
+    "en": "Britney Spears"
+   },
+   "born": 1981,
+   "groups": [
+    "actor",
+    "composer",
+    "singer"
+   ],
+   "fame": 146
+  },
+  {
+   "id": "Q1631",
+   "name": {
+    "tr": "Édith Piaf",
+    "en": "Édith Piaf"
+   },
+   "born": 1915,
+   "groups": [
+    "actor",
+    "singer"
+   ],
+   "fame": 146
+  },
+  {
+   "id": "Q19526",
+   "name": {
+    "tr": "Maya Angelou",
+    "en": "Maya Angelou"
+   },
+   "born": 1928,
+   "groups": [
+    "writer",
+    "politician",
+    "singer",
+    "director"
+   ],
+   "fame": 145
+  },
+  {
+   "id": "Q1835",
+   "name": {
+    "tr": "Zinedine Zidane",
+    "en": "Zinedine Zidane"
+   },
+   "born": 1972,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 145
+  },
+  {
+   "id": "Q4573",
+   "name": {
+    "tr": "Sean Connery",
+    "en": "Sean Connery"
+   },
+   "born": 1930,
+   "groups": [
+    "actor",
+    "writer",
+    "footballer",
+    "director"
+   ],
+   "fame": 145
+  },
+  {
+   "id": "Q8873",
+   "name": {
+    "tr": "Satyajit Ray",
+    "en": "Satyajit Ray"
+   },
+   "born": 1921,
+   "groups": [
+    "writer",
+    "composer",
+    "painter",
+    "director"
+   ],
+   "fame": 144
+  },
+  {
+   "id": "Q36233",
+   "name": {
+    "tr": "Václav Havel",
+    "en": "Václav Havel"
+   },
+   "born": 1936,
+   "groups": [
+    "writer",
+    "politician",
+    "director",
+    "philosopher"
+   ],
+   "fame": 144
+  },
+  {
+   "id": "Q410",
+   "name": {
+    "tr": "Carl Sagan",
+    "en": "Carl Sagan"
+   },
+   "born": 1934,
+   "groups": [
+    "scientist",
+    "writer"
+   ],
+   "fame": 143
+  },
+  {
+   "id": "Q9372",
+   "name": {
+    "tr": "Sima Qian",
+    "en": "Sima Qian"
+   },
+   "born": -145,
+   "groups": [
+    "scientist",
+    "writer",
+    "philosopher"
+   ],
+   "fame": 143
+  },
+  {
+   "id": "Q855252",
+   "name": {
+    "tr": "Bhumibol Adulyadej",
+    "en": "Bhumibol Adulyadej"
+   },
+   "born": 1927,
+   "groups": [
+    "writer",
+    "composer",
+    "painter"
+   ],
+   "fame": 143
+  },
+  {
+   "id": "Q41408",
+   "name": {
+    "tr": "Federico García Lorca",
+    "en": "Federico García Lorca"
+   },
+   "born": 1898,
+   "groups": [
+    "writer",
+    "composer"
+   ],
+   "fame": 143
+  },
+  {
+   "id": "Q34851",
+   "name": {
+    "tr": "Elizabeth Taylor",
+    "en": "Elizabeth Taylor"
+   },
+   "born": 1932,
+   "groups": [
+    "actor",
+    "writer"
+   ],
+   "fame": 143
+  },
+  {
+   "id": "Q6694",
+   "name": {
+    "tr": "Alexander von Humboldt",
+    "en": "Alexander von Humboldt"
+   },
+   "born": 1769,
+   "groups": [
+    "explorer",
+    "scientist",
+    "writer"
+   ],
+   "fame": 141
+  },
+  {
+   "id": "Q11758",
+   "name": {
+    "tr": "Ludwik Lejzer Zamenhof",
+    "en": "L. L. Zamenhof"
+   },
+   "born": 1859,
+   "groups": [
+    "writer",
+    "scientist"
+   ],
+   "fame": 141
+  },
+  {
+   "id": "Q41223",
+   "name": {
+    "tr": "Boris Pasternak",
+    "en": "Boris Pasternak"
+   },
+   "born": 1890,
+   "groups": [
+    "writer",
+    "composer"
+   ],
+   "fame": 141
+  },
+  {
+   "id": "Q3099714",
+   "name": {
+    "tr": "Justin Trudeau",
+    "en": "Justin Trudeau"
+   },
+   "born": 1971,
+   "groups": [
+    "actor",
+    "politician"
+   ],
+   "fame": 141
+  },
+  {
+   "id": "Q37327",
+   "name": {
+    "tr": "Samuel Beckett",
+    "en": "Samuel Beckett"
+   },
+   "born": 1906,
+   "groups": [
+    "writer",
+    "director"
+   ],
+   "fame": 140
+  },
+  {
+   "id": "Q35548",
+   "name": {
+    "tr": "Paul Cézanne",
+    "en": "Paul Cézanne"
+   },
+   "born": 1839,
+   "groups": [
+    "painter"
+   ],
+   "fame": 139
+  },
+  {
+   "id": "Q106529",
+   "name": {
+    "tr": "Alain Delon",
+    "en": "Alain Delon"
+   },
+   "born": 1935,
+   "groups": [
+    "actor",
+    "writer",
+    "singer",
+    "director"
+   ],
+   "fame": 139
+  },
+  {
+   "id": "Q36949",
+   "name": {
+    "tr": "Robert De Niro",
+    "en": "Robert De Niro"
+   },
+   "born": 1943,
+   "groups": [
+    "actor",
+    "director"
+   ],
+   "fame": 139
+  },
+  {
+   "id": "Q765165",
+   "name": {
+    "tr": "Leonid Brejnev",
+    "en": "Leonid Brezhnev"
+   },
+   "born": 1906,
+   "groups": [
+    "politician",
+    "actor"
+   ],
+   "fame": 139
+  },
+  {
+   "id": "Q41421",
+   "name": {
+    "tr": "Michael Jordan",
+    "en": "Michael Jordan"
+   },
+   "born": 1963,
+   "groups": [
+    "basketball"
+   ],
+   "fame": 139
+  },
+  {
+   "id": "Q34943",
+   "name": {
+    "tr": "Batlamyus",
+    "en": "Ptolemy"
+   },
+   "born": 100,
+   "groups": [
+    "scientist",
+    "writer",
+    "philosopher"
+   ],
+   "fame": 138
+  },
+  {
+   "id": "Q134958",
+   "name": {
+    "tr": "Taras Şevçenko",
+    "en": "Taras Shevchenko"
+   },
+   "born": 1814,
+   "groups": [
+    "writer",
+    "painter",
+    "philosopher"
+   ],
+   "fame": 138
+  },
+  {
+   "id": "Q30449",
+   "name": {
+    "tr": "Avril Lavigne",
+    "en": "Avril Lavigne"
+   },
+   "born": 1984,
+   "groups": [
+    "actor",
+    "composer",
+    "singer"
+   ],
+   "fame": 138
+  },
+  {
+   "id": "Q47478",
+   "name": {
+    "tr": "Svami Vivekananda",
+    "en": "Swami Vivekananda"
+   },
+   "born": 1863,
+   "groups": [
+    "writer",
+    "singer",
+    "philosopher"
+   ],
+   "fame": 137
+  },
+  {
+   "id": "Q44461",
+   "name": {
+    "tr": "Richard Dawkins",
+    "en": "Richard Dawkins"
+   },
+   "born": 1941,
+   "groups": [
+    "actor",
+    "writer",
+    "scientist"
+   ],
+   "fame": 136
+  },
+  {
+   "id": "Q5383",
+   "name": {
+    "tr": "David Bowie",
+    "en": "David Bowie"
+   },
+   "born": 1947,
+   "groups": [
+    "actor",
+    "composer",
+    "singer",
+    "painter"
+   ],
+   "fame": 136
+  },
+  {
+   "id": "Q5928",
+   "name": {
+    "tr": "Jimi Hendrix",
+    "en": "Jimi Hendrix"
+   },
+   "born": 1942,
+   "groups": [
+    "composer",
+    "singer"
+   ],
+   "fame": 136
+  },
+  {
+   "id": "Q40912",
+   "name": {
+    "tr": "Frank Sinatra",
+    "en": "Frank Sinatra"
+   },
+   "born": 1915,
+   "groups": [
+    "actor",
+    "singer"
+   ],
+   "fame": 136
+  },
+  {
+   "id": "Q40715",
+   "name": {
+    "tr": "Jennifer Lopez",
+    "en": "Jennifer Lopez"
+   },
+   "born": 1969,
+   "groups": [
+    "actor",
+    "singer"
+   ],
+   "fame": 136
+  },
+  {
+   "id": "Q34389",
+   "name": {
+    "tr": "Whitney Houston",
+    "en": "Whitney Houston"
+   },
+   "born": 1963,
+   "groups": [
+    "actor",
+    "singer"
+   ],
+   "fame": 136
+  },
+  {
+   "id": "Q37876",
+   "name": {
+    "tr": "Natalie Portman",
+    "en": "Natalie Portman"
+   },
+   "born": 1981,
+   "groups": [
+    "actor",
+    "director"
+   ],
+   "fame": 136
+  },
+  {
+   "id": "Q42493",
+   "name": {
+    "tr": "Katy Perry",
+    "en": "Katy Perry"
+   },
+   "born": 1984,
+   "groups": [
+    "actor",
+    "composer",
+    "singer"
+   ],
+   "fame": 135
+  },
+  {
+   "id": "Q2263",
+   "name": {
+    "tr": "Tom Hanks",
+    "en": "Tom Hanks"
+   },
+   "born": 1956,
+   "groups": [
+    "actor",
+    "writer",
+    "composer",
+    "director"
+   ],
+   "fame": 135
+  },
+  {
+   "id": "Q1151",
+   "name": {
+    "tr": "Hector Berlioz",
+    "en": "Hector Berlioz"
+   },
+   "born": 1803,
+   "groups": [
+    "writer",
+    "composer"
+   ],
+   "fame": 135
+  },
+  {
+   "id": "Q43203",
+   "name": {
+    "tr": "Clint Eastwood",
+    "en": "Clint Eastwood"
+   },
+   "born": 1930,
+   "groups": [
+    "actor",
+    "writer",
+    "composer",
+    "politician",
+    "singer",
+    "director"
+   ],
+   "fame": 135
+  },
+  {
+   "id": "Q6107",
+   "name": {
+    "tr": "Tupac Shakur",
+    "en": "Tupac Shakur"
+   },
+   "born": 1971,
+   "groups": [
+    "actor",
+    "composer",
+    "writer"
+   ],
+   "fame": 135
+  },
+  {
+   "id": "Q23215",
+   "name": {
+    "tr": "Adele",
+    "en": "Adele"
+   },
+   "born": 1988,
+   "groups": [
+    "composer",
+    "singer"
+   ],
+   "fame": 135
+  },
+  {
+   "id": "Q205707",
+   "name": {
+    "tr": "Bradley Cooper",
+    "en": "Bradley Cooper"
+   },
+   "born": 1975,
+   "groups": [
+    "actor",
+    "director"
+   ],
+   "fame": 135
+  },
+  {
+   "id": "Q33817",
+   "name": {
+    "tr": "Edmund Hillary",
+    "en": "Edmund Hillary"
+   },
+   "born": 1919,
+   "groups": [
+    "explorer"
+   ],
+   "fame": 135
+  },
+  {
+   "id": "Q40096",
+   "name": {
+    "tr": "Will Smith",
+    "en": "Will Smith"
+   },
+   "born": 1968,
+   "groups": [
+    "composer",
+    "singer",
+    "director",
+    "actor",
+    "writer"
+   ],
+   "fame": 134
+  },
+  {
+   "id": "Q41163",
+   "name": {
+    "tr": "Al Pacino",
+    "en": "Al Pacino"
+   },
+   "born": 1940,
+   "groups": [
+    "actor",
+    "writer",
+    "director"
+   ],
+   "fame": 134
+  },
+  {
+   "id": "Q23380",
+   "name": {
+    "tr": "Jean-Auguste-Dominique Ingres",
+    "en": "Jean-Auguste-Dominique Ingres"
+   },
+   "born": 1780,
+   "groups": [
+    "politician",
+    "painter"
+   ],
+   "fame": 133
+  },
+  {
+   "id": "Q37693",
+   "name": {
+    "tr": "Paul Gauguin",
+    "en": "Paul Gauguin"
+   },
+   "born": 1848,
+   "groups": [
+    "painter"
+   ],
+   "fame": 133
+  },
+  {
+   "id": "Q12881",
+   "name": {
+    "tr": "Paulo Coelho",
+    "en": "Paulo Coelho"
+   },
+   "born": 1947,
+   "groups": [
+    "writer",
+    "composer"
+   ],
+   "fame": 133
+  },
+  {
+   "id": "Q38222",
+   "name": {
+    "tr": "George Lucas",
+    "en": "George Lucas"
+   },
+   "born": 1944,
+   "groups": [
+    "actor",
+    "writer",
+    "director"
+   ],
+   "fame": 133
+  },
+  {
+   "id": "Q41173",
+   "name": {
+    "tr": "Demi Lovato",
+    "en": "Demi Lovato"
+   },
+   "born": 1992,
+   "groups": [
+    "actor",
+    "composer",
+    "singer"
+   ],
+   "fame": 132
+  },
+  {
+   "id": "Q37459",
+   "name": {
+    "tr": "Nicole Kidman",
+    "en": "Nicole Kidman"
+   },
+   "born": 1967,
+   "groups": [
+    "actor",
+    "singer"
+   ],
+   "fame": 132
+  },
+  {
+   "id": "Q80966",
+   "name": {
+    "tr": "Cate Blanchett",
+    "en": "Cate Blanchett"
+   },
+   "born": 1969,
+   "groups": [
+    "actor",
+    "director"
+   ],
+   "fame": 132
+  },
+  {
+   "id": "Q44371",
+   "name": {
+    "tr": "Valentina Tereşkova",
+    "en": "Valentina Tereshkova"
+   },
+   "born": 1937,
+   "groups": [
+    "astronaut",
+    "politician"
+   ],
+   "fame": 132
+  },
+  {
+   "id": "Q30755",
+   "name": {
+    "tr": "Auguste Rodin",
+    "en": "Auguste Rodin"
+   },
+   "born": 1840,
+   "groups": [
+    "painter"
+   ],
+   "fame": 131
+  },
+  {
+   "id": "Q4700",
+   "name": {
+    "tr": "Claude Debussy",
+    "en": "Claude Debussy"
+   },
+   "born": 1862,
+   "groups": [
+    "composer"
+   ],
+   "fame": 131
+  },
+  {
+   "id": "Q7351",
+   "name": {
+    "tr": "Robert Schumann",
+    "en": "Robert Schumann"
+   },
+   "born": 1810,
+   "groups": [
+    "writer",
+    "composer"
+   ],
+   "fame": 131
+  },
+  {
+   "id": "Q1276",
+   "name": {
+    "tr": "Leonard Cohen",
+    "en": "Leonard Cohen"
+   },
+   "born": 1934,
+   "groups": [
+    "writer",
+    "singer",
+    "actor"
+   ],
+   "fame": 131
+  },
+  {
+   "id": "Q43252",
+   "name": {
+    "tr": "Sophia Loren",
+    "en": "Sophia Loren"
+   },
+   "born": 1934,
+   "groups": [
+    "actor",
+    "singer"
+   ],
+   "fame": 131
+  },
+  {
+   "id": "Q234679",
+   "name": {
+    "tr": "Charlotte Rampling",
+    "en": "Charlotte Rampling"
+   },
+   "born": 1946,
+   "groups": [
+    "actor",
+    "singer"
+   ],
+   "fame": 131
+  },
+  {
+   "id": "Q34460",
+   "name": {
+    "tr": "Gwyneth Paltrow",
+    "en": "Gwyneth Paltrow"
+   },
+   "born": 1972,
+   "groups": [
+    "actor",
+    "singer",
+    "director"
+   ],
+   "fame": 131
+  },
+  {
+   "id": "Q39803",
+   "name": {
+    "tr": "Mario Vargas Llosa",
+    "en": "Mario Vargas Llosa"
+   },
+   "born": 1936,
+   "groups": [
+    "writer",
+    "politician",
+    "director",
+    "philosopher"
+   ],
+   "fame": 131
+  },
+  {
+   "id": "Q2677",
+   "name": {
+    "tr": "II. Wilhelm",
+    "en": "Wilhelm II"
+   },
+   "born": 1859,
+   "groups": [
+    "painter"
+   ],
+   "fame": 130
+  },
+  {
+   "id": "Q15897",
+   "name": {
+    "tr": "Amy Winehouse",
+    "en": "Amy Winehouse"
+   },
+   "born": 1983,
+   "groups": [
+    "composer",
+    "singer"
+   ],
+   "fame": 129
+  },
+  {
+   "id": "Q32927",
+   "name": {
+    "tr": "Valery Leontiev",
+    "en": "Valery Leontiev"
+   },
+   "born": 1949,
+   "groups": [
+    "actor",
+    "composer",
+    "writer",
+    "singer"
+   ],
+   "fame": 129
+  },
+  {
+   "id": "Q46599",
+   "name": {
+    "tr": "Mihail Yuryeviç Lermontov",
+    "en": "Mikhail Lermontov"
+   },
+   "born": 1814,
+   "groups": [
+    "writer",
+    "painter"
+   ],
+   "fame": 128
+  },
+  {
+   "id": "Q8446",
+   "name": {
+    "tr": "Kurt Cobain",
+    "en": "Kurt Cobain"
+   },
+   "born": 1967,
+   "groups": [
+    "composer",
+    "singer"
+   ],
+   "fame": 128
+  },
+  {
+   "id": "Q40791",
+   "name": {
+    "tr": "Sandra Bullock",
+    "en": "Sandra Bullock"
+   },
+   "born": 1964,
+   "groups": [
+    "actor",
+    "director"
+   ],
+   "fame": 128
+  },
+  {
+   "id": "Q17163",
+   "name": {
+    "tr": "Johan Cruyff",
+    "en": "Johan Cruyff"
+   },
+   "born": 1947,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 128
+  },
+  {
+   "id": "Q23844",
+   "name": {
+    "tr": "George Clooney",
+    "en": "George Clooney"
+   },
+   "born": 1961,
+   "groups": [
+    "actor",
+    "writer",
+    "director"
+   ],
+   "fame": 128
+  },
+  {
+   "id": "Q47087",
+   "name": {
+    "tr": "Arthur C. Clarke",
+    "en": "Arthur C. Clarke"
+   },
+   "born": 1917,
+   "groups": [
+    "writer",
+    "scientist",
+    "explorer"
+   ],
+   "fame": 128
+  },
+  {
+   "id": "Q41309",
+   "name": {
+    "tr": "Franz Liszt",
+    "en": "Franz Liszt"
+   },
+   "born": 1811,
+   "groups": [
+    "writer",
+    "composer"
+   ],
+   "fame": 127
+  },
+  {
+   "id": "Q9397",
+   "name": {
+    "tr": "Zhu Xi",
+    "en": "Zhu Xi"
+   },
+   "born": 1130,
+   "groups": [
+    "writer",
+    "composer",
+    "philosopher"
+   ],
+   "fame": 127
+  },
+  {
+   "id": "Q48337",
+   "name": {
+    "tr": "Morgan Freeman",
+    "en": "Morgan Freeman"
+   },
+   "born": 1937,
+   "groups": [
+    "actor",
+    "director"
+   ],
+   "fame": 127
+  },
+  {
+   "id": "Q32522",
+   "name": {
+    "tr": "Jennifer Aniston",
+    "en": "Jennifer Aniston"
+   },
+   "born": 1969,
+   "groups": [
+    "actor",
+    "director"
+   ],
+   "fame": 127
+  },
+  {
+   "id": "Q39792",
+   "name": {
+    "tr": "Jack Nicholson",
+    "en": "Jack Nicholson"
+   },
+   "born": 1937,
+   "groups": [
+    "actor",
+    "writer",
+    "director"
+   ],
+   "fame": 127
+  },
+  {
+   "id": "Q40504",
+   "name": {
+    "tr": "Jim Carrey",
+    "en": "Jim Carrey"
+   },
+   "born": 1962,
+   "groups": [
+    "actor",
+    "painter"
+   ],
+   "fame": 126
+  },
+  {
+   "id": "Q9570",
+   "name": {
+    "tr": "Amitabh Bachchan",
+    "en": "Amitabh Bachchan"
+   },
+   "born": 1942,
+   "groups": [
+    "actor",
+    "writer",
+    "singer"
+   ],
+   "fame": 126
+  },
+  {
+   "id": "Q20110",
+   "name": {
+    "tr": "Francesco Totti",
+    "en": "Francesco Totti"
+   },
+   "born": 1976,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 126
+  },
+  {
+   "id": "Q37001",
+   "name": {
+    "tr": "Toshiro Mifune",
+    "en": "Toshirō Mifune"
+   },
+   "born": 1920,
+   "groups": [
+    "actor",
+    "director"
+   ],
+   "fame": 126
+  },
+  {
+   "id": "Q2643",
+   "name": {
+    "tr": "George Harrison",
+    "en": "George Harrison"
+   },
+   "born": 1943,
+   "groups": [
+    "actor",
+    "composer",
+    "writer",
+    "singer",
+    "director"
+   ],
+   "fame": 125
+  },
+  {
+   "id": "Q129817",
+   "name": {
+    "tr": "Russell Crowe",
+    "en": "Russell Crowe"
+   },
+   "born": 1964,
+   "groups": [
+    "actor",
+    "writer",
+    "composer",
+    "singer",
+    "director"
+   ],
+   "fame": 125
+  },
+  {
+   "id": "Q40026",
+   "name": {
+    "tr": "Sylvester Stallone",
+    "en": "Sylvester Stallone"
+   },
+   "born": 1946,
+   "groups": [
+    "director",
+    "actor"
+   ],
+   "fame": 125
+  },
+  {
+   "id": "Q11459",
+   "name": {
+    "tr": "Serena Williams",
+    "en": "Serena Williams"
+   },
+   "born": 1981,
+   "groups": [
+    "actor",
+    "writer",
+    "tennis"
+   ],
+   "fame": 125
+  },
+  {
+   "id": "Q132964",
+   "name": {
+    "tr": "Vladimir Mayakovski",
+    "en": "Vladimir Mayakovsky"
+   },
+   "born": 1893,
+   "groups": [
+    "actor",
+    "writer",
+    "painter",
+    "director"
+   ],
+   "fame": 124
+  },
+  {
+   "id": "Q46096",
+   "name": {
+    "tr": "Felix Mendelssohn Bartholdy",
+    "en": "Felix Mendelssohn"
+   },
+   "born": 1809,
+   "groups": [
+    "writer",
+    "composer",
+    "painter"
+   ],
+   "fame": 124
+  },
+  {
+   "id": "Q43416",
+   "name": {
+    "tr": "Keanu Reeves",
+    "en": "Keanu Reeves"
+   },
+   "born": 1964,
+   "groups": [
+    "actor",
+    "writer",
+    "singer",
+    "director"
+   ],
+   "fame": 124
+  },
+  {
+   "id": "Q529207",
+   "name": {
+    "tr": "Ronaldo",
+    "en": "Ronaldo"
+   },
+   "born": 1976,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 124
+  },
+  {
+   "id": "Q11998",
+   "name": {
+    "tr": "Kylie Minogue",
+    "en": "Kylie Minogue"
+   },
+   "born": 1968,
+   "groups": [
+    "actor",
+    "composer",
+    "singer"
+   ],
+   "fame": 123
+  },
+  {
+   "id": "Q83158",
+   "name": {
+    "tr": "Jean Cocteau",
+    "en": "Jean Cocteau"
+   },
+   "born": 1889,
+   "groups": [
+    "actor",
+    "writer",
+    "composer",
+    "painter",
+    "director"
+   ],
+   "fame": 121
+  },
+  {
+   "id": "Q33477",
+   "name": {
+    "tr": "Eugène Delacroix",
+    "en": "Eugène Delacroix"
+   },
+   "born": 1798,
+   "groups": [
+    "painter"
+   ],
+   "fame": 121
+  },
+  {
+   "id": "Q42869",
+   "name": {
+    "tr": "Nicolas Cage",
+    "en": "Nicolas Cage"
+   },
+   "born": 1964,
+   "groups": [
+    "actor",
+    "writer",
+    "director"
+   ],
+   "fame": 121
+  },
+  {
+   "id": "Q280856",
+   "name": {
+    "tr": "VI. George",
+    "en": "George VI"
+   },
+   "born": 1895,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 121
+  },
+  {
+   "id": "Q36517",
+   "name": {
+    "tr": "Francis Drake",
+    "en": "Francis Drake"
+   },
+   "born": 1540,
+   "groups": [
+    "politician",
+    "explorer"
+   ],
+   "fame": 121
+  },
+  {
+   "id": "Q65932",
+   "name": {
+    "tr": "Anthony Hopkins",
+    "en": "Anthony Hopkins"
+   },
+   "born": 1937,
+   "groups": [
+    "actor",
+    "writer",
+    "composer",
+    "painter",
+    "director"
+   ],
+   "fame": 120
+  },
+  {
+   "id": "Q41406",
+   "name": {
+    "tr": "Edvard Munch",
+    "en": "Edvard Munch"
+   },
+   "born": 1863,
+   "groups": [
+    "painter"
+   ],
+   "fame": 120
+  },
+  {
+   "id": "Q40531",
+   "name": {
+    "tr": "John Wayne",
+    "en": "John Wayne"
+   },
+   "born": 1907,
+   "groups": [
+    "actor",
+    "writer",
+    "director"
+   ],
+   "fame": 120
+  },
+  {
+   "id": "Q159577",
+   "name": {
+    "tr": "Jet Li",
+    "en": "Jet Li"
+   },
+   "born": 1963,
+   "groups": [
+    "actor",
+    "writer",
+    "director"
+   ],
+   "fame": 120
+  },
+  {
+   "id": "Q189490",
+   "name": {
+    "tr": "Jennifer Lawrence",
+    "en": "Jennifer Lawrence"
+   },
+   "born": 1990,
+   "groups": [
+    "actor",
+    "director"
+   ],
+   "fame": 120
+  },
+  {
+   "id": "Q42229",
+   "name": {
+    "tr": "Mel Gibson",
+    "en": "Mel Gibson"
+   },
+   "born": 1956,
+   "groups": [
+    "actor",
+    "writer",
+    "director"
+   ],
+   "fame": 119
+  },
+  {
+   "id": "Q39666",
+   "name": {
+    "tr": "Penélope Cruz",
+    "en": "Penélope Cruz"
+   },
+   "born": 1974,
+   "groups": [
+    "actor",
+    "director"
+   ],
+   "fame": 119
+  },
+  {
+   "id": "Q46896",
+   "name": {
+    "tr": "Zlatan Ibrahimović",
+    "en": "Zlatan Ibrahimović"
+   },
+   "born": 1981,
+   "groups": [
+    "actor",
+    "footballer"
+   ],
+   "fame": 119
+  },
+  {
+   "id": "Q5752",
+   "name": {
+    "tr": "Peter Kropotkin",
+    "en": "Peter Kropotkin"
+   },
+   "born": 1842,
+   "groups": [
+    "writer",
+    "politician",
+    "philosopher",
+    "explorer"
+   ],
+   "fame": 119
+  },
+  {
+   "id": "Q37571",
+   "name": {
+    "tr": "Jackson Pollock",
+    "en": "Jackson Pollock"
+   },
+   "born": 1912,
+   "groups": [
+    "painter"
+   ],
+   "fame": 118
+  },
+  {
+   "id": "Q179126",
+   "name": {
+    "tr": "John Ruskin",
+    "en": "John Ruskin"
+   },
+   "born": 1819,
+   "groups": [
+    "writer",
+    "painter",
+    "philosopher"
+   ],
+   "fame": 117
+  },
+  {
+   "id": "Q41264",
+   "name": {
+    "tr": "Johannes Vermeer",
+    "en": "Johannes Vermeer"
+   },
+   "born": 1632,
+   "groups": [
+    "painter"
+   ],
+   "fame": 116
+  },
+  {
+   "id": "Q42207",
+   "name": {
+    "tr": "Caravaggio",
+    "en": "Caravaggio"
+   },
+   "born": 1571,
+   "groups": [
+    "painter"
+   ],
+   "fame": 116
+  },
+  {
+   "id": "Q4457",
+   "name": {
+    "tr": "Franz Beckenbauer",
+    "en": "Franz Beckenbauer"
+   },
+   "born": 1945,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 116
+  },
+  {
+   "id": "Q301",
+   "name": {
+    "tr": "El Greco",
+    "en": "El Greco"
+   },
+   "born": 1541,
+   "groups": [
+    "painter"
+   ],
+   "fame": 115
+  },
+  {
+   "id": "Q5669",
+   "name": {
+    "tr": "Sandro Botticelli",
+    "en": "Sandro Botticelli"
+   },
+   "born": 1445,
+   "groups": [
+    "painter"
+   ],
+   "fame": 115
+  },
+  {
+   "id": "Q39931",
+   "name": {
+    "tr": "Auguste Renoir",
+    "en": "Pierre-Auguste Renoir"
+   },
+   "born": 1841,
+   "groups": [
+    "painter"
+   ],
+   "fame": 115
+  },
+  {
+   "id": "Q2252",
+   "name": {
+    "tr": "Buzz Aldrin",
+    "en": "Buzz Aldrin"
+   },
+   "born": 1930,
+   "groups": [
+    "astronaut"
+   ],
+   "fame": 115
+  },
+  {
+   "id": "Q46373",
+   "name": {
+    "tr": "Edgar Degas",
+    "en": "Edgar Degas"
+   },
+   "born": 1834,
+   "groups": [
+    "writer",
+    "painter"
+   ],
+   "fame": 114
+  },
+  {
+   "id": "Q26517",
+   "name": {
+    "tr": "Luis Suárez",
+    "en": "Luis Suárez"
+   },
+   "born": 1987,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 114
+  },
+  {
+   "id": "Q39444",
+   "name": {
+    "tr": "Ronaldinho",
+    "en": "Ronaldinho"
+   },
+   "born": 1980,
+   "groups": [
+    "writer",
+    "politician",
+    "footballer"
+   ],
+   "fame": 114
+  },
+  {
+   "id": "Q25369",
+   "name": {
+    "tr": "Kobe Bryant",
+    "en": "Kobe Bryant"
+   },
+   "born": 1978,
+   "groups": [
+    "basketball"
+   ],
+   "fame": 114
+  },
+  {
+   "id": "Q47674",
+   "name": {
+    "tr": "Amerigo Vespucci",
+    "en": "Amerigo Vespucci"
+   },
+   "born": 1454,
+   "groups": [
+    "writer",
+    "explorer"
+   ],
+   "fame": 114
+  },
+  {
+   "id": "Q40599",
+   "name": {
+    "tr": "Édouard Manet",
+    "en": "Édouard Manet"
+   },
+   "born": 1832,
+   "groups": [
+    "painter"
+   ],
+   "fame": 113
+  },
+  {
+   "id": "Q68060",
+   "name": {
+    "tr": "Gianluigi Buffon",
+    "en": "Gianluigi Buffon"
+   },
+   "born": 1978,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 112
+  },
+  {
+   "id": "Q11666",
+   "name": {
+    "tr": "Mariya Şarapova",
+    "en": "Maria Sharapova"
+   },
+   "born": 1987,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 112
+  },
+  {
+   "id": "Q102139",
+   "name": {
+    "tr": "II. Margrethe",
+    "en": "Margrethe II of Denmark"
+   },
+   "born": 1940,
+   "groups": [
+    "painter"
+   ],
+   "fame": 111
+  },
+  {
+   "id": "Q58720",
+   "name": {
+    "tr": "Mihail Lomonosov",
+    "en": "Mikhail Lomonosov"
+   },
+   "born": 1711,
+   "groups": [
+    "scientist",
+    "painter",
+    "philosopher",
+    "writer",
+    "politician"
+   ],
+   "fame": 110
+  },
+  {
+   "id": "Q155855",
+   "name": {
+    "tr": "Karel Çapek",
+    "en": "Karel Čapek"
+   },
+   "born": 1890,
+   "groups": [
+    "writer",
+    "painter",
+    "philosopher"
+   ],
+   "fame": 110
+  },
+  {
+   "id": "Q765",
+   "name": {
+    "tr": "Dario Fo",
+    "en": "Dario Fo"
+   },
+   "born": 1926,
+   "groups": [
+    "actor",
+    "writer",
+    "composer",
+    "painter"
+   ],
+   "fame": 109
+  },
+  {
+   "id": "Q47551",
+   "name": {
+    "tr": "Tiziano",
+    "en": "Titian"
+   },
+   "born": 1490,
+   "groups": [
+    "painter"
+   ],
+   "fame": 109
+  },
+  {
+   "id": "Q37562",
+   "name": {
+    "tr": "Donatello",
+    "en": "Donatello"
+   },
+   "born": 1386,
+   "groups": [
+    "painter"
+   ],
+   "fame": 108
+  },
+  {
+   "id": "Q79983",
+   "name": {
+    "tr": "José Mourinho",
+    "en": "José Mourinho"
+   },
+   "born": 1963,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 108
+  },
+  {
+   "id": "Q34970",
+   "name": {
+    "tr": "D. H. Lawrence",
+    "en": "D. H. Lawrence"
+   },
+   "born": 1885,
+   "groups": [
+    "writer",
+    "painter"
+   ],
+   "fame": 107
+  },
+  {
+   "id": "Q34661",
+   "name": {
+    "tr": "Gustav Klimt",
+    "en": "Gustav Klimt"
+   },
+   "born": 1862,
+   "groups": [
+    "painter"
+   ],
+   "fame": 107
+  },
+  {
+   "id": "Q1912",
+   "name": {
+    "tr": "Karim Benzema",
+    "en": "Karim Benzema"
+   },
+   "born": 1987,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 107
+  },
+  {
+   "id": "Q160627",
+   "name": {
+    "tr": "Alfred Russel Wallace",
+    "en": "Alfred Russel Wallace"
+   },
+   "born": 1823,
+   "groups": [
+    "writer",
+    "scientist",
+    "explorer"
+   ],
+   "fame": 107
+  },
+  {
+   "id": "Q152384",
+   "name": {
+    "tr": "Joan Miró",
+    "en": "Joan Miró"
+   },
+   "born": 1893,
+   "groups": [
+    "painter"
+   ],
+   "fame": 106
+  },
+  {
+   "id": "Q18391",
+   "name": {
+    "tr": "Elie Wiesel",
+    "en": "Elie Wiesel"
+   },
+   "born": 1928,
+   "groups": [
+    "writer",
+    "footballer",
+    "philosopher"
+   ],
+   "fame": 106
+  },
+  {
+   "id": "Q43729",
+   "name": {
+    "tr": "Andrés Iniesta",
+    "en": "Andrés Iniesta"
+   },
+   "born": 1984,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 106
+  },
+  {
+   "id": "Q83488",
+   "name": {
+    "tr": "Mesut Özil",
+    "en": "Mesut Özil"
+   },
+   "born": 1988,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 106
+  },
+  {
+   "id": "Q48246",
+   "name": {
+    "tr": "Ernst Haeckel",
+    "en": "Ernst Haeckel"
+   },
+   "born": 1834,
+   "groups": [
+    "writer",
+    "scientist",
+    "philosopher",
+    "explorer"
+   ],
+   "fame": 106
+  },
+  {
+   "id": "Q4261",
+   "name": {
+    "tr": "Michel Platini",
+    "en": "Michel Platini"
+   },
+   "born": 1955,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 104
+  },
+  {
+   "id": "Q41533",
+   "name": {
+    "tr": "Frank Lampard",
+    "en": "Frank Lampard"
+   },
+   "born": 1978,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 104
+  },
+  {
+   "id": "Q1354960",
+   "name": {
+    "tr": "Muhammed Salah",
+    "en": "Mohamed Salah"
+   },
+   "born": 1992,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 104
+  },
+  {
+   "id": "Q45901",
+   "name": {
+    "tr": "Thierry Henry",
+    "en": "Thierry Henry"
+   },
+   "born": 1977,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 103
+  },
+  {
+   "id": "Q42188",
+   "name": {
+    "tr": "Abel Tasman",
+    "en": "Abel Tasman"
+   },
+   "born": 1603,
+   "groups": [
+    "explorer"
+   ],
+   "fame": 103
+  },
+  {
+   "id": "Q42838",
+   "name": {
+    "tr": "Leif Ericson",
+    "en": "Leif Erikson"
+   },
+   "born": 972,
+   "groups": [
+    "explorer"
+   ],
+   "fame": 103
+  },
+  {
+   "id": "Q80471",
+   "name": {
+    "tr": "Miroslav Klose",
+    "en": "Miroslav Klose"
+   },
+   "born": 1978,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 101
+  },
+  {
+   "id": "Q266613",
+   "name": {
+    "tr": "Wayne Rooney",
+    "en": "Wayne Rooney"
+   },
+   "born": 1985,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 101
+  },
+  {
+   "id": "Q48373",
+   "name": {
+    "tr": "David Livingstone",
+    "en": "David Livingstone"
+   },
+   "born": 1813,
+   "groups": [
+    "writer",
+    "explorer"
+   ],
+   "fame": 101
+  },
+  {
+   "id": "Q83233",
+   "name": {
+    "tr": "Jacques-Yves Cousteau",
+    "en": "Jacques Cousteau"
+   },
+   "born": 1910,
+   "groups": [
+    "writer",
+    "scientist",
+    "director",
+    "explorer"
+   ],
+   "fame": 101
+  },
+  {
+   "id": "Q11584",
+   "name": {
+    "tr": "Iker Casillas",
+    "en": "Iker Casillas"
+   },
+   "born": 1981,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 100
+  },
+  {
+   "id": "Q455462",
+   "name": {
+    "tr": "Antoine Griezmann",
+    "en": "Antoine Griezmann"
+   },
+   "born": 1991,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 100
+  },
+  {
+   "id": "Q531814",
+   "name": {
+    "tr": "Kaká",
+    "en": "Kaká"
+   },
+   "born": 1982,
+   "groups": [
+    "writer",
+    "footballer"
+   ],
+   "fame": 100
+  },
+  {
+   "id": "Q7407",
+   "name": {
+    "tr": "Andre Agassi",
+    "en": "Andre Agassi"
+   },
+   "born": 1970,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 100
+  },
+  {
+   "id": "Q107365",
+   "name": {
+    "tr": "Manuel Neuer",
+    "en": "Manuel Neuer"
+   },
+   "born": 1986,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 99
+  },
+  {
+   "id": "Q28967995",
+   "name": {
+    "tr": "Erling Haaland",
+    "en": "Erling Haaland"
+   },
+   "born": 2000,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 98
+  },
+  {
+   "id": "Q54545",
+   "name": {
+    "tr": "Martina Navrátilová",
+    "en": "Martina Navratilova"
+   },
+   "born": 1956,
+   "groups": [
+    "writer",
+    "tennis"
+   ],
+   "fame": 98
+  },
+  {
+   "id": "Q2339",
+   "name": {
+    "tr": "Robin van Persie",
+    "en": "Robin van Persie"
+   },
+   "born": 1983,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 97
+  },
+  {
+   "id": "Q169963",
+   "name": {
+    "tr": "Jason Statham",
+    "en": "Jason Statham"
+   },
+   "born": 1967,
+   "groups": [
+    "actor",
+    "footballer"
+   ],
+   "fame": 97
+  },
+  {
+   "id": "Q17500",
+   "name": {
+    "tr": "Xavi",
+    "en": "Xavi Hernández"
+   },
+   "born": 1980,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 96
+  },
+  {
+   "id": "Q459830",
+   "name": {
+    "tr": "Steven Gerrard",
+    "en": "Steven Gerrard"
+   },
+   "born": 1980,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 96
+  },
+  {
+   "id": "Q969725",
+   "name": {
+    "tr": "Harry Kane",
+    "en": "Harry Kane"
+   },
+   "born": 1993,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 96
+  },
+  {
+   "id": "Q19825",
+   "name": {
+    "tr": "Cecil Rhodes",
+    "en": "Cecil John Rhodes"
+   },
+   "born": 1853,
+   "groups": [
+    "politician",
+    "explorer"
+   ],
+   "fame": 96
+  },
+  {
+   "id": "Q162043",
+   "name": {
+    "tr": "Eusébio",
+    "en": "Eusébio"
+   },
+   "born": 1942,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 95
+  },
+  {
+   "id": "Q164038",
+   "name": {
+    "tr": "Josep Guardiola",
+    "en": "Pep Guardiola"
+   },
+   "born": 1971,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 95
+  },
+  {
+   "id": "Q43666",
+   "name": {
+    "tr": "Thomas Müller",
+    "en": "Thomas Müller"
+   },
+   "born": 1989,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 94
+  },
+  {
+   "id": "Q173139",
+   "name": {
+    "tr": "George Weah",
+    "en": "George Weah"
+   },
+   "born": 1966,
+   "groups": [
+    "politician",
+    "footballer"
+   ],
+   "fame": 94
+  },
+  {
+   "id": "Q184586",
+   "name": {
+    "tr": "Gareth Bale",
+    "en": "Gareth Bale"
+   },
+   "born": 1989,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 94
+  },
+  {
+   "id": "Q482931",
+   "name": {
+    "tr": "Ferenc Puskás",
+    "en": "Ferenc Puskás"
+   },
+   "born": 1927,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 94
+  },
+  {
+   "id": "Q11662",
+   "name": {
+    "tr": "Steffi Graf",
+    "en": "Steffi Graf"
+   },
+   "born": 1969,
+   "groups": [
+    "actor",
+    "tennis"
+   ],
+   "fame": 94
+  },
+  {
+   "id": "Q80732",
+   "name": {
+    "tr": "Tenzing Norgay",
+    "en": "Tenzing Norgay"
+   },
+   "born": 1914,
+   "groups": [
+    "explorer"
+   ],
+   "fame": 94
+  },
+  {
+   "id": "Q43913",
+   "name": {
+    "tr": "Arjen Robben",
+    "en": "Arjen Robben"
+   },
+   "born": 1984,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 93
+  },
+  {
+   "id": "Q129027",
+   "name": {
+    "tr": "Paul Pogba",
+    "en": "Paul Pogba"
+   },
+   "born": 1993,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 93
+  },
+  {
+   "id": "Q214204",
+   "name": {
+    "tr": "Eden Hazard",
+    "en": "Eden Hazard"
+   },
+   "born": 1991,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 93
+  },
+  {
+   "id": "Q357984",
+   "name": {
+    "tr": "Kevin De Bruyne",
+    "en": "Kevin De Bruyne"
+   },
+   "born": 1991,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 92
+  },
+  {
+   "id": "Q11578",
+   "name": {
+    "tr": "Venus Williams",
+    "en": "Venus Williams"
+   },
+   "born": 1980,
+   "groups": [
+    "writer",
+    "tennis"
+   ],
+   "fame": 92
+  },
+  {
+   "id": "Q42731",
+   "name": {
+    "tr": "Fernando Torres",
+    "en": "Fernando Torres"
+   },
+   "born": 1984,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 91
+  },
+  {
+   "id": "Q48892",
+   "name": {
+    "tr": "Didier Drogba",
+    "en": "Didier Drogba"
+   },
+   "born": 1978,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 91
+  },
+  {
+   "id": "Q43744",
+   "name": {
+    "tr": "Gerd Müller",
+    "en": "Gerd Müller"
+   },
+   "born": 1945,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 91
+  },
+  {
+   "id": "Q67964",
+   "name": {
+    "tr": "Roberto Baggio",
+    "en": "Roberto Baggio"
+   },
+   "born": 1967,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 91
+  },
+  {
+   "id": "Q209942",
+   "name": {
+    "tr": "Sadio Mané",
+    "en": "Sadio Mané"
+   },
+   "born": 1992,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 91
+  },
+  {
+   "id": "Q1255625",
+   "name": {
+    "tr": "Samuel Eto'o",
+    "en": "Samuel Eto'o"
+   },
+   "born": 1981,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 91
+  },
+  {
+   "id": "Q10125",
+   "name": {
+    "tr": "Andy Murray",
+    "en": "Andy Murray"
+   },
+   "born": 1987,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 91
+  },
+  {
+   "id": "Q483148",
+   "name": {
+    "tr": "Michael Clarke Duncan",
+    "en": "Michael Clarke Duncan"
+   },
+   "born": 1957,
+   "groups": [
+    "actor",
+    "basketball"
+   ],
+   "fame": 91
+  },
+  {
+   "id": "Q134976",
+   "name": {
+    "tr": "Lukas Podolski",
+    "en": "Lukas Podolski"
+   },
+   "born": 1985,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 90
+  },
+  {
+   "id": "Q164546",
+   "name": {
+    "tr": "Alfredo Di Stéfano",
+    "en": "Alfredo Di Stéfano"
+   },
+   "born": 1926,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 90
+  },
+  {
+   "id": "Q368441",
+   "name": {
+    "tr": "James Rodríguez",
+    "en": "James Rodríguez"
+   },
+   "born": 1991,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 90
+  },
+  {
+   "id": "Q1911",
+   "name": {
+    "tr": "Olivier Giroud",
+    "en": "Olivier Giroud"
+   },
+   "born": 1986,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 89
+  },
+  {
+   "id": "Q1918",
+   "name": {
+    "tr": "Franck Ribéry",
+    "en": "Franck Ribéry"
+   },
+   "born": 1983,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 89
+  },
+  {
+   "id": "Q47778",
+   "name": {
+    "tr": "Gary Lineker",
+    "en": "Gary Lineker"
+   },
+   "born": 1960,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 89
+  },
+  {
+   "id": "Q163900",
+   "name": {
+    "tr": "Franciscus Xaverius",
+    "en": "Francis Xavier"
+   },
+   "born": 1506,
+   "groups": [
+    "writer",
+    "explorer"
+   ],
+   "fame": 89
+  },
+  {
+   "id": "Q133622",
+   "name": {
+    "tr": "Thor Heyerdahl",
+    "en": "Thor Heyerdahl"
+   },
+   "born": 1914,
+   "groups": [
+    "writer",
+    "director",
+    "explorer"
+   ],
+   "fame": 88
+  },
+  {
+   "id": "Q152306",
+   "name": {
+    "tr": "Carl Gustaf Emil Mannerheim",
+    "en": "Carl Gustaf Emil Mannerheim"
+   },
+   "born": 1867,
+   "groups": [
+    "politician",
+    "explorer"
+   ],
+   "fame": 88
+  },
+  {
+   "id": "Q179051",
+   "name": {
+    "tr": "Kerim Abdülcabbar",
+    "en": "Kareem Abdul-Jabbar"
+   },
+   "born": 1947,
+   "groups": [
+    "actor",
+    "basketball"
+   ],
+   "fame": 87
+  },
+  {
+   "id": "Q261534",
+   "name": {
+    "tr": "Diego Forlán",
+    "en": "Diego Forlán"
+   },
+   "born": 1979,
+   "groups": [
+    "footballer",
+    "tennis"
+   ],
+   "fame": 87
+  },
+  {
+   "id": "Q76323",
+   "name": {
+    "tr": "Alfred Lothar Wegener",
+    "en": "Alfred Wegener"
+   },
+   "born": 1880,
+   "groups": [
+    "scientist",
+    "explorer"
+   ],
+   "fame": 87
+  },
+  {
+   "id": "Q126513",
+   "name": {
+    "tr": "Steve Irwin",
+    "en": "Steve Irwin"
+   },
+   "born": 1962,
+   "groups": [
+    "actor",
+    "explorer"
+   ],
+   "fame": 87
+  },
+  {
+   "id": "Q154269",
+   "name": {
+    "tr": "Aleksey Leonov",
+    "en": "Alexey Leonov"
+   },
+   "born": 1934,
+   "groups": [
+    "astronaut",
+    "writer",
+    "painter",
+    "explorer"
+   ],
+   "fame": 87
+  },
+  {
+   "id": "Q49285",
+   "name": {
+    "tr": "Sally Ride",
+    "en": "Sally Ride"
+   },
+   "born": 1951,
+   "groups": [
+    "astronaut",
+    "writer",
+    "scientist"
+   ],
+   "fame": 87
+  },
+  {
+   "id": "Q104859",
+   "name": {
+    "tr": "Michael Collins",
+    "en": "Michael Collins"
+   },
+   "born": 1930,
+   "groups": [
+    "astronaut",
+    "actor"
+   ],
+   "fame": 87
+  },
+  {
+   "id": "Q169452",
+   "name": {
+    "tr": "Shaquille O'Neal",
+    "en": "Shaquille O'Neal"
+   },
+   "born": 1972,
+   "groups": [
+    "singer",
+    "basketball",
+    "actor"
+   ],
+   "fame": 85
+  },
+  {
+   "id": "Q131120",
+   "name": {
+    "tr": "Anna Kournikova",
+    "en": "Anna Kournikova"
+   },
+   "born": 1981,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 84
+  },
+  {
+   "id": "Q127641",
+   "name": {
+    "tr": "Vitus Bering",
+    "en": "Vitus Bering"
+   },
+   "born": 1681,
+   "groups": [
+    "explorer"
+   ],
+   "fame": 84
+  },
+  {
+   "id": "Q134183",
+   "name": {
+    "tr": "Magic Johnson",
+    "en": "Magic Johnson"
+   },
+   "born": 1959,
+   "groups": [
+    "actor",
+    "basketball"
+   ],
+   "fame": 83
+  },
+  {
+   "id": "Q134720",
+   "name": {
+    "tr": "Martina Hingis",
+    "en": "Martina Hingis"
+   },
+   "born": 1980,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 83
+  },
+  {
+   "id": "Q182642",
+   "name": {
+    "tr": "John Glenn",
+    "en": "John Glenn"
+   },
+   "born": 1921,
+   "groups": [
+    "astronaut",
+    "politician",
+    "actor"
+   ],
+   "fame": 83
+  },
+  {
+   "id": "Q104506",
+   "name": {
+    "tr": "Björn Borg",
+    "en": "Björn Borg"
+   },
+   "born": 1956,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 82
+  },
+  {
+   "id": "Q316901",
+   "name": {
+    "tr": "Edi Rama",
+    "en": "Edi Rama"
+   },
+   "born": 1964,
+   "groups": [
+    "politician",
+    "painter",
+    "basketball"
+   ],
+   "fame": 82
+  },
+  {
+   "id": "Q17466583",
+   "name": {
+    "tr": "Naomi Osaka",
+    "en": "Naomi Osaka"
+   },
+   "born": 1997,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 82
+  },
+  {
+   "id": "Q102527",
+   "name": {
+    "tr": "Robert Falcon Scott",
+    "en": "Robert Falcon Scott"
+   },
+   "born": 1868,
+   "groups": [
+    "explorer"
+   ],
+   "fame": 82
+  },
+  {
+   "id": "Q130377",
+   "name": {
+    "tr": "Bartolomeu Dias",
+    "en": "Bartolomeu Dias"
+   },
+   "born": 1467,
+   "groups": [
+    "explorer"
+   ],
+   "fame": 82
+  },
+  {
+   "id": "Q174432",
+   "name": {
+    "tr": "Pedro Álvares Cabral",
+    "en": "Pedro Álvares Cabral"
+   },
+   "born": 1467,
+   "groups": [
+    "explorer"
+   ],
+   "fame": 82
+  },
+  {
+   "id": "Q483027",
+   "name": {
+    "tr": "Paolo Maldini",
+    "en": "Paolo Maldini"
+   },
+   "born": 1968,
+   "groups": [
+    "footballer",
+    "tennis"
+   ],
+   "fame": 81
+  },
+  {
+   "id": "Q171421",
+   "name": {
+    "tr": "Henry Morton Stanley",
+    "en": "Henry Morton Stanley"
+   },
+   "born": 1841,
+   "groups": [
+    "writer",
+    "politician",
+    "explorer"
+   ],
+   "fame": 80
+  },
+  {
+   "id": "Q190152",
+   "name": {
+    "tr": "Larry Bird",
+    "en": "Larry Bird"
+   },
+   "born": 1956,
+   "groups": [
+    "basketball"
+   ],
+   "fame": 79
+  },
+  {
+   "id": "Q9446",
+   "name": {
+    "tr": "Pete Sampras",
+    "en": "Pete Sampras"
+   },
+   "born": 1971,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 79
+  },
+  {
+   "id": "Q133060",
+   "name": {
+    "tr": "Willem Barents",
+    "en": "Willem Barents"
+   },
+   "born": 1550,
+   "groups": [
+    "explorer"
+   ],
+   "fame": 79
+  },
+  {
+   "id": "Q16297",
+   "name": {
+    "tr": "William Shatner",
+    "en": "William Shatner"
+   },
+   "born": 1931,
+   "groups": [
+    "director",
+    "writer",
+    "actor",
+    "astronaut",
+    "singer"
+   ],
+   "fame": 79
+  },
+  {
+   "id": "Q76334",
+   "name": {
+    "tr": "Boris Becker",
+    "en": "Boris Becker"
+   },
+   "born": 1967,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 78
+  },
+  {
+   "id": "Q54527",
+   "name": {
+    "tr": "Billie Jean King",
+    "en": "Billie Jean King"
+   },
+   "born": 1943,
+   "groups": [
+    "writer",
+    "tennis"
+   ],
+   "fame": 77
+  },
+  {
+   "id": "Q42063",
+   "name": {
+    "tr": "Xuan Zang",
+    "en": "Xuanzang"
+   },
+   "born": 602,
+   "groups": [
+    "writer",
+    "philosopher",
+    "explorer"
+   ],
+   "fame": 77
+  },
+  {
+   "id": "Q131237",
+   "name": {
+    "tr": "Carl Lewis",
+    "en": "Carl Lewis"
+   },
+   "born": 1961,
+   "groups": [
+    "writer",
+    "basketball"
+   ],
+   "fame": 76
+  },
+  {
+   "id": "Q352159",
+   "name": {
+    "tr": "Stephen Curry",
+    "en": "Stephen Curry"
+   },
+   "born": 1988,
+   "groups": [
+    "writer",
+    "basketball"
+   ],
+   "fame": 76
+  },
+  {
+   "id": "Q10118",
+   "name": {
+    "tr": "Viktoriya Azarenka",
+    "en": "Victoria Azarenka"
+   },
+   "born": 1989,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 76
+  },
+  {
+   "id": "Q16474",
+   "name": {
+    "tr": "John McEnroe",
+    "en": "John McEnroe"
+   },
+   "born": 1959,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 76
+  },
+  {
+   "id": "Q957543",
+   "name": {
+    "tr": "Ernest Shackleton",
+    "en": "Ernest Shackleton"
+   },
+   "born": 1874,
+   "groups": [
+    "explorer"
+   ],
+   "fame": 76
+  },
+  {
+   "id": "Q185718",
+   "name": {
+    "tr": "Aleksandr Kolçak",
+    "en": "Alexander Kolchak"
+   },
+   "born": 1874,
+   "groups": [
+    "politician",
+    "explorer"
+   ],
+   "fame": 75
+  },
+  {
+   "id": "Q68529",
+   "name": {
+    "tr": "Samuel de Champlain",
+    "en": "Samuel de Champlain"
+   },
+   "born": 1567,
+   "groups": [
+    "politician",
+    "explorer"
+   ],
+   "fame": 74
+  },
+  {
+   "id": "Q11685",
+   "name": {
+    "tr": "Kim Clijsters",
+    "en": "Kim Clijsters"
+   },
+   "born": 1983,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 73
+  },
+  {
+   "id": "Q191026",
+   "name": {
+    "tr": "Francis Galton",
+    "en": "Francis Galton"
+   },
+   "born": 1822,
+   "groups": [
+    "writer",
+    "scientist",
+    "philosopher",
+    "explorer"
+   ],
+   "fame": 73
+  },
+  {
+   "id": "Q188018",
+   "name": {
+    "tr": "Nick Nolte",
+    "en": "Nick Nolte"
+   },
+   "born": 1941,
+   "groups": [
+    "actor",
+    "basketball"
+   ],
+   "fame": 72
+  },
+  {
+   "id": "Q486359",
+   "name": {
+    "tr": "Manny Pacquiao",
+    "en": "Manny Pacquiao"
+   },
+   "born": 1978,
+   "groups": [
+    "actor",
+    "politician",
+    "singer",
+    "basketball"
+   ],
+   "fame": 72
+  },
+  {
+   "id": "Q30767",
+   "name": {
+    "tr": "Caroline Wozniacki",
+    "en": "Caroline Wozniacki"
+   },
+   "born": 1990,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 72
+  },
+  {
+   "id": "Q77178",
+   "name": {
+    "tr": "Angelique Kerber",
+    "en": "Angelique Kerber"
+   },
+   "born": 1988,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 72
+  },
+  {
+   "id": "Q189144",
+   "name": {
+    "tr": "Walter Raleigh",
+    "en": "Walter Raleigh"
+   },
+   "born": 1552,
+   "groups": [
+    "writer",
+    "politician",
+    "explorer"
+   ],
+   "fame": 72
+  },
+  {
+   "id": "Q237879",
+   "name": {
+    "tr": "Kalpana Chawla",
+    "en": "Kalpana Chawla"
+   },
+   "born": 1962,
+   "groups": [
+    "astronaut"
+   ],
+   "fame": 72
+  },
+  {
+   "id": "Q55177",
+   "name": {
+    "tr": "Sunita Williams",
+    "en": "Sunita Williams"
+   },
+   "born": 1965,
+   "groups": [
+    "astronaut"
+   ],
+   "fame": 72
+  },
+  {
+   "id": "Q60040",
+   "name": {
+    "tr": "Hernando de Soto",
+    "en": "Hernando de Soto"
+   },
+   "born": 1500,
+   "groups": [
+    "explorer"
+   ],
+   "fame": 71
+  },
+  {
+   "id": "Q125057",
+   "name": {
+    "tr": "Richard Francis Burton",
+    "en": "Richard Francis Burton"
+   },
+   "born": 1821,
+   "groups": [
+    "writer",
+    "explorer"
+   ],
+   "fame": 71
+  },
+  {
+   "id": "Q179167",
+   "name": {
+    "tr": "Henry Hudson",
+    "en": "Henry Hudson"
+   },
+   "born": 1565,
+   "groups": [
+    "explorer"
+   ],
+   "fame": 71
+  },
+  {
+   "id": "Q174979",
+   "name": {
+    "tr": "Alan Shepard",
+    "en": "Alan Shepard"
+   },
+   "born": 1923,
+   "groups": [
+    "astronaut"
+   ],
+   "fame": 71
+  },
+  {
+   "id": "Q30758",
+   "name": {
+    "tr": "Ana Ivanović",
+    "en": "Ana Ivanovic"
+   },
+   "born": 1987,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 70
+  },
+  {
+   "id": "Q14286",
+   "name": {
+    "tr": "Christine Evert",
+    "en": "Chris Evert"
+   },
+   "born": 1954,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 69
+  },
+  {
+   "id": "Q54584",
+   "name": {
+    "tr": "Andy Roddick",
+    "en": "Andy Roddick"
+   },
+   "born": 1982,
+   "groups": [
+    "actor",
+    "tennis"
+   ],
+   "fame": 69
+  },
+  {
+   "id": "Q230156",
+   "name": {
+    "tr": "Simona Halep",
+    "en": "Simona Halep"
+   },
+   "born": 1991,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 69
+  },
+  {
+   "id": "Q52890",
+   "name": {
+    "tr": "V. Gustav",
+    "en": "Gustaf V of Sweden"
+   },
+   "born": 1858,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 69
+  },
+  {
+   "id": "Q180872",
+   "name": {
+    "tr": "Amélie Mauresmo",
+    "en": "Amélie Mauresmo"
+   },
+   "born": 1979,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 69
+  },
+  {
+   "id": "Q54812588",
+   "name": {
+    "tr": "Jannik Sinner",
+    "en": "Jannik Sinner"
+   },
+   "born": 2001,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 69
+  },
+  {
+   "id": "Q154782",
+   "name": {
+    "tr": "Adelbert von Chamisso",
+    "en": "Adelbert von Chamisso"
+   },
+   "born": 1781,
+   "groups": [
+    "writer",
+    "explorer"
+   ],
+   "fame": 69
+  },
+  {
+   "id": "Q204397",
+   "name": {
+    "tr": "Afonso de Albuquerque",
+    "en": "Afonso de Albuquerque"
+   },
+   "born": 1453,
+   "groups": [
+    "explorer"
+   ],
+   "fame": 69
+  },
+  {
+   "id": "Q227030",
+   "name": {
+    "tr": "Mark Shuttleworth",
+    "en": "Mark Shuttleworth"
+   },
+   "born": 1973,
+   "groups": [
+    "scientist",
+    "astronaut"
+   ],
+   "fame": 69
+  },
+  {
+   "id": "Q133318",
+   "name": {
+    "tr": "Marat Safin",
+    "en": "Marat Safin"
+   },
+   "born": 1980,
+   "groups": [
+    "politician",
+    "tennis"
+   ],
+   "fame": 68
+  },
+  {
+   "id": "Q152318",
+   "name": {
+    "tr": "Svetlana Savitskaya",
+    "en": "Svetlana Savitskaya"
+   },
+   "born": 1948,
+   "groups": [
+    "astronaut",
+    "writer",
+    "politician",
+    "explorer"
+   ],
+   "fame": 68
+  },
+  {
+   "id": "Q34091",
+   "name": {
+    "tr": "Mae C. Jemison",
+    "en": "Mae Jemison"
+   },
+   "born": 1956,
+   "groups": [
+    "astronaut",
+    "actor",
+    "scientist"
+   ],
+   "fame": 68
+  },
+  {
+   "id": "Q11682",
+   "name": {
+    "tr": "Justine Henin",
+    "en": "Justine Henin"
+   },
+   "born": 1982,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 67
+  },
+  {
+   "id": "Q193661",
+   "name": {
+    "tr": "Stanislas Wawrinka",
+    "en": "Stan Wawrinka"
+   },
+   "born": 1985,
+   "groups": [
+    "actor",
+    "tennis"
+   ],
+   "fame": 67
+  },
+  {
+   "id": "Q132147",
+   "name": {
+    "tr": "Sania Mirza",
+    "en": "Sania Mirza"
+   },
+   "born": 1986,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 67
+  },
+  {
+   "id": "Q173633",
+   "name": {
+    "tr": "Monica Seles",
+    "en": "Monica Seles"
+   },
+   "born": 1973,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 67
+  },
+  {
+   "id": "Q180446",
+   "name": {
+    "tr": "Li Na",
+    "en": "Li Na"
+   },
+   "born": 1982,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 67
+  },
+  {
+   "id": "Q172345",
+   "name": {
+    "tr": "Kızıl Erik",
+    "en": "Erik the Red"
+   },
+   "born": 950,
+   "groups": [
+    "explorer"
+   ],
+   "fame": 67
+  },
+  {
+   "id": "Q242185",
+   "name": {
+    "tr": "Bill Russell",
+    "en": "Bill Russell"
+   },
+   "born": 1934,
+   "groups": [
+    "actor",
+    "basketball"
+   ],
+   "fame": 66
+  },
+  {
+   "id": "Q360531",
+   "name": {
+    "tr": "Mahershala Ali",
+    "en": "Mahershala Ali"
+   },
+   "born": 1974,
+   "groups": [
+    "actor",
+    "basketball"
+   ],
+   "fame": 66
+  },
+  {
+   "id": "Q200405",
+   "name": {
+    "tr": "John Hurt",
+    "en": "John Hurt"
+   },
+   "born": 1940,
+   "groups": [
+    "actor",
+    "explorer"
+   ],
+   "fame": 66
+  },
+  {
+   "id": "Q485365",
+   "name": {
+    "tr": "Bear Grylls",
+    "en": "Bear Grylls"
+   },
+   "born": 1974,
+   "groups": [
+    "writer",
+    "explorer"
+   ],
+   "fame": 65
+  },
+  {
+   "id": "Q155914",
+   "name": {
+    "tr": "Peter Simon Pallas",
+    "en": "Peter Simon Pallas"
+   },
+   "born": 1741,
+   "groups": [
+    "explorer"
+   ],
+   "fame": 65
+  },
+  {
+   "id": "Q186585",
+   "name": {
+    "tr": "Robert Edwin Peary",
+    "en": "Robert Peary"
+   },
+   "born": 1856,
+   "groups": [
+    "explorer"
+   ],
+   "fame": 65
+  },
+  {
+   "id": "Q111240",
+   "name": {
+    "tr": "Jim Lovell",
+    "en": "Jim Lovell"
+   },
+   "born": 1928,
+   "groups": [
+    "astronaut"
+   ],
+   "fame": 65
+  },
+  {
+   "id": "Q192707",
+   "name": {
+    "tr": "Charles Barkley",
+    "en": "Charles Barkley"
+   },
+   "born": 1963,
+   "groups": [
+    "actor",
+    "basketball"
+   ],
+   "fame": 64
+  },
+  {
+   "id": "Q30812",
+   "name": {
+    "tr": "Petra Kvitová",
+    "en": "Petra Kvitová"
+   },
+   "born": 1990,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 64
+  },
+  {
+   "id": "Q53325",
+   "name": {
+    "tr": "Arthur Ashe",
+    "en": "Arthur Ashe"
+   },
+   "born": 1943,
+   "groups": [
+    "writer",
+    "tennis"
+   ],
+   "fame": 64
+  },
+  {
+   "id": "Q233340",
+   "name": {
+    "tr": "Matteo Ricci",
+    "en": "Matteo Ricci"
+   },
+   "born": 1552,
+   "groups": [
+    "scientist",
+    "explorer"
+   ],
+   "fame": 64
+  },
+  {
+   "id": "Q202308",
+   "name": {
+    "tr": "Evliya Çelebi",
+    "en": "Evliya Çelebi"
+   },
+   "born": 1611,
+   "groups": [
+    "writer",
+    "explorer"
+   ],
+   "fame": 64
+  },
+  {
+   "id": "Q193020",
+   "name": {
+    "tr": "Tim Duncan",
+    "en": "Tim Duncan"
+   },
+   "born": 1976,
+   "groups": [
+    "basketball"
+   ],
+   "fame": 63
+  },
+  {
+   "id": "Q34276",
+   "name": {
+    "tr": "Garbiñe Muguruza",
+    "en": "Garbiñe Muguruza"
+   },
+   "born": 1993,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 63
+  },
+  {
+   "id": "Q271878",
+   "name": {
+    "tr": "George Curzon",
+    "en": "George Curzon, 1st Marquess Curzon of Kedleston"
+   },
+   "born": 1859,
+   "groups": [
+    "politician",
+    "explorer"
+   ],
+   "fame": 63
+  },
+  {
+   "id": "Q185974",
+   "name": {
+    "tr": "Juan Ponce de León",
+    "en": "Juan Ponce de León"
+   },
+   "born": 1460,
+   "groups": [
+    "explorer"
+   ],
+   "fame": 63
+  },
+  {
+   "id": "Q201510",
+   "name": {
+    "tr": "Juan Sebastián Elcano",
+    "en": "Juan Sebastián Elcano"
+   },
+   "born": 1486,
+   "groups": [
+    "explorer"
+   ],
+   "fame": 63
+  },
+  {
+   "id": "Q201608",
+   "name": {
+    "tr": "Dennis Rodman",
+    "en": "Dennis Rodman"
+   },
+   "born": 1961,
+   "groups": [
+    "actor",
+    "basketball"
+   ],
+   "fame": 62
+  },
+  {
+   "id": "Q44068",
+   "name": {
+    "tr": "Dirk Nowitzki",
+    "en": "Dirk Nowitzki"
+   },
+   "born": 1978,
+   "groups": [
+    "basketball"
+   ],
+   "fame": 62
+  },
+  {
+   "id": "Q58590",
+   "name": {
+    "tr": "Yao Ming",
+    "en": "Yao Ming"
+   },
+   "born": 1980,
+   "groups": [
+    "basketball"
+   ],
+   "fame": 62
+  },
+  {
+   "id": "Q2621730",
+   "name": {
+    "tr": "Jüri Ratas",
+    "en": "Jüri Ratas"
+   },
+   "born": 1978,
+   "groups": [
+    "politician",
+    "basketball"
+   ],
+   "fame": 62
+  },
+  {
+   "id": "Q8991894",
+   "name": {
+    "tr": "Giannis Antetokounmpo",
+    "en": "Giannis Antetokounmpo"
+   },
+   "born": 1994,
+   "groups": [
+    "basketball"
+   ],
+   "fame": 62
+  },
+  {
+   "id": "Q53393",
+   "name": {
+    "tr": "Jimmy Connors",
+    "en": "Jimmy Connors"
+   },
+   "born": 1952,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 62
+  },
+  {
+   "id": "Q26840238",
+   "name": {
+    "tr": "Iga Świątek",
+    "en": "Iga Świątek"
+   },
+   "born": 2001,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 62
+  },
+  {
+   "id": "Q214926",
+   "name": {
+    "tr": "Nikolay Vavilov",
+    "en": "Nikolai Vavilov"
+   },
+   "born": 1887,
+   "groups": [
+    "scientist",
+    "explorer"
+   ],
+   "fame": 62
+  },
+  {
+   "id": "Q104865",
+   "name": {
+    "tr": "Vladimir Komarov",
+    "en": "Vladimir Komarov"
+   },
+   "born": 1927,
+   "groups": [
+    "astronaut"
+   ],
+   "fame": 62
+  },
+  {
+   "id": "Q365144",
+   "name": {
+    "tr": "Caitlyn Jenner",
+    "en": "Caitlyn Jenner"
+   },
+   "born": 1949,
+   "groups": [
+    "actor",
+    "basketball"
+   ],
+   "fame": 61
+  },
+  {
+   "id": "Q15269",
+   "name": {
+    "tr": "Jelena Janković",
+    "en": "Jelena Janković"
+   },
+   "born": 1985,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 61
+  },
+  {
+   "id": "Q202342",
+   "name": {
+    "tr": "Margaret Smith Court",
+    "en": "Margaret Court"
+   },
+   "born": 1942,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 61
+  },
+  {
+   "id": "Q105838",
+   "name": {
+    "tr": "Marion Bartoli",
+    "en": "Marion Bartoli"
+   },
+   "born": 1984,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 61
+  },
+  {
+   "id": "Q379580",
+   "name": {
+    "tr": "John Muir",
+    "en": "John Muir"
+   },
+   "born": 1838,
+   "groups": [
+    "scientist",
+    "philosopher",
+    "explorer",
+    "writer"
+   ],
+   "fame": 61
+  },
+  {
+   "id": "Q76754",
+   "name": {
+    "tr": "Fabian Gottlieb von Bellingshausen",
+    "en": "Fabian Gottlieb von Bellingshausen"
+   },
+   "born": 1778,
+   "groups": [
+    "explorer"
+   ],
+   "fame": 61
+  },
+  {
+   "id": "Q19080",
+   "name": {
+    "tr": "Vasco Núñez de Balboa",
+    "en": "Vasco Núñez de Balboa"
+   },
+   "born": 1475,
+   "groups": [
+    "politician",
+    "explorer"
+   ],
+   "fame": 61
+  },
+  {
+   "id": "Q189307",
+   "name": {
+    "tr": "Reinhold Messner",
+    "en": "Reinhold Messner"
+   },
+   "born": 1944,
+   "groups": [
+    "writer",
+    "politician",
+    "director",
+    "explorer"
+   ],
+   "fame": 61
+  },
+  {
+   "id": "Q189971",
+   "name": {
+    "tr": "Piteas",
+    "en": "Pytheas"
+   },
+   "born": -359,
+   "groups": [
+    "scientist",
+    "explorer"
+   ],
+   "fame": 61
+  },
+  {
+   "id": "Q18762",
+   "name": {
+    "tr": "Frank Borman",
+    "en": "Frank Borman"
+   },
+   "born": 1928,
+   "groups": [
+    "astronaut"
+   ],
+   "fame": 61
+  },
+  {
+   "id": "Q17519",
+   "name": {
+    "tr": "Anousheh Ansari",
+    "en": "Anousheh Ansari"
+   },
+   "born": 1966,
+   "groups": [
+    "scientist",
+    "astronaut"
+   ],
+   "fame": 61
+  },
+  {
+   "id": "Q273256",
+   "name": {
+    "tr": "Hakeem Olajuwon",
+    "en": "Hakeem Olajuwon"
+   },
+   "born": 1963,
+   "groups": [
+    "basketball"
+   ],
+   "fame": 60
+  },
+  {
+   "id": "Q95677819",
+   "name": {
+    "tr": "George Floyd",
+    "en": "George Floyd"
+   },
+   "born": 1973,
+   "groups": [
+    "basketball"
+   ],
+   "fame": 60
+  },
+  {
+   "id": "Q152298",
+   "name": {
+    "tr": "German Titov",
+    "en": "Gherman Titov"
+   },
+   "born": 1935,
+   "groups": [
+    "astronaut",
+    "writer",
+    "politician"
+   ],
+   "fame": 60
+  },
+  {
+   "id": "Q310924",
+   "name": {
+    "tr": "alan lavern bean",
+    "en": "Alan Bean"
+   },
+   "born": 1932,
+   "groups": [
+    "astronaut",
+    "painter"
+   ],
+   "fame": 60
+  }
+ ]
+}
