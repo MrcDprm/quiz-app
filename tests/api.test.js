@@ -23,6 +23,7 @@ function question(id, answerText) {
 
 const FILES = {
   science: { questions: [question('science:high:001', 'right'), question('science:high:002', 'right')] },
+  general: { questions: [{ ...question('general:middle:001', 'right'), level: 'middle' }] },
 };
 
 // Her test kendi saatini, deposunu ve API'sini kurar.
@@ -148,4 +149,21 @@ test('extra time raises the time limit', async () => {
   const round = await call(api.round, START);
   const { body } = await call(api.joker, { token: round.body.token, kind: 'time' });
   assert.equal(body.timeLimit, round.body.question.timeLimit + 10_000);
+});
+test('everyone gets the same daily question, in their own language', async () => {
+  const { api } = setup();
+  const first = await call(api.daily, { lang: 'en' });
+  const second = await call(api.daily, { lang: 'tr' });
+  assert.equal(first.status, 200);
+  assert.match(first.body.date, /^\d{4}-\d{2}-\d{2}$/);
+  assert.equal(first.body.question.total, 1);
+  assert.equal(first.body.question.prompt, second.body.question.prompt.replace('Soru', 'Question'));
+  assert.equal(answerOf(first.body.token), answerOf(second.body.token));
+});
+
+test('the daily question has no jokers', async () => {
+  const { api } = setup();
+  const daily = await call(api.daily, { lang: 'en' });
+  assert.equal((await call(api.joker, { token: daily.body.token, kind: 'fifty' })).status, 400);
+  assert.equal((await call(api.daily, { lang: 'de' })).status, 400);
 });
