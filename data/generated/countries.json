@@ -1,0 +1,1806 @@
+{
+ "source": "Curated",
+ "updatedAt": "2026-09-29",
+ "items": [
+  {
+   "id": "TR",
+   "name": {
+    "tr": "Türkiye",
+    "en": "Türkiye"
+   },
+   "capital": {
+    "tr": "Ankara",
+    "en": "Ankara"
+   },
+   "continent": null,
+   "population": 85,
+   "tier": 1
+  },
+  {
+   "id": "DE",
+   "name": {
+    "tr": "Almanya",
+    "en": "Germany"
+   },
+   "capital": {
+    "tr": "Berlin",
+    "en": "Berlin"
+   },
+   "continent": "europe",
+   "population": 84,
+   "tier": 1
+  },
+  {
+   "id": "FR",
+   "name": {
+    "tr": "Fransa",
+    "en": "France"
+   },
+   "capital": {
+    "tr": "Paris",
+    "en": "Paris"
+   },
+   "continent": "europe",
+   "population": 68,
+   "tier": 1
+  },
+  {
+   "id": "IT",
+   "name": {
+    "tr": "İtalya",
+    "en": "Italy"
+   },
+   "capital": {
+    "tr": "Roma",
+    "en": "Rome"
+   },
+   "continent": "europe",
+   "population": 59,
+   "tier": 1
+  },
+  {
+   "id": "ES",
+   "name": {
+    "tr": "İspanya",
+    "en": "Spain"
+   },
+   "capital": {
+    "tr": "Madrid",
+    "en": "Madrid"
+   },
+   "continent": "europe",
+   "population": 48,
+   "tier": 1
+  },
+  {
+   "id": "GB",
+   "name": {
+    "tr": "Birleşik Krallık",
+    "en": "United Kingdom"
+   },
+   "capital": {
+    "tr": "Londra",
+    "en": "London"
+   },
+   "continent": "europe",
+   "population": 68,
+   "tier": 1
+  },
+  {
+   "id": "US",
+   "name": {
+    "tr": "Amerika Birleşik Devletleri",
+    "en": "United States"
+   },
+   "capital": {
+    "tr": "Washington",
+    "en": "Washington, D.C."
+   },
+   "continent": "northAmerica",
+   "population": 335,
+   "tier": 1
+  },
+  {
+   "id": "RU",
+   "name": {
+    "tr": "Rusya",
+    "en": "Russia"
+   },
+   "capital": {
+    "tr": "Moskova",
+    "en": "Moscow"
+   },
+   "continent": null,
+   "population": 144,
+   "tier": 1
+  },
+  {
+   "id": "CN",
+   "name": {
+    "tr": "Çin",
+    "en": "China"
+   },
+   "capital": {
+    "tr": "Pekin",
+    "en": "Beijing"
+   },
+   "continent": "asia",
+   "population": 1410,
+   "tier": 1
+  },
+  {
+   "id": "JP",
+   "name": {
+    "tr": "Japonya",
+    "en": "Japan"
+   },
+   "capital": {
+    "tr": "Tokyo",
+    "en": "Tokyo"
+   },
+   "continent": "asia",
+   "population": 124,
+   "tier": 1
+  },
+  {
+   "id": "BR",
+   "name": {
+    "tr": "Brezilya",
+    "en": "Brazil"
+   },
+   "capital": {
+    "tr": "Brasília",
+    "en": "Brasília"
+   },
+   "continent": "southAmerica",
+   "population": 216,
+   "tier": 1
+  },
+  {
+   "id": "EG",
+   "name": {
+    "tr": "Mısır",
+    "en": "Egypt"
+   },
+   "capital": {
+    "tr": "Kahire",
+    "en": "Cairo"
+   },
+   "continent": "africa",
+   "population": 112,
+   "tier": 1
+  },
+  {
+   "id": "GR",
+   "name": {
+    "tr": "Yunanistan",
+    "en": "Greece"
+   },
+   "capital": {
+    "tr": "Atina",
+    "en": "Athens"
+   },
+   "continent": "europe",
+   "population": 10.4,
+   "tier": 1
+  },
+  {
+   "id": "CA",
+   "name": {
+    "tr": "Kanada",
+    "en": "Canada"
+   },
+   "capital": {
+    "tr": "Ottawa",
+    "en": "Ottawa"
+   },
+   "continent": "northAmerica",
+   "population": 40,
+   "tier": 1
+  },
+  {
+   "id": "IN",
+   "name": {
+    "tr": "Hindistan",
+    "en": "India"
+   },
+   "capital": {
+    "tr": "Yeni Delhi",
+    "en": "New Delhi"
+   },
+   "continent": "asia",
+   "population": 1430,
+   "tier": 1
+  },
+  {
+   "id": "AR",
+   "name": {
+    "tr": "Arjantin",
+    "en": "Argentina"
+   },
+   "capital": {
+    "tr": "Buenos Aires",
+    "en": "Buenos Aires"
+   },
+   "continent": "southAmerica",
+   "population": 46,
+   "tier": 1
+  },
+  {
+   "id": "MX",
+   "name": {
+    "tr": "Meksika",
+    "en": "Mexico"
+   },
+   "capital": {
+    "tr": "Meksiko",
+    "en": "Mexico City"
+   },
+   "continent": "northAmerica",
+   "population": 128,
+   "tier": 1
+  },
+  {
+   "id": "AU",
+   "name": {
+    "tr": "Avustralya",
+    "en": "Australia"
+   },
+   "capital": {
+    "tr": "Canberra",
+    "en": "Canberra"
+   },
+   "continent": "oceania",
+   "population": 27,
+   "tier": 1
+  },
+  {
+   "id": "KR",
+   "name": {
+    "tr": "Güney Kore",
+    "en": "South Korea"
+   },
+   "capital": {
+    "tr": "Seul",
+    "en": "Seoul"
+   },
+   "continent": "asia",
+   "population": 52,
+   "tier": 1
+  },
+  {
+   "id": "NL",
+   "name": {
+    "tr": "Hollanda",
+    "en": "Netherlands"
+   },
+   "capital": {
+    "tr": "Amsterdam",
+    "en": "Amsterdam"
+   },
+   "continent": "europe",
+   "population": 18,
+   "tier": 1
+  },
+  {
+   "id": "PT",
+   "name": {
+    "tr": "Portekiz",
+    "en": "Portugal"
+   },
+   "capital": {
+    "tr": "Lizbon",
+    "en": "Lisbon"
+   },
+   "continent": "europe",
+   "population": 10.4,
+   "tier": 2
+  },
+  {
+   "id": "BE",
+   "name": {
+    "tr": "Belçika",
+    "en": "Belgium"
+   },
+   "capital": {
+    "tr": "Brüksel",
+    "en": "Brussels"
+   },
+   "continent": "europe",
+   "population": 11.8,
+   "tier": 2
+  },
+  {
+   "id": "CH",
+   "name": {
+    "tr": "İsviçre",
+    "en": "Switzerland"
+   },
+   "capital": {
+    "tr": "Bern",
+    "en": "Bern"
+   },
+   "continent": "europe",
+   "population": 8.9,
+   "tier": 2
+  },
+  {
+   "id": "AT",
+   "name": {
+    "tr": "Avusturya",
+    "en": "Austria"
+   },
+   "capital": {
+    "tr": "Viyana",
+    "en": "Vienna"
+   },
+   "continent": "europe",
+   "population": 9.1,
+   "tier": 2
+  },
+  {
+   "id": "SE",
+   "name": {
+    "tr": "İsveç",
+    "en": "Sweden"
+   },
+   "capital": {
+    "tr": "Stockholm",
+    "en": "Stockholm"
+   },
+   "continent": "europe",
+   "population": 10.5,
+   "tier": 2
+  },
+  {
+   "id": "NO",
+   "name": {
+    "tr": "Norveç",
+    "en": "Norway"
+   },
+   "capital": {
+    "tr": "Oslo",
+    "en": "Oslo"
+   },
+   "continent": "europe",
+   "population": 5.5,
+   "tier": 2
+  },
+  {
+   "id": "DK",
+   "name": {
+    "tr": "Danimarka",
+    "en": "Denmark"
+   },
+   "capital": {
+    "tr": "Kopenhag",
+    "en": "Copenhagen"
+   },
+   "continent": "europe",
+   "population": 5.9,
+   "tier": 2
+  },
+  {
+   "id": "FI",
+   "name": {
+    "tr": "Finlandiya",
+    "en": "Finland"
+   },
+   "capital": {
+    "tr": "Helsinki",
+    "en": "Helsinki"
+   },
+   "continent": "europe",
+   "population": 5.6,
+   "tier": 2
+  },
+  {
+   "id": "PL",
+   "name": {
+    "tr": "Polonya",
+    "en": "Poland"
+   },
+   "capital": {
+    "tr": "Varşova",
+    "en": "Warsaw"
+   },
+   "continent": "europe",
+   "population": 37,
+   "tier": 2
+  },
+  {
+   "id": "UA",
+   "name": {
+    "tr": "Ukrayna",
+    "en": "Ukraine"
+   },
+   "capital": {
+    "tr": "Kiev",
+    "en": "Kyiv"
+   },
+   "continent": "europe",
+   "population": 37,
+   "tier": 2
+  },
+  {
+   "id": "IE",
+   "name": {
+    "tr": "İrlanda",
+    "en": "Ireland"
+   },
+   "capital": {
+    "tr": "Dublin",
+    "en": "Dublin"
+   },
+   "continent": "europe",
+   "population": 5.3,
+   "tier": 2
+  },
+  {
+   "id": "HU",
+   "name": {
+    "tr": "Macaristan",
+    "en": "Hungary"
+   },
+   "capital": {
+    "tr": "Budapeşte",
+    "en": "Budapest"
+   },
+   "continent": "europe",
+   "population": 9.6,
+   "tier": 2
+  },
+  {
+   "id": "CZ",
+   "name": {
+    "tr": "Çekya",
+    "en": "Czechia"
+   },
+   "capital": {
+    "tr": "Prag",
+    "en": "Prague"
+   },
+   "continent": "europe",
+   "population": 10.9,
+   "tier": 2
+  },
+  {
+   "id": "AZ",
+   "name": {
+    "tr": "Azerbaycan",
+    "en": "Azerbaijan"
+   },
+   "capital": {
+    "tr": "Bakü",
+    "en": "Baku"
+   },
+   "continent": null,
+   "population": 10.2,
+   "tier": 2
+  },
+  {
+   "id": "IR",
+   "name": {
+    "tr": "İran",
+    "en": "Iran"
+   },
+   "capital": {
+    "tr": "Tahran",
+    "en": "Tehran"
+   },
+   "continent": "asia",
+   "population": 89,
+   "tier": 2
+  },
+  {
+   "id": "IQ",
+   "name": {
+    "tr": "Irak",
+    "en": "Iraq"
+   },
+   "capital": {
+    "tr": "Bağdat",
+    "en": "Baghdad"
+   },
+   "continent": "asia",
+   "population": 45,
+   "tier": 2
+  },
+  {
+   "id": "SA",
+   "name": {
+    "tr": "Suudi Arabistan",
+    "en": "Saudi Arabia"
+   },
+   "capital": {
+    "tr": "Riyad",
+    "en": "Riyadh"
+   },
+   "continent": "asia",
+   "population": 37,
+   "tier": 2
+  },
+  {
+   "id": "PK",
+   "name": {
+    "tr": "Pakistan",
+    "en": "Pakistan"
+   },
+   "capital": {
+    "tr": "İslamabad",
+    "en": "Islamabad"
+   },
+   "continent": "asia",
+   "population": 240,
+   "tier": 2
+  },
+  {
+   "id": "ID",
+   "name": {
+    "tr": "Endonezya",
+    "en": "Indonesia"
+   },
+   "capital": null,
+   "continent": "asia",
+   "population": 278,
+   "tier": 2
+  },
+  {
+   "id": "TH",
+   "name": {
+    "tr": "Tayland",
+    "en": "Thailand"
+   },
+   "capital": {
+    "tr": "Bangkok",
+    "en": "Bangkok"
+   },
+   "continent": "asia",
+   "population": 72,
+   "tier": 2
+  },
+  {
+   "id": "VN",
+   "name": {
+    "tr": "Vietnam",
+    "en": "Vietnam"
+   },
+   "capital": {
+    "tr": "Hanoi",
+    "en": "Hanoi"
+   },
+   "continent": "asia",
+   "population": 99,
+   "tier": 2
+  },
+  {
+   "id": "NG",
+   "name": {
+    "tr": "Nijerya",
+    "en": "Nigeria"
+   },
+   "capital": {
+    "tr": "Abuja",
+    "en": "Abuja"
+   },
+   "continent": "africa",
+   "population": 224,
+   "tier": 2
+  },
+  {
+   "id": "KE",
+   "name": {
+    "tr": "Kenya",
+    "en": "Kenya"
+   },
+   "capital": {
+    "tr": "Nairobi",
+    "en": "Nairobi"
+   },
+   "continent": "africa",
+   "population": 55,
+   "tier": 2
+  },
+  {
+   "id": "ZA",
+   "name": {
+    "tr": "Güney Afrika",
+    "en": "South Africa"
+   },
+   "capital": null,
+   "continent": "africa",
+   "population": 62,
+   "tier": 2
+  },
+  {
+   "id": "MA",
+   "name": {
+    "tr": "Fas",
+    "en": "Morocco"
+   },
+   "capital": {
+    "tr": "Rabat",
+    "en": "Rabat"
+   },
+   "continent": "africa",
+   "population": 38,
+   "tier": 2
+  },
+  {
+   "id": "DZ",
+   "name": {
+    "tr": "Cezayir",
+    "en": "Algeria"
+   },
+   "capital": {
+    "tr": "Cezayir",
+    "en": "Algiers"
+   },
+   "continent": "africa",
+   "population": 46,
+   "tier": 2
+  },
+  {
+   "id": "TN",
+   "name": {
+    "tr": "Tunus",
+    "en": "Tunisia"
+   },
+   "capital": {
+    "tr": "Tunus",
+    "en": "Tunis"
+   },
+   "continent": "africa",
+   "population": 12,
+   "tier": 2
+  },
+  {
+   "id": "CL",
+   "name": {
+    "tr": "Şili",
+    "en": "Chile"
+   },
+   "capital": {
+    "tr": "Santiago",
+    "en": "Santiago"
+   },
+   "continent": "southAmerica",
+   "population": 20,
+   "tier": 2
+  },
+  {
+   "id": "CO",
+   "name": {
+    "tr": "Kolombiya",
+    "en": "Colombia"
+   },
+   "capital": {
+    "tr": "Bogota",
+    "en": "Bogotá"
+   },
+   "continent": "southAmerica",
+   "population": 52,
+   "tier": 2
+  },
+  {
+   "id": "PE",
+   "name": {
+    "tr": "Peru",
+    "en": "Peru"
+   },
+   "capital": {
+    "tr": "Lima",
+    "en": "Lima"
+   },
+   "continent": "southAmerica",
+   "population": 34,
+   "tier": 2
+  },
+  {
+   "id": "CU",
+   "name": {
+    "tr": "Küba",
+    "en": "Cuba"
+   },
+   "capital": {
+    "tr": "Havana",
+    "en": "Havana"
+   },
+   "continent": "northAmerica",
+   "population": 11,
+   "tier": 2
+  },
+  {
+   "id": "NZ",
+   "name": {
+    "tr": "Yeni Zelanda",
+    "en": "New Zealand"
+   },
+   "capital": {
+    "tr": "Wellington",
+    "en": "Wellington"
+   },
+   "continent": "oceania",
+   "population": 5.2,
+   "tier": 2
+  },
+  {
+   "id": "BG",
+   "name": {
+    "tr": "Bulgaristan",
+    "en": "Bulgaria"
+   },
+   "capital": {
+    "tr": "Sofya",
+    "en": "Sofia"
+   },
+   "continent": "europe",
+   "population": 6.4,
+   "tier": 2
+  },
+  {
+   "id": "RO",
+   "name": {
+    "tr": "Romanya",
+    "en": "Romania"
+   },
+   "capital": {
+    "tr": "Bükreş",
+    "en": "Bucharest"
+   },
+   "continent": "europe",
+   "population": 19,
+   "tier": 2
+  },
+  {
+   "id": "RS",
+   "name": {
+    "tr": "Sırbistan",
+    "en": "Serbia"
+   },
+   "capital": {
+    "tr": "Belgrad",
+    "en": "Belgrade"
+   },
+   "continent": "europe",
+   "population": 6.6,
+   "tier": 2
+  },
+  {
+   "id": "HR",
+   "name": {
+    "tr": "Hırvatistan",
+    "en": "Croatia"
+   },
+   "capital": {
+    "tr": "Zagreb",
+    "en": "Zagreb"
+   },
+   "continent": "europe",
+   "population": 3.9,
+   "tier": 2
+  },
+  {
+   "id": "GE",
+   "name": {
+    "tr": "Gürcistan",
+    "en": "Georgia"
+   },
+   "capital": {
+    "tr": "Tiflis",
+    "en": "Tbilisi"
+   },
+   "continent": null,
+   "population": 3.7,
+   "tier": 3
+  },
+  {
+   "id": "AM",
+   "name": {
+    "tr": "Ermenistan",
+    "en": "Armenia"
+   },
+   "capital": {
+    "tr": "Erivan",
+    "en": "Yerevan"
+   },
+   "continent": null,
+   "population": 2.8,
+   "tier": 3
+  },
+  {
+   "id": "KZ",
+   "name": {
+    "tr": "Kazakistan",
+    "en": "Kazakhstan"
+   },
+   "capital": {
+    "tr": "Astana",
+    "en": "Astana"
+   },
+   "continent": null,
+   "population": 20,
+   "tier": 3
+  },
+  {
+   "id": "UZ",
+   "name": {
+    "tr": "Özbekistan",
+    "en": "Uzbekistan"
+   },
+   "capital": {
+    "tr": "Taşkent",
+    "en": "Tashkent"
+   },
+   "continent": "asia",
+   "population": 36,
+   "tier": 3
+  },
+  {
+   "id": "TM",
+   "name": {
+    "tr": "Türkmenistan",
+    "en": "Turkmenistan"
+   },
+   "capital": {
+    "tr": "Aşkabat",
+    "en": "Ashgabat"
+   },
+   "continent": "asia",
+   "population": 6.5,
+   "tier": 3
+  },
+  {
+   "id": "KG",
+   "name": {
+    "tr": "Kırgızistan",
+    "en": "Kyrgyzstan"
+   },
+   "capital": {
+    "tr": "Bişkek",
+    "en": "Bishkek"
+   },
+   "continent": "asia",
+   "population": 7,
+   "tier": 3
+  },
+  {
+   "id": "AF",
+   "name": {
+    "tr": "Afganistan",
+    "en": "Afghanistan"
+   },
+   "capital": {
+    "tr": "Kabil",
+    "en": "Kabul"
+   },
+   "continent": "asia",
+   "population": 42,
+   "tier": 3
+  },
+  {
+   "id": "SY",
+   "name": {
+    "tr": "Suriye",
+    "en": "Syria"
+   },
+   "capital": {
+    "tr": "Şam",
+    "en": "Damascus"
+   },
+   "continent": "asia",
+   "population": 23,
+   "tier": 3
+  },
+  {
+   "id": "LB",
+   "name": {
+    "tr": "Lübnan",
+    "en": "Lebanon"
+   },
+   "capital": {
+    "tr": "Beyrut",
+    "en": "Beirut"
+   },
+   "continent": "asia",
+   "population": 5.5,
+   "tier": 3
+  },
+  {
+   "id": "JO",
+   "name": {
+    "tr": "Ürdün",
+    "en": "Jordan"
+   },
+   "capital": {
+    "tr": "Amman",
+    "en": "Amman"
+   },
+   "continent": "asia",
+   "population": 11,
+   "tier": 3
+  },
+  {
+   "id": "QA",
+   "name": {
+    "tr": "Katar",
+    "en": "Qatar"
+   },
+   "capital": {
+    "tr": "Doha",
+    "en": "Doha"
+   },
+   "continent": "asia",
+   "population": 2.7,
+   "tier": 3
+  },
+  {
+   "id": "AE",
+   "name": {
+    "tr": "Birleşik Arap Emirlikleri",
+    "en": "United Arab Emirates"
+   },
+   "capital": {
+    "tr": "Abu Dabi",
+    "en": "Abu Dhabi"
+   },
+   "continent": "asia",
+   "population": 9.5,
+   "tier": 3
+  },
+  {
+   "id": "PH",
+   "name": {
+    "tr": "Filipinler",
+    "en": "Philippines"
+   },
+   "capital": {
+    "tr": "Manila",
+    "en": "Manila"
+   },
+   "continent": "asia",
+   "population": 117,
+   "tier": 3
+  },
+  {
+   "id": "MY",
+   "name": {
+    "tr": "Malezya",
+    "en": "Malaysia"
+   },
+   "capital": {
+    "tr": "Kuala Lumpur",
+    "en": "Kuala Lumpur"
+   },
+   "continent": "asia",
+   "population": 34,
+   "tier": 3
+  },
+  {
+   "id": "SG",
+   "name": {
+    "tr": "Singapur",
+    "en": "Singapore"
+   },
+   "capital": {
+    "tr": "Singapur",
+    "en": "Singapore"
+   },
+   "continent": "asia",
+   "population": 5.9,
+   "tier": 3
+  },
+  {
+   "id": "BD",
+   "name": {
+    "tr": "Bangladeş",
+    "en": "Bangladesh"
+   },
+   "capital": {
+    "tr": "Dakka",
+    "en": "Dhaka"
+   },
+   "continent": "asia",
+   "population": 173,
+   "tier": 3
+  },
+  {
+   "id": "NP",
+   "name": {
+    "tr": "Nepal",
+    "en": "Nepal"
+   },
+   "capital": {
+    "tr": "Katmandu",
+    "en": "Kathmandu"
+   },
+   "continent": "asia",
+   "population": 30,
+   "tier": 3
+  },
+  {
+   "id": "MN",
+   "name": {
+    "tr": "Moğolistan",
+    "en": "Mongolia"
+   },
+   "capital": {
+    "tr": "Ulan Batur",
+    "en": "Ulaanbaatar"
+   },
+   "continent": "asia",
+   "population": 3.4,
+   "tier": 3
+  },
+  {
+   "id": "KP",
+   "name": {
+    "tr": "Kuzey Kore",
+    "en": "North Korea"
+   },
+   "capital": {
+    "tr": "Pyongyang",
+    "en": "Pyongyang"
+   },
+   "continent": "asia",
+   "population": 26,
+   "tier": 3
+  },
+  {
+   "id": "ET",
+   "name": {
+    "tr": "Etiyopya",
+    "en": "Ethiopia"
+   },
+   "capital": {
+    "tr": "Addis Ababa",
+    "en": "Addis Ababa"
+   },
+   "continent": "africa",
+   "population": 126,
+   "tier": 3
+  },
+  {
+   "id": "GH",
+   "name": {
+    "tr": "Gana",
+    "en": "Ghana"
+   },
+   "capital": {
+    "tr": "Akra",
+    "en": "Accra"
+   },
+   "continent": "africa",
+   "population": 34,
+   "tier": 3
+  },
+  {
+   "id": "SN",
+   "name": {
+    "tr": "Senegal",
+    "en": "Senegal"
+   },
+   "capital": {
+    "tr": "Dakar",
+    "en": "Dakar"
+   },
+   "continent": "africa",
+   "population": 18,
+   "tier": 3
+  },
+  {
+   "id": "TZ",
+   "name": {
+    "tr": "Tanzanya",
+    "en": "Tanzania"
+   },
+   "capital": {
+    "tr": "Dodoma",
+    "en": "Dodoma"
+   },
+   "continent": "africa",
+   "population": 67,
+   "tier": 3
+  },
+  {
+   "id": "VE",
+   "name": {
+    "tr": "Venezuela",
+    "en": "Venezuela"
+   },
+   "capital": {
+    "tr": "Karakas",
+    "en": "Caracas"
+   },
+   "continent": "southAmerica",
+   "population": 28,
+   "tier": 3
+  },
+  {
+   "id": "EC",
+   "name": {
+    "tr": "Ekvador",
+    "en": "Ecuador"
+   },
+   "capital": {
+    "tr": "Kito",
+    "en": "Quito"
+   },
+   "continent": "southAmerica",
+   "population": 18,
+   "tier": 3
+  },
+  {
+   "id": "UY",
+   "name": {
+    "tr": "Uruguay",
+    "en": "Uruguay"
+   },
+   "capital": {
+    "tr": "Montevideo",
+    "en": "Montevideo"
+   },
+   "continent": "southAmerica",
+   "population": 3.4,
+   "tier": 3
+  },
+  {
+   "id": "PY",
+   "name": {
+    "tr": "Paraguay",
+    "en": "Paraguay"
+   },
+   "capital": {
+    "tr": "Asunción",
+    "en": "Asunción"
+   },
+   "continent": "southAmerica",
+   "population": 6.9,
+   "tier": 3
+  },
+  {
+   "id": "JM",
+   "name": {
+    "tr": "Jamaika",
+    "en": "Jamaica"
+   },
+   "capital": {
+    "tr": "Kingston",
+    "en": "Kingston"
+   },
+   "continent": "northAmerica",
+   "population": 2.8,
+   "tier": 3
+  },
+  {
+   "id": "IS",
+   "name": {
+    "tr": "İzlanda",
+    "en": "Iceland"
+   },
+   "capital": {
+    "tr": "Reykjavik",
+    "en": "Reykjavík"
+   },
+   "continent": "europe",
+   "population": 0.38,
+   "tier": 3
+  },
+  {
+   "id": "SK",
+   "name": {
+    "tr": "Slovakya",
+    "en": "Slovakia"
+   },
+   "capital": {
+    "tr": "Bratislava",
+    "en": "Bratislava"
+   },
+   "continent": "europe",
+   "population": 5.4,
+   "tier": 3
+  },
+  {
+   "id": "SI",
+   "name": {
+    "tr": "Slovenya",
+    "en": "Slovenia"
+   },
+   "capital": {
+    "tr": "Ljubljana",
+    "en": "Ljubljana"
+   },
+   "continent": "europe",
+   "population": 2.1,
+   "tier": 3
+  },
+  {
+   "id": "BA",
+   "name": {
+    "tr": "Bosna-Hersek",
+    "en": "Bosnia and Herzegovina"
+   },
+   "capital": {
+    "tr": "Saraybosna",
+    "en": "Sarajevo"
+   },
+   "continent": "europe",
+   "population": 3.2,
+   "tier": 3
+  },
+  {
+   "id": "AL",
+   "name": {
+    "tr": "Arnavutluk",
+    "en": "Albania"
+   },
+   "capital": {
+    "tr": "Tiran",
+    "en": "Tirana"
+   },
+   "continent": "europe",
+   "population": 2.8,
+   "tier": 3
+  },
+  {
+   "id": "MK",
+   "name": {
+    "tr": "Kuzey Makedonya",
+    "en": "North Macedonia"
+   },
+   "capital": {
+    "tr": "Üsküp",
+    "en": "Skopje"
+   },
+   "continent": "europe",
+   "population": 1.8,
+   "tier": 3
+  },
+  {
+   "id": "LT",
+   "name": {
+    "tr": "Litvanya",
+    "en": "Lithuania"
+   },
+   "capital": {
+    "tr": "Vilnius",
+    "en": "Vilnius"
+   },
+   "continent": "europe",
+   "population": 2.9,
+   "tier": 3
+  },
+  {
+   "id": "LV",
+   "name": {
+    "tr": "Letonya",
+    "en": "Latvia"
+   },
+   "capital": {
+    "tr": "Riga",
+    "en": "Riga"
+   },
+   "continent": "europe",
+   "population": 1.9,
+   "tier": 3
+  },
+  {
+   "id": "EE",
+   "name": {
+    "tr": "Estonya",
+    "en": "Estonia"
+   },
+   "capital": {
+    "tr": "Tallinn",
+    "en": "Tallinn"
+   },
+   "continent": "europe",
+   "population": 1.4,
+   "tier": 3
+  },
+  {
+   "id": "BY",
+   "name": {
+    "tr": "Belarus",
+    "en": "Belarus"
+   },
+   "capital": {
+    "tr": "Minsk",
+    "en": "Minsk"
+   },
+   "continent": "europe",
+   "population": 9.2,
+   "tier": 3
+  },
+  {
+   "id": "MD",
+   "name": {
+    "tr": "Moldova",
+    "en": "Moldova"
+   },
+   "capital": {
+    "tr": "Kişinev",
+    "en": "Chișinău"
+   },
+   "continent": "europe",
+   "population": 2.5,
+   "tier": 3
+  },
+  {
+   "id": "LY",
+   "name": {
+    "tr": "Libya",
+    "en": "Libya"
+   },
+   "capital": {
+    "tr": "Trablus",
+    "en": "Tripoli"
+   },
+   "continent": "africa",
+   "population": 7,
+   "tier": 4
+  },
+  {
+   "id": "SD",
+   "name": {
+    "tr": "Sudan",
+    "en": "Sudan"
+   },
+   "capital": {
+    "tr": "Hartum",
+    "en": "Khartoum"
+   },
+   "continent": "africa",
+   "population": 48,
+   "tier": 4
+  },
+  {
+   "id": "AO",
+   "name": {
+    "tr": "Angola",
+    "en": "Angola"
+   },
+   "capital": {
+    "tr": "Luanda",
+    "en": "Luanda"
+   },
+   "continent": "africa",
+   "population": 36,
+   "tier": 4
+  },
+  {
+   "id": "CM",
+   "name": {
+    "tr": "Kamerun",
+    "en": "Cameroon"
+   },
+   "capital": {
+    "tr": "Yaoundé",
+    "en": "Yaoundé"
+   },
+   "continent": "africa",
+   "population": 28,
+   "tier": 4
+  },
+  {
+   "id": "ML",
+   "name": {
+    "tr": "Mali",
+    "en": "Mali"
+   },
+   "capital": {
+    "tr": "Bamako",
+    "en": "Bamako"
+   },
+   "continent": "africa",
+   "population": 23,
+   "tier": 4
+  },
+  {
+   "id": "NE",
+   "name": {
+    "tr": "Nijer",
+    "en": "Niger"
+   },
+   "capital": {
+    "tr": "Niamey",
+    "en": "Niamey"
+   },
+   "continent": "africa",
+   "population": 27,
+   "tier": 4
+  },
+  {
+   "id": "TD",
+   "name": {
+    "tr": "Çad",
+    "en": "Chad"
+   },
+   "capital": {
+    "tr": "Encamena",
+    "en": "N’Djamena"
+   },
+   "continent": "africa",
+   "population": 18,
+   "tier": 4
+  },
+  {
+   "id": "UG",
+   "name": {
+    "tr": "Uganda",
+    "en": "Uganda"
+   },
+   "capital": {
+    "tr": "Kampala",
+    "en": "Kampala"
+   },
+   "continent": "africa",
+   "population": 48,
+   "tier": 4
+  },
+  {
+   "id": "RW",
+   "name": {
+    "tr": "Ruanda",
+    "en": "Rwanda"
+   },
+   "capital": {
+    "tr": "Kigali",
+    "en": "Kigali"
+   },
+   "continent": "africa",
+   "population": 14,
+   "tier": 4
+  },
+  {
+   "id": "ZW",
+   "name": {
+    "tr": "Zimbabve",
+    "en": "Zimbabwe"
+   },
+   "capital": {
+    "tr": "Harare",
+    "en": "Harare"
+   },
+   "continent": "africa",
+   "population": 16,
+   "tier": 4
+  },
+  {
+   "id": "ZM",
+   "name": {
+    "tr": "Zambiya",
+    "en": "Zambia"
+   },
+   "capital": {
+    "tr": "Lusaka",
+    "en": "Lusaka"
+   },
+   "continent": "africa",
+   "population": 20,
+   "tier": 4
+  },
+  {
+   "id": "MG",
+   "name": {
+    "tr": "Madagaskar",
+    "en": "Madagascar"
+   },
+   "capital": {
+    "tr": "Antananarivo",
+    "en": "Antananarivo"
+   },
+   "continent": "africa",
+   "population": 30,
+   "tier": 4
+  },
+  {
+   "id": "MZ",
+   "name": {
+    "tr": "Mozambik",
+    "en": "Mozambique"
+   },
+   "capital": {
+    "tr": "Maputo",
+    "en": "Maputo"
+   },
+   "continent": "africa",
+   "population": 34,
+   "tier": 4
+  },
+  {
+   "id": "NA",
+   "name": {
+    "tr": "Namibya",
+    "en": "Namibia"
+   },
+   "capital": {
+    "tr": "Windhoek",
+    "en": "Windhoek"
+   },
+   "continent": "africa",
+   "population": 2.6,
+   "tier": 4
+  },
+  {
+   "id": "BW",
+   "name": {
+    "tr": "Botsvana",
+    "en": "Botswana"
+   },
+   "capital": {
+    "tr": "Gaborone",
+    "en": "Gaborone"
+   },
+   "continent": "africa",
+   "population": 2.6,
+   "tier": 4
+  },
+  {
+   "id": "CD",
+   "name": {
+    "tr": "Demokratik Kongo Cumhuriyeti",
+    "en": "DR Congo"
+   },
+   "capital": {
+    "tr": "Kinşasa",
+    "en": "Kinshasa"
+   },
+   "continent": "africa",
+   "population": 102,
+   "tier": 4
+  },
+  {
+   "id": "OM",
+   "name": {
+    "tr": "Umman",
+    "en": "Oman"
+   },
+   "capital": {
+    "tr": "Maskat",
+    "en": "Muscat"
+   },
+   "continent": "asia",
+   "population": 4.6,
+   "tier": 4
+  },
+  {
+   "id": "BH",
+   "name": {
+    "tr": "Bahreyn",
+    "en": "Bahrain"
+   },
+   "capital": {
+    "tr": "Manama",
+    "en": "Manama"
+   },
+   "continent": "asia",
+   "population": 1.5,
+   "tier": 4
+  },
+  {
+   "id": "MM",
+   "name": {
+    "tr": "Myanmar",
+    "en": "Myanmar"
+   },
+   "capital": {
+    "tr": "Nepido",
+    "en": "Naypyidaw"
+   },
+   "continent": "asia",
+   "population": 54,
+   "tier": 4
+  },
+  {
+   "id": "KH",
+   "name": {
+    "tr": "Kamboçya",
+    "en": "Cambodia"
+   },
+   "capital": {
+    "tr": "Phnom Penh",
+    "en": "Phnom Penh"
+   },
+   "continent": "asia",
+   "population": 17,
+   "tier": 4
+  },
+  {
+   "id": "LA",
+   "name": {
+    "tr": "Laos",
+    "en": "Laos"
+   },
+   "capital": {
+    "tr": "Vientiane",
+    "en": "Vientiane"
+   },
+   "continent": "asia",
+   "population": 7.6,
+   "tier": 4
+  },
+  {
+   "id": "TJ",
+   "name": {
+    "tr": "Tacikistan",
+    "en": "Tajikistan"
+   },
+   "capital": {
+    "tr": "Duşanbe",
+    "en": "Dushanbe"
+   },
+   "continent": "asia",
+   "population": 10,
+   "tier": 4
+  },
+  {
+   "id": "CR",
+   "name": {
+    "tr": "Kosta Rika",
+    "en": "Costa Rica"
+   },
+   "capital": {
+    "tr": "San José",
+    "en": "San José"
+   },
+   "continent": "northAmerica",
+   "population": 5.2,
+   "tier": 4
+  },
+  {
+   "id": "PA",
+   "name": {
+    "tr": "Panama",
+    "en": "Panama"
+   },
+   "capital": {
+    "tr": "Panama",
+    "en": "Panama City"
+   },
+   "continent": "northAmerica",
+   "population": 4.5,
+   "tier": 4
+  },
+  {
+   "id": "GT",
+   "name": {
+    "tr": "Guatemala",
+    "en": "Guatemala"
+   },
+   "capital": {
+    "tr": "Guatemala",
+    "en": "Guatemala City"
+   },
+   "continent": "northAmerica",
+   "population": 18,
+   "tier": 4
+  },
+  {
+   "id": "HN",
+   "name": {
+    "tr": "Honduras",
+    "en": "Honduras"
+   },
+   "capital": {
+    "tr": "Tegucigalpa",
+    "en": "Tegucigalpa"
+   },
+   "continent": "northAmerica",
+   "population": 10.5,
+   "tier": 4
+  },
+  {
+   "id": "NI",
+   "name": {
+    "tr": "Nikaragua",
+    "en": "Nicaragua"
+   },
+   "capital": {
+    "tr": "Managua",
+    "en": "Managua"
+   },
+   "continent": "northAmerica",
+   "population": 7,
+   "tier": 4
+  },
+  {
+   "id": "DO",
+   "name": {
+    "tr": "Dominik Cumhuriyeti",
+    "en": "Dominican Republic"
+   },
+   "capital": {
+    "tr": "Santo Domingo",
+    "en": "Santo Domingo"
+   },
+   "continent": "northAmerica",
+   "population": 11,
+   "tier": 4
+  },
+  {
+   "id": "HT",
+   "name": {
+    "tr": "Haiti",
+    "en": "Haiti"
+   },
+   "capital": {
+    "tr": "Port-au-Prince",
+    "en": "Port-au-Prince"
+   },
+   "continent": "northAmerica",
+   "population": 11.7,
+   "tier": 4
+  },
+  {
+   "id": "PG",
+   "name": {
+    "tr": "Papua Yeni Gine",
+    "en": "Papua New Guinea"
+   },
+   "capital": {
+    "tr": "Port Moresby",
+    "en": "Port Moresby"
+   },
+   "continent": "oceania",
+   "population": 10,
+   "tier": 4
+  },
+  {
+   "id": "FJ",
+   "name": {
+    "tr": "Fiji",
+    "en": "Fiji"
+   },
+   "capital": {
+    "tr": "Suva",
+    "en": "Suva"
+   },
+   "continent": "oceania",
+   "population": 0.9,
+   "tier": 4
+  },
+  {
+   "id": "LU",
+   "name": {
+    "tr": "Lüksemburg",
+    "en": "Luxembourg"
+   },
+   "capital": {
+    "tr": "Lüksemburg",
+    "en": "Luxembourg"
+   },
+   "continent": "europe",
+   "population": 0.66,
+   "tier": 4
+  },
+  {
+   "id": "MT",
+   "name": {
+    "tr": "Malta",
+    "en": "Malta"
+   },
+   "capital": {
+    "tr": "Valletta",
+    "en": "Valletta"
+   },
+   "continent": "europe",
+   "population": 0.54,
+   "tier": 4
+  },
+  {
+   "id": "ME",
+   "name": {
+    "tr": "Karadağ",
+    "en": "Montenegro"
+   },
+   "capital": {
+    "tr": "Podgorica",
+    "en": "Podgorica"
+   },
+   "continent": "europe",
+   "population": 0.62,
+   "tier": 4
+  }
+ ]
+}

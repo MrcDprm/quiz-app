@@ -35,8 +35,8 @@
    },
    "born": -551,
    "groups": [
-    "philosopher",
-    "writer"
+    "writer",
+    "philosopher"
    ],
    "fame": 313
   },
@@ -80,24 +80,24 @@
    "fame": 296
   },
   {
-   "id": "Q8023",
-   "name": {
-    "tr": "Nelson Mandela",
-    "en": "Nelson Mandela"
-   },
-   "born": 1918,
-   "groups": [
-    "politician"
-   ],
-   "fame": 295
-  },
-  {
    "id": "Q1394",
    "name": {
     "tr": "Vladimir Lenin",
     "en": "Vladimir Lenin"
    },
    "born": 1870,
+   "groups": [
+    "politician"
+   ],
+   "fame": 295
+  },
+  {
+   "id": "Q8023",
+   "name": {
+    "tr": "Nelson Mandela",
+    "en": "Nelson Mandela"
+   },
+   "born": 1918,
    "groups": [
     "politician"
    ],
@@ -125,6 +125,7 @@
    },
    "born": 1769,
    "groups": [
+    "royalty",
     "politician"
    ],
    "fame": 287
@@ -185,19 +186,6 @@
    "fame": 278
   },
   {
-   "id": "Q9441",
-   "name": {
-    "tr": "Gotama Buda",
-    "en": "The Buddha"
-   },
-   "born": -501,
-   "groups": [
-    "writer",
-    "philosopher"
-   ],
-   "fame": 276
-  },
-  {
    "id": "Q913",
    "name": {
     "tr": "Sokrates",
@@ -205,8 +193,21 @@
    },
    "born": -470,
    "groups": [
-    "writer",
-    "philosopher"
+    "philosopher",
+    "writer"
+   ],
+   "fame": 276
+  },
+  {
+   "id": "Q9441",
+   "name": {
+    "tr": "Gotama Buda",
+    "en": "The Buddha"
+   },
+   "born": -501,
+   "groups": [
+    "philosopher",
+    "writer"
    ],
    "fame": 276
   },
@@ -271,6 +272,7 @@
    },
    "born": -356,
    "groups": [
+    "royalty",
     "politician"
    ],
    "fame": 262
@@ -334,10 +336,22 @@
    },
    "born": 1821,
    "groups": [
-    "philosopher",
-    "writer"
+    "writer",
+    "philosopher"
    ],
    "fame": 256
+  },
+  {
+   "id": "Q9682",
+   "name": {
+    "tr": "II. Elizabeth",
+    "en": "Elizabeth II"
+   },
+   "born": 1926,
+   "groups": [
+    "royalty"
+   ],
+   "fame": 255
   },
   {
    "id": "Q8743",
@@ -438,8 +452,8 @@
    },
    "born": -287,
    "groups": [
-    "scientist",
-    "philosopher"
+    "philosopher",
+    "scientist"
    ],
    "fame": 246
   },
@@ -451,13 +465,13 @@
    },
    "born": 1861,
    "groups": [
+    "writer",
+    "painter",
     "director",
     "philosopher",
-    "writer",
     "actor",
     "composer",
-    "singer",
-    "painter"
+    "singer"
    ],
    "fame": 246
   },
@@ -930,10 +944,10 @@
    },
    "born": -583,
    "groups": [
-    "politician",
-    "philosopher",
     "writer",
-    "scientist"
+    "politician",
+    "scientist",
+    "philosopher"
    ],
    "fame": 209
   },
@@ -960,6 +974,18 @@
    "groups": [
     "writer",
     "director"
+   ],
+   "fame": 208
+  },
+  {
+   "id": "Q720",
+   "name": {
+    "tr": "Cengiz Han",
+    "en": "Genghis Khan"
+   },
+   "born": 1162,
+   "groups": [
+    "royalty"
    ],
    "fame": 208
   },
@@ -1009,9 +1035,9 @@
    },
    "born": 1646,
    "groups": [
+    "philosopher",
     "writer",
-    "scientist",
-    "philosopher"
+    "scientist"
    ],
    "fame": 206
   },
@@ -1307,6 +1333,7 @@
    },
    "born": -259,
    "groups": [
+    "royalty",
     "politician"
    ],
    "fame": 196
@@ -1531,6 +1558,18 @@
    "fame": 190
   },
   {
+   "id": "Q217096",
+   "name": {
+    "tr": "Naruhito",
+    "en": "Naruhito"
+   },
+   "born": 1960,
+   "groups": [
+    "royalty"
+   ],
+   "fame": 189
+  },
+  {
    "id": "Q7374",
    "name": {
     "tr": "Alfred Hitchcock",
@@ -1585,18 +1624,6 @@
    "fame": 187
   },
   {
-   "id": "Q8440",
-   "name": {
-    "tr": "Hugo Chávez",
-    "en": "Hugo Chávez"
-   },
-   "born": 1954,
-   "groups": [
-    "politician"
-   ],
-   "fame": 187
-  },
-  {
    "id": "Q11806",
    "name": {
     "tr": "John Adams",
@@ -1605,6 +1632,18 @@
    "born": 1735,
    "groups": [
     "writer",
+    "politician"
+   ],
+   "fame": 187
+  },
+  {
+   "id": "Q8440",
+   "name": {
+    "tr": "Hugo Chávez",
+    "en": "Hugo Chávez"
+   },
+   "born": 1954,
+   "groups": [
     "politician"
    ],
    "fame": 187
@@ -1648,6 +1687,18 @@
    "fame": 186
   },
   {
+   "id": "Q3044",
+   "name": {
+    "tr": "Şarlman",
+    "en": "Charlemagne"
+   },
+   "born": 742,
+   "groups": [
+    "royalty"
+   ],
+   "fame": 186
+  },
+  {
    "id": "Q33760",
    "name": {
     "tr": "Bertrand Russell",
@@ -1656,8 +1707,8 @@
    "born": 1872,
    "groups": [
     "writer",
-    "scientist",
     "politician",
+    "scientist",
     "philosopher"
    ],
    "fame": 185
@@ -1670,11 +1721,11 @@
    },
    "born": 1940,
    "groups": [
+    "director",
     "actor",
     "writer",
     "composer",
-    "singer",
-    "director"
+    "singer"
    ],
    "fame": 185
   },
@@ -1765,6 +1816,7 @@
    },
    "born": 1638,
    "groups": [
+    "royalty",
     "actor",
     "politician"
    ],
@@ -1914,6 +1966,19 @@
    "fame": 177
   },
   {
+   "id": "Q8589",
+   "name": {
+    "tr": "Büyük Asoka",
+    "en": "Ashoka"
+   },
+   "born": -304,
+   "groups": [
+    "royalty",
+    "politician"
+   ],
+   "fame": 177
+  },
+  {
    "id": "Q15869",
    "name": {
     "tr": "Freddie Mercury",
@@ -1936,6 +2001,7 @@
    },
    "born": 121,
    "groups": [
+    "royalty",
     "writer",
     "politician",
     "philosopher"
@@ -1969,18 +2035,6 @@
    "fame": 175
   },
   {
-   "id": "Q83287",
-   "name": {
-    "tr": "Selena Gomez",
-    "en": "Selena Gomez"
-   },
-   "born": 1992,
-   "groups": [
-    "actor"
-   ],
-   "fame": 175
-  },
-  {
    "id": "Q17515",
    "name": {
     "tr": "Diego Maradona",
@@ -1990,6 +2044,18 @@
    "groups": [
     "actor",
     "footballer"
+   ],
+   "fame": 175
+  },
+  {
+   "id": "Q83287",
+   "name": {
+    "tr": "Selena Gomez",
+    "en": "Selena Gomez"
+   },
+   "born": 1992,
+   "groups": [
+    "actor"
    ],
    "fame": 175
   },
@@ -2015,6 +2081,18 @@
    "groups": [
     "writer",
     "philosopher"
+   ],
+   "fame": 175
+  },
+  {
+   "id": "Q9439",
+   "name": {
+    "tr": "Victoria",
+    "en": "Victoria"
+   },
+   "born": 1819,
+   "groups": [
+    "royalty"
    ],
    "fame": 175
   },
@@ -2054,6 +2132,18 @@
     "composer"
    ],
    "fame": 173
+  },
+  {
+   "id": "Q635",
+   "name": {
+    "tr": "VII. Kleopatra",
+    "en": "Cleopatra"
+   },
+   "born": -69,
+   "groups": [
+    "royalty"
+   ],
+   "fame": 172
   },
   {
    "id": "Q8753",
@@ -2187,6 +2277,18 @@
    "fame": 168
   },
   {
+   "id": "Q8597",
+   "name": {
+    "tr": "Ekber Şah",
+    "en": "Akbar"
+   },
+   "born": 1542,
+   "groups": [
+    "royalty"
+   ],
+   "fame": 168
+  },
+  {
    "id": "Q297",
    "name": {
     "tr": "Diego Velázquez",
@@ -2258,8 +2360,8 @@
    },
    "born": 1862,
    "groups": [
-    "scientist",
-    "philosopher"
+    "philosopher",
+    "scientist"
    ],
    "fame": 165
   },
@@ -2584,9 +2686,21 @@
    },
    "born": 1832,
    "groups": [
+    "philosopher",
     "writer",
-    "scientist",
-    "philosopher"
+    "scientist"
+   ],
+   "fame": 157
+  },
+  {
+   "id": "Q34479",
+   "name": {
+    "tr": "Hirohito",
+    "en": "Hirohito"
+   },
+   "born": 1901,
+   "groups": [
+    "royalty"
    ],
    "fame": 157
   },
@@ -2599,6 +2713,18 @@
    "born": 1992,
    "groups": [
     "footballer"
+   ],
+   "fame": 156
+  },
+  {
+   "id": "Q8581",
+   "name": {
+    "tr": "Selahaddin Eyyubi",
+    "en": "Saladin"
+   },
+   "born": 1138,
+   "groups": [
+    "royalty"
    ],
    "fame": 156
   },
@@ -2718,6 +2844,19 @@
    "fame": 152
   },
   {
+   "id": "Q36450",
+   "name": {
+    "tr": "II. Katerina",
+    "en": "Catherine II of Russia"
+   },
+   "born": 1729,
+   "groups": [
+    "royalty",
+    "politician"
+   ],
+   "fame": 152
+  },
+  {
    "id": "Q36330",
    "name": {
     "tr": "Giordano Bruno",
@@ -2728,18 +2867,6 @@
     "scientist",
     "writer",
     "philosopher"
-   ],
-   "fame": 151
-  },
-  {
-   "id": "Q7298",
-   "name": {
-    "tr": "Antonín Dvořák",
-    "en": "Antonín Dvořák"
-   },
-   "born": 1841,
-   "groups": [
-    "composer"
    ],
    "fame": 151
   },
@@ -2756,6 +2883,18 @@
    "fame": 151
   },
   {
+   "id": "Q7298",
+   "name": {
+    "tr": "Antonín Dvořák",
+    "en": "Antonín Dvořák"
+   },
+   "born": 1841,
+   "groups": [
+    "composer"
+   ],
+   "fame": 151
+  },
+  {
    "id": "Q6105",
    "name": {
     "tr": "Hebe Camargo",
@@ -2765,6 +2904,18 @@
    "groups": [
     "singer",
     "actor"
+   ],
+   "fame": 151
+  },
+  {
+   "id": "Q8423",
+   "name": {
+    "tr": "Büyük Kiros",
+    "en": "Cyrus the Great"
+   },
+   "born": -600,
+   "groups": [
+    "royalty"
    ],
    "fame": 151
   },
@@ -2807,8 +2958,8 @@
    },
    "born": 1929,
    "groups": [
-    "actor",
-    "singer"
+    "singer",
+    "actor"
    ],
    "fame": 149
   },
@@ -2960,18 +3111,6 @@
    "fame": 145
   },
   {
-   "id": "Q1835",
-   "name": {
-    "tr": "Zinedine Zidane",
-    "en": "Zinedine Zidane"
-   },
-   "born": 1972,
-   "groups": [
-    "footballer"
-   ],
-   "fame": 145
-  },
-  {
    "id": "Q4573",
    "name": {
     "tr": "Sean Connery",
@@ -2983,6 +3122,18 @@
     "writer",
     "footballer",
     "director"
+   ],
+   "fame": 145
+  },
+  {
+   "id": "Q1835",
+   "name": {
+    "tr": "Zinedine Zidane",
+    "en": "Zinedine Zidane"
+   },
+   "born": 1972,
+   "groups": [
+    "footballer"
    ],
    "fame": 145
   },
@@ -3051,6 +3202,7 @@
    },
    "born": 1927,
    "groups": [
+    "royalty",
     "writer",
     "composer",
     "painter"
@@ -3091,9 +3243,9 @@
    },
    "born": 1769,
    "groups": [
-    "explorer",
     "scientist",
-    "writer"
+    "writer",
+    "explorer"
    ],
    "fame": 141
   },
@@ -3222,9 +3374,9 @@
    },
    "born": 100,
    "groups": [
+    "philosopher",
     "scientist",
-    "writer",
-    "philosopher"
+    "writer"
    ],
    "fame": 138
   },
@@ -3271,6 +3423,18 @@
    "fame": 137
   },
   {
+   "id": "Q40787",
+   "name": {
+    "tr": "II. Nikolay",
+    "en": "Nicholas II of Russia"
+   },
+   "born": 1868,
+   "groups": [
+    "royalty"
+   ],
+   "fame": 137
+  },
+  {
    "id": "Q44461",
    "name": {
     "tr": "Richard Dawkins",
@@ -3313,12 +3477,12 @@
    "fame": 136
   },
   {
-   "id": "Q40912",
+   "id": "Q40715",
    "name": {
-    "tr": "Frank Sinatra",
-    "en": "Frank Sinatra"
+    "tr": "Jennifer Lopez",
+    "en": "Jennifer Lopez"
    },
-   "born": 1915,
+   "born": 1969,
    "groups": [
     "actor",
     "singer"
@@ -3326,12 +3490,12 @@
    "fame": 136
   },
   {
-   "id": "Q40715",
+   "id": "Q40912",
    "name": {
-    "tr": "Jennifer Lopez",
-    "en": "Jennifer Lopez"
+    "tr": "Frank Sinatra",
+    "en": "Frank Sinatra"
    },
-   "born": 1969,
+   "born": 1915,
    "groups": [
     "actor",
     "singer"
@@ -3365,6 +3529,19 @@
    "fame": 136
   },
   {
+   "id": "Q1151",
+   "name": {
+    "tr": "Hector Berlioz",
+    "en": "Hector Berlioz"
+   },
+   "born": 1803,
+   "groups": [
+    "writer",
+    "composer"
+   ],
+   "fame": 135
+  },
+  {
    "id": "Q42493",
    "name": {
     "tr": "Katy Perry",
@@ -3390,19 +3567,6 @@
     "writer",
     "composer",
     "director"
-   ],
-   "fame": 135
-  },
-  {
-   "id": "Q1151",
-   "name": {
-    "tr": "Hector Berlioz",
-    "en": "Hector Berlioz"
-   },
-   "born": 1803,
-   "groups": [
-    "writer",
-    "composer"
    ],
    "fame": 135
   },
@@ -3506,6 +3670,18 @@
    "fame": 134
   },
   {
+   "id": "Q37693",
+   "name": {
+    "tr": "Paul Gauguin",
+    "en": "Paul Gauguin"
+   },
+   "born": 1848,
+   "groups": [
+    "painter"
+   ],
+   "fame": 133
+  },
+  {
    "id": "Q23380",
    "name": {
     "tr": "Jean-Auguste-Dominique Ingres",
@@ -3514,18 +3690,6 @@
    "born": 1780,
    "groups": [
     "politician",
-    "painter"
-   ],
-   "fame": 133
-  },
-  {
-   "id": "Q37693",
-   "name": {
-    "tr": "Paul Gauguin",
-    "en": "Paul Gauguin"
-   },
-   "born": 1848,
-   "groups": [
     "painter"
    ],
    "fame": 133
@@ -3724,7 +3888,20 @@
    },
    "born": 1859,
    "groups": [
+    "royalty",
     "painter"
+   ],
+   "fame": 130
+  },
+  {
+   "id": "Q37979",
+   "name": {
+    "tr": "Akihito",
+    "en": "Akihito"
+   },
+   "born": 1933,
+   "groups": [
+    "royalty"
    ],
    "fame": 130
   },
@@ -3783,6 +3960,20 @@
    "fame": 128
   },
   {
+   "id": "Q23844",
+   "name": {
+    "tr": "George Clooney",
+    "en": "George Clooney"
+   },
+   "born": 1961,
+   "groups": [
+    "actor",
+    "writer",
+    "director"
+   ],
+   "fame": 128
+  },
+  {
    "id": "Q40791",
    "name": {
     "tr": "Sandra Bullock",
@@ -3804,20 +3995,6 @@
    "born": 1947,
    "groups": [
     "footballer"
-   ],
-   "fame": 128
-  },
-  {
-   "id": "Q23844",
-   "name": {
-    "tr": "George Clooney",
-    "en": "George Clooney"
-   },
-   "born": 1961,
-   "groups": [
-    "actor",
-    "writer",
-    "director"
    ],
    "fame": 128
   },
@@ -3863,12 +4040,12 @@
    "fame": 127
   },
   {
-   "id": "Q48337",
+   "id": "Q32522",
    "name": {
-    "tr": "Morgan Freeman",
-    "en": "Morgan Freeman"
+    "tr": "Jennifer Aniston",
+    "en": "Jennifer Aniston"
    },
-   "born": 1937,
+   "born": 1969,
    "groups": [
     "actor",
     "director"
@@ -3876,12 +4053,12 @@
    "fame": 127
   },
   {
-   "id": "Q32522",
+   "id": "Q48337",
    "name": {
-    "tr": "Jennifer Aniston",
-    "en": "Jennifer Aniston"
+    "tr": "Morgan Freeman",
+    "en": "Morgan Freeman"
    },
-   "born": 1969,
+   "born": 1937,
    "groups": [
     "actor",
     "director"
@@ -3955,6 +4132,43 @@
    "fame": 126
   },
   {
+   "id": "Q7732",
+   "name": {
+    "tr": "X. LouisVI",
+    "en": "Louis XVI of France"
+   },
+   "born": 1754,
+   "groups": [
+    "royalty",
+    "politician"
+   ],
+   "fame": 126
+  },
+  {
+   "id": "Q19943",
+   "name": {
+    "tr": "I. Juan Carlos",
+    "en": "Juan Carlos I of Spain"
+   },
+   "born": 1938,
+   "groups": [
+    "royalty"
+   ],
+   "fame": 126
+  },
+  {
+   "id": "Q36359",
+   "name": {
+    "tr": "Hammurabi",
+    "en": "Hammurabi"
+   },
+   "born": -1810,
+   "groups": [
+    "royalty"
+   ],
+   "fame": 126
+  },
+  {
    "id": "Q2643",
    "name": {
     "tr": "George Harrison",
@@ -4010,6 +4224,18 @@
     "actor",
     "writer",
     "tennis"
+   ],
+   "fame": 125
+  },
+  {
+   "id": "Q32500",
+   "name": {
+    "tr": "V. Karl",
+    "en": "Charles V"
+   },
+   "born": 1500,
+   "groups": [
+    "royalty"
    ],
    "fame": 125
   },
@@ -4070,6 +4296,19 @@
    "fame": 124
   },
   {
+   "id": "Q33550",
+   "name": {
+    "tr": "II. Friedrich",
+    "en": "Frederick II of Prussia"
+   },
+   "born": 1712,
+   "groups": [
+    "royalty",
+    "composer"
+   ],
+   "fame": 124
+  },
+  {
    "id": "Q11998",
    "name": {
     "tr": "Kylie Minogue",
@@ -4082,6 +4321,19 @@
     "singer"
    ],
    "fame": 123
+  },
+  {
+   "id": "Q34503",
+   "name": {
+    "tr": "II. Mehmed",
+    "en": "Mehmed II"
+   },
+   "born": 1432,
+   "groups": [
+    "royalty",
+    "writer"
+   ],
+   "fame": 122
   },
   {
    "id": "Q83158",
@@ -4133,6 +4385,7 @@
    },
    "born": 1895,
    "groups": [
+    "royalty",
     "tennis"
    ],
    "fame": 121
@@ -4193,6 +4446,19 @@
    "fame": 120
   },
   {
+   "id": "Q189490",
+   "name": {
+    "tr": "Jennifer Lawrence",
+    "en": "Jennifer Lawrence"
+   },
+   "born": 1990,
+   "groups": [
+    "actor",
+    "director"
+   ],
+   "fame": 120
+  },
+  {
    "id": "Q159577",
    "name": {
     "tr": "Jet Li",
@@ -4207,15 +4473,29 @@
    "fame": 120
   },
   {
-   "id": "Q189490",
+   "id": "Q41866",
    "name": {
-    "tr": "Jennifer Lawrence",
-    "en": "Jennifer Lawrence"
+    "tr": "I. Justinianos",
+    "en": "Justinian I"
    },
-   "born": 1990,
+   "born": 482,
    "groups": [
-    "actor",
-    "director"
+    "writer",
+    "royalty",
+    "politician"
+   ],
+   "fame": 120
+  },
+  {
+   "id": "Q38370",
+   "name": {
+    "tr": "VIII. Henry",
+    "en": "Henry VIII of England"
+   },
+   "born": 1491,
+   "groups": [
+    "royalty",
+    "composer"
    ],
    "fame": 120
   },
@@ -4333,6 +4613,19 @@
    "born": 1945,
    "groups": [
     "footballer"
+   ],
+   "fame": 116
+  },
+  {
+   "id": "Q41178",
+   "name": {
+    "tr": "Haile Selassie",
+    "en": "Haile Selassie I"
+   },
+   "born": 1892,
+   "groups": [
+    "royalty",
+    "politician"
    ],
    "fame": 116
   },
@@ -4461,6 +4754,31 @@
    "fame": 113
   },
   {
+   "id": "Q37594",
+   "name": {
+    "tr": "I. William",
+    "en": "William the Conqueror"
+   },
+   "born": 1028,
+   "groups": [
+    "royalty"
+   ],
+   "fame": 113
+  },
+  {
+   "id": "Q128245",
+   "name": {
+    "tr": "Muhammed Rıza Pehlevi",
+    "en": "Mohammad Reza I of Iran"
+   },
+   "born": 1919,
+   "groups": [
+    "royalty",
+    "politician"
+   ],
+   "fame": 113
+  },
+  {
    "id": "Q68060",
    "name": {
     "tr": "Gianluigi Buffon",
@@ -4485,6 +4803,30 @@
    "fame": 112
   },
   {
+   "id": "Q42305",
+   "name": {
+    "tr": "I. Richard",
+    "en": "Richard I of England"
+   },
+   "born": 1157,
+   "groups": [
+    "royalty"
+   ],
+   "fame": 112
+  },
+  {
+   "id": "Q57464",
+   "name": {
+    "tr": "II. Abdullah",
+    "en": "Abdullah II of Jordan"
+   },
+   "born": 1962,
+   "groups": [
+    "royalty"
+   ],
+   "fame": 112
+  },
+  {
    "id": "Q102139",
    "name": {
     "tr": "II. Margrethe",
@@ -4492,7 +4834,45 @@
    },
    "born": 1940,
    "groups": [
+    "royalty",
     "painter"
+   ],
+   "fame": 111
+  },
+  {
+   "id": "Q81506",
+   "name": {
+    "tr": "I. Charles",
+    "en": "Charles I of England"
+   },
+   "born": 1600,
+   "groups": [
+    "royalty",
+    "politician"
+   ],
+   "fame": 111
+  },
+  {
+   "id": "Q15193",
+   "name": {
+    "tr": "I. Aleksandr",
+    "en": "Alexander I of Russia"
+   },
+   "born": 1777,
+   "groups": [
+    "royalty"
+   ],
+   "fame": 111
+  },
+  {
+   "id": "Q44387",
+   "name": {
+    "tr": "I. Darius",
+    "en": "Darius I"
+   },
+   "born": -550,
+   "groups": [
+    "royalty"
    ],
    "fame": 111
   },
@@ -4554,6 +4934,31 @@
    "fame": 109
   },
   {
+   "id": "Q269412",
+   "name": {
+    "tr": "V. George",
+    "en": "George V"
+   },
+   "born": 1865,
+   "groups": [
+    "royalty",
+    "politician"
+   ],
+   "fame": 109
+  },
+  {
+   "id": "Q590227",
+   "name": {
+    "tr": "VIII. Edward",
+    "en": "Edward VIII"
+   },
+   "born": 1894,
+   "groups": [
+    "royalty"
+   ],
+   "fame": 109
+  },
+  {
    "id": "Q37562",
    "name": {
     "tr": "Donatello",
@@ -4578,17 +4983,55 @@
    "fame": 108
   },
   {
-   "id": "Q34970",
+   "id": "Q127318",
    "name": {
-    "tr": "D. H. Lawrence",
-    "en": "D. H. Lawrence"
+    "tr": "III. George",
+    "en": "George III of Great Britain"
    },
-   "born": 1885,
+   "born": 1738,
    "groups": [
-    "writer",
-    "painter"
+    "royalty",
+    "politician"
    ],
-   "fame": 107
+   "fame": 108
+  },
+  {
+   "id": "Q20875",
+   "name": {
+    "tr": "VII. Edward",
+    "en": "Edward VII"
+   },
+   "born": 1841,
+   "groups": [
+    "royalty",
+    "politician"
+   ],
+   "fame": 108
+  },
+  {
+   "id": "Q797848",
+   "name": {
+    "tr": "Babür",
+    "en": "Babur"
+   },
+   "born": 1483,
+   "groups": [
+    "royalty",
+    "writer"
+   ],
+   "fame": 108
+  },
+  {
+   "id": "Q154952",
+   "name": {
+    "tr": "Willem-Alexander",
+    "en": "William Alexander of the Netherlands"
+   },
+   "born": 1967,
+   "groups": [
+    "royalty"
+   ],
+   "fame": 108
   },
   {
    "id": "Q34661",
@@ -4598,6 +5041,19 @@
    },
    "born": 1862,
    "groups": [
+    "painter"
+   ],
+   "fame": 107
+  },
+  {
+   "id": "Q34970",
+   "name": {
+    "tr": "D. H. Lawrence",
+    "en": "D. H. Lawrence"
+   },
+   "born": 1885,
+   "groups": [
+    "writer",
     "painter"
    ],
    "fame": 107
@@ -4625,6 +5081,18 @@
     "writer",
     "scientist",
     "explorer"
+   ],
+   "fame": 107
+  },
+  {
+   "id": "Q57287",
+   "name": {
+    "tr": "V. Harald",
+    "en": "Harald V of Norway"
+   },
+   "born": 1937,
+   "groups": [
+    "royalty"
    ],
    "fame": 107
   },
@@ -4694,6 +5162,68 @@
    "fame": 106
   },
   {
+   "id": "Q131706",
+   "name": {
+    "tr": "Maria Theresia",
+    "en": "Maria Theresa of Austria"
+   },
+   "born": 1717,
+   "groups": [
+    "royalty",
+    "politician"
+   ],
+   "fame": 106
+  },
+  {
+   "id": "Q83171",
+   "name": {
+    "tr": "II. Aleksandr",
+    "en": "Alexander II of Russia"
+   },
+   "born": 1818,
+   "groups": [
+    "royalty"
+   ],
+   "fame": 106
+  },
+  {
+   "id": "Q7738",
+   "name": {
+    "tr": "X. LouisV",
+    "en": "Louis XV of France"
+   },
+   "born": 1710,
+   "groups": [
+    "royalty"
+   ],
+   "fame": 106
+  },
+  {
+   "id": "Q548733",
+   "name": {
+    "tr": "Vajiralongkorn",
+    "en": "Vajiralongkorn"
+   },
+   "born": 1952,
+   "groups": [
+    "royalty"
+   ],
+   "fame": 105
+  },
+  {
+   "id": "Q936976",
+   "name": {
+    "tr": "IV. Henri",
+    "en": "Henry IV of France"
+   },
+   "born": 1553,
+   "groups": [
+    "royalty",
+    "politician"
+   ],
+   "fame": 105
+  },
+  {
    "id": "Q4261",
    "name": {
     "tr": "Michel Platini",
@@ -4726,6 +5256,19 @@
    "born": 1992,
    "groups": [
     "footballer"
+   ],
+   "fame": 104
+  },
+  {
+   "id": "Q57553",
+   "name": {
+    "tr": "VI. Muhammed",
+    "en": "Mohammed VI of Morocco"
+   },
+   "born": 1963,
+   "groups": [
+    "royalty",
+    "politician"
    ],
    "fame": 104
   },
@@ -4764,6 +5307,57 @@
     "explorer"
    ],
    "fame": 103
+  },
+  {
+   "id": "Q45068",
+   "name": {
+    "tr": "XVI. Carl Gustaf",
+    "en": "Carl XVI Gustaf of Sweden"
+   },
+   "born": 1946,
+   "groups": [
+    "royalty"
+   ],
+   "fame": 103
+  },
+  {
+   "id": "Q83672",
+   "name": {
+    "tr": "Şah Cihan",
+    "en": "Shah Jahan"
+   },
+   "born": 1592,
+   "groups": [
+    "royalty"
+   ],
+   "fame": 102
+  },
+  {
+   "id": "Q83476",
+   "name": {
+    "tr": "Büyük Alfred",
+    "en": "Alfred the Great"
+   },
+   "born": 849,
+   "groups": [
+    "royalty",
+    "writer",
+    "politician"
+   ],
+   "fame": 102
+  },
+  {
+   "id": "Q367825",
+   "name": {
+    "tr": "Salman bin Abdülaziz el Suud",
+    "en": "Salman bin Abdulaziz Al Saud"
+   },
+   "born": 1935,
+   "groups": [
+    "royalty",
+    "politician"
+   ],
+   "fame": 102
   },
   {
    "id": "Q80471",
@@ -4818,24 +5412,39 @@
    "fame": 101
   },
   {
+   "id": "Q47842",
+   "name": {
+    "tr": "Cixi",
+    "en": "Empress Dowager Cixi"
+   },
+   "born": 1835,
+   "groups": [
+    "royalty",
+    "politician",
+    "painter"
+   ],
+   "fame": 101
+  },
+  {
+   "id": "Q29574",
+   "name": {
+    "tr": "Beatrix",
+    "en": "Beatrix of the Netherlands"
+   },
+   "born": 1938,
+   "groups": [
+    "royalty",
+    "painter"
+   ],
+   "fame": 101
+  },
+  {
    "id": "Q11584",
    "name": {
     "tr": "Iker Casillas",
     "en": "Iker Casillas"
    },
    "born": 1981,
-   "groups": [
-    "footballer"
-   ],
-   "fame": 100
-  },
-  {
-   "id": "Q455462",
-   "name": {
-    "tr": "Antoine Griezmann",
-    "en": "Antoine Griezmann"
-   },
-   "born": 1991,
    "groups": [
     "footballer"
    ],
@@ -4855,6 +5464,18 @@
    "fame": 100
   },
   {
+   "id": "Q455462",
+   "name": {
+    "tr": "Antoine Griezmann",
+    "en": "Antoine Griezmann"
+   },
+   "born": 1991,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 100
+  },
+  {
    "id": "Q7407",
    "name": {
     "tr": "Andre Agassi",
@@ -4867,6 +5488,18 @@
    "fame": 100
   },
   {
+   "id": "Q27695",
+   "name": {
+    "tr": "Shaka Zulu",
+    "en": "Shaka Zulu"
+   },
+   "born": 1786,
+   "groups": [
+    "royalty"
+   ],
+   "fame": 100
+  },
+  {
    "id": "Q107365",
    "name": {
     "tr": "Manuel Neuer",
@@ -4875,6 +5508,44 @@
    "born": 1986,
    "groups": [
     "footballer"
+   ],
+   "fame": 99
+  },
+  {
+   "id": "Q51056",
+   "name": {
+    "tr": "Franz Joseph",
+    "en": "Franz Joseph I of Austria"
+   },
+   "born": 1830,
+   "groups": [
+    "royalty",
+    "politician"
+   ],
+   "fame": 99
+  },
+  {
+   "id": "Q120180",
+   "name": {
+    "tr": "III. Aleksandr",
+    "en": "Alexander III of Russia"
+   },
+   "born": 1845,
+   "groups": [
+    "royalty"
+   ],
+   "fame": 99
+  },
+  {
+   "id": "Q122553",
+   "name": {
+    "tr": "II. Charles",
+    "en": "Charles II of England"
+   },
+   "born": 1630,
+   "groups": [
+    "royalty",
+    "politician"
    ],
    "fame": 99
   },
@@ -4929,22 +5600,49 @@
    "fame": 97
   },
   {
+   "id": "Q79972",
+   "name": {
+    "tr": "I. James",
+    "en": "James VI and I"
+   },
+   "born": 1566,
+   "groups": [
+    "royalty",
+    "writer"
+   ],
+   "fame": 97
+  },
+  {
+   "id": "Q43107",
+   "name": {
+    "tr": "Diocletianus",
+    "en": "Diocletian"
+   },
+   "born": 240,
+   "groups": [
+    "royalty",
+    "politician"
+   ],
+   "fame": 97
+  },
+  {
+   "id": "Q130822",
+   "name": {
+    "tr": "IV. William",
+    "en": "William IV"
+   },
+   "born": 1765,
+   "groups": [
+    "royalty",
+    "politician"
+   ],
+   "fame": 97
+  },
+  {
    "id": "Q17500",
    "name": {
     "tr": "Xavi",
     "en": "Xavi Hernández"
-   },
-   "born": 1980,
-   "groups": [
-    "footballer"
-   ],
-   "fame": 96
-  },
-  {
-   "id": "Q459830",
-   "name": {
-    "tr": "Steven Gerrard",
-    "en": "Steven Gerrard"
    },
    "born": 1980,
    "groups": [
@@ -4965,6 +5663,18 @@
    "fame": 96
   },
   {
+   "id": "Q459830",
+   "name": {
+    "tr": "Steven Gerrard",
+    "en": "Steven Gerrard"
+   },
+   "born": 1980,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 96
+  },
+  {
    "id": "Q19825",
    "name": {
     "tr": "Cecil Rhodes",
@@ -4974,6 +5684,18 @@
    "groups": [
     "politician",
     "explorer"
+   ],
+   "fame": 96
+  },
+  {
+   "id": "Q12591",
+   "name": {
+    "tr": "II. Nebukadnezar",
+    "en": "Nebuchadnezzar II"
+   },
+   "born": -642,
+   "groups": [
+    "royalty"
    ],
    "fame": 96
   },
@@ -5088,24 +5810,24 @@
    "fame": 93
   },
   {
-   "id": "Q129027",
-   "name": {
-    "tr": "Paul Pogba",
-    "en": "Paul Pogba"
-   },
-   "born": 1993,
-   "groups": [
-    "footballer"
-   ],
-   "fame": 93
-  },
-  {
    "id": "Q214204",
    "name": {
     "tr": "Eden Hazard",
     "en": "Eden Hazard"
    },
    "born": 1991,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 93
+  },
+  {
+   "id": "Q129027",
+   "name": {
+    "tr": "Paul Pogba",
+    "en": "Paul Pogba"
+   },
+   "born": 1993,
    "groups": [
     "footballer"
    ],
@@ -5137,6 +5859,18 @@
    "fame": 92
   },
   {
+   "id": "Q67964",
+   "name": {
+    "tr": "Roberto Baggio",
+    "en": "Roberto Baggio"
+   },
+   "born": 1967,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 91
+  },
+  {
    "id": "Q42731",
    "name": {
     "tr": "Fernando Torres",
@@ -5161,36 +5895,24 @@
    "fame": 91
   },
   {
-   "id": "Q43744",
-   "name": {
-    "tr": "Gerd Müller",
-    "en": "Gerd Müller"
-   },
-   "born": 1945,
-   "groups": [
-    "footballer"
-   ],
-   "fame": 91
-  },
-  {
-   "id": "Q67964",
-   "name": {
-    "tr": "Roberto Baggio",
-    "en": "Roberto Baggio"
-   },
-   "born": 1967,
-   "groups": [
-    "footballer"
-   ],
-   "fame": 91
-  },
-  {
    "id": "Q209942",
    "name": {
     "tr": "Sadio Mané",
     "en": "Sadio Mané"
    },
    "born": 1992,
+   "groups": [
+    "footballer"
+   ],
+   "fame": 91
+  },
+  {
+   "id": "Q43744",
+   "name": {
+    "tr": "Gerd Müller",
+    "en": "Gerd Müller"
+   },
+   "born": 1945,
    "groups": [
     "footballer"
    ],
@@ -5413,6 +6135,19 @@
    "fame": 87
   },
   {
+   "id": "Q104859",
+   "name": {
+    "tr": "Michael Collins",
+    "en": "Michael Collins"
+   },
+   "born": 1930,
+   "groups": [
+    "astronaut",
+    "actor"
+   ],
+   "fame": 87
+  },
+  {
    "id": "Q49285",
    "name": {
     "tr": "Sally Ride",
@@ -5427,19 +6162,6 @@
    "fame": 87
   },
   {
-   "id": "Q104859",
-   "name": {
-    "tr": "Michael Collins",
-    "en": "Michael Collins"
-   },
-   "born": 1930,
-   "groups": [
-    "astronaut",
-    "actor"
-   ],
-   "fame": 87
-  },
-  {
    "id": "Q169452",
    "name": {
     "tr": "Shaquille O'Neal",
@@ -5447,9 +6169,9 @@
    },
    "born": 1972,
    "groups": [
+    "actor",
     "singer",
-    "basketball",
-    "actor"
+    "basketball"
    ],
    "fame": 85
   },
@@ -5510,9 +6232,9 @@
    },
    "born": 1921,
    "groups": [
+    "actor",
     "astronaut",
-    "politician",
-    "actor"
+    "politician"
    ],
    "fame": 83
   },
@@ -5536,9 +6258,9 @@
    },
    "born": 1964,
    "groups": [
-    "politician",
     "painter",
-    "basketball"
+    "basketball",
+    "politician"
    ],
    "fame": 82
   },
@@ -5852,24 +6574,24 @@
    "fame": 72
   },
   {
-   "id": "Q30767",
-   "name": {
-    "tr": "Caroline Wozniacki",
-    "en": "Caroline Wozniacki"
-   },
-   "born": 1990,
-   "groups": [
-    "tennis"
-   ],
-   "fame": 72
-  },
-  {
    "id": "Q77178",
    "name": {
     "tr": "Angelique Kerber",
     "en": "Angelique Kerber"
    },
    "born": 1988,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 72
+  },
+  {
+   "id": "Q30767",
+   "name": {
+    "tr": "Caroline Wozniacki",
+    "en": "Caroline Wozniacki"
+   },
+   "born": 1990,
    "groups": [
     "tennis"
    ],
@@ -5890,18 +6612,6 @@
    "fame": 72
   },
   {
-   "id": "Q237879",
-   "name": {
-    "tr": "Kalpana Chawla",
-    "en": "Kalpana Chawla"
-   },
-   "born": 1962,
-   "groups": [
-    "astronaut"
-   ],
-   "fame": 72
-  },
-  {
    "id": "Q55177",
    "name": {
     "tr": "Sunita Williams",
@@ -5914,16 +6624,16 @@
    "fame": 72
   },
   {
-   "id": "Q60040",
+   "id": "Q237879",
    "name": {
-    "tr": "Hernando de Soto",
-    "en": "Hernando de Soto"
+    "tr": "Kalpana Chawla",
+    "en": "Kalpana Chawla"
    },
-   "born": 1500,
+   "born": 1962,
    "groups": [
-    "explorer"
+    "astronaut"
    ],
-   "fame": 71
+   "fame": 72
   },
   {
    "id": "Q125057",
@@ -5934,6 +6644,18 @@
    "born": 1821,
    "groups": [
     "writer",
+    "explorer"
+   ],
+   "fame": 71
+  },
+  {
+   "id": "Q60040",
+   "name": {
+    "tr": "Hernando de Soto",
+    "en": "Hernando de Soto"
+   },
+   "born": 1500,
+   "groups": [
     "explorer"
    ],
    "fame": 71
@@ -5987,6 +6709,19 @@
    "fame": 69
   },
   {
+   "id": "Q52890",
+   "name": {
+    "tr": "V. Gustav",
+    "en": "Gustaf V of Sweden"
+   },
+   "born": 1858,
+   "groups": [
+    "royalty",
+    "tennis"
+   ],
+   "fame": 69
+  },
+  {
    "id": "Q54584",
    "name": {
     "tr": "Andy Roddick",
@@ -6000,36 +6735,24 @@
    "fame": 69
   },
   {
-   "id": "Q230156",
-   "name": {
-    "tr": "Simona Halep",
-    "en": "Simona Halep"
-   },
-   "born": 1991,
-   "groups": [
-    "tennis"
-   ],
-   "fame": 69
-  },
-  {
-   "id": "Q52890",
-   "name": {
-    "tr": "V. Gustav",
-    "en": "Gustaf V of Sweden"
-   },
-   "born": 1858,
-   "groups": [
-    "tennis"
-   ],
-   "fame": 69
-  },
-  {
    "id": "Q180872",
    "name": {
     "tr": "Amélie Mauresmo",
     "en": "Amélie Mauresmo"
    },
    "born": 1979,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 69
+  },
+  {
+   "id": "Q230156",
+   "name": {
+    "tr": "Simona Halep",
+    "en": "Simona Halep"
+   },
+   "born": 1991,
    "groups": [
     "tennis"
    ],
@@ -6080,8 +6803,8 @@
    },
    "born": 1973,
    "groups": [
-    "scientist",
-    "astronaut"
+    "astronaut",
+    "scientist"
    ],
    "fame": 69
   },
@@ -6140,19 +6863,6 @@
    "fame": 67
   },
   {
-   "id": "Q193661",
-   "name": {
-    "tr": "Stanislas Wawrinka",
-    "en": "Stan Wawrinka"
-   },
-   "born": 1985,
-   "groups": [
-    "actor",
-    "tennis"
-   ],
-   "fame": 67
-  },
-  {
    "id": "Q132147",
    "name": {
     "tr": "Sania Mirza",
@@ -6184,6 +6894,19 @@
    },
    "born": 1982,
    "groups": [
+    "tennis"
+   ],
+   "fame": 67
+  },
+  {
+   "id": "Q193661",
+   "name": {
+    "tr": "Stanislas Wawrinka",
+    "en": "Stan Wawrinka"
+   },
+   "born": 1985,
+   "groups": [
+    "actor",
     "tennis"
    ],
    "fame": 67
@@ -6302,18 +7025,6 @@
    "fame": 64
   },
   {
-   "id": "Q30812",
-   "name": {
-    "tr": "Petra Kvitová",
-    "en": "Petra Kvitová"
-   },
-   "born": 1990,
-   "groups": [
-    "tennis"
-   ],
-   "fame": 64
-  },
-  {
    "id": "Q53325",
    "name": {
     "tr": "Arthur Ashe",
@@ -6322,6 +7033,18 @@
    "born": 1943,
    "groups": [
     "writer",
+    "tennis"
+   ],
+   "fame": 64
+  },
+  {
+   "id": "Q30812",
+   "name": {
+    "tr": "Petra Kvitová",
+    "en": "Petra Kvitová"
+   },
+   "born": 1990,
+   "groups": [
     "tennis"
    ],
    "fame": 64
@@ -6550,24 +7273,24 @@
    "fame": 61
   },
   {
-   "id": "Q202342",
-   "name": {
-    "tr": "Margaret Smith Court",
-    "en": "Margaret Court"
-   },
-   "born": 1942,
-   "groups": [
-    "tennis"
-   ],
-   "fame": 61
-  },
-  {
    "id": "Q105838",
    "name": {
     "tr": "Marion Bartoli",
     "en": "Marion Bartoli"
    },
    "born": 1984,
+   "groups": [
+    "tennis"
+   ],
+   "fame": 61
+  },
+  {
+   "id": "Q202342",
+   "name": {
+    "tr": "Margaret Smith Court",
+    "en": "Margaret Court"
+   },
+   "born": 1942,
    "groups": [
     "tennis"
    ],
@@ -6589,18 +7312,6 @@
    "fame": 61
   },
   {
-   "id": "Q76754",
-   "name": {
-    "tr": "Fabian Gottlieb von Bellingshausen",
-    "en": "Fabian Gottlieb von Bellingshausen"
-   },
-   "born": 1778,
-   "groups": [
-    "explorer"
-   ],
-   "fame": 61
-  },
-  {
    "id": "Q19080",
    "name": {
     "tr": "Vasco Núñez de Balboa",
@@ -6609,6 +7320,18 @@
    "born": 1475,
    "groups": [
     "politician",
+    "explorer"
+   ],
+   "fame": 61
+  },
+  {
+   "id": "Q76754",
+   "name": {
+    "tr": "Fabian Gottlieb von Bellingshausen",
+    "en": "Fabian Gottlieb von Bellingshausen"
+   },
+   "born": 1778,
+   "groups": [
     "explorer"
    ],
    "fame": 61
@@ -6642,18 +7365,6 @@
    "fame": 61
   },
   {
-   "id": "Q18762",
-   "name": {
-    "tr": "Frank Borman",
-    "en": "Frank Borman"
-   },
-   "born": 1928,
-   "groups": [
-    "astronaut"
-   ],
-   "fame": 61
-  },
-  {
    "id": "Q17519",
    "name": {
     "tr": "Anousheh Ansari",
@@ -6662,6 +7373,18 @@
    "born": 1966,
    "groups": [
     "scientist",
+    "astronaut"
+   ],
+   "fame": 61
+  },
+  {
+   "id": "Q18762",
+   "name": {
+    "tr": "Frank Borman",
+    "en": "Frank Borman"
+   },
+   "born": 1928,
+   "groups": [
     "astronaut"
    ],
    "fame": 61
@@ -6712,8 +7435,8 @@
    },
    "born": 1932,
    "groups": [
-    "astronaut",
-    "painter"
+    "painter",
+    "astronaut"
    ],
    "fame": 60
   }

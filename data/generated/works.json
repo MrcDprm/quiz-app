@@ -1,0 +1,1150 @@
+{
+ "source": "Curated",
+ "updatedAt": "2026-09-29",
+ "items": [
+  {
+   "id": "W001",
+   "kind": "painting",
+   "title": {
+    "tr": "Mona Lisa",
+    "en": "Mona Lisa"
+   },
+   "creator": {
+    "tr": "Leonardo da Vinci",
+    "en": "Leonardo da Vinci"
+   },
+   "tier": 1
+  },
+  {
+   "id": "W002",
+   "kind": "painting",
+   "title": {
+    "tr": "Son Akşam Yemeği",
+    "en": "The Last Supper"
+   },
+   "creator": {
+    "tr": "Leonardo da Vinci",
+    "en": "Leonardo da Vinci"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W003",
+   "kind": "painting",
+   "title": {
+    "tr": "Yıldızlı Gece",
+    "en": "The Starry Night"
+   },
+   "creator": {
+    "tr": "Vincent van Gogh",
+    "en": "Vincent van Gogh"
+   },
+   "tier": 1
+  },
+  {
+   "id": "W004",
+   "kind": "painting",
+   "title": {
+    "tr": "Ayçiçekleri",
+    "en": "Sunflowers"
+   },
+   "creator": {
+    "tr": "Vincent van Gogh",
+    "en": "Vincent van Gogh"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W005",
+   "kind": "painting",
+   "title": {
+    "tr": "Çığlık",
+    "en": "The Scream"
+   },
+   "creator": {
+    "tr": "Edvard Munch",
+    "en": "Edvard Munch"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W006",
+   "kind": "painting",
+   "title": {
+    "tr": "İnci Küpeli Kız",
+    "en": "Girl with a Pearl Earring"
+   },
+   "creator": {
+    "tr": "Johannes Vermeer",
+    "en": "Johannes Vermeer"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W007",
+   "kind": "painting",
+   "title": {
+    "tr": "Guernica",
+    "en": "Guernica"
+   },
+   "creator": {
+    "tr": "Pablo Picasso",
+    "en": "Pablo Picasso"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W008",
+   "kind": "painting",
+   "title": {
+    "tr": "Belleğin Azmi",
+    "en": "The Persistence of Memory"
+   },
+   "creator": {
+    "tr": "Salvador Dalí",
+    "en": "Salvador Dalí"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W009",
+   "kind": "painting",
+   "title": {
+    "tr": "Venüs’ün Doğuşu",
+    "en": "The Birth of Venus"
+   },
+   "creator": {
+    "tr": "Sandro Botticelli",
+    "en": "Sandro Botticelli"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W010",
+   "kind": "painting",
+   "title": {
+    "tr": "Gece Devriyesi",
+    "en": "The Night Watch"
+   },
+   "creator": {
+    "tr": "Rembrandt",
+    "en": "Rembrandt"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W011",
+   "kind": "painting",
+   "title": {
+    "tr": "Nilüferler",
+    "en": "Water Lilies"
+   },
+   "creator": {
+    "tr": "Claude Monet",
+    "en": "Claude Monet"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W012",
+   "kind": "painting",
+   "title": {
+    "tr": "Âdem’in Yaratılışı",
+    "en": "The Creation of Adam"
+   },
+   "creator": {
+    "tr": "Michelangelo",
+    "en": "Michelangelo"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W013",
+   "kind": "painting",
+   "title": {
+    "tr": "Öpücük",
+    "en": "The Kiss"
+   },
+   "creator": {
+    "tr": "Gustav Klimt",
+    "en": "Gustav Klimt"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W014",
+   "kind": "painting",
+   "title": {
+    "tr": "Kaplumbağa Terbiyecisi",
+    "en": "The Tortoise Trainer"
+   },
+   "creator": {
+    "tr": "Osman Hamdi Bey",
+    "en": "Osman Hamdi Bey"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W015",
+   "kind": "painting",
+   "title": {
+    "tr": "Kanagawa’da Büyük Dalga",
+    "en": "The Great Wave off Kanagawa"
+   },
+   "creator": {
+    "tr": "Katsushika Hokusai",
+    "en": "Katsushika Hokusai"
+   },
+   "tier": 4
+  },
+  {
+   "id": "W016",
+   "kind": "painting",
+   "title": {
+    "tr": "Amerikan Gotiği",
+    "en": "American Gothic"
+   },
+   "creator": {
+    "tr": "Grant Wood",
+    "en": "Grant Wood"
+   },
+   "tier": 4
+  },
+  {
+   "id": "W017",
+   "kind": "sculpture",
+   "title": {
+    "tr": "Düşünen Adam",
+    "en": "The Thinker"
+   },
+   "creator": {
+    "tr": "Auguste Rodin",
+    "en": "Auguste Rodin"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W018",
+   "kind": "sculpture",
+   "title": {
+    "tr": "Davut",
+    "en": "David"
+   },
+   "creator": {
+    "tr": "Michelangelo",
+    "en": "Michelangelo"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W019",
+   "kind": "book",
+   "title": {
+    "tr": "Suç ve Ceza",
+    "en": "Crime and Punishment"
+   },
+   "creator": {
+    "tr": "Fyodor Dostoyevski",
+    "en": "Fyodor Dostoevsky"
+   },
+   "tier": 1
+  },
+  {
+   "id": "W020",
+   "kind": "book",
+   "title": {
+    "tr": "Karamazov Kardeşler",
+    "en": "The Brothers Karamazov"
+   },
+   "creator": {
+    "tr": "Fyodor Dostoyevski",
+    "en": "Fyodor Dostoevsky"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W021",
+   "kind": "book",
+   "title": {
+    "tr": "Savaş ve Barış",
+    "en": "War and Peace"
+   },
+   "creator": {
+    "tr": "Lev Tolstoy",
+    "en": "Leo Tolstoy"
+   },
+   "tier": 1
+  },
+  {
+   "id": "W022",
+   "kind": "book",
+   "title": {
+    "tr": "Anna Karenina",
+    "en": "Anna Karenina"
+   },
+   "creator": {
+    "tr": "Lev Tolstoy",
+    "en": "Leo Tolstoy"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W023",
+   "kind": "book",
+   "title": {
+    "tr": "Sefiller",
+    "en": "Les Misérables"
+   },
+   "creator": {
+    "tr": "Victor Hugo",
+    "en": "Victor Hugo"
+   },
+   "tier": 1
+  },
+  {
+   "id": "W024",
+   "kind": "book",
+   "title": {
+    "tr": "Notre Dame’ın Kamburu",
+    "en": "The Hunchback of Notre-Dame"
+   },
+   "creator": {
+    "tr": "Victor Hugo",
+    "en": "Victor Hugo"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W025",
+   "kind": "book",
+   "title": {
+    "tr": "Don Kişot",
+    "en": "Don Quixote"
+   },
+   "creator": {
+    "tr": "Miguel de Cervantes",
+    "en": "Miguel de Cervantes"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W026",
+   "kind": "book",
+   "title": {
+    "tr": "Hamlet",
+    "en": "Hamlet"
+   },
+   "creator": {
+    "tr": "William Shakespeare",
+    "en": "William Shakespeare"
+   },
+   "tier": 1
+  },
+  {
+   "id": "W027",
+   "kind": "book",
+   "title": {
+    "tr": "Romeo ve Juliet",
+    "en": "Romeo and Juliet"
+   },
+   "creator": {
+    "tr": "William Shakespeare",
+    "en": "William Shakespeare"
+   },
+   "tier": 1
+  },
+  {
+   "id": "W028",
+   "kind": "book",
+   "title": {
+    "tr": "1984",
+    "en": "Nineteen Eighty-Four"
+   },
+   "creator": {
+    "tr": "George Orwell",
+    "en": "George Orwell"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W029",
+   "kind": "book",
+   "title": {
+    "tr": "Hayvan Çiftliği",
+    "en": "Animal Farm"
+   },
+   "creator": {
+    "tr": "George Orwell",
+    "en": "George Orwell"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W030",
+   "kind": "book",
+   "title": {
+    "tr": "Küçük Prens",
+    "en": "The Little Prince"
+   },
+   "creator": {
+    "tr": "Antoine de Saint-Exupéry",
+    "en": "Antoine de Saint-Exupéry"
+   },
+   "tier": 1
+  },
+  {
+   "id": "W031",
+   "kind": "book",
+   "title": {
+    "tr": "Dönüşüm",
+    "en": "The Metamorphosis"
+   },
+   "creator": {
+    "tr": "Franz Kafka",
+    "en": "Franz Kafka"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W032",
+   "kind": "book",
+   "title": {
+    "tr": "Yabancı",
+    "en": "The Stranger"
+   },
+   "creator": {
+    "tr": "Albert Camus",
+    "en": "Albert Camus"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W033",
+   "kind": "book",
+   "title": {
+    "tr": "Faust",
+    "en": "Faust"
+   },
+   "creator": {
+    "tr": "Goethe",
+    "en": "Goethe"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W034",
+   "kind": "book",
+   "title": {
+    "tr": "Yüzyıllık Yalnızlık",
+    "en": "One Hundred Years of Solitude"
+   },
+   "creator": {
+    "tr": "Gabriel García Márquez",
+    "en": "Gabriel García Márquez"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W035",
+   "kind": "book",
+   "title": {
+    "tr": "Harry Potter ve Felsefe Taşı",
+    "en": "Harry Potter and the Philosopher’s Stone"
+   },
+   "creator": {
+    "tr": "J. K. Rowling",
+    "en": "J. K. Rowling"
+   },
+   "tier": 1
+  },
+  {
+   "id": "W036",
+   "kind": "book",
+   "title": {
+    "tr": "Yüzüklerin Efendisi",
+    "en": "The Lord of the Rings"
+   },
+   "creator": {
+    "tr": "J. R. R. Tolkien",
+    "en": "J. R. R. Tolkien"
+   },
+   "tier": 1
+  },
+  {
+   "id": "W037",
+   "kind": "book",
+   "title": {
+    "tr": "Robinson Crusoe",
+    "en": "Robinson Crusoe"
+   },
+   "creator": {
+    "tr": "Daniel Defoe",
+    "en": "Daniel Defoe"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W038",
+   "kind": "book",
+   "title": {
+    "tr": "Gulliver’in Gezileri",
+    "en": "Gulliver’s Travels"
+   },
+   "creator": {
+    "tr": "Jonathan Swift",
+    "en": "Jonathan Swift"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W039",
+   "kind": "book",
+   "title": {
+    "tr": "Seksen Günde Devrialem",
+    "en": "Around the World in Eighty Days"
+   },
+   "creator": {
+    "tr": "Jules Verne",
+    "en": "Jules Verne"
+   },
+   "tier": 1
+  },
+  {
+   "id": "W040",
+   "kind": "book",
+   "title": {
+    "tr": "Denizler Altında Yirmi Bin Fersah",
+    "en": "Twenty Thousand Leagues Under the Seas"
+   },
+   "creator": {
+    "tr": "Jules Verne",
+    "en": "Jules Verne"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W041",
+   "kind": "book",
+   "title": {
+    "tr": "Tom Sawyer’ın Maceraları",
+    "en": "The Adventures of Tom Sawyer"
+   },
+   "creator": {
+    "tr": "Mark Twain",
+    "en": "Mark Twain"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W042",
+   "kind": "book",
+   "title": {
+    "tr": "Oliver Twist",
+    "en": "Oliver Twist"
+   },
+   "creator": {
+    "tr": "Charles Dickens",
+    "en": "Charles Dickens"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W043",
+   "kind": "book",
+   "title": {
+    "tr": "Gurur ve Önyargı",
+    "en": "Pride and Prejudice"
+   },
+   "creator": {
+    "tr": "Jane Austen",
+    "en": "Jane Austen"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W044",
+   "kind": "book",
+   "title": {
+    "tr": "Moby Dick",
+    "en": "Moby-Dick"
+   },
+   "creator": {
+    "tr": "Herman Melville",
+    "en": "Herman Melville"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W045",
+   "kind": "book",
+   "title": {
+    "tr": "İlahi Komedya",
+    "en": "The Divine Comedy"
+   },
+   "creator": {
+    "tr": "Dante Alighieri",
+    "en": "Dante Alighieri"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W046",
+   "kind": "book",
+   "title": {
+    "tr": "İlyada",
+    "en": "The Iliad"
+   },
+   "creator": {
+    "tr": "Homeros",
+    "en": "Homer"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W047",
+   "kind": "book",
+   "title": {
+    "tr": "Frankenstein",
+    "en": "Frankenstein"
+   },
+   "creator": {
+    "tr": "Mary Shelley",
+    "en": "Mary Shelley"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W048",
+   "kind": "book",
+   "title": {
+    "tr": "Drakula",
+    "en": "Dracula"
+   },
+   "creator": {
+    "tr": "Bram Stoker",
+    "en": "Bram Stoker"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W049",
+   "kind": "book",
+   "title": {
+    "tr": "Baskerville’lerin Köpeği",
+    "en": "The Hound of the Baskervilles"
+   },
+   "creator": {
+    "tr": "Arthur Conan Doyle",
+    "en": "Arthur Conan Doyle"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W050",
+   "kind": "book",
+   "title": {
+    "tr": "Çalıkuşu",
+    "en": "The Wren"
+   },
+   "creator": {
+    "tr": "Reşat Nuri Güntekin",
+    "en": "Reşat Nuri Güntekin"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W051",
+   "kind": "book",
+   "title": {
+    "tr": "İnce Memed",
+    "en": "Memed, My Hawk"
+   },
+   "creator": {
+    "tr": "Yaşar Kemal",
+    "en": "Yaşar Kemal"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W052",
+   "kind": "book",
+   "title": {
+    "tr": "Benim Adım Kırmızı",
+    "en": "My Name Is Red"
+   },
+   "creator": {
+    "tr": "Orhan Pamuk",
+    "en": "Orhan Pamuk"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W053",
+   "kind": "book",
+   "title": {
+    "tr": "Kürk Mantolu Madonna",
+    "en": "Madonna in a Fur Coat"
+   },
+   "creator": {
+    "tr": "Sabahattin Ali",
+    "en": "Sabahattin Ali"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W054",
+   "kind": "book",
+   "title": {
+    "tr": "Tutunamayanlar",
+    "en": "The Disconnected"
+   },
+   "creator": {
+    "tr": "Oğuz Atay",
+    "en": "Oğuz Atay"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W055",
+   "kind": "book",
+   "title": {
+    "tr": "Saatleri Ayarlama Enstitüsü",
+    "en": "The Time Regulation Institute"
+   },
+   "creator": {
+    "tr": "Ahmet Hamdi Tanpınar",
+    "en": "Ahmet Hamdi Tanpınar"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W056",
+   "kind": "film",
+   "title": {
+    "tr": "Baba",
+    "en": "The Godfather"
+   },
+   "creator": {
+    "tr": "Francis Ford Coppola",
+    "en": "Francis Ford Coppola"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W057",
+   "kind": "film",
+   "title": {
+    "tr": "Esaretin Bedeli",
+    "en": "The Shawshank Redemption"
+   },
+   "creator": {
+    "tr": "Frank Darabont",
+    "en": "Frank Darabont"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W058",
+   "kind": "film",
+   "title": {
+    "tr": "Titanik",
+    "en": "Titanic"
+   },
+   "creator": {
+    "tr": "James Cameron",
+    "en": "James Cameron"
+   },
+   "tier": 1
+  },
+  {
+   "id": "W059",
+   "kind": "film",
+   "title": {
+    "tr": "Avatar",
+    "en": "Avatar"
+   },
+   "creator": {
+    "tr": "James Cameron",
+    "en": "James Cameron"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W060",
+   "kind": "film",
+   "title": {
+    "tr": "Jurassic Park",
+    "en": "Jurassic Park"
+   },
+   "creator": {
+    "tr": "Steven Spielberg",
+    "en": "Steven Spielberg"
+   },
+   "tier": 1
+  },
+  {
+   "id": "W061",
+   "kind": "film",
+   "title": {
+    "tr": "E.T.",
+    "en": "E.T. the Extra-Terrestrial"
+   },
+   "creator": {
+    "tr": "Steven Spielberg",
+    "en": "Steven Spielberg"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W062",
+   "kind": "film",
+   "title": {
+    "tr": "Schindler’in Listesi",
+    "en": "Schindler’s List"
+   },
+   "creator": {
+    "tr": "Steven Spielberg",
+    "en": "Steven Spielberg"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W063",
+   "kind": "film",
+   "title": {
+    "tr": "Başlangıç",
+    "en": "Inception"
+   },
+   "creator": {
+    "tr": "Christopher Nolan",
+    "en": "Christopher Nolan"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W064",
+   "kind": "film",
+   "title": {
+    "tr": "Kara Şövalye",
+    "en": "The Dark Knight"
+   },
+   "creator": {
+    "tr": "Christopher Nolan",
+    "en": "Christopher Nolan"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W065",
+   "kind": "film",
+   "title": {
+    "tr": "Ucuz Roman",
+    "en": "Pulp Fiction"
+   },
+   "creator": {
+    "tr": "Quentin Tarantino",
+    "en": "Quentin Tarantino"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W066",
+   "kind": "film",
+   "title": {
+    "tr": "Sapık",
+    "en": "Psycho"
+   },
+   "creator": {
+    "tr": "Alfred Hitchcock",
+    "en": "Alfred Hitchcock"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W067",
+   "kind": "film",
+   "title": {
+    "tr": "Yıldız Savaşları",
+    "en": "Star Wars"
+   },
+   "creator": {
+    "tr": "George Lucas",
+    "en": "George Lucas"
+   },
+   "tier": 1
+  },
+  {
+   "id": "W068",
+   "kind": "film",
+   "title": {
+    "tr": "Forrest Gump",
+    "en": "Forrest Gump"
+   },
+   "creator": {
+    "tr": "Robert Zemeckis",
+    "en": "Robert Zemeckis"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W069",
+   "kind": "film",
+   "title": {
+    "tr": "Geleceğe Dönüş",
+    "en": "Back to the Future"
+   },
+   "creator": {
+    "tr": "Robert Zemeckis",
+    "en": "Robert Zemeckis"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W070",
+   "kind": "film",
+   "title": {
+    "tr": "Ruhların Kaçışı",
+    "en": "Spirited Away"
+   },
+   "creator": {
+    "tr": "Hayao Miyazaki",
+    "en": "Hayao Miyazaki"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W071",
+   "kind": "film",
+   "title": {
+    "tr": "2001: Bir Uzay Destanı",
+    "en": "2001: A Space Odyssey"
+   },
+   "creator": {
+    "tr": "Stanley Kubrick",
+    "en": "Stanley Kubrick"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W072",
+   "kind": "film",
+   "title": {
+    "tr": "Otomatik Portakal",
+    "en": "A Clockwork Orange"
+   },
+   "creator": {
+    "tr": "Stanley Kubrick",
+    "en": "Stanley Kubrick"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W073",
+   "kind": "film",
+   "title": {
+    "tr": "Yurttaş Kane",
+    "en": "Citizen Kane"
+   },
+   "creator": {
+    "tr": "Orson Welles",
+    "en": "Orson Welles"
+   },
+   "tier": 4
+  },
+  {
+   "id": "W074",
+   "kind": "film",
+   "title": {
+    "tr": "Kış Uykusu",
+    "en": "Winter Sleep"
+   },
+   "creator": {
+    "tr": "Nuri Bilge Ceylan",
+    "en": "Nuri Bilge Ceylan"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W075",
+   "kind": "film",
+   "title": {
+    "tr": "Parazit",
+    "en": "Parasite"
+   },
+   "creator": {
+    "tr": "Bong Joon-ho",
+    "en": "Bong Joon-ho"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W076",
+   "kind": "music",
+   "title": {
+    "tr": "Dokuzuncu Senfoni",
+    "en": "Symphony No. 9"
+   },
+   "creator": {
+    "tr": "Ludwig van Beethoven",
+    "en": "Ludwig van Beethoven"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W077",
+   "kind": "music",
+   "title": {
+    "tr": "Dört Mevsim",
+    "en": "The Four Seasons"
+   },
+   "creator": {
+    "tr": "Antonio Vivaldi",
+    "en": "Antonio Vivaldi"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W078",
+   "kind": "music",
+   "title": {
+    "tr": "Figaro’nun Düğünü",
+    "en": "The Marriage of Figaro"
+   },
+   "creator": {
+    "tr": "Wolfgang Amadeus Mozart",
+    "en": "Wolfgang Amadeus Mozart"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W079",
+   "kind": "music",
+   "title": {
+    "tr": "Kuğu Gölü",
+    "en": "Swan Lake"
+   },
+   "creator": {
+    "tr": "Pyotr İlyiç Çaykovski",
+    "en": "Pyotr Ilyich Tchaikovsky"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W080",
+   "kind": "music",
+   "title": {
+    "tr": "Fındıkkıran",
+    "en": "The Nutcracker"
+   },
+   "creator": {
+    "tr": "Pyotr İlyiç Çaykovski",
+    "en": "Pyotr Ilyich Tchaikovsky"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W081",
+   "kind": "music",
+   "title": {
+    "tr": "Boléro",
+    "en": "Boléro"
+   },
+   "creator": {
+    "tr": "Maurice Ravel",
+    "en": "Maurice Ravel"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W082",
+   "kind": "music",
+   "title": {
+    "tr": "Carmen",
+    "en": "Carmen"
+   },
+   "creator": {
+    "tr": "Georges Bizet",
+    "en": "Georges Bizet"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W083",
+   "kind": "music",
+   "title": {
+    "tr": "Aida",
+    "en": "Aida"
+   },
+   "creator": {
+    "tr": "Giuseppe Verdi",
+    "en": "Giuseppe Verdi"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W084",
+   "kind": "music",
+   "title": {
+    "tr": "Mavi Tuna",
+    "en": "The Blue Danube"
+   },
+   "creator": {
+    "tr": "Johann Strauss II",
+    "en": "Johann Strauss II"
+   },
+   "tier": 3
+  },
+  {
+   "id": "W085",
+   "kind": "music",
+   "title": {
+    "tr": "Türk Marşı",
+    "en": "Turkish March"
+   },
+   "creator": {
+    "tr": "Wolfgang Amadeus Mozart",
+    "en": "Wolfgang Amadeus Mozart"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W086",
+   "kind": "song",
+   "title": {
+    "tr": "Imagine",
+    "en": "Imagine"
+   },
+   "creator": {
+    "tr": "John Lennon",
+    "en": "John Lennon"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W087",
+   "kind": "song",
+   "title": {
+    "tr": "Bohemian Rhapsody",
+    "en": "Bohemian Rhapsody"
+   },
+   "creator": {
+    "tr": "Queen",
+    "en": "Queen"
+   },
+   "tier": 2
+  },
+  {
+   "id": "W088",
+   "kind": "album",
+   "title": {
+    "tr": "Thriller",
+    "en": "Thriller"
+   },
+   "creator": {
+    "tr": "Michael Jackson",
+    "en": "Michael Jackson"
+   },
+   "tier": 2
+  }
+ ]
+}

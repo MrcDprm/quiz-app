@@ -1,0 +1,429 @@
+{
+ "source": "Curated",
+ "updatedAt": "2026-09-29",
+ "items": [
+  {
+   "id": "H",
+   "name": {
+    "tr": "Hidrojen",
+    "en": "Hydrogen"
+   },
+   "number": 1,
+   "tier": 1
+  },
+  {
+   "id": "O",
+   "name": {
+    "tr": "Oksijen",
+    "en": "Oxygen"
+   },
+   "number": 8,
+   "tier": 1
+  },
+  {
+   "id": "C",
+   "name": {
+    "tr": "Karbon",
+    "en": "Carbon"
+   },
+   "number": 6,
+   "tier": 1
+  },
+  {
+   "id": "Fe",
+   "name": {
+    "tr": "Demir",
+    "en": "Iron"
+   },
+   "number": 26,
+   "tier": 1
+  },
+  {
+   "id": "Au",
+   "name": {
+    "tr": "Altın",
+    "en": "Gold"
+   },
+   "number": 79,
+   "tier": 1
+  },
+  {
+   "id": "Ag",
+   "name": {
+    "tr": "Gümüş",
+    "en": "Silver"
+   },
+   "number": 47,
+   "tier": 1
+  },
+  {
+   "id": "Cu",
+   "name": {
+    "tr": "Bakır",
+    "en": "Copper"
+   },
+   "number": 29,
+   "tier": 1
+  },
+  {
+   "id": "N",
+   "name": {
+    "tr": "Azot",
+    "en": "Nitrogen"
+   },
+   "number": 7,
+   "tier": 2
+  },
+  {
+   "id": "He",
+   "name": {
+    "tr": "Helyum",
+    "en": "Helium"
+   },
+   "number": 2,
+   "tier": 2
+  },
+  {
+   "id": "Na",
+   "name": {
+    "tr": "Sodyum",
+    "en": "Sodium"
+   },
+   "number": 11,
+   "tier": 2
+  },
+  {
+   "id": "Ca",
+   "name": {
+    "tr": "Kalsiyum",
+    "en": "Calcium"
+   },
+   "number": 20,
+   "tier": 2
+  },
+  {
+   "id": "Cl",
+   "name": {
+    "tr": "Klor",
+    "en": "Chlorine"
+   },
+   "number": 17,
+   "tier": 2
+  },
+  {
+   "id": "Al",
+   "name": {
+    "tr": "Alüminyum",
+    "en": "Aluminium"
+   },
+   "number": 13,
+   "tier": 2
+  },
+  {
+   "id": "Pb",
+   "name": {
+    "tr": "Kurşun",
+    "en": "Lead"
+   },
+   "number": 82,
+   "tier": 2
+  },
+  {
+   "id": "Hg",
+   "name": {
+    "tr": "Cıva",
+    "en": "Mercury"
+   },
+   "number": 80,
+   "tier": 2
+  },
+  {
+   "id": "Zn",
+   "name": {
+    "tr": "Çinko",
+    "en": "Zinc"
+   },
+   "number": 30,
+   "tier": 2
+  },
+  {
+   "id": "Mg",
+   "name": {
+    "tr": "Magnezyum",
+    "en": "Magnesium"
+   },
+   "number": 12,
+   "tier": 2
+  },
+  {
+   "id": "K",
+   "name": {
+    "tr": "Potasyum",
+    "en": "Potassium"
+   },
+   "number": 19,
+   "tier": 2
+  },
+  {
+   "id": "S",
+   "name": {
+    "tr": "Kükürt",
+    "en": "Sulfur"
+   },
+   "number": 16,
+   "tier": 2
+  },
+  {
+   "id": "P",
+   "name": {
+    "tr": "Fosfor",
+    "en": "Phosphorus"
+   },
+   "number": 15,
+   "tier": 3
+  },
+  {
+   "id": "Si",
+   "name": {
+    "tr": "Silisyum",
+    "en": "Silicon"
+   },
+   "number": 14,
+   "tier": 3
+  },
+  {
+   "id": "Ne",
+   "name": {
+    "tr": "Neon",
+    "en": "Neon"
+   },
+   "number": 10,
+   "tier": 3
+  },
+  {
+   "id": "Ar",
+   "name": {
+    "tr": "Argon",
+    "en": "Argon"
+   },
+   "number": 18,
+   "tier": 3
+  },
+  {
+   "id": "Sn",
+   "name": {
+    "tr": "Kalay",
+    "en": "Tin"
+   },
+   "number": 50,
+   "tier": 3
+  },
+  {
+   "id": "Ni",
+   "name": {
+    "tr": "Nikel",
+    "en": "Nickel"
+   },
+   "number": 28,
+   "tier": 3
+  },
+  {
+   "id": "U",
+   "name": {
+    "tr": "Uranyum",
+    "en": "Uranium"
+   },
+   "number": 92,
+   "tier": 3
+  },
+  {
+   "id": "I",
+   "name": {
+    "tr": "İyot",
+    "en": "Iodine"
+   },
+   "number": 53,
+   "tier": 3
+  },
+  {
+   "id": "Pt",
+   "name": {
+    "tr": "Platin",
+    "en": "Platinum"
+   },
+   "number": 78,
+   "tier": 3
+  },
+  {
+   "id": "B",
+   "name": {
+    "tr": "Bor",
+    "en": "Boron"
+   },
+   "number": 5,
+   "tier": 3
+  },
+  {
+   "id": "Ti",
+   "name": {
+    "tr": "Titanyum",
+    "en": "Titanium"
+   },
+   "number": 22,
+   "tier": 3
+  },
+  {
+   "id": "Li",
+   "name": {
+    "tr": "Lityum",
+    "en": "Lithium"
+   },
+   "number": 3,
+   "tier": 3
+  },
+  {
+   "id": "F",
+   "name": {
+    "tr": "Flor",
+    "en": "Fluorine"
+   },
+   "number": 9,
+   "tier": 3
+  },
+  {
+   "id": "Co",
+   "name": {
+    "tr": "Kobalt",
+    "en": "Cobalt"
+   },
+   "number": 27,
+   "tier": 4
+  },
+  {
+   "id": "Mn",
+   "name": {
+    "tr": "Mangan",
+    "en": "Manganese"
+   },
+   "number": 25,
+   "tier": 4
+  },
+  {
+   "id": "Cr",
+   "name": {
+    "tr": "Krom",
+    "en": "Chromium"
+   },
+   "number": 24,
+   "tier": 4
+  },
+  {
+   "id": "Br",
+   "name": {
+    "tr": "Brom",
+    "en": "Bromine"
+   },
+   "number": 35,
+   "tier": 4
+  },
+  {
+   "id": "Ra",
+   "name": {
+    "tr": "Radyum",
+    "en": "Radium"
+   },
+   "number": 88,
+   "tier": 4
+  },
+  {
+   "id": "W",
+   "name": {
+    "tr": "Tungsten",
+    "en": "Tungsten"
+   },
+   "number": 74,
+   "tier": 4
+  },
+  {
+   "id": "Rn",
+   "name": {
+    "tr": "Radon",
+    "en": "Radon"
+   },
+   "number": 86,
+   "tier": 4
+  },
+  {
+   "id": "Be",
+   "name": {
+    "tr": "Berilyum",
+    "en": "Beryllium"
+   },
+   "number": 4,
+   "tier": 4
+  },
+  {
+   "id": "Kr",
+   "name": {
+    "tr": "Kripton",
+    "en": "Krypton"
+   },
+   "number": 36,
+   "tier": 4
+  },
+  {
+   "id": "Xe",
+   "name": {
+    "tr": "Ksenon",
+    "en": "Xenon"
+   },
+   "number": 54,
+   "tier": 4
+  },
+  {
+   "id": "Ba",
+   "name": {
+    "tr": "Baryum",
+    "en": "Barium"
+   },
+   "number": 56,
+   "tier": 4
+  },
+  {
+   "id": "Sr",
+   "name": {
+    "tr": "Stronsiyum",
+    "en": "Strontium"
+   },
+   "number": 38,
+   "tier": 4
+  },
+  {
+   "id": "Pu",
+   "name": {
+    "tr": "Plütonyum",
+    "en": "Plutonium"
+   },
+   "number": 94,
+   "tier": 4
+  },
+  {
+   "id": "Cs",
+   "name": {
+    "tr": "Sezyum",
+    "en": "Caesium"
+   },
+   "number": 55,
+   "tier": 4
+  },
+  {
+   "id": "As",
+   "name": {
+    "tr": "Arsenik",
+    "en": "Arsenic"
+   },
+   "number": 33,
+   "tier": 4
+  }
+ ]
+}
