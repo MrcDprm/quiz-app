@@ -381,6 +381,90 @@ h1 {
   color: rgb(var(--c-subtle));
 }
 
+/* ---------- İlerleme ve rozetler ---------- */
+.progress {
+  display: grid;
+  gap: 0.9rem;
+}
+.progress-title,
+.badges-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+}
+.badges-title {
+  font-size: 0.95rem;
+  color: rgb(var(--c-muted));
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin: 0;
+}
+.stats div {
+  padding: 0.5rem;
+  border: 1px solid rgb(var(--c-line) / 0.7);
+  border-radius: 0.75rem;
+  background: rgb(var(--c-elevated) / 0.6);
+  text-align: center;
+}
+.stats dt {
+  color: rgb(var(--c-muted));
+  font-size: 0.75rem;
+}
+.stats dd {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 1.2rem;
+}
+.review-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+}
+.review-box .notice {
+  text-align: left;
+}
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.badge {
+  padding: 0.3rem 0.65rem;
+  border: 1px dashed rgb(var(--c-line));
+  border-radius: 999px;
+  color: rgb(var(--c-subtle));
+  font-size: 0.8rem;
+}
+.badge.earned {
+  border-style: solid;
+  border-color: rgb(var(--c-accent) / 0.7);
+  background: rgb(var(--c-accent) / 0.12);
+  color: rgb(var(--c-accent));
+}
+.best-score {
+  margin: 0;
+  color: rgb(var(--c-subtle));
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-align: center;
+}
+.best-score:empty,
+.new-badges:empty {
+  display: none;
+}
+.new-badges {
+  margin: 0.75rem 0 0;
+  color: rgb(var(--c-accent));
+  font-weight: 600;
+}
+
 /* ---------- Tur ayarı ---------- */
 .setup {
   display: grid;

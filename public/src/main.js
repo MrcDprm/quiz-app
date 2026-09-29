@@ -3,6 +3,7 @@ import { AREAS, LEVELS } from './topics.js';
 import { DAILY_TIME_ZONE, dayKey } from './dates.js';
 import { currentStreak, recordDay } from './streak.js';
 import { dailyShareText, formatDay, roundShareText } from './share.js';
+import { BADGES, earnedBadges, recordRound, selectionKey, updateMistakes } from './progress.js';
 import { loadSettings, saveSettings, topicsOf } from './storage.js';
 import { translate } from './i18n.js';
 import { applyTheme, nextTheme } from './theme.js';
@@ -30,6 +31,13 @@ const el = {
   dailyShareStatus: $('daily-share-status'),
   streak: $('streak'),
   bestStreak: $('best-streak'),
+  bestScore: $('best-score'),
+  statRounds: $('stat-rounds'),
+  statCorrect: $('stat-correct'),
+  statAccuracy: $('stat-accuracy'),
+  reviewStart: $('review-start'),
+  reviewStatus: $('review-status'),
+  badges: $('badges'),
   roundCount: $('round-count'),
   roundScore: $('round-score'),
   timer: $('timer'),
@@ -52,6 +60,7 @@ const el = {
   playAgain: $('play-again'),
   shareResult: $('share-result'),
   resultShareStatus: $('result-share-status'),
+  newBadges: $('new-badges'),
   changeTopic: $('change-topic'),
   themeToggle: $('theme-toggle'),
   langButtons: document.querySelectorAll('[data-lang]'),
@@ -97,6 +106,37 @@ function renderHome() {
   const streak = currentStreak(settings.streak, localToday());
   el.streak.textContent = streak > 0 ? t('streak', { count: streak }) : t('streakNone');
   el.bestStreak.textContent = settings.streak.best > 0 ? `· ${t('bestStreak', { best: settings.streak.best })}` : '';
+  renderProgress();
+}
+
+function renderProgress() {
+  const { stats, mistakes } = settings;
+  const locale = settings.lang === 'tr' ? 'tr-TR' : 'en-US';
+  el.statRounds.textContent = stats.rounds;
+  el.statCorrect.textContent = stats.correct;
+  el.statAccuracy.textContent = stats.answered
+    ? (stats.correct / stats.answered).toLocaleString(locale, { style: 'percent' })
+    : '–';
+
+  el.reviewStart.textContent = mistakes.length ? t('reviewStart', { count: mistakes.length }) : t('reviewEmpty');
+  setBusy(el.reviewStart, mistakes.length === 0);
+  el.reviewStatus.textContent = '';
+
+  const earned = earnedBadges(stats, settings.streak);
+  el.badges.replaceChildren(
+    ...BADGES.map(({ id }) => {
+      const badge = node('li', earned.includes(id) ? 'badge earned' : 'badge', t(`badge_${id}`));
+      badge.title = t(`badgeInfo_${id}`);
+      badge.append(node('span', 'sr-only', ` (${t(`badgeInfo_${id}`)})`));
+      return badge;
+    }),
+  );
+  renderBestScore();
+}
+
+function renderBestScore() {
+  const best = settings.stats.best[selectionKey(settings)];
+  el.bestScore.textContent = best ? t('bestScore', { score: best }) : '';
 }
 
 function goHome() {
@@ -150,6 +190,7 @@ function renderSetup() {
     });
   el.level.replaceChildren(...options(LEVELS, 'level', settings.level));
   el.topic.replaceChildren(...options(topicsOf(settings.area, settings.level), 'topic', settings.topic));
+  renderBestScore();
 }
 
 // Alan ya da seviye değişince seçili konu artık sunulmuyorsa listenin ilk konusuna geçilir.
@@ -181,7 +222,7 @@ async function begin(button, status, path, body, extra) {
 
 function startRound() {
   const { area, topic, level, lang } = settings;
-  begin(el.start, el.setupStatus, '/api/round', { area, topic, level, lang }, () => ({ mode: 'round', topic, level }));
+  begin(el.start, el.setupStatus, '/api/round', { area, topic, level, lang }, () => ({ mode: 'round', area, topic, level }));
 }
 
 // Günün sorusunda joker yok: iki joker de kullanılmış sayılır ve gizlenir.
@@ -193,6 +234,14 @@ function startDaily() {
     usedTime: true,
   }));
 }
+
+// En eski 10 hata sorulur; doğru cevaplananlar listeden düşer.
+function startReview() {
+  if (settings.mistakes.length === 0) return;
+  const ids = settings.mistakes.slice(0, 10);
+  begin(el.reviewStart, el.reviewStatus, '/api/review', { ids, lang: settings.lang }, () => ({ mode: 'review' }));
+}
+
 
 // ---------- Soru ----------
 
@@ -403,25 +452,47 @@ function answerText(question, answer) {
   return question.options[answer];
 }
 
-function showResult(summary) {
-  stopTimer();
-  const results = round.history.map((entry) => entry.result.correct);
+// Biten turu kaydeder (seri, günün sorusu, hatalar, istatistik) ve yeni kazanılan rozetleri döndürür.
+function recordResult(summary, results) {
+  const { mode, area, topic, level, date } = round;
+  const badgesBefore = earnedBadges(settings.stats, settings.streak);
+  const hadMistakes = settings.mistakes.length > 0;
+
   settings.streak = recordDay(settings.streak, localToday());
-  if (round.mode === 'daily') {
-    settings.daily = { date: round.date, correct: results[0] };
-    lastShare = () =>
-      dailyShareText({ lang: settings.lang, date: round.date, correct: results[0], streak: settings.streak.count });
-  } else {
-    const { topic, level } = round;
-    lastShare = () => roundShareText({ lang: settings.lang, topic, level, results, score: summary.score });
+  if (mode === 'daily') settings.daily = { date, correct: results[0] };
+  settings.mistakes = updateMistakes(
+    settings.mistakes,
+    round.history.map(({ result }) => ({ id: result.id, correct: result.correct })),
+  );
+  const usedJokers = Boolean(round.usedFifty || round.usedTime);
+  settings.stats = recordRound(settings.stats, { mode, area, topic, level, results, score: summary.score, usedJokers });
+  if (mode === 'review' && hadMistakes && settings.mistakes.length === 0) {
+    settings.stats = { ...settings.stats, cleared: settings.stats.cleared + 1 };
   }
   saveSettings(settings);
+  return earnedBadges(settings.stats, settings.streak).filter((id) => !badgesBefore.includes(id));
+}
 
-  const daily = round.mode === 'daily';
-  el.resultTitle.textContent = daily ? `${t('dailyTitle')} · ${formatDay(round.date, settings.lang)}` : t('resultTitle');
-  el.changeTopic.dataset.i18n = daily ? 'backHome' : 'changeTopic';
+function showResult(summary) {
+  stopTimer();
+  const { mode, topic, level, date } = round;
+  const results = round.history.map((entry) => entry.result.correct);
+  const newBadges = recordResult(summary, results);
+
+  if (mode === 'daily') {
+    lastShare = () => dailyShareText({ lang: settings.lang, date, correct: results[0], streak: settings.streak.count });
+  } else {
+    lastShare = () => roundShareText({ lang: settings.lang, topic, level, results, score: summary.score });
+  }
+  const titles = { daily: `${t('dailyTitle')} · ${formatDay(date ?? dailyToday(), settings.lang)}`, review: t('reviewTitle') };
+  el.resultTitle.textContent = titles[mode] ?? t('resultTitle');
+  el.changeTopic.dataset.i18n = mode === 'round' ? 'changeTopic' : 'backHome';
   el.changeTopic.textContent = t(el.changeTopic.dataset.i18n);
-  el.playAgain.hidden = daily;
+  el.playAgain.hidden = mode !== 'round';
+  el.shareResult.hidden = mode === 'review';
+  el.newBadges.textContent = newBadges.length
+    ? t('newBadges', { names: newBadges.map((id) => t(`badge_${id}`)).join(', ') })
+    : '';
   el.resultShareStatus.textContent = '';
   el.resultScore.textContent = t('resultScore', { score: summary.score });
   el.resultCorrect.textContent = t('resultCorrect', { correct: summary.correct, total: summary.total });
@@ -441,7 +512,7 @@ function showResult(summary) {
   );
   round = null;
   showScreen('result');
-  el.playAgain.focus();
+  (el.playAgain.hidden ? el.changeTopic : el.playAgain).focus();
 }
 
 // ---------- Dil ve tema ----------
@@ -466,6 +537,7 @@ el.areaGroup.addEventListener('click', (event) => {
 el.topic.addEventListener('change', () => {
   settings.topic = el.topic.value;
   saveSettings(settings);
+  renderBestScore();
 });
 el.level.addEventListener('change', () => updateSelection({ level: el.level.value }));
 el.setupForm.addEventListener('submit', (event) => {
@@ -490,6 +562,7 @@ el.changeTopic.addEventListener('click', goHome);
 el.shareResult.addEventListener('click', () => lastShare && share(lastShare(), el.resultShareStatus));
 el.dailyStart.addEventListener('click', startDaily);
 el.dailyShare.addEventListener('click', shareDaily);
+el.reviewStart.addEventListener('click', startReview);
 
 // Klavye: 1-4 şık seçer, Enter sonraki soruya geçer. Kısayol tuşları ve form alanları hariç.
 document.addEventListener('keydown', (event) => {

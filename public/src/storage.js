@@ -1,7 +1,8 @@
 // Ayarları tarayıcıda saklar.
 // Okunan veriye güvenilmez: bozuk, eksik ya da beklenmeyen değer varsa varsayılan kullanılır.
-import { AREAS, LANGS, LEVELS, MIXED, topicsFor } from './topics.js';
+import { AREAS, LANGS, LEVELS, MIXED, isValidSelection, topicsFor } from './topics.js';
 import { isDayKey } from './dates.js';
+import { EMPTY_STATS, MAX_MISTAKES } from './progress.js';
 
 export const STORAGE_KEY = 'quiz-settings';
 export const THEMES = ['dark', 'light'];
@@ -36,6 +37,34 @@ function readStreak(saved) {
   };
 }
 
+const asObject = (value) => (value && typeof value === 'object' && !Array.isArray(value) ? value : {});
+
+// "general:geography:high" gibi bir seçim anahtarı gerçekten geçerli mi?
+const isSelectionKey = (key) => {
+  const [area, topic, level] = String(key).split(':');
+  return isValidSelection({ area, topic, level });
+};
+
+function readStats(saved) {
+  const stats = asObject(saved);
+  const counts = Object.keys(EMPTY_STATS).filter((key) => typeof EMPTY_STATS[key] === 'number');
+  const topics = Array.isArray(stats.topics) ? stats.topics.filter(isSelectionKey) : [];
+  const best = Object.entries(asObject(stats.best)).filter(([key, score]) => isSelectionKey(key) && count(score) === score);
+  return {
+    ...Object.fromEntries(counts.map((key) => [key, count(stats[key])])),
+    topics: [...new Set(topics)].slice(0, 200),
+    best: Object.fromEntries(best.slice(0, 200)),
+  };
+}
+
+// Yanlış cevaplanan soruların kimlikleri ("science:high:004", "gen:capital:high:JP").
+const MISTAKE_ID = /^[a-z-]+:[a-z]+:[A-Za-z0-9.:]{1,60}$/;
+
+function readMistakes(saved) {
+  const ids = Array.isArray(saved) ? saved.filter((id) => typeof id === 'string' && MISTAKE_ID.test(id)) : [];
+  return [...new Set(ids)].slice(-MAX_MISTAKES);
+}
+
 // Günün sorusunun sonucu: { date, correct } ya da hiç çözülmediyse null.
 function readDaily(saved) {
   return saved && isDayKey(saved.date) && typeof saved.correct === 'boolean'
@@ -61,14 +90,16 @@ export function loadSettings(storage = browserStorage(), fallbackLang = 'tr') {
     topic: oneOf(saved.topic, topics, topics[0]),
     streak: readStreak(saved.streak),
     daily: readDaily(saved.daily),
+    stats: readStats(saved.stats),
+    mistakes: readMistakes(saved.mistakes),
   };
 }
 
 /** Sadece bilinen alanlar yazılır. Kaydedilemezse (depolama dolu/kapalı) uygulama yine çalışır. */
 export function saveSettings(settings, storage = browserStorage()) {
-  const { lang, theme, area, topic, level, streak, daily } = settings;
+  const { lang, theme, area, topic, level, streak, daily, stats, mistakes } = settings;
   try {
-    storage.setItem(STORAGE_KEY, JSON.stringify({ lang, theme, area, topic, level, streak, daily }));
+    storage.setItem(STORAGE_KEY, JSON.stringify({ lang, theme, area, topic, level, streak, daily, stats, mistakes }));
     return true;
   } catch {
     return false;

@@ -78,7 +78,23 @@
           </div>
           <button type="submit" class="btn btn-primary btn-wide" id="start" data-i18n="start"></button>
           <p class="notice" id="setup-status" role="status"></p>
+          <p class="best-score" id="best-score"></p>
         </form>
+
+        <section class="card progress" aria-labelledby="progress-title">
+          <h2 class="progress-title" id="progress-title" data-i18n="progressTitle"></h2>
+          <dl class="stats">
+            <div><dt data-i18n="statRounds"></dt><dd id="stat-rounds">0</dd></div>
+            <div><dt data-i18n="statCorrect"></dt><dd id="stat-correct">0</dd></div>
+            <div><dt data-i18n="statAccuracy"></dt><dd id="stat-accuracy">–</dd></div>
+          </dl>
+          <div class="review-box">
+            <button type="button" class="btn btn-secondary" id="review-start"></button>
+            <p class="notice" id="review-status" role="status"></p>
+          </div>
+          <h3 class="badges-title" data-i18n="badges"></h3>
+          <ul class="badges" id="badges"></ul>
+        </section>
       </section>
 
       <!-- Soru -->
@@ -123,6 +139,7 @@
             <button type="button" class="btn btn-ghost" id="change-topic" data-i18n="changeTopic"></button>
           </div>
           <p class="notice" id="result-share-status" role="status"></p>
+          <p class="new-badges" id="new-badges"></p>
         </div>
         <h3 class="review-title" data-i18n="review"></h3>
         <ol class="review" id="review"></ol>
