@@ -53,8 +53,10 @@ test('pick respects the count', async () => {
 test('a mixed round draws from every general topic', async () => {
   const catalog = createCatalog(fakeReader().readTopic, NO_PEOPLE);
   const refs = await catalog.pick({ area: 'general', topic: 'mixed', level: 'high' }, mulberry32(1), 10);
+  // Dört banka sorusunun hepsi gelir; kalan yerleri matematik üreteci doldurur.
   assert.ok(idsOf(refs).includes('history:high:001'));
-  assert.equal(refs.length, 4);
+  assert.equal(refs.filter((ref) => !ref.startsWith('gen:')).length, 4);
+  assert.equal(refs.length, 10);
 });
 
 test('resolve rebuilds a picked question', async () => {

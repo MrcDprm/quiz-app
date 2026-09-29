@@ -2,6 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { createGenerators } from '../lib/generators.js';
 import { genitiveTr } from '../lib/templates/shared.js';
+import { mulberry32 } from '../lib/random.js';
 
 const country = (id, tr, en, capitalTr, capitalEn, continent, population, tier = 1) => ({
   id, name: { tr, en }, capital: capitalTr ? { tr: capitalTr, en: capitalEn } : null, continent, population, tier,
@@ -95,4 +96,30 @@ test('element questions work both ways', () => {
   assert.equal(element.prompt, 'What is the chemical symbol for gold?');
   assert.equal(element.options[element.answer], 'Au');
   assert.ok(element.options.includes('Ag') && element.options.includes('Al'));
+});
+test('maths questions are generated for school levels only', () => {
+  const random = () => 0.5;
+  for (const level of ['primary', 'middle', 'high']) {
+    const ids = generators.pick('math', level, mulberry32(7), 10);
+    assert.ok(ids.length >= 5, level);
+    for (const id of ids) {
+      const question = generators.build(id, 1, 'tr');
+      assert.equal(new Set(question.options).size, 4, id);
+      assert.ok(question.options.every((option) => Number(option) > 0), id);
+    }
+  }
+  assert.deepEqual(generators.pick('math', 'university', random, 5), []);
+  assert.equal(generators.build('gen:add:university:12.30', 1, 'en'), null);
+});
+
+test('maths answers are right', () => {
+  const add = generators.build('gen:add:primary:47.38', 3, 'en');
+  assert.equal(add.options[add.answer], '85');
+  const percent = generators.build('gen:percent:middle:25.240', 3, 'tr');
+  assert.equal(percent.prompt, '240 sayısının %25’i kaçtır?');
+  assert.equal(percent.options[percent.answer], '60');
+  const equation = generators.build('gen:equation:high:3.5.7', 3, 'en');
+  assert.equal(equation.prompt, 'If 3x + 7 = 22, what is x?');
+  assert.equal(equation.options[equation.answer], '5');
+  assert.equal(generators.build('gen:hypotenuse:high:6.9', 3, 'en'), null);
 });
