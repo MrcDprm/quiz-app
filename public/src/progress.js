@@ -2,6 +2,7 @@
 // Hepsi saf fonksiyon; tarayıcıda saklanır, sunucuya gitmez.
 
 export const MAX_MISTAKES = 100;
+export const MAX_SEEN = 50;
 const MASTERS_TARGET = 8;
 
 export const EMPTY_STATS = Object.freeze({
@@ -60,6 +61,16 @@ export function updateMistakes(mistakes, answers) {
     if (!correct) next.push(id);
   }
   return next.slice(-MAX_MISTAKES);
+}
+
+/**
+ * Bir seçimde gösterilen soruları hatırlar; sunucu bunları bir sonraki turda sormaz.
+ * reset: sunucu soruların bittiğini ve eskileri tekrar kullandığını bildirdiyse liste yeniden başlar.
+ */
+export function rememberSeen(seen, key, ids, reset = false) {
+  const previous = reset ? [] : (seen[key] ?? []);
+  const next = [...previous.filter((id) => !ids.includes(id)), ...ids].slice(-MAX_SEEN);
+  return { ...seen, [key]: next };
 }
 
 // Rozetler: her biri istatistiklere bakan bir koşul.

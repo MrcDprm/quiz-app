@@ -25,7 +25,15 @@ test('defaults are used when nothing is saved', () => {
     daily: null,
     stats: { ...EMPTY_STATS, topics: [], best: {} },
     mistakes: [],
+    seen: {},
   });
+});
+
+test('seen questions are kept per valid selection', () => {
+  const saved = JSON.stringify({
+    seen: { 'general:geography:high': ['gen:capital:high:JP', 'geography:high:001', '<b>'], 'x:y:z': ['geography:high:002'] },
+  });
+  assert.deepEqual(loadSettings(fakeStorage(saved)).seen, { 'general:geography:high': ['gen:capital:high:JP', 'geography:high:001'] });
 });
 
 test('stats and mistakes are validated field by field', () => {
@@ -77,7 +85,7 @@ test('only known fields are written back', () => {
   const settings = { ...loadSettings(storage), extra: 'secret', daily: { date: '2026-09-30', correct: true } };
   assert.equal(saveSettings(settings, storage), true);
   const written = JSON.parse(storage.raw());
-  assert.deepEqual(Object.keys(written).sort(), ['area', 'daily', 'lang', 'level', 'mistakes', 'stats', 'streak', 'theme', 'topic']);
+  assert.deepEqual(Object.keys(written).sort(), ['area', 'daily', 'lang', 'level', 'mistakes', 'seen', 'stats', 'streak', 'theme', 'topic']);
   assert.deepEqual(loadSettings(storage).daily, { date: '2026-09-30', correct: true });
 });
 

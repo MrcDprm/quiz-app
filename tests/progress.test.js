@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { EMPTY_STATS, MAX_MISTAKES, recordRound, updateMistakes, earnedBadges } from '../public/src/progress.js';
+import { EMPTY_STATS, MAX_MISTAKES, MAX_SEEN, recordRound, rememberSeen, updateMistakes, earnedBadges } from '../public/src/progress.js';
 
 const ROUND = { mode: 'round', area: 'general', topic: 'geography', level: 'high', usedJokers: false };
 const results = (correct, total = 10) => Array.from({ length: total }, (_, i) => i < correct);
@@ -59,4 +59,14 @@ test('badges follow the stats and the best streak', () => {
 test('mixed rounds do not count as a new topic for the explorer badge', () => {
   const topics = ['general:math:high', 'general:science:high', 'general:history:high', 'general:mixed:high', 'software:mixed:high'];
   assert.ok(!earnedBadges({ ...EMPTY_STATS, topics }, { best: 0 }).includes('explorer'));
+});
+
+test('seen questions are remembered per selection and reset when the pool is used up', () => {
+  let seen = rememberSeen({}, 'general:math:high', ['a', 'b']);
+  seen = rememberSeen(seen, 'general:math:high', ['b', 'c']);
+  assert.deepEqual(seen['general:math:high'], ['a', 'b', 'c']);
+  seen = rememberSeen(seen, 'general:math:high', ['d'], true);
+  assert.deepEqual(seen['general:math:high'], ['d']);
+  const many = Array.from({ length: 70 }, (_, i) => `q${i}`);
+  assert.equal(rememberSeen({}, 'k', many).k.length, MAX_SEEN);
 });

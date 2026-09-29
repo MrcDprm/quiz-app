@@ -3,7 +3,7 @@ import { AREAS, LEVELS } from './topics.js';
 import { DAILY_TIME_ZONE, dayKey } from './dates.js';
 import { currentStreak, recordDay } from './streak.js';
 import { dailyShareText, formatDay, roundShareText, shareLinks } from './share.js';
-import { BADGES, earnedBadges, recordRound, selectionKey, updateMistakes } from './progress.js';
+import { BADGES, earnedBadges, recordRound, rememberSeen, selectionKey, updateMistakes } from './progress.js';
 import { loadSettings, saveSettings, topicsOf } from './storage.js';
 import { translate } from './i18n.js';
 import { applyTheme, nextTheme } from './theme.js';
@@ -247,9 +247,17 @@ async function begin(button, status, path, body, extra) {
   renderQuestion();
 }
 
+// Bu seçimde daha önce görülen sorular gönderilir; sunucu önce hiç sorulmamışları seçer.
 function startRound() {
   const { area, topic, level, lang } = settings;
-  begin(el.start, el.setupStatus, '/api/round', { area, topic, level, lang }, () => ({ mode: 'round', area, topic, level }));
+  const seen = settings.seen[selectionKey(settings)] ?? [];
+  begin(el.start, el.setupStatus, '/api/round', { area, topic, level, lang, seen }, (data) => ({
+    mode: 'round',
+    area,
+    topic,
+    level,
+    recycled: data.recycled === true,
+  }));
 }
 
 // Günün sorusunda joker yok: iki joker de kullanılmış sayılır ve gizlenir.
@@ -491,6 +499,10 @@ function recordResult(summary, results) {
     settings.mistakes,
     round.history.map(({ result }) => ({ id: result.id, correct: result.correct })),
   );
+  if (mode === 'round') {
+    const ids = round.history.map(({ result }) => result.id);
+    settings.seen = rememberSeen(settings.seen, selectionKey({ area, topic, level }), ids, round.recycled);
+  }
   const usedJokers = Boolean(round.usedFifty || round.usedTime);
   settings.stats = recordRound(settings.stats, { mode, area, topic, level, results, score: summary.score, usedJokers });
   if (mode === 'review' && hadMistakes && settings.mistakes.length === 0) {

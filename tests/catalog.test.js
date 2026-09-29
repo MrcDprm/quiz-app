@@ -127,3 +127,12 @@ test('a round mixes bank and generated questions half and half', async () => {
   assert.equal(refs.filter((ref) => ref.startsWith('gen:')).length, 5);
   assert.ok(await catalog.resolve(refs.find((ref) => ref.startsWith('gen:')), 'tr'));
 });
+
+test('questions already seen are skipped until the pool runs out', async () => {
+  const catalog = createCatalog(fakeReader().readTopic, NO_PEOPLE);
+  const selection = { area: 'general', topic: 'science', level: 'high' };
+  const first = await catalog.pick(selection, mulberry32(1), 2, ['science:high:001']);
+  assert.ok(!idsOf(first).includes('science:high:001'));
+  const all = await catalog.pick(selection, mulberry32(1), 3, ['science:high:002', 'science:high:001', 'science:high:003']);
+  assert.deepEqual(idsOf(all), ['science:high:001', 'science:high:002', 'science:high:003']);
+});

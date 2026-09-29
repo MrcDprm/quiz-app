@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { createMemoryStore } from '../lib/store.js';
 import {
-  json, fail, isSameOrigin, clientIp, readJson, pick, oneOf, endpoint, RATE_LIMIT,
+  json, fail, isSameOrigin, clientIp, readJson, pick, oneOf, optional, endpoint, RATE_LIMIT,
 } from '../lib/http.js';
 
 const HOST = 'quiz.miracdeprem.com';
@@ -80,4 +80,10 @@ test('endpoint hides unexpected errors from the user', async (t) => {
   assert.equal(response.status, 500);
   assert.deepEqual(await response.json(), { error: 'server_error' });
   assert.equal(logged.mock.callCount(), 1);
+});
+test('optional fields may be missing but must be valid when sent', () => {
+  const schema = { lang: oneOf('tr', 'en'), seen: optional(Array.isArray) };
+  assert.deepEqual(pick({ lang: 'tr' }, schema), { lang: 'tr' });
+  assert.deepEqual(pick({ lang: 'tr', seen: ['a'] }, schema), { lang: 'tr', seen: ['a'] });
+  assert.equal(pick({ lang: 'tr', seen: 'a' }, schema), null);
 });

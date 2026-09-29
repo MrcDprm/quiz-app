@@ -2,7 +2,7 @@
 // Okunan veriye güvenilmez: bozuk, eksik ya da beklenmeyen değer varsa varsayılan kullanılır.
 import { AREAS, LANGS, LEVELS, MIXED, isValidSelection, topicsFor } from './topics.js';
 import { isDayKey } from './dates.js';
-import { EMPTY_STATS, MAX_MISTAKES } from './progress.js';
+import { EMPTY_STATS, MAX_MISTAKES, MAX_SEEN } from './progress.js';
 
 export const STORAGE_KEY = 'quiz-settings';
 export const THEMES = ['dark', 'light'];
@@ -60,9 +60,15 @@ function readStats(saved) {
 // Yanlış cevaplanan soruların kimlikleri ("science:high:004", "gen:capital:high:JP").
 const MISTAKE_ID = /^[a-z-]+:[a-z]+:[A-Za-z0-9.:]{1,60}$/;
 
-function readMistakes(saved) {
+function readIds(saved, max) {
   const ids = Array.isArray(saved) ? saved.filter((id) => typeof id === 'string' && MISTAKE_ID.test(id)) : [];
-  return [...new Set(ids)].slice(-MAX_MISTAKES);
+  return [...new Set(ids)].slice(-max);
+}
+
+// Seçim başına görülen sorular: { "general:geography:high": [kimlikler] }
+function readSeen(saved) {
+  const entries = Object.entries(asObject(saved)).filter(([key]) => isSelectionKey(key)).slice(0, 100);
+  return Object.fromEntries(entries.map(([key, ids]) => [key, readIds(ids, MAX_SEEN)]));
 }
 
 // Günün sorusunun sonucu: { date, correct } ya da hiç çözülmediyse null.
@@ -91,15 +97,16 @@ export function loadSettings(storage = browserStorage(), fallbackLang = 'tr') {
     streak: readStreak(saved.streak),
     daily: readDaily(saved.daily),
     stats: readStats(saved.stats),
-    mistakes: readMistakes(saved.mistakes),
+    mistakes: readIds(saved.mistakes, MAX_MISTAKES),
+    seen: readSeen(saved.seen),
   };
 }
 
 /** Sadece bilinen alanlar yazılır. Kaydedilemezse (depolama dolu/kapalı) uygulama yine çalışır. */
 export function saveSettings(settings, storage = browserStorage()) {
-  const { lang, theme, area, topic, level, streak, daily, stats, mistakes } = settings;
+  const { lang, theme, area, topic, level, streak, daily, stats, mistakes, seen } = settings;
   try {
-    storage.setItem(STORAGE_KEY, JSON.stringify({ lang, theme, area, topic, level, streak, daily, stats, mistakes }));
+    storage.setItem(STORAGE_KEY, JSON.stringify({ lang, theme, area, topic, level, streak, daily, stats, mistakes, seen }));
     return true;
   } catch {
     return false;

@@ -716,6 +716,9 @@ select:hover {
   font-family: var(--font-mono);
   font-size: 0.8rem;
 }
+.option-text {
+  white-space: pre-line; /* çok satırlı kod çıktısı şıkları alt alta görünsün */
+}
 .option.removed {
   opacity: 0.3;
 }

@@ -184,3 +184,14 @@ test('review requests are validated', async () => {
   assert.equal((await call(api.review, { ids: ['science:high:001~5'], lang: 'en' })).status, 400);
   assert.equal((await call(api.review, { ids: ['nope:high:001'], lang: 'en' })).status, 404);
 });
+
+test('a round avoids questions the player has already seen', async () => {
+  const { api } = setup();
+  const fresh = await call(api.round, { ...START, seen: ['science:high:001'] });
+  assert.equal(fresh.body.question.total, 2);
+  assert.equal(fresh.body.recycled, true);
+  const none = await call(api.round, { ...START, seen: [] });
+  assert.equal(none.body.recycled, false);
+  assert.equal((await call(api.round, { ...START, seen: 'nope' })).status, 400);
+  assert.equal((await call(api.round, { ...START, seen: Array(51).fill('science:high:001') })).status, 400);
+});

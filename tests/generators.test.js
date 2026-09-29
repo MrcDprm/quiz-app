@@ -103,3 +103,11 @@ test('the real data builds clean questions for every topic and level', async () 
   }
   assert.ok(Object.keys(GROUP_LABELS).length >= 10);
 });
+
+test('generated questions already seen are not produced again', async () => {
+  const real = createGenerators(await readGeneratedFiles());
+  const first = real.pick('geography', 'high', mulberry32(1), 10);
+  const second = real.pick('geography', 'high', mulberry32(1), 10, new Set(first));
+  assert.equal(second.length, 10);
+  assert.ok(second.every((id) => !first.includes(id)));
+});
