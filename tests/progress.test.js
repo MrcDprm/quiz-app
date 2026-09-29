@@ -55,3 +55,8 @@ test('badges follow the stats and the best streak', () => {
   const explorer = { ...EMPTY_STATS, topics: ['general:math:high', 'general:science:high', 'general:history:high', 'general:geography:high', 'software:sql:high'] };
   assert.ok(earnedBadges(explorer, { best: 0 }).includes('explorer'));
 });
+
+test('mixed rounds do not count as a new topic for the explorer badge', () => {
+  const topics = ['general:math:high', 'general:science:high', 'general:history:high', 'general:mixed:high', 'software:mixed:high'];
+  assert.ok(!earnedBadges({ ...EMPTY_STATS, topics }, { best: 0 }).includes('explorer'));
+});

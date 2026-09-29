@@ -70,7 +70,7 @@ export const BADGES = [
   { id: 'streak3', earned: (s, streak) => streak.best >= 3 },
   { id: 'streak7', earned: (s, streak) => streak.best >= 7 },
   { id: 'streak30', earned: (s, streak) => streak.best >= 30 },
-  { id: 'explorer', earned: (s) => new Set(s.topics.map((key) => key.split(':')[1])).size >= 5 },
+  { id: 'explorer', earned: (s) => new Set(s.topics.map((key) => key.split(':')[1]).filter((topic) => topic !== 'mixed')).size >= 5 },
   { id: 'masters', earned: (s) => s.mastersHigh >= 1 },
   { id: 'daily7', earned: (s) => s.dailyCorrect >= 7 },
   { id: 'cleaner', earned: (s) => s.cleared >= 1 },

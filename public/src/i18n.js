@@ -156,7 +156,7 @@ export const MESSAGES = {
     dailyNext: 'A new question comes tomorrow.',
     streak: '🔥 {count}-day streak',
     streakNone: 'Start a streak today',
-    bestStreak: 'Best streak: {best} days',
+    bestStreak: 'Best streak: {best}',
     share: 'Share',
     copied: 'Result copied to the clipboard.',
     copyFailed: 'Could not copy.',
