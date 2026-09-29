@@ -864,6 +864,1194 @@
         "tr": "Örneğin tepe örtüsü için basit eşleşme algoritması 2-yaklaşımdır.",
         "en": "For example, the simple matching algorithm is a 2-approximation for vertex cover."
       }
+    },
+    {
+      "id": "algorithms:middle:009",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Bir telefon rehberinde isim aramak neden hızlıdır?",
+        "en": "Why is finding a name in a phone book fast?"
+      },
+      "options": {
+        "tr": [
+          "İsimler alfabetik sıralı olduğu için ikiye bölerek arayabiliriz",
+          "Rehber çok ince olduğu için",
+          "İsimler rastgele dağıldığı için",
+          "Her sayfada tek isim olduğu için"
+        ],
+        "en": [
+          "Names are sorted, so we can keep halving the search",
+          "The book is thin",
+          "Names are random",
+          "Each page has one name"
+        ]
+      },
+      "explain": {
+        "tr": "Sıralı veride ikili arama kullanılabilir.",
+        "en": "Sorted data allows binary search."
+      }
+    },
+    {
+      "id": "algorithms:middle:010",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Bir sayının çift olup olmadığını anlamak için hangi işlem kullanılır?",
+        "en": "Which operation tells whether a number is even?"
+      },
+      "options": {
+        "tr": [
+          "2’ye bölümünden kalana bakmak",
+          "Karesini almak",
+          "10 ile çarpmak",
+          "Basamak sayısına bakmak"
+        ],
+        "en": [
+          "Checking the remainder when divided by 2",
+          "Squaring it",
+          "Multiplying by 10",
+          "Counting its digits"
+        ]
+      },
+      "explain": {
+        "tr": "Kalan 0 ise sayı çifttir (n % 2 == 0).",
+        "en": "If the remainder is 0, the number is even (n % 2 == 0)."
+      }
+    },
+    {
+      "id": "algorithms:middle:011",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Bir listedeki en büyük sayıyı bulmak için en az kaç kez karşılaştırma yapılır (n elemanlı)?",
+        "en": "How many comparisons does finding the largest of n numbers take?"
+      },
+      "options": {
+        "tr": [
+          "n − 1",
+          "n²",
+          "1",
+          "log n"
+        ],
+        "en": [
+          "n − 1",
+          "n²",
+          "1",
+          "log n"
+        ]
+      },
+      "explain": {
+        "tr": "İlk sayıyı en büyük sayıp kalan n − 1 sayıyla tek tek karşılaştırırız.",
+        "en": "Take the first as the largest and compare it with the other n − 1."
+      }
+    },
+    {
+      "id": "algorithms:middle:012",
+      "level": "middle",
+      "type": "order",
+      "q": {
+        "tr": "Akış şemasında bir algoritmanın bölümlerini sırala.",
+        "en": "Order the parts of an algorithm in a flowchart."
+      },
+      "items": {
+        "tr": [
+          "Başla",
+          "Veriyi al (giriş)",
+          "İşlemi yap",
+          "Sonucu göster ve bitir"
+        ],
+        "en": [
+          "Start",
+          "Get the data (input)",
+          "Process it",
+          "Show the result and end"
+        ]
+      },
+      "explain": {
+        "tr": "Algoritmalar genellikle giriş → işlem → çıkış düzenindedir.",
+        "en": "Algorithms usually follow input → process → output."
+      }
+    },
+    {
+      "id": "algorithms:middle:013",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Bir sayının asal olup olmadığını anlamak için en fazla hangi sayıya kadar bölmeyi denemek yeterlidir?",
+        "en": "To test if n is prime, up to which number do you need to try dividing?"
+      },
+      "options": {
+        "tr": [
+          "√n (karekök n)",
+          "n",
+          "n / 2 + 10",
+          "10"
+        ],
+        "en": [
+          "√n",
+          "n",
+          "n / 2 + 10",
+          "10"
+        ]
+      },
+      "explain": {
+        "tr": "n’nin √n’den büyük bir böleni varsa, √n’den küçük bir eşi de vardır.",
+        "en": "If n has a divisor above √n, it also has one below √n."
+      }
+    },
+    {
+      "id": "algorithms:middle:014",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Kart destesini elde küçükten büyüğe dizerken her yeni kartı doğru yere koymak hangi sıralamaya benzer?",
+        "en": "Putting each new card into the right place in your hand is like which sort?"
+      },
+      "options": {
+        "tr": [
+          "Eklemeli sıralama (insertion sort)",
+          "Kabarcık sıralaması",
+          "Hızlı sıralama",
+          "İkili arama"
+        ],
+        "en": [
+          "Insertion sort",
+          "Bubble sort",
+          "Quicksort",
+          "Binary search"
+        ]
+      },
+      "explain": {
+        "tr": "Eklemeli sıralama küçük ve neredeyse sıralı listelerde hızlıdır.",
+        "en": "Insertion sort is quick on small or nearly sorted lists."
+      }
+    },
+    {
+      "id": "algorithms:middle:015",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Bir labirentten çıkmak için “hep sağ duvarı takip et” kuralı neye örnektir?",
+        "en": "In a maze, “always follow the right-hand wall” is an example of what?"
+      },
+      "options": {
+        "tr": [
+          "Bir algoritma (kural)",
+          "Bir değişken",
+          "Bir veri tipi",
+          "Bir donanım"
+        ],
+        "en": [
+          "An algorithm (a rule)",
+          "A variable",
+          "A data type",
+          "Hardware"
+        ]
+      },
+      "explain": {
+        "tr": "Basit ve kesin kurallar dizisi bir algoritmadır.",
+        "en": "A simple, exact set of rules is an algorithm."
+      }
+    },
+    {
+      "id": "algorithms:middle:016",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "1’den 100’e kadar sayıların toplamı kaçtır?",
+        "en": "What is the sum of the numbers from 1 to 100?"
+      },
+      "options": {
+        "tr": [
+          "5050",
+          "5000",
+          "10100",
+          "4950"
+        ],
+        "en": [
+          "5050",
+          "5000",
+          "10100",
+          "4950"
+        ]
+      },
+      "explain": {
+        "tr": "Gauss’un formülü: n(n + 1) / 2 = 100 · 101 / 2 = 5050.",
+        "en": "Gauss’s formula: n(n + 1) / 2 = 100 · 101 / 2 = 5050."
+      }
+    },
+    {
+      "id": "algorithms:middle:017",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "En büyük ortak bölen (EBOB) için bilinen hızlı yöntem hangisidir?",
+        "en": "Which classic fast method finds the greatest common divisor?"
+      },
+      "options": {
+        "tr": [
+          "Öklid algoritması",
+          "Kabarcık sıralaması",
+          "Doğrusal arama",
+          "Dijkstra algoritması"
+        ],
+        "en": [
+          "Euclid’s algorithm",
+          "Bubble sort",
+          "Linear search",
+          "Dijkstra’s algorithm"
+        ]
+      },
+      "explain": {
+        "tr": "EBOB(a, b) = EBOB(b, a mod b); kalan 0 olunca biter.",
+        "en": "gcd(a, b) = gcd(b, a mod b), stopping when the remainder is 0."
+      }
+    },
+    {
+      "id": "algorithms:middle:018",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "EBOB(12, 18) kaçtır?",
+        "en": "What is gcd(12, 18)?"
+      },
+      "options": {
+        "tr": [
+          "6",
+          "3",
+          "2",
+          "36"
+        ],
+        "en": [
+          "6",
+          "3",
+          "2",
+          "36"
+        ]
+      },
+      "explain": {
+        "tr": "12 ve 18’i birlikte bölen en büyük sayı 6’dır.",
+        "en": "6 is the largest number that divides both 12 and 18."
+      }
+    },
+    {
+      "id": "algorithms:middle:019",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Bir listeyi tersine çevirmek için iki uçtan başlayıp ortada buluşan yöntemde ne yapılır?",
+        "en": "To reverse a list by working in from both ends, what do you do?"
+      },
+      "options": {
+        "tr": [
+          "Baştaki ile sondaki elemanın yerini değiştirmek",
+          "Listeyi sıralamak",
+          "Elemanları silmek",
+          "Her elemanı ikiyle çarpmak"
+        ],
+        "en": [
+          "Swap the first and last items, moving inwards",
+          "Sort the list",
+          "Delete items",
+          "Double every item"
+        ]
+      },
+      "explain": {
+        "tr": "Bu yöntem ek bellek kullanmadan listeyi yerinde ters çevirir.",
+        "en": "This reverses the list in place without extra memory."
+      }
+    },
+    {
+      "id": "algorithms:middle:020",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Ağaç yapısında en üstteki düğüme ne denir?",
+        "en": "What is the top node of a tree called?"
+      },
+      "options": {
+        "tr": [
+          "Kök",
+          "Yaprak",
+          "Dal",
+          "Kenar"
+        ],
+        "en": [
+          "Root",
+          "Leaf",
+          "Branch",
+          "Edge"
+        ]
+      },
+      "explain": {
+        "tr": "Çocuğu olmayan düğümlere yaprak denir.",
+        "en": "Nodes with no children are called leaves."
+      }
+    },
+    {
+      "id": "algorithms:high:009",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bağlı listede bir elemana indeksle erişmenin karmaşıklığı nedir?",
+        "en": "What is the complexity of accessing a linked-list item by index?"
+      },
+      "options": {
+        "tr": [
+          "O(n)",
+          "O(1)",
+          "O(log n)",
+          "O(n²)"
+        ],
+        "en": [
+          "O(n)",
+          "O(1)",
+          "O(log n)",
+          "O(n²)"
+        ]
+      },
+      "explain": {
+        "tr": "Baştan başlayıp işaretçileri tek tek izlemek gerekir; dizide ise O(1)’dir.",
+        "en": "You follow pointers from the head one by one; an array gives O(1)."
+      }
+    },
+    {
+      "id": "algorithms:high:010",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Parantezlerin dengeli olup olmadığını kontrol etmek için hangi veri yapısı kullanılır?",
+        "en": "Which data structure checks whether brackets are balanced?"
+      },
+      "options": {
+        "tr": [
+          "Yığın (stack)",
+          "Kuyruk",
+          "Hash tablosu",
+          "Sıralı dizi"
+        ],
+        "en": [
+          "Stack",
+          "Queue",
+          "Hash table",
+          "Sorted array"
+        ]
+      },
+      "explain": {
+        "tr": "Açılan parantez yığına konur, kapanan parantez yığının üstüyle eşleşmelidir.",
+        "en": "Push opening brackets and match each closing one with the top of the stack."
+      }
+    },
+    {
+      "id": "algorithms:high:011",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Seçmeli sıralama (selection sort) her adımda ne yapar?",
+        "en": "What does selection sort do at each step?"
+      },
+      "options": {
+        "tr": [
+          "Kalan kısmın en küçüğünü bulup başa koyar",
+          "Komşu elemanları değiştirir",
+          "Listeyi ikiye böler",
+          "Rastgele karıştırır"
+        ],
+        "en": [
+          "Finds the smallest of the rest and moves it to the front",
+          "Swaps neighbours",
+          "Splits the list in half",
+          "Shuffles randomly"
+        ]
+      },
+      "explain": {
+        "tr": "Selection sort her zaman O(n²) karşılaştırma yapar.",
+        "en": "Selection sort always makes O(n²) comparisons."
+      }
+    },
+    {
+      "id": "algorithms:high:012",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir fonksiyonun 3 iç içe döngüsü, her biri n kez dönüyorsa karmaşıklığı nedir?",
+        "en": "A function has three nested loops, each running n times. What is its complexity?"
+      },
+      "options": {
+        "tr": [
+          "O(n³)",
+          "O(3n)",
+          "O(n)",
+          "O(log n)"
+        ],
+        "en": [
+          "O(n³)",
+          "O(3n)",
+          "O(n)",
+          "O(log n)"
+        ]
+      },
+      "explain": {
+        "tr": "İç içe döngülerin tekrar sayıları çarpılır: n · n · n.",
+        "en": "Nested loop counts multiply: n · n · n."
+      }
+    },
+    {
+      "id": "algorithms:high:013",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "8 elemanlı bir listenin tüm sıralamalarının (permütasyon) sayısı kaçtır?",
+        "en": "How many orderings (permutations) does a list of 8 items have?"
+      },
+      "options": {
+        "tr": [
+          "40320 (8!)",
+          "64",
+          "256",
+          "8"
+        ],
+        "en": [
+          "40320 (8!)",
+          "64",
+          "256",
+          "8"
+        ]
+      },
+      "explain": {
+        "tr": "8! = 8 · 7 · … · 1 = 40320; bu yüzden kaba kuvvet çabuk imkânsızlaşır.",
+        "en": "8! = 8 · 7 · … · 1 = 40320, which is why brute force quickly becomes impossible."
+      }
+    },
+    {
+      "id": "algorithms:high:014",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Açgözlü (greedy) algoritma ne yapar?",
+        "en": "What does a greedy algorithm do?"
+      },
+      "options": {
+        "tr": [
+          "Her adımda o an en iyi görünen seçimi yapar",
+          "Bütün olasılıkları dener",
+          "Rastgele seçer",
+          "Sonuçları saklayıp tekrar kullanır"
+        ],
+        "en": [
+          "Makes the choice that looks best at each step",
+          "Tries every possibility",
+          "Picks randomly",
+          "Stores and reuses results"
+        ]
+      },
+      "explain": {
+        "tr": "Para üstü verirken önce en büyük banknotu vermek açgözlü bir yaklaşımdır.",
+        "en": "Giving change with the largest note first is a greedy approach."
+      }
+    },
+    {
+      "id": "algorithms:high:015",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir grafta düğümler arasındaki bağlantılara ne denir?",
+        "en": "What are the connections between nodes in a graph called?"
+      },
+      "options": {
+        "tr": [
+          "Kenar",
+          "Kök",
+          "Yaprak",
+          "Anahtar"
+        ],
+        "en": [
+          "Edges",
+          "Roots",
+          "Leaves",
+          "Keys"
+        ]
+      },
+      "explain": {
+        "tr": "Sosyal ağlar ve haritalar graf olarak modellenebilir.",
+        "en": "Social networks and maps can be modelled as graphs."
+      }
+    },
+    {
+      "id": "algorithms:high:016",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Kaba kuvvet (brute force) yaklaşımı nedir?",
+        "en": "What is a brute-force approach?"
+      },
+      "options": {
+        "tr": [
+          "Bütün olası çözümleri tek tek denemek",
+          "En hızlı yolu tahmin etmek",
+          "Problemi ikiye bölmek",
+          "Sonuçları önbelleğe almak"
+        ],
+        "en": [
+          "Trying every possible solution one by one",
+          "Guessing the fastest path",
+          "Splitting the problem in two",
+          "Caching results"
+        ]
+      },
+      "explain": {
+        "tr": "Basittir ama girdi büyüdükçe çok yavaşlar.",
+        "en": "It is simple but gets very slow as input grows."
+      }
+    },
+    {
+      "id": "algorithms:high:017",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "1.000.000 elemanlı sıralı listede ikili arama en fazla yaklaşık kaç adım sürer?",
+        "en": "Binary search on a sorted list of 1,000,000 items takes about how many steps at most?"
+      },
+      "options": {
+        "tr": [
+          "20",
+          "1000",
+          "500.000",
+          "1.000.000"
+        ],
+        "en": [
+          "20",
+          "1,000",
+          "500,000",
+          "1,000,000"
+        ]
+      },
+      "explain": {
+        "tr": "2²⁰ ≈ 1.048.576, yani yaklaşık 20 bölme yeterlidir.",
+        "en": "2²⁰ ≈ 1,048,576, so about 20 halvings are enough."
+      }
+    },
+    {
+      "id": "algorithms:high:018",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Hash tablosunda iki anahtarın aynı konuma düşmesine ne denir?",
+        "en": "What is it called when two keys land in the same slot of a hash table?"
+      },
+      "options": {
+        "tr": [
+          "Çakışma (collision)",
+          "Taşma",
+          "Kilitlenme",
+          "Özyineleme"
+        ],
+        "en": [
+          "A collision",
+          "An overflow",
+          "A deadlock",
+          "Recursion"
+        ]
+      },
+      "explain": {
+        "tr": "Çakışmalar zincirleme ya da açık adresleme ile çözülür.",
+        "en": "Collisions are handled by chaining or open addressing."
+      }
+    },
+    {
+      "id": "algorithms:high:019",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Özyinelemeli Fibonacci’yi (memo olmadan) yavaş yapan nedir?",
+        "en": "What makes naive recursive Fibonacci slow?"
+      },
+      "options": {
+        "tr": [
+          "Aynı değerleri defalarca yeniden hesaplaması",
+          "Çok az bellek kullanması",
+          "Döngü kullanması",
+          "Sayıların büyük olması"
+        ],
+        "en": [
+          "Recomputing the same values many times",
+          "Using too little memory",
+          "Using loops",
+          "Large numbers"
+        ]
+      },
+      "explain": {
+        "tr": "Karmaşıklığı üsteldir; sonuçları saklamak (memoization) onu doğrusal yapar.",
+        "en": "It is exponential; memoisation makes it linear."
+      }
+    },
+    {
+      "id": "algorithms:university:009",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Yığın (heap) veri yapısının en yaygın kullanımı hangisidir?",
+        "en": "What is a heap most commonly used for?"
+      },
+      "options": {
+        "tr": [
+          "Öncelik kuyruğu",
+          "Metin arama",
+          "Dosya sıkıştırma",
+          "Şifreleme"
+        ],
+        "en": [
+          "Priority queues",
+          "Text search",
+          "File compression",
+          "Encryption"
+        ]
+      },
+      "explain": {
+        "tr": "Min-heap en küçük elemanı O(1)’de verir, ekleme ve çıkarma O(log n)’dir.",
+        "en": "A min-heap gives the smallest item in O(1); insert and remove are O(log n)."
+      }
+    },
+    {
+      "id": "algorithms:university:010",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Derinlik öncelikli arama (DFS) hangi veri yapısını (açıkça ya da özyinelemeyle) kullanır?",
+        "en": "Which data structure does depth-first search use, explicitly or via recursion?"
+      },
+      "options": {
+        "tr": [
+          "Yığın (stack)",
+          "Kuyruk",
+          "Öncelik kuyruğu",
+          "Hash tablosu"
+        ],
+        "en": [
+          "Stack",
+          "Queue",
+          "Priority queue",
+          "Hash table"
+        ]
+      },
+      "explain": {
+        "tr": "BFS kuyruk, DFS yığın kullanır.",
+        "en": "BFS uses a queue; DFS uses a stack."
+      }
+    },
+    {
+      "id": "algorithms:university:011",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Sırt çantası (knapsack) probleminin 0/1 sürümü genellikle hangi yöntemle çözülür?",
+        "en": "How is the 0/1 knapsack problem usually solved?"
+      },
+      "options": {
+        "tr": [
+          "Dinamik programlama",
+          "İkili arama",
+          "Kabarcık sıralaması",
+          "Doğrusal arama"
+        ],
+        "en": [
+          "Dynamic programming",
+          "Binary search",
+          "Bubble sort",
+          "Linear search"
+        ]
+      },
+      "explain": {
+        "tr": "Kapasite ve eleman sayısına göre bir tablo doldurulur.",
+        "en": "A table indexed by capacity and item count is filled in."
+      }
+    },
+    {
+      "id": "algorithms:university:012",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Birleştirme sıralamasının ek bellek ihtiyacı nedir?",
+        "en": "How much extra memory does merge sort need?"
+      },
+      "options": {
+        "tr": [
+          "O(n)",
+          "O(1)",
+          "O(log n)",
+          "O(n²)"
+        ],
+        "en": [
+          "O(n)",
+          "O(1)",
+          "O(log n)",
+          "O(n²)"
+        ]
+      },
+      "explain": {
+        "tr": "Birleştirme için geçici diziler gerekir; quicksort yerinde çalışabilir.",
+        "en": "Merging needs temporary arrays; quicksort can work in place."
+      }
+    },
+    {
+      "id": "algorithms:university:013",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Kararlı (stable) sıralama ne demektir?",
+        "en": "What does a stable sort mean?"
+      },
+      "options": {
+        "tr": [
+          "Eşit anahtarlı elemanların göreli sırası korunur",
+          "Hiç hata yapmaz",
+          "Her zaman O(n) sürer",
+          "Yerinde çalışır"
+        ],
+        "en": [
+          "Items with equal keys keep their relative order",
+          "It never fails",
+          "It always takes O(n)",
+          "It works in place"
+        ]
+      },
+      "explain": {
+        "tr": "Merge sort kararlıdır; standart quicksort değildir.",
+        "en": "Merge sort is stable; standard quicksort is not."
+      }
+    },
+    {
+      "id": "algorithms:university:014",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Union-Find (ayrık küme) yapısı hangi algoritmada sıkça kullanılır?",
+        "en": "Which algorithm often uses the union–find (disjoint set) structure?"
+      },
+      "options": {
+        "tr": [
+          "Kruskal",
+          "Dijkstra",
+          "KMP",
+          "Binary search"
+        ],
+        "en": [
+          "Kruskal",
+          "Dijkstra",
+          "KMP",
+          "Binary search"
+        ]
+      },
+      "explain": {
+        "tr": "Kenar eklenirken döngü oluşup oluşmadığını hızla kontrol eder.",
+        "en": "It quickly checks whether adding an edge would form a cycle."
+      }
+    },
+    {
+      "id": "algorithms:university:015",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Bir dizideki ardışık elemanların en büyük toplamını O(n)’de bulan algoritma hangisidir?",
+        "en": "Which algorithm finds the maximum subarray sum in O(n)?"
+      },
+      "options": {
+        "tr": [
+          "Kadane algoritması",
+          "Floyd-Warshall",
+          "Prim",
+          "Bellman-Ford"
+        ],
+        "en": [
+          "Kadane’s algorithm",
+          "Floyd–Warshall",
+          "Prim",
+          "Bellman–Ford"
+        ]
+      },
+      "explain": {
+        "tr": "Her konumda “buraya kadar en iyi toplam” tutulur.",
+        "en": "It tracks the best sum ending at each position."
+      }
+    },
+    {
+      "id": "algorithms:university:016",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Tüm düğüm çiftleri arasındaki en kısa yolları bulan algoritma hangisidir?",
+        "en": "Which algorithm finds shortest paths between all pairs of nodes?"
+      },
+      "options": {
+        "tr": [
+          "Floyd-Warshall",
+          "Kruskal",
+          "DFS",
+          "Kadane"
+        ],
+        "en": [
+          "Floyd–Warshall",
+          "Kruskal",
+          "DFS",
+          "Kadane"
+        ]
+      },
+      "explain": {
+        "tr": "Floyd-Warshall O(V³) sürede dinamik programlamayla çalışır.",
+        "en": "Floyd–Warshall uses dynamic programming in O(V³)."
+      }
+    },
+    {
+      "id": "algorithms:university:017",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Metin içinde kalıp aramayı ön işlemeyle doğrusal zamanda yapan algoritma hangisidir?",
+        "en": "Which algorithm searches for a pattern in text in linear time using preprocessing?"
+      },
+      "options": {
+        "tr": [
+          "KMP (Knuth-Morris-Pratt)",
+          "Kabarcık sıralaması",
+          "Dijkstra",
+          "Kruskal"
+        ],
+        "en": [
+          "KMP (Knuth–Morris–Pratt)",
+          "Bubble sort",
+          "Dijkstra",
+          "Kruskal"
+        ]
+      },
+      "explain": {
+        "tr": "KMP, uyuşmazlıkta kalıbın başa dönmesini önleyen bir tablo kullanır.",
+        "en": "KMP uses a table so it never restarts the pattern from scratch."
+      }
+    },
+    {
+      "id": "algorithms:university:018",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "AVL ve kırmızı-siyah ağaçların ortak amacı nedir?",
+        "en": "What do AVL and red–black trees have in common?"
+      },
+      "options": {
+        "tr": [
+          "Ağacı dengeli tutarak işlemleri O(log n)’de tutmak",
+          "Verileri sıkıştırmak",
+          "Verileri şifrelemek",
+          "Grafları çizmek"
+        ],
+        "en": [
+          "Keeping the tree balanced so operations stay O(log n)",
+          "Compressing data",
+          "Encrypting data",
+          "Drawing graphs"
+        ]
+      },
+      "explain": {
+        "tr": "Dengesiz bir arama ağacı en kötü durumda bağlı listeye dönüşür.",
+        "en": "An unbalanced search tree can degrade into a linked list."
+      }
+    },
+    {
+      "id": "algorithms:university:019",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Geri izleme (backtracking) hangi problemde tipik olarak kullanılır?",
+        "en": "Which problem is a typical use of backtracking?"
+      },
+      "options": {
+        "tr": [
+          "N-vezir problemi",
+          "Bir diziyi toplamak",
+          "En büyük sayıyı bulmak",
+          "Listeyi tersine çevirmek"
+        ],
+        "en": [
+          "The N-queens problem",
+          "Summing an array",
+          "Finding the maximum",
+          "Reversing a list"
+        ]
+      },
+      "explain": {
+        "tr": "Geri izleme, çıkmaza giren seçimleri geri alıp başka seçenek dener.",
+        "en": "Backtracking undoes choices that lead to dead ends and tries others."
+      }
+    },
+    {
+      "id": "algorithms:masters:009",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Bir problemin NP-zor olduğunu göstermek için genellikle ne yapılır?",
+        "en": "How is a problem usually shown to be NP-hard?"
+      },
+      "options": {
+        "tr": [
+          "Bilinen bir NP-tam problem ona polinom zamanda indirgenir",
+          "Hızlı bir algoritma yazılır",
+          "Rastgele girdilerle denenir",
+          "Bellek kullanımı ölçülür"
+        ],
+        "en": [
+          "A known NP-complete problem is reduced to it in polynomial time",
+          "A fast algorithm is written",
+          "It is tried on random inputs",
+          "Its memory use is measured"
+        ]
+      },
+      "explain": {
+        "tr": "İndirgeme, yeni problemin en az o kadar zor olduğunu gösterir.",
+        "en": "The reduction shows the new problem is at least as hard."
+      }
+    },
+    {
+      "id": "algorithms:masters:010",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Rastgele algoritmalarda Las Vegas ile Monte Carlo arasındaki fark nedir?",
+        "en": "How do Las Vegas and Monte Carlo algorithms differ?"
+      },
+      "options": {
+        "tr": [
+          "Las Vegas her zaman doğru sonuç verir ama süresi değişir; Monte Carlo’nun süresi sabittir ama yanılabilir",
+          "İkisi aynıdır",
+          "Monte Carlo hiç yanılmaz",
+          "Las Vegas sadece oyunlarda kullanılır"
+        ],
+        "en": [
+          "Las Vegas is always correct with variable time; Monte Carlo has fixed time but may be wrong",
+          "They are the same",
+          "Monte Carlo is never wrong",
+          "Las Vegas is only for games"
+        ]
+      },
+      "explain": {
+        "tr": "Rastgele pivotlu quicksort Las Vegas, Miller-Rabin asallık testi Monte Carlo örneğidir.",
+        "en": "Randomised quicksort is Las Vegas; the Miller–Rabin primality test is Monte Carlo."
+      }
+    },
+    {
+      "id": "algorithms:masters:011",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Maksimum akış (max-flow) problemini çözen klasik yöntem hangisidir?",
+        "en": "Which classic method solves the maximum-flow problem?"
+      },
+      "options": {
+        "tr": [
+          "Ford-Fulkerson (Edmonds-Karp)",
+          "Kruskal",
+          "Kadane",
+          "Merge sort"
+        ],
+        "en": [
+          "Ford–Fulkerson (Edmonds–Karp)",
+          "Kruskal",
+          "Kadane",
+          "Merge sort"
+        ]
+      },
+      "explain": {
+        "tr": "Maks-akış min-kesim teoremi en büyük akışın en küçük kesime eşit olduğunu söyler.",
+        "en": "The max-flow min-cut theorem says the maximum flow equals the minimum cut."
+      }
+    },
+    {
+      "id": "algorithms:masters:012",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Bir kuyruğu iki yığınla gerçekleştirirsek enqueue/dequeue işlemlerinin amortize maliyeti nedir?",
+        "en": "If a queue is built from two stacks, what is the amortised cost of its operations?"
+      },
+      "options": {
+        "tr": [
+          "O(1)",
+          "O(n)",
+          "O(log n)",
+          "O(n²)"
+        ],
+        "en": [
+          "O(1)",
+          "O(n)",
+          "O(log n)",
+          "O(n²)"
+        ]
+      },
+      "explain": {
+        "tr": "Her eleman en fazla bir kez bir yığından diğerine taşınır.",
+        "en": "Each item moves from one stack to the other at most once."
+      }
+    },
+    {
+      "id": "algorithms:masters:013",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Segment ağacı hangi tür sorguları hızlandırır?",
+        "en": "Which queries does a segment tree speed up?"
+      },
+      "options": {
+        "tr": [
+          "Aralık toplamı/minimumu ve güncelleme",
+          "Metin eşleştirme",
+          "Grafik çizimi",
+          "Veri sıkıştırma"
+        ],
+        "en": [
+          "Range sum/minimum queries with updates",
+          "Text matching",
+          "Drawing graphics",
+          "Data compression"
+        ]
+      },
+      "explain": {
+        "tr": "Her iki işlem de O(log n) sürer.",
+        "en": "Both operations take O(log n)."
+      }
+    },
+    {
+      "id": "algorithms:masters:014",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Tutarlı hash’leme (consistent hashing) dağıtık sistemlerde neden kullanılır?",
+        "en": "Why is consistent hashing used in distributed systems?"
+      },
+      "options": {
+        "tr": [
+          "Sunucu eklenip çıkarılınca anahtarların çok azının yer değiştirmesi için",
+          "Verileri şifrelemek için",
+          "Sorguları sıralamak için",
+          "Ağ gecikmesini sıfırlamak için"
+        ],
+        "en": [
+          "So that adding or removing a server moves only a few keys",
+          "To encrypt data",
+          "To sort queries",
+          "To remove network latency"
+        ]
+      },
+      "explain": {
+        "tr": "Önbellek kümeleri ve dağıtık veritabanları bu yöntemi kullanır.",
+        "en": "Cache clusters and distributed databases use it."
+      }
+    },
+    {
+      "id": "algorithms:masters:015",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Bir problemin “yarı karar verilebilir” (semi-decidable) olması ne demektir?",
+        "en": "What does it mean for a problem to be semi-decidable?"
+      },
+      "options": {
+        "tr": [
+          "“Evet” örneklerinde algoritma durur, “hayır” örneklerinde durmayabilir",
+          "Her zaman durur",
+          "Hiç çözülemez",
+          "Sadece yarısı çözülür"
+        ],
+        "en": [
+          "The algorithm halts on “yes” instances but may run forever on “no” ones",
+          "It always halts",
+          "It can never be solved",
+          "Only half of it can be solved"
+        ]
+      },
+      "explain": {
+        "tr": "Durma problemi yarı karar verilebilir ama karar verilebilir değildir.",
+        "en": "The halting problem is semi-decidable but not decidable."
+      }
+    },
+    {
+      "id": "algorithms:masters:016",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Önek ağacı (trie) en çok hangi iş için uygundur?",
+        "en": "What is a trie best suited for?"
+      },
+      "options": {
+        "tr": [
+          "Otomatik tamamlama ve önek araması",
+          "Sayıları sıralamak",
+          "Kısa yol bulmak",
+          "Görüntü işleme"
+        ],
+        "en": [
+          "Autocomplete and prefix search",
+          "Sorting numbers",
+          "Finding shortest paths",
+          "Image processing"
+        ]
+      },
+      "explain": {
+        "tr": "Arama süresi kelime sayısına değil, kelimenin uzunluğuna bağlıdır.",
+        "en": "Lookup time depends on the word’s length, not the number of words."
+      }
+    },
+    {
+      "id": "algorithms:masters:017",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Paralel hesaplamada Amdahl yasası neyi söyler?",
+        "en": "What does Amdahl’s law say about parallel computing?"
+      },
+      "options": {
+        "tr": [
+          "Seri kalan kısım, işlemci sayısı ne olursa olsun hızlanmayı sınırlar",
+          "İşlemci sayısı arttıkça hız sınırsız artar",
+          "Paralel kod her zaman doğrudur",
+          "Bellek hızı önemsizdir"
+        ],
+        "en": [
+          "The serial part limits speed-up no matter how many processors",
+          "Speed-up grows without limit",
+          "Parallel code is always correct",
+          "Memory speed does not matter"
+        ]
+      },
+      "explain": {
+        "tr": "Kodun %10’u seri ise hızlanma en fazla 10 kat olabilir.",
+        "en": "If 10% of the code is serial, the speed-up is at most 10×."
+      }
+    },
+    {
+      "id": "algorithms:masters:018",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Sabit parametreli izlenebilirlik (FPT) neyi ifade eder?",
+        "en": "What does fixed-parameter tractability (FPT) mean?"
+      },
+      "options": {
+        "tr": [
+          "Bir parametre küçük tutulduğunda zor problemin verimli çözülebilmesi",
+          "Her problemin polinom olması",
+          "Algoritmanın hiç parametre almaması",
+          "Sadece sabit girdilerle çalışma"
+        ],
+        "en": [
+          "A hard problem can be solved efficiently when a parameter is small",
+          "Every problem is polynomial",
+          "The algorithm takes no parameters",
+          "It works only on fixed inputs"
+        ]
+      },
+      "explain": {
+        "tr": "Çalışma süresi f(k)·poly(n) biçimindedir; k küçükse pratikte hızlıdır.",
+        "en": "Running time looks like f(k)·poly(n), which is fast when k is small."
+      }
     }
   ]
 }

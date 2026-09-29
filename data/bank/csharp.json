@@ -655,6 +655,917 @@
         "tr": "yield return, IEnumerable<T> döndüren bir yineleyici oluşturur.",
         "en": "yield return creates an iterator returning IEnumerable<T>."
       }
+    },
+    {
+      "id": "csharp:high:009",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "double sonuc = 7 / 2.0;\nConsole.WriteLine(sonuc.ToString(System.Globalization.CultureInfo.InvariantCulture));",
+      "options": {
+        "tr": [
+          "3.5",
+          "3",
+          "4",
+          "Hata"
+        ],
+        "en": [
+          "3.5",
+          "3",
+          "4",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "2.0 ondalıklı (double) olduğu için bölme de ondalıklı yapılır. InvariantCulture ondalık ayırıcıyı nokta yapar.",
+        "en": "2.0 is a double, so the division keeps the fraction. InvariantCulture prints a dot as the decimal separator."
+      }
+    },
+    {
+      "id": "csharp:high:010",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "string a = \"Merhaba \";\nstring b = \"Dünya\";\nConsole.WriteLine(a + b);",
+      "options": {
+        "tr": [
+          "Merhaba Dünya",
+          "MerhabaDünya",
+          "Merhaba + Dünya",
+          "Hata"
+        ],
+        "en": [
+          "Merhaba Dünya",
+          "MerhabaDünya",
+          "Merhaba + Dünya",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "+ işleci iki metni birleştirir; aradaki boşluk ilk metnin içindedir.",
+        "en": "The + operator joins two strings; the space is inside the first one."
+      }
+    },
+    {
+      "id": "csharp:high:011",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "Console.WriteLine(\"kitap\".Length);",
+      "options": {
+        "tr": [
+          "5",
+          "4",
+          "6",
+          "Hata"
+        ],
+        "en": [
+          "5",
+          "4",
+          "6",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Length metindeki karakter sayısını verir.",
+        "en": "Length gives the number of characters."
+      }
+    },
+    {
+      "id": "csharp:high:012",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "int n = 8;\nConsole.WriteLine(n % 2 == 0 ? \"Çift\" : \"Tek\");",
+      "options": {
+        "tr": [
+          "Çift",
+          "Tek",
+          "Çift Tek",
+          "Hata"
+        ],
+        "en": [
+          "Çift",
+          "Tek",
+          "Çift Tek",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "8 % 2 == 0 olduğu için sayı çifttir.",
+        "en": "8 % 2 == 0, so the number is even."
+      }
+    },
+    {
+      "id": "csharp:high:013",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "int[] sayilar = { 4, 8, 15 };\nConsole.WriteLine(sayilar.Length);",
+      "options": {
+        "tr": [
+          "3",
+          "2",
+          "1",
+          "Hata"
+        ],
+        "en": [
+          "3",
+          "2",
+          "1",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Dizinin Length özelliği eleman sayısını verir.",
+        "en": "An array’s Length gives the number of items."
+      }
+    },
+    {
+      "id": "csharp:high:014",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "int[] sayilar = { 4, 8, 15 };\nConsole.WriteLine(sayilar[2]);",
+      "options": {
+        "tr": [
+          "15",
+          "4",
+          "8",
+          "Hata"
+        ],
+        "en": [
+          "15",
+          "4",
+          "8",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Diziler 0’dan başlar; 2. indeks üçüncü elemandır.",
+        "en": "Arrays start at 0; index 2 is the third item."
+      }
+    },
+    {
+      "id": "csharp:high:015",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "C#’ta tek satırlık yorum hangi işaretle başlar?",
+        "en": "Which symbol starts a single-line comment in C#?"
+      },
+      "options": {
+        "tr": [
+          "//",
+          "#",
+          "--",
+          "<!--"
+        ],
+        "en": [
+          "//",
+          "#",
+          "--",
+          "<!--"
+        ]
+      },
+      "explain": {
+        "tr": "# Python’da, -- SQL’de yorum başlatır.",
+        "en": "# starts comments in Python and -- in SQL."
+      }
+    },
+    {
+      "id": "csharp:high:016",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "Console.WriteLine(\"kitap\".ToUpperInvariant());",
+      "options": {
+        "tr": [
+          "KITAP",
+          "kitap",
+          "Kitap",
+          "Hata"
+        ],
+        "en": [
+          "KITAP",
+          "kitap",
+          "Kitap",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "ToUpper() bütün harfleri büyük yapar (kültürden bağımsız sürümü ToUpperInvariant’tır).",
+        "en": "ToUpper() makes every letter uppercase (ToUpperInvariant ignores culture)."
+      }
+    },
+    {
+      "id": "csharp:high:017",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Windows Forms’ta bir TextBox’taki metne hangi özellikle erişilir?",
+        "en": "Which property reads the text of a Windows Forms TextBox?"
+      },
+      "options": {
+        "tr": [
+          "Text",
+          "Value",
+          "Content",
+          "Caption"
+        ],
+        "en": [
+          "Text",
+          "Value",
+          "Content",
+          "Caption"
+        ]
+      },
+      "explain": {
+        "tr": "textBox1.Text metni string olarak verir.",
+        "en": "textBox1.Text returns the text as a string."
+      }
+    },
+    {
+      "id": "csharp:high:018",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "int i = 0;\nwhile (i < 3)\n{\n    Console.Write(i + \" \");\n    i++;\n}",
+      "options": {
+        "tr": [
+          "0 1 2",
+          "1 2 3",
+          "0 1 2 3",
+          "Hata"
+        ],
+        "en": [
+          "0 1 2",
+          "1 2 3",
+          "0 1 2 3",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "while döngüsü i 3 olana kadar döner; Write alt satıra geçmez.",
+        "en": "The while loop runs until i is 3; Write stays on one line."
+      }
+    },
+    {
+      "id": "csharp:high:019",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "C#’ta bir metodun değer döndürmediğini hangi anahtar kelime belirtir?",
+        "en": "Which keyword says a C# method returns nothing?"
+      },
+      "options": {
+        "tr": [
+          "void",
+          "null",
+          "none",
+          "empty"
+        ],
+        "en": [
+          "void",
+          "null",
+          "none",
+          "empty"
+        ]
+      },
+      "explain": {
+        "tr": "static void Main() bir değer döndürmez.",
+        "en": "static void Main() returns no value."
+      }
+    },
+    {
+      "id": "csharp:high:020",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "int ay = 1;\nswitch (ay)\n{\n    case 12:\n    case 1:\n    case 2:\n        Console.WriteLine(\"Kış\");\n        break;\n    default:\n        Console.WriteLine(\"Yaz\");\n        break;\n}",
+      "options": {
+        "tr": [
+          "Kış",
+          "Yaz",
+          "İlkbahar",
+          "Hata"
+        ],
+        "en": [
+          "Kış",
+          "Yaz",
+          "İlkbahar",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "switch, ay değerine uyan case’i çalıştırır.",
+        "en": "switch runs the case that matches the month."
+      }
+    },
+    {
+      "id": "csharp:university:009",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "var adlar = new List<string> { \"Ali\", \"Ayşe\" };\nvar tr = new System.Globalization.CultureInfo(\"tr-TR\");\nConsole.WriteLine(string.Join(\", \", adlar.Select(a => a.ToUpper(tr))));",
+      "options": {
+        "tr": [
+          "ALİ, AYŞE",
+          "Ali, Ayşe",
+          "ali, ayşe",
+          "Hata"
+        ],
+        "en": [
+          "ALİ, AYŞE",
+          "Ali, Ayşe",
+          "ali, ayşe",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Select her elemanı dönüştürür; tr-TR kültürüyle i → İ olur.",
+        "en": "Select transforms each item; with the tr-TR culture, i becomes İ."
+      }
+    },
+    {
+      "id": "csharp:university:010",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "var sayilar = new[] { 5, 10, 20 };\nConsole.WriteLine(sayilar.Where(x => x >= 10).Sum());",
+      "options": {
+        "tr": [
+          "30",
+          "10",
+          "60",
+          "Hata"
+        ],
+        "en": [
+          "30",
+          "10",
+          "60",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Sum koşula uyan elemanları toplar: 10 + 20.",
+        "en": "Sum adds the matching items: 10 + 20."
+      }
+    },
+    {
+      "id": "csharp:university:011",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "Hayvan h = new Kopek();\nConsole.WriteLine(h.Ses());\n\nclass Hayvan\n{\n    public virtual string Ses() => \"Ses\";\n}\n\nclass Kopek : Hayvan\n{\n    public override string Ses() => \"Hav\";\n}",
+      "options": {
+        "tr": [
+          "Hav",
+          "Ses",
+          "Hata",
+          "Boş"
+        ],
+        "en": [
+          "Hav",
+          "Ses",
+          "Error",
+          "Boş"
+        ]
+      },
+      "explain": {
+        "tr": "override edilen virtual metot, nesnenin gerçek tipine göre çalışır (çok biçimlilik).",
+        "en": "The overridden virtual method runs by the object’s real type (polymorphism)."
+      }
+    },
+    {
+      "id": "csharp:university:012",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "var sozluk = new Dictionary<string, int> { [\"a\"] = 1 };\nConsole.WriteLine(sozluk.TryGetValue(\"b\", out var deger) ? deger.ToString() : \"Bulunamadı\");",
+      "options": {
+        "tr": [
+          "Bulunamadı",
+          "0",
+          "null",
+          "Hata"
+        ],
+        "en": [
+          "Bulunamadı",
+          "0",
+          "null",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "TryGetValue anahtar yoksa false döndürür, hata fırlatmaz.",
+        "en": "TryGetValue returns false for a missing key instead of throwing."
+      }
+    },
+    {
+      "id": "csharp:university:013",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "int b = 0;\ntry\n{\n    Console.WriteLine(10 / b);\n}\ncatch (DivideByZeroException)\n{\n    Console.WriteLine(\"Sıfıra bölme\");\n}",
+      "options": {
+        "tr": [
+          "Sıfıra bölme",
+          "0",
+          "Infinity",
+          "Hata"
+        ],
+        "en": [
+          "Sıfıra bölme",
+          "0",
+          "Infinity",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Tam sayıyı sıfıra bölmek DivideByZeroException fırlatır ve catch bloğu çalışır.",
+        "en": "Dividing an int by zero throws DivideByZeroException, so the catch block runs."
+      }
+    },
+    {
+      "id": "csharp:university:014",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "C#’ta bir özelliğin (property) dışarıdan okunup içeriden yazılabilmesi nasıl sağlanır?",
+        "en": "How do you make a C# property readable from outside but writable only inside?"
+      },
+      "options": {
+        "tr": [
+          "public int Puan { get; private set; }",
+          "public int Puan;",
+          "private int Puan { get; set; }",
+          "readonly int Puan()"
+        ],
+        "en": [
+          "public int Puan { get; private set; }",
+          "public int Puan;",
+          "private int Puan { get; set; }",
+          "readonly int Puan()"
+        ]
+      },
+      "explain": {
+        "tr": "Erişim belirleyicileri kapsüllemeyi sağlar.",
+        "en": "Access modifiers provide encapsulation."
+      }
+    },
+    {
+      "id": "csharp:university:015",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Bir sınıfın aynı adlı ama farklı parametreli metotlarına ne denir?",
+        "en": "What are methods with the same name but different parameters called?"
+      },
+      "options": {
+        "tr": [
+          "Aşırı yükleme (overloading)",
+          "Geçersiz kılma (overriding)",
+          "Kalıtım",
+          "Kapsülleme"
+        ],
+        "en": [
+          "Overloading",
+          "Overriding",
+          "Inheritance",
+          "Encapsulation"
+        ]
+      },
+      "explain": {
+        "tr": "Overriding ise alt sınıfın üst sınıftaki metodu yeniden tanımlamasıdır.",
+        "en": "Overriding is a subclass redefining a parent method."
+      }
+    },
+    {
+      "id": "csharp:university:016",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "abstract (soyut) bir sınıf için hangisi doğrudur?",
+        "en": "Which is true of an abstract class?"
+      },
+      "options": {
+        "tr": [
+          "Doğrudan örneği oluşturulamaz, alt sınıflarca tamamlanır",
+          "Hiç metot içeremez",
+          "Sadece statik alan içerir",
+          "Başka sınıftan türetilemez"
+        ],
+        "en": [
+          "It cannot be instantiated and is completed by subclasses",
+          "It cannot have methods",
+          "It holds only static fields",
+          "It cannot inherit"
+        ]
+      },
+      "explain": {
+        "tr": "Soyut metotlar alt sınıfta override edilmek zorundadır.",
+        "en": "Abstract methods must be overridden in subclasses."
+      }
+    },
+    {
+      "id": "csharp:university:017",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "var sayilar = new[] { 1, 2, 2, 1 };\nConsole.WriteLine(sayilar.Distinct().Count());",
+      "options": {
+        "tr": [
+          "2",
+          "3",
+          "1",
+          "Hata"
+        ],
+        "en": [
+          "2",
+          "3",
+          "1",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Distinct tekrar edenleri kaldırır: {1, 2}.",
+        "en": "Distinct removes duplicates: {1, 2}."
+      }
+    },
+    {
+      "id": "csharp:university:018",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Entity Framework nedir?",
+        "en": "What is Entity Framework?"
+      },
+      "options": {
+        "tr": [
+          "Veritabanı tablolarını C# sınıflarıyla eşleyen bir ORM",
+          "Bir test aracı",
+          "Bir web sunucusu",
+          "Bir oyun motoru"
+        ],
+        "en": [
+          "An ORM that maps database tables to C# classes",
+          "A testing tool",
+          "A web server",
+          "A game engine"
+        ]
+      },
+      "explain": {
+        "tr": "LINQ sorgularını parametreli SQL’e çevirir.",
+        "en": "It turns LINQ queries into parameterised SQL."
+      }
+    },
+    {
+      "id": "csharp:university:019",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "(string ad, int yas) Kisi() => (\"Ali\", 30);\n\nvar (ad, yas) = Kisi();\nConsole.WriteLine($\"{ad} {yas}\");",
+      "options": {
+        "tr": [
+          "Ali 30",
+          "Ali",
+          "30",
+          "Hata"
+        ],
+        "en": [
+          "Ali 30",
+          "Ali",
+          "30",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Tuple’lar birden çok değeri tek seferde döndürmeyi sağlar.",
+        "en": "Tuples return several values at once."
+      }
+    },
+    {
+      "id": "csharp:masters:009",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "var a = new Nokta(1, 2);\nvar b = new Nokta(1, 2);\nConsole.WriteLine($\"{a == b} {ReferenceEquals(a, b)}\");\n\nrecord Nokta(int X, int Y);",
+      "options": {
+        "tr": [
+          "True False",
+          "True True",
+          "False False",
+          "Hata"
+        ],
+        "en": [
+          "True False",
+          "True True",
+          "False False",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "record değer eşitliği kullanır; ReferenceEquals ise aynı nesne mi diye bakar.",
+        "en": "records use value equality; ReferenceEquals checks for the same object."
+      }
+    },
+    {
+      "id": "csharp:masters:010",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "var a = new Nokta(1, 2);\nConsole.WriteLine(a with { X = 5 });\n\nrecord Nokta(int X, int Y);",
+      "options": {
+        "tr": [
+          "Nokta { X = 5, Y = 2 }",
+          "Nokta { X = 1, Y = 2 }",
+          "5 2",
+          "Hata"
+        ],
+        "en": [
+          "Nokta { X = 5, Y = 2 }",
+          "Nokta { X = 1, Y = 2 }",
+          "5 2",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "with ifadesi, değiştirilmiş yeni bir kopya oluşturur.",
+        "en": "A with-expression creates a changed copy."
+      }
+    },
+    {
+      "id": "csharp:masters:011",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "int n = 42;\nstring s = n switch\n{\n    0 => \"sıfır\",\n    < 10 => \"küçük\",\n    _ => \"büyük\",\n};\nConsole.WriteLine(s);",
+      "options": {
+        "tr": [
+          "büyük",
+          "küçük",
+          "sıfır",
+          "Hata"
+        ],
+        "en": [
+          "büyük",
+          "küçük",
+          "sıfır",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "switch ifadesi desen eşlemeyle (pattern matching) ilk uyan kolu seçer.",
+        "en": "The switch expression picks the first matching pattern."
+      }
+    },
+    {
+      "id": "csharp:masters:012",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ekrana ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "Console.WriteLine(string.Join(\" \", Kareler(3)));\n\nstatic IEnumerable<int> Kareler(int n)\n{\n    for (int i = 1; i <= n; i++)\n        yield return i * i;\n}",
+      "options": {
+        "tr": [
+          "1 4 9",
+          "1 2 3",
+          "2 4 6",
+          "Hata"
+        ],
+        "en": [
+          "1 4 9",
+          "1 2 3",
+          "2 4 6",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "yield return ile yazılan yineleyici değerleri tembel olarak üretir.",
+        "en": "An iterator written with yield return produces values lazily."
+      }
+    },
+    {
+      "id": "csharp:masters:013",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Task.WhenAll ne yapar?",
+        "en": "What does Task.WhenAll do?"
+      },
+      "options": {
+        "tr": [
+          "Birden çok görevin hepsi bitince tamamlanan tek bir görev döndürür",
+          "Görevleri sırayla çalıştırır",
+          "İlk biten görevi döndürür",
+          "Görevleri iptal eder"
+        ],
+        "en": [
+          "Returns one task that completes when all given tasks finish",
+          "Runs tasks one by one",
+          "Returns the first finished task",
+          "Cancels the tasks"
+        ]
+      },
+      "explain": {
+        "tr": "İlk biteni beklemek için Task.WhenAny kullanılır.",
+        "en": "Task.WhenAny waits for the first one instead."
+      }
+    },
+    {
+      "id": "csharp:masters:014",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "C#’ta Nullable Reference Types özelliği açıkken string? neyi ifade eder?",
+        "en": "With nullable reference types enabled, what does string? mean?"
+      },
+      "options": {
+        "tr": [
+          "null olabileceği derleyiciye bildirilen bir referans",
+          "Hiç null olamayan metin",
+          "Bir değer tipi",
+          "Sabit metin"
+        ],
+        "en": [
+          "A reference the compiler is told may be null",
+          "Text that can never be null",
+          "A value type",
+          "A constant string"
+        ]
+      },
+      "explain": {
+        "tr": "Derleyici null olabilecek değerlerin kontrolsüz kullanımında uyarı verir.",
+        "en": "The compiler warns when possibly-null values are used without checks."
+      }
+    },
+    {
+      "id": "csharp:masters:015",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "C#’ta CancellationToken ne için kullanılır?",
+        "en": "What is a CancellationToken used for in C#?"
+      },
+      "options": {
+        "tr": [
+          "Uzun süren ya da asenkron işlemleri iş birliğiyle iptal etmek",
+          "Görevleri hızlandırmak",
+          "Belleği temizlemek",
+          "Hataları gizlemek"
+        ],
+        "en": [
+          "Cooperatively cancelling long or async operations",
+          "Speeding up tasks",
+          "Freeing memory",
+          "Hiding errors"
+        ]
+      },
+      "explain": {
+        "tr": "İptal isteği, işin kendi içinde kontrol edilir (ThrowIfCancellationRequested).",
+        "en": "The work checks for cancellation itself (ThrowIfCancellationRequested)."
+      }
+    },
+    {
+      "id": "csharp:masters:016",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Bağımlılık enjeksiyonunda (DI) “scoped” yaşam süresi ASP.NET Core’da neyi ifade eder?",
+        "en": "In ASP.NET Core DI, what does a “scoped” lifetime mean?"
+      },
+      "options": {
+        "tr": [
+          "Her HTTP isteği için bir örnek",
+          "Uygulama boyunca tek örnek",
+          "Her kullanımda yeni örnek",
+          "Hiç örnek oluşturulmaz"
+        ],
+        "en": [
+          "One instance per HTTP request",
+          "One instance for the whole app",
+          "A new instance every time",
+          "No instance is created"
+        ]
+      },
+      "explain": {
+        "tr": "Singleton uygulama boyunca, transient her istendiğinde yeni örnek üretir.",
+        "en": "Singleton lives for the app; transient creates a new one each time."
+      }
+    },
+    {
+      "id": "csharp:masters:017",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "C#’ta ref struct (ör. Span<T>) neden yığın (heap) üzerine taşınamaz?",
+        "en": "Why can’t a ref struct such as Span<T> live on the heap?"
+      },
+      "options": {
+        "tr": [
+          "Yığın (stack) belleğini güvenle gösterebilmesi için ömrü yığınla sınırlıdır",
+          "Çok büyük olduğu için",
+          "Serileştirilemediği için",
+          "Sadece Linux’ta çalıştığı için"
+        ],
+        "en": [
+          "It may point to stack memory, so its lifetime is tied to the stack",
+          "It is too large",
+          "It cannot be serialised",
+          "It only works on Linux"
+        ]
+      },
+      "explain": {
+        "tr": "Bu yüzden ref struct’lar sınıf alanı olamaz ve async metotlarda sınırlıdır.",
+        "en": "That is why ref structs cannot be class fields and are limited in async methods."
+      }
+    },
+    {
+      "id": "csharp:masters:018",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "IAsyncEnumerable<T> ile await foreach ne sağlar?",
+        "en": "What does IAsyncEnumerable<T> with await foreach provide?"
+      },
+      "options": {
+        "tr": [
+          "Elemanları asenkron olarak geldikçe tek tek işlemeyi",
+          "Listeyi paralel sıralamayı",
+          "Bütün veriyi önce belleğe almayı",
+          "Senkron çalışmayı"
+        ],
+        "en": [
+          "Processing items one by one as they arrive asynchronously",
+          "Sorting in parallel",
+          "Loading everything into memory first",
+          "Running synchronously"
+        ]
+      },
+      "explain": {
+        "tr": "Örneğin sayfalı bir API’den gelen kayıtları akış hâlinde işlemek için kullanılır.",
+        "en": "It is used, for example, to stream records from a paged API."
+      }
     }
   ]
 }

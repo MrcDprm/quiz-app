@@ -756,6 +756,654 @@
         "tr": "Bu yüzden normal dağılım istatistikte bu kadar yaygındır.",
         "en": "This is why the normal distribution is so common in statistics."
       }
+    },
+    {
+      "id": "math:university:009",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "eˣ fonksiyonunun türevi nedir?",
+        "en": "What is the derivative of eˣ?"
+      },
+      "options": {
+        "tr": [
+          "eˣ",
+          "x·eˣ⁻¹",
+          "ln x",
+          "1/x"
+        ],
+        "en": [
+          "eˣ",
+          "x·eˣ⁻¹",
+          "ln x",
+          "1/x"
+        ]
+      },
+      "explain": {
+        "tr": "eˣ, türevi kendisine eşit olan tek (sabit katı dışında) fonksiyondur.",
+        "en": "eˣ is the function whose derivative is itself."
+      }
+    },
+    {
+      "id": "math:university:010",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "sin x fonksiyonunun türevi nedir?",
+        "en": "What is the derivative of sin x?"
+      },
+      "options": {
+        "tr": [
+          "cos x",
+          "−cos x",
+          "−sin x",
+          "tan x"
+        ],
+        "en": [
+          "cos x",
+          "−cos x",
+          "−sin x",
+          "tan x"
+        ]
+      },
+      "explain": {
+        "tr": "cos x’in türevi ise −sin x’tir.",
+        "en": "The derivative of cos x is −sin x."
+      }
+    },
+    {
+      "id": "math:university:011",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "∫₀¹ x dx integralinin değeri kaçtır?",
+        "en": "What is ∫₀¹ x dx?"
+      },
+      "options": {
+        "tr": [
+          "1/2",
+          "1",
+          "2",
+          "0"
+        ],
+        "en": [
+          "1/2",
+          "1",
+          "2",
+          "0"
+        ]
+      },
+      "explain": {
+        "tr": "x²/2 fonksiyonunun 0’dan 1’e farkı 1/2’dir; üçgenin alanıyla aynıdır.",
+        "en": "x²/2 from 0 to 1 is 1/2, the area of a triangle."
+      }
+    },
+    {
+      "id": "math:university:012",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Zincir kuralına göre (x² + 1)³ fonksiyonunun türevi nedir?",
+        "en": "By the chain rule, what is the derivative of (x² + 1)³?"
+      },
+      "options": {
+        "tr": [
+          "6x(x² + 1)²",
+          "3(x² + 1)²",
+          "2x(x² + 1)³",
+          "3x²"
+        ],
+        "en": [
+          "6x(x² + 1)²",
+          "3(x² + 1)²",
+          "2x(x² + 1)³",
+          "3x²"
+        ]
+      },
+      "explain": {
+        "tr": "Dış türev 3(x² + 1)², iç türev 2x; çarpımları 6x(x² + 1)².",
+        "en": "Outer derivative 3(x² + 1)² times inner derivative 2x gives 6x(x² + 1)²."
+      }
+    },
+    {
+      "id": "math:university:013",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "1 + 1/2 + 1/4 + 1/8 + … sonsuz geometrik serisinin toplamı kaçtır?",
+        "en": "What is the sum of the infinite series 1 + 1/2 + 1/4 + 1/8 + …?"
+      },
+      "options": {
+        "tr": [
+          "2",
+          "∞",
+          "1",
+          "1,5"
+        ],
+        "en": [
+          "2",
+          "∞",
+          "1",
+          "1.5"
+        ]
+      },
+      "explain": {
+        "tr": "Geometrik seri toplamı a / (1 − r) = 1 / (1 − 1/2) = 2.",
+        "en": "A geometric series sums to a / (1 − r) = 1 / (1 − 1/2) = 2."
+      }
+    },
+    {
+      "id": "math:university:014",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "∑ 1/n (harmonik seri) için hangisi doğrudur?",
+        "en": "Which is true of the harmonic series ∑ 1/n?"
+      },
+      "options": {
+        "tr": [
+          "Iraksaktır (sonsuza gider)",
+          "2’ye yakınsar",
+          "1’e yakınsar",
+          "π’ye yakınsar"
+        ],
+        "en": [
+          "It diverges",
+          "It converges to 2",
+          "It converges to 1",
+          "It converges to π"
+        ]
+      },
+      "explain": {
+        "tr": "Terimler sıfıra gitse de toplam sınırsız büyür; ∑ 1/n² ise π²/6’ya yakınsar.",
+        "en": "The terms shrink to zero but the sum grows without bound; ∑ 1/n² converges to π²/6."
+      }
+    },
+    {
+      "id": "math:university:015",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Bir fonksiyonun yerel maksimum noktasında birinci türev ne olur?",
+        "en": "At a local maximum, what is the first derivative?"
+      },
+      "options": {
+        "tr": [
+          "Sıfır (ya da tanımsız)",
+          "Pozitif",
+          "Negatif",
+          "Her zaman 1"
+        ],
+        "en": [
+          "Zero (or undefined)",
+          "Positive",
+          "Negative",
+          "Always 1"
+        ]
+      },
+      "explain": {
+        "tr": "İkinci türev negatifse bu kritik nokta bir maksimumdur.",
+        "en": "If the second derivative is negative there, the critical point is a maximum."
+      }
+    },
+    {
+      "id": "math:university:016",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "5 kişiden 2 kişilik kaç farklı ekip seçilebilir?",
+        "en": "How many different 2-person teams can be chosen from 5 people?"
+      },
+      "options": {
+        "tr": [
+          "10",
+          "20",
+          "25",
+          "5"
+        ],
+        "en": [
+          "10",
+          "20",
+          "25",
+          "5"
+        ]
+      },
+      "explain": {
+        "tr": "Kombinasyon: C(5, 2) = 5! / (2!·3!) = 10. Sıra önemli olsaydı 20 olurdu.",
+        "en": "Combinations: C(5, 2) = 10. If order mattered it would be 20."
+      }
+    },
+    {
+      "id": "math:university:017",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Bir olayın beklenen değeri (expected value) neyi ifade eder?",
+        "en": "What does the expected value represent?"
+      },
+      "options": {
+        "tr": [
+          "Olasılıklarla ağırlıklandırılmış ortalama sonucu",
+          "En olası sonucu",
+          "En büyük sonucu",
+          "Medyanı"
+        ],
+        "en": [
+          "The probability-weighted average outcome",
+          "The most likely outcome",
+          "The largest outcome",
+          "The median"
+        ]
+      },
+      "explain": {
+        "tr": "Adil bir zarın beklenen değeri (1+2+…+6)/6 = 3,5’tir.",
+        "en": "A fair die’s expected value is (1+2+…+6)/6 = 3.5."
+      }
+    },
+    {
+      "id": "math:university:018",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "İki vektörün iç çarpımı (dot product) sıfırsa vektörler için ne söylenebilir?",
+        "en": "If the dot product of two non-zero vectors is zero, what are they?"
+      },
+      "options": {
+        "tr": [
+          "Birbirine diktir",
+          "Paraleldir",
+          "Eşittir",
+          "Birim vektördür"
+        ],
+        "en": [
+          "Perpendicular",
+          "Parallel",
+          "Equal",
+          "Unit vectors"
+        ]
+      },
+      "explain": {
+        "tr": "a · b = |a||b| cos θ; cos 90° = 0.",
+        "en": "a · b = |a||b| cos θ, and cos 90° = 0."
+      }
+    },
+    {
+      "id": "math:university:019",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Karmaşık sayılarda i² kaça eşittir?",
+        "en": "In complex numbers, what is i²?"
+      },
+      "options": {
+        "tr": [
+          "−1",
+          "1",
+          "i",
+          "0"
+        ],
+        "en": [
+          "−1",
+          "1",
+          "i",
+          "0"
+        ]
+      },
+      "explain": {
+        "tr": "i, karesi −1 olan sanal birimdir.",
+        "en": "i is the imaginary unit whose square is −1."
+      }
+    },
+    {
+      "id": "math:university:020",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "L’Hôpital kuralı ne zaman kullanılır?",
+        "en": "When is L’Hôpital’s rule used?"
+      },
+      "options": {
+        "tr": [
+          "0/0 ya da ∞/∞ belirsizliğindeki limitlerde",
+          "Her türev hesabında",
+          "İntegral alırken",
+          "Matris çarpımında"
+        ],
+        "en": [
+          "For limits of the form 0/0 or ∞/∞",
+          "For every derivative",
+          "For integrals",
+          "For matrix products"
+        ]
+      },
+      "explain": {
+        "tr": "Pay ve paydanın türevleri alınarak limit yeniden hesaplanır.",
+        "en": "You take the derivatives of the numerator and denominator and try the limit again."
+      }
+    },
+    {
+      "id": "math:masters:009",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Bir vektör uzayının boyutu neyi ifade eder?",
+        "en": "What is the dimension of a vector space?"
+      },
+      "options": {
+        "tr": [
+          "Bir tabanındaki vektör sayısını",
+          "Vektörlerin uzunluğunu",
+          "Sıfır vektörünün sayısını",
+          "Matrisin determinantını"
+        ],
+        "en": [
+          "The number of vectors in a basis",
+          "The length of its vectors",
+          "The number of zero vectors",
+          "A matrix determinant"
+        ]
+      },
+      "explain": {
+        "tr": "Her taban aynı sayıda vektör içerir; ℝ³’ün boyutu 3’tür.",
+        "en": "Every basis has the same size; ℝ³ has dimension 3."
+      }
+    },
+    {
+      "id": "math:masters:010",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Bir grup (group) yapısında bulunması gerekmeyen özellik hangisidir?",
+        "en": "Which property is not required for a group?"
+      },
+      "options": {
+        "tr": [
+          "Değişme özelliği (commutativity)",
+          "Birleşme özelliği",
+          "Birim eleman",
+          "Ters eleman"
+        ],
+        "en": [
+          "Commutativity",
+          "Associativity",
+          "An identity element",
+          "Inverses"
+        ]
+      },
+      "explain": {
+        "tr": "Değişme özelliği olan gruplara Abel grubu denir.",
+        "en": "Groups that are commutative are called abelian."
+      }
+    },
+    {
+      "id": "math:masters:011",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Kompakt bir kümede sürekli bir fonksiyon için hangisi doğrudur (Weierstrass)?",
+        "en": "What is true of a continuous function on a compact set (Weierstrass)?"
+      },
+      "options": {
+        "tr": [
+          "En büyük ve en küçük değerini alır",
+          "Her zaman sabittir",
+          "Türevlenemez",
+          "Sınırsızdır"
+        ],
+        "en": [
+          "It attains a maximum and a minimum",
+          "It is constant",
+          "It is not differentiable",
+          "It is unbounded"
+        ]
+      },
+      "explain": {
+        "tr": "Gerçek sayılarda kapalı ve sınırlı aralıklar kompakttır.",
+        "en": "In the reals, closed and bounded intervals are compact."
+      }
+    },
+    {
+      "id": "math:masters:012",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Bir Markov zincirinin temel özelliği nedir?",
+        "en": "What is the key property of a Markov chain?"
+      },
+      "options": {
+        "tr": [
+          "Gelecek durum yalnızca şimdiki duruma bağlıdır",
+          "Bütün geçmişe bağlıdır",
+          "Hiçbir duruma bağlı değildir",
+          "Durumlar hep aynıdır"
+        ],
+        "en": [
+          "The next state depends only on the current state",
+          "It depends on the whole history",
+          "It depends on nothing",
+          "States never change"
+        ]
+      },
+      "explain": {
+        "tr": "Bu “hafızasızlık” özelliği PageRank gibi algoritmaların temelidir.",
+        "en": "This memoryless property underlies algorithms such as PageRank."
+      }
+    },
+    {
+      "id": "math:masters:013",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Tekil değer ayrışımı (SVD) hangi alanda yaygın kullanılır?",
+        "en": "Where is singular value decomposition (SVD) widely used?"
+      },
+      "options": {
+        "tr": [
+          "Boyut indirgeme ve öneri sistemleri",
+          "Asal sayı testi",
+          "Metin şifreleme",
+          "Ağ yönlendirme"
+        ],
+        "en": [
+          "Dimensionality reduction and recommender systems",
+          "Primality testing",
+          "Text encryption",
+          "Network routing"
+        ]
+      },
+      "explain": {
+        "tr": "Temel bileşen analizi (PCA) SVD ile hesaplanabilir.",
+        "en": "Principal component analysis (PCA) can be computed with SVD."
+      }
+    },
+    {
+      "id": "math:masters:014",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Lagrange çarpanları yöntemi ne için kullanılır?",
+        "en": "What is the method of Lagrange multipliers for?"
+      },
+      "options": {
+        "tr": [
+          "Kısıt altında bir fonksiyonun ekstremumunu bulmak",
+          "İntegral hesaplamak",
+          "Matris tersi almak",
+          "Asal çarpanlara ayırmak"
+        ],
+        "en": [
+          "Finding extrema of a function under constraints",
+          "Computing integrals",
+          "Inverting matrices",
+          "Prime factorisation"
+        ]
+      },
+      "explain": {
+        "tr": "∇f = λ∇g koşulu kısıtlı optimum noktalarını verir.",
+        "en": "The condition ∇f = λ∇g gives the constrained optima."
+      }
+    },
+    {
+      "id": "math:masters:015",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Olasılıkta büyük sayılar yasası neyi söyler?",
+        "en": "What does the law of large numbers say?"
+      },
+      "options": {
+        "tr": [
+          "Deneme sayısı arttıkça örnek ortalaması beklenen değere yaklaşır",
+          "Her olay eşit olasılıklıdır",
+          "Büyük sayılar daha sık çıkar",
+          "Varyans sıfır olur"
+        ],
+        "en": [
+          "As trials grow, the sample mean approaches the expected value",
+          "Every event is equally likely",
+          "Large numbers come up more often",
+          "Variance becomes zero"
+        ]
+      },
+      "explain": {
+        "tr": "Bu yüzden çok sayıda yazı-tura atışında oran 1/2’ye yaklaşır.",
+        "en": "That is why the share of heads in many coin tosses approaches 1/2."
+      }
+    },
+    {
+      "id": "math:masters:016",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "RSA şifrelemesinin güvenliği hangi problemin zorluğuna dayanır?",
+        "en": "RSA’s security rests on the difficulty of which problem?"
+      },
+      "options": {
+        "tr": [
+          "Büyük sayıları asal çarpanlarına ayırma",
+          "Matris çarpımı",
+          "Sıralama",
+          "En kısa yol"
+        ],
+        "en": [
+          "Factoring large numbers into primes",
+          "Matrix multiplication",
+          "Sorting",
+          "Shortest paths"
+        ]
+      },
+      "explain": {
+        "tr": "Açık anahtar iki büyük asalın çarpımını içerir; asalları bulmak çok zordur.",
+        "en": "The public key contains the product of two large primes, which are very hard to recover."
+      }
+    },
+    {
+      "id": "math:masters:017",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Fermat’nın küçük teoremine göre p asal ve a, p’ye bölünmüyorsa aᵖ⁻¹ mod p kaçtır?",
+        "en": "By Fermat’s little theorem, if p is prime and p does not divide a, what is aᵖ⁻¹ mod p?"
+      },
+      "options": {
+        "tr": [
+          "1",
+          "0",
+          "a",
+          "p"
+        ],
+        "en": [
+          "1",
+          "0",
+          "a",
+          "p"
+        ]
+      },
+      "explain": {
+        "tr": "Bu sonuç asallık testlerinde ve RSA’da kullanılır.",
+        "en": "It is used in primality tests and in RSA."
+      }
+    },
+    {
+      "id": "math:masters:018",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Diferansiyel denklem dy/dx = y’nin genel çözümü nedir?",
+        "en": "What is the general solution of dy/dx = y?"
+      },
+      "options": {
+        "tr": [
+          "y = C·eˣ",
+          "y = x + C",
+          "y = C·x²",
+          "y = sin x + C"
+        ],
+        "en": [
+          "y = C·eˣ",
+          "y = x + C",
+          "y = C·x²",
+          "y = sin x + C"
+        ]
+      },
+      "explain": {
+        "tr": "Türevi kendisiyle orantılı olan fonksiyonlar üstel fonksiyonlardır; nüfus artışı böyle modellenir.",
+        "en": "Functions proportional to their own derivative are exponentials, as in population growth."
+      }
+    },
+    {
+      "id": "math:masters:019",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Bir grafın kromatik sayısı neyi ifade eder?",
+        "en": "What is the chromatic number of a graph?"
+      },
+      "options": {
+        "tr": [
+          "Komşu düğümler farklı renkte olacak şekilde gereken en az renk sayısını",
+          "Kenar sayısını",
+          "En uzun yolu",
+          "Düğüm sayısını"
+        ],
+        "en": [
+          "The fewest colours so that adjacent nodes differ",
+          "The number of edges",
+          "The longest path",
+          "The number of nodes"
+        ]
+      },
+      "explain": {
+        "tr": "Dört renk teoremi düzlemsel haritalar için 4 rengin yettiğini söyler.",
+        "en": "The four colour theorem says 4 colours suffice for planar maps."
+      }
+    },
+    {
+      "id": "math:masters:020",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Monte Carlo yöntemiyle π nasıl tahmin edilebilir?",
+        "en": "How can π be estimated with a Monte Carlo method?"
+      },
+      "options": {
+        "tr": [
+          "Kareye rastgele nokta atıp içteki çeyrek dairede kalanların oranıyla",
+          "Bir çemberin çevresini cetvelle ölçerek",
+          "Asal sayıları sayarak",
+          "Fibonacci dizisiyle"
+        ],
+        "en": [
+          "Throw random points in a square and count those inside the quarter circle",
+          "Measure a circle with a ruler",
+          "Count primes",
+          "Use the Fibonacci sequence"
+        ]
+      },
+      "explain": {
+        "tr": "Oran yaklaşık π/4’tür; nokta sayısı arttıkça tahmin iyileşir.",
+        "en": "The ratio is about π/4 and improves with more points."
+      }
     }
   ]
 }

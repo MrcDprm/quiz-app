@@ -645,24 +645,997 @@
         "tr": "Bu kod konsola ne yazdırır?",
         "en": "What does this code log?"
       },
-      "code": "\"use strict\";\nconst user = {\n  name: \"Ada\",\n  greet: () => this?.name,\n};\nconsole.log(user.greet());",
+      "code": "const sayac = {\n  n: 1,\n  oku() {\n    return this.n;\n  },\n};\nconst oku = sayac.oku;\nconsole.log(sayac.oku(), oku.call({ n: 2 }));",
+      "options": {
+        "tr": [
+          "1 2",
+          "1 1",
+          "2 2",
+          "Hata"
+        ],
+        "en": [
+          "1 2",
+          "1 1",
+          "2 2",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Normal fonksiyonlarda this çağrı anında belirlenir; call ile başka bir nesne this olarak verilebilir.",
+        "en": "In a normal function, this is set at call time; call can pass another object as this."
+      }
+    },
+    {
+      "id": "javascript:high:009",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "const ad = \"Ada\";\nconsole.log(`Merhaba ${ad}`);",
+      "options": {
+        "tr": [
+          "Merhaba Ada",
+          "Merhaba ${ad}",
+          "Merhaba",
+          "Hata"
+        ],
+        "en": [
+          "Merhaba Ada",
+          "Merhaba ${ad}",
+          "Merhaba",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Şablon metinlerde (backtick) ${ad} değişkenin değeriyle değiştirilir.",
+        "en": "In template literals, ${ad} is replaced with the value."
+      }
+    },
+    {
+      "id": "javascript:high:010",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "console.log(5 == \"5\");",
+      "options": {
+        "tr": [
+          "true",
+          "false",
+          "\"5\"",
+          "Hata"
+        ],
+        "en": [
+          "true",
+          "false",
+          "\"5\"",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "== tipi dönüştürerek karşılaştırır; \"5\" sayıya çevrilir.",
+        "en": "== converts types before comparing; \"5\" becomes a number."
+      }
+    },
+    {
+      "id": "javascript:high:011",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "console.log(typeof \"42\");",
+      "options": {
+        "tr": [
+          "string",
+          "number",
+          "text",
+          "Hata"
+        ],
+        "en": [
+          "string",
+          "number",
+          "text",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Tırnak içindeki değerler string türündedir.",
+        "en": "Quoted values are strings."
+      }
+    },
+    {
+      "id": "javascript:high:012",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "let x;\nconsole.log(x);",
       "options": {
         "tr": [
           "undefined",
-          "Ada",
           "null",
+          "0",
           "Hata"
         ],
         "en": [
           "undefined",
-          "Ada",
+          "null",
+          "0",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Değer atanmamış değişken undefined’dır.",
+        "en": "A variable with no value is undefined."
+      }
+    },
+    {
+      "id": "javascript:high:013",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "console.log(\"javascript\".toUpperCase());",
+      "options": {
+        "tr": [
+          "JAVASCRIPT",
+          "javascript",
+          "JavaScript",
+          "Hata"
+        ],
+        "en": [
+          "JAVASCRIPT",
+          "javascript",
+          "JavaScript",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "toUpperCase() bütün harfleri büyük yapar.",
+        "en": "toUpperCase() makes all letters uppercase."
+      }
+    },
+    {
+      "id": "javascript:high:014",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "const dizi = [1, 2];\ndizi.push(3);\nconsole.log(dizi.length);",
+      "options": {
+        "tr": [
+          "3",
+          "2",
+          "4",
+          "Hata"
+        ],
+        "en": [
+          "3",
+          "2",
+          "4",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "push yeni uzunluğu döndürür ve diziye ekler.",
+        "en": "push adds an item; the array length becomes 3."
+      }
+    },
+    {
+      "id": "javascript:high:015",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "console.log([1, 2, 3, 4].filter((x) => x % 2 === 0).join(\", \"));",
+      "options": {
+        "tr": [
+          "2, 4",
+          "1, 3",
+          "1, 2, 3, 4",
+          "Hata"
+        ],
+        "en": [
+          "2, 4",
+          "1, 3",
+          "1, 2, 3, 4",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "filter koşula uyanları seçer.",
+        "en": "filter keeps the items that match."
+      }
+    },
+    {
+      "id": "javascript:high:016",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "JavaScript’te dizideki her elemana sırayla işlem yapan döngü hangisidir?",
+        "en": "Which JavaScript loop goes through each value of an array?"
+      },
+      "options": {
+        "tr": [
+          "for...of",
+          "for...in",
+          "do...until",
+          "repeat"
+        ],
+        "en": [
+          "for...of",
+          "for...in",
+          "do...until",
+          "repeat"
+        ]
+      },
+      "explain": {
+        "tr": "for...of değerleri, for...in ise anahtarları (indeksleri) gezer.",
+        "en": "for...of goes over values; for...in goes over keys."
+      }
+    },
+    {
+      "id": "javascript:high:017",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "const n = 12;\nconsole.log(n > 10 ? \"büyük\" : \"küçük\");",
+      "options": {
+        "tr": [
+          "büyük",
+          "küçük",
+          "eşit",
+          "Hata"
+        ],
+        "en": [
+          "büyük",
+          "küçük",
+          "eşit",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Üçlü işleç: koşul doğruysa ilk, değilse ikinci değer seçilir.",
+        "en": "The ternary operator picks the first value if the condition is true."
+      }
+    },
+    {
+      "id": "javascript:high:018",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Tarayıcıda veriyi kalıcı olarak (sekme kapansa da) saklayan yapı hangisidir?",
+        "en": "Which browser feature keeps data even after the tab closes?"
+      },
+      "options": {
+        "tr": [
+          "localStorage",
+          "sessionStorage",
+          "Değişken",
+          "console"
+        ],
+        "en": [
+          "localStorage",
+          "sessionStorage",
+          "A variable",
+          "console"
+        ]
+      },
+      "explain": {
+        "tr": "sessionStorage sekme kapanınca silinir. Gizli bilgiler (token) localStorage’da tutulmamalıdır.",
+        "en": "sessionStorage clears when the tab closes. Secrets such as tokens should not go in localStorage."
+      }
+    },
+    {
+      "id": "javascript:high:019",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "console.log(JSON.stringify({ ad: \"Ali\", yas: 20 }));",
+      "options": {
+        "tr": [
+          "{\"ad\":\"Ali\",\"yas\":20}",
+          "[object Object]",
+          "ad yas",
+          "Hata"
+        ],
+        "en": [
+          "{\"ad\":\"Ali\",\"yas\":20}",
+          "[object Object]",
+          "ad yas",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "JSON.stringify nesneyi JSON metnine çevirir.",
+        "en": "JSON.stringify turns an object into JSON text."
+      }
+    },
+    {
+      "id": "javascript:high:020",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "const ikiKat = (n) => n * 2;\nconsole.log(ikiKat(5));",
+      "options": {
+        "tr": [
+          "10",
+          "5",
+          "15",
+          "Hata"
+        ],
+        "en": [
+          "10",
+          "5",
+          "15",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Fonksiyon parametreyi 2 ile çarpıp döndürür.",
+        "en": "The function returns its argument times 2."
+      }
+    },
+    {
+      "id": "javascript:university:009",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "const [a, b, ...kalan] = [1, 2, 3, 4];\nconsole.log(a, b, JSON.stringify(kalan).replace(\",\", \", \"));",
+      "options": {
+        "tr": [
+          "1 2 [3, 4]",
+          "1 2 3",
+          "[1, 2] 3 4",
+          "Hata"
+        ],
+        "en": [
+          "1 2 [3, 4]",
+          "1 2 3",
+          "[1, 2] 3 4",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Dizi yapı bozma: ilk iki eleman değişkenlere, ...kalan geri kalanlara gider.",
+        "en": "Array destructuring: the first two go into variables and ...rest takes the others."
+      }
+    },
+    {
+      "id": "javascript:university:010",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "const { sehir } = { ad: \"Ali\", sehir: \"Ankara\" };\nconsole.log(sehir);",
+      "options": {
+        "tr": [
+          "Ankara",
+          "undefined",
+          "sehir",
+          "Hata"
+        ],
+        "en": [
+          "Ankara",
+          "undefined",
+          "sehir",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Nesne yapı bozma, aynı adlı özelliği değişkene alır.",
+        "en": "Object destructuring copies the property with the same name."
+      }
+    },
+    {
+      "id": "javascript:university:011",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "const ayar = null;\nconsole.log(ayar ?? \"varsayılan\");",
+      "options": {
+        "tr": [
+          "varsayılan",
+          "undefined",
+          "null",
+          "Hata"
+        ],
+        "en": [
+          "varsayılan",
+          "undefined",
           "null",
           "Error"
         ]
       },
       "explain": {
-        "tr": "Ok fonksiyonları kendi this’ini almaz; burada this modül kapsamındaki undefined’dır ve ?. hatayı önler.",
-        "en": "Arrow functions do not get their own this; here this is undefined at module level and ?. avoids an error."
+        "tr": "?? sadece null ya da undefined olduğunda sağdaki değeri kullanır.",
+        "en": "?? uses the right side only for null or undefined."
+      }
+    },
+    {
+      "id": "javascript:university:012",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "const puan = 0;\nconsole.log(puan ?? \"varsayılan\");",
+      "options": {
+        "tr": [
+          "0",
+          "varsayılan",
+          "null",
+          "Hata"
+        ],
+        "en": [
+          "0",
+          "varsayılan",
+          "null",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "?? yalnızca null/undefined’a bakar; 0 geçerli bir değerdir. || olsaydı \"varsayılan\" yazardı.",
+        "en": "?? only checks null/undefined, so 0 is kept; with || it would print \"varsayılan\"."
+      }
+    },
+    {
+      "id": "javascript:university:013",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "const kullanici = {};\nconsole.log(kullanici.adres?.sehir);",
+      "options": {
+        "tr": [
+          "undefined",
+          "Hata",
+          "null",
+          "\"\""
+        ],
+        "en": [
+          "undefined",
+          "Error",
+          "null",
+          "\"\""
+        ]
+      },
+      "explain": {
+        "tr": "Opsiyonel zincirleme (?.) eksik özellikte hata yerine undefined döndürür.",
+        "en": "Optional chaining (?.) returns undefined instead of throwing."
+      }
+    },
+    {
+      "id": "javascript:university:014",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "async function calis() {\n  const sonuc = await Promise.resolve(\"bitti\");\n  console.log(sonuc);\n}\ncalis();",
+      "options": {
+        "tr": [
+          "bitti",
+          "Hata",
+          "undefined",
+          "Promise"
+        ],
+        "en": [
+          "bitti",
+          "Error",
+          "undefined",
+          "Promise"
+        ]
+      },
+      "explain": {
+        "tr": "await, Promise çözülene kadar bekler ve değerini döndürür.",
+        "en": "await waits for the Promise and returns its value."
+      }
+    },
+    {
+      "id": "javascript:university:015",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "async function calis() {\n  try {\n    await Promise.reject(new Error(\"bozuk\"));\n  } catch (hata) {\n    console.log(\"yakalandı: \" + hata.message);\n  }\n}\ncalis();",
+      "options": {
+        "tr": [
+          "yakalandı: bozuk",
+          "bozuk",
+          "undefined",
+          "Hata"
+        ],
+        "en": [
+          "yakalandı: bozuk",
+          "bozuk",
+          "undefined",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Reddedilen Promise try/catch ile yakalanır.",
+        "en": "A rejected Promise is caught with try/catch."
+      }
+    },
+    {
+      "id": "javascript:university:016",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "class Kisi {\n  constructor(ad, yas) {\n    this.ad = ad;\n    this.yas = yas;\n  }\n  tanit() {\n    return `${this.ad}, ${this.yas}`;\n  }\n}\nconsole.log(new Kisi(\"Ada\", 36).tanit());",
+      "options": {
+        "tr": [
+          "Ada, 36",
+          "Ada",
+          "36",
+          "Hata"
+        ],
+        "en": [
+          "Ada, 36",
+          "Ada",
+          "36",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Sınıf yapıcısı (constructor) alanları ayarlar, metot onları kullanır.",
+        "en": "The constructor sets the fields and the method uses them."
+      }
+    },
+    {
+      "id": "javascript:university:017",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "console.log([\"a\", \"b\"].includes(\"b\"));",
+      "options": {
+        "tr": [
+          "true",
+          "false",
+          "undefined",
+          "Hata"
+        ],
+        "en": [
+          "true",
+          "false",
+          "undefined",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "includes dizide eleman olup olmadığını söyler.",
+        "en": "includes tells whether the array contains the value."
+      }
+    },
+    {
+      "id": "javascript:university:018",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "fetch() fonksiyonu ne döndürür?",
+        "en": "What does fetch() return?"
+      },
+      "options": {
+        "tr": [
+          "Response’a çözülen bir Promise",
+          "Doğrudan JSON nesnesi",
+          "Bir metin",
+          "Hiçbir şey"
+        ],
+        "en": [
+          "A Promise that resolves to a Response",
+          "A JSON object directly",
+          "A string",
+          "Nothing"
+        ]
+      },
+      "explain": {
+        "tr": "Yanıtı okumak için ayrıca response.json() ya da response.text() beklenir.",
+        "en": "You then await response.json() or response.text() to read the body."
+      }
+    },
+    {
+      "id": "javascript:university:019",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Olay devretme (event delegation) nedir?",
+        "en": "What is event delegation?"
+      },
+      "options": {
+        "tr": [
+          "Tek bir üst öğedeki dinleyicinin alt öğelerdeki olayları yönetmesi",
+          "Olayları sunucuya göndermek",
+          "Olayları kapatmak",
+          "Her öğeye ayrı dinleyici eklemek"
+        ],
+        "en": [
+          "One listener on a parent handling events from its children",
+          "Sending events to the server",
+          "Turning events off",
+          "Adding a listener to every element"
+        ]
+      },
+      "explain": {
+        "tr": "Olaylar yukarı kabarcıklanır (bubbling); event.target ile tıklanan öğe bulunur.",
+        "en": "Events bubble up, and event.target shows which element was clicked."
+      }
+    },
+    {
+      "id": "javascript:university:020",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "console.log(JSON.stringify([[1, 2], [3, 4]].flat()).replace(/,/g, \", \"));",
+      "options": {
+        "tr": [
+          "[1, 2, 3, 4]",
+          "[[1, 2], [3, 4]]",
+          "[1, 2, [3, 4]]",
+          "Hata"
+        ],
+        "en": [
+          "[1, 2, 3, 4]",
+          "[[1, 2], [3, 4]]",
+          "[1, 2, [3, 4]]",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "flat() iç içe diziyi bir seviye düzleştirir.",
+        "en": "flat() flattens the nested array by one level."
+      }
+    },
+    {
+      "id": "javascript:masters:009",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "const ayar = Object.freeze({ seviye: 1 });\nconsole.log(Object.isFrozen(ayar), ayar.seviye);",
+      "options": {
+        "tr": [
+          "true 1",
+          "false 1",
+          "true 2",
+          "Hata"
+        ],
+        "en": [
+          "true 1",
+          "false 1",
+          "true 2",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Object.freeze nesneyi dondurur: özellikleri değiştirilemez, eklenemez, silinemez.",
+        "en": "Object.freeze makes the object read-only: properties cannot be changed, added or removed."
+      }
+    },
+    {
+      "id": "javascript:masters:010",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "function* uret() {\n  yield 2;\n  yield 3;\n  yield 4;\n}\nconsole.log([...uret()].reduce((a, b) => a + b, 0));",
+      "options": {
+        "tr": [
+          "9",
+          "[1, 2, 3]",
+          "undefined",
+          "Hata"
+        ],
+        "en": [
+          "9",
+          "[1, 2, 3]",
+          "undefined",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Jeneratör değerleri tek tek üretir; yayma (...) ile hepsi toplanıp toplanır.",
+        "en": "The generator yields values one by one; spreading collects them to be summed."
+      }
+    },
+    {
+      "id": "javascript:masters:011",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "console.log(new Set([\"a\", \"b\", \"a\"]).size);",
+      "options": {
+        "tr": [
+          "2",
+          "1",
+          "3",
+          "Hata"
+        ],
+        "en": [
+          "2",
+          "1",
+          "3",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Set tekrar eden değerleri tutmaz.",
+        "en": "A Set does not keep duplicate values."
+      }
+    },
+    {
+      "id": "javascript:masters:012",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "const out = [];\nasync function f() {\n  out.push(\"A\");\n  await null;\n  out.push(\"B\");\n  console.log(out.join(\" \"));\n}\nf();\nout.push(\"C\");",
+      "options": {
+        "tr": [
+          "A C B",
+          "A B C",
+          "C A B",
+          "B A C"
+        ],
+        "en": [
+          "A C B",
+          "A B C",
+          "C A B",
+          "B A C"
+        ]
+      },
+      "explain": {
+        "tr": "await sonrası kod mikro görev olarak çalışır; önce senkron \"C\" yazılır.",
+        "en": "Code after await runs as a microtask, so the synchronous \"C\" comes first."
+      }
+    },
+    {
+      "id": "javascript:masters:013",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "console.log(Symbol.for(\"id\") === Symbol.for(\"id\"));",
+      "options": {
+        "tr": [
+          "true",
+          "false",
+          "undefined",
+          "Hata"
+        ],
+        "en": [
+          "true",
+          "false",
+          "undefined",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Symbol her çağrıda benzersizdir; Symbol.for ise genel kayıttan aynı sembolü döndürür.",
+        "en": "Each Symbol() is unique; Symbol.for returns the same symbol from a global registry."
+      }
+    },
+    {
+      "id": "javascript:masters:014",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "class Hayvan {\n  constructor(ad) {\n    this.ad = ad;\n  }\n}\nclass Kopek extends Hayvan {\n  ses() {\n    return `${this.ad} hav hav`;\n  }\n}\nconsole.log(new Kopek(\"Rex\").ses());",
+      "options": {
+        "tr": [
+          "Rex hav hav",
+          "undefined hav hav",
+          "Hata",
+          "hav hav"
+        ],
+        "en": [
+          "Rex hav hav",
+          "undefined hav hav",
+          "Error",
+          "hav hav"
+        ]
+      },
+      "explain": {
+        "tr": "Prototip zinciri: Kopek.prototype Hayvan.prototype’tan kalıtım alır.",
+        "en": "Prototype chain: Kopek inherits from Hayvan."
+      }
+    },
+    {
+      "id": "javascript:masters:015",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Bir fonksiyonun çağrılmasını, olaylar durduktan belli bir süre sonraya ertelemeye ne denir?",
+        "en": "What is delaying a function until events have stopped for a while called?"
+      },
+      "options": {
+        "tr": [
+          "Debounce",
+          "Throttle",
+          "Memoize",
+          "Hoisting"
+        ],
+        "en": [
+          "Debounce",
+          "Throttle",
+          "Memoize",
+          "Hoisting"
+        ]
+      },
+      "explain": {
+        "tr": "Debounce arama kutusu gibi yerlerde her tuşta istek atmayı önler; throttle ise belli aralıklarla çalıştırır.",
+        "en": "Debounce avoids a request on every keystroke; throttle runs at fixed intervals."
+      }
+    },
+    {
+      "id": "javascript:masters:016",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Web Worker’ın temel faydası nedir?",
+        "en": "What is the main benefit of a Web Worker?"
+      },
+      "options": {
+        "tr": [
+          "Ağır işleri ana iş parçacığından ayırıp arayüzün donmasını önlemek",
+          "Sayfayı sunucuda çalıştırmak",
+          "CSS’i hızlandırmak",
+          "Çerezleri şifrelemek"
+        ],
+        "en": [
+          "Moving heavy work off the main thread so the UI stays responsive",
+          "Running the page on the server",
+          "Speeding up CSS",
+          "Encrypting cookies"
+        ]
+      },
+      "explain": {
+        "tr": "Worker’lar DOM’a erişemez; ana sayfayla mesajlaşarak çalışır.",
+        "en": "Workers cannot touch the DOM; they talk to the page by messages."
+      }
+    },
+    {
+      "id": "javascript:masters:017",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "console.log([10, 1, 2].sort((a, b) => a - b).join());",
+      "options": {
+        "tr": [
+          "1,2,10",
+          "1,10,2",
+          "10,2,1",
+          "Hata"
+        ],
+        "en": [
+          "1,2,10",
+          "1,10,2",
+          "10,2,1",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Karşılaştırma fonksiyonu sayıları sayısal olarak sıralar.",
+        "en": "The compare function sorts numerically."
+      }
+    },
+    {
+      "id": "javascript:masters:018",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod konsola ne yazdırır?",
+        "en": "What does this code log?"
+      },
+      "code": "const a = [1, 2, 3];\nconst b = a.toReversed();\nconsole.log(JSON.stringify(b).replace(/,/g, \", \"), JSON.stringify(a).replace(/,/g, \", \"));",
+      "options": {
+        "tr": [
+          "[3, 2, 1] [1, 2, 3]",
+          "[3, 2, 1] [3, 2, 1]",
+          "[1, 2, 3] [1, 2, 3]",
+          "Hata"
+        ],
+        "en": [
+          "[3, 2, 1] [1, 2, 3]",
+          "[3, 2, 1] [3, 2, 1]",
+          "[1, 2, 3] [1, 2, 3]",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "toReversed yeni dizi döndürür, orijinali değiştirmez.",
+        "en": "toReversed returns a new array and leaves the original alone."
+      }
+    },
+    {
+      "id": "javascript:masters:019",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "structuredClone ile JSON.parse(JSON.stringify(x)) arasındaki fark nedir?",
+        "en": "How does structuredClone differ from JSON.parse(JSON.stringify(x))?"
+      },
+      "options": {
+        "tr": [
+          "Date, Map, Set ve döngüsel referansları da doğru kopyalar",
+          "Daha yavaştır ve sığ kopyalar",
+          "Fonksiyonları kopyalar",
+          "Fark yoktur"
+        ],
+        "en": [
+          "It also copies Date, Map, Set and circular references correctly",
+          "It is slower and shallow",
+          "It copies functions",
+          "There is no difference"
+        ]
+      },
+      "explain": {
+        "tr": "JSON yöntemi tarihleri metne çevirir, Map/Set’i kaybeder.",
+        "en": "The JSON trick turns dates into strings and loses Map/Set."
       }
     }
   ]

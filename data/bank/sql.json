@@ -648,6 +648,870 @@
         "tr": "Sharding yazma yükünü dağıtır; replikasyon ise aynı verinin kopyalarını tutar.",
         "en": "Sharding spreads writes; replication keeps copies of the same data."
       }
+    },
+    {
+      "id": "sql:high:009",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir tablodaki bütün sütunları seçmek için hangi işaret kullanılır?",
+        "en": "Which symbol selects all columns?"
+      },
+      "options": {
+        "tr": [
+          "*",
+          "%",
+          "#",
+          "&"
+        ],
+        "en": [
+          "*",
+          "%",
+          "#",
+          "&"
+        ]
+      },
+      "explain": {
+        "tr": "SELECT * FROM ogrenciler; her sütunu getirir.",
+        "en": "SELECT * FROM students; returns every column."
+      }
+    },
+    {
+      "id": "sql:high:010",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Satır silmek için hangi komut kullanılır?",
+        "en": "Which command deletes rows?"
+      },
+      "options": {
+        "tr": [
+          "DELETE",
+          "DROP",
+          "REMOVE",
+          "ERASE"
+        ],
+        "en": [
+          "DELETE",
+          "DROP",
+          "REMOVE",
+          "ERASE"
+        ]
+      },
+      "explain": {
+        "tr": "DROP tabloyu tamamen siler; DELETE yalnızca satırları siler.",
+        "en": "DROP removes the whole table; DELETE removes rows."
+      }
+    },
+    {
+      "id": "sql:high:011",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Yeni bir tablo oluşturmak için hangi komut kullanılır?",
+        "en": "Which command creates a new table?"
+      },
+      "options": {
+        "tr": [
+          "CREATE TABLE",
+          "NEW TABLE",
+          "MAKE TABLE",
+          "INSERT TABLE"
+        ],
+        "en": [
+          "CREATE TABLE",
+          "NEW TABLE",
+          "MAKE TABLE",
+          "INSERT TABLE"
+        ]
+      },
+      "explain": {
+        "tr": "CREATE TABLE sütun adlarını ve tiplerini tanımlar.",
+        "en": "CREATE TABLE defines column names and types."
+      }
+    },
+    {
+      "id": "sql:high:012",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Sonuçlardaki tekrar eden değerleri kaldıran anahtar kelime hangisidir?",
+        "en": "Which keyword removes duplicate values from results?"
+      },
+      "options": {
+        "tr": [
+          "DISTINCT",
+          "UNIQUE",
+          "ONLY",
+          "SINGLE"
+        ],
+        "en": [
+          "DISTINCT",
+          "UNIQUE",
+          "ONLY",
+          "SINGLE"
+        ]
+      },
+      "explain": {
+        "tr": "SELECT DISTINCT sehir FROM musteriler; her şehri bir kez getirir.",
+        "en": "SELECT DISTINCT city FROM customers; lists each city once."
+      }
+    },
+    {
+      "id": "sql:high:013",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Sonuç sayısını sınırlamak için (ör. ilk 10) hangi ifade kullanılır?",
+        "en": "Which clause limits the number of results (for example, the first 10)?"
+      },
+      "options": {
+        "tr": [
+          "LIMIT",
+          "TOP ONLY",
+          "FIRST",
+          "MAX ROWS"
+        ],
+        "en": [
+          "LIMIT",
+          "TOP ONLY",
+          "FIRST",
+          "MAX ROWS"
+        ]
+      },
+      "explain": {
+        "tr": "Bazı veritabanlarında TOP ya da FETCH FIRST kullanılır.",
+        "en": "Some databases use TOP or FETCH FIRST instead."
+      }
+    },
+    {
+      "id": "sql:high:014",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir sütunun ortalamasını veren fonksiyon hangisidir?",
+        "en": "Which function returns the average of a column?"
+      },
+      "options": {
+        "tr": [
+          "AVG()",
+          "MEAN()",
+          "MID()",
+          "SUM()"
+        ],
+        "en": [
+          "AVG()",
+          "MEAN()",
+          "MID()",
+          "SUM()"
+        ]
+      },
+      "explain": {
+        "tr": "SUM toplam, MAX en büyük, MIN en küçük değeri verir.",
+        "en": "SUM gives the total, MAX the largest and MIN the smallest."
+      }
+    },
+    {
+      "id": "sql:high:015",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Birden çok koşulun hepsinin sağlanması için WHERE’de hangi işleç kullanılır?",
+        "en": "Which operator requires all conditions to be true in WHERE?"
+      },
+      "options": {
+        "tr": [
+          "AND",
+          "OR",
+          "NOT",
+          "IN"
+        ],
+        "en": [
+          "AND",
+          "OR",
+          "NOT",
+          "IN"
+        ]
+      },
+      "explain": {
+        "tr": "OR koşullardan biri, AND hepsi doğru olduğunda satırı getirir.",
+        "en": "OR needs one condition to be true; AND needs all of them."
+      }
+    },
+    {
+      "id": "sql:high:016",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir değerin bir listede olup olmadığını kontrol eden işleç hangisidir?",
+        "en": "Which operator checks whether a value is in a list?"
+      },
+      "options": {
+        "tr": [
+          "IN",
+          "LIKE",
+          "BETWEEN",
+          "EXISTS"
+        ],
+        "en": [
+          "IN",
+          "LIKE",
+          "BETWEEN",
+          "EXISTS"
+        ]
+      },
+      "explain": {
+        "tr": "WHERE sehir IN ('Ankara', 'İzmir') iki şehri birden seçer.",
+        "en": "WHERE city IN ('Ankara', 'Izmir') selects both cities."
+      }
+    },
+    {
+      "id": "sql:high:017",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir aralıktaki değerleri seçmek için hangi işleç kullanılır?",
+        "en": "Which operator selects values in a range?"
+      },
+      "options": {
+        "tr": [
+          "BETWEEN",
+          "RANGE",
+          "IN",
+          "WITHIN"
+        ],
+        "en": [
+          "BETWEEN",
+          "RANGE",
+          "IN",
+          "WITHIN"
+        ]
+      },
+      "explain": {
+        "tr": "WHERE fiyat BETWEEN 10 AND 20 iki ucu da dahil eder.",
+        "en": "WHERE price BETWEEN 10 AND 20 includes both ends."
+      }
+    },
+    {
+      "id": "sql:high:018",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir sütuna başka bir ad (takma ad) vermek için hangi anahtar kelime kullanılır?",
+        "en": "Which keyword gives a column an alias?"
+      },
+      "options": {
+        "tr": [
+          "AS",
+          "NAME",
+          "ALIAS",
+          "TO"
+        ],
+        "en": [
+          "AS",
+          "NAME",
+          "ALIAS",
+          "TO"
+        ]
+      },
+      "explain": {
+        "tr": "SELECT COUNT(*) AS toplam ... sonucu \"toplam\" adıyla gösterir.",
+        "en": "SELECT COUNT(*) AS total ... names the result \"total\"."
+      }
+    },
+    {
+      "id": "sql:high:019",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "SQL’in açılımı nedir?",
+        "en": "What does SQL stand for?"
+      },
+      "options": {
+        "tr": [
+          "Structured Query Language",
+          "Simple Question Language",
+          "Server Quick Link",
+          "System Query Logic"
+        ],
+        "en": [
+          "Structured Query Language",
+          "Simple Question Language",
+          "Server Quick Link",
+          "System Query Logic"
+        ]
+      },
+      "explain": {
+        "tr": "SQL, ilişkisel veritabanlarını sorgulamak için kullanılan standart dildir.",
+        "en": "SQL is the standard language for querying relational databases."
+      }
+    },
+    {
+      "id": "sql:high:020",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Tabloya yeni bir sütun eklemek için hangi komut kullanılır?",
+        "en": "Which command adds a column to a table?"
+      },
+      "options": {
+        "tr": [
+          "ALTER TABLE ... ADD",
+          "UPDATE TABLE",
+          "INSERT COLUMN",
+          "CREATE COLUMN"
+        ],
+        "en": [
+          "ALTER TABLE ... ADD",
+          "UPDATE TABLE",
+          "INSERT COLUMN",
+          "CREATE COLUMN"
+        ]
+      },
+      "explain": {
+        "tr": "ALTER TABLE tablonun yapısını değiştirir.",
+        "en": "ALTER TABLE changes the structure of a table."
+      }
+    },
+    {
+      "id": "sql:university:009",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Bir sorgunun sonucunu başka bir sorgunun içinde kullanmaya ne denir?",
+        "en": "What is using one query’s result inside another called?"
+      },
+      "options": {
+        "tr": [
+          "Alt sorgu (subquery)",
+          "Görünüm",
+          "Tetikleyici",
+          "İndeks"
+        ],
+        "en": [
+          "Subquery",
+          "View",
+          "Trigger",
+          "Index"
+        ]
+      },
+      "explain": {
+        "tr": "WHERE fiyat > (SELECT AVG(fiyat) FROM urunler) bir alt sorgudur.",
+        "en": "WHERE price > (SELECT AVG(price) FROM products) is a subquery."
+      }
+    },
+    {
+      "id": "sql:university:010",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Kayıtlı bir sorguyu sanal bir tablo gibi kullanmayı sağlayan yapı hangisidir?",
+        "en": "What lets you use a saved query like a virtual table?"
+      },
+      "options": {
+        "tr": [
+          "Görünüm (VIEW)",
+          "İndeks",
+          "Tetikleyici",
+          "Şema"
+        ],
+        "en": [
+          "View",
+          "Index",
+          "Trigger",
+          "Schema"
+        ]
+      },
+      "explain": {
+        "tr": "Görünümler karmaşık sorguları basitleştirir ve erişimi kısıtlayabilir.",
+        "en": "Views simplify complex queries and can restrict access."
+      }
+    },
+    {
+      "id": "sql:university:011",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Bir işlemdeki değişiklikleri kalıcı yapan komut hangisidir?",
+        "en": "Which command makes a transaction’s changes permanent?"
+      },
+      "options": {
+        "tr": [
+          "COMMIT",
+          "ROLLBACK",
+          "SAVE",
+          "END"
+        ],
+        "en": [
+          "COMMIT",
+          "ROLLBACK",
+          "SAVE",
+          "END"
+        ]
+      },
+      "explain": {
+        "tr": "ROLLBACK işlemdeki değişiklikleri geri alır.",
+        "en": "ROLLBACK undoes the transaction’s changes."
+      }
+    },
+    {
+      "id": "sql:university:012",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Bir ekleme ya da güncellemeden sonra otomatik çalışan kod hangisidir?",
+        "en": "Which database code runs automatically after an insert or update?"
+      },
+      "options": {
+        "tr": [
+          "Tetikleyici (trigger)",
+          "Görünüm",
+          "İndeks",
+          "Alt sorgu"
+        ],
+        "en": [
+          "Trigger",
+          "View",
+          "Index",
+          "Subquery"
+        ]
+      },
+      "explain": {
+        "tr": "Tetikleyiciler denetim kaydı tutmak gibi işler için kullanılır.",
+        "en": "Triggers are used for jobs such as audit logging."
+      }
+    },
+    {
+      "id": "sql:university:013",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "UNION ile UNION ALL arasındaki fark nedir?",
+        "en": "What is the difference between UNION and UNION ALL?"
+      },
+      "options": {
+        "tr": [
+          "UNION tekrarları kaldırır, UNION ALL hepsini tutar",
+          "UNION ALL tekrarları kaldırır",
+          "Aynıdır",
+          "UNION sadece iki tabloyla çalışır"
+        ],
+        "en": [
+          "UNION removes duplicates; UNION ALL keeps them all",
+          "UNION ALL removes duplicates",
+          "They are the same",
+          "UNION works with two tables only"
+        ]
+      },
+      "explain": {
+        "tr": "UNION ALL tekrar kontrolü yapmadığı için daha hızlıdır.",
+        "en": "UNION ALL is faster because it skips the duplicate check."
+      }
+    },
+    {
+      "id": "sql:university:014",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Çoka çok ilişki (ör. öğrenciler ve dersler) nasıl modellenir?",
+        "en": "How is a many-to-many relationship (e.g. students and courses) modelled?"
+      },
+      "options": {
+        "tr": [
+          "İki yabancı anahtar içeren ara (bağlantı) tablosuyla",
+          "Tek bir tabloya bütün dersleri virgülle yazarak",
+          "Her ders için yeni sütunla",
+          "Modellenemez"
+        ],
+        "en": [
+          "With a join table holding two foreign keys",
+          "By listing all courses in one comma-separated column",
+          "With a new column per course",
+          "It cannot be modelled"
+        ]
+      },
+      "explain": {
+        "tr": "Virgülle ayrılmış liste 1NF’ye aykırıdır ve sorgulamayı zorlaştırır.",
+        "en": "A comma-separated list breaks 1NF and makes querying hard."
+      }
+    },
+    {
+      "id": "sql:university:015",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "COUNT(sütun) ile COUNT(*) arasındaki fark nedir?",
+        "en": "What is the difference between COUNT(column) and COUNT(*)?"
+      },
+      "options": {
+        "tr": [
+          "COUNT(sütun) NULL değerleri saymaz",
+          "Aynıdır",
+          "COUNT(*) NULL saymaz",
+          "COUNT(sütun) daha çok satır sayar"
+        ],
+        "en": [
+          "COUNT(column) skips NULLs",
+          "They are the same",
+          "COUNT(*) skips NULLs",
+          "COUNT(column) counts more rows"
+        ]
+      },
+      "explain": {
+        "tr": "COUNT(*) bütün satırları sayar.",
+        "en": "COUNT(*) counts every row."
+      }
+    },
+    {
+      "id": "sql:university:016",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Bir sütuna tekrar eden değer girilmesini engelleyen kısıt hangisidir?",
+        "en": "Which constraint stops duplicate values in a column?"
+      },
+      "options": {
+        "tr": [
+          "UNIQUE",
+          "CHECK",
+          "DEFAULT",
+          "NOT NULL"
+        ],
+        "en": [
+          "UNIQUE",
+          "CHECK",
+          "DEFAULT",
+          "NOT NULL"
+        ]
+      },
+      "explain": {
+        "tr": "E-posta adresleri için UNIQUE kısıtı sık kullanılır.",
+        "en": "UNIQUE is often used for email addresses."
+      }
+    },
+    {
+      "id": "sql:university:017",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "CHECK kısıtı ne işe yarar?",
+        "en": "What does a CHECK constraint do?"
+      },
+      "options": {
+        "tr": [
+          "Değerlerin bir koşulu sağlamasını zorunlu kılar",
+          "Tabloyu yedekler",
+          "İndeks oluşturur",
+          "Satırları sıralar"
+        ],
+        "en": [
+          "Forces values to meet a condition",
+          "Backs up the table",
+          "Creates an index",
+          "Sorts rows"
+        ]
+      },
+      "explain": {
+        "tr": "Örneğin CHECK (fiyat >= 0) negatif fiyatı engeller.",
+        "en": "For example, CHECK (price >= 0) blocks negative prices."
+      }
+    },
+    {
+      "id": "sql:university:018",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Veritabanında şifre yerine ne saklanmalıdır?",
+        "en": "What should a database store instead of a password?"
+      },
+      "options": {
+        "tr": [
+          "Tuzlu ve yavaş bir hash (ör. bcrypt)",
+          "Şifrenin kendisi",
+          "Base64 hâli",
+          "Şifrenin tersi"
+        ],
+        "en": [
+          "A slow, salted hash (e.g. bcrypt)",
+          "The password itself",
+          "A Base64 version",
+          "The password reversed"
+        ]
+      },
+      "explain": {
+        "tr": "Veritabanı sızsa bile şifreler doğrudan okunamaz.",
+        "en": "Even if the database leaks, passwords cannot be read directly."
+      }
+    },
+    {
+      "id": "sql:masters:009",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "MVCC (çok sürümlü eşzamanlılık denetimi) ne sağlar?",
+        "en": "What does MVCC (multi-version concurrency control) provide?"
+      },
+      "options": {
+        "tr": [
+          "Okuyucuların yazıcıları beklemeden tutarlı bir anlık görüntü görmesini",
+          "Tabloların sıkıştırılmasını",
+          "Otomatik yedeklemeyi",
+          "Sorgu çevirisini"
+        ],
+        "en": [
+          "Readers see a consistent snapshot without waiting for writers",
+          "Table compression",
+          "Automatic backups",
+          "Query translation"
+        ]
+      },
+      "explain": {
+        "tr": "PostgreSQL ve Oracle MVCC kullanır.",
+        "en": "PostgreSQL and Oracle use MVCC."
+      }
+    },
+    {
+      "id": "sql:masters:010",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Hayalet okuma (phantom read) nedir?",
+        "en": "What is a phantom read?"
+      },
+      "options": {
+        "tr": [
+          "Aynı sorgu tekrarlanınca başka işlemin eklediği yeni satırların görünmesi",
+          "Silinen satırın okunması",
+          "Bozuk verinin okunması",
+          "Şifreli verinin okunması"
+        ],
+        "en": [
+          "New rows added by another transaction appear when a query is repeated",
+          "Reading a deleted row",
+          "Reading corrupted data",
+          "Reading encrypted data"
+        ]
+      },
+      "explain": {
+        "tr": "SERIALIZABLE yalıtım seviyesi hayalet okumayı önler.",
+        "en": "The SERIALIZABLE isolation level prevents phantom reads."
+      }
+    },
+    {
+      "id": "sql:masters:011",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "B-ağacı indeksi hangi sorgular için uygundur?",
+        "en": "Which queries suit a B-tree index?"
+      },
+      "options": {
+        "tr": [
+          "Eşitlik ve aralık sorguları",
+          "Sadece tam metin araması",
+          "Sadece coğrafi sorgular",
+          "Hiçbiri"
+        ],
+        "en": [
+          "Equality and range queries",
+          "Only full-text search",
+          "Only geographic queries",
+          "None"
+        ]
+      },
+      "explain": {
+        "tr": "B-ağaçları sıralı olduğu için BETWEEN ve ORDER BY’ı da hızlandırır.",
+        "en": "B-trees are ordered, so they also speed up BETWEEN and ORDER BY."
+      }
+    },
+    {
+      "id": "sql:masters:012",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Kapsayan indeks (covering index) ne demektir?",
+        "en": "What is a covering index?"
+      },
+      "options": {
+        "tr": [
+          "Sorgunun ihtiyaç duyduğu tüm sütunları içeren, tabloya gitmeyi gereksiz kılan indeks",
+          "Bütün tabloları kapsayan indeks",
+          "Sadece birincil anahtar indeksi",
+          "Şifreli indeks"
+        ],
+        "en": [
+          "An index holding every column the query needs, so the table is not read",
+          "An index over all tables",
+          "Only the primary key index",
+          "An encrypted index"
+        ]
+      },
+      "explain": {
+        "tr": "Bu durumda veritabanı yalnızca indeksi okuyarak cevap verir.",
+        "en": "The database can answer by reading only the index."
+      }
+    },
+    {
+      "id": "sql:masters:013",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "N+1 sorgu problemi nedir?",
+        "en": "What is the N+1 query problem?"
+      },
+      "options": {
+        "tr": [
+          "Bir liste için 1 sorgu, sonra her eleman için ayrı birer sorgu atılması",
+          "Sorguların N kez çalışması",
+          "İndeks sayısının N+1 olması",
+          "Veritabanının N+1 sunucuya bölünmesi"
+        ],
+        "en": [
+          "One query for a list, then a separate query for every item",
+          "Queries running N times",
+          "Having N+1 indexes",
+          "Splitting the database across N+1 servers"
+        ]
+      },
+      "explain": {
+        "tr": "JOIN ya da toplu yükleme (eager loading) ile çözülür.",
+        "en": "It is solved with a JOIN or eager loading."
+      }
+    },
+    {
+      "id": "sql:masters:014",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Ortak tablo ifadesi (CTE) hangi anahtar kelimeyle başlar?",
+        "en": "Which keyword starts a common table expression (CTE)?"
+      },
+      "options": {
+        "tr": [
+          "WITH",
+          "USING",
+          "DEFINE",
+          "LET"
+        ],
+        "en": [
+          "WITH",
+          "USING",
+          "DEFINE",
+          "LET"
+        ]
+      },
+      "explain": {
+        "tr": "WITH RECURSIVE ile ağaç yapıları sorgulanabilir.",
+        "en": "WITH RECURSIVE can query tree structures."
+      }
+    },
+    {
+      "id": "sql:masters:015",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Replikasyonda \"okuma kopyası\" (read replica) ne işe yarar?",
+        "en": "What is a read replica for?"
+      },
+      "options": {
+        "tr": [
+          "Okuma yükünü ana sunucudan alıp dağıtmak",
+          "Yazma işlemlerini hızlandırmak",
+          "Veriyi şifrelemek",
+          "Şemayı değiştirmek"
+        ],
+        "en": [
+          "Spreading read load away from the primary",
+          "Speeding up writes",
+          "Encrypting data",
+          "Changing the schema"
+        ]
+      },
+      "explain": {
+        "tr": "Kopyalar birkaç milisaniye geriden gelebilir (replication lag).",
+        "en": "Replicas may lag slightly behind (replication lag)."
+      }
+    },
+    {
+      "id": "sql:masters:016",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Bir tablodaki bölümleme (partitioning) neyi amaçlar?",
+        "en": "What is table partitioning for?"
+      },
+      "options": {
+        "tr": [
+          "Büyük tabloyu mantıksal parçalara bölüp sorguları ve bakımı hızlandırmak",
+          "Şifreleme",
+          "Yedekleme",
+          "Kullanıcı yetkilendirme"
+        ],
+        "en": [
+          "Splitting a large table into logical parts for faster queries and maintenance",
+          "Encryption",
+          "Backup",
+          "User authorisation"
+        ]
+      },
+      "explain": {
+        "tr": "Örneğin tarihe göre aylık bölümler eski verinin kolayca arşivlenmesini sağlar.",
+        "en": "Monthly partitions by date, for example, make old data easy to archive."
+      }
+    },
+    {
+      "id": "sql:masters:017",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "OLTP ile OLAP sistemleri arasındaki temel fark nedir?",
+        "en": "What is the key difference between OLTP and OLAP systems?"
+      },
+      "options": {
+        "tr": [
+          "OLTP çok sayıda kısa işlem, OLAP büyük analitik sorgular içindir",
+          "OLAP sadece yazma yapar",
+          "OLTP raporlama içindir",
+          "Fark yoktur"
+        ],
+        "en": [
+          "OLTP handles many short transactions; OLAP runs large analytical queries",
+          "OLAP only writes",
+          "OLTP is for reporting",
+          "There is no difference"
+        ]
+      },
+      "explain": {
+        "tr": "Veri ambarları genellikle sütun tabanlı depolama kullanır.",
+        "en": "Data warehouses often use column-oriented storage."
+      }
+    },
+    {
+      "id": "sql:masters:018",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Soft delete (yumuşak silme) nedir?",
+        "en": "What is a soft delete?"
+      },
+      "options": {
+        "tr": [
+          "Satırı silmek yerine “silindi” olarak işaretlemek",
+          "Tabloyu küçültmek",
+          "Veriyi sıkıştırmak",
+          "Yedeği silmek"
+        ],
+        "en": [
+          "Marking a row as deleted instead of removing it",
+          "Shrinking the table",
+          "Compressing data",
+          "Deleting a backup"
+        ]
+      },
+      "explain": {
+        "tr": "Geri almayı kolaylaştırır ama sorgularda filtre gerektirir.",
+        "en": "It makes undo easy but every query needs a filter."
+      }
     }
   ]
 }

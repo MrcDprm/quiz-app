@@ -648,6 +648,843 @@
         "tr": "Sunucu beklediği algoritmayı sabitlemeli ve imzayı her zaman doğrulamalıdır.",
         "en": "The server should pin the expected algorithm and always verify the signature."
       }
+    },
+    {
+      "id": "security:high:009",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir e-postadaki bağlantının gerçekte nereye gittiğini anlamanın güvenli yolu hangisidir?",
+        "en": "What is a safe way to see where a link in an email really goes?"
+      },
+      "options": {
+        "tr": [
+          "Tıklamadan üzerine gelip adresi kontrol etmek",
+          "Hemen tıklamak",
+          "Bağlantıyı arkadaşlara göndermek",
+          "Göndereni yanıtlamak"
+        ],
+        "en": [
+          "Hover without clicking and check the address",
+          "Click it right away",
+          "Forward it to friends",
+          "Reply to the sender"
+        ]
+      },
+      "explain": {
+        "tr": "Görünen metin ile gerçek adres farklı olabilir.",
+        "en": "The visible text and the real address can differ."
+      }
+    },
+    {
+      "id": "security:high:010",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Fidye yazılımı (ransomware) ne yapar?",
+        "en": "What does ransomware do?"
+      },
+      "options": {
+        "tr": [
+          "Dosyaları şifreleyip açmak için para ister",
+          "Bilgisayarı hızlandırır",
+          "Reklamları engeller",
+          "Yedek alır"
+        ],
+        "en": [
+          "Encrypts files and demands payment to unlock them",
+          "Speeds the computer up",
+          "Blocks ads",
+          "Makes backups"
+        ]
+      },
+      "explain": {
+        "tr": "Düzenli ve çevrim dışı yedekler en iyi korumadır.",
+        "en": "Regular offline backups are the best protection."
+      }
+    },
+    {
+      "id": "security:high:011",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Güçlü bir parola için hangisi daha etkilidir?",
+        "en": "Which makes a password stronger?"
+      },
+      "options": {
+        "tr": [
+          "Uzun bir parola cümlesi kullanmak",
+          "Doğum tarihini kullanmak",
+          "Adını tersten yazmak",
+          "Tek bir kelime kullanmak"
+        ],
+        "en": [
+          "Using a long passphrase",
+          "Using your birthday",
+          "Writing your name backwards",
+          "Using a single word"
+        ]
+      },
+      "explain": {
+        "tr": "Uzunluk, tahmin etmeyi en çok zorlaştıran etkendir.",
+        "en": "Length is what makes guessing hardest."
+      }
+    },
+    {
+      "id": "security:high:012",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Sosyal mühendislik nedir?",
+        "en": "What is social engineering?"
+      },
+      "options": {
+        "tr": [
+          "İnsanları kandırarak bilgi ya da erişim elde etmek",
+          "Sosyal medya uygulaması yazmak",
+          "Ağ kablosu döşemek",
+          "Veritabanı tasarlamak"
+        ],
+        "en": [
+          "Tricking people into giving information or access",
+          "Building a social media app",
+          "Laying network cables",
+          "Designing a database"
+        ]
+      },
+      "explain": {
+        "tr": "Saldırganlar genellikle teknolojiden çok insan hatasını hedefler.",
+        "en": "Attackers often target human error rather than technology."
+      }
+    },
+    {
+      "id": "security:high:013",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Güvenlik duvarının (firewall) görevi nedir?",
+        "en": "What does a firewall do?"
+      },
+      "options": {
+        "tr": [
+          "Ağ trafiğini kurallara göre izinli ya da engelli yapmak",
+          "Virüsleri silmek",
+          "İnterneti hızlandırmak",
+          "Şifreleri saklamak"
+        ],
+        "en": [
+          "Allowing or blocking network traffic by rules",
+          "Deleting viruses",
+          "Speeding up the internet",
+          "Storing passwords"
+        ]
+      },
+      "explain": {
+        "tr": "Güvenlik duvarı tek başına yeterli değildir; katmanlı savunma gerekir.",
+        "en": "A firewall alone is not enough; defence needs layers."
+      }
+    },
+    {
+      "id": "security:high:014",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir sitenin sertifika uyarısı verdiği durumda ne yapılmalıdır?",
+        "en": "What should you do when a site shows a certificate warning?"
+      },
+      "options": {
+        "tr": [
+          "Kişisel bilgi girmeden sayfadan çıkmak",
+          "Uyarıyı yok sayıp şifre girmek",
+          "Tarayıcıyı kapatıp aynı adrese yeniden girmek",
+          "Uyarıyı ekran görüntüsüyle paylaşmak"
+        ],
+        "en": [
+          "Leave without entering personal information",
+          "Ignore it and enter your password",
+          "Reopen the same address",
+          "Share a screenshot of it"
+        ]
+      },
+      "explain": {
+        "tr": "Uyarı, bağlantının araya giren biri tarafından izleniyor olabileceğini gösterebilir.",
+        "en": "The warning may mean someone is intercepting the connection."
+      }
+    },
+    {
+      "id": "security:high:015",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Kamu bilgisayarında hesabından çıkmayı unutmak neden risklidir?",
+        "en": "Why is forgetting to log out on a public computer risky?"
+      },
+      "options": {
+        "tr": [
+          "Sonraki kişi hesabını kullanabilir",
+          "Bilgisayar bozulur",
+          "İnternet kesilir",
+          "Risk yoktur"
+        ],
+        "en": [
+          "The next person can use your account",
+          "The computer breaks",
+          "The internet stops",
+          "There is no risk"
+        ]
+      },
+      "explain": {
+        "tr": "Ortak cihazlarda gizli sekme ve oturum kapatma önemlidir.",
+        "en": "On shared devices, use private browsing and log out."
+      }
+    },
+    {
+      "id": "security:high:016",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir uygulamanın istediği izinler (konum, kamera) için hangisi doğrudur?",
+        "en": "Which is right about app permissions such as location and camera?"
+      },
+      "options": {
+        "tr": [
+          "Sadece gerçekten gereken izinler verilmelidir",
+          "Hepsine her zaman izin verilmelidir",
+          "İzinlerin önemi yoktur",
+          "İzinler sadece bilgisayarlarda vardır"
+        ],
+        "en": [
+          "Grant only the permissions really needed",
+          "Always allow everything",
+          "Permissions do not matter",
+          "Only computers have permissions"
+        ]
+      },
+      "explain": {
+        "tr": "Bu, en az yetki ilkesinin günlük hayattaki karşılığıdır.",
+        "en": "This is the principle of least privilege in daily life."
+      }
+    },
+    {
+      "id": "security:high:017",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Hangi bilgi sosyal medyada paylaşılmamalıdır?",
+        "en": "Which information should not be shared on social media?"
+      },
+      "options": {
+        "tr": [
+          "Kimlik numarası ve ev adresi",
+          "Favori kitap",
+          "Tatil fotoğrafı (geçmişte)",
+          "Sevdiğin şarkı"
+        ],
+        "en": [
+          "ID number and home address",
+          "Favourite book",
+          "A past holiday photo",
+          "A favourite song"
+        ]
+      },
+      "explain": {
+        "tr": "Kimlik bilgileri dolandırıcılıkta kullanılabilir.",
+        "en": "Identity details can be used for fraud."
+      }
+    },
+    {
+      "id": "security:high:018",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Kötü amaçlı yazılımlara karşı hangisi iyi bir alışkanlıktır?",
+        "en": "Which is a good habit against malware?"
+      },
+      "options": {
+        "tr": [
+          "Programları sadece resmi kaynaklardan indirmek",
+          "Korsan yazılım kullanmak",
+          "Antivirüsü kapatmak",
+          "Bütün e-posta eklerini açmak"
+        ],
+        "en": [
+          "Downloading programs only from official sources",
+          "Using pirated software",
+          "Turning off antivirus",
+          "Opening every attachment"
+        ]
+      },
+      "explain": {
+        "tr": "Korsan yazılımlar sıkça zararlı kod içerir.",
+        "en": "Pirated software often carries malicious code."
+      }
+    },
+    {
+      "id": "security:high:019",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir sitede \"Beni hatırla\" seçeneği ortak bilgisayarda neden kullanılmamalıdır?",
+        "en": "Why avoid “Remember me” on a shared computer?"
+      },
+      "options": {
+        "tr": [
+          "Oturum açık kalır ve başkaları hesabına erişebilir",
+          "Site yavaşlar",
+          "Şifre değişir",
+          "Hesap silinir"
+        ],
+        "en": [
+          "The session stays open for others to use",
+          "The site slows down",
+          "The password changes",
+          "The account is deleted"
+        ]
+      },
+      "explain": {
+        "tr": "Kalıcı oturumlar kişisel cihazlarda kullanılmalıdır.",
+        "en": "Persistent sessions belong on personal devices."
+      }
+    },
+    {
+      "id": "security:high:020",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Veri ihlali haberi duyduğun bir sitede hesabın varsa ilk ne yapmalısın?",
+        "en": "If a site you use had a data breach, what should you do first?"
+      },
+      "options": {
+        "tr": [
+          "O sitedeki ve aynı şifreyi kullandığın her yerdeki şifreni değiştirmek",
+          "Hiçbir şey yapmamak",
+          "Hesabına daha sık girmek",
+          "Şifreni sosyal medyada paylaşmak"
+        ],
+        "en": [
+          "Change that password and anywhere you reused it",
+          "Do nothing",
+          "Log in more often",
+          "Post your password online"
+        ]
+      },
+      "explain": {
+        "tr": "Aynı şifreyi farklı sitelerde kullanmak zincirleme risk oluşturur.",
+        "en": "Reusing passwords spreads the risk to other sites."
+      }
+    },
+    {
+      "id": "security:university:009",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Clickjacking saldırısı nasıl önlenir?",
+        "en": "How is clickjacking prevented?"
+      },
+      "options": {
+        "tr": [
+          "frame-ancestors (CSP) ya da X-Frame-Options ile sayfanın çerçeve içinde açılmasını engellemek",
+          "Şifreleri uzatmak",
+          "Rate limit eklemek",
+          "Veritabanını şifrelemek"
+        ],
+        "en": [
+          "Blocking framing with CSP frame-ancestors or X-Frame-Options",
+          "Longer passwords",
+          "Rate limiting",
+          "Encrypting the database"
+        ]
+      },
+      "explain": {
+        "tr": "Saldırgan sitenizi görünmez bir çerçevede açıp kullanıcıya tıklatmaya çalışır.",
+        "en": "The attacker loads your site in an invisible frame and tricks users into clicking."
+      }
+    },
+    {
+      "id": "security:university:010",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Yetki kontrolü neden sunucu tarafında yapılmalıdır?",
+        "en": "Why must authorisation be checked on the server?"
+      },
+      "options": {
+        "tr": [
+          "İstemci tarafındaki kontroller kullanıcı tarafından atlatılabilir",
+          "Sunucu daha hızlıdır",
+          "Tarayıcılar JavaScript çalıştıramaz",
+          "Tasarım daha güzel olur"
+        ],
+        "en": [
+          "Client-side checks can be bypassed by the user",
+          "The server is faster",
+          "Browsers cannot run JavaScript",
+          "The design looks nicer"
+        ]
+      },
+      "explain": {
+        "tr": "Kullanıcı isteği curl ya da tarayıcı araçlarıyla değiştirip doğrudan gönderebilir.",
+        "en": "Users can alter requests with curl or browser tools and send them directly."
+      }
+    },
+    {
+      "id": "security:university:011",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "IDOR (Güvensiz Doğrudan Nesne Referansı) açığı nedir?",
+        "en": "What is an IDOR (Insecure Direct Object Reference) flaw?"
+      },
+      "options": {
+        "tr": [
+          "Kimliği değiştirerek başkasının kaydına yetki kontrolü olmadan erişebilmek",
+          "Şifrelerin düz metin saklanması",
+          "Sayfanın yavaş yüklenmesi",
+          "CSS hatası"
+        ],
+        "en": [
+          "Accessing someone else’s record by changing an ID without an authorisation check",
+          "Storing passwords in plain text",
+          "A slow page",
+          "A CSS bug"
+        ]
+      },
+      "explain": {
+        "tr": "Her istekte kaydın o kullanıcıya ait olup olmadığı kontrol edilmelidir.",
+        "en": "Every request must check that the record belongs to the user."
+      }
+    },
+    {
+      "id": "security:university:012",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Parola hash’lerken “tuz” (salt) ne işe yarar?",
+        "en": "What is a salt for when hashing passwords?"
+      },
+      "options": {
+        "tr": [
+          "Aynı parolaların farklı hash üretmesini sağlayıp hazır tabloları işe yaramaz kılar",
+          "Hash’i kısaltır",
+          "Parolayı geri çözmeyi sağlar",
+          "Hash’i hızlandırır"
+        ],
+        "en": [
+          "It makes identical passwords hash differently, defeating precomputed tables",
+          "It shortens the hash",
+          "It lets you decrypt the password",
+          "It speeds hashing up"
+        ]
+      },
+      "explain": {
+        "tr": "bcrypt ve Argon2 tuzu otomatik ekler.",
+        "en": "bcrypt and Argon2 add a salt automatically."
+      }
+    },
+    {
+      "id": "security:university:013",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "HSTS başlığı ne sağlar?",
+        "en": "What does the HSTS header ensure?"
+      },
+      "options": {
+        "tr": [
+          "Tarayıcının siteye sadece HTTPS ile bağlanmasını",
+          "Sayfanın önbelleğe alınmamasını",
+          "Çerezlerin silinmesini",
+          "Sitenin çerçevelenmesini"
+        ],
+        "en": [
+          "The browser only connects to the site over HTTPS",
+          "The page is not cached",
+          "Cookies are deleted",
+          "The site is framed"
+        ]
+      },
+      "explain": {
+        "tr": "Strict-Transport-Security, HTTP’ye düşürme saldırılarını önler.",
+        "en": "Strict-Transport-Security prevents downgrade attacks to HTTP."
+      }
+    },
+    {
+      "id": "security:university:014",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "SameSite=Strict çerez ayarı hangi saldırıya karşı yardımcı olur?",
+        "en": "Which attack does a SameSite=Strict cookie help against?"
+      },
+      "options": {
+        "tr": [
+          "CSRF",
+          "SQL enjeksiyonu",
+          "Kaba kuvvet",
+          "DDoS"
+        ],
+        "en": [
+          "CSRF",
+          "SQL injection",
+          "Brute force",
+          "DDoS"
+        ]
+      },
+      "explain": {
+        "tr": "Çerez, başka sitelerden başlayan isteklerle gönderilmez.",
+        "en": "The cookie is not sent on requests started by other sites."
+      }
+    },
+    {
+      "id": "security:university:015",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Hata sayfalarında ayrıntılı yığın izi (stack trace) göstermek neden sakıncalıdır?",
+        "en": "Why is showing detailed stack traces on error pages risky?"
+      },
+      "options": {
+        "tr": [
+          "Saldırgana sistemin iç yapısı hakkında bilgi verir",
+          "Sayfa yavaşlar",
+          "Kullanıcı kaybolur",
+          "Arama motoru cezası verir"
+        ],
+        "en": [
+          "It tells attackers about the system’s internals",
+          "It slows the page",
+          "Users get lost",
+          "Search engines penalise it"
+        ]
+      },
+      "explain": {
+        "tr": "Ayrıntılar sunucu loguna yazılmalı, kullanıcıya genel bir mesaj gösterilmelidir.",
+        "en": "Details go to server logs; users see a generic message."
+      }
+    },
+    {
+      "id": "security:university:016",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Dosya yükleme özelliğinde hangi kontroller yapılmalıdır?",
+        "en": "Which checks should a file upload feature do?"
+      },
+      "options": {
+        "tr": [
+          "Tür, boyut ve içerik doğrulaması",
+          "Sadece dosya adı kontrolü",
+          "Hiçbiri, kullanıcıya güvenilir",
+          "Sadece uzantı kontrolü"
+        ],
+        "en": [
+          "Type, size and content checks",
+          "Only the file name",
+          "None; trust the user",
+          "Only the extension"
+        ]
+      },
+      "explain": {
+        "tr": "Uzantı kolayca değiştirilebilir; dosya içeriği de kontrol edilmelidir.",
+        "en": "Extensions are easy to fake, so the content must be checked too."
+      }
+    },
+    {
+      "id": "security:university:017",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "OWASP Top 10 nedir?",
+        "en": "What is the OWASP Top 10?"
+      },
+      "options": {
+        "tr": [
+          "Web uygulamalarındaki en kritik güvenlik risklerinin listesi",
+          "En hızlı 10 programlama dili",
+          "En popüler 10 site",
+          "Bir antivirüs programı"
+        ],
+        "en": [
+          "A list of the most critical web application security risks",
+          "The 10 fastest languages",
+          "The 10 most popular sites",
+          "An antivirus program"
+        ]
+      },
+      "explain": {
+        "tr": "Kırık erişim denetimi ve enjeksiyon listenin üst sıralarındadır.",
+        "en": "Broken access control and injection rank near the top."
+      }
+    },
+    {
+      "id": "security:university:018",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Bir API’nin döndürdüğü veride neden sadece gereken alanlar olmalıdır?",
+        "en": "Why should an API return only the fields that are needed?"
+      },
+      "options": {
+        "tr": [
+          "Gizli alanların (ör. şifre hash’i) yanlışlıkla sızmasını önlemek için",
+          "Yanıt renkli olsun diye",
+          "Veritabanını büyütmek için",
+          "Hiçbir önemi yoktur"
+        ],
+        "en": [
+          "To avoid leaking hidden fields such as password hashes",
+          "To make responses colourful",
+          "To grow the database",
+          "It does not matter"
+        ]
+      },
+      "explain": {
+        "tr": "Bu hataya “aşırı veri ifşası” (excessive data exposure) denir.",
+        "en": "This mistake is called excessive data exposure."
+      }
+    },
+    {
+      "id": "security:masters:009",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Sıfır güven (zero trust) mimarisinin temel ilkesi nedir?",
+        "en": "What is the core principle of zero-trust architecture?"
+      },
+      "options": {
+        "tr": [
+          "Ağın içinde bile hiçbir isteğe varsayılan olarak güvenmemek ve her erişimi doğrulamak",
+          "İç ağı tamamen güvenli saymak",
+          "Sadece güvenlik duvarına güvenmek",
+          "Şifre kullanmamak"
+        ],
+        "en": [
+          "Trust no request by default, even inside the network, and verify every access",
+          "Treat the internal network as safe",
+          "Rely only on firewalls",
+          "Use no passwords"
+        ]
+      },
+      "explain": {
+        "tr": "Kimlik, cihaz durumu ve bağlam her istekte değerlendirilir.",
+        "en": "Identity, device state and context are checked on every request."
+      }
+    },
+    {
+      "id": "security:masters:010",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Parolasız kimlik doğrulamada passkey (WebAuthn) neye dayanır?",
+        "en": "What does passwordless login with passkeys (WebAuthn) rely on?"
+      },
+      "options": {
+        "tr": [
+          "Cihazda saklanan özel anahtarla açık anahtar kriptografisine",
+          "SMS kodlarına",
+          "Güvenlik sorularına",
+          "E-posta bağlantısına"
+        ],
+        "en": [
+          "Public-key cryptography with a private key kept on the device",
+          "SMS codes",
+          "Security questions",
+          "Email links"
+        ]
+      },
+      "explain": {
+        "tr": "Özel anahtar cihazdan çıkmadığı için oltalamaya karşı dayanıklıdır.",
+        "en": "The private key never leaves the device, so it resists phishing."
+      }
+    },
+    {
+      "id": "security:masters:011",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Güvenli rastgele sayı üretimi için hangisi kullanılmalıdır?",
+        "en": "What should be used to generate secure random numbers?"
+      },
+      "options": {
+        "tr": [
+          "crypto.getRandomValues (CSPRNG)",
+          "Math.random",
+          "Saatin milisaniyesi",
+          "Sabit bir tohum"
+        ],
+        "en": [
+          "crypto.getRandomValues (a CSPRNG)",
+          "Math.random",
+          "The clock’s milliseconds",
+          "A fixed seed"
+        ]
+      },
+      "explain": {
+        "tr": "Math.random tahmin edilebilir; token ve anahtar üretimi için uygun değildir.",
+        "en": "Math.random is predictable and unfit for tokens or keys."
+      }
+    },
+    {
+      "id": "security:masters:012",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Prototip kirliliği (prototype pollution) saldırısında ne olur?",
+        "en": "What happens in a prototype pollution attack?"
+      },
+      "options": {
+        "tr": [
+          "__proto__ gibi anahtarlarla Object.prototype değiştirilip bütün nesneler etkilenir",
+          "Veritabanı silinir",
+          "Sayfa rengi değişir",
+          "Şifre çözülür"
+        ],
+        "en": [
+          "Keys like __proto__ modify Object.prototype and affect every object",
+          "The database is deleted",
+          "The page colour changes",
+          "A password is decrypted"
+        ]
+      },
+      "explain": {
+        "tr": "Kullanıcı verisini nesnelere birleştirirken izin verilen alanlar seçilmelidir.",
+        "en": "When merging user data into objects, pick only allowed fields."
+      }
+    },
+    {
+      "id": "security:masters:013",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "ReDoS saldırısı neyi hedefler?",
+        "en": "What does a ReDoS attack target?"
+      },
+      "options": {
+        "tr": [
+          "Aşırı geri izleme yapan düzenli ifadeleri kilitleyerek hizmeti durdurmayı",
+          "Veritabanı şifrelerini",
+          "DNS kayıtlarını",
+          "Çerezleri"
+        ],
+        "en": [
+          "Freezing a service with regexes that backtrack excessively",
+          "Database passwords",
+          "DNS records",
+          "Cookies"
+        ]
+      },
+      "explain": {
+        "tr": "İç içe niceleyiciler ((a+)+) tehlikelidir; girdi uzunluğu sınırlanmalıdır.",
+        "en": "Nested quantifiers such as (a+)+ are risky; limit input length."
+      }
+    },
+    {
+      "id": "security:masters:014",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Güvenli yazılım geliştirmede “tehdit modelleme” ne zaman yapılmalıdır?",
+        "en": "When should threat modelling happen in secure development?"
+      },
+      "options": {
+        "tr": [
+          "Tasarım aşamasında, kod yazılmadan önce",
+          "Sadece saldırıdan sonra",
+          "Yayından yıllar sonra",
+          "Hiçbir zaman"
+        ],
+        "en": [
+          "During design, before code is written",
+          "Only after an attack",
+          "Years after release",
+          "Never"
+        ]
+      },
+      "explain": {
+        "tr": "STRIDE gibi yöntemler olası tehditleri sistematik olarak listeler.",
+        "en": "Methods such as STRIDE list possible threats systematically."
+      }
+    },
+    {
+      "id": "security:masters:015",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Anahtar döndürme (key rotation) neden yapılır?",
+        "en": "Why rotate keys?"
+      },
+      "options": {
+        "tr": [
+          "Sızmış olabilecek bir anahtarın verebileceği zararın süresini sınırlamak için",
+          "Anahtarları kısaltmak için",
+          "Sunucuyu hızlandırmak için",
+          "Loglamayı kapatmak için"
+        ],
+        "en": [
+          "To limit how long a leaked key could cause harm",
+          "To shorten keys",
+          "To speed up servers",
+          "To disable logging"
+        ]
+      },
+      "explain": {
+        "tr": "Birden çok aktif anahtarı destekleyen sistemler kesintisiz döndürme yapabilir.",
+        "en": "Systems that support several active keys can rotate without downtime."
+      }
+    },
+    {
+      "id": "security:masters:016",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Bir web uygulamasında log’lara neden parola ya da token yazılmamalıdır?",
+        "en": "Why should passwords or tokens never be written to logs?"
+      },
+      "options": {
+        "tr": [
+          "Log’lar geniş erişimli olabilir ve sızdığında kimlik bilgileri açığa çıkar",
+          "Log’lar çok yer kaplar",
+          "Log’lar okunamaz",
+          "Yasal değildir ama güvenlidir"
+        ],
+        "en": [
+          "Logs are widely accessible and would expose credentials if leaked",
+          "Logs take too much space",
+          "Logs cannot be read",
+          "It is only a legal issue"
+        ]
+      },
+      "explain": {
+        "tr": "Hassas alanlar log’a yazılmadan önce maskelenmelidir.",
+        "en": "Sensitive fields should be masked before logging."
+      }
+    },
+    {
+      "id": "security:masters:017",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Content Security Policy’de nonce ne işe yarar?",
+        "en": "What is a nonce for in a Content Security Policy?"
+      },
+      "options": {
+        "tr": [
+          "Yalnızca sunucunun her yanıtta verdiği tek seferlik değeri taşıyan satır içi script’lere izin vermek",
+          "Script’leri sıkıştırmak",
+          "Çerezleri şifrelemek",
+          "Resimleri önbelleğe almak"
+        ],
+        "en": [
+          "Allowing only inline scripts carrying the one-time value the server sets per response",
+          "Compressing scripts",
+          "Encrypting cookies",
+          "Caching images"
+        ]
+      },
+      "explain": {
+        "tr": "Saldırganın enjekte ettiği script nonce’u bilmediği için çalışmaz.",
+        "en": "An injected script does not know the nonce, so it does not run."
+      }
     }
   ]
 }

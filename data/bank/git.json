@@ -648,6 +648,843 @@
         "tr": "Submodule, dış deponun belirli bir commit’ine işaret eder.",
         "en": "A submodule points to a specific commit of the other repository."
       }
+    },
+    {
+      "id": "git:high:009",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Hazırlanmamış değişiklikleri satır satır gösteren komut hangisidir?",
+        "en": "Which command shows unstaged changes line by line?"
+      },
+      "options": {
+        "tr": [
+          "git diff",
+          "git status",
+          "git log",
+          "git show"
+        ],
+        "en": [
+          "git diff",
+          "git status",
+          "git log",
+          "git show"
+        ]
+      },
+      "explain": {
+        "tr": "git diff --staged ise hazırlanmış değişiklikleri gösterir.",
+        "en": "git diff --staged shows the staged changes instead."
+      }
+    },
+    {
+      "id": "git:high:010",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Uzaktaki değişiklikleri indirip mevcut dala birleştiren komut hangisidir?",
+        "en": "Which command downloads remote changes and merges them into the current branch?"
+      },
+      "options": {
+        "tr": [
+          "git pull",
+          "git push",
+          "git clone",
+          "git init"
+        ],
+        "en": [
+          "git pull",
+          "git push",
+          "git clone",
+          "git init"
+        ]
+      },
+      "explain": {
+        "tr": "pull = fetch + merge.",
+        "en": "pull = fetch + merge."
+      }
+    },
+    {
+      "id": "git:high:011",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Git ile GitHub arasındaki fark nedir?",
+        "en": "What is the difference between Git and GitHub?"
+      },
+      "options": {
+        "tr": [
+          "Git sürüm kontrol aracıdır, GitHub depoları barındıran bir hizmettir",
+          "Aynı şeydir",
+          "GitHub bir programlama dilidir",
+          "Git sadece Windows’ta çalışır"
+        ],
+        "en": [
+          "Git is a version control tool; GitHub is a service that hosts repositories",
+          "They are the same",
+          "GitHub is a programming language",
+          "Git only runs on Windows"
+        ]
+      },
+      "explain": {
+        "tr": "GitLab ve Bitbucket de benzer barındırma hizmetleridir.",
+        "en": "GitLab and Bitbucket are similar hosting services."
+      }
+    },
+    {
+      "id": "git:high:012",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir commit mesajı nasıl olmalıdır?",
+        "en": "What makes a good commit message?"
+      },
+      "options": {
+        "tr": [
+          "Yapılan değişikliği kısa ve açık anlatmalı",
+          "\"düzeltme\" yazmak yeterli",
+          "Boş bırakılmalı",
+          "Olabildiğince uzun olmalı"
+        ],
+        "en": [
+          "It should describe the change briefly and clearly",
+          "\"fix\" is enough",
+          "It should be empty",
+          "It should be as long as possible"
+        ]
+      },
+      "explain": {
+        "tr": "Örnek: feat(login): add password reset.",
+        "en": "Example: feat(login): add password reset."
+      }
+    },
+    {
+      "id": "git:high:013",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Yeni bir dal oluşturup ona geçen komut hangisidir?",
+        "en": "Which command creates a new branch and switches to it?"
+      },
+      "options": {
+        "tr": [
+          "git switch -c yeni-dal",
+          "git branch -d yeni-dal",
+          "git merge yeni-dal",
+          "git push yeni-dal"
+        ],
+        "en": [
+          "git switch -c new-branch",
+          "git branch -d new-branch",
+          "git merge new-branch",
+          "git push new-branch"
+        ]
+      },
+      "explain": {
+        "tr": "Eski yöntem: git checkout -b yeni-dal.",
+        "en": "The older way is git checkout -b new-branch."
+      }
+    },
+    {
+      "id": "git:high:014",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir dalı mevcut dala birleştiren komut hangisidir?",
+        "en": "Which command merges a branch into the current one?"
+      },
+      "options": {
+        "tr": [
+          "git merge",
+          "git join",
+          "git combine",
+          "git add"
+        ],
+        "en": [
+          "git merge",
+          "git join",
+          "git combine",
+          "git add"
+        ]
+      },
+      "explain": {
+        "tr": "Önce hedef dala geçilir, sonra git merge kaynak-dal çalıştırılır.",
+        "en": "Switch to the target branch, then run git merge source-branch."
+      }
+    },
+    {
+      "id": "git:high:015",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Hazırlık alanına alınmış bir dosyayı geri çıkarmak için hangi komut kullanılır?",
+        "en": "Which command removes a file from the staging area?"
+      },
+      "options": {
+        "tr": [
+          "git restore --staged dosya",
+          "git delete dosya",
+          "git rm -rf /",
+          "git push --undo"
+        ],
+        "en": [
+          "git restore --staged file",
+          "git delete file",
+          "git rm -rf /",
+          "git push --undo"
+        ]
+      },
+      "explain": {
+        "tr": "Dosyadaki değişiklikler kaybolmaz, sadece hazırlıktan çıkar.",
+        "en": "The changes stay in the file; they are just unstaged."
+      }
+    },
+    {
+      "id": "git:high:016",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Depodaki uzak bağlantıları listeleyen komut hangisidir?",
+        "en": "Which command lists a repository’s remotes?"
+      },
+      "options": {
+        "tr": [
+          "git remote -v",
+          "git list",
+          "git origin",
+          "git show remote"
+        ],
+        "en": [
+          "git remote -v",
+          "git list",
+          "git origin",
+          "git show remote"
+        ]
+      },
+      "explain": {
+        "tr": "Genellikle ana uzak depo \"origin\" olarak adlandırılır.",
+        "en": "The main remote is usually called \"origin\"."
+      }
+    },
+    {
+      "id": "git:high:017",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": ".env dosyası neden .gitignore’a eklenir?",
+        "en": "Why is .env added to .gitignore?"
+      },
+      "options": {
+        "tr": [
+          "Şifre ve API anahtarları gibi gizli bilgiler içerdiği için",
+          "Çok büyük olduğu için",
+          "Git onu okuyamadığı için",
+          "Gereksiz olduğu için"
+        ],
+        "en": [
+          "It contains secrets such as passwords and API keys",
+          "It is too large",
+          "Git cannot read it",
+          "It is useless"
+        ]
+      },
+      "explain": {
+        "tr": "Depoda yalnızca örnek değerli .env.example tutulur.",
+        "en": "Only a .env.example with sample values goes in the repository."
+      }
+    },
+    {
+      "id": "git:high:018",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir dosyanın hangi satırını kimin değiştirdiğini gösteren komut hangisidir?",
+        "en": "Which command shows who last changed each line of a file?"
+      },
+      "options": {
+        "tr": [
+          "git blame",
+          "git who",
+          "git author",
+          "git log --lines"
+        ],
+        "en": [
+          "git blame",
+          "git who",
+          "git author",
+          "git log --lines"
+        ]
+      },
+      "explain": {
+        "tr": "Adına rağmen amaç suçlamak değil, değişikliğin nedenini bulmaktır.",
+        "en": "Despite the name, the goal is to find why a line changed, not to blame."
+      }
+    },
+    {
+      "id": "git:high:019",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Son commit’e küçük bir düzeltme eklemek (henüz push edilmemişse) için ne kullanılır?",
+        "en": "What adds a small fix to the last commit (if not yet pushed)?"
+      },
+      "options": {
+        "tr": [
+          "git commit --amend",
+          "git revert",
+          "git reset --hard",
+          "git stash"
+        ],
+        "en": [
+          "git commit --amend",
+          "git revert",
+          "git reset --hard",
+          "git stash"
+        ]
+      },
+      "explain": {
+        "tr": "Paylaşılmış commit’lerde amend geçmişi değiştirdiği için dikkatli olunmalıdır.",
+        "en": "Be careful: amend rewrites history, which matters once commits are shared."
+      }
+    },
+    {
+      "id": "git:high:020",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Çalışma alanındaki bir dosyanın değişikliklerini son commit’teki hâline döndüren komut hangisidir?",
+        "en": "Which command discards a file’s changes back to the last commit?"
+      },
+      "options": {
+        "tr": [
+          "git restore dosya",
+          "git add dosya",
+          "git push dosya",
+          "git commit dosya"
+        ],
+        "en": [
+          "git restore file",
+          "git add file",
+          "git push file",
+          "git commit file"
+        ]
+      },
+      "explain": {
+        "tr": "Bu işlem kaydedilmemiş değişiklikleri kalıcı olarak siler.",
+        "en": "This permanently throws away the unsaved changes."
+      }
+    },
+    {
+      "id": "git:university:009",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Fork ile clone arasındaki fark nedir?",
+        "en": "What is the difference between a fork and a clone?"
+      },
+      "options": {
+        "tr": [
+          "Fork sunucuda kendi hesabınıza kopya açar, clone bilgisayara indirir",
+          "Aynıdır",
+          "Clone sunucuda kopya açar",
+          "Fork sadece dal oluşturur"
+        ],
+        "en": [
+          "A fork copies the repository to your account on the server; a clone downloads it",
+          "They are the same",
+          "A clone copies on the server",
+          "A fork only makes a branch"
+        ]
+      },
+      "explain": {
+        "tr": "Açık kaynağa katkıda genellikle önce fork, sonra pull request yapılır.",
+        "en": "Open-source contributions usually start with a fork, then a pull request."
+      }
+    },
+    {
+      "id": "git:university:010",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "git reset --soft HEAD~1 ne yapar?",
+        "en": "What does git reset --soft HEAD~1 do?"
+      },
+      "options": {
+        "tr": [
+          "Son commit’i geri alır ama değişiklikleri hazırlık alanında tutar",
+          "Değişiklikleri tamamen siler",
+          "Uzak depoyu siler",
+          "Yeni bir dal açar"
+        ],
+        "en": [
+          "Undoes the last commit but keeps the changes staged",
+          "Deletes the changes",
+          "Deletes the remote",
+          "Opens a new branch"
+        ]
+      },
+      "explain": {
+        "tr": "--mixed değişiklikleri hazırlıktan çıkarır, --hard tamamen siler.",
+        "en": "--mixed unstages the changes and --hard deletes them."
+      }
+    },
+    {
+      "id": "git:university:011",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Fast-forward birleştirme ne zaman olur?",
+        "en": "When does a fast-forward merge happen?"
+      },
+      "options": {
+        "tr": [
+          "Hedef dalda yeni commit yoksa ve dal sadece ileri taşınabiliyorsa",
+          "Her zaman",
+          "Çakışma varsa",
+          "Etiket kullanılınca"
+        ],
+        "en": [
+          "When the target has no new commits and can simply move forward",
+          "Always",
+          "When there is a conflict",
+          "When tags are used"
+        ]
+      },
+      "explain": {
+        "tr": "Bu durumda birleştirme commit’i oluşmaz.",
+        "en": "No merge commit is created in that case."
+      }
+    },
+    {
+      "id": "git:university:012",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Sürekli entegrasyonda (CI) her push’ta genellikle ne çalışır?",
+        "en": "In continuous integration, what usually runs on every push?"
+      },
+      "options": {
+        "tr": [
+          "Otomatik testler ve derleme",
+          "Veritabanı silme",
+          "Sunucu kapatma",
+          "Kod silme"
+        ],
+        "en": [
+          "Automated tests and builds",
+          "Deleting the database",
+          "Shutting down servers",
+          "Deleting code"
+        ]
+      },
+      "explain": {
+        "tr": "GitHub Actions, CI işlemleri için sık kullanılır.",
+        "en": "GitHub Actions is commonly used for CI."
+      }
+    },
+    {
+      "id": "git:university:013",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Anlamlı sürümlemede (semver) 2.4.1 → 3.0.0 değişikliği neyi anlatır?",
+        "en": "In semantic versioning, what does going from 2.4.1 to 3.0.0 mean?"
+      },
+      "options": {
+        "tr": [
+          "Geriye dönük uyumsuz (breaking) bir değişiklik",
+          "Küçük bir hata düzeltmesi",
+          "Yeni ama uyumlu bir özellik",
+          "Sadece belge güncellemesi"
+        ],
+        "en": [
+          "A breaking change",
+          "A small bug fix",
+          "A new compatible feature",
+          "Only a docs update"
+        ]
+      },
+      "explain": {
+        "tr": "MAJOR.MINOR.PATCH: büyük, küçük ve yama sürümleri.",
+        "en": "MAJOR.MINOR.PATCH: breaking, feature and fix releases."
+      }
+    },
+    {
+      "id": "git:university:014",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Conventional Commits biçiminde yeni bir özellik commit’i nasıl başlar?",
+        "en": "In Conventional Commits, how does a new feature commit start?"
+      },
+      "options": {
+        "tr": [
+          "feat:",
+          "fix:",
+          "docs:",
+          "chore:"
+        ],
+        "en": [
+          "feat:",
+          "fix:",
+          "docs:",
+          "chore:"
+        ]
+      },
+      "explain": {
+        "tr": "fix hata düzeltmesi, docs belge, chore bakım işleri içindir.",
+        "en": "fix is for bug fixes, docs for documentation, chore for maintenance."
+      }
+    },
+    {
+      "id": "git:university:015",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Bir dalı birleştirdikten sonra yerelde silmek için hangi komut kullanılır?",
+        "en": "Which command deletes a merged local branch?"
+      },
+      "options": {
+        "tr": [
+          "git branch -d dal",
+          "git delete dal",
+          "git remove dal",
+          "git branch --kill dal"
+        ],
+        "en": [
+          "git branch -d branch",
+          "git delete branch",
+          "git remove branch",
+          "git branch --kill branch"
+        ]
+      },
+      "explain": {
+        "tr": "Birleştirilmemiş dal için -D gerekir; bu değişiklikleri kaybettirebilir.",
+        "en": "An unmerged branch needs -D, which can lose work."
+      }
+    },
+    {
+      "id": "git:university:016",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "cherry-pick ne yapar?",
+        "en": "What does cherry-pick do?"
+      },
+      "options": {
+        "tr": [
+          "Başka bir daldan seçilen tek bir commit’i mevcut dala uygular",
+          "Bütün dalı birleştirir",
+          "Commit’i siler",
+          "Uzak depoyu klonlar"
+        ],
+        "en": [
+          "Applies a single chosen commit from another branch",
+          "Merges the whole branch",
+          "Deletes a commit",
+          "Clones a remote"
+        ]
+      },
+      "explain": {
+        "tr": "Örneğin bir hata düzeltmesini sürüm dalına taşımak için kullanılır.",
+        "en": "For example, to bring a bug fix onto a release branch."
+      }
+    },
+    {
+      "id": "git:university:017",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "HEAD neyi gösterir?",
+        "en": "What does HEAD point to?"
+      },
+      "options": {
+        "tr": [
+          "Şu anda üzerinde çalışılan commit’i (genellikle dalın ucu)",
+          "İlk commit’i",
+          "Uzak depoyu",
+          "Silinen dosyaları"
+        ],
+        "en": [
+          "The commit you are on now (usually the branch tip)",
+          "The first commit",
+          "The remote",
+          "Deleted files"
+        ]
+      },
+      "explain": {
+        "tr": "HEAD bir dal yerine doğrudan bir commit’i gösterirse “detached HEAD” olur.",
+        "en": "If HEAD points to a commit instead of a branch, it is a “detached HEAD”."
+      }
+    },
+    {
+      "id": "git:university:018",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Kod incelemesinde (code review) asıl amaç nedir?",
+        "en": "What is the main goal of code review?"
+      },
+      "options": {
+        "tr": [
+          "Hataları erken bulmak ve bilgiyi ekipte paylaşmak",
+          "Yazanı eleştirmek",
+          "Kodu yavaşlatmak",
+          "Commit sayısını artırmak"
+        ],
+        "en": [
+          "Catching problems early and sharing knowledge",
+          "Criticising the author",
+          "Slowing things down",
+          "Increasing commit count"
+        ]
+      },
+      "explain": {
+        "tr": "Küçük ve odaklı pull request’ler daha iyi incelenir.",
+        "en": "Small, focused pull requests get better reviews."
+      }
+    },
+    {
+      "id": "git:masters:009",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Git bir commit’i nasıl tanımlar?",
+        "en": "How does Git identify a commit?"
+      },
+      "options": {
+        "tr": [
+          "İçeriğinden hesaplanan bir hash (SHA-1/SHA-256) ile",
+          "Sıra numarasıyla",
+          "Tarihle",
+          "Yazarın adıyla"
+        ],
+        "en": [
+          "By a hash computed from its content (SHA-1/SHA-256)",
+          "By a sequence number",
+          "By date",
+          "By the author’s name"
+        ]
+      },
+      "explain": {
+        "tr": "İçerik değişirse hash de değişir; bu, geçmişi değiştirmeyi fark edilir kılar.",
+        "en": "If content changes, the hash changes, so tampering with history is visible."
+      }
+    },
+    {
+      "id": "git:masters:010",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "git worktree ne sağlar?",
+        "en": "What does git worktree provide?"
+      },
+      "options": {
+        "tr": [
+          "Aynı depodan birden çok dalı ayrı klasörlerde aynı anda açmayı",
+          "Depoyu sıkıştırmayı",
+          "Uzak depo eklemeyi",
+          "Commit’leri imzalamayı"
+        ],
+        "en": [
+          "Checking out several branches of one repository in separate folders at once",
+          "Compressing the repository",
+          "Adding a remote",
+          "Signing commits"
+        ]
+      },
+      "explain": {
+        "tr": "Stash’lemeden başka bir dalda çalışmayı kolaylaştırır.",
+        "en": "It lets you work on another branch without stashing."
+      }
+    },
+    {
+      "id": "git:masters:011",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Geçmişten gizli bir dosyayı tamamen silmek için hangi araç önerilir?",
+        "en": "Which tool is recommended to purge a secret file from history?"
+      },
+      "options": {
+        "tr": [
+          "git filter-repo",
+          "git revert",
+          "git stash",
+          "git tag"
+        ],
+        "en": [
+          "git filter-repo",
+          "git revert",
+          "git stash",
+          "git tag"
+        ]
+      },
+      "explain": {
+        "tr": "Geçmiş yeniden yazıldığı için herkesin yeniden klonlaması gerekir; sızan anahtar yine de iptal edilmelidir.",
+        "en": "History is rewritten, so everyone must re-clone, and the leaked key must still be revoked."
+      }
+    },
+    {
+      "id": "git:masters:012",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Trunk tabanlı geliştirme (trunk-based development) neyi önerir?",
+        "en": "What does trunk-based development recommend?"
+      },
+      "options": {
+        "tr": [
+          "Kısa ömürlü dallar ve ana dala sık birleştirme",
+          "Aylarca süren özellik dalları",
+          "Hiç dal kullanmamak zorunluluğu",
+          "Her geliştiriciye ayrı depo"
+        ],
+        "en": [
+          "Short-lived branches merged into main often",
+          "Feature branches lasting months",
+          "A ban on branches",
+          "A separate repository per developer"
+        ]
+      },
+      "explain": {
+        "tr": "Özellik bayrakları (feature flags) yarım işleri gizlemek için kullanılır.",
+        "en": "Feature flags hide unfinished work."
+      }
+    },
+    {
+      "id": "git:masters:013",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Monorepo yaklaşımının bir avantajı nedir?",
+        "en": "What is an advantage of a monorepo?"
+      },
+      "options": {
+        "tr": [
+          "Birden çok projede aynı anda atomik değişiklik yapabilmek",
+          "Depo boyutunun küçük olması",
+          "Hiç derleme aracı gerekmemesi",
+          "Kod incelemesinin gereksiz olması"
+        ],
+        "en": [
+          "Making atomic changes across several projects at once",
+          "A small repository size",
+          "No build tools needed",
+          "No code review needed"
+        ]
+      },
+      "explain": {
+        "tr": "Büyük monorepolar özel derleme ve önbellekleme araçları gerektirir.",
+        "en": "Large monorepos need special build and caching tools."
+      }
+    },
+    {
+      "id": "git:masters:014",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Git hook’ları ne işe yarar?",
+        "en": "What are Git hooks for?"
+      },
+      "options": {
+        "tr": [
+          "Commit ya da push gibi olaylarda otomatik betik çalıştırmak",
+          "Uzak depo bağlamak",
+          "Dalları silmek",
+          "Dosyaları şifrelemek"
+        ],
+        "en": [
+          "Running scripts automatically on events such as commit or push",
+          "Connecting remotes",
+          "Deleting branches",
+          "Encrypting files"
+        ]
+      },
+      "explain": {
+        "tr": "Örneğin pre-commit kancası commit’ten önce testleri ya da biçimlendiriciyi çalıştırır.",
+        "en": "A pre-commit hook can run tests or a formatter before committing."
+      }
+    },
+    {
+      "id": "git:masters:015",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Squash merge ne yapar?",
+        "en": "What does a squash merge do?"
+      },
+      "options": {
+        "tr": [
+          "Bir dalın bütün commit’lerini tek bir commit olarak birleştirir",
+          "Dalı siler",
+          "Commit’leri imzalar",
+          "Çakışmaları otomatik çözer"
+        ],
+        "en": [
+          "Combines all of a branch’s commits into one",
+          "Deletes the branch",
+          "Signs commits",
+          "Resolves conflicts automatically"
+        ]
+      },
+      "explain": {
+        "tr": "Ana dal geçmişi sadeleşir ama ara adımlar kaybolur.",
+        "en": "The main history gets tidier but intermediate steps are lost."
+      }
+    },
+    {
+      "id": "git:masters:016",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Git’in yerel geçmişe sahip olması neden “dağıtık” sürüm kontrolü denmesine yol açar?",
+        "en": "Why is Git called a distributed version control system?"
+      },
+      "options": {
+        "tr": [
+          "Her klonda deponun bütün geçmişi bulunur",
+          "Sadece sunucuda geçmiş vardır",
+          "Commit’ler rastgele sunuculara dağıtılır",
+          "İnternet olmadan çalışmaz"
+        ],
+        "en": [
+          "Every clone contains the full history",
+          "Only the server has the history",
+          "Commits are spread across random servers",
+          "It needs the internet"
+        ]
+      },
+      "explain": {
+        "tr": "Bu sayede çevrim dışı commit atılabilir; SVN gibi merkezi sistemlerde bu mümkün değildir.",
+        "en": "You can commit offline, unlike centralised systems such as SVN."
+      }
+    },
+    {
+      "id": "git:masters:017",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Dependabot gibi araçlar depoda ne yapar?",
+        "en": "What do tools such as Dependabot do in a repository?"
+      },
+      "options": {
+        "tr": [
+          "Eski ya da açığı bilinen bağımlılıklar için güncelleme önerileri açar",
+          "Kodu yeniden yazar",
+          "Dalları siler",
+          "Commit mesajlarını çevirir"
+        ],
+        "en": [
+          "Open update requests for outdated or vulnerable dependencies",
+          "Rewrite code",
+          "Delete branches",
+          "Translate commit messages"
+        ]
+      },
+      "explain": {
+        "tr": "Güvenlik güncellemelerini takip etmeyi otomatikleştirir.",
+        "en": "They automate keeping up with security updates."
+      }
     }
   ]
 }

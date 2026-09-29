@@ -881,6 +881,1312 @@
         "tr": "CPython referans sayımı kullanır; döngüsel referanslar için ayrıca bir çöp toplayıcı vardır.",
         "en": "CPython uses reference counting, plus a collector for reference cycles."
       }
+    },
+    {
+      "id": "python:middle:009",
+      "level": "middle",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "ad = \"Ayşe\"\nprint(f\"Merhaba {ad}\")",
+      "options": {
+        "tr": [
+          "Merhaba Ayşe",
+          "Merhaba ad",
+          "Merhaba",
+          "Hata"
+        ],
+        "en": [
+          "Merhaba Ayşe",
+          "Merhaba ad",
+          "Merhaba",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "f-string içindeki {ad} değişkenin değeriyle değiştirilir.",
+        "en": "In an f-string, {ad} is replaced with the variable’s value."
+      }
+    },
+    {
+      "id": "python:middle:010",
+      "level": "middle",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "print(3 ** 2)",
+      "options": {
+        "tr": [
+          "9",
+          "6",
+          "33",
+          "Hata"
+        ],
+        "en": [
+          "9",
+          "6",
+          "33",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "** üs alma işlecidir: 3² = 9.",
+        "en": "** is the power operator: 3² = 9."
+      }
+    },
+    {
+      "id": "python:middle:011",
+      "level": "middle",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "print(\"python\".upper())",
+      "options": {
+        "tr": [
+          "PYTHON",
+          "python",
+          "Python",
+          "Hata"
+        ],
+        "en": [
+          "PYTHON",
+          "python",
+          "Python",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "upper() bütün harfleri büyük yapar.",
+        "en": "upper() makes every letter uppercase."
+      }
+    },
+    {
+      "id": "python:middle:012",
+      "level": "middle",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "x = 10\nif x > 7:\n    print(\"büyük\")\nelse:\n    print(\"küçük\")",
+      "options": {
+        "tr": [
+          "büyük",
+          "küçük",
+          "eşit",
+          "Hata"
+        ],
+        "en": [
+          "büyük",
+          "küçük",
+          "eşit",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "10 > 7 olduğu için if bloğu çalışır.",
+        "en": "10 > 7, so the if block runs."
+      }
+    },
+    {
+      "id": "python:middle:013",
+      "level": "middle",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "toplam = 0\nfor i in range(1, 6):\n    toplam += i\nprint(toplam)",
+      "options": {
+        "tr": [
+          "15",
+          "5",
+          "12345",
+          "Hata"
+        ],
+        "en": [
+          "15",
+          "5",
+          "12345",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Döngü 1’den 5’e kadar sayıları toplar.",
+        "en": "The loop adds the numbers 1 to 5."
+      }
+    },
+    {
+      "id": "python:middle:014",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Python’da bir değişkene değer atamak için hangi işaret kullanılır?",
+        "en": "Which symbol assigns a value to a variable in Python?"
+      },
+      "options": {
+        "tr": [
+          "=",
+          "==",
+          ":=",
+          "->"
+        ],
+        "en": [
+          "=",
+          "==",
+          ":=",
+          "->"
+        ]
+      },
+      "explain": {
+        "tr": "== eşitliği karşılaştırır; = değer atar.",
+        "en": "== compares for equality; = assigns a value."
+      }
+    },
+    {
+      "id": "python:middle:015",
+      "level": "middle",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "print(type(\"42\"))",
+      "options": {
+        "tr": [
+          "<class 'str'>",
+          "<class 'int'>",
+          "<class 'float'>",
+          "Hata"
+        ],
+        "en": [
+          "<class 'str'>",
+          "<class 'int'>",
+          "<class 'float'>",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "input() ve tırnak içindeki her şey metin (str) türündedir.",
+        "en": "Anything in quotes is a string (str)."
+      }
+    },
+    {
+      "id": "python:middle:016",
+      "level": "middle",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "print(int(\"40\") + 2)",
+      "options": {
+        "tr": [
+          "42",
+          "\"42\"",
+          "4",
+          "Hata"
+        ],
+        "en": [
+          "42",
+          "\"42\"",
+          "4",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "int() metni tam sayıya çevirir, sonra 2 eklenir.",
+        "en": "int() turns the string into a number, then 2 is added."
+      }
+    },
+    {
+      "id": "python:middle:017",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Python’da tek satırlık yorum hangi işaretle başlar?",
+        "en": "Which symbol starts a single-line comment in Python?"
+      },
+      "options": {
+        "tr": [
+          "#",
+          "//",
+          "--",
+          "/*"
+        ],
+        "en": [
+          "#",
+          "//",
+          "--",
+          "/*"
+        ]
+      },
+      "explain": {
+        "tr": "// JavaScript ve C#’ta, -- SQL’de yorum başlatır.",
+        "en": "// starts comments in JavaScript and C#, -- in SQL."
+      }
+    },
+    {
+      "id": "python:middle:018",
+      "level": "middle",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "sayi = 0\nwhile sayi < 3:\n    sayi += 1\nprint(sayi)",
+      "options": {
+        "tr": [
+          "3",
+          "2",
+          "4",
+          "Hata"
+        ],
+        "en": [
+          "3",
+          "2",
+          "4",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "while döngüsü sayı 3 olana kadar döner.",
+        "en": "The while loop runs until the number reaches 3."
+      }
+    },
+    {
+      "id": "python:middle:019",
+      "level": "middle",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "meyveler = [\"elma\", \"armut\", \"kiraz\"]\nprint(meyveler[0])",
+      "options": {
+        "tr": [
+          "elma",
+          "armut",
+          "kiraz",
+          "Hata"
+        ],
+        "en": [
+          "elma",
+          "armut",
+          "kiraz",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Listelerde indeks 0’dan başlar.",
+        "en": "List indexes start at 0."
+      }
+    },
+    {
+      "id": "python:middle:020",
+      "level": "middle",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "print(5 % 2 != 0)",
+      "options": {
+        "tr": [
+          "True",
+          "False",
+          "1",
+          "Hata"
+        ],
+        "en": [
+          "True",
+          "False",
+          "1",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "5 çift değildir; 5 % 2 = 1, dolayısıyla != 0 doğrudur.",
+        "en": "5 % 2 is 1, so != 0 is True."
+      }
+    },
+    {
+      "id": "python:high:009",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "print(\"Python\"[::-1])",
+      "options": {
+        "tr": [
+          "nohtyP",
+          "Python",
+          "P",
+          "Hata"
+        ],
+        "en": [
+          "nohtyP",
+          "Python",
+          "P",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "[::-1] dilimi metni ters çevirir.",
+        "en": "The [::-1] slice reverses the string."
+      }
+    },
+    {
+      "id": "python:high:010",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "print(\"banana\".count(\"a\"))",
+      "options": {
+        "tr": [
+          "3",
+          "2",
+          "0",
+          "Hata"
+        ],
+        "en": [
+          "3",
+          "2",
+          "0",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "count() bir karakterin kaç kez geçtiğini sayar.",
+        "en": "count() counts how many times a character appears."
+      }
+    },
+    {
+      "id": "python:high:011",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "kisi = {\"ad\": \"Ali\", \"yas\": 20}\nprint(kisi[\"ad\"], kisi[\"yas\"])",
+      "options": {
+        "tr": [
+          "Ali 20",
+          "ad yas",
+          "Ali",
+          "Hata"
+        ],
+        "en": [
+          "Ali 20",
+          "ad yas",
+          "Ali",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Sözlükte anahtarla değere erişilir.",
+        "en": "Dictionary values are read by key."
+      }
+    },
+    {
+      "id": "python:high:012",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "print(\"a,b,c\".split(\",\"))",
+      "options": {
+        "tr": [
+          "['a', 'b', 'c']",
+          "abc",
+          "['abc']",
+          "Hata"
+        ],
+        "en": [
+          "['a', 'b', 'c']",
+          "abc",
+          "['abc']",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "split() metni ayırıcıya göre listeye böler.",
+        "en": "split() breaks a string into a list at the separator."
+      }
+    },
+    {
+      "id": "python:high:013",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "print(\"-\".join([\"a\", \"b\", \"c\"]))",
+      "options": {
+        "tr": [
+          "a-b-c",
+          "abc",
+          "['a', 'b', 'c']",
+          "Hata"
+        ],
+        "en": [
+          "a-b-c",
+          "abc",
+          "['a', 'b', 'c']",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "join() listeyi aradaki metinle birleştirir.",
+        "en": "join() glues the list together with the separator."
+      }
+    },
+    {
+      "id": "python:high:014",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "print(sorted([2, 3, 1], reverse=True))",
+      "options": {
+        "tr": [
+          "[3, 2, 1]",
+          "[1, 2, 3]",
+          "[3, 1, 2]",
+          "Hata"
+        ],
+        "en": [
+          "[3, 2, 1]",
+          "[1, 2, 3]",
+          "[3, 1, 2]",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "sorted(..., reverse=True) büyükten küçüğe sıralar.",
+        "en": "sorted(..., reverse=True) sorts from largest to smallest."
+      }
+    },
+    {
+      "id": "python:high:015",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "print(max([4, 10, 9, 1]))",
+      "options": {
+        "tr": [
+          "10",
+          "9",
+          "1",
+          "Hata"
+        ],
+        "en": [
+          "10",
+          "9",
+          "1",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "max() en büyük elemanı döndürür.",
+        "en": "max() returns the largest item."
+      }
+    },
+    {
+      "id": "python:high:016",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "try:\n    print(10 / 0)\nexcept ZeroDivisionError:\n    print(\"Sıfıra bölünemez\")",
+      "options": {
+        "tr": [
+          "Sıfıra bölünemez",
+          "inf",
+          "0",
+          "Hata"
+        ],
+        "en": [
+          "Sıfıra bölünemez",
+          "inf",
+          "0",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "ZeroDivisionError yakalanır ve except bloğu çalışır.",
+        "en": "The ZeroDivisionError is caught and the except block runs."
+      }
+    },
+    {
+      "id": "python:high:017",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "def topla(a, b):\n    return a + b\n\nprint(topla(3, 5))",
+      "options": {
+        "tr": [
+          "8",
+          "5",
+          "15",
+          "Hata"
+        ],
+        "en": [
+          "8",
+          "5",
+          "15",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Fonksiyon iki parametreyi toplayıp döndürür.",
+        "en": "The function returns the sum of its two parameters."
+      }
+    },
+    {
+      "id": "python:high:018",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "print([\"a\", \"b\", \"c\"].index(\"c\"))",
+      "options": {
+        "tr": [
+          "2",
+          "1",
+          "0",
+          "Hata"
+        ],
+        "en": [
+          "2",
+          "1",
+          "0",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Bir listede find yerine index() kullanılır; \"c\" 2. indekstedir.",
+        "en": "Lists use index(); \"c\" is at index 2."
+      }
+    },
+    {
+      "id": "python:high:019",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Python’da bir modülü projeye dahil etmek için hangi anahtar kelime kullanılır?",
+        "en": "Which keyword brings a module into a Python program?"
+      },
+      "options": {
+        "tr": [
+          "import",
+          "include",
+          "using",
+          "require"
+        ],
+        "en": [
+          "import",
+          "include",
+          "using",
+          "require"
+        ]
+      },
+      "explain": {
+        "tr": "include C’de, using C#’ta, require Node.js’te kullanılır.",
+        "en": "include is C, using is C#, require is Node.js."
+      }
+    },
+    {
+      "id": "python:high:020",
+      "level": "high",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "print([x for x in [1, 2, 3, 4] if x % 2 == 0])",
+      "options": {
+        "tr": [
+          "[2, 4]",
+          "[1, 3]",
+          "[1, 2, 3, 4]",
+          "Hata"
+        ],
+        "en": [
+          "[2, 4]",
+          "[1, 3]",
+          "[1, 2, 3, 4]",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Liste üreteci yalnızca çift sayıları alır.",
+        "en": "The comprehension keeps only even numbers."
+      }
+    },
+    {
+      "id": "python:university:009",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "print(dict(zip([\"a\", \"b\"], [1, 2])))",
+      "options": {
+        "tr": [
+          "{'a': 1, 'b': 2}",
+          "[('a', 1), ('b', 2)]",
+          "{'a', 'b'}",
+          "Hata"
+        ],
+        "en": [
+          "{'a': 1, 'b': 2}",
+          "[('a', 1), ('b', 2)]",
+          "{'a', 'b'}",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "zip iki listeyi eşler, dict() bunları sözlüğe çevirir.",
+        "en": "zip pairs the lists and dict() turns the pairs into a dictionary."
+      }
+    },
+    {
+      "id": "python:university:010",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "for i, harf in enumerate([\"a\", \"b\"]):\n    print(i, harf)",
+      "options": {
+        "tr": [
+          "0 a\n1 b",
+          "a b",
+          "0 1",
+          "Hata"
+        ],
+        "en": [
+          "0 a\n1 b",
+          "a b",
+          "0 1",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "enumerate hem indeksi hem değeri verir.",
+        "en": "enumerate gives both the index and the value."
+      }
+    },
+    {
+      "id": "python:university:011",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "a = [1, 2, 3]\nb = a.copy()\nb.append(4)\nprint(a, b)",
+      "options": {
+        "tr": [
+          "[1, 2, 3] [1, 2, 3, 4]",
+          "[1, 2, 3, 4] [1, 2, 3, 4]",
+          "[1, 2, 3] [1, 2, 3]",
+          "Hata"
+        ],
+        "en": [
+          "[1, 2, 3] [1, 2, 3, 4]",
+          "[1, 2, 3, 4] [1, 2, 3, 4]",
+          "[1, 2, 3] [1, 2, 3]",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "copy() sığ bir kopya oluşturur; b’ye eklemek a’yı etkilemez.",
+        "en": "copy() makes a shallow copy, so appending to b leaves a alone."
+      }
+    },
+    {
+      "id": "python:university:012",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "grid = [[1, 2]] * 2\ngrid[0][1] = 9\nprint(grid)",
+      "options": {
+        "tr": [
+          "[[1, 9], [1, 9]]",
+          "[[1, 9], [1, 2]]",
+          "[[1, 2], [1, 2]]",
+          "Hata"
+        ],
+        "en": [
+          "[[1, 9], [1, 9]]",
+          "[[1, 9], [1, 2]]",
+          "[[1, 2], [1, 2]]",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "[[1, 2]] * 2 aynı iç listeye iki referans üretir; birini değiştirmek ikisini de değiştirir.",
+        "en": "[[1, 2]] * 2 creates two references to the same inner list, so changing one changes both."
+      }
+    },
+    {
+      "id": "python:university:013",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "class Hayvan:\n    def ses(self):\n        return \"Ses\"\n\nclass Kopek(Hayvan):\n    def ses(self):\n        return \"Havlıyor\"\n\nprint(Kopek().ses())",
+      "options": {
+        "tr": [
+          "Havlıyor",
+          "Ses",
+          "None",
+          "Hata"
+        ],
+        "en": [
+          "Havlıyor",
+          "Ses",
+          "None",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Alt sınıf, üst sınıfın metodunu geçersiz kılar (override).",
+        "en": "The subclass overrides the parent’s method."
+      }
+    },
+    {
+      "id": "python:university:014",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "words = [\"aaa\", \"b\", \"cc\"]\nprint(sorted(words, key=len))",
+      "options": {
+        "tr": [
+          "['b', 'cc', 'aaa']",
+          "['aaa', 'b', 'cc']",
+          "['aaa', 'cc', 'b']",
+          "Hata"
+        ],
+        "en": [
+          "['b', 'cc', 'aaa']",
+          "['aaa', 'b', 'cc']",
+          "['aaa', 'cc', 'b']",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "key=len kelimeleri uzunluklarına göre (1, 2, 3) sıralar.",
+        "en": "key=len sorts the words by length (1, 2, 3)."
+      }
+    },
+    {
+      "id": "python:university:015",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "print(sum(x for x in [1, 2, 3]))",
+      "options": {
+        "tr": [
+          "6",
+          "3",
+          "[1, 2, 3]",
+          "Hata"
+        ],
+        "en": [
+          "6",
+          "3",
+          "[1, 2, 3]",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "sum() bir jeneratör ifadesiyle de çalışır.",
+        "en": "sum() also works with a generator expression."
+      }
+    },
+    {
+      "id": "python:university:016",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Python’da bir sınıfın örneği oluşturulurken otomatik çağrılan metot hangisidir?",
+        "en": "Which method runs automatically when a Python object is created?"
+      },
+      "options": {
+        "tr": [
+          "__init__",
+          "__str__",
+          "__del__",
+          "__call__"
+        ],
+        "en": [
+          "__init__",
+          "__str__",
+          "__del__",
+          "__call__"
+        ]
+      },
+      "explain": {
+        "tr": "__init__ yapıcı (constructor) görevini görür.",
+        "en": "__init__ acts as the constructor."
+      }
+    },
+    {
+      "id": "python:university:017",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "pip ne işe yarar?",
+        "en": "What is pip for?"
+      },
+      "options": {
+        "tr": [
+          "Python paketlerini kurmak ve yönetmek",
+          "Kodu derlemek",
+          "Veritabanı açmak",
+          "Test yazmak"
+        ],
+        "en": [
+          "Installing and managing Python packages",
+          "Compiling code",
+          "Opening databases",
+          "Writing tests"
+        ]
+      },
+      "explain": {
+        "tr": "pip install requests ile paket kurulur; sanal ortamla birlikte kullanılması önerilir.",
+        "en": "pip install requests installs a package; use it with a virtual environment."
+      }
+    },
+    {
+      "id": "python:university:018",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Sanal ortam (venv) neden kullanılır?",
+        "en": "Why use a virtual environment (venv)?"
+      },
+      "options": {
+        "tr": [
+          "Her projenin paketlerini birbirinden ayırmak için",
+          "Kodu hızlandırmak için",
+          "Kodu şifrelemek için",
+          "Grafik arayüz için"
+        ],
+        "en": [
+          "To keep each project’s packages separate",
+          "To speed up code",
+          "To encrypt code",
+          "For a GUI"
+        ]
+      },
+      "explain": {
+        "tr": "Böylece farklı projeler farklı paket sürümleri kullanabilir.",
+        "en": "Different projects can then use different package versions."
+      }
+    },
+    {
+      "id": "python:university:019",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "from collections import Counter\nprint(Counter(\"abaa\"))",
+      "options": {
+        "tr": [
+          "Counter({'a': 3, 'b': 1})",
+          "{'a': 3, 'b': 1}",
+          "4",
+          "Hata"
+        ],
+        "en": [
+          "Counter({'a': 3, 'b': 1})",
+          "{'a': 3, 'b': 1}",
+          "4",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Counter her elemanın kaç kez geçtiğini sayar.",
+        "en": "Counter counts how often each item appears."
+      }
+    },
+    {
+      "id": "python:university:020",
+      "level": "university",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "class Kisi:\n    def __init__(self, ad, yas):\n        self.ad = ad\n        self.yas = yas\n\n    def __str__(self):\n        return f\"{self.ad} ({self.yas})\"\n\nprint(Kisi(\"Ali\", 30))",
+      "options": {
+        "tr": [
+          "Ali (30)",
+          "<__main__.Kisi object>",
+          "Ali",
+          "Hata"
+        ],
+        "en": [
+          "Ali (30)",
+          "<__main__.Kisi object>",
+          "Ali",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "__str__, print() çağrıldığında gösterilecek metni belirler.",
+        "en": "__str__ defines the text shown by print()."
+      }
+    },
+    {
+      "id": "python:masters:009",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "from itertools import islice\n\ndef fib():\n    a, b = 1, 1\n    while True:\n        yield a\n        a, b = b, a + b\n\nprint(*islice(fib(), 5))",
+      "options": {
+        "tr": [
+          "1 1 2 3 5",
+          "0 1 1 2 3",
+          "1 2 3 5 8",
+          "Hata"
+        ],
+        "en": [
+          "1 1 2 3 5",
+          "0 1 1 2 3",
+          "1 2 3 5 8",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Jeneratör Fibonacci sayılarını istendikçe üretir; islice ilk 5’ini alır.",
+        "en": "The generator yields Fibonacci numbers on demand; islice takes the first 5."
+      }
+    },
+    {
+      "id": "python:masters:010",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "def log(f):\n    def sar():\n        print(\"önce\")\n        f()\n        print(\"sonra\")\n    return sar\n\n@log\ndef calis():\n    print(\"çalış\")\n\ncalis()",
+      "options": {
+        "tr": [
+          "önce\nçalış\nsonra",
+          "çalış",
+          "önce\nsonra",
+          "Hata"
+        ],
+        "en": [
+          "önce\nçalış\nsonra",
+          "çalış",
+          "önce\nsonra",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Dekoratör fonksiyonu sarıp önüne ve arkasına kod ekler.",
+        "en": "The decorator wraps the function and runs code before and after it."
+      }
+    },
+    {
+      "id": "python:masters:011",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "class Kaynak:\n    def __enter__(self):\n        print(\"giriş\")\n    def __exit__(self, *args):\n        print(\"çıkış\")\n\nwith Kaynak():\n    print(\"iş\")",
+      "options": {
+        "tr": [
+          "giriş\niş\nçıkış",
+          "iş",
+          "giriş\niş",
+          "Hata"
+        ],
+        "en": [
+          "giriş\niş\nçıkış",
+          "iş",
+          "giriş\niş",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "Bağlam yöneticisi with bloğundan önce __enter__, sonra __exit__ çalıştırır.",
+        "en": "A context manager runs __enter__ before the with block and __exit__ after it."
+      }
+    },
+    {
+      "id": "python:masters:012",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "from dataclasses import dataclass\n\n@dataclass\nclass Nokta:\n    x: int\n    y: int\n\nprint(Nokta(1, 2))",
+      "options": {
+        "tr": [
+          "Nokta(x=1, y=2)",
+          "(1, 2)",
+          "{'x': 1, 'y': 2}",
+          "Hata"
+        ],
+        "en": [
+          "Nokta(x=1, y=2)",
+          "(1, 2)",
+          "{'x': 1, 'y': 2}",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "dataclass __init__ ve __repr__ metotlarını otomatik üretir.",
+        "en": "dataclass generates __init__ and __repr__ automatically."
+      }
+    },
+    {
+      "id": "python:masters:013",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "print(list(dict.fromkeys([1, 2, 1, 3, 2])))",
+      "options": {
+        "tr": [
+          "[1, 2, 3]",
+          "[3, 2, 1]",
+          "[1, 2, 3, 3, 2, 1]",
+          "Hata"
+        ],
+        "en": [
+          "[1, 2, 3]",
+          "[3, 2, 1]",
+          "[1, 2, 3, 3, 2, 1]",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "dict.fromkeys sırayı koruyarak tekrarları atar.",
+        "en": "dict.fromkeys removes duplicates while keeping order."
+      }
+    },
+    {
+      "id": "python:masters:014",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Python’da tip ipuçları (type hints) çalışma zamanında ne yapar?",
+        "en": "What do Python type hints do at run time?"
+      },
+      "options": {
+        "tr": [
+          "Kendiliğinden hiçbir şey denetlemez; mypy gibi araçlar kullanır",
+          "Yanlış tipte hata fırlatır",
+          "Kodu hızlandırır",
+          "Derlemeyi zorunlu kılar"
+        ],
+        "en": [
+          "Nothing by themselves; tools such as mypy use them",
+          "They raise errors for wrong types",
+          "They speed code up",
+          "They force compilation"
+        ]
+      },
+      "explain": {
+        "tr": "Tip ipuçları statik analiz ve editör desteği içindir.",
+        "en": "Type hints are for static analysis and editor support."
+      }
+    },
+    {
+      "id": "python:masters:015",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "multiprocessing modülü threading’e göre CPU yoğun işlerde neden daha hızlı olabilir?",
+        "en": "Why can multiprocessing be faster than threading for CPU-heavy work?"
+      },
+      "options": {
+        "tr": [
+          "Her süreç kendi yorumlayıcısına sahip olduğu için GIL’den etkilenmez",
+          "Daha az bellek kullandığı için",
+          "Kodu derlediği için",
+          "Ağ kullanmadığı için"
+        ],
+        "en": [
+          "Each process has its own interpreter, so the GIL does not block it",
+          "It uses less memory",
+          "It compiles the code",
+          "It avoids the network"
+        ]
+      },
+      "explain": {
+        "tr": "Süreçler ayrı bellek alanında çalışır; veri paylaşımı daha maliyetlidir.",
+        "en": "Processes have separate memory, so sharing data costs more."
+      }
+    },
+    {
+      "id": "python:masters:016",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "from functools import cache\n\n@cache\ndef liste(n):\n    return [n]\n\nprint(liste(1) is liste(1))",
+      "options": {
+        "tr": [
+          "True",
+          "False",
+          "None",
+          "Hata"
+        ],
+        "en": [
+          "True",
+          "False",
+          "None",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "functools.cache ikinci çağrıda aynı nesneyi önbellekten döndürür.",
+        "en": "functools.cache returns the stored object on the second call."
+      }
+    },
+    {
+      "id": "python:masters:017",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Python’da __eq__ tanımlayıp __hash__ tanımlamayan sınıfın örnekleri için ne olur?",
+        "en": "What happens to instances of a class that defines __eq__ but not __hash__?"
+      },
+      "options": {
+        "tr": [
+          "Hash’lenemez olurlar; sözlük anahtarı ya da küme elemanı olamazlar",
+          "Otomatik olarak hash’lenirler",
+          "Karşılaştırılamazlar",
+          "Kopyalanamazlar"
+        ],
+        "en": [
+          "They become unhashable and cannot be dict keys or set members",
+          "They are hashed automatically",
+          "They cannot be compared",
+          "They cannot be copied"
+        ]
+      },
+      "explain": {
+        "tr": "Eşit nesnelerin eşit hash vermesi gerektiği için Python __hash__’i None yapar.",
+        "en": "Equal objects must hash equally, so Python sets __hash__ to None."
+      }
+    },
+    {
+      "id": "python:masters:018",
+      "level": "masters",
+      "type": "code",
+      "q": {
+        "tr": "Bu kod ne yazdırır?",
+        "en": "What does this code print?"
+      },
+      "code": "def dis():\n    x = 10\n    once = x\n    def ic():\n        nonlocal x\n        x = 20\n    ic()\n    print(once, x)\n\ndis()",
+      "options": {
+        "tr": [
+          "10 20",
+          "20 10",
+          "10 10",
+          "Hata"
+        ],
+        "en": [
+          "10 20",
+          "20 10",
+          "10 10",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "nonlocal, iç fonksiyonun dış fonksiyondaki değişkeni değiştirmesini sağlar.",
+        "en": "nonlocal lets the inner function change the outer variable."
+      }
+    },
+    {
+      "id": "python:masters:019",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Python’da asyncio.gather ne yapar?",
+        "en": "What does asyncio.gather do?"
+      },
+      "options": {
+        "tr": [
+          "Birden çok coroutine’i eşzamanlı çalıştırıp sonuçları toplar",
+          "Kodu çok çekirdekte paralel çalıştırır",
+          "Bir listeyi sıralar",
+          "Hataları gizler"
+        ],
+        "en": [
+          "Runs several coroutines concurrently and collects their results",
+          "Runs code in parallel on many cores",
+          "Sorts a list",
+          "Hides errors"
+        ]
+      },
+      "explain": {
+        "tr": "Eşzamanlılık G/Ç beklerken işe yarar; CPU paralelliği sağlamaz.",
+        "en": "Concurrency helps while waiting on I/O; it does not give CPU parallelism."
+      }
     }
   ]
 }

@@ -648,6 +648,951 @@
         "tr": "Önce ne istendiği anlaşılır, sonra çözüm planlanır, kodlanır ve test edilir.",
         "en": "First understand what is needed, then plan the solution, code it and test it."
       }
+    },
+    {
+      "id": "basics:primary:009",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Bilgisayara bilgi girmemizi sağlayan araç hangisidir?",
+        "en": "Which device lets us put information into a computer?"
+      },
+      "options": {
+        "tr": [
+          "Klavye",
+          "Hoparlör",
+          "Yazıcı",
+          "Monitör"
+        ],
+        "en": [
+          "Keyboard",
+          "Speaker",
+          "Printer",
+          "Monitor"
+        ]
+      },
+      "explain": {
+        "tr": "Klavye ve fare giriş, ekran ve yazıcı çıkış birimidir.",
+        "en": "Keyboards and mice are input devices; screens and printers are output devices."
+      }
+    },
+    {
+      "id": "basics:primary:010",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Robotun “2 adım ileri, sağa dön, 2 adım ileri” komutlarına ne denir?",
+        "en": "What do we call “2 steps forward, turn right, 2 steps forward” for a robot?"
+      },
+      "options": {
+        "tr": [
+          "Komut dizisi (program)",
+          "Resim",
+          "Şarkı",
+          "Oyun kartı"
+        ],
+        "en": [
+          "A sequence of commands (a program)",
+          "A picture",
+          "A song",
+          "A game card"
+        ]
+      },
+      "explain": {
+        "tr": "Bilgisayar ve robotlar komutları yazıldığı sırayla uygular.",
+        "en": "Computers and robots follow commands in the order they are written."
+      }
+    },
+    {
+      "id": "basics:primary:011",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Bir kutuya “puan” adını verip içine 5 koyarsak bu kutuya programlamada ne denir?",
+        "en": "If we name a box “score” and put 5 in it, what is that box called in programming?"
+      },
+      "options": {
+        "tr": [
+          "Değişken",
+          "Döngü",
+          "Klavye",
+          "Ekran"
+        ],
+        "en": [
+          "Variable",
+          "Loop",
+          "Keyboard",
+          "Screen"
+        ]
+      },
+      "explain": {
+        "tr": "Değişkenler, programın sonra kullanacağı değerleri saklar.",
+        "en": "Variables store values the program will use later."
+      }
+    },
+    {
+      "id": "basics:primary:012",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "İnternette tanımadığın biri adresini sorarsa ne yapmalısın?",
+        "en": "What should you do if a stranger online asks for your address?"
+      },
+      "options": {
+        "tr": [
+          "Söylememeli ve bir büyüğe haber vermelisin",
+          "Hemen söylemelisin",
+          "Fotoğrafını da göndermelisin",
+          "Şifreni de vermelisin"
+        ],
+        "en": [
+          "Not tell them and inform an adult",
+          "Tell them right away",
+          "Send a photo too",
+          "Give your password too"
+        ]
+      },
+      "explain": {
+        "tr": "Kişisel bilgiler internette paylaşılmaz.",
+        "en": "Personal information should not be shared online."
+      }
+    },
+    {
+      "id": "basics:primary:013",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Scratch’te oyunu başlatmak için genellikle hangi bayrağa tıklanır?",
+        "en": "In Scratch, which flag is usually clicked to start a project?"
+      },
+      "options": {
+        "tr": [
+          "Yeşil bayrak",
+          "Kırmızı bayrak",
+          "Mavi bayrak",
+          "Sarı bayrak"
+        ],
+        "en": [
+          "The green flag",
+          "The red flag",
+          "The blue flag",
+          "The yellow flag"
+        ]
+      },
+      "explain": {
+        "tr": "Yeşil bayrak başlatır, kırmızı dur işareti programı durdurur.",
+        "en": "The green flag starts it and the red stop sign stops it."
+      }
+    },
+    {
+      "id": "basics:primary:014",
+      "level": "primary",
+      "type": "order",
+      "q": {
+        "tr": "Sabah okula hazırlanma algoritmasını sırala.",
+        "en": "Order the algorithm for getting ready for school."
+      },
+      "items": {
+        "tr": [
+          "Uyan",
+          "Yüzünü yıka",
+          "Kahvaltı yap",
+          "Çantanı al ve çık"
+        ],
+        "en": [
+          "Wake up",
+          "Wash your face",
+          "Have breakfast",
+          "Take your bag and leave"
+        ]
+      },
+      "explain": {
+        "tr": "Günlük işler de adım adım yazılabilen algoritmalardır.",
+        "en": "Daily routines are algorithms that can be written step by step."
+      }
+    },
+    {
+      "id": "basics:primary:015",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Bilgisayarı güvenli kullanmak için hangisi doğrudur?",
+        "en": "Which is right for using a computer safely?"
+      },
+      "options": {
+        "tr": [
+          "Şifremi kimseyle paylaşmamak",
+          "Şifremi arkadaşıma söylemek",
+          "Her bağlantıya tıklamak",
+          "Bilmediğim programları kurmak"
+        ],
+        "en": [
+          "Not sharing my password",
+          "Telling my friend my password",
+          "Clicking every link",
+          "Installing unknown programs"
+        ]
+      },
+      "explain": {
+        "tr": "Şifre kişiye özeldir; bilinmeyen bağlantı ve programlar tehlikeli olabilir.",
+        "en": "Passwords are personal; unknown links and programs can be dangerous."
+      }
+    },
+    {
+      "id": "basics:primary:016",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Bir labirentte robotu çıkışa ulaştırmak için “duvar varsa sağa dön” demek neye örnektir?",
+        "en": "Telling a robot in a maze “if there is a wall, turn right” is an example of what?"
+      },
+      "options": {
+        "tr": [
+          "Koşul",
+          "Değişken",
+          "Renk",
+          "Ses"
+        ],
+        "en": [
+          "A condition",
+          "A variable",
+          "A colour",
+          "A sound"
+        ]
+      },
+      "explain": {
+        "tr": "Program, duruma göre farklı bir karar verir.",
+        "en": "The program makes a different choice depending on the situation."
+      }
+    },
+    {
+      "id": "basics:primary:017",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Bilgisayarın dosyaları kalıcı olarak sakladığı parça hangisidir?",
+        "en": "Which part of a computer stores files permanently?"
+      },
+      "options": {
+        "tr": [
+          "Disk (depolama)",
+          "Fare",
+          "Hoparlör",
+          "Kamera"
+        ],
+        "en": [
+          "Disk (storage)",
+          "Mouse",
+          "Speaker",
+          "Camera"
+        ]
+      },
+      "explain": {
+        "tr": "Disk, bilgisayar kapansa bile dosyaları saklar.",
+        "en": "The disk keeps files even when the computer is switched off."
+      }
+    },
+    {
+      "id": "basics:primary:018",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Kodlama yaparken bir hata bulduğunda en iyi yol hangisidir?",
+        "en": "When you find a mistake in your code, what is the best thing to do?"
+      },
+      "options": {
+        "tr": [
+          "Adım adım kontrol edip düzeltmek",
+          "Bilgisayarı kapatmak",
+          "Her şeyi silmek",
+          "Pes etmek"
+        ],
+        "en": [
+          "Check step by step and fix it",
+          "Turn off the computer",
+          "Delete everything",
+          "Give up"
+        ]
+      },
+      "explain": {
+        "tr": "Hata ayıklama (debug), programcıların her gün yaptığı bir iştir.",
+        "en": "Debugging is something programmers do every day."
+      }
+    },
+    {
+      "id": "basics:primary:019",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Bir karakter kareyi çizmek için “10 adım git, 90° dön” komutunu kaç kez tekrarlamalıdır?",
+        "en": "How many times should a sprite repeat “move 10 steps, turn 90°” to draw a square?"
+      },
+      "options": {
+        "tr": [
+          "4",
+          "3",
+          "2",
+          "8"
+        ],
+        "en": [
+          "4",
+          "3",
+          "2",
+          "8"
+        ]
+      },
+      "explain": {
+        "tr": "Karenin 4 kenarı ve 4 köşesi vardır.",
+        "en": "A square has 4 sides and 4 corners."
+      }
+    },
+    {
+      "id": "basics:primary:020",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "İnternetteki bir bilginin doğru olup olmadığını anlamak için ne yapılmalıdır?",
+        "en": "What should you do to check whether something online is true?"
+      },
+      "options": {
+        "tr": [
+          "Güvenilir başka kaynaklardan da kontrol etmek",
+          "İlk okuduğuna inanmak",
+          "Hemen paylaşmak",
+          "Yorumlara bakmadan kabul etmek"
+        ],
+        "en": [
+          "Check other reliable sources",
+          "Believe the first thing you read",
+          "Share it right away",
+          "Accept it without thinking"
+        ]
+      },
+      "explain": {
+        "tr": "Doğrulama, dijital okuryazarlığın temelidir.",
+        "en": "Checking facts is a basic part of digital literacy."
+      }
+    },
+    {
+      "id": "basics:middle:009",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "“Eğer puan > 50 ise ‘Geçti’ yaz, değilse ‘Kaldı’ yaz.” puan 50 olursa ne yazılır?",
+        "en": "“If score > 50 print ‘Pass’, otherwise print ‘Fail’.” What is printed when score is 50?"
+      },
+      "options": {
+        "tr": [
+          "Kaldı",
+          "Geçti",
+          "Hiçbir şey",
+          "Hata"
+        ],
+        "en": [
+          "Fail",
+          "Pass",
+          "Nothing",
+          "Error"
+        ]
+      },
+      "explain": {
+        "tr": "50, 50’den büyük değildir; bu yüzden değilse kısmı çalışır.",
+        "en": "50 is not greater than 50, so the otherwise branch runs."
+      }
+    },
+    {
+      "id": "basics:middle:010",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "İkili sistemdeki 1010 sayısı onluk sistemde kaçtır?",
+        "en": "What is the binary number 1010 in decimal?"
+      },
+      "options": {
+        "tr": [
+          "10",
+          "8",
+          "12",
+          "1010"
+        ],
+        "en": [
+          "10",
+          "8",
+          "12",
+          "1010"
+        ]
+      },
+      "explain": {
+        "tr": "1·8 + 0·4 + 1·2 + 0·1 = 10.",
+        "en": "1·8 + 0·4 + 1·2 + 0·1 = 10."
+      }
+    },
+    {
+      "id": "basics:middle:011",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "1 kilobayt yaklaşık kaç bayttır?",
+        "en": "About how many bytes are in a kilobyte?"
+      },
+      "options": {
+        "tr": [
+          "1000 (tam olarak 1024)",
+          "100",
+          "10",
+          "1.000.000"
+        ],
+        "en": [
+          "1000 (exactly 1024)",
+          "100",
+          "10",
+          "1,000,000"
+        ]
+      },
+      "explain": {
+        "tr": "Bilgisayarlar ikinin kuvvetleriyle çalıştığı için 1 KB genellikle 1024 bayt kabul edilir.",
+        "en": "Because computers work in powers of two, 1 KB is often taken as 1024 bytes."
+      }
+    },
+    {
+      "id": "basics:middle:012",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Program yazarken ne yapacağını plana dökmek için kullanılan, insan diline yakın taslağa ne denir?",
+        "en": "What is a rough plan of a program written in plain language called?"
+      },
+      "options": {
+        "tr": [
+          "Sözde kod (pseudocode)",
+          "Makine kodu",
+          "Derleyici",
+          "Veritabanı"
+        ],
+        "en": [
+          "Pseudocode",
+          "Machine code",
+          "Compiler",
+          "Database"
+        ]
+      },
+      "explain": {
+        "tr": "Sözde kod, algoritmayı herhangi bir dile bağlı kalmadan anlatır.",
+        "en": "Pseudocode describes an algorithm without tying it to a language."
+      }
+    },
+    {
+      "id": "basics:middle:013",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Bir koşul içinde “ve” (AND) kullanıldığında sonuç ne zaman doğru olur?",
+        "en": "When is a condition using AND true?"
+      },
+      "options": {
+        "tr": [
+          "İki koşul da doğruysa",
+          "Koşullardan biri doğruysa",
+          "İki koşul da yanlışsa",
+          "Her zaman"
+        ],
+        "en": [
+          "When both conditions are true",
+          "When either is true",
+          "When both are false",
+          "Always"
+        ]
+      },
+      "explain": {
+        "tr": "VEYA (OR) koşullardan biri doğruysa doğrudur.",
+        "en": "OR is true when at least one condition is true."
+      }
+    },
+    {
+      "id": "basics:middle:014",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Aşağıdakilerden hangisi bir işletim sistemidir?",
+        "en": "Which of these is an operating system?"
+      },
+      "options": {
+        "tr": [
+          "Windows",
+          "Chrome",
+          "Word",
+          "Scratch"
+        ],
+        "en": [
+          "Windows",
+          "Chrome",
+          "Word",
+          "Scratch"
+        ]
+      },
+      "explain": {
+        "tr": "Windows, macOS, Linux ve Android işletim sistemleridir; Chrome bir tarayıcıdır.",
+        "en": "Windows, macOS, Linux and Android are operating systems; Chrome is a browser."
+      }
+    },
+    {
+      "id": "basics:middle:015",
+      "level": "middle",
+      "type": "order",
+      "q": {
+        "tr": "Bir oyun karakterinin zıplama algoritmasını sırala.",
+        "en": "Order the algorithm for a game character’s jump."
+      },
+      "items": {
+        "tr": [
+          "Boşluk tuşuna basıldı mı kontrol et",
+          "Karakteri yukarı taşı",
+          "Kısa bir süre bekle",
+          "Karakteri aşağı indir"
+        ],
+        "en": [
+          "Check if the space key is pressed",
+          "Move the character up",
+          "Wait briefly",
+          "Move the character down"
+        ]
+      },
+      "explain": {
+        "tr": "Olay (tuşa basma) önce kontrol edilir, sonra hareket adımları gelir.",
+        "en": "The event (key press) is checked first, then the movement steps follow."
+      }
+    },
+    {
+      "id": "basics:middle:016",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Tekrar sayısını bilmeden “koşul doğru olduğu sürece” çalışan döngü hangisidir?",
+        "en": "Which loop runs “while a condition is true” without a fixed count?"
+      },
+      "options": {
+        "tr": [
+          "while",
+          "for (sayaçlı)",
+          "if",
+          "print"
+        ],
+        "en": [
+          "while",
+          "counted for",
+          "if",
+          "print"
+        ]
+      },
+      "explain": {
+        "tr": "while, koşul yanlış olana kadar döner; koşul hiç değişmezse sonsuz döngü olur.",
+        "en": "while repeats until the condition is false; if it never changes, it loops forever."
+      }
+    },
+    {
+      "id": "basics:middle:017",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Bir web sitesinin adresine ne denir?",
+        "en": "What is the address of a website called?"
+      },
+      "options": {
+        "tr": [
+          "URL",
+          "CPU",
+          "RAM",
+          "USB"
+        ],
+        "en": [
+          "URL",
+          "CPU",
+          "RAM",
+          "USB"
+        ]
+      },
+      "explain": {
+        "tr": "URL, örneğin https://quiz.miracdeprem.com gibi bir adrestir.",
+        "en": "A URL is an address such as https://quiz.miracdeprem.com."
+      }
+    },
+    {
+      "id": "basics:middle:018",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Bilgisayarın çalışırken geçici olarak veri tuttuğu, kapanınca silinen bellek hangisidir?",
+        "en": "Which memory holds data temporarily and is cleared when the computer turns off?"
+      },
+      "options": {
+        "tr": [
+          "RAM",
+          "Sabit disk",
+          "USB bellek",
+          "DVD"
+        ],
+        "en": [
+          "RAM",
+          "Hard disk",
+          "USB stick",
+          "DVD"
+        ]
+      },
+      "explain": {
+        "tr": "RAM hızlıdır ama kalıcı değildir; dosyalar diske kaydedilir.",
+        "en": "RAM is fast but not permanent; files are saved to disk."
+      }
+    },
+    {
+      "id": "basics:middle:019",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Ekrandaki renkler genellikle hangi üç ışık renginin karışımıyla oluşur?",
+        "en": "Which three light colours usually make the colours on a screen?"
+      },
+      "options": {
+        "tr": [
+          "Kırmızı, yeşil, mavi (RGB)",
+          "Kırmızı, sarı, mavi",
+          "Siyah, beyaz, gri",
+          "Turuncu, mor, yeşil"
+        ],
+        "en": [
+          "Red, green, blue (RGB)",
+          "Red, yellow, blue",
+          "Black, white, grey",
+          "Orange, purple, green"
+        ]
+      },
+      "explain": {
+        "tr": "Ekranlar ışık karıştırır; boyalar ise kırmızı-sarı-mavi ile karıştırılır.",
+        "en": "Screens mix light; paints mix red, yellow and blue."
+      }
+    },
+    {
+      "id": "basics:middle:020",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "İki sayının yerini değiştirmek için genellikle ne gerekir?",
+        "en": "What is usually needed to swap the values of two variables?"
+      },
+      "options": {
+        "tr": [
+          "Geçici bir üçüncü değişken",
+          "Yeni bir bilgisayar",
+          "Bir döngü",
+          "Bir dizi"
+        ],
+        "en": [
+          "A temporary third variable",
+          "A new computer",
+          "A loop",
+          "An array"
+        ]
+      },
+      "explain": {
+        "tr": "gecici = a; a = b; b = gecici. Bazı diller bunu tek satırda da yapar.",
+        "en": "temp = a; a = b; b = temp. Some languages can do it in one line."
+      }
+    },
+    {
+      "id": "basics:high:009",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir programın aynı girdiye her zaman aynı çıktıyı vermesi hangi test için önemlidir?",
+        "en": "Why does it matter that a program always gives the same output for the same input?"
+      },
+      "options": {
+        "tr": [
+          "Otomatik testlerin güvenilir olması için",
+          "Programın renkli olması için",
+          "Dosya boyutu için",
+          "İnternet hızı için"
+        ],
+        "en": [
+          "So automated tests are reliable",
+          "So the program is colourful",
+          "For file size",
+          "For internet speed"
+        ]
+      },
+      "explain": {
+        "tr": "Deterministik kod, testlerde beklenen sonuçla karşılaştırılabilir.",
+        "en": "Deterministic code can be compared with expected results in tests."
+      }
+    },
+    {
+      "id": "basics:high:010",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Kaynak kodunu satır satır okuyup çalıştıran programa ne denir?",
+        "en": "What runs source code line by line without compiling it first?"
+      },
+      "options": {
+        "tr": [
+          "Yorumlayıcı",
+          "Derleyici",
+          "Bağlayıcı",
+          "Tarayıcı eklentisi"
+        ],
+        "en": [
+          "Interpreter",
+          "Compiler",
+          "Linker",
+          "Browser plug-in"
+        ]
+      },
+      "explain": {
+        "tr": "Python ve JavaScript genellikle yorumlanır (ya da çalışırken derlenir).",
+        "en": "Python and JavaScript are usually interpreted (or compiled while running)."
+      }
+    },
+    {
+      "id": "basics:high:011",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Nesne yönelimli programlamada bir sınıfın başka bir sınıfın özelliklerini devralmasına ne denir?",
+        "en": "In OOP, what is a class taking on another class’s features called?"
+      },
+      "options": {
+        "tr": [
+          "Kalıtım",
+          "Kapsülleme",
+          "Derleme",
+          "Döngü"
+        ],
+        "en": [
+          "Inheritance",
+          "Encapsulation",
+          "Compilation",
+          "Loop"
+        ]
+      },
+      "explain": {
+        "tr": "Örneğin Kedi sınıfı Hayvan sınıfından kalıtım alabilir.",
+        "en": "For example, a Cat class can inherit from an Animal class."
+      }
+    },
+    {
+      "id": "basics:high:012",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Verinin dışarıdan doğrudan değiştirilmesini engelleyip metotlarla erişilmesini sağlayan ilke hangisidir?",
+        "en": "Which principle hides data and exposes it only through methods?"
+      },
+      "options": {
+        "tr": [
+          "Kapsülleme",
+          "Kalıtım",
+          "Özyineleme",
+          "Sıralama"
+        ],
+        "en": [
+          "Encapsulation",
+          "Inheritance",
+          "Recursion",
+          "Sorting"
+        ]
+      },
+      "explain": {
+        "tr": "private alanlar ve get/set metotları kapsüllemeye örnektir.",
+        "en": "Private fields with getters and setters are an example of encapsulation."
+      }
+    },
+    {
+      "id": "basics:high:013",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir dizinin elemanlarını sırayla toplayan döngünün başında toplam değişkeni kaça eşitlenir?",
+        "en": "When a loop sums an array, what should the total start at?"
+      },
+      "options": {
+        "tr": [
+          "0",
+          "1",
+          "Dizinin uzunluğuna",
+          "Son elemana"
+        ],
+        "en": [
+          "0",
+          "1",
+          "The array length",
+          "The last item"
+        ]
+      },
+      "explain": {
+        "tr": "Toplama işleminin etkisiz elemanı 0’dır; çarpım için 1 ile başlanır.",
+        "en": "Zero is the identity for addition; for a product you start at 1."
+      }
+    },
+    {
+      "id": "basics:high:014",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Sonsuz döngüye ne yol açar?",
+        "en": "What causes an infinite loop?"
+      },
+      "options": {
+        "tr": [
+          "Döngü koşulunun hiçbir zaman yanlış olmaması",
+          "Çok kısa değişken adları",
+          "Yorum satırları",
+          "Boş satırlar"
+        ],
+        "en": [
+          "A loop condition that never becomes false",
+          "Short variable names",
+          "Comments",
+          "Blank lines"
+        ]
+      },
+      "explain": {
+        "tr": "Döngü içindeki sayacı artırmayı unutmak sık yapılan bir hatadır.",
+        "en": "Forgetting to update the counter inside the loop is a common mistake."
+      }
+    },
+    {
+      "id": "basics:high:015",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Sürüm kontrol sistemi Git ne işe yarar?",
+        "en": "What is Git used for?"
+      },
+      "options": {
+        "tr": [
+          "Kodun değişiklik geçmişini tutmak ve birlikte çalışmak",
+          "Resim düzenlemek",
+          "Oyun oynamak",
+          "İnternet hızını ölçmek"
+        ],
+        "en": [
+          "Tracking code history and collaborating",
+          "Editing photos",
+          "Playing games",
+          "Measuring internet speed"
+        ]
+      },
+      "explain": {
+        "tr": "Git, kimin neyi ne zaman değiştirdiğini kaydeder ve eski sürümlere dönmeyi sağlar.",
+        "en": "Git records who changed what and when, and lets you return to old versions."
+      }
+    },
+    {
+      "id": "basics:high:016",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "API (Uygulama Programlama Arayüzü) nedir?",
+        "en": "What is an API (Application Programming Interface)?"
+      },
+      "options": {
+        "tr": [
+          "Programların birbirleriyle konuşmasını sağlayan tanımlı kurallar",
+          "Bir bilgisayar parçası",
+          "Bir virüs türü",
+          "Bir dosya biçimi"
+        ],
+        "en": [
+          "Defined rules that let programs talk to each other",
+          "A computer part",
+          "A type of virus",
+          "A file format"
+        ]
+      },
+      "explain": {
+        "tr": "Örneğin hava durumu uygulaması veriyi bir hava durumu API’sinden alır.",
+        "en": "For example, a weather app gets its data from a weather API."
+      }
+    },
+    {
+      "id": "basics:high:017",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Kodu küçük parçalara bölüp her birini ayrı test etmeye ne denir?",
+        "en": "What is testing small parts of code separately called?"
+      },
+      "options": {
+        "tr": [
+          "Birim testi",
+          "Yük testi",
+          "Kullanıcı anketi",
+          "Donanım testi"
+        ],
+        "en": [
+          "Unit testing",
+          "Load testing",
+          "User survey",
+          "Hardware testing"
+        ]
+      },
+      "explain": {
+        "tr": "Birim testleri hataları erken ve kolay bulmayı sağlar.",
+        "en": "Unit tests help find bugs early and easily."
+      }
+    },
+    {
+      "id": "basics:high:018",
+      "level": "high",
+      "type": "order",
+      "q": {
+        "tr": "Bir kullanıcının giriş yapma akışını sırala.",
+        "en": "Order the steps of a user logging in."
+      },
+      "items": {
+        "tr": [
+          "Kullanıcı adı ve şifre girilir",
+          "Sunucu bilgileri doğrular",
+          "Oturum başlatılır",
+          "Ana sayfa gösterilir"
+        ],
+        "en": [
+          "Username and password are entered",
+          "The server checks them",
+          "A session starts",
+          "The home page is shown"
+        ]
+      },
+      "explain": {
+        "tr": "Doğrulama her zaman sunucuda yapılmalıdır.",
+        "en": "Checking should always happen on the server."
+      }
+    },
+    {
+      "id": "basics:high:019",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir fonksiyona gönderilen değerlere ne denir?",
+        "en": "What are the values passed into a function called?"
+      },
+      "options": {
+        "tr": [
+          "Argüman (parametre)",
+          "Döngü",
+          "Yorum",
+          "Sınıf"
+        ],
+        "en": [
+          "Arguments (parameters)",
+          "Loops",
+          "Comments",
+          "Classes"
+        ]
+      },
+      "explain": {
+        "tr": "topla(3, 5) çağrısında 3 ve 5 argümanlardır.",
+        "en": "In add(3, 5), 3 and 5 are the arguments."
+      }
     }
   ]
 }

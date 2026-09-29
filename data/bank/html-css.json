@@ -864,6 +864,1113 @@
         "tr": "Duyarlı resimler telefonlarda gereksiz büyük dosya indirilmesini önler.",
         "en": "Responsive images stop phones from downloading oversized files."
       }
+    },
+    {
+      "id": "html-css:middle:009",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Bir paragraf hangi etiketle yazılır?",
+        "en": "Which tag makes a paragraph?"
+      },
+      "options": {
+        "tr": [
+          "<p>",
+          "<par>",
+          "<text>",
+          "<h1>"
+        ],
+        "en": [
+          "<p>",
+          "<par>",
+          "<text>",
+          "<h1>"
+        ]
+      },
+      "explain": {
+        "tr": "<p> ile yazılan metin ayrı bir paragraf olur.",
+        "en": "Text in <p> becomes its own paragraph."
+      }
+    },
+    {
+      "id": "html-css:middle:010",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Metni kalın yapan anlamsal HTML etiketi hangisidir?",
+        "en": "Which semantic HTML tag makes text strong (bold)?"
+      },
+      "options": {
+        "tr": [
+          "<strong>",
+          "<i>",
+          "<u>",
+          "<small>"
+        ],
+        "en": [
+          "<strong>",
+          "<i>",
+          "<u>",
+          "<small>"
+        ]
+      },
+      "explain": {
+        "tr": "<strong> önemli metni belirtir, genellikle kalın görünür.",
+        "en": "<strong> marks important text, usually shown in bold."
+      }
+    },
+    {
+      "id": "html-css:middle:011",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Sayfanın tarayıcı sekmesinde görünen başlığı hangi etiketle belirlenir?",
+        "en": "Which tag sets the title shown on the browser tab?"
+      },
+      "options": {
+        "tr": [
+          "<title>",
+          "<h1>",
+          "<header>",
+          "<caption>"
+        ],
+        "en": [
+          "<title>",
+          "<h1>",
+          "<header>",
+          "<caption>"
+        ]
+      },
+      "explain": {
+        "tr": "<title> etiketi <head> içinde yer alır.",
+        "en": "The <title> tag lives inside <head>."
+      }
+    },
+    {
+      "id": "html-css:middle:012",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "CSS’te arka plan rengini değiştiren özellik hangisidir?",
+        "en": "Which CSS property sets the background colour?"
+      },
+      "options": {
+        "tr": [
+          "background-color",
+          "color",
+          "bg",
+          "fill"
+        ],
+        "en": [
+          "background-color",
+          "color",
+          "bg",
+          "fill"
+        ]
+      },
+      "explain": {
+        "tr": "color yazı rengini, background-color arka planı değiştirir.",
+        "en": "color changes the text; background-color changes the background."
+      }
+    },
+    {
+      "id": "html-css:middle:013",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "CSS’te yazı boyutunu belirleyen özellik hangisidir?",
+        "en": "Which CSS property sets the text size?"
+      },
+      "options": {
+        "tr": [
+          "font-size",
+          "text-size",
+          "size",
+          "font-weight"
+        ],
+        "en": [
+          "font-size",
+          "text-size",
+          "size",
+          "font-weight"
+        ]
+      },
+      "explain": {
+        "tr": "font-weight kalınlığı, font-size boyutu belirler.",
+        "en": "font-weight sets boldness; font-size sets size."
+      }
+    },
+    {
+      "id": "html-css:middle:014",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "CSS’te sınıf seçicisi hangi karakterle başlar?",
+        "en": "Which character starts a class selector in CSS?"
+      },
+      "options": {
+        "tr": [
+          ".",
+          "#",
+          "@",
+          "&"
+        ],
+        "en": [
+          ".",
+          "#",
+          "@",
+          "&"
+        ]
+      },
+      "explain": {
+        "tr": ".buton, class=\"buton\" olan öğeleri seçer.",
+        "en": ".button selects elements with class=\"button\"."
+      }
+    },
+    {
+      "id": "html-css:middle:015",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Kullanıcıdan metin almak için hangi form öğesi kullanılır?",
+        "en": "Which form element lets the user type text?"
+      },
+      "options": {
+        "tr": [
+          "<input type=\"text\">",
+          "<button>",
+          "<img>",
+          "<br>"
+        ],
+        "en": [
+          "<input type=\"text\">",
+          "<button>",
+          "<img>",
+          "<br>"
+        ]
+      },
+      "explain": {
+        "tr": "Formlar kullanıcıdan veri almak için kullanılır.",
+        "en": "Forms collect data from the user."
+      }
+    },
+    {
+      "id": "html-css:middle:016",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Numaralı liste hangi etiketle oluşturulur?",
+        "en": "Which tag creates a numbered list?"
+      },
+      "options": {
+        "tr": [
+          "<ol>",
+          "<ul>",
+          "<dl>",
+          "<nl>"
+        ],
+        "en": [
+          "<ol>",
+          "<ul>",
+          "<dl>",
+          "<nl>"
+        ]
+      },
+      "explain": {
+        "tr": "ol = ordered list, ul = unordered list.",
+        "en": "ol means ordered list, ul means unordered list."
+      }
+    },
+    {
+      "id": "html-css:middle:017",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Bir satır sonu (alt satıra geçme) eklemek için hangi etiket kullanılır?",
+        "en": "Which tag inserts a line break?"
+      },
+      "options": {
+        "tr": [
+          "<br>",
+          "<hr>",
+          "<lb>",
+          "<break>"
+        ],
+        "en": [
+          "<br>",
+          "<hr>",
+          "<lb>",
+          "<break>"
+        ]
+      },
+      "explain": {
+        "tr": "<hr> ise yatay bir çizgi çizer.",
+        "en": "<hr> draws a horizontal line instead."
+      }
+    },
+    {
+      "id": "html-css:middle:018",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Bir HTML dosyası hangi uzantıyla kaydedilir?",
+        "en": "Which extension does an HTML file use?"
+      },
+      "options": {
+        "tr": [
+          ".html",
+          ".css",
+          ".js",
+          ".txt"
+        ],
+        "en": [
+          ".html",
+          ".css",
+          ".js",
+          ".txt"
+        ]
+      },
+      "explain": {
+        "tr": "CSS dosyaları .css, JavaScript dosyaları .js uzantılıdır.",
+        "en": "CSS files use .css and JavaScript files use .js."
+      }
+    },
+    {
+      "id": "html-css:middle:019",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Bir tabloda satır oluşturan etiket hangisidir?",
+        "en": "Which tag creates a row in a table?"
+      },
+      "options": {
+        "tr": [
+          "<tr>",
+          "<td>",
+          "<th>",
+          "<table>"
+        ],
+        "en": [
+          "<tr>",
+          "<td>",
+          "<th>",
+          "<table>"
+        ]
+      },
+      "explain": {
+        "tr": "tr satır, td hücre, th başlık hücresidir.",
+        "en": "tr is a row, td a cell and th a header cell."
+      }
+    },
+    {
+      "id": "html-css:middle:020",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Yorum satırı HTML’de nasıl yazılır?",
+        "en": "How do you write a comment in HTML?"
+      },
+      "options": {
+        "tr": [
+          "<!-- yorum -->",
+          "// yorum",
+          "# yorum",
+          "/* yorum */"
+        ],
+        "en": [
+          "<!-- comment -->",
+          "// comment",
+          "# comment",
+          "/* comment */"
+        ]
+      },
+      "explain": {
+        "tr": "/* */ CSS’te, // JavaScript’te yorumdur.",
+        "en": "/* */ is a CSS comment and // is a JavaScript comment."
+      }
+    },
+    {
+      "id": "html-css:high:009",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "margin: 0 auto; genellikle ne için kullanılır?",
+        "en": "What is margin: 0 auto; usually used for?"
+      },
+      "options": {
+        "tr": [
+          "Blok öğeyi yatayda ortalamak",
+          "Öğeyi gizlemek",
+          "Yazıyı kalın yapmak",
+          "Arka planı değiştirmek"
+        ],
+        "en": [
+          "Centring a block horizontally",
+          "Hiding an element",
+          "Making text bold",
+          "Changing the background"
+        ]
+      },
+      "explain": {
+        "tr": "Genişliği belli bir blok öğede sağ ve sol boşluk eşit paylaştırılır.",
+        "en": "For a block with a set width, left and right margins are shared equally."
+      }
+    },
+    {
+      "id": "html-css:high:010",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Flexbox’ta öğeleri ana eksende ortalayan özellik hangisidir?",
+        "en": "Which Flexbox property centres items along the main axis?"
+      },
+      "options": {
+        "tr": [
+          "justify-content: center",
+          "align-items: center",
+          "text-align: center",
+          "float: center"
+        ],
+        "en": [
+          "justify-content: center",
+          "align-items: center",
+          "text-align: center",
+          "float: center"
+        ]
+      },
+      "explain": {
+        "tr": "justify-content ana ekseni, align-items çapraz ekseni hizalar.",
+        "en": "justify-content works on the main axis, align-items on the cross axis."
+      }
+    },
+    {
+      "id": "html-css:high:011",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "rem birimi neye göredir?",
+        "en": "What is the rem unit relative to?"
+      },
+      "options": {
+        "tr": [
+          "Kök (html) öğesinin yazı boyutuna",
+          "Ebeveynin yazı boyutuna",
+          "Ekran genişliğine",
+          "Piksele sabit"
+        ],
+        "en": [
+          "The root (html) font size",
+          "The parent’s font size",
+          "The screen width",
+          "A fixed pixel"
+        ]
+      },
+      "explain": {
+        "tr": "em ebeveyne, rem köke, vw ekran genişliğine göredir.",
+        "en": "em is relative to the parent, rem to the root and vw to the viewport width."
+      }
+    },
+    {
+      "id": "html-css:high:012",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir bağlantının üzerine gelince stil değiştirmek için hangi sözde sınıf kullanılır?",
+        "en": "Which pseudo-class styles a link when the mouse is over it?"
+      },
+      "options": {
+        "tr": [
+          ":hover",
+          ":active",
+          ":focus",
+          ":checked"
+        ],
+        "en": [
+          ":hover",
+          ":active",
+          ":focus",
+          ":checked"
+        ]
+      },
+      "explain": {
+        "tr": ":hover fareyle üzerine gelinince, :active tıklanırken uygulanır.",
+        "en": ":hover applies on mouse-over and :active while clicking."
+      }
+    },
+    {
+      "id": "html-css:high:013",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Telefonlarda sayfanın doğru ölçeklenmesi için head’e hangi etiket eklenir?",
+        "en": "Which tag in the head makes a page scale correctly on phones?"
+      },
+      "options": {
+        "tr": [
+          "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+          "<meta charset=\"utf-8\">",
+          "<link rel=\"icon\">",
+          "<base href=\"/\">"
+        ],
+        "en": [
+          "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+          "<meta charset=\"utf-8\">",
+          "<link rel=\"icon\">",
+          "<base href=\"/\">"
+        ]
+      },
+      "explain": {
+        "tr": "Bu etiket olmadan telefon sayfayı masaüstü genişliğinde küçültür.",
+        "en": "Without it, phones shrink the page to desktop width."
+      }
+    },
+    {
+      "id": "html-css:high:014",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "z-index özelliği neyi belirler?",
+        "en": "What does the z-index property control?"
+      },
+      "options": {
+        "tr": [
+          "Üst üste binen öğelerin hangisinin önde görüneceğini",
+          "Yazı boyutunu",
+          "Öğenin genişliğini",
+          "Animasyon hızını"
+        ],
+        "en": [
+          "Which overlapping element appears in front",
+          "Text size",
+          "Element width",
+          "Animation speed"
+        ]
+      },
+      "explain": {
+        "tr": "z-index konumlandırılmış öğelerde (position ≠ static) işe yarar.",
+        "en": "z-index works on positioned elements (position other than static)."
+      }
+    },
+    {
+      "id": "html-css:high:015",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir form alanını zorunlu yapan HTML özelliği hangisidir?",
+        "en": "Which HTML attribute makes a form field required?"
+      },
+      "options": {
+        "tr": [
+          "required",
+          "needed",
+          "must",
+          "validate"
+        ],
+        "en": [
+          "required",
+          "needed",
+          "must",
+          "validate"
+        ]
+      },
+      "explain": {
+        "tr": "Tarayıcı doğrulaması kullanıcı içindir; sunucu yine de doğrulama yapmalıdır.",
+        "en": "Browser validation helps users, but the server must still validate."
+      }
+    },
+    {
+      "id": "html-css:high:016",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "CSS’te bir öğeye yuvarlak köşe veren özellik hangisidir?",
+        "en": "Which CSS property gives an element rounded corners?"
+      },
+      "options": {
+        "tr": [
+          "border-radius",
+          "border-round",
+          "corner",
+          "radius"
+        ],
+        "en": [
+          "border-radius",
+          "border-round",
+          "corner",
+          "radius"
+        ]
+      },
+      "explain": {
+        "tr": "border-radius: 50% kare bir öğeyi daireye çevirir.",
+        "en": "border-radius: 50% turns a square element into a circle."
+      }
+    },
+    {
+      "id": "html-css:high:017",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Klavye kullanıcıları için sekme (Tab) sırasına öğe eklemek için hangisi kullanılır?",
+        "en": "What adds an element to the keyboard Tab order?"
+      },
+      "options": {
+        "tr": [
+          "tabindex=\"0\"",
+          "tabindex=\"-1\"",
+          "focus=\"true\"",
+          "order=\"1\""
+        ],
+        "en": [
+          "tabindex=\"0\"",
+          "tabindex=\"-1\"",
+          "focus=\"true\"",
+          "order=\"1\""
+        ]
+      },
+      "explain": {
+        "tr": "tabindex=\"-1\" öğeyi sadece kodla odaklanabilir yapar; sırada yer almaz.",
+        "en": "tabindex=\"-1\" makes it focusable only from code, not by Tab."
+      }
+    },
+    {
+      "id": "html-css:high:018",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir öğenin taşan içeriğini kaydırma çubuğuyla gösteren kural hangisidir?",
+        "en": "Which rule shows overflowing content with a scroll bar?"
+      },
+      "options": {
+        "tr": [
+          "overflow: auto",
+          "overflow: visible",
+          "display: block",
+          "position: fixed"
+        ],
+        "en": [
+          "overflow: auto",
+          "overflow: visible",
+          "display: block",
+          "position: fixed"
+        ]
+      },
+      "explain": {
+        "tr": "overflow: hidden ise taşan kısmı keser.",
+        "en": "overflow: hidden cuts off the overflow instead."
+      }
+    },
+    {
+      "id": "html-css:high:019",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir bağlantıyı yeni sekmede açmak için hangi özellik kullanılır?",
+        "en": "Which attribute opens a link in a new tab?"
+      },
+      "options": {
+        "tr": [
+          "target=\"_blank\"",
+          "rel=\"new\"",
+          "href=\"new\"",
+          "open=\"tab\""
+        ],
+        "en": [
+          "target=\"_blank\"",
+          "rel=\"new\"",
+          "href=\"new\"",
+          "open=\"tab\""
+        ]
+      },
+      "explain": {
+        "tr": "Güvenlik için rel=\"noopener\" ile birlikte kullanılmalıdır.",
+        "en": "Use it with rel=\"noopener\" for safety."
+      }
+    },
+    {
+      "id": "html-css:university:009",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "CSS Grid’de grid-template-columns: repeat(3, 1fr) ne yapar?",
+        "en": "What does grid-template-columns: repeat(3, 1fr) do?"
+      },
+      "options": {
+        "tr": [
+          "Alanı üç eşit sütuna böler",
+          "Üç satır oluşturur",
+          "Sütunları 3 piksel yapar",
+          "Öğeleri üç kez tekrarlar"
+        ],
+        "en": [
+          "Splits the space into three equal columns",
+          "Creates three rows",
+          "Makes columns 3 px wide",
+          "Repeats items three times"
+        ]
+      },
+      "explain": {
+        "tr": "fr birimi kalan boşluğun payını ifade eder.",
+        "en": "The fr unit is a share of the remaining space."
+      }
+    },
+    {
+      "id": "html-css:university:010",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "clamp(1rem, 2.5vw, 2rem) ne yapar?",
+        "en": "What does clamp(1rem, 2.5vw, 2rem) do?"
+      },
+      "options": {
+        "tr": [
+          "Değeri 1rem ile 2rem arasında tutarak ekrana göre ölçekler",
+          "Değeri her zaman 2rem yapar",
+          "Hata verir",
+          "Animasyon oluşturur"
+        ],
+        "en": [
+          "Scales with the screen but stays between 1rem and 2rem",
+          "Always uses 2rem",
+          "Causes an error",
+          "Creates an animation"
+        ]
+      },
+      "explain": {
+        "tr": "Akışkan yazı boyutları için sık kullanılır.",
+        "en": "It is common for fluid font sizes."
+      }
+    },
+    {
+      "id": "html-css:university:011",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "prefers-reduced-motion medya sorgusu ne için kullanılır?",
+        "en": "What is the prefers-reduced-motion media query for?"
+      },
+      "options": {
+        "tr": [
+          "Hareket hassasiyeti olanlar için animasyonları azaltmak",
+          "Karanlık temayı açmak",
+          "Yazı tipini değiştirmek",
+          "Sayfayı yazdırmak"
+        ],
+        "en": [
+          "Reducing animation for motion-sensitive users",
+          "Turning on dark mode",
+          "Changing the font",
+          "Printing the page"
+        ]
+      },
+      "explain": {
+        "tr": "Kullanıcının işletim sistemi ayarına saygı gösterir.",
+        "en": "It respects the user’s operating system setting."
+      }
+    },
+    {
+      "id": "html-css:university:012",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "prefers-color-scheme: dark ne zaman eşleşir?",
+        "en": "When does prefers-color-scheme: dark match?"
+      },
+      "options": {
+        "tr": [
+          "Kullanıcı sisteminde koyu temayı seçtiyse",
+          "Gece saatlerinde",
+          "Ekran parlaklığı düşükse",
+          "Tarayıcı güncel değilse"
+        ],
+        "en": [
+          "When the user chose a dark theme in their system",
+          "At night",
+          "When brightness is low",
+          "When the browser is outdated"
+        ]
+      },
+      "explain": {
+        "tr": "Tema değişkenleri bu sorguyla otomatik değiştirilebilir.",
+        "en": "Theme variables can switch automatically with it."
+      }
+    },
+    {
+      "id": "html-css:university:013",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Bir sayfada kaç tane <h1> olması önerilir?",
+        "en": "How many <h1> elements are recommended per page?"
+      },
+      "options": {
+        "tr": [
+          "Genellikle bir tane, ana başlık için",
+          "Her paragraf için bir",
+          "Hiç olmamalı",
+          "En az beş"
+        ],
+        "en": [
+          "Usually one, for the main heading",
+          "One per paragraph",
+          "None",
+          "At least five"
+        ]
+      },
+      "explain": {
+        "tr": "Başlık düzeyleri (h1 → h6) sayfanın ana hatlarını ekran okuyuculara anlatır.",
+        "en": "Heading levels (h1 → h6) give screen readers an outline of the page."
+      }
+    },
+    {
+      "id": "html-css:university:014",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "loading=\"lazy\" özelliği resimlerde ne yapar?",
+        "en": "What does loading=\"lazy\" do for images?"
+      },
+      "options": {
+        "tr": [
+          "Resmi ekrana yaklaşınca yükler",
+          "Resmi bulanıklaştırır",
+          "Resmi sıkıştırır",
+          "Resmi gizler"
+        ],
+        "en": [
+          "Loads the image when it nears the viewport",
+          "Blurs the image",
+          "Compresses it",
+          "Hides it"
+        ]
+      },
+      "explain": {
+        "tr": "Sayfanın ilk açılışını hızlandırır.",
+        "en": "It speeds up the first page load."
+      }
+    },
+    {
+      "id": "html-css:university:015",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "CSS’te :is() ve :where() arasındaki fark nedir?",
+        "en": "What is the difference between :is() and :where()?"
+      },
+      "options": {
+        "tr": [
+          ":where() özgüllüğü sıfırdır, :is() en yüksek argümanın özgüllüğünü alır",
+          "Aynıdır",
+          ":is() sadece id seçer",
+          ":where() sadece sınıf seçer"
+        ],
+        "en": [
+          ":where() has zero specificity; :is() takes its most specific argument",
+          "They are the same",
+          ":is() selects only ids",
+          ":where() selects only classes"
+        ]
+      },
+      "explain": {
+        "tr": ":where() kolayca ezilebilen varsayılan stiller için uygundur.",
+        "en": ":where() suits default styles that should be easy to override."
+      }
+    },
+    {
+      "id": "html-css:university:016",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Bir düğmenin (button) type özelliği form içinde belirtilmezse varsayılan nedir?",
+        "en": "Inside a form, what is a button’s type if not specified?"
+      },
+      "options": {
+        "tr": [
+          "submit",
+          "button",
+          "reset",
+          "none"
+        ],
+        "en": [
+          "submit",
+          "button",
+          "reset",
+          "none"
+        ]
+      },
+      "explain": {
+        "tr": "Bu yüzden formu göndermemesi gereken düğmelere type=\"button\" yazılır.",
+        "en": "That is why buttons that should not submit get type=\"button\"."
+      }
+    },
+    {
+      "id": "html-css:university:017",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Semantik HTML’de gezinme bağlantıları hangi etiketle sarılır?",
+        "en": "Which semantic tag wraps navigation links?"
+      },
+      "options": {
+        "tr": [
+          "<nav>",
+          "<menu>",
+          "<links>",
+          "<aside>"
+        ],
+        "en": [
+          "<nav>",
+          "<menu>",
+          "<links>",
+          "<aside>"
+        ]
+      },
+      "explain": {
+        "tr": "<nav>, ekran okuyuculara gezinme bölgesi olarak duyurulur.",
+        "en": "<nav> is announced to screen readers as a navigation region."
+      }
+    },
+    {
+      "id": "html-css:masters:009",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Render-blocking kaynaklar sayfa yüklemesini nasıl etkiler?",
+        "en": "How do render-blocking resources affect page load?"
+      },
+      "options": {
+        "tr": [
+          "Yüklenene kadar tarayıcı sayfayı çizemez",
+          "Sayfayı hızlandırır",
+          "Sadece resimleri etkiler",
+          "Hiç etkilemez"
+        ],
+        "en": [
+          "The browser cannot paint until they load",
+          "They speed things up",
+          "They only affect images",
+          "They have no effect"
+        ]
+      },
+      "explain": {
+        "tr": "CSS ve senkron script’ler çizimi bekletir; defer ve async script’leri engelleyici olmaktan çıkarır.",
+        "en": "CSS and synchronous scripts delay painting; defer and async make scripts non-blocking."
+      }
+    },
+    {
+      "id": "html-css:masters:010",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "<script type=\"module\"> için varsayılan davranış hangisidir?",
+        "en": "What is the default behaviour of <script type=\"module\">?"
+      },
+      "options": {
+        "tr": [
+          "defer gibi ertelenmiş çalışır",
+          "Hemen engelleyerek çalışır",
+          "Hiç çalışmaz",
+          "Sadece sunucuda çalışır"
+        ],
+        "en": [
+          "It is deferred, like defer",
+          "It runs immediately and blocks",
+          "It never runs",
+          "It runs only on the server"
+        ]
+      },
+      "explain": {
+        "tr": "Modüller HTML ayrıştırması bittikten sonra çalışır.",
+        "en": "Modules run after the HTML has been parsed."
+      }
+    },
+    {
+      "id": "html-css:masters:011",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Largest Contentful Paint (LCP) neyi ölçer?",
+        "en": "What does Largest Contentful Paint (LCP) measure?"
+      },
+      "options": {
+        "tr": [
+          "Görünür en büyük içeriğin ekrana çizilme süresini",
+          "Toplam sayfa boyutunu",
+          "JavaScript hata sayısını",
+          "Sunucu sayısını"
+        ],
+        "en": [
+          "When the largest visible content is painted",
+          "Total page size",
+          "JavaScript errors",
+          "The number of servers"
+        ]
+      },
+      "explain": {
+        "tr": "İyi bir LCP 2,5 saniyenin altındadır.",
+        "en": "A good LCP is under 2.5 seconds."
+      }
+    },
+    {
+      "id": "html-css:masters:012",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Interaction to Next Paint (INP) neyi değerlendirir?",
+        "en": "What does Interaction to Next Paint (INP) assess?"
+      },
+      "options": {
+        "tr": [
+          "Kullanıcı etkileşimlerinden sonra sayfanın ne kadar hızlı tepki verdiğini",
+          "Resimlerin kalitesini",
+          "Sayfanın SEO puanını",
+          "Yazı tipinin boyutunu"
+        ],
+        "en": [
+          "How quickly the page responds after user interactions",
+          "Image quality",
+          "SEO score",
+          "Font size"
+        ]
+      },
+      "explain": {
+        "tr": "Uzun JavaScript görevleri INP’yi kötüleştirir.",
+        "en": "Long JavaScript tasks make INP worse."
+      }
+    },
+    {
+      "id": "html-css:masters:013",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "font-display: swap ne sağlar?",
+        "en": "What does font-display: swap do?"
+      },
+      "options": {
+        "tr": [
+          "Web fontu yüklenene kadar yedek fontla metni hemen gösterir",
+          "Fontu hiç yüklemez",
+          "Fontu sıkıştırır",
+          "Metni gizler"
+        ],
+        "en": [
+          "Shows text in a fallback font until the web font loads",
+          "Never loads the font",
+          "Compresses the font",
+          "Hides the text"
+        ]
+      },
+      "explain": {
+        "tr": "Bu, görünmez metin süresini (FOIT) önler.",
+        "en": "This avoids a flash of invisible text (FOIT)."
+      }
+    },
+    {
+      "id": "html-css:masters:014",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "CSS contain özelliği ne işe yarar?",
+        "en": "What does the CSS contain property do?"
+      },
+      "options": {
+        "tr": [
+          "Bir öğenin düzen ve boyama hesaplarını sayfanın geri kalanından yalıtır",
+          "Taşan içeriği gizler",
+          "Öğeyi ortalar",
+          "Animasyon ekler"
+        ],
+        "en": [
+          "Isolates an element’s layout and paint from the rest of the page",
+          "Hides overflow",
+          "Centres the element",
+          "Adds animation"
+        ]
+      },
+      "explain": {
+        "tr": "Tarayıcı değişiklikleri daha küçük bir alanda yeniden hesaplar.",
+        "en": "The browser recalculates changes in a smaller area."
+      }
+    },
+    {
+      "id": "html-css:masters:015",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "ARIA’nın “ilk kuralı” nedir?",
+        "en": "What is the “first rule” of ARIA?"
+      },
+      "options": {
+        "tr": [
+          "Uygun yerel HTML öğesi varsa ARIA yerine onu kullanmak",
+          "Her öğeye aria-label eklemek",
+          "role=\"button\"u div’lere eklemek",
+          "ARIA’yı sadece mobilde kullanmak"
+        ],
+        "en": [
+          "Use a native HTML element when one fits instead of ARIA",
+          "Add aria-label to everything",
+          "Add role=\"button\" to divs",
+          "Use ARIA only on mobile"
+        ]
+      },
+      "explain": {
+        "tr": "Yerel <button> klavye ve ekran okuyucu desteğini hazır getirir.",
+        "en": "A native <button> comes with keyboard and screen-reader support built in."
+      }
+    },
+    {
+      "id": "html-css:masters:016",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Subresource Integrity (SRI) ne sağlar?",
+        "en": "What does Subresource Integrity (SRI) provide?"
+      },
+      "options": {
+        "tr": [
+          "CDN’den gelen dosyanın hash’ini doğrulayıp değiştirilmişse yüklememek",
+          "Dosyayı sıkıştırmak",
+          "Dosyayı önbelleğe almak",
+          "Dosyayı şifrelemek"
+        ],
+        "en": [
+          "Checking a CDN file’s hash and refusing it if changed",
+          "Compressing files",
+          "Caching files",
+          "Encrypting files"
+        ]
+      },
+      "explain": {
+        "tr": "integrity=\"sha384-...\" özelliğiyle kullanılır.",
+        "en": "It is used with the integrity=\"sha384-...\" attribute."
+      }
+    },
+    {
+      "id": "html-css:masters:017",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "CSS’te :has() seçicisinin yeniliği nedir?",
+        "en": "What is new about the CSS :has() selector?"
+      },
+      "options": {
+        "tr": [
+          "Çocuklarına bakarak ebeveyni seçebilmesi",
+          "Sadece id seçmesi",
+          "Animasyon oluşturması",
+          "JavaScript çalıştırması"
+        ],
+        "en": [
+          "It can select a parent based on its children",
+          "It selects only ids",
+          "It creates animations",
+          "It runs JavaScript"
+        ]
+      },
+      "explain": {
+        "tr": "Örneğin form:has(input:invalid) hatalı alanı olan formu seçer.",
+        "en": "For example, form:has(input:invalid) selects a form with an invalid field."
+      }
     }
   ]
 }
