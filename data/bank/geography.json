@@ -1,0 +1,815 @@
+{
+  "topic": "geography",
+  "questions": [
+    {
+      "id": "geography:primary:001",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Dünya’nın en büyük okyanusu hangisidir?",
+        "en": "What is the largest ocean on Earth?"
+      },
+      "options": {
+        "tr": [
+          "Büyük Okyanus (Pasifik)",
+          "Atlas Okyanusu",
+          "Hint Okyanusu",
+          "Arktik Okyanusu"
+        ],
+        "en": [
+          "Pacific Ocean",
+          "Atlantic Ocean",
+          "Indian Ocean",
+          "Arctic Ocean"
+        ]
+      },
+      "explain": {
+        "tr": "Pasifik, bütün karaların toplamından daha geniş bir alanı kaplar.",
+        "en": "The Pacific covers more area than all the land combined."
+      }
+    },
+    {
+      "id": "geography:primary:002",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Türkiye’nin en yüksek dağı hangisidir?",
+        "en": "What is the highest mountain in Türkiye?"
+      },
+      "options": {
+        "tr": [
+          "Ağrı Dağı",
+          "Erciyes Dağı",
+          "Uludağ",
+          "Palandöken"
+        ],
+        "en": [
+          "Mount Ararat",
+          "Mount Erciyes",
+          "Uludağ",
+          "Palandöken"
+        ]
+      },
+      "explain": {
+        "tr": "Ağrı Dağı yaklaşık 5.137 metredir.",
+        "en": "Mount Ararat is about 5,137 metres high."
+      }
+    },
+    {
+      "id": "geography:primary:003",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Türkiye’yi çevreleyen denizlerden hangisi kuzeydedir?",
+        "en": "Which sea lies to the north of Türkiye?"
+      },
+      "options": {
+        "tr": [
+          "Karadeniz",
+          "Akdeniz",
+          "Ege Denizi",
+          "Kızıldeniz"
+        ],
+        "en": [
+          "Black Sea",
+          "Mediterranean Sea",
+          "Aegean Sea",
+          "Red Sea"
+        ]
+      },
+      "explain": {
+        "tr": "Kuzeyde Karadeniz, batıda Ege, güneyde Akdeniz vardır.",
+        "en": "The Black Sea is to the north, the Aegean to the west and the Mediterranean to the south."
+      }
+    },
+    {
+      "id": "geography:primary:004",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Pusulanın ibresi hangi yönü gösterir?",
+        "en": "Which direction does a compass needle point to?"
+      },
+      "options": {
+        "tr": [
+          "Kuzey",
+          "Güney",
+          "Doğu",
+          "Batı"
+        ],
+        "en": [
+          "North",
+          "South",
+          "East",
+          "West"
+        ]
+      },
+      "explain": {
+        "tr": "İbre, Dünya’nın manyetik alanı nedeniyle manyetik kuzeyi gösterir.",
+        "en": "The needle points to magnetic north because of Earth’s magnetic field."
+      }
+    },
+    {
+      "id": "geography:primary:005",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Güneş hangi yönden doğar?",
+        "en": "In which direction does the Sun rise?"
+      },
+      "options": {
+        "tr": [
+          "Doğu",
+          "Batı",
+          "Kuzey",
+          "Güney"
+        ],
+        "en": [
+          "East",
+          "West",
+          "North",
+          "South"
+        ]
+      },
+      "explain": {
+        "tr": "Dünya batıdan doğuya döndüğü için Güneş doğudan doğar.",
+        "en": "Earth spins from west to east, so the Sun rises in the east."
+      }
+    },
+    {
+      "id": "geography:primary:006",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Dünya’nın en büyük kıtası hangisidir?",
+        "en": "What is the largest continent?"
+      },
+      "options": {
+        "tr": [
+          "Asya",
+          "Afrika",
+          "Avrupa",
+          "Antarktika"
+        ],
+        "en": [
+          "Asia",
+          "Africa",
+          "Europe",
+          "Antarctica"
+        ]
+      },
+      "explain": {
+        "tr": "Asya hem yüzölçümü hem de nüfus bakımından en büyük kıtadır.",
+        "en": "Asia is the largest continent by both area and population."
+      }
+    },
+    {
+      "id": "geography:middle:001",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Tamamı Türkiye sınırları içinde kalan en uzun nehir hangisidir?",
+        "en": "What is the longest river entirely within Türkiye?"
+      },
+      "options": {
+        "tr": [
+          "Kızılırmak",
+          "Fırat",
+          "Sakarya",
+          "Yeşilırmak"
+        ],
+        "en": [
+          "Kızılırmak",
+          "Euphrates",
+          "Sakarya",
+          "Yeşilırmak"
+        ]
+      },
+      "explain": {
+        "tr": "Kızılırmak tamamı Türkiye sınırları içinde kalan en uzun nehirdir.",
+        "en": "The Kızılırmak is the longest river wholly inside Türkiye."
+      }
+    },
+    {
+      "id": "geography:middle:002",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Ekvator’un özelliği nedir?",
+        "en": "What is special about the Equator?"
+      },
+      "options": {
+        "tr": [
+          "Dünya’yı kuzey ve güney yarım küreye ayırır",
+          "Doğu ile batıyı ayırır",
+          "Kutup noktasından geçer",
+          "Sadece okyanuslardan geçer"
+        ],
+        "en": [
+          "It divides Earth into northern and southern hemispheres",
+          "It divides east from west",
+          "It passes through the poles",
+          "It crosses only oceans"
+        ]
+      },
+      "explain": {
+        "tr": "Doğu ile batıyı ayıran başlangıç meridyeni Greenwich’ten geçer.",
+        "en": "East and west are divided by the prime meridian through Greenwich."
+      }
+    },
+    {
+      "id": "geography:middle:003",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Dünya’daki mevsimlerin temel nedeni nedir?",
+        "en": "What is the main cause of the seasons?"
+      },
+      "options": {
+        "tr": [
+          "Dünya’nın eksen eğikliği",
+          "Dünya’nın Güneş’e uzaklığının değişmesi",
+          "Ay’ın çekimi",
+          "Okyanus akıntıları"
+        ],
+        "en": [
+          "Earth’s tilted axis",
+          "Changing distance from the Sun",
+          "The Moon’s pull",
+          "Ocean currents"
+        ]
+      },
+      "explain": {
+        "tr": "Yaklaşık 23,5 derecelik eğiklik, güneş ışınlarının geliş açısını yıl boyunca değiştirir.",
+        "en": "The roughly 23.5° tilt changes the angle of sunlight through the year."
+      }
+    },
+    {
+      "id": "geography:middle:004",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Dünya’nın en uzun nehri olarak genellikle hangisi kabul edilir?",
+        "en": "Which river is usually considered the longest in the world?"
+      },
+      "options": {
+        "tr": [
+          "Nil",
+          "Amazon",
+          "Yangtze",
+          "Mississippi"
+        ],
+        "en": [
+          "Nile",
+          "Amazon",
+          "Yangtze",
+          "Mississippi"
+        ]
+      },
+      "explain": {
+        "tr": "Nil yaklaşık 6.650 km’dir; bazı ölçümler Amazon’u daha uzun bulur.",
+        "en": "The Nile is about 6,650 km, though some measurements put the Amazon ahead."
+      }
+    },
+    {
+      "id": "geography:middle:005",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Sahra hangi kıtadadır?",
+        "en": "On which continent is the Sahara?"
+      },
+      "options": {
+        "tr": [
+          "Afrika",
+          "Asya",
+          "Avustralya",
+          "Güney Amerika"
+        ],
+        "en": [
+          "Africa",
+          "Asia",
+          "Australia",
+          "South America"
+        ]
+      },
+      "explain": {
+        "tr": "Sahra, Dünya’nın en büyük sıcak çölüdür.",
+        "en": "The Sahara is the largest hot desert in the world."
+      }
+    },
+    {
+      "id": "geography:middle:006",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Türkiye’nin en büyük gölü hangisidir?",
+        "en": "What is the largest lake in Türkiye?"
+      },
+      "options": {
+        "tr": [
+          "Van Gölü",
+          "Tuz Gölü",
+          "Beyşehir Gölü",
+          "Eğirdir Gölü"
+        ],
+        "en": [
+          "Lake Van",
+          "Lake Tuz",
+          "Lake Beyşehir",
+          "Lake Eğirdir"
+        ]
+      },
+      "explain": {
+        "tr": "Van Gölü aynı zamanda dünyanın en büyük sodalı gölüdür.",
+        "en": "Lake Van is also the largest soda lake in the world."
+      }
+    },
+    {
+      "id": "geography:high:001",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Levha hareketlerinin sonucu olarak oluşan doğal afet hangisidir?",
+        "en": "Which natural disaster is caused by plate movements?"
+      },
+      "options": {
+        "tr": [
+          "Deprem",
+          "Kasırga",
+          "Sel",
+          "Kuraklık"
+        ],
+        "en": [
+          "Earthquake",
+          "Hurricane",
+          "Flood",
+          "Drought"
+        ]
+      },
+      "explain": {
+        "tr": "Türkiye, Kuzey ve Doğu Anadolu fay hatları nedeniyle deprem kuşağındadır.",
+        "en": "Türkiye lies on an earthquake belt because of the North and East Anatolian faults."
+      }
+    },
+    {
+      "id": "geography:high:002",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Akdeniz ikliminin özelliği nedir?",
+        "en": "What characterises a Mediterranean climate?"
+      },
+      "options": {
+        "tr": [
+          "Yazları sıcak ve kurak, kışları ılık ve yağışlı",
+          "Her mevsim yağışlı",
+          "Yazları serin, kışları çok soğuk",
+          "Yıl boyu kurak"
+        ],
+        "en": [
+          "Hot dry summers and mild wet winters",
+          "Rain in every season",
+          "Cool summers and very cold winters",
+          "Dry all year"
+        ]
+      },
+      "explain": {
+        "tr": "Bu iklimin doğal bitki örtüsü makidir.",
+        "en": "Its natural vegetation is maquis shrubland."
+      }
+    },
+    {
+      "id": "geography:high:003",
+      "level": "high",
+      "type": "order",
+      "q": {
+        "tr": "Atmosfer katmanlarını yerden yukarıya doğru sırala.",
+        "en": "Order the layers of the atmosphere from the ground up."
+      },
+      "items": {
+        "tr": [
+          "Troposfer",
+          "Stratosfer",
+          "Mezosfer",
+          "Termosfer"
+        ],
+        "en": [
+          "Troposphere",
+          "Stratosphere",
+          "Mesosphere",
+          "Thermosphere"
+        ]
+      },
+      "explain": {
+        "tr": "Hava olayları troposferde gerçekleşir; ozon tabakası stratosferdedir.",
+        "en": "Weather happens in the troposphere; the ozone layer is in the stratosphere."
+      }
+    },
+    {
+      "id": "geography:high:004",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Karstik arazilerde (ör. Pamukkale travertenleri) hangi kayaç yaygındır?",
+        "en": "Which rock is common in karst landscapes such as the Pamukkale travertines?"
+      },
+      "options": {
+        "tr": [
+          "Kireçtaşı",
+          "Granit",
+          "Bazalt",
+          "Kumtaşı"
+        ],
+        "en": [
+          "Limestone",
+          "Granite",
+          "Basalt",
+          "Sandstone"
+        ]
+      },
+      "explain": {
+        "tr": "Kireçtaşı suda eriyerek mağara, obruk ve traverten oluşturur.",
+        "en": "Limestone dissolves in water, forming caves, sinkholes and travertines."
+      }
+    },
+    {
+      "id": "geography:high:005",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Nüfus piramidinin tabanı genişse ülke için ne söylenebilir?",
+        "en": "What does a wide base in a population pyramid suggest?"
+      },
+      "options": {
+        "tr": [
+          "Doğum oranı yüksektir, nüfus gençtir",
+          "Nüfus yaşlıdır",
+          "Göç yoktur",
+          "Nüfus azalmaktadır"
+        ],
+        "en": [
+          "A high birth rate and a young population",
+          "An old population",
+          "No migration",
+          "A shrinking population"
+        ]
+      },
+      "explain": {
+        "tr": "Geniş taban çok sayıda çocuğu, dar tepe az sayıda yaşlıyı gösterir.",
+        "en": "A wide base means many children; a narrow top means few elderly people."
+      }
+    },
+    {
+      "id": "geography:high:006",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Muson yağmurları en çok hangi bölgede görülür?",
+        "en": "Where are monsoon rains most typical?"
+      },
+      "options": {
+        "tr": [
+          "Güney ve Güneydoğu Asya",
+          "Kuzey Avrupa",
+          "Sahra",
+          "Antarktika"
+        ],
+        "en": [
+          "South and Southeast Asia",
+          "Northern Europe",
+          "The Sahara",
+          "Antarctica"
+        ]
+      },
+      "explain": {
+        "tr": "Mevsimlik rüzgârlar yazın okyanustan nemli hava taşır.",
+        "en": "Seasonal winds bring moist ocean air in summer."
+      }
+    },
+    {
+      "id": "geography:university:001",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Coğrafi Bilgi Sistemleri (CBS/GIS) temel olarak ne yapar?",
+        "en": "What does a Geographic Information System (GIS) mainly do?"
+      },
+      "options": {
+        "tr": [
+          "Konumsal verileri depolar, analiz eder ve haritalar",
+          "Sadece uydu fırlatır",
+          "Hava durumunu değiştirir",
+          "Nüfus sayımı yapar"
+        ],
+        "en": [
+          "Stores, analyses and maps spatial data",
+          "Only launches satellites",
+          "Changes the weather",
+          "Runs censuses"
+        ]
+      },
+      "explain": {
+        "tr": "CBS, katmanlar hâlindeki verileri bir arada analiz etmeyi sağlar.",
+        "en": "GIS lets you analyse layers of data together."
+      }
+    },
+    {
+      "id": "geography:university:002",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Kentleşmede \"ısı adası\" etkisi nedir?",
+        "en": "What is the urban heat island effect?"
+      },
+      "options": {
+        "tr": [
+          "Şehirlerin çevresindeki kırsal alanlardan daha sıcak olması",
+          "Adaların şehirlerden sıcak olması",
+          "Şehirlerde kar yağmaması",
+          "Denizlerin ısınması"
+        ],
+        "en": [
+          "Cities being warmer than the countryside around them",
+          "Islands being warmer than cities",
+          "Cities never getting snow",
+          "Seas warming up"
+        ]
+      },
+      "explain": {
+        "tr": "Beton ve asfalt ısıyı depolar, yeşil alanların azlığı soğumayı yavaşlatır.",
+        "en": "Concrete and asphalt store heat, and few green spaces slow cooling."
+      }
+    },
+    {
+      "id": "geography:university:003",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Harita projeksiyonlarının hepsinde kaçınılmaz olan nedir?",
+        "en": "What is unavoidable in every map projection?"
+      },
+      "options": {
+        "tr": [
+          "Bir tür bozulma (alan, şekil ya da uzaklık)",
+          "Renk hatası",
+          "Ölçeksizlik",
+          "Kuzeyin aşağıda olması"
+        ],
+        "en": [
+          "Some distortion (area, shape or distance)",
+          "Colour errors",
+          "No scale",
+          "North pointing down"
+        ]
+      },
+      "explain": {
+        "tr": "Küre düz bir yüzeye bozulmadan aktarılamaz; Mercator örneğin alanları büyütür.",
+        "en": "A sphere cannot be flattened without distortion; Mercator, for example, inflates areas."
+      }
+    },
+    {
+      "id": "geography:university:004",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Demografik dönüşüm modelinin son aşamasında ne görülür?",
+        "en": "What happens in the last stage of the demographic transition model?"
+      },
+      "options": {
+        "tr": [
+          "Doğum ve ölüm oranları düşüktür, nüfus artışı yavaşlar",
+          "Doğum ve ölüm oranları yüksektir",
+          "Ölüm oranı hızla artar",
+          "Nüfus ikiye katlanır"
+        ],
+        "en": [
+          "Low birth and death rates with slow growth",
+          "High birth and death rates",
+          "Rising death rates",
+          "The population doubles"
+        ]
+      },
+      "explain": {
+        "tr": "Sanayileşmiş ülkelerin çoğu bu aşamadadır.",
+        "en": "Most industrialised countries are at this stage."
+      }
+    },
+    {
+      "id": "geography:university:005",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Kuzey Anadolu Fay Hattı nasıl bir faydır?",
+        "en": "What kind of fault is the North Anatolian Fault?"
+      },
+      "options": {
+        "tr": [
+          "Doğrultu atımlı (yanal) fay",
+          "Normal fay",
+          "Ters fay",
+          "Aktif olmayan fay"
+        ],
+        "en": [
+          "A strike-slip fault",
+          "A normal fault",
+          "A reverse fault",
+          "An inactive fault"
+        ]
+      },
+      "explain": {
+        "tr": "Anadolu levhası batıya doğru yanal olarak hareket eder.",
+        "en": "The Anatolian plate slides sideways toward the west."
+      }
+    },
+    {
+      "id": "geography:university:006",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "El Niño olayı nedir?",
+        "en": "What is El Niño?"
+      },
+      "options": {
+        "tr": [
+          "Pasifik’in doğusunda deniz yüzeyinin olağandışı ısınması",
+          "Bir kasırga türü",
+          "Kutuplardaki buzlanma",
+          "Himalayalardaki bir rüzgâr"
+        ],
+        "en": [
+          "Unusual warming of the eastern Pacific surface",
+          "A type of hurricane",
+          "Polar icing",
+          "A Himalayan wind"
+        ]
+      },
+      "explain": {
+        "tr": "El Niño dünya genelinde yağış ve sıcaklık düzenini etkiler.",
+        "en": "El Niño changes rainfall and temperature patterns worldwide."
+      }
+    },
+    {
+      "id": "geography:masters:001",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Merkez-çevre (core-periphery) modeli ne açıklar?",
+        "en": "What does the core–periphery model explain?"
+      },
+      "options": {
+        "tr": [
+          "Gelişmiş merkezler ile daha az gelişmiş çevre bölgeler arasındaki eşitsiz ilişkileri",
+          "Levhaların çekirdeğini",
+          "Şehirlerin mahalle yapısını",
+          "İklim kuşaklarını"
+        ],
+        "en": [
+          "Unequal relations between developed cores and less developed peripheries",
+          "The core of the Earth",
+          "Neighbourhood layout",
+          "Climate zones"
+        ]
+      },
+      "explain": {
+        "tr": "Wallerstein’ın dünya-sistemleri kuramıyla ilişkilidir.",
+        "en": "It is linked to Wallerstein’s world-systems theory."
+      }
+    },
+    {
+      "id": "geography:masters:002",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Uzaktan algılamada NDVI indeksi neyi ölçmek için kullanılır?",
+        "en": "In remote sensing, what is the NDVI used to measure?"
+      },
+      "options": {
+        "tr": [
+          "Bitki örtüsünün yoğunluğu ve sağlığı",
+          "Deniz tuzluluğu",
+          "Nüfus yoğunluğu",
+          "Deprem büyüklüğü"
+        ],
+        "en": [
+          "Vegetation density and health",
+          "Sea salinity",
+          "Population density",
+          "Earthquake magnitude"
+        ]
+      },
+      "explain": {
+        "tr": "Sağlıklı bitkiler yakın kızılötesini güçlü yansıtır, kırmızı ışığı soğurur.",
+        "en": "Healthy plants reflect near-infrared strongly and absorb red light."
+      }
+    },
+    {
+      "id": "geography:masters:003",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Christaller’in merkezi yerler kuramı neyi açıklar?",
+        "en": "What does Christaller’s central place theory explain?"
+      },
+      "options": {
+        "tr": [
+          "Yerleşmelerin büyüklüğü, sayısı ve aralarındaki uzaklıkların düzenini",
+          "Nehir yataklarının oluşumunu",
+          "Göçün nedenlerini",
+          "Dağların yüksekliğini"
+        ],
+        "en": [
+          "The size, number and spacing of settlements",
+          "How river beds form",
+          "Why people migrate",
+          "Mountain heights"
+        ]
+      },
+      "explain": {
+        "tr": "Kuram, hizmet alanlarının altıgenler hâlinde düzenlendiğini varsayar.",
+        "en": "The theory models service areas as hexagons."
+      }
+    },
+    {
+      "id": "geography:masters:004",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Antroposen kavramı neyi ifade eder?",
+        "en": "What does the term Anthropocene refer to?"
+      },
+      "options": {
+        "tr": [
+          "İnsan etkinliğinin Dünya sistemlerini belirgin biçimde değiştirdiği dönem",
+          "Dinozorların yaşadığı dönem",
+          "Son buzul çağı",
+          "Kıtaların birleştiği dönem"
+        ],
+        "en": [
+          "An era in which human activity significantly alters Earth systems",
+          "The age of dinosaurs",
+          "The last ice age",
+          "When the continents were joined"
+        ]
+      },
+      "explain": {
+        "tr": "Karbon salımı, plastikler ve arazi kullanımı jeolojik izler bırakıyor.",
+        "en": "Carbon emissions, plastics and land use leave geological traces."
+      }
+    },
+    {
+      "id": "geography:masters:005",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Türkiye’de kentleşmeyi en çok hangi göç türü şekillendirmiştir?",
+        "en": "Which kind of migration has most shaped urbanisation in Türkiye?"
+      },
+      "options": {
+        "tr": [
+          "Kırdan kente iç göç",
+          "Kentten kıra göç",
+          "Mevsimlik yayla göçü",
+          "Dış göç"
+        ],
+        "en": [
+          "Internal rural-to-urban migration",
+          "Urban-to-rural migration",
+          "Seasonal highland migration",
+          "Emigration abroad"
+        ]
+      },
+      "explain": {
+        "tr": "1950’lerden itibaren kırdan büyük şehirlere göç hızlandı; gecekondulaşma bunun sonucudur.",
+        "en": "From the 1950s, migration to big cities accelerated, leading to informal housing."
+      }
+    },
+    {
+      "id": "geography:masters:006",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Ekolojik ayak izi neyi ölçer?",
+        "en": "What does the ecological footprint measure?"
+      },
+      "options": {
+        "tr": [
+          "Bir nüfusun tüketimini karşılamak için gereken biyolojik üretken alanı",
+          "Yürüyüş mesafesini",
+          "Orman yangınlarını",
+          "Deniz seviyesini"
+        ],
+        "en": [
+          "The productive land needed to support a population’s consumption",
+          "Walking distance",
+          "Forest fires",
+          "Sea level"
+        ]
+      },
+      "explain": {
+        "tr": "Ayak izi biyokapasiteyi aşarsa ekolojik açık oluşur.",
+        "en": "When the footprint exceeds biocapacity there is an ecological deficit."
+      }
+    }
+  ]
+}

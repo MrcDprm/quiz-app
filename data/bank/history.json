@@ -1,0 +1,1085 @@
+{
+  "topic": "history",
+  "questions": [
+    {
+      "id": "history:primary:001",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Türkiye Cumhuriyeti’nin kurucusu kimdir?",
+        "en": "Who founded the Republic of Türkiye?"
+      },
+      "options": {
+        "tr": [
+          "Mustafa Kemal Atatürk",
+          "Fatih Sultan Mehmet",
+          "Kanuni Sultan Süleyman",
+          "Osman Gazi"
+        ],
+        "en": [
+          "Mustafa Kemal Atatürk",
+          "Fatih Sultan Mehmet",
+          "Kanuni Sultan Süleyman",
+          "Osman Gazi"
+        ]
+      },
+      "explain": {
+        "tr": "Cumhuriyet 29 Ekim 1923’te Mustafa Kemal Atatürk önderliğinde ilan edildi.",
+        "en": "The Republic was proclaimed on 29 October 1923 under Mustafa Kemal Atatürk."
+      }
+    },
+    {
+      "id": "history:primary:002",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Türkiye Büyük Millet Meclisi hangi şehirde açıldı?",
+        "en": "In which city was the Grand National Assembly of Türkiye opened?"
+      },
+      "options": {
+        "tr": [
+          "Ankara",
+          "İstanbul",
+          "İzmir",
+          "Bursa"
+        ],
+        "en": [
+          "Ankara",
+          "İstanbul",
+          "İzmir",
+          "Bursa"
+        ]
+      },
+      "explain": {
+        "tr": "TBMM 23 Nisan 1920’de Ankara’da açıldı; bu gün Ulusal Egemenlik ve Çocuk Bayramı’dır.",
+        "en": "It opened in Ankara on 23 April 1920, now National Sovereignty and Children’s Day."
+      }
+    },
+    {
+      "id": "history:primary:003",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "İstanbul’u 1453’te fetheden padişah kimdir?",
+        "en": "Which sultan conquered Istanbul in 1453?"
+      },
+      "options": {
+        "tr": [
+          "Fatih Sultan Mehmet",
+          "Yavuz Sultan Selim",
+          "Orhan Gazi",
+          "II. Abdülhamit"
+        ],
+        "en": [
+          "Mehmed the Conqueror",
+          "Selim the Grim",
+          "Orhan Gazi",
+          "Abdul Hamid II"
+        ]
+      },
+      "explain": {
+        "tr": "Fatih Sultan Mehmet 21 yaşında İstanbul’u fethetti.",
+        "en": "Mehmed II conquered Constantinople at the age of 21."
+      }
+    },
+    {
+      "id": "history:primary:004",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Piramitleriyle ünlü antik uygarlık hangisidir?",
+        "en": "Which ancient civilisation is famous for its pyramids?"
+      },
+      "options": {
+        "tr": [
+          "Mısır",
+          "Roma",
+          "Viking",
+          "İnka"
+        ],
+        "en": [
+          "Egypt",
+          "Rome",
+          "Vikings",
+          "Inca"
+        ]
+      },
+      "explain": {
+        "tr": "Giza piramitleri firavunlar için mezar olarak yapıldı.",
+        "en": "The pyramids of Giza were built as tombs for pharaohs."
+      }
+    },
+    {
+      "id": "history:primary:005",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Yazıyı ilk kullanan uygarlıklardan biri olan Sümerler hangi bölgede yaşadı?",
+        "en": "The Sumerians, among the first to use writing, lived in which region?"
+      },
+      "options": {
+        "tr": [
+          "Mezopotamya",
+          "Avustralya",
+          "İskandinavya",
+          "Amazon"
+        ],
+        "en": [
+          "Mesopotamia",
+          "Australia",
+          "Scandinavia",
+          "Amazon"
+        ]
+      },
+      "explain": {
+        "tr": "Sümerler Dicle ile Fırat arasında çivi yazısını geliştirdi.",
+        "en": "Between the Tigris and Euphrates, the Sumerians developed cuneiform."
+      }
+    },
+    {
+      "id": "history:primary:006",
+      "level": "primary",
+      "type": "order",
+      "q": {
+        "tr": "Bu olayları eskiden yeniye sırala.",
+        "en": "Order these events from oldest to newest."
+      },
+      "items": {
+        "tr": [
+          "Piramitlerin yapımı",
+          "İstanbul’un fethi",
+          "Cumhuriyetin ilanı",
+          "Aya ilk insanın ayak basması"
+        ],
+        "en": [
+          "Building the pyramids",
+          "The conquest of Istanbul",
+          "Proclamation of the Republic",
+          "First person on the Moon"
+        ]
+      },
+      "explain": {
+        "tr": "Piramitler yaklaşık MÖ 2500, İstanbul’un fethi 1453, Cumhuriyet 1923, Ay’a iniş 1969.",
+        "en": "Pyramids around 2500 BC, Istanbul 1453, the Republic 1923, the Moon landing 1969."
+      }
+    },
+    {
+      "id": "history:primary:007",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Ay’a ayak basan ilk insan kimdir?",
+        "en": "Who was the first person to walk on the Moon?"
+      },
+      "options": {
+        "tr": [
+          "Neil Armstrong",
+          "Yuri Gagarin",
+          "Christopher Columbus",
+          "Albert Einstein"
+        ],
+        "en": [
+          "Neil Armstrong",
+          "Yuri Gagarin",
+          "Christopher Columbus",
+          "Albert Einstein"
+        ]
+      },
+      "explain": {
+        "tr": "Neil Armstrong 1969’da Apollo 11 ile Ay’a indi. Gagarin uzaya çıkan ilk insandı.",
+        "en": "Neil Armstrong landed with Apollo 11 in 1969; Gagarin was the first person in space."
+      }
+    },
+    {
+      "id": "history:primary:008",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Çanakkale Savaşı hangi savaşın bir parçasıdır?",
+        "en": "The Gallipoli Campaign was part of which war?"
+      },
+      "options": {
+        "tr": [
+          "Birinci Dünya Savaşı",
+          "İkinci Dünya Savaşı",
+          "Kırım Savaşı",
+          "Kore Savaşı"
+        ],
+        "en": [
+          "World War I",
+          "World War II",
+          "Crimean War",
+          "Korean War"
+        ]
+      },
+      "explain": {
+        "tr": "Çanakkale Savaşları 1915-1916 yıllarında Birinci Dünya Savaşı sırasında yapıldı.",
+        "en": "The Gallipoli Campaign took place in 1915–16 during World War I."
+      }
+    },
+    {
+      "id": "history:middle:001",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Kurtuluş Savaşı’nı başlatan Mustafa Kemal Samsun’a hangi tarihte çıktı?",
+        "en": "On what date did Mustafa Kemal land in Samsun, starting the War of Independence?"
+      },
+      "options": {
+        "tr": [
+          "19 Mayıs 1919",
+          "23 Nisan 1920",
+          "30 Ağustos 1922",
+          "29 Ekim 1923"
+        ],
+        "en": [
+          "19 May 1919",
+          "23 April 1920",
+          "30 August 1922",
+          "29 October 1923"
+        ]
+      },
+      "explain": {
+        "tr": "19 Mayıs bugün Atatürk’ü Anma, Gençlik ve Spor Bayramı olarak kutlanır.",
+        "en": "19 May is celebrated today as Youth and Sports Day."
+      }
+    },
+    {
+      "id": "history:middle:002",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Osmanlı Devleti hangi beylik olarak kuruldu?",
+        "en": "The Ottoman State began as which principality?"
+      },
+      "options": {
+        "tr": [
+          "Söğüt merkezli Osmanlı Beyliği",
+          "Karamanoğulları",
+          "Selçuklu Sultanlığı",
+          "Candaroğulları"
+        ],
+        "en": [
+          "The Ottoman beylik centred on Söğüt",
+          "Karamanids",
+          "Seljuk Sultanate",
+          "Candarids"
+        ]
+      },
+      "explain": {
+        "tr": "Osman Gazi, Söğüt ve çevresinde küçük bir beylik kurdu.",
+        "en": "Osman Gazi founded a small principality around Söğüt."
+      }
+    },
+    {
+      "id": "history:middle:003",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Malazgirt Savaşı (1071) sonucunda hangi bölgenin kapıları Türklere açıldı?",
+        "en": "The Battle of Manzikert (1071) opened which region to the Turks?"
+      },
+      "options": {
+        "tr": [
+          "Anadolu",
+          "Balkanlar",
+          "Mısır",
+          "İran"
+        ],
+        "en": [
+          "Anatolia",
+          "The Balkans",
+          "Egypt",
+          "Iran"
+        ]
+      },
+      "explain": {
+        "tr": "Sultan Alparslan’ın zaferiyle Anadolu’da Türk yerleşimi hızlandı.",
+        "en": "After Sultan Alp Arslan’s victory, Turkish settlement in Anatolia sped up."
+      }
+    },
+    {
+      "id": "history:middle:004",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Matbaayı Avrupa’da yaygınlaştıran kişi kimdir?",
+        "en": "Who spread the printing press in Europe?"
+      },
+      "options": {
+        "tr": [
+          "Johannes Gutenberg",
+          "Leonardo da Vinci",
+          "Martin Luther",
+          "Galileo Galilei"
+        ],
+        "en": [
+          "Johannes Gutenberg",
+          "Leonardo da Vinci",
+          "Martin Luther",
+          "Galileo Galilei"
+        ]
+      },
+      "explain": {
+        "tr": "Gutenberg’in hareketli harfli matbaası bilginin hızla yayılmasını sağladı.",
+        "en": "Gutenberg’s movable-type press let knowledge spread quickly."
+      }
+    },
+    {
+      "id": "history:middle:005",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Kristof Kolomb’un 1492’deki yolculuğu sonucunda hangi kıta Avrupalılarca tanındı?",
+        "en": "Columbus’s voyage in 1492 introduced Europeans to which continent?"
+      },
+      "options": {
+        "tr": [
+          "Amerika",
+          "Avustralya",
+          "Afrika",
+          "Antarktika"
+        ],
+        "en": [
+          "The Americas",
+          "Australia",
+          "Africa",
+          "Antarctica"
+        ]
+      },
+      "explain": {
+        "tr": "Kolomb Hindistan’a gittiğini sanıyordu; Karayipler’e ulaştı.",
+        "en": "Columbus thought he had reached India; he landed in the Caribbean."
+      }
+    },
+    {
+      "id": "history:middle:006",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Lozan Antlaşması’nın önemi nedir?",
+        "en": "Why is the Treaty of Lausanne important?"
+      },
+      "options": {
+        "tr": [
+          "Yeni Türk devletinin bağımsızlığını uluslararası alanda tanıttı",
+          "Osmanlı’yı kurdu",
+          "Birinci Dünya Savaşı’nı başlattı",
+          "Hilafeti kurdu"
+        ],
+        "en": [
+          "It won international recognition for the new Turkish state",
+          "It founded the Ottoman State",
+          "It started World War I",
+          "It created the caliphate"
+        ]
+      },
+      "explain": {
+        "tr": "1923’te imzalanan Lozan, Türkiye’nin sınırlarını ve bağımsızlığını tanıdı.",
+        "en": "Signed in 1923, it recognised Türkiye’s borders and independence."
+      }
+    },
+    {
+      "id": "history:middle:007",
+      "level": "middle",
+      "type": "order",
+      "q": {
+        "tr": "Kurtuluş Savaşı dönemindeki bu olayları sırala.",
+        "en": "Order these events of the Turkish War of Independence."
+      },
+      "items": {
+        "tr": [
+          "Samsun’a çıkış",
+          "TBMM’nin açılışı",
+          "Büyük Taarruz",
+          "Cumhuriyetin ilanı"
+        ],
+        "en": [
+          "Landing in Samsun",
+          "Opening of the Assembly",
+          "The Great Offensive",
+          "Proclamation of the Republic"
+        ]
+      },
+      "explain": {
+        "tr": "1919 Samsun, 1920 TBMM, 1922 Büyük Taarruz, 1923 Cumhuriyet.",
+        "en": "1919 Samsun, 1920 the Assembly, 1922 the Great Offensive, 1923 the Republic."
+      }
+    },
+    {
+      "id": "history:middle:008",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Roma İmparatorluğu’nun ikiye ayrılmasından sonra doğu yarısına ne ad verilir?",
+        "en": "What is the eastern half of the Roman Empire called after the split?"
+      },
+      "options": {
+        "tr": [
+          "Bizans (Doğu Roma)",
+          "Kutsal Roma",
+          "Galya",
+          "Kartaca"
+        ],
+        "en": [
+          "Byzantium (Eastern Roman Empire)",
+          "Holy Roman Empire",
+          "Gaul",
+          "Carthage"
+        ]
+      },
+      "explain": {
+        "tr": "Başkenti Konstantinopolis olan Doğu Roma, 1453’e kadar sürdü.",
+        "en": "The Eastern Roman Empire, with its capital in Constantinople, lasted until 1453."
+      }
+    },
+    {
+      "id": "history:high:001",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Fransız İhtilali’nin (1789) yaydığı düşünceler arasında hangisi öne çıkar?",
+        "en": "Which ideas did the French Revolution (1789) spread?"
+      },
+      "options": {
+        "tr": [
+          "Milliyetçilik, eşitlik ve özgürlük",
+          "Feodalizm",
+          "Mutlak monarşi",
+          "Kölelik"
+        ],
+        "en": [
+          "Nationalism, equality and liberty",
+          "Feudalism",
+          "Absolute monarchy",
+          "Slavery"
+        ]
+      },
+      "explain": {
+        "tr": "Milliyetçilik düşüncesi çok uluslu imparatorlukların dağılmasını hızlandırdı.",
+        "en": "Nationalism sped up the break-up of multinational empires."
+      }
+    },
+    {
+      "id": "history:high:002",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Sanayi Devrimi ilk olarak hangi ülkede başladı?",
+        "en": "In which country did the Industrial Revolution begin?"
+      },
+      "options": {
+        "tr": [
+          "İngiltere",
+          "Almanya",
+          "ABD",
+          "Japonya"
+        ],
+        "en": [
+          "Britain",
+          "Germany",
+          "The United States",
+          "Japan"
+        ]
+      },
+      "explain": {
+        "tr": "Buhar makinesi ve dokuma fabrikaları 18. yüzyıl İngiltere’sinde yaygınlaştı.",
+        "en": "Steam engines and textile mills spread in 18th-century Britain."
+      }
+    },
+    {
+      "id": "history:high:003",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Tanzimat Fermanı (1839) Osmanlı’da neyi amaçlıyordu?",
+        "en": "What did the Tanzimat Edict (1839) aim for in the Ottoman Empire?"
+      },
+      "options": {
+        "tr": [
+          "Hukuk ve yönetimde reformlarla devleti güçlendirmeyi",
+          "Padişahlığı kaldırmayı",
+          "Cumhuriyet ilan etmeyi",
+          "Başkenti taşımayı"
+        ],
+        "en": [
+          "Strengthening the state through legal and administrative reforms",
+          "Abolishing the sultanate",
+          "Declaring a republic",
+          "Moving the capital"
+        ]
+      },
+      "explain": {
+        "tr": "Tanzimat, can ve mal güvenliği gibi hakları güvence altına almayı vaat etti.",
+        "en": "It promised rights such as security of life and property."
+      }
+    },
+    {
+      "id": "history:high:004",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "İkinci Dünya Savaşı’ndan sonra dünya barışını korumak için hangi örgüt kuruldu?",
+        "en": "Which organisation was founded after World War II to keep world peace?"
+      },
+      "options": {
+        "tr": [
+          "Birleşmiş Milletler",
+          "Milletler Cemiyeti",
+          "NATO",
+          "Avrupa Birliği"
+        ],
+        "en": [
+          "The United Nations",
+          "The League of Nations",
+          "NATO",
+          "The European Union"
+        ]
+      },
+      "explain": {
+        "tr": "BM 1945’te kuruldu; Milletler Cemiyeti ise Birinci Dünya Savaşı sonrasında kurulmuştu.",
+        "en": "The UN was founded in 1945; the League of Nations followed World War I."
+      }
+    },
+    {
+      "id": "history:high:005",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Soğuk Savaş hangi iki güç arasındaki rekabettir?",
+        "en": "The Cold War was a rivalry between which two powers?"
+      },
+      "options": {
+        "tr": [
+          "ABD ve Sovyetler Birliği",
+          "İngiltere ve Fransa",
+          "Çin ve Japonya",
+          "Almanya ve İtalya"
+        ],
+        "en": [
+          "The US and the Soviet Union",
+          "Britain and France",
+          "China and Japan",
+          "Germany and Italy"
+        ]
+      },
+      "explain": {
+        "tr": "Doğrudan savaşmadan silahlanma, uzay ve ideoloji yarışı yaşandı.",
+        "en": "They competed in arms, space and ideology without fighting directly."
+      }
+    },
+    {
+      "id": "history:high:006",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Berlin Duvarı’nın yıkılması neyin sembolü oldu?",
+        "en": "What did the fall of the Berlin Wall symbolise?"
+      },
+      "options": {
+        "tr": [
+          "Soğuk Savaş’ın sona ermesinin",
+          "Birinci Dünya Savaşı’nın başlamasının",
+          "Roma’nın çöküşünün",
+          "Sanayi Devrimi’nin"
+        ],
+        "en": [
+          "The end of the Cold War",
+          "The start of World War I",
+          "The fall of Rome",
+          "The Industrial Revolution"
+        ]
+      },
+      "explain": {
+        "tr": "1989’da duvarın yıkılması, 1990’da Almanya’nın birleşmesine yol açtı.",
+        "en": "The wall fell in 1989 and Germany reunified in 1990."
+      }
+    },
+    {
+      "id": "history:high:007",
+      "level": "high",
+      "type": "order",
+      "q": {
+        "tr": "Bu çağları eskiden yeniye sırala.",
+        "en": "Order these ages from oldest to newest."
+      },
+      "items": {
+        "tr": [
+          "Taş Devri",
+          "Tunç Çağı",
+          "Orta Çağ",
+          "Yeni Çağ"
+        ],
+        "en": [
+          "Stone Age",
+          "Bronze Age",
+          "Middle Ages",
+          "Early Modern Period"
+        ]
+      },
+      "explain": {
+        "tr": "İnsanlık önce taş, sonra tunç kullandı; Orta Çağ ve ardından Yeni Çağ geldi.",
+        "en": "Humans used stone, then bronze; the Middle Ages and then the early modern period followed."
+      }
+    },
+    {
+      "id": "history:high:008",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Harf İnkılabı ile Türkiye’de hangi alfabe kabul edildi?",
+        "en": "Which alphabet did Türkiye adopt with the Alphabet Reform?"
+      },
+      "options": {
+        "tr": [
+          "Latin harflerine dayalı yeni Türk alfabesi",
+          "Arap alfabesi",
+          "Kiril alfabesi",
+          "Göktürk alfabesi"
+        ],
+        "en": [
+          "A new Turkish alphabet based on Latin letters",
+          "The Arabic alphabet",
+          "The Cyrillic alphabet",
+          "The Old Turkic script"
+        ]
+      },
+      "explain": {
+        "tr": "1928’deki Harf İnkılabı okuma-yazma oranını hızla artırdı.",
+        "en": "The 1928 reform quickly increased literacy."
+      }
+    },
+    {
+      "id": "history:university:001",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Westfalya Barışı (1648) modern uluslararası sistemde neyin temelini attı?",
+        "en": "What did the Peace of Westphalia (1648) lay the foundation for?"
+      },
+      "options": {
+        "tr": [
+          "Egemen ulus devlet ilkesinin",
+          "Sömürgeciliğin sonunun",
+          "Avrupa Birliği’nin",
+          "Mutlak monarşinin"
+        ],
+        "en": [
+          "The principle of sovereign states",
+          "The end of colonialism",
+          "The European Union",
+          "Absolute monarchy"
+        ]
+      },
+      "explain": {
+        "tr": "Otuz Yıl Savaşları’nı bitiren antlaşma, devletlerin iç işlerine karışmama ilkesini öne çıkardı.",
+        "en": "Ending the Thirty Years’ War, it stressed non-interference in states’ internal affairs."
+      }
+    },
+    {
+      "id": "history:university:002",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Magna Carta (1215) neyi sınırlandırmasıyla bilinir?",
+        "en": "Magna Carta (1215) is known for limiting what?"
+      },
+      "options": {
+        "tr": [
+          "İngiltere kralının yetkilerini",
+          "Kilisenin mülklerini",
+          "Ticaret yollarını",
+          "Oy hakkını"
+        ],
+        "en": [
+          "The powers of the English king",
+          "Church property",
+          "Trade routes",
+          "Voting rights"
+        ]
+      },
+      "explain": {
+        "tr": "Kralın da hukuka tabi olduğu fikrinin erken bir belgesidir.",
+        "en": "It is an early statement that the king is subject to the law."
+      }
+    },
+    {
+      "id": "history:university:003",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Coğrafi Keşiflerin Osmanlı ekonomisine etkisi ne oldu?",
+        "en": "How did the Age of Discovery affect the Ottoman economy?"
+      },
+      "options": {
+        "tr": [
+          "Ticaret yolları değişti ve İpek ile Baharat yollarının önemi azaldı",
+          "Osmanlı ticareti ikiye katlandı",
+          "Etkisi olmadı",
+          "Osmanlı Amerika’yı keşfetti"
+        ],
+        "en": [
+          "Trade routes shifted and the Silk and Spice Roads lost importance",
+          "Ottoman trade doubled",
+          "There was no effect",
+          "The Ottomans discovered America"
+        ]
+      },
+      "explain": {
+        "tr": "Ümit Burnu yolu ve Atlantik ticareti gelirleri Akdeniz’den uzaklaştırdı.",
+        "en": "The Cape route and Atlantic trade drew revenue away from the Mediterranean."
+      }
+    },
+    {
+      "id": "history:university:004",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Rönesans hangi şehirlerde başlayan bir kültür hareketidir?",
+        "en": "In which cities did the Renaissance begin?"
+      },
+      "options": {
+        "tr": [
+          "İtalyan şehir devletleri (Floransa, Venedik)",
+          "Paris ve Londra",
+          "Moskova ve Kiev",
+          "Kahire ve Bağdat"
+        ],
+        "en": [
+          "Italian city-states (Florence, Venice)",
+          "Paris and London",
+          "Moscow and Kyiv",
+          "Cairo and Baghdad"
+        ]
+      },
+      "explain": {
+        "tr": "Ticaretle zenginleşen İtalyan şehirleri sanatçıları ve bilginleri destekledi.",
+        "en": "Trade-rich Italian cities sponsored artists and scholars."
+      }
+    },
+    {
+      "id": "history:university:005",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Osmanlı’da 1876’da ilan edilen ilk anayasa hangisidir?",
+        "en": "What was the first Ottoman constitution, declared in 1876?"
+      },
+      "options": {
+        "tr": [
+          "Kanun-i Esasi",
+          "Teşkilat-ı Esasiye",
+          "Islahat Fermanı",
+          "Sened-i İttifak"
+        ],
+        "en": [
+          "Kanun-i Esasi",
+          "Teşkilat-ı Esasiye",
+          "The Reform Edict",
+          "Sened-i İttifak"
+        ]
+      },
+      "explain": {
+        "tr": "Kanun-i Esasi ile Osmanlı’da ilk kez meclis (Meclis-i Mebusan) açıldı.",
+        "en": "With Kanun-i Esasi the first Ottoman parliament was opened."
+      }
+    },
+    {
+      "id": "history:university:006",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Marshall Planı’nın amacı neydi?",
+        "en": "What was the aim of the Marshall Plan?"
+      },
+      "options": {
+        "tr": [
+          "Savaş sonrası Avrupa’nın ekonomik olarak yeniden kalkınması",
+          "Almanya’nın işgali",
+          "Sömürgelerin paylaşılması",
+          "Nükleer silahsızlanma"
+        ],
+        "en": [
+          "Rebuilding Europe’s economy after the war",
+          "Occupying Germany",
+          "Dividing colonies",
+          "Nuclear disarmament"
+        ]
+      },
+      "explain": {
+        "tr": "ABD’nin yardımı Batı Avrupa’yı Sovyet etkisinden uzak tutmayı da amaçlıyordu.",
+        "en": "US aid also aimed to keep Western Europe away from Soviet influence."
+      }
+    },
+    {
+      "id": "history:university:007",
+      "level": "university",
+      "type": "order",
+      "q": {
+        "tr": "Bu belgeleri eskiden yeniye sırala.",
+        "en": "Order these documents from oldest to newest."
+      },
+      "items": {
+        "tr": [
+          "Magna Carta",
+          "ABD Bağımsızlık Bildirgesi",
+          "Kanun-i Esasi",
+          "İnsan Hakları Evrensel Beyannamesi"
+        ],
+        "en": [
+          "Magna Carta",
+          "US Declaration of Independence",
+          "Kanun-i Esasi",
+          "Universal Declaration of Human Rights"
+        ]
+      },
+      "explain": {
+        "tr": "1215, 1776, 1876, 1948.",
+        "en": "1215, 1776, 1876, 1948."
+      }
+    },
+    {
+      "id": "history:university:008",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Osmanlı’da tımar sisteminin temel işlevi neydi?",
+        "en": "What was the main function of the Ottoman timar system?"
+      },
+      "options": {
+        "tr": [
+          "Toprak gelirleriyle atlı asker (sipahi) yetiştirmek",
+          "Deniz ticaretini yönetmek",
+          "Vergi muafiyeti sağlamak",
+          "Yeniçeri devşirmek"
+        ],
+        "en": [
+          "Supporting cavalry (sipahis) with land revenue",
+          "Running sea trade",
+          "Granting tax exemptions",
+          "Recruiting janissaries"
+        ]
+      },
+      "explain": {
+        "tr": "Sipahi, tımar gelirine karşılık savaşta asker sağlıyordu.",
+        "en": "The sipahi provided soldiers in return for the timar’s revenue."
+      }
+    },
+    {
+      "id": "history:masters:001",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Tarih yazımında “uzun süre” (longue durée) yaklaşımı hangi okulla ilişkilidir?",
+        "en": "The “longue durée” approach to history is linked to which school?"
+      },
+      "options": {
+        "tr": [
+          "Annales Okulu",
+          "Frankfurt Okulu",
+          "Chicago Okulu",
+          "Viyana Çevresi"
+        ],
+        "en": [
+          "The Annales School",
+          "The Frankfurt School",
+          "The Chicago School",
+          "The Vienna Circle"
+        ]
+      },
+      "explain": {
+        "tr": "Fernand Braudel, coğrafya ve ekonomi gibi yavaş değişen yapıları öne çıkardı.",
+        "en": "Fernand Braudel emphasised slow-changing structures such as geography and the economy."
+      }
+    },
+    {
+      "id": "history:masters:002",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "“Birincil kaynak” aşağıdakilerden hangisidir?",
+        "en": "Which of these is a primary source?"
+      },
+      "options": {
+        "tr": [
+          "Olay döneminde yazılmış bir mektup",
+          "Bir ders kitabı",
+          "Bir ansiklopedi maddesi",
+          "Güncel bir belgesel"
+        ],
+        "en": [
+          "A letter written at the time of the event",
+          "A textbook",
+          "An encyclopaedia entry",
+          "A modern documentary"
+        ]
+      },
+      "explain": {
+        "tr": "Birincil kaynaklar incelenen döneme aittir; ikincil kaynaklar onları yorumlar.",
+        "en": "Primary sources come from the period studied; secondary sources interpret them."
+      }
+    },
+    {
+      "id": "history:masters:003",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Benedict Anderson ulusları nasıl tanımlar?",
+        "en": "How does Benedict Anderson describe nations?"
+      },
+      "options": {
+        "tr": [
+          "Hayali cemaatler",
+          "Doğal organizmalar",
+          "Ekonomik sınıflar",
+          "Dini topluluklar"
+        ],
+        "en": [
+          "Imagined communities",
+          "Natural organisms",
+          "Economic classes",
+          "Religious communities"
+        ]
+      },
+      "explain": {
+        "tr": "Üyeleri birbirini tanımasa da ortak bir topluluğa ait olduklarını hayal ederler; matbaa kapitalizmi bunda rol oynar.",
+        "en": "Members never meet most others yet imagine a shared community; print capitalism helped."
+      }
+    },
+    {
+      "id": "history:masters:004",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Osmanlı’da 1838 Balta Limanı Antlaşması’nın ekonomik sonucu neydi?",
+        "en": "What was the economic result of the 1838 Treaty of Balta Liman?"
+      },
+      "options": {
+        "tr": [
+          "İngiliz tüccarlarına geniş ticaret ayrıcalıkları tanınması ve tekellerin kaldırılması",
+          "Osmanlı’nın dış borcunun silinmesi",
+          "Sanayide hızlı büyüme",
+          "Gümrük vergilerinin yükseltilmesi"
+        ],
+        "en": [
+          "Wide trade privileges for British merchants and an end to monopolies",
+          "Cancelling Ottoman debt",
+          "Rapid industrial growth",
+          "Higher customs duties"
+        ]
+      },
+      "explain": {
+        "tr": "Antlaşma yerli üretimi yabancı rekabete açık bıraktı.",
+        "en": "It left local production exposed to foreign competition."
+      }
+    },
+    {
+      "id": "history:masters:005",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Edward Said’in “Oryantalizm” eseri neyi eleştirir?",
+        "en": "What does Edward Said’s “Orientalism” criticise?"
+      },
+      "options": {
+        "tr": [
+          "Batı’nın Doğu’yu tek tip ve aşağı gösteren temsillerini",
+          "Doğu felsefesini",
+          "Sömürgelerin bağımsızlığını",
+          "Arkeolojik kazıları"
+        ],
+        "en": [
+          "Western portrayals of the East as uniform and inferior",
+          "Eastern philosophy",
+          "Colonial independence",
+          "Archaeological digs"
+        ]
+      },
+      "explain": {
+        "tr": "Said, bilginin güç ilişkileriyle nasıl bağlantılı olduğunu gösterdi.",
+        "en": "Said showed how knowledge is tied to power."
+      }
+    },
+    {
+      "id": "history:masters:006",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Tarihte “karşı-olgusal” (counterfactual) düşünme nedir?",
+        "en": "What is counterfactual thinking in history?"
+      },
+      "options": {
+        "tr": [
+          "“Ya şöyle olsaydı?” sorusuyla nedenselliği sınamak",
+          "Olayları sadece tarih sırasıyla yazmak",
+          "Belgeleri dijitalleştirmek",
+          "Sözlü tarih toplamak"
+        ],
+        "en": [
+          "Testing causation by asking “what if?”",
+          "Writing events only in order",
+          "Digitising documents",
+          "Collecting oral history"
+        ]
+      },
+      "explain": {
+        "tr": "Karşı-olgusal sorular, bir etkenin sonuçtaki payını tartışmaya yardım eder.",
+        "en": "Counterfactuals help weigh how much a factor mattered."
+      }
+    },
+    {
+      "id": "history:masters:007",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Düyun-u Umumiye İdaresi (1881) neyi yönetiyordu?",
+        "en": "What did the Ottoman Public Debt Administration (1881) manage?"
+      },
+      "options": {
+        "tr": [
+          "Osmanlı’nın dış borçlarını ödemek için ayrılan gelirleri",
+          "Orduyu",
+          "Eğitim kurumlarını",
+          "Demiryollarının yapımını"
+        ],
+        "en": [
+          "Revenues set aside to repay Ottoman foreign debt",
+          "The army",
+          "Schools",
+          "Railway construction"
+        ]
+      },
+      "explain": {
+        "tr": "Alacaklı devletlerin temsilcileri önemli vergi gelirlerini doğrudan topluyordu.",
+        "en": "Creditors’ representatives collected key tax revenues directly."
+      }
+    },
+    {
+      "id": "history:masters:008",
+      "level": "masters",
+      "type": "order",
+      "q": {
+        "tr": "Bu imparatorlukları kuruluş sırasına göre sırala.",
+        "en": "Order these empires by when they were founded."
+      },
+      "items": {
+        "tr": [
+          "Pers (Ahameniş)",
+          "Roma İmparatorluğu",
+          "Büyük Selçuklu",
+          "Osmanlı"
+        ],
+        "en": [
+          "Persian (Achaemenid)",
+          "Roman Empire",
+          "Great Seljuk",
+          "Ottoman"
+        ]
+      },
+      "explain": {
+        "tr": "Ahameniş MÖ 550, Roma İmparatorluğu MÖ 27, Büyük Selçuklu 1037, Osmanlı 1299.",
+        "en": "Achaemenid 550 BC, Roman Empire 27 BC, Great Seljuk 1037, Ottoman 1299."
+      }
+    }
+  ]
+}

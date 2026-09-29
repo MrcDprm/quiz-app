@@ -1,0 +1,815 @@
+{
+  "topic": "literature",
+  "questions": [
+    {
+      "id": "literature:primary:001",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Masallar genellikle hangi sözle başlar?",
+        "en": "How do Turkish fairy tales traditionally begin?"
+      },
+      "options": {
+        "tr": [
+          "Bir varmış bir yokmuş",
+          "Sevgili günlük",
+          "Sayın yetkili",
+          "Son olarak"
+        ],
+        "en": [
+          "“Once there was, once there wasn’t”",
+          "“Dear diary”",
+          "“To whom it may concern”",
+          "“Finally”"
+        ]
+      },
+      "explain": {
+        "tr": "Masallar “Bir varmış bir yokmuş” ile başlar, olağanüstü olaylar anlatır.",
+        "en": "Turkish tales begin with “Bir varmış bir yokmuş” and tell of extraordinary events."
+      }
+    },
+    {
+      "id": "literature:primary:002",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "İstiklal Marşı’nın şairi kimdir?",
+        "en": "Who wrote the Turkish National Anthem?"
+      },
+      "options": {
+        "tr": [
+          "Mehmet Akif Ersoy",
+          "Yahya Kemal",
+          "Nazım Hikmet",
+          "Orhan Veli"
+        ],
+        "en": [
+          "Mehmet Akif Ersoy",
+          "Yahya Kemal",
+          "Nazım Hikmet",
+          "Orhan Veli"
+        ]
+      },
+      "explain": {
+        "tr": "İstiklal Marşı 1921’de TBMM tarafından kabul edildi.",
+        "en": "The anthem was adopted by the Turkish Grand National Assembly in 1921."
+      }
+    },
+    {
+      "id": "literature:primary:003",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Nasreddin Hoca hikâyeleri hangi özelliğiyle bilinir?",
+        "en": "What are Nasreddin Hodja stories known for?"
+      },
+      "options": {
+        "tr": [
+          "Mizahi ve düşündürücü olmalarıyla",
+          "Bilim kurgu olmalarıyla",
+          "Korku öğesiyle",
+          "Şarkı sözü olmalarıyla"
+        ],
+        "en": [
+          "Being funny and thought-provoking",
+          "Being science fiction",
+          "Being horror",
+          "Being song lyrics"
+        ]
+      },
+      "explain": {
+        "tr": "Fıkralar kısa ve güldürürken ders verir.",
+        "en": "The anecdotes are short, funny and teach a lesson."
+      }
+    },
+    {
+      "id": "literature:primary:004",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Ana renkler hangileridir (boya karışımında)?",
+        "en": "Which are the primary colours in paint mixing?"
+      },
+      "options": {
+        "tr": [
+          "Kırmızı, sarı, mavi",
+          "Yeşil, mor, turuncu",
+          "Siyah, beyaz, gri",
+          "Pembe, kahverengi, lacivert"
+        ],
+        "en": [
+          "Red, yellow, blue",
+          "Green, purple, orange",
+          "Black, white, grey",
+          "Pink, brown, navy"
+        ]
+      },
+      "explain": {
+        "tr": "Ara renkler (yeşil, turuncu, mor) ana renklerin karışımından elde edilir.",
+        "en": "Secondary colours (green, orange, purple) come from mixing the primaries."
+      }
+    },
+    {
+      "id": "literature:primary:005",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Keloğlan hangi tür eserlerin kahramanıdır?",
+        "en": "Keloğlan is the hero of which kind of story?"
+      },
+      "options": {
+        "tr": [
+          "Türk masalları",
+          "Yunan mitleri",
+          "Japon animeleri",
+          "Roma destanları"
+        ],
+        "en": [
+          "Turkish folk tales",
+          "Greek myths",
+          "Japanese anime",
+          "Roman epics"
+        ]
+      },
+      "explain": {
+        "tr": "Keloğlan zekâsıyla zorlukları aşan bir masal kahramanıdır.",
+        "en": "Keloğlan is a folk-tale hero who wins by his wits."
+      }
+    },
+    {
+      "id": "literature:primary:006",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Piyano hangi tür çalgıdır?",
+        "en": "What kind of instrument is the piano?"
+      },
+      "options": {
+        "tr": [
+          "Tuşlu çalgı",
+          "Nefesli çalgı",
+          "Yaylı çalgı",
+          "Vurmalı çalgı"
+        ],
+        "en": [
+          "Keyboard instrument",
+          "Wind instrument",
+          "Bowed string instrument",
+          "Drum"
+        ]
+      },
+      "explain": {
+        "tr": "Piyanoda tuşlara basınca çekiçler tellere vurur.",
+        "en": "Pressing a piano key makes a hammer strike the strings."
+      }
+    },
+    {
+      "id": "literature:middle:001",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Dede Korkut Hikâyeleri hangi türe örnektir?",
+        "en": "The Book of Dede Korkut is an example of which genre?"
+      },
+      "options": {
+        "tr": [
+          "Destansı halk hikâyesi",
+          "Roman",
+          "Tiyatro",
+          "Deneme"
+        ],
+        "en": [
+          "Epic folk tales",
+          "Novel",
+          "Play",
+          "Essay"
+        ]
+      },
+      "explain": {
+        "tr": "Oğuz Türklerinin yaşayışını anlatan en önemli eserlerden biridir.",
+        "en": "It is a key work about the life of the Oghuz Turks."
+      }
+    },
+    {
+      "id": "literature:middle:002",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Şiirde dize sonlarındaki ses benzerliğine ne denir?",
+        "en": "What is the sound match at the ends of lines in a poem called?"
+      },
+      "options": {
+        "tr": [
+          "Uyak (kafiye)",
+          "Ölçü",
+          "Nazım birimi",
+          "Aliterasyon"
+        ],
+        "en": [
+          "Rhyme",
+          "Metre",
+          "Stanza",
+          "Alliteration"
+        ]
+      },
+      "explain": {
+        "tr": "Uyağın ardından gelen ek ya da kelime tekrarına redif denir.",
+        "en": "In Turkish, repeated suffixes after the rhyme are called redif."
+      }
+    },
+    {
+      "id": "literature:middle:003",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Yunus Emre hangi alanda tanınır?",
+        "en": "What is Yunus Emre known for?"
+      },
+      "options": {
+        "tr": [
+          "Tasavvufi halk şiiri",
+          "Resim",
+          "Mimari",
+          "Tiyatro"
+        ],
+        "en": [
+          "Sufi folk poetry",
+          "Painting",
+          "Architecture",
+          "Theatre"
+        ]
+      },
+      "explain": {
+        "tr": "Yunus Emre sade Türkçeyle yazdığı şiirleriyle bilinir.",
+        "en": "Yunus Emre is known for poems in plain Turkish."
+      }
+    },
+    {
+      "id": "literature:middle:004",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Mimar Sinan’ın “ustalık eserim” dediği cami hangisidir?",
+        "en": "Which mosque did Mimar Sinan call his masterpiece?"
+      },
+      "options": {
+        "tr": [
+          "Selimiye Camii",
+          "Süleymaniye Camii",
+          "Sultanahmet Camii",
+          "Şehzade Camii"
+        ],
+        "en": [
+          "Selimiye Mosque",
+          "Süleymaniye Mosque",
+          "Blue Mosque",
+          "Şehzade Mosque"
+        ]
+      },
+      "explain": {
+        "tr": "Edirne’deki Selimiye ustalık, Süleymaniye kalfalık, Şehzade çıraklık eseridir.",
+        "en": "Selimiye in Edirne is the masterpiece; Süleymaniye and Şehzade are earlier works."
+      }
+    },
+    {
+      "id": "literature:middle:005",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Bir öyküde olayların geçtiği yer ve zamana ne denir?",
+        "en": "What are the place and time of a story called?"
+      },
+      "options": {
+        "tr": [
+          "Mekân ve zaman (anlatım unsurları)",
+          "Tema",
+          "Olay örgüsü",
+          "Üslup"
+        ],
+        "en": [
+          "Setting",
+          "Theme",
+          "Plot",
+          "Style"
+        ]
+      },
+      "explain": {
+        "tr": "Olay örgüsü, kişiler, mekân ve zaman hikâyenin temel unsurlarıdır.",
+        "en": "Plot, characters, setting and time are the core elements of a story."
+      }
+    },
+    {
+      "id": "literature:middle:006",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Hacivat ile Karagöz hangi sanatın karakterleridir?",
+        "en": "Hacivat and Karagöz are characters of which art?"
+      },
+      "options": {
+        "tr": [
+          "Gölge oyunu",
+          "Opera",
+          "Bale",
+          "Minyatür"
+        ],
+        "en": [
+          "Shadow puppetry",
+          "Opera",
+          "Ballet",
+          "Miniature painting"
+        ]
+      },
+      "explain": {
+        "tr": "Karagöz, deriden kuklaların perdeye yansıtıldığı geleneksel gölge oyunudur.",
+        "en": "Karagöz is the traditional shadow play with leather puppets."
+      }
+    },
+    {
+      "id": "literature:high:001",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Tanzimat edebiyatının ilk yerli romanı olarak kabul edilen eser hangisidir?",
+        "en": "Which is regarded as the first Turkish novel of the Tanzimat period?"
+      },
+      "options": {
+        "tr": [
+          "Taaşşuk-ı Talat ve Fitnat",
+          "Çalıkuşu",
+          "Aşk-ı Memnu",
+          "Sinekli Bakkal"
+        ],
+        "en": [
+          "Taaşşuk-ı Talat ve Fitnat",
+          "Çalıkuşu",
+          "Aşk-ı Memnu",
+          "Sinekli Bakkal"
+        ]
+      },
+      "explain": {
+        "tr": "Şemsettin Sami’nin 1872’de yayımlanan eseridir.",
+        "en": "It was published by Şemsettin Sami in 1872."
+      }
+    },
+    {
+      "id": "literature:high:002",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Garip (Birinci Yeni) akımının öncülerinden biri kimdir?",
+        "en": "Who was a founder of the Garip (First New) movement?"
+      },
+      "options": {
+        "tr": [
+          "Orhan Veli Kanık",
+          "Namık Kemal",
+          "Ziya Paşa",
+          "Fuzuli"
+        ],
+        "en": [
+          "Orhan Veli Kanık",
+          "Namık Kemal",
+          "Ziya Paşa",
+          "Fuzuli"
+        ]
+      },
+      "explain": {
+        "tr": "Garip, şiiri ölçü ve uyak kalıplarından kurtarıp gündelik dile yaklaştırdı.",
+        "en": "Garip freed poetry from metre and rhyme and moved it towards everyday speech."
+      }
+    },
+    {
+      "id": "literature:high:003",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Realizm (gerçekçilik) akımının temel özelliği nedir?",
+        "en": "What is the key feature of realism?"
+      },
+      "options": {
+        "tr": [
+          "Hayatı olduğu gibi, gözleme dayanarak anlatmak",
+          "Duyguları abartmak",
+          "Olağanüstü olaylar anlatmak",
+          "Sadece şiir yazmak"
+        ],
+        "en": [
+          "Depicting life as it is, based on observation",
+          "Exaggerating feelings",
+          "Telling of the supernatural",
+          "Writing only poetry"
+        ]
+      },
+      "explain": {
+        "tr": "Balzac ve Flaubert realizmin önemli temsilcileridir.",
+        "en": "Balzac and Flaubert are key realist writers."
+      }
+    },
+    {
+      "id": "literature:high:004",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Empresyonizm (izlenimcilik) resimde neyi öne çıkarır?",
+        "en": "What does Impressionism emphasise in painting?"
+      },
+      "options": {
+        "tr": [
+          "Işığın ve rengin anlık etkisini",
+          "Kusursuz ayrıntıyı",
+          "Geometrik biçimleri",
+          "Dini konuları"
+        ],
+        "en": [
+          "The fleeting effects of light and colour",
+          "Perfect detail",
+          "Geometric shapes",
+          "Religious scenes"
+        ]
+      },
+      "explain": {
+        "tr": "Adını Monet’nin “İzlenim, Gün Doğumu” tablosundan alır.",
+        "en": "It is named after Monet’s “Impression, Sunrise”."
+      }
+    },
+    {
+      "id": "literature:high:005",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Divan edebiyatında en çok kullanılan ölçü hangisidir?",
+        "en": "Which metre is most used in Ottoman Divan poetry?"
+      },
+      "options": {
+        "tr": [
+          "Aruz ölçüsü",
+          "Hece ölçüsü",
+          "Serbest ölçü",
+          "Mensur"
+        ],
+        "en": [
+          "Aruz (quantitative) metre",
+          "Syllabic metre",
+          "Free verse",
+          "Prose"
+        ]
+      },
+      "explain": {
+        "tr": "Aruz, hecelerin uzunluk ve kısalığına dayanır; halk şiiri hece ölçüsünü kullanır.",
+        "en": "Aruz is based on long and short syllables; folk poetry uses syllabic metre."
+      }
+    },
+    {
+      "id": "literature:high:006",
+      "level": "high",
+      "type": "order",
+      "q": {
+        "tr": "Bu sanat dönemlerini eskiden yeniye sırala.",
+        "en": "Order these art periods from oldest to newest."
+      },
+      "items": {
+        "tr": [
+          "Rönesans",
+          "Barok",
+          "Empresyonizm",
+          "Kübizm"
+        ],
+        "en": [
+          "Renaissance",
+          "Baroque",
+          "Impressionism",
+          "Cubism"
+        ]
+      },
+      "explain": {
+        "tr": "Rönesans 15-16., Barok 17., Empresyonizm 19. yüzyıl sonları, Kübizm 20. yüzyıl başları.",
+        "en": "Renaissance 15th–16th, Baroque 17th, Impressionism late 19th, Cubism early 20th century."
+      }
+    },
+    {
+      "id": "literature:university:001",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Bilinç akışı tekniğiyle bilinen yazar kimdir?",
+        "en": "Which writer is known for the stream-of-consciousness technique?"
+      },
+      "options": {
+        "tr": [
+          "Virginia Woolf",
+          "Jules Verne",
+          "Charles Dickens",
+          "Daniel Defoe"
+        ],
+        "en": [
+          "Virginia Woolf",
+          "Jules Verne",
+          "Charles Dickens",
+          "Daniel Defoe"
+        ]
+      },
+      "explain": {
+        "tr": "Woolf ve James Joyce, karakterin düşüncelerini kesintisiz bir akış gibi yansıttı.",
+        "en": "Woolf and James Joyce rendered a character’s thoughts as an unbroken flow."
+      }
+    },
+    {
+      "id": "literature:university:002",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Büyülü gerçekçilik en çok hangi edebiyatla özdeşleşmiştir?",
+        "en": "Magical realism is most associated with which literature?"
+      },
+      "options": {
+        "tr": [
+          "Latin Amerika edebiyatı",
+          "Rus edebiyatı",
+          "Antik Yunan edebiyatı",
+          "İskandinav edebiyatı"
+        ],
+        "en": [
+          "Latin American literature",
+          "Russian literature",
+          "Ancient Greek literature",
+          "Scandinavian literature"
+        ]
+      },
+      "explain": {
+        "tr": "García Márquez’in “Yüzyıllık Yalnızlık” romanı bu akımın en bilinen örneğidir.",
+        "en": "García Márquez’s “One Hundred Years of Solitude” is its best-known example."
+      }
+    },
+    {
+      "id": "literature:university:003",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "İkinci Yeni şiirinin temel özelliği nedir?",
+        "en": "What characterises the Second New movement in Turkish poetry?"
+      },
+      "options": {
+        "tr": [
+          "Anlamı kapalı, imge ağırlıklı soyut şiir",
+          "Toplumcu gerçekçilik",
+          "Aruz ölçüsüne dönüş",
+          "Halk şiiri taklidi"
+        ],
+        "en": [
+          "Abstract, image-heavy poetry with elusive meaning",
+          "Socialist realism",
+          "A return to aruz metre",
+          "Imitating folk poetry"
+        ]
+      },
+      "explain": {
+        "tr": "Cemal Süreya, Edip Cansever ve Turgut Uyar önemli temsilcileridir.",
+        "en": "Cemal Süreya, Edip Cansever and Turgut Uyar are key figures."
+      }
+    },
+    {
+      "id": "literature:university:004",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Kafkaesk kavramı neyi anlatır?",
+        "en": "What does “Kafkaesque” describe?"
+      },
+      "options": {
+        "tr": [
+          "Bireyi ezen, anlamsız ve bunaltıcı bürokratik durumları",
+          "Mutlu sonları",
+          "Tarihî romanları",
+          "Doğa betimlemelerini"
+        ],
+        "en": [
+          "Absurd, oppressive and bewildering bureaucratic situations",
+          "Happy endings",
+          "Historical novels",
+          "Nature descriptions"
+        ]
+      },
+      "explain": {
+        "tr": "Kafka’nın “Dava” ve “Dönüşüm” eserleri bu atmosferiyle bilinir.",
+        "en": "Kafka’s “The Trial” and “The Metamorphosis” are known for this atmosphere."
+      }
+    },
+    {
+      "id": "literature:university:005",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Brecht’in epik tiyatrosunda \"yabancılaştırma efekti\" neyi amaçlar?",
+        "en": "What is the aim of the alienation effect in Brecht’s epic theatre?"
+      },
+      "options": {
+        "tr": [
+          "Seyircinin olaylara eleştirel mesafeyle bakmasını",
+          "Seyircinin ağlamasını",
+          "Sahnenin karanlık olmasını",
+          "Oyuncuların maske takmasını"
+        ],
+        "en": [
+          "Making the audience view events with critical distance",
+          "Making the audience cry",
+          "Keeping the stage dark",
+          "Having actors wear masks"
+        ]
+      },
+      "explain": {
+        "tr": "Brecht, seyircinin karakterle özdeşleşmek yerine düşünmesini istedi.",
+        "en": "Brecht wanted the audience to think rather than identify with characters."
+      }
+    },
+    {
+      "id": "literature:university:006",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Osman Hamdi Bey sanat dışında hangi alanda da öncüdür?",
+        "en": "Besides painting, what field did Osman Hamdi Bey pioneer?"
+      },
+      "options": {
+        "tr": [
+          "Müzecilik ve arkeoloji",
+          "Havacılık",
+          "Tıp",
+          "Mühendislik"
+        ],
+        "en": [
+          "Museology and archaeology",
+          "Aviation",
+          "Medicine",
+          "Engineering"
+        ]
+      },
+      "explain": {
+        "tr": "İstanbul Arkeoloji Müzesi’ni ve Sanayi-i Nefise Mektebi’ni kurdu.",
+        "en": "He founded the Istanbul Archaeology Museums and the Fine Arts Academy."
+      }
+    },
+    {
+      "id": "literature:masters:001",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Roland Barthes’ın “Yazarın Ölümü” makalesi neyi savunur?",
+        "en": "What does Roland Barthes argue in “The Death of the Author”?"
+      },
+      "options": {
+        "tr": [
+          "Metnin anlamının yazarın niyetine değil okura bağlı olduğunu",
+          "Yazarların anonim kalması gerektiğini",
+          "Eleştirinin gereksiz olduğunu",
+          "Romanın öldüğünü"
+        ],
+        "en": [
+          "A text’s meaning depends on the reader, not the author’s intent",
+          "Authors should stay anonymous",
+          "Criticism is useless",
+          "The novel is dead"
+        ]
+      },
+      "explain": {
+        "tr": "Bu görüş yapısalcılıktan postyapısalcılığa geçişte önemlidir.",
+        "en": "It is key to the shift from structuralism to post-structuralism."
+      }
+    },
+    {
+      "id": "literature:masters:002",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Mikhail Bakhtin’in “çok seslilik” (polifoni) kavramı hangi yazar üzerinden geliştirilmiştir?",
+        "en": "Mikhail Bakhtin developed the idea of polyphony through which author?"
+      },
+      "options": {
+        "tr": [
+          "Dostoyevski",
+          "Tolstoy",
+          "Puşkin",
+          "Çehov"
+        ],
+        "en": [
+          "Dostoevsky",
+          "Tolstoy",
+          "Pushkin",
+          "Chekhov"
+        ]
+      },
+      "explain": {
+        "tr": "Bakhtin’e göre Dostoyevski’nin romanlarında karakterlerin sesleri yazarın sesine indirgenmez.",
+        "en": "Bakhtin argued Dostoevsky’s characters keep voices not reduced to the author’s."
+      }
+    },
+    {
+      "id": "literature:masters:003",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Walter Benjamin “aura” kavramını hangi bağlamda tartışır?",
+        "en": "In what context does Walter Benjamin discuss “aura”?"
+      },
+      "options": {
+        "tr": [
+          "Sanat eserinin teknik olarak yeniden üretilebilirliği",
+          "Ortaçağ mimarisi",
+          "Romantik şiir",
+          "Halk müziği"
+        ],
+        "en": [
+          "The technical reproducibility of artworks",
+          "Medieval architecture",
+          "Romantic poetry",
+          "Folk music"
+        ]
+      },
+      "explain": {
+        "tr": "Fotoğraf ve sinemanın, eserin biricikliğini (aura) değiştirdiğini savunur.",
+        "en": "He argues that photography and film change the work’s uniqueness (aura)."
+      }
+    },
+    {
+      "id": "literature:masters:004",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Metinlerarasılık (intertextuality) kavramını ortaya atan kuramcı kimdir?",
+        "en": "Who coined the term intertextuality?"
+      },
+      "options": {
+        "tr": [
+          "Julia Kristeva",
+          "Umberto Eco",
+          "Susan Sontag",
+          "Terry Eagleton"
+        ],
+        "en": [
+          "Julia Kristeva",
+          "Umberto Eco",
+          "Susan Sontag",
+          "Terry Eagleton"
+        ]
+      },
+      "explain": {
+        "tr": "Kristeva, her metnin başka metinlerle kurduğu ilişki ağı içinde anlam kazandığını söyler.",
+        "en": "Kristeva said every text gains meaning through its web of relations with other texts."
+      }
+    },
+    {
+      "id": "literature:masters:005",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Ahmet Hamdi Tanpınar’ın eserlerinde öne çıkan temel tema hangisidir?",
+        "en": "Which theme stands out in Ahmet Hamdi Tanpınar’s work?"
+      },
+      "options": {
+        "tr": [
+          "Zaman ve Doğu-Batı arasında kalmışlık",
+          "Bilim kurgu",
+          "Köy hayatı ve toprak reformu",
+          "Polisiye gerilim"
+        ],
+        "en": [
+          "Time and being caught between East and West",
+          "Science fiction",
+          "Village life and land reform",
+          "Crime thrillers"
+        ]
+      },
+      "explain": {
+        "tr": "“Saatleri Ayarlama Enstitüsü” modernleşmeyi ironik bir dille eleştirir.",
+        "en": "“The Time Regulation Institute” ironically critiques modernisation."
+      }
+    },
+    {
+      "id": "literature:masters:006",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Rus biçimcilerinin “yabancılaştırma” (ostranenie) kavramı ne anlama gelir?",
+        "en": "What does the Russian Formalist term ostranenie (defamiliarisation) mean?"
+      },
+      "options": {
+        "tr": [
+          "Alışılmış olanı tuhaf göstererek algıyı tazelemek",
+          "Yabancı dilden çeviri yapmak",
+          "Karakteri toplumdan dışlamak",
+          "Olayları kronolojik anlatmak"
+        ],
+        "en": [
+          "Making the familiar strange to renew perception",
+          "Translating from a foreign language",
+          "Excluding a character from society",
+          "Telling events in order"
+        ]
+      },
+      "explain": {
+        "tr": "Viktor Şklovski sanatın işlevini algıyı yenilemek olarak tanımladı.",
+        "en": "Viktor Shklovsky defined art’s role as renewing perception."
+      }
+    }
+  ]
+}

@@ -5,10 +5,23 @@
       "id": "science:primary:001",
       "level": "primary",
       "type": "choice",
-      "q": { "tr": "Bitkiler kendi besinlerini hangi olayla üretir?", "en": "How do plants make their own food?" },
+      "q": {
+        "tr": "Bitkiler kendi besinlerini hangi olayla üretir?",
+        "en": "How do plants make their own food?"
+      },
       "options": {
-        "tr": ["Fotosentez", "Sindirim", "Buharlaşma", "Erime"],
-        "en": ["Photosynthesis", "Digestion", "Evaporation", "Melting"]
+        "tr": [
+          "Fotosentez",
+          "Sindirim",
+          "Buharlaşma",
+          "Erime"
+        ],
+        "en": [
+          "Photosynthesis",
+          "Digestion",
+          "Evaporation",
+          "Melting"
+        ]
       },
       "explain": {
         "tr": "Bitkiler güneş ışığı, su ve karbondioksitten fotosentezle besin ve oksijen üretir.",
@@ -19,38 +32,428 @@
       "id": "science:primary:002",
       "level": "primary",
       "type": "choice",
-      "q": { "tr": "Saf su deniz seviyesinde kaç derecede kaynar?", "en": "At what temperature does pure water boil at sea level?" },
+      "q": {
+        "tr": "Saf su deniz seviyesinde kaç derecede kaynar?",
+        "en": "At what temperature does pure water boil at sea level?"
+      },
       "options": {
-        "tr": ["100 °C", "50 °C", "0 °C", "150 °C"],
-        "en": ["100 °C", "50 °C", "0 °C", "150 °C"]
+        "tr": [
+          "100 °C",
+          "50 °C",
+          "0 °C",
+          "150 °C"
+        ],
+        "en": [
+          "100 °C",
+          "50 °C",
+          "0 °C",
+          "150 °C"
+        ]
       },
       "explain": {
-        "tr": "Deniz seviyesindeki normal basınçta saf su 100 °C'de kaynar, 0 °C'de donar.",
+        "tr": "Deniz seviyesindeki normal basınçta saf su 100 °C’de kaynar, 0 °C’de donar.",
         "en": "At normal sea-level pressure pure water boils at 100 °C and freezes at 0 °C."
+      }
+    },
+    {
+      "id": "science:primary:003",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Güneş’e en yakın gezegen hangisidir?",
+        "en": "Which planet is closest to the Sun?"
+      },
+      "options": {
+        "tr": [
+          "Merkür",
+          "Venüs",
+          "Mars",
+          "Dünya"
+        ],
+        "en": [
+          "Mercury",
+          "Venus",
+          "Mars",
+          "Earth"
+        ]
+      },
+      "explain": {
+        "tr": "Merkür hem en yakın hem de en küçük gezegendir.",
+        "en": "Mercury is both the closest and the smallest planet."
+      }
+    },
+    {
+      "id": "science:primary:004",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Hangisi bir memelidir?",
+        "en": "Which of these is a mammal?"
+      },
+      "options": {
+        "tr": [
+          "Yunus",
+          "Köpek balığı",
+          "Kurbağa",
+          "Kartal"
+        ],
+        "en": [
+          "Dolphin",
+          "Shark",
+          "Frog",
+          "Eagle"
+        ]
+      },
+      "explain": {
+        "tr": "Yunuslar akciğerle nefes alır ve yavrularını sütle besler.",
+        "en": "Dolphins breathe with lungs and feed their young milk."
+      }
+    },
+    {
+      "id": "science:primary:005",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Suyun katı hâline ne denir?",
+        "en": "What is the solid form of water called?"
+      },
+      "options": {
+        "tr": [
+          "Buz",
+          "Buhar",
+          "Yağmur",
+          "Sis"
+        ],
+        "en": [
+          "Ice",
+          "Steam",
+          "Rain",
+          "Fog"
+        ]
+      },
+      "explain": {
+        "tr": "Su 0 °C’de donarak buza dönüşür.",
+        "en": "Water freezes into ice at 0 °C."
+      }
+    },
+    {
+      "id": "science:primary:006",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Mıknatısın çektiği madde hangisidir?",
+        "en": "Which material is attracted by a magnet?"
+      },
+      "options": {
+        "tr": [
+          "Demir",
+          "Tahta",
+          "Plastik",
+          "Cam"
+        ],
+        "en": [
+          "Iron",
+          "Wood",
+          "Plastic",
+          "Glass"
+        ]
+      },
+      "explain": {
+        "tr": "Demir, nikel ve kobalt mıknatıs tarafından çekilir.",
+        "en": "Iron, nickel and cobalt are attracted by magnets."
+      }
+    },
+    {
+      "id": "science:primary:007",
+      "level": "primary",
+      "type": "order",
+      "q": {
+        "tr": "Kelebeğin yaşam döngüsünü sırala.",
+        "en": "Order the life cycle of a butterfly."
+      },
+      "items": {
+        "tr": [
+          "Yumurta",
+          "Tırtıl",
+          "Pupa (koza)",
+          "Kelebek"
+        ],
+        "en": [
+          "Egg",
+          "Caterpillar",
+          "Pupa (chrysalis)",
+          "Butterfly"
+        ]
+      },
+      "explain": {
+        "tr": "Bu dönüşüme başkalaşım (metamorfoz) denir.",
+        "en": "This transformation is called metamorphosis."
+      }
+    },
+    {
+      "id": "science:primary:008",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "İnsan vücudunda kanı pompalayan organ hangisidir?",
+        "en": "Which organ pumps blood around the human body?"
+      },
+      "options": {
+        "tr": [
+          "Kalp",
+          "Akciğer",
+          "Mide",
+          "Böbrek"
+        ],
+        "en": [
+          "Heart",
+          "Lungs",
+          "Stomach",
+          "Kidney"
+        ]
+      },
+      "explain": {
+        "tr": "Kalp, kanı damarlar aracılığıyla bütün vücuda gönderir.",
+        "en": "The heart sends blood through the blood vessels to the whole body."
       }
     },
     {
       "id": "science:middle:001",
       "level": "middle",
       "type": "choice",
-      "q": { "tr": "Hücrede enerji üretiminden sorumlu organel hangisidir?", "en": "Which organelle produces energy in the cell?" },
+      "q": {
+        "tr": "Hücrede enerji üretiminden sorumlu organel hangisidir?",
+        "en": "Which organelle produces energy in the cell?"
+      },
       "options": {
-        "tr": ["Mitokondri", "Ribozom", "Golgi cisimciği", "Lizozom"],
-        "en": ["Mitochondrion", "Ribosome", "Golgi apparatus", "Lysosome"]
+        "tr": [
+          "Mitokondri",
+          "Ribozom",
+          "Golgi cisimciği",
+          "Lizozom"
+        ],
+        "en": [
+          "Mitochondrion",
+          "Ribosome",
+          "Golgi apparatus",
+          "Lysosome"
+        ]
       },
       "explain": {
-        "tr": "Mitokondri, besinlerdeki enerjiyi hücrenin kullanabileceği ATP'ye çevirir.",
+        "tr": "Mitokondri, besinlerdeki enerjiyi hücrenin kullanabileceği ATP’ye çevirir.",
         "en": "Mitochondria turn the energy in food into ATP, which the cell can use."
+      }
+    },
+    {
+      "id": "science:middle:002",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Maddenin katı hâlden doğrudan gaz hâline geçmesine ne denir?",
+        "en": "What is a substance turning straight from solid to gas called?"
+      },
+      "options": {
+        "tr": [
+          "Süblimleşme",
+          "Erime",
+          "Yoğuşma",
+          "Donma"
+        ],
+        "en": [
+          "Sublimation",
+          "Melting",
+          "Condensation",
+          "Freezing"
+        ]
+      },
+      "explain": {
+        "tr": "Naftalin ve kuru buz süblimleşir.",
+        "en": "Mothballs and dry ice sublimate."
+      }
+    },
+    {
+      "id": "science:middle:003",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Kuvvetin birimi nedir?",
+        "en": "What is the unit of force?"
+      },
+      "options": {
+        "tr": [
+          "Newton",
+          "Joule",
+          "Watt",
+          "Pascal"
+        ],
+        "en": [
+          "Newton",
+          "Joule",
+          "Watt",
+          "Pascal"
+        ]
+      },
+      "explain": {
+        "tr": "Joule enerji, watt güç, pascal basınç birimidir.",
+        "en": "The joule is energy, the watt is power and the pascal is pressure."
+      }
+    },
+    {
+      "id": "science:middle:004",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Ay tutulması sırasında hangisi ortada yer alır?",
+        "en": "During a lunar eclipse, which body is in the middle?"
+      },
+      "options": {
+        "tr": [
+          "Dünya",
+          "Ay",
+          "Güneş",
+          "Mars"
+        ],
+        "en": [
+          "Earth",
+          "Moon",
+          "Sun",
+          "Mars"
+        ]
+      },
+      "explain": {
+        "tr": "Dünya, Güneş ile Ay arasına girer ve gölgesi Ay’a düşer.",
+        "en": "Earth moves between the Sun and the Moon and casts its shadow on the Moon."
+      }
+    },
+    {
+      "id": "science:middle:005",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Asitlerin pH değeri için hangisi doğrudur?",
+        "en": "Which is true about the pH of acids?"
+      },
+      "options": {
+        "tr": [
+          "7’den küçüktür",
+          "7’ye eşittir",
+          "7’den büyüktür",
+          "14’e eşittir"
+        ],
+        "en": [
+          "It is below 7",
+          "It equals 7",
+          "It is above 7",
+          "It equals 14"
+        ]
+      },
+      "explain": {
+        "tr": "pH 7 nötr, 7’nin altı asit, üstü bazdır.",
+        "en": "pH 7 is neutral; below is acidic, above is basic."
+      }
+    },
+    {
+      "id": "science:middle:006",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Kalıtsal bilgiyi taşıyan molekül hangisidir?",
+        "en": "Which molecule carries genetic information?"
+      },
+      "options": {
+        "tr": [
+          "DNA",
+          "Glikoz",
+          "Nişasta",
+          "Protein"
+        ],
+        "en": [
+          "DNA",
+          "Glucose",
+          "Starch",
+          "Protein"
+        ]
+      },
+      "explain": {
+        "tr": "DNA, genleri oluşturan çift sarmal yapıdaki moleküldür.",
+        "en": "DNA is the double-helix molecule that makes up genes."
+      }
+    },
+    {
+      "id": "science:middle:007",
+      "level": "middle",
+      "type": "order",
+      "q": {
+        "tr": "Canlılardaki yapılanma düzeylerini küçükten büyüğe sırala.",
+        "en": "Order these levels of organisation in living things from smallest to largest."
+      },
+      "items": {
+        "tr": [
+          "Hücre",
+          "Doku",
+          "Organ",
+          "Sistem"
+        ],
+        "en": [
+          "Cell",
+          "Tissue",
+          "Organ",
+          "Organ system"
+        ]
+      },
+      "explain": {
+        "tr": "Benzer hücreler dokuyu, dokular organı, organlar sistemi oluşturur.",
+        "en": "Similar cells form tissues, tissues form organs and organs form organ systems."
+      }
+    },
+    {
+      "id": "science:middle:008",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Işığın bir ortamdan başka bir ortama geçerken yön değiştirmesine ne denir?",
+        "en": "What is light changing direction as it passes into another medium called?"
+      },
+      "options": {
+        "tr": [
+          "Kırılma",
+          "Yansıma",
+          "Soğurma",
+          "Kutuplanma"
+        ],
+        "en": [
+          "Refraction",
+          "Reflection",
+          "Absorption",
+          "Polarisation"
+        ]
+      },
+      "explain": {
+        "tr": "Suya batırılan kalemin kırık görünmesinin nedeni kırılmadır.",
+        "en": "Refraction is why a pencil in water looks bent."
       }
     },
     {
       "id": "science:high:001",
       "level": "high",
       "type": "choice",
-      "q": { "tr": "Işığın boşluktaki hızı yaklaşık kaçtır?", "en": "What is the approximate speed of light in a vacuum?" },
+      "q": {
+        "tr": "Işığın boşluktaki hızı yaklaşık kaçtır?",
+        "en": "What is the approximate speed of light in a vacuum?"
+      },
       "options": {
-        "tr": ["300.000 km/s", "150.000 km/s", "30.000 km/s", "3.000.000 km/s"],
-        "en": ["300,000 km/s", "150,000 km/s", "30,000 km/s", "3,000,000 km/s"]
+        "tr": [
+          "300.000 km/s",
+          "150.000 km/s",
+          "30.000 km/s",
+          "3.000.000 km/s"
+        ],
+        "en": [
+          "300,000 km/s",
+          "150,000 km/s",
+          "30,000 km/s",
+          "3,000,000 km/s"
+        ]
       },
       "explain": {
         "tr": "Işık boşlukta saniyede yaklaşık 299.792 km yol alır.",
@@ -61,42 +464,405 @@
       "id": "science:high:002",
       "level": "high",
       "type": "choice",
-      "q": { "tr": "Periyodik tablodaki \"Fe\" sembolü hangi elementindir?", "en": "Which element has the symbol \"Fe\"?" },
+      "q": {
+        "tr": "Newton’un ikinci yasası hangisidir?",
+        "en": "What is Newton’s second law?"
+      },
       "options": {
-        "tr": ["Demir", "Flor", "Fosfor", "Fermiyum"],
-        "en": ["Iron", "Fluorine", "Phosphorus", "Fermium"]
+        "tr": [
+          "F = m · a",
+          "E = m · c²",
+          "V = I · R",
+          "P = F / A"
+        ],
+        "en": [
+          "F = m · a",
+          "E = m · c²",
+          "V = I · R",
+          "P = F / A"
+        ]
       },
       "explain": {
-        "tr": "Fe, demirin Latince adı \"ferrum\"dan gelir.",
-        "en": "Fe comes from \"ferrum\", the Latin name for iron."
+        "tr": "Net kuvvet, kütle ile ivmenin çarpımına eşittir.",
+        "en": "Net force equals mass times acceleration."
       }
     },
     {
       "id": "science:high:003",
       "level": "high",
       "type": "order",
-      "q": { "tr": "Gezegenleri Güneş'e en yakından en uzağa sırala.", "en": "Order the planets from closest to farthest from the Sun." },
+      "q": {
+        "tr": "Gezegenleri Güneş’e en yakından en uzağa sırala.",
+        "en": "Order the planets from closest to farthest from the Sun."
+      },
       "items": {
-        "tr": ["Merkür", "Venüs", "Dünya", "Mars"],
-        "en": ["Mercury", "Venus", "Earth", "Mars"]
+        "tr": [
+          "Merkür",
+          "Venüs",
+          "Dünya",
+          "Mars"
+        ],
+        "en": [
+          "Mercury",
+          "Venus",
+          "Earth",
+          "Mars"
+        ]
       },
       "explain": {
-        "tr": "Güneş'ten uzaklaştıkça sıra Merkür, Venüs, Dünya ve Mars'tır.",
+        "tr": "Güneş’ten uzaklaştıkça sıra Merkür, Venüs, Dünya ve Mars’tır.",
         "en": "Moving away from the Sun, the order is Mercury, Venus, Earth and Mars."
+      }
+    },
+    {
+      "id": "science:high:004",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Periyodik tabloda aynı sütundaki (grup) elementlerin ortak özelliği nedir?",
+        "en": "What do elements in the same column (group) of the periodic table share?"
+      },
+      "options": {
+        "tr": [
+          "Değerlik elektron sayısı",
+          "Atom kütlesi",
+          "Nötron sayısı",
+          "Erime noktası"
+        ],
+        "en": [
+          "The number of valence electrons",
+          "Atomic mass",
+          "Neutron count",
+          "Melting point"
+        ]
+      },
+      "explain": {
+        "tr": "Aynı gruptaki elementler benzer kimyasal davranış gösterir.",
+        "en": "Elements in the same group behave similarly in reactions."
+      }
+    },
+    {
+      "id": "science:high:005",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bitki hücresini hayvan hücresinden ayıran yapı hangisidir?",
+        "en": "Which structure is found in plant cells but not animal cells?"
+      },
+      "options": {
+        "tr": [
+          "Hücre duvarı",
+          "Hücre zarı",
+          "Çekirdek",
+          "Mitokondri"
+        ],
+        "en": [
+          "Cell wall",
+          "Cell membrane",
+          "Nucleus",
+          "Mitochondrion"
+        ]
+      },
+      "explain": {
+        "tr": "Selülozdan oluşan hücre duvarı bitki hücresine sağlamlık verir.",
+        "en": "The cellulose cell wall gives plant cells their rigidity."
+      }
+    },
+    {
+      "id": "science:high:006",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Enerjinin korunumu yasası neyi söyler?",
+        "en": "What does the law of conservation of energy say?"
+      },
+      "options": {
+        "tr": [
+          "Enerji yoktan var edilemez, vardan yok edilemez; sadece dönüşür",
+          "Enerji zamanla azalır",
+          "Enerji sadece ısıdır",
+          "Enerji her zaman artar"
+        ],
+        "en": [
+          "Energy cannot be created or destroyed, only converted",
+          "Energy decreases over time",
+          "Energy is only heat",
+          "Energy always increases"
+        ]
+      },
+      "explain": {
+        "tr": "Örneğin düşen bir cismin potansiyel enerjisi kinetik enerjiye dönüşür.",
+        "en": "For example, a falling object’s potential energy turns into kinetic energy."
+      }
+    },
+    {
+      "id": "science:high:007",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Evrim teorisini doğal seçilim kavramıyla açıklayan bilim insanı kimdir?",
+        "en": "Which scientist explained evolution through natural selection?"
+      },
+      "options": {
+        "tr": [
+          "Charles Darwin",
+          "Gregor Mendel",
+          "Louis Pasteur",
+          "Isaac Newton"
+        ],
+        "en": [
+          "Charles Darwin",
+          "Gregor Mendel",
+          "Louis Pasteur",
+          "Isaac Newton"
+        ]
+      },
+      "explain": {
+        "tr": "Mendel kalıtım yasalarını, Pasteur mikroplarla ilgili çalışmalarıyla bilinir.",
+        "en": "Mendel is known for the laws of inheritance and Pasteur for his work on germs."
+      }
+    },
+    {
+      "id": "science:high:008",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Ohm yasasına göre direnç sabitken gerilim iki katına çıkarsa akım ne olur?",
+        "en": "By Ohm’s law, if the voltage doubles and resistance stays the same, what happens to the current?"
+      },
+      "options": {
+        "tr": [
+          "İki katına çıkar",
+          "Yarıya iner",
+          "Değişmez",
+          "Dört katına çıkar"
+        ],
+        "en": [
+          "It doubles",
+          "It halves",
+          "It stays the same",
+          "It quadruples"
+        ]
+      },
+      "explain": {
+        "tr": "V = I · R olduğu için akım gerilimle doğru orantılıdır.",
+        "en": "Since V = I · R, current is proportional to voltage."
       }
     },
     {
       "id": "science:university:001",
       "level": "university",
       "type": "choice",
-      "q": { "tr": "DNA'da adenin bazı hangi bazla eşleşir?", "en": "In DNA, adenine pairs with which base?" },
+      "q": {
+        "tr": "DNA’da adenin bazı hangi bazla eşleşir?",
+        "en": "In DNA, adenine pairs with which base?"
+      },
       "options": {
-        "tr": ["Timin", "Guanin", "Sitozin", "Urasil"],
-        "en": ["Thymine", "Guanine", "Cytosine", "Uracil"]
+        "tr": [
+          "Timin",
+          "Guanin",
+          "Sitozin",
+          "Urasil"
+        ],
+        "en": [
+          "Thymine",
+          "Guanine",
+          "Cytosine",
+          "Uracil"
+        ]
       },
       "explain": {
-        "tr": "DNA'da adenin timinle, guanin sitozinle eşleşir. Urasil DNA'da değil RNA'da bulunur.",
+        "tr": "DNA’da adenin timinle, guanin sitozinle eşleşir. Urasil DNA’da değil RNA’da bulunur.",
         "en": "In DNA adenine pairs with thymine and guanine with cytosine. Uracil is found in RNA, not DNA."
+      }
+    },
+    {
+      "id": "science:university:002",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Termodinamiğin ikinci yasasına göre yalıtılmış bir sistemde entropi nasıl değişir?",
+        "en": "By the second law of thermodynamics, how does entropy change in an isolated system?"
+      },
+      "options": {
+        "tr": [
+          "Azalmaz; zamanla artar ya da sabit kalır",
+          "Her zaman azalır",
+          "Sıfıra iner",
+          "Rastgele değişir"
+        ],
+        "en": [
+          "It never decreases; it rises or stays constant",
+          "It always decreases",
+          "It drops to zero",
+          "It changes randomly"
+        ]
+      },
+      "explain": {
+        "tr": "Bu yasa ısının kendiliğinden soğuktan sıcağa akmamasını da açıklar.",
+        "en": "This also explains why heat does not flow by itself from cold to hot."
+      }
+    },
+    {
+      "id": "science:university:003",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Kovalent bağ nasıl oluşur?",
+        "en": "How does a covalent bond form?"
+      },
+      "options": {
+        "tr": [
+          "Atomlar elektronlarını ortaklaşa kullanır",
+          "Bir atom diğerine elektron verir",
+          "Metaller elektron denizinde birleşir",
+          "Protonlar paylaşılır"
+        ],
+        "en": [
+          "Atoms share electrons",
+          "One atom gives an electron to another",
+          "Metals join in a sea of electrons",
+          "Protons are shared"
+        ]
+      },
+      "explain": {
+        "tr": "Elektron alışverişi iyonik, ortak kullanım kovalent bağdır.",
+        "en": "Transferring electrons makes an ionic bond; sharing them makes a covalent one."
+      }
+    },
+    {
+      "id": "science:university:004",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Protein sentezinin gerçekleştiği organel hangisidir?",
+        "en": "Where are proteins made in the cell?"
+      },
+      "options": {
+        "tr": [
+          "Ribozom",
+          "Lizozom",
+          "Koful",
+          "Sentrozom"
+        ],
+        "en": [
+          "Ribosome",
+          "Lysosome",
+          "Vacuole",
+          "Centrosome"
+        ]
+      },
+      "explain": {
+        "tr": "mRNA’daki şifre ribozomda okunarak amino asitler birleştirilir.",
+        "en": "The code on mRNA is read at the ribosome to join amino acids."
+      }
+    },
+    {
+      "id": "science:university:005",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Özel görelilikte hareket eden bir saat durgun bir gözlemciye göre nasıl işler?",
+        "en": "In special relativity, how does a moving clock run for a stationary observer?"
+      },
+      "options": {
+        "tr": [
+          "Daha yavaş",
+          "Daha hızlı",
+          "Aynı hızda",
+          "Durur"
+        ],
+        "en": [
+          "Slower",
+          "Faster",
+          "At the same rate",
+          "It stops"
+        ]
+      },
+      "explain": {
+        "tr": "Bu etkiye zaman genişlemesi denir; GPS uyduları bunu hesaba katar.",
+        "en": "This is time dilation; GPS satellites account for it."
+      }
+    },
+    {
+      "id": "science:university:006",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Enzimler kimyasal tepkimeleri nasıl hızlandırır?",
+        "en": "How do enzymes speed up reactions?"
+      },
+      "options": {
+        "tr": [
+          "Aktivasyon enerjisini düşürerek",
+          "Sıcaklığı artırarak",
+          "Tepkimeye girerek tükenerek",
+          "Dengeyi değiştirerek"
+        ],
+        "en": [
+          "By lowering the activation energy",
+          "By raising the temperature",
+          "By being used up",
+          "By shifting the equilibrium"
+        ]
+      },
+      "explain": {
+        "tr": "Enzimler tepkimeden değişmeden çıkar ve dengeyi değil, hızı etkiler.",
+        "en": "Enzymes come out unchanged and affect the rate, not the equilibrium."
+      }
+    },
+    {
+      "id": "science:university:007",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Bir yıldızın ömrünün sonunda çok büyük kütleli ise neye dönüşebilir?",
+        "en": "What can a very massive star become at the end of its life?"
+      },
+      "options": {
+        "tr": [
+          "Kara delik",
+          "Beyaz cüce",
+          "Kahverengi cüce",
+          "Kuyruklu yıldız"
+        ],
+        "en": [
+          "A black hole",
+          "A white dwarf",
+          "A brown dwarf",
+          "A comet"
+        ]
+      },
+      "explain": {
+        "tr": "Güneş gibi yıldızlar beyaz cüce olur; çok büyük kütleliler süpernovadan sonra nötron yıldızı ya da kara delik olabilir.",
+        "en": "Sun-like stars become white dwarfs; very massive ones can become neutron stars or black holes after a supernova."
+      }
+    },
+    {
+      "id": "science:university:008",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Avogadro sayısı yaklaşık kaçtır?",
+        "en": "What is Avogadro’s number, approximately?"
+      },
+      "options": {
+        "tr": [
+          "6,02 × 10²³",
+          "3,00 × 10⁸",
+          "9,81",
+          "1,60 × 10⁻¹⁹"
+        ],
+        "en": [
+          "6.02 × 10²³",
+          "3.00 × 10⁸",
+          "9.81",
+          "1.60 × 10⁻¹⁹"
+        ]
+      },
+      "explain": {
+        "tr": "Bir moldeki tanecik sayısıdır. Diğerleri ışık hızı, yerçekimi ivmesi ve elektron yüküdür.",
+        "en": "It is the number of particles in a mole; the others are the speed of light, gravity and the electron charge."
       }
     },
     {
@@ -105,15 +871,187 @@
       "type": "choice",
       "q": {
         "tr": "Heisenberg belirsizlik ilkesine göre hangi iki nicelik aynı anda sınırsız kesinlikle ölçülemez?",
-        "en": "According to Heisenberg's uncertainty principle, which two quantities cannot both be measured with unlimited precision?"
+        "en": "According to Heisenberg’s uncertainty principle, which two quantities cannot both be measured with unlimited precision?"
       },
       "options": {
-        "tr": ["Konum ve momentum", "Kütle ve hacim", "Sıcaklık ve basınç", "Yük ve direnç"],
-        "en": ["Position and momentum", "Mass and volume", "Temperature and pressure", "Charge and resistance"]
+        "tr": [
+          "Konum ve momentum",
+          "Kütle ve hacim",
+          "Sıcaklık ve basınç",
+          "Yük ve direnç"
+        ],
+        "en": [
+          "Position and momentum",
+          "Mass and volume",
+          "Temperature and pressure",
+          "Charge and resistance"
+        ]
       },
       "explain": {
-        "tr": "Konumdaki ve momentumdaki belirsizliklerin çarpımı ħ/2'den küçük olamaz.",
+        "tr": "Konumdaki ve momentumdaki belirsizliklerin çarpımı ħ/2’den küçük olamaz.",
         "en": "The product of the uncertainties in position and momentum cannot be smaller than ħ/2."
+      }
+    },
+    {
+      "id": "science:masters:002",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "CRISPR-Cas9 teknolojisi ne için kullanılır?",
+        "en": "What is CRISPR-Cas9 used for?"
+      },
+      "options": {
+        "tr": [
+          "Genomda hedefli düzenleme yapmak",
+          "Proteinleri kristalleştirmek",
+          "Aşı saklamak",
+          "DNA’yı görüntülemek"
+        ],
+        "en": [
+          "Targeted editing of the genome",
+          "Crystallising proteins",
+          "Storing vaccines",
+          "Imaging DNA"
+        ]
+      },
+      "explain": {
+        "tr": "Rehber RNA, Cas9 enzimini DNA’da kesilecek yere yönlendirir.",
+        "en": "A guide RNA leads the Cas9 enzyme to the spot to cut."
+      }
+    },
+    {
+      "id": "science:masters:003",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Standart Model’de kütle kazanımını açıklayan mekanizmayla ilişkili parçacık hangisidir?",
+        "en": "In the Standard Model, which particle is linked to the mechanism that gives mass?"
+      },
+      "options": {
+        "tr": [
+          "Higgs bozonu",
+          "Foton",
+          "Gluon",
+          "Nötrino"
+        ],
+        "en": [
+          "Higgs boson",
+          "Photon",
+          "Gluon",
+          "Neutrino"
+        ]
+      },
+      "explain": {
+        "tr": "Higgs bozonu 2012’de CERN’deki Büyük Hadron Çarpıştırıcısı’nda gözlendi.",
+        "en": "The Higgs boson was observed at CERN’s Large Hadron Collider in 2012."
+      }
+    },
+    {
+      "id": "science:masters:004",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Kuantum dolanıklığında iki parçacık için hangisi doğrudur?",
+        "en": "In quantum entanglement, which is true for two particles?"
+      },
+      "options": {
+        "tr": [
+          "Ölçüm sonuçları aralarındaki mesafeden bağımsız olarak ilişkilidir",
+          "Işıktan hızlı bilgi taşırlar",
+          "Her zaman aynı konumdadırlar",
+          "Kütleleri eşittir"
+        ],
+        "en": [
+          "Their measurement results are correlated regardless of distance",
+          "They carry information faster than light",
+          "They are always in the same place",
+          "Their masses are equal"
+        ]
+      },
+      "explain": {
+        "tr": "Dolanıklık korelasyon yaratır ama ışıktan hızlı iletişime izin vermez.",
+        "en": "Entanglement creates correlations but does not allow faster-than-light messaging."
+      }
+    },
+    {
+      "id": "science:masters:005",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Gibbs serbest enerjisi (ΔG) negatif olan bir tepkime için ne söylenebilir?",
+        "en": "What can be said about a reaction with a negative Gibbs free energy (ΔG)?"
+      },
+      "options": {
+        "tr": [
+          "Sabit sıcaklık ve basınçta kendiliğinden gerçekleşebilir",
+          "Asla gerçekleşmez",
+          "Mutlaka çok hızlıdır",
+          "Isı almak zorundadır"
+        ],
+        "en": [
+          "It can occur spontaneously at constant temperature and pressure",
+          "It never happens",
+          "It must be very fast",
+          "It must absorb heat"
+        ]
+      },
+      "explain": {
+        "tr": "ΔG kendiliğindenliği gösterir; tepkimenin hızı ise kinetiğe bağlıdır.",
+        "en": "ΔG shows spontaneity; the rate depends on kinetics."
+      }
+    },
+    {
+      "id": "science:masters:006",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Epigenetik değişiklikler neyi etkiler?",
+        "en": "What do epigenetic changes affect?"
+      },
+      "options": {
+        "tr": [
+          "DNA dizisini değiştirmeden gen ifadesini",
+          "DNA’nın baz dizisini",
+          "Kromozom sayısını",
+          "Hücre duvarını"
+        ],
+        "en": [
+          "Gene expression without changing the DNA sequence",
+          "The DNA base sequence",
+          "The number of chromosomes",
+          "The cell wall"
+        ]
+      },
+      "explain": {
+        "tr": "DNA metilasyonu ve histon değişiklikleri genlerin açılıp kapanmasını etkiler.",
+        "en": "DNA methylation and histone changes switch genes on and off."
+      }
+    },
+    {
+      "id": "science:masters:007",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Evrendeki madde-enerjinin büyük kısmını oluşturduğu düşünülen ama doğrudan gözlenemeyen bileşen hangisidir?",
+        "en": "Which unseen component is thought to make up most of the universe’s matter-energy?"
+      },
+      "options": {
+        "tr": [
+          "Karanlık enerji",
+          "Sıradan (baryonik) madde",
+          "Kozmik mikrodalga ışıması",
+          "Nötron yıldızları"
+        ],
+        "en": [
+          "Dark energy",
+          "Ordinary (baryonic) matter",
+          "Cosmic microwave background",
+          "Neutron stars"
+        ]
+      },
+      "explain": {
+        "tr": "Tahminlere göre yaklaşık %68 karanlık enerji, %27 karanlık madde, %5 sıradan maddedir.",
+        "en": "Estimates suggest about 68% dark energy, 27% dark matter and 5% ordinary matter."
       }
     }
   ]

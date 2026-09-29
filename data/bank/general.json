@@ -1,0 +1,977 @@
+{
+  "topic": "general",
+  "questions": [
+    {
+      "id": "general:primary:001",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Bir yılda kaç ay vardır?",
+        "en": "How many months are in a year?"
+      },
+      "options": {
+        "tr": [
+          "12",
+          "10",
+          "52",
+          "365"
+        ],
+        "en": [
+          "12",
+          "10",
+          "52",
+          "365"
+        ]
+      },
+      "explain": {
+        "tr": "Bir yılda 12 ay, 52 hafta ve 365 (artık yılda 366) gün vardır.",
+        "en": "A year has 12 months, 52 weeks and 365 days (366 in a leap year)."
+      }
+    },
+    {
+      "id": "general:primary:002",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Gökkuşağında kaç renk vardır?",
+        "en": "How many colours are in a rainbow?"
+      },
+      "options": {
+        "tr": [
+          "7",
+          "5",
+          "3",
+          "10"
+        ],
+        "en": [
+          "7",
+          "5",
+          "3",
+          "10"
+        ]
+      },
+      "explain": {
+        "tr": "Kırmızı, turuncu, sarı, yeşil, mavi, lacivert ve mor.",
+        "en": "Red, orange, yellow, green, blue, indigo and violet."
+      }
+    },
+    {
+      "id": "general:primary:003",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Futbol takımında sahada kaç oyuncu bulunur?",
+        "en": "How many players does a football team have on the pitch?"
+      },
+      "options": {
+        "tr": [
+          "11",
+          "9",
+          "7",
+          "15"
+        ],
+        "en": [
+          "11",
+          "9",
+          "7",
+          "15"
+        ]
+      },
+      "explain": {
+        "tr": "Kaleci dahil her takım sahaya 11 oyuncuyla çıkar.",
+        "en": "Each team fields 11 players, including the goalkeeper."
+      }
+    },
+    {
+      "id": "general:primary:004",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Hangisi bir çalgı değildir?",
+        "en": "Which of these is not a musical instrument?"
+      },
+      "options": {
+        "tr": [
+          "Pergel",
+          "Bağlama",
+          "Keman",
+          "Davul"
+        ],
+        "en": [
+          "Compass (for drawing)",
+          "Bağlama",
+          "Violin",
+          "Drum"
+        ]
+      },
+      "explain": {
+        "tr": "Pergel daire çizmeye yarayan bir araçtır.",
+        "en": "A compass for drawing is used to draw circles."
+      }
+    },
+    {
+      "id": "general:primary:005",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Olimpiyat halkalarının sayısı kaçtır?",
+        "en": "How many Olympic rings are there?"
+      },
+      "options": {
+        "tr": [
+          "5",
+          "4",
+          "6",
+          "7"
+        ],
+        "en": [
+          "5",
+          "4",
+          "6",
+          "7"
+        ]
+      },
+      "explain": {
+        "tr": "Beş halka beş kıtayı temsil eder.",
+        "en": "The five rings stand for five continents."
+      }
+    },
+    {
+      "id": "general:primary:006",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Kırmızı Yarımay’ın görevi nedir?",
+        "en": "What does the Red Crescent do?"
+      },
+      "options": {
+        "tr": [
+          "Afet ve acil durumlarda insanlara yardım etmek",
+          "Futbol maçları düzenlemek",
+          "Kitap basmak",
+          "Hava durumunu tahmin etmek"
+        ],
+        "en": [
+          "Helping people in disasters and emergencies",
+          "Organising football matches",
+          "Printing books",
+          "Forecasting the weather"
+        ]
+      },
+      "explain": {
+        "tr": "Kızılay ve Kızılhaç insani yardım kuruluşlarıdır.",
+        "en": "The Red Crescent and Red Cross are humanitarian organisations."
+      }
+    },
+    {
+      "id": "general:primary:007",
+      "level": "primary",
+      "type": "order",
+      "q": {
+        "tr": "Hayvanları küçükten büyüğe sırala.",
+        "en": "Order these animals from smallest to largest."
+      },
+      "items": {
+        "tr": [
+          "Karınca",
+          "Kedi",
+          "At",
+          "Fil"
+        ],
+        "en": [
+          "Ant",
+          "Cat",
+          "Horse",
+          "Elephant"
+        ]
+      },
+      "explain": {
+        "tr": "Fil, karada yaşayan en büyük hayvandır.",
+        "en": "The elephant is the largest land animal."
+      }
+    },
+    {
+      "id": "general:primary:008",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Trafik ışığında hangi renk “dur” anlamına gelir?",
+        "en": "Which traffic light colour means “stop”?"
+      },
+      "options": {
+        "tr": [
+          "Kırmızı",
+          "Yeşil",
+          "Sarı",
+          "Mavi"
+        ],
+        "en": [
+          "Red",
+          "Green",
+          "Yellow",
+          "Blue"
+        ]
+      },
+      "explain": {
+        "tr": "Kırmızı dur, sarı hazırlan, yeşil geç demektir.",
+        "en": "Red means stop, yellow get ready, green go."
+      }
+    },
+    {
+      "id": "general:middle:001",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Nobel Ödülleri hangi ülkede verilir (Barış Ödülü hariç)?",
+        "en": "In which country are the Nobel Prizes awarded (except Peace)?"
+      },
+      "options": {
+        "tr": [
+          "İsveç",
+          "Norveç",
+          "İsviçre",
+          "Danimarka"
+        ],
+        "en": [
+          "Sweden",
+          "Norway",
+          "Switzerland",
+          "Denmark"
+        ]
+      },
+      "explain": {
+        "tr": "Nobel Barış Ödülü Oslo’da (Norveç), diğerleri Stockholm’de verilir.",
+        "en": "The Peace Prize is given in Oslo (Norway); the others in Stockholm."
+      }
+    },
+    {
+      "id": "general:middle:002",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Türkiye’nin para birimi hangisidir?",
+        "en": "What is the currency of Türkiye?"
+      },
+      "options": {
+        "tr": [
+          "Türk lirası",
+          "Euro",
+          "Dinar",
+          "Rupi"
+        ],
+        "en": [
+          "Turkish lira",
+          "Euro",
+          "Dinar",
+          "Rupee"
+        ]
+      },
+      "explain": {
+        "tr": "Türk lirası 100 kuruştan oluşur.",
+        "en": "The Turkish lira is divided into 100 kuruş."
+      }
+    },
+    {
+      "id": "general:middle:003",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "İnsan vücudundaki en büyük organ hangisidir?",
+        "en": "What is the largest organ of the human body?"
+      },
+      "options": {
+        "tr": [
+          "Deri",
+          "Karaciğer",
+          "Beyin",
+          "Akciğer"
+        ],
+        "en": [
+          "Skin",
+          "Liver",
+          "Brain",
+          "Lungs"
+        ]
+      },
+      "explain": {
+        "tr": "Deri, yetişkinlerde yaklaşık 2 metrekare alanı kaplar.",
+        "en": "In adults the skin covers about 2 square metres."
+      }
+    },
+    {
+      "id": "general:middle:004",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Olimpiyat Oyunları ilk olarak hangi ülkede düzenlendi?",
+        "en": "Where were the Olympic Games first held?"
+      },
+      "options": {
+        "tr": [
+          "Yunanistan",
+          "İtalya",
+          "Fransa",
+          "Mısır"
+        ],
+        "en": [
+          "Greece",
+          "Italy",
+          "France",
+          "Egypt"
+        ]
+      },
+      "explain": {
+        "tr": "Antik oyunlar Olympia’da, modern oyunlar 1896’da Atina’da başladı.",
+        "en": "The ancient games were held at Olympia; the modern ones began in Athens in 1896."
+      }
+    },
+    {
+      "id": "general:middle:005",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Dünya Sağlık Örgütü’nün kısaltması hangisidir?",
+        "en": "What is the abbreviation for the World Health Organization?"
+      },
+      "options": {
+        "tr": [
+          "WHO",
+          "UNESCO",
+          "NATO",
+          "FIFA"
+        ],
+        "en": [
+          "WHO",
+          "UNESCO",
+          "NATO",
+          "FIFA"
+        ]
+      },
+      "explain": {
+        "tr": "UNESCO eğitim ve kültür, FIFA futbol, NATO askerî bir örgüttür.",
+        "en": "UNESCO covers education and culture, FIFA football and NATO defence."
+      }
+    },
+    {
+      "id": "general:middle:006",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Satrançta yalnızca çapraz hareket eden taş hangisidir?",
+        "en": "In chess, which piece moves only diagonally?"
+      },
+      "options": {
+        "tr": [
+          "Fil",
+          "Kale",
+          "At",
+          "Şah"
+        ],
+        "en": [
+          "Bishop",
+          "Rook",
+          "Knight",
+          "King"
+        ]
+      },
+      "explain": {
+        "tr": "Fil kendi renginde kalarak çapraz hareket eder.",
+        "en": "The bishop moves diagonally and stays on its colour."
+      }
+    },
+    {
+      "id": "general:middle:007",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Kağıt ilk olarak hangi ülkede icat edildi?",
+        "en": "Where was paper first invented?"
+      },
+      "options": {
+        "tr": [
+          "Çin",
+          "Mısır",
+          "Yunanistan",
+          "Hindistan"
+        ],
+        "en": [
+          "China",
+          "Egypt",
+          "Greece",
+          "India"
+        ]
+      },
+      "explain": {
+        "tr": "Kağıt yaklaşık MS 105’te Çin’de Cai Lun’a atfedilir.",
+        "en": "Paper is credited to Cai Lun in China around AD 105."
+      }
+    },
+    {
+      "id": "general:middle:008",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "İnternetteki web sitelerinin adreslerini IP adreslerine çeviren sisteme ne denir?",
+        "en": "What system turns website names into IP addresses?"
+      },
+      "options": {
+        "tr": [
+          "DNS",
+          "USB",
+          "GPS",
+          "PDF"
+        ],
+        "en": [
+          "DNS",
+          "USB",
+          "GPS",
+          "PDF"
+        ]
+      },
+      "explain": {
+        "tr": "DNS, internetin telefon rehberi gibidir.",
+        "en": "DNS works like the internet’s phone book."
+      }
+    },
+    {
+      "id": "general:high:001",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Birleşmiş Milletler’in genel merkezi hangi şehirdedir?",
+        "en": "In which city is the United Nations headquarters?"
+      },
+      "options": {
+        "tr": [
+          "New York",
+          "Cenevre",
+          "Brüksel",
+          "Viyana"
+        ],
+        "en": [
+          "New York",
+          "Geneva",
+          "Brussels",
+          "Vienna"
+        ]
+      },
+      "explain": {
+        "tr": "BM’nin önemli ofisleri Cenevre ve Viyana’da da bulunur.",
+        "en": "The UN also has major offices in Geneva and Vienna."
+      }
+    },
+    {
+      "id": "general:high:002",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Enflasyon neyi ifade eder?",
+        "en": "What does inflation mean?"
+      },
+      "options": {
+        "tr": [
+          "Fiyatlar genel düzeyinin sürekli artmasını",
+          "İşsizliğin azalmasını",
+          "İhracatın artmasını",
+          "Faizlerin sıfırlanmasını"
+        ],
+        "en": [
+          "A sustained rise in the general price level",
+          "Falling unemployment",
+          "Rising exports",
+          "Zero interest rates"
+        ]
+      },
+      "explain": {
+        "tr": "Enflasyon paranın satın alma gücünü azaltır.",
+        "en": "Inflation reduces the purchasing power of money."
+      }
+    },
+    {
+      "id": "general:high:003",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Kuvvetler ayrılığı ilkesinde hangi üç erk ayrılır?",
+        "en": "Which three powers are separated under the separation of powers?"
+      },
+      "options": {
+        "tr": [
+          "Yasama, yürütme, yargı",
+          "Ordu, polis, jandarma",
+          "Belediye, valilik, muhtarlık",
+          "Basın, sendika, dernek"
+        ],
+        "en": [
+          "Legislative, executive, judicial",
+          "Army, police, gendarmerie",
+          "Municipality, governorship, village head",
+          "Press, unions, associations"
+        ]
+      },
+      "explain": {
+        "tr": "Montesquieu’nün savunduğu bu ilke, gücün tek elde toplanmasını önler.",
+        "en": "Championed by Montesquieu, it prevents power from being concentrated."
+      }
+    },
+    {
+      "id": "general:high:004",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Yenilenebilir enerji kaynağı hangisidir?",
+        "en": "Which is a renewable energy source?"
+      },
+      "options": {
+        "tr": [
+          "Rüzgâr",
+          "Kömür",
+          "Doğal gaz",
+          "Petrol"
+        ],
+        "en": [
+          "Wind",
+          "Coal",
+          "Natural gas",
+          "Oil"
+        ]
+      },
+      "explain": {
+        "tr": "Güneş, rüzgâr, su ve jeotermal yenilenebilir kaynaklardır.",
+        "en": "Solar, wind, hydro and geothermal are renewable."
+      }
+    },
+    {
+      "id": "general:high:005",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Hangi ülke hem Avrupa hem Asya’da toprağı olan ülkelerdendir?",
+        "en": "Which country has territory in both Europe and Asia?"
+      },
+      "options": {
+        "tr": [
+          "Türkiye",
+          "İtalya",
+          "Japonya",
+          "Brezilya"
+        ],
+        "en": [
+          "Türkiye",
+          "Italy",
+          "Japan",
+          "Brazil"
+        ]
+      },
+      "explain": {
+        "tr": "Türkiye’nin Trakya kısmı Avrupa’da, Anadolu kısmı Asya’dadır.",
+        "en": "Türkiye’s Thrace is in Europe and Anatolia is in Asia."
+      }
+    },
+    {
+      "id": "general:high:006",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Paralimpik Oyunları kimlerin katıldığı uluslararası spor organizasyonudur?",
+        "en": "Who competes in the Paralympic Games?"
+      },
+      "options": {
+        "tr": [
+          "Engelli sporcular",
+          "Sadece gençler",
+          "Emekli sporcular",
+          "Sadece amatörler"
+        ],
+        "en": [
+          "Athletes with disabilities",
+          "Only young people",
+          "Retired athletes",
+          "Only amateurs"
+        ]
+      },
+      "explain": {
+        "tr": "Paralimpik Oyunları, Olimpiyatların hemen ardından aynı şehirde düzenlenir.",
+        "en": "The Paralympics are held right after the Olympics in the same city."
+      }
+    },
+    {
+      "id": "general:high:007",
+      "level": "high",
+      "type": "order",
+      "q": {
+        "tr": "Bu icatları ortaya çıkış sırasına göre sırala.",
+        "en": "Order these inventions by when they appeared."
+      },
+      "items": {
+        "tr": [
+          "Tekerlek",
+          "Matbaa",
+          "Telefon",
+          "İnternet"
+        ],
+        "en": [
+          "The wheel",
+          "Printing press",
+          "Telephone",
+          "Internet"
+        ]
+      },
+      "explain": {
+        "tr": "Tekerlek yaklaşık MÖ 3500, matbaa 1440’lar, telefon 1876, internet 1960’ların sonu.",
+        "en": "Wheel around 3500 BC, press 1440s, telephone 1876, internet late 1960s."
+      }
+    },
+    {
+      "id": "general:high:008",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Anayasa Mahkemesi’nin temel görevi nedir?",
+        "en": "What is the main job of a constitutional court?"
+      },
+      "options": {
+        "tr": [
+          "Yasaların anayasaya uygunluğunu denetlemek",
+          "Vergi toplamak",
+          "Seçim kampanyası yürütmek",
+          "Ordu komutasını üstlenmek"
+        ],
+        "en": [
+          "Checking that laws comply with the constitution",
+          "Collecting taxes",
+          "Running election campaigns",
+          "Commanding the army"
+        ]
+      },
+      "explain": {
+        "tr": "Anayasaya aykırı bulunan yasa hükümleri iptal edilebilir.",
+        "en": "Provisions found unconstitutional can be annulled."
+      }
+    },
+    {
+      "id": "general:university:001",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "GSYH (Gayri Safi Yurt İçi Hasıla) neyi ölçer?",
+        "en": "What does GDP (Gross Domestic Product) measure?"
+      },
+      "options": {
+        "tr": [
+          "Bir ülkede belirli sürede üretilen tüm nihai mal ve hizmetlerin değerini",
+          "Devletin borcunu",
+          "İşsiz sayısını",
+          "İhracatın ithalata oranını"
+        ],
+        "en": [
+          "The value of all final goods and services produced in a country over a period",
+          "Government debt",
+          "The number of unemployed",
+          "Exports divided by imports"
+        ]
+      },
+      "explain": {
+        "tr": "Kişi başına GSYH, refahın kaba bir göstergesidir.",
+        "en": "GDP per person is a rough measure of prosperity."
+      }
+    },
+    {
+      "id": "general:university:002",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Merkez bankaları enflasyonu düşürmek için genellikle ne yapar?",
+        "en": "What do central banks usually do to reduce inflation?"
+      },
+      "options": {
+        "tr": [
+          "Faiz oranlarını yükseltir",
+          "Faiz oranlarını sıfırlar",
+          "Daha fazla para basar",
+          "Vergileri kaldırır"
+        ],
+        "en": [
+          "Raise interest rates",
+          "Cut rates to zero",
+          "Print more money",
+          "Abolish taxes"
+        ]
+      },
+      "explain": {
+        "tr": "Yüksek faiz borçlanmayı pahalılaştırır ve talebi yavaşlatır.",
+        "en": "Higher rates make borrowing costlier and slow demand."
+      }
+    },
+    {
+      "id": "general:university:003",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Paris İklim Anlaşması’nın temel hedefi nedir?",
+        "en": "What is the main goal of the Paris Climate Agreement?"
+      },
+      "options": {
+        "tr": [
+          "Küresel ısınmayı sanayi öncesine göre 2 °C’nin epey altında tutmak",
+          "Nükleer silahları yasaklamak",
+          "Serbest ticareti artırmak",
+          "Okyanuslarda balıkçılığı durdurmak"
+        ],
+        "en": [
+          "Keeping global warming well below 2 °C above pre-industrial levels",
+          "Banning nuclear weapons",
+          "Expanding free trade",
+          "Ending ocean fishing"
+        ]
+      },
+      "explain": {
+        "tr": "Anlaşma, 1,5 °C sınırı için de çaba gösterilmesini öngörür.",
+        "en": "It also aims to pursue efforts to limit warming to 1.5 °C."
+      }
+    },
+    {
+      "id": "general:university:004",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Placebo etkisi nedir?",
+        "en": "What is the placebo effect?"
+      },
+      "options": {
+        "tr": [
+          "Etkisiz bir tedavinin, beklenti nedeniyle iyileşme hissi yaratması",
+          "İlacın yan etkisi",
+          "Aşının bağışıklık oluşturması",
+          "Antibiyotik direnci"
+        ],
+        "en": [
+          "Improvement felt from an inactive treatment because of expectation",
+          "A drug’s side effect",
+          "A vaccine building immunity",
+          "Antibiotic resistance"
+        ]
+      },
+      "explain": {
+        "tr": "Bu yüzden ilaç denemeleri çift kör ve plasebo kontrollü yapılır.",
+        "en": "That is why drug trials are double-blind and placebo-controlled."
+      }
+    },
+    {
+      "id": "general:university:005",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Korelasyon ile nedensellik arasındaki fark nedir?",
+        "en": "What is the difference between correlation and causation?"
+      },
+      "options": {
+        "tr": [
+          "İki değişkenin birlikte değişmesi, birinin diğerine neden olduğunu kanıtlamaz",
+          "İkisi aynı şeydir",
+          "Korelasyon her zaman nedenselliktir",
+          "Nedensellik yalnızca istatistikte vardır"
+        ],
+        "en": [
+          "Two variables moving together does not prove one causes the other",
+          "They are the same",
+          "Correlation always means causation",
+          "Causation exists only in statistics"
+        ]
+      },
+      "explain": {
+        "tr": "Dondurma satışı ile boğulma vakaları birlikte artar; ortak neden sıcak havadır.",
+        "en": "Ice-cream sales and drownings rise together; the common cause is hot weather."
+      }
+    },
+    {
+      "id": "general:university:006",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Açık kaynak yazılımın temel özelliği nedir?",
+        "en": "What is the key feature of open-source software?"
+      },
+      "options": {
+        "tr": [
+          "Kaynak kodunun herkesçe görülüp lisansına göre değiştirilebilmesi",
+          "Her zaman ücretsiz destek sunması",
+          "Sadece devletlerin kullanabilmesi",
+          "Hiç hata içermemesi"
+        ],
+        "en": [
+          "Its source code can be viewed and modified under its licence",
+          "It always comes with free support",
+          "Only governments may use it",
+          "It has no bugs"
+        ]
+      },
+      "explain": {
+        "tr": "Linux, Firefox ve Python açık kaynak yazılım örnekleridir.",
+        "en": "Linux, Firefox and Python are open-source examples."
+      }
+    },
+    {
+      "id": "general:masters:001",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Mahkûm ikilemi oyun kuramında neyi gösterir?",
+        "en": "What does the prisoner’s dilemma show in game theory?"
+      },
+      "options": {
+        "tr": [
+          "Bireysel çıkarın, iki taraf için de daha kötü bir sonuca yol açabileceğini",
+          "Her oyunun bir kazananı olduğunu",
+          "İşbirliğinin her zaman kendiliğinden oluştuğunu",
+          "Şansın stratejiden önemli olduğunu"
+        ],
+        "en": [
+          "Individual self-interest can lead to a worse outcome for both",
+          "Every game has a winner",
+          "Cooperation always emerges",
+          "Luck beats strategy"
+        ]
+      },
+      "explain": {
+        "tr": "Nash dengesinde iki taraf da itiraf eder, oysa ikisi de susarsa daha iyi durumda olurlardı.",
+        "en": "In the Nash equilibrium both confess, though both would be better off staying silent."
+      }
+    },
+    {
+      "id": "general:masters:002",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Thomas Kuhn’un “paradigma değişimi” kavramı neyi açıklar?",
+        "en": "What does Thomas Kuhn’s “paradigm shift” explain?"
+      },
+      "options": {
+        "tr": [
+          "Bilimin birikimle değil, köklü dönüşümlerle ilerlediğini",
+          "Bilimin hiç değişmediğini",
+          "Deneylerin gereksiz olduğunu",
+          "Teknolojinin bilimi belirlediğini"
+        ],
+        "en": [
+          "That science advances through radical shifts, not only accumulation",
+          "That science never changes",
+          "That experiments are unnecessary",
+          "That technology drives science"
+        ]
+      },
+      "explain": {
+        "tr": "Kopernik devrimi ve kuantum mekaniği paradigma değişimlerine örnektir.",
+        "en": "The Copernican revolution and quantum mechanics are examples."
+      }
+    },
+    {
+      "id": "general:masters:003",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Pareto verimliliği neyi ifade eder?",
+        "en": "What is Pareto efficiency?"
+      },
+      "options": {
+        "tr": [
+          "Kimseyi kötüleştirmeden hiç kimsenin durumunun iyileştirilemediği dağılım",
+          "Gelirin eşit dağılması",
+          "En yüksek vergi oranı",
+          "Tam istihdam"
+        ],
+        "en": [
+          "An allocation where no one can be made better off without making someone worse off",
+          "Equal income distribution",
+          "The highest tax rate",
+          "Full employment"
+        ]
+      },
+      "explain": {
+        "tr": "Pareto verimli bir dağılım adil olmak zorunda değildir.",
+        "en": "A Pareto-efficient allocation need not be fair."
+      }
+    },
+    {
+      "id": "general:masters:004",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Bilimsel bir kuramın “yanlışlanabilir” olması (Popper) ne demektir?",
+        "en": "What does it mean for a scientific theory to be falsifiable (Popper)?"
+      },
+      "options": {
+        "tr": [
+          "Onu çürütebilecek bir gözlem ya da deneyin düşünülebilmesi",
+          "Kesin olarak kanıtlanmış olması",
+          "Hiç test edilememesi",
+          "Herkesçe kabul edilmesi"
+        ],
+        "en": [
+          "There is a conceivable observation that could refute it",
+          "It has been proven for certain",
+          "It can never be tested",
+          "Everyone accepts it"
+        ]
+      },
+      "explain": {
+        "tr": "Popper’a göre yanlışlanamayan iddialar bilimsel değildir.",
+        "en": "For Popper, claims that cannot be falsified are not scientific."
+      }
+    },
+    {
+      "id": "general:masters:005",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Ortak malların trajedisi (tragedy of the commons) neyi anlatır?",
+        "en": "What does the tragedy of the commons describe?"
+      },
+      "options": {
+        "tr": [
+          "Ortak kaynağın bireysel çıkarlarla aşırı kullanılıp tükenmesini",
+          "Özel mülkiyetin sona ermesini",
+          "Tarımda verim artışını",
+          "Kentlerin büyümesini"
+        ],
+        "en": [
+          "A shared resource being overused and depleted by individual interests",
+          "The end of private property",
+          "Higher farm yields",
+          "Growing cities"
+        ]
+      },
+      "explain": {
+        "tr": "Elinor Ostrom, toplulukların ortak kaynakları yönetebildiğini gösterdi.",
+        "en": "Elinor Ostrom showed that communities can manage common resources."
+      }
+    },
+    {
+      "id": "general:masters:006",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Doğrulama yanlılığı (confirmation bias) nedir?",
+        "en": "What is confirmation bias?"
+      },
+      "options": {
+        "tr": [
+          "İnançlarımızı destekleyen bilgiyi arama ve öne çıkarma eğilimi",
+          "Hafızanın zamanla zayıflaması",
+          "İstatistiksel örneklem hatası",
+          "Bilginin şifrelenmesi"
+        ],
+        "en": [
+          "The tendency to seek and favour information that supports our beliefs",
+          "Memory fading over time",
+          "Sampling error",
+          "Encrypting information"
+        ]
+      },
+      "explain": {
+        "tr": "Bilimsel yöntemdeki kör deneyler bu yanlılığı azaltmayı amaçlar.",
+        "en": "Blind experiments in science aim to reduce this bias."
+      }
+    }
+  ]
+}

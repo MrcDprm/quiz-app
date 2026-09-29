@@ -1,0 +1,761 @@
+{
+  "topic": "math",
+  "questions": [
+    {
+      "id": "math:primary:001",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Bir üçgenin kaç kenarı vardır?",
+        "en": "How many sides does a triangle have?"
+      },
+      "options": {
+        "tr": [
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "en": [
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      },
+      "explain": {
+        "tr": "Üçgen üç kenarlı ve üç açılı bir şekildir.",
+        "en": "A triangle has three sides and three angles."
+      }
+    },
+    {
+      "id": "math:primary:002",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "Hangisi çift sayıdır?",
+        "en": "Which of these is an even number?"
+      },
+      "options": {
+        "tr": [
+          "14",
+          "7",
+          "11",
+          "23"
+        ],
+        "en": [
+          "14",
+          "7",
+          "11",
+          "23"
+        ]
+      },
+      "explain": {
+        "tr": "Çift sayılar 2’ye tam bölünür.",
+        "en": "Even numbers divide exactly by 2."
+      }
+    },
+    {
+      "id": "math:primary:003",
+      "level": "primary",
+      "type": "choice",
+      "q": {
+        "tr": "1 saat kaç dakikadır?",
+        "en": "How many minutes are in an hour?"
+      },
+      "options": {
+        "tr": [
+          "60",
+          "100",
+          "30",
+          "24"
+        ],
+        "en": [
+          "60",
+          "100",
+          "30",
+          "24"
+        ]
+      },
+      "explain": {
+        "tr": "1 saat = 60 dakika, 1 dakika = 60 saniye.",
+        "en": "1 hour = 60 minutes and 1 minute = 60 seconds."
+      }
+    },
+    {
+      "id": "math:primary:004",
+      "level": "primary",
+      "type": "order",
+      "q": {
+        "tr": "Sayıları küçükten büyüğe sırala.",
+        "en": "Order the numbers from smallest to largest."
+      },
+      "items": {
+        "tr": [
+          "0,5",
+          "1",
+          "1,5",
+          "10"
+        ],
+        "en": [
+          "0.5",
+          "1",
+          "1.5",
+          "10"
+        ]
+      },
+      "explain": {
+        "tr": "Yarım (0,5) 1’den küçük, 1,5 ise 1’den büyüktür.",
+        "en": "A half (0.5) is less than 1, and 1.5 is more than 1."
+      }
+    },
+    {
+      "id": "math:middle:001",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Asal sayı hangisidir?",
+        "en": "Which of these is a prime number?"
+      },
+      "options": {
+        "tr": [
+          "13",
+          "15",
+          "21",
+          "27"
+        ],
+        "en": [
+          "13",
+          "15",
+          "21",
+          "27"
+        ]
+      },
+      "explain": {
+        "tr": "Asal sayılar yalnızca 1’e ve kendisine bölünür.",
+        "en": "Prime numbers divide only by 1 and themselves."
+      }
+    },
+    {
+      "id": "math:middle:002",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Bir üçgenin iç açılarının toplamı kaç derecedir?",
+        "en": "What is the sum of the interior angles of a triangle?"
+      },
+      "options": {
+        "tr": [
+          "180°",
+          "90°",
+          "360°",
+          "270°"
+        ],
+        "en": [
+          "180°",
+          "90°",
+          "360°",
+          "270°"
+        ]
+      },
+      "explain": {
+        "tr": "Her üçgende iç açılar toplamı 180°’dir; dörtgende 360°’dir.",
+        "en": "Any triangle’s angles add up to 180°; a quadrilateral’s add up to 360°."
+      }
+    },
+    {
+      "id": "math:middle:003",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "Yarıçapı r olan çemberin çevresi nedir?",
+        "en": "What is the circumference of a circle with radius r?"
+      },
+      "options": {
+        "tr": [
+          "2πr",
+          "πr²",
+          "πr",
+          "4r"
+        ],
+        "en": [
+          "2πr",
+          "πr²",
+          "πr",
+          "4r"
+        ]
+      },
+      "explain": {
+        "tr": "πr² dairenin alanıdır, 2πr çevresidir.",
+        "en": "πr² is the area; 2πr is the circumference."
+      }
+    },
+    {
+      "id": "math:middle:004",
+      "level": "middle",
+      "type": "choice",
+      "q": {
+        "tr": "3/4 kesri yüzde kaça eşittir?",
+        "en": "What percentage is the fraction 3/4?"
+      },
+      "options": {
+        "tr": [
+          "%75",
+          "%34",
+          "%43",
+          "%70"
+        ],
+        "en": [
+          "75%",
+          "34%",
+          "43%",
+          "70%"
+        ]
+      },
+      "explain": {
+        "tr": "3/4 = 0,75 = %75.",
+        "en": "3/4 = 0.75 = 75%."
+      }
+    },
+    {
+      "id": "math:high:001",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "Bir fonksiyonun türevi neyi ifade eder?",
+        "en": "What does the derivative of a function represent?"
+      },
+      "options": {
+        "tr": [
+          "Anlık değişim hızını",
+          "Grafiğin altındaki alanı",
+          "Fonksiyonun en büyük değerini",
+          "Tanım kümesini"
+        ],
+        "en": [
+          "The instantaneous rate of change",
+          "The area under the graph",
+          "The maximum value",
+          "The domain"
+        ]
+      },
+      "explain": {
+        "tr": "Türev, eğrinin bir noktadaki teğetinin eğimidir.",
+        "en": "The derivative is the slope of the tangent at a point."
+      }
+    },
+    {
+      "id": "math:high:002",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "log₁₀(1000) kaçtır?",
+        "en": "What is log₁₀(1000)?"
+      },
+      "options": {
+        "tr": [
+          "3",
+          "10",
+          "100",
+          "30"
+        ],
+        "en": [
+          "3",
+          "10",
+          "100",
+          "30"
+        ]
+      },
+      "explain": {
+        "tr": "10³ = 1000 olduğu için sonuç 3’tür.",
+        "en": "Since 10³ = 1000, the answer is 3."
+      }
+    },
+    {
+      "id": "math:high:003",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "x² − 5x + 6 = 0 denkleminin kökleri nelerdir?",
+        "en": "What are the roots of x² − 5x + 6 = 0?"
+      },
+      "options": {
+        "tr": [
+          "2 ve 3",
+          "1 ve 6",
+          "−2 ve −3",
+          "5 ve 6"
+        ],
+        "en": [
+          "2 and 3",
+          "1 and 6",
+          "−2 and −3",
+          "5 and 6"
+        ]
+      },
+      "explain": {
+        "tr": "(x − 2)(x − 3) = 0 olarak çarpanlarına ayrılır.",
+        "en": "It factors as (x − 2)(x − 3) = 0."
+      }
+    },
+    {
+      "id": "math:high:004",
+      "level": "high",
+      "type": "choice",
+      "q": {
+        "tr": "sin²x + cos²x ifadesi neye eşittir?",
+        "en": "What is sin²x + cos²x equal to?"
+      },
+      "options": {
+        "tr": [
+          "1",
+          "0",
+          "tan x",
+          "2"
+        ],
+        "en": [
+          "1",
+          "0",
+          "tan x",
+          "2"
+        ]
+      },
+      "explain": {
+        "tr": "Bu, birim çemberden gelen temel trigonometrik özdeşliktir.",
+        "en": "This is the basic trigonometric identity from the unit circle."
+      }
+    },
+    {
+      "id": "math:university:001",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "f(x) = x² fonksiyonunun türevi nedir?",
+        "en": "What is the derivative of f(x) = x²?"
+      },
+      "options": {
+        "tr": [
+          "2x",
+          "x",
+          "x³/3",
+          "2"
+        ],
+        "en": [
+          "2x",
+          "x",
+          "x³/3",
+          "2"
+        ]
+      },
+      "explain": {
+        "tr": "Kuvvet kuralı: (xⁿ)′ = n·xⁿ⁻¹.",
+        "en": "Power rule: (xⁿ)′ = n·xⁿ⁻¹."
+      }
+    },
+    {
+      "id": "math:university:002",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "∫ 1/x dx integrali nedir?",
+        "en": "What is ∫ 1/x dx?"
+      },
+      "options": {
+        "tr": [
+          "ln|x| + C",
+          "x² + C",
+          "1/x² + C",
+          "eˣ + C"
+        ],
+        "en": [
+          "ln|x| + C",
+          "x² + C",
+          "1/x² + C",
+          "eˣ + C"
+        ]
+      },
+      "explain": {
+        "tr": "ln|x| fonksiyonunun türevi 1/x’tir.",
+        "en": "The derivative of ln|x| is 1/x."
+      }
+    },
+    {
+      "id": "math:university:003",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "lim (x→0) sin(x)/x kaçtır?",
+        "en": "What is lim (x→0) sin(x)/x?"
+      },
+      "options": {
+        "tr": [
+          "1",
+          "0",
+          "∞",
+          "Tanımsız"
+        ],
+        "en": [
+          "1",
+          "0",
+          "∞",
+          "Undefined"
+        ]
+      },
+      "explain": {
+        "tr": "Bu temel limit, sin x’in türevinin cos x olduğunu göstermekte kullanılır.",
+        "en": "This basic limit is used to show that the derivative of sin x is cos x."
+      }
+    },
+    {
+      "id": "math:university:004",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "2 × 2’lik [[1, 2], [3, 4]] matrisinin determinantı kaçtır?",
+        "en": "What is the determinant of the 2 × 2 matrix [[1, 2], [3, 4]]?"
+      },
+      "options": {
+        "tr": [
+          "−2",
+          "10",
+          "2",
+          "−10"
+        ],
+        "en": [
+          "−2",
+          "10",
+          "2",
+          "−10"
+        ]
+      },
+      "explain": {
+        "tr": "ad − bc = 1·4 − 2·3 = −2.",
+        "en": "ad − bc = 1·4 − 2·3 = −2."
+      }
+    },
+    {
+      "id": "math:university:005",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Adil bir zar iki kez atıldığında iki kez 6 gelme olasılığı nedir?",
+        "en": "What is the chance of rolling two sixes with a fair die thrown twice?"
+      },
+      "options": {
+        "tr": [
+          "1/36",
+          "1/6",
+          "1/12",
+          "2/6"
+        ],
+        "en": [
+          "1/36",
+          "1/6",
+          "1/12",
+          "2/6"
+        ]
+      },
+      "explain": {
+        "tr": "Bağımsız olaylar çarpılır: 1/6 × 1/6 = 1/36.",
+        "en": "Independent events multiply: 1/6 × 1/6 = 1/36."
+      }
+    },
+    {
+      "id": "math:university:006",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Euler özdeşliği e^(iπ) + 1 neye eşittir?",
+        "en": "What does Euler’s identity e^(iπ) + 1 equal?"
+      },
+      "options": {
+        "tr": [
+          "0",
+          "1",
+          "π",
+          "i"
+        ],
+        "en": [
+          "0",
+          "1",
+          "π",
+          "i"
+        ]
+      },
+      "explain": {
+        "tr": "e, i, π, 1 ve 0’ı tek bir eşitlikte birleştirir.",
+        "en": "It links e, i, π, 1 and 0 in one equation."
+      }
+    },
+    {
+      "id": "math:university:007",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Bir matrisin tersinin olması için gerekli ve yeterli koşul nedir?",
+        "en": "What is the condition for a square matrix to be invertible?"
+      },
+      "options": {
+        "tr": [
+          "Determinantının sıfırdan farklı olması",
+          "Simetrik olması",
+          "Köşegeninin 1 olması",
+          "Tüm elemanlarının pozitif olması"
+        ],
+        "en": [
+          "Its determinant is non-zero",
+          "It is symmetric",
+          "Its diagonal is all 1",
+          "All entries are positive"
+        ]
+      },
+      "explain": {
+        "tr": "Determinant sıfırsa satırlar doğrusal bağımlıdır ve ters matris yoktur.",
+        "en": "A zero determinant means dependent rows and no inverse."
+      }
+    },
+    {
+      "id": "math:university:008",
+      "level": "university",
+      "type": "choice",
+      "q": {
+        "tr": "Normal dağılımda verilerin yaklaşık yüzde kaçı ortalamanın ±1 standart sapma içinde kalır?",
+        "en": "In a normal distribution, about what share of data lies within ±1 standard deviation?"
+      },
+      "options": {
+        "tr": [
+          "%68",
+          "%50",
+          "%95",
+          "%99,7"
+        ],
+        "en": [
+          "68%",
+          "50%",
+          "95%",
+          "99.7%"
+        ]
+      },
+      "explain": {
+        "tr": "68-95-99,7 kuralı: ±1σ, ±2σ, ±3σ.",
+        "en": "The 68-95-99.7 rule: ±1σ, ±2σ, ±3σ."
+      }
+    },
+    {
+      "id": "math:masters:001",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Gödel’in eksiklik teoremi neyi gösterir?",
+        "en": "What does Gödel’s incompleteness theorem show?"
+      },
+      "options": {
+        "tr": [
+          "Yeterince güçlü tutarlı bir aksiyom sisteminde kanıtlanamayan doğru önermeler vardır",
+          "Her matematiksel önerme kanıtlanabilir",
+          "Aritmetik tutarsızdır",
+          "Sonsuz asal sayı yoktur"
+        ],
+        "en": [
+          "A consistent, strong enough axiom system has true but unprovable statements",
+          "Every statement can be proved",
+          "Arithmetic is inconsistent",
+          "There are finitely many primes"
+        ]
+      },
+      "explain": {
+        "tr": "Teorem, matematiğin tamamen biçimselleştirilebileceği umudunu sarstı.",
+        "en": "It shook the hope that all of mathematics could be fully formalised."
+      }
+    },
+    {
+      "id": "math:masters:002",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Bir matrisin özdeğeri λ için hangisi doğrudur?",
+        "en": "Which is true of an eigenvalue λ of a matrix A?"
+      },
+      "options": {
+        "tr": [
+          "Sıfır olmayan bir v için A·v = λ·v",
+          "A·λ = v",
+          "det(A) = λ²",
+          "A’nın izi her zaman λ’dır"
+        ],
+        "en": [
+          "A·v = λ·v for some non-zero v",
+          "A·λ = v",
+          "det(A) = λ²",
+          "The trace of A is always λ"
+        ]
+      },
+      "explain": {
+        "tr": "Özvektörler matrisin yalnızca ölçeklediği yönlerdir.",
+        "en": "Eigenvectors are directions the matrix only stretches."
+      }
+    },
+    {
+      "id": "math:masters:003",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Hangi küme sayılamaz (sayılamayan sonsuz) bir kümedir?",
+        "en": "Which set is uncountably infinite?"
+      },
+      "options": {
+        "tr": [
+          "Gerçek sayılar",
+          "Doğal sayılar",
+          "Tam sayılar",
+          "Rasyonel sayılar"
+        ],
+        "en": [
+          "The real numbers",
+          "The natural numbers",
+          "The integers",
+          "The rational numbers"
+        ]
+      },
+      "explain": {
+        "tr": "Cantor’un köşegen yöntemi gerçek sayıların listelenemeyeceğini gösterir.",
+        "en": "Cantor’s diagonal argument shows the reals cannot be listed."
+      }
+    },
+    {
+      "id": "math:masters:004",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Fourier dönüşümü bir sinyali neye ayrıştırır?",
+        "en": "What does the Fourier transform decompose a signal into?"
+      },
+      "options": {
+        "tr": [
+          "Farklı frekanslardaki sinüs ve kosinüs bileşenlerine",
+          "Asal çarpanlarına",
+          "Polinomlara",
+          "Rastgele gürültüye"
+        ],
+        "en": [
+          "Sine and cosine components of different frequencies",
+          "Prime factors",
+          "Polynomials",
+          "Random noise"
+        ]
+      },
+      "explain": {
+        "tr": "Ses işleme, görüntü sıkıştırma ve MR bu dönüşümü kullanır.",
+        "en": "Audio processing, image compression and MRI use it."
+      }
+    },
+    {
+      "id": "math:masters:005",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Bayes teoremi neyi hesaplamaya yarar?",
+        "en": "What does Bayes’ theorem calculate?"
+      },
+      "options": {
+        "tr": [
+          "Yeni kanıta göre güncellenmiş (sonsal) olasılığı",
+          "İki olayın bağımsızlığını",
+          "Beklenen değeri",
+          "Standart sapmayı"
+        ],
+        "en": [
+          "The updated (posterior) probability given new evidence",
+          "Whether two events are independent",
+          "The expected value",
+          "The standard deviation"
+        ]
+      },
+      "explain": {
+        "tr": "P(A|B) = P(B|A)·P(A) / P(B).",
+        "en": "P(A|B) = P(B|A)·P(A) / P(B)."
+      }
+    },
+    {
+      "id": "math:masters:006",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Riemann hipotezi hangi fonksiyonun sıfırlarıyla ilgilidir?",
+        "en": "The Riemann hypothesis concerns the zeros of which function?"
+      },
+      "options": {
+        "tr": [
+          "Riemann zeta fonksiyonu",
+          "Gama fonksiyonu",
+          "Üstel fonksiyon",
+          "Logaritma fonksiyonu"
+        ],
+        "en": [
+          "The Riemann zeta function",
+          "The gamma function",
+          "The exponential function",
+          "The logarithm"
+        ]
+      },
+      "explain": {
+        "tr": "Aşikâr olmayan sıfırların reel kısmının 1/2 olduğu varsayılır; asal sayıların dağılımıyla ilgilidir.",
+        "en": "It says the non-trivial zeros have real part 1/2; it is linked to how primes are distributed."
+      }
+    },
+    {
+      "id": "math:masters:007",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Bir grafın Euler devresine sahip olması için bağlantılı olmasının yanında hangi koşul gerekir?",
+        "en": "Besides being connected, what must hold for a graph to have an Euler circuit?"
+      },
+      "options": {
+        "tr": [
+          "Her düğümün derecesi çift olmalı",
+          "Her düğümün derecesi tek olmalı",
+          "Grafın ağaç olması",
+          "Tam graf olması"
+        ],
+        "en": [
+          "Every vertex has even degree",
+          "Every vertex has odd degree",
+          "It is a tree",
+          "It is complete"
+        ]
+      },
+      "explain": {
+        "tr": "Euler bu sonuca Königsberg köprüleri problemiyle ulaştı.",
+        "en": "Euler reached this through the Königsberg bridges problem."
+      }
+    },
+    {
+      "id": "math:masters:008",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Merkezi limit teoremi neyi söyler?",
+        "en": "What does the central limit theorem say?"
+      },
+      "options": {
+        "tr": [
+          "Bağımsız örneklerin ortalamasının dağılımı, örnek büyüdükçe normal dağılıma yaklaşır",
+          "Her dağılım normaldir",
+          "Ortalama her zaman medyana eşittir",
+          "Varyans her zaman 1’dir"
+        ],
+        "en": [
+          "The distribution of sample means approaches a normal distribution as samples grow",
+          "Every distribution is normal",
+          "The mean always equals the median",
+          "The variance is always 1"
+        ]
+      },
+      "explain": {
+        "tr": "Bu yüzden normal dağılım istatistikte bu kadar yaygındır.",
+        "en": "This is why the normal distribution is so common in statistics."
+      }
+    }
+  ]
+}
