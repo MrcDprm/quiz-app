@@ -1,7 +1,8 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { mulberry32 } from '../lib/random.js';
-import { createGenerators, GROUP_LABELS } from '../lib/generators.js';
+import { createGenerators } from '../lib/generators.js';
+import { GROUP_LABELS } from '../lib/templates/people.js';
 import { readGeneratedFiles } from '../lib/catalog.js';
 
 const person = (id, tr, en, born, groups, fame = 250) => ({ id, name: { tr, en }, born, groups, fame });
@@ -83,18 +84,20 @@ test('invalid people are skipped', (t) => {
   assert.equal(broken.build('gen:who:primary:Q4', 1, 'en').options.length, 4);
 });
 
-test('the real people snapshot builds clean questions at every level', async () => {
+test('the real data builds clean questions for every topic and level', async () => {
   const real = createGenerators(await readGeneratedFiles());
   const random = mulberry32(2026);
-  for (const level of ['primary', 'middle', 'high', 'university', 'masters']) {
-    const ids = real.pick('general', level, random, 30);
-    assert.ok(ids.length >= 10, `too few questions for ${level}`);
-    for (const id of ids) {
-      for (const lang of ['tr', 'en']) {
-        const question = real.build(id, 7, lang);
-        const choices = question.options ?? question.items;
-        assert.equal(new Set(choices).size, 4, id);
-        assert.ok(question.prompt && question.explain, id);
+  for (const topic of ['general', 'history', 'geography', 'literature', 'science']) {
+    for (const level of ['primary', 'middle', 'high', 'university', 'masters']) {
+      const ids = real.pick(topic, level, random, 20);
+      assert.ok(ids.length >= 5, `too few questions for ${topic}/${level}`);
+      for (const id of ids) {
+        for (const lang of ['tr', 'en']) {
+          const question = real.build(id, 7, lang);
+          const choices = question.options ?? question.items;
+          assert.equal(new Set(choices).size, 4, id);
+          assert.ok(question.prompt && question.explain, id);
+        }
       }
     }
   }
