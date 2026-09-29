@@ -1,0 +1,120 @@
+{
+  "topic": "science",
+  "questions": [
+    {
+      "id": "science:primary:001",
+      "level": "primary",
+      "type": "choice",
+      "q": { "tr": "Bitkiler kendi besinlerini hangi olayla üretir?", "en": "How do plants make their own food?" },
+      "options": {
+        "tr": ["Fotosentez", "Sindirim", "Buharlaşma", "Erime"],
+        "en": ["Photosynthesis", "Digestion", "Evaporation", "Melting"]
+      },
+      "explain": {
+        "tr": "Bitkiler güneş ışığı, su ve karbondioksitten fotosentezle besin ve oksijen üretir.",
+        "en": "Plants use sunlight, water and carbon dioxide to make food and oxygen through photosynthesis."
+      }
+    },
+    {
+      "id": "science:primary:002",
+      "level": "primary",
+      "type": "choice",
+      "q": { "tr": "Saf su deniz seviyesinde kaç derecede kaynar?", "en": "At what temperature does pure water boil at sea level?" },
+      "options": {
+        "tr": ["100 °C", "50 °C", "0 °C", "150 °C"],
+        "en": ["100 °C", "50 °C", "0 °C", "150 °C"]
+      },
+      "explain": {
+        "tr": "Deniz seviyesindeki normal basınçta saf su 100 °C'de kaynar, 0 °C'de donar.",
+        "en": "At normal sea-level pressure pure water boils at 100 °C and freezes at 0 °C."
+      }
+    },
+    {
+      "id": "science:middle:001",
+      "level": "middle",
+      "type": "choice",
+      "q": { "tr": "Hücrede enerji üretiminden sorumlu organel hangisidir?", "en": "Which organelle produces energy in the cell?" },
+      "options": {
+        "tr": ["Mitokondri", "Ribozom", "Golgi cisimciği", "Lizozom"],
+        "en": ["Mitochondrion", "Ribosome", "Golgi apparatus", "Lysosome"]
+      },
+      "explain": {
+        "tr": "Mitokondri, besinlerdeki enerjiyi hücrenin kullanabileceği ATP'ye çevirir.",
+        "en": "Mitochondria turn the energy in food into ATP, which the cell can use."
+      }
+    },
+    {
+      "id": "science:high:001",
+      "level": "high",
+      "type": "choice",
+      "q": { "tr": "Işığın boşluktaki hızı yaklaşık kaçtır?", "en": "What is the approximate speed of light in a vacuum?" },
+      "options": {
+        "tr": ["300.000 km/s", "150.000 km/s", "30.000 km/s", "3.000.000 km/s"],
+        "en": ["300,000 km/s", "150,000 km/s", "30,000 km/s", "3,000,000 km/s"]
+      },
+      "explain": {
+        "tr": "Işık boşlukta saniyede yaklaşık 299.792 km yol alır.",
+        "en": "Light travels about 299,792 km per second in a vacuum."
+      }
+    },
+    {
+      "id": "science:high:002",
+      "level": "high",
+      "type": "choice",
+      "q": { "tr": "Periyodik tablodaki \"Fe\" sembolü hangi elementindir?", "en": "Which element has the symbol \"Fe\"?" },
+      "options": {
+        "tr": ["Demir", "Flor", "Fosfor", "Fermiyum"],
+        "en": ["Iron", "Fluorine", "Phosphorus", "Fermium"]
+      },
+      "explain": {
+        "tr": "Fe, demirin Latince adı \"ferrum\"dan gelir.",
+        "en": "Fe comes from \"ferrum\", the Latin name for iron."
+      }
+    },
+    {
+      "id": "science:high:003",
+      "level": "high",
+      "type": "order",
+      "q": { "tr": "Gezegenleri Güneş'e en yakından en uzağa sırala.", "en": "Order the planets from closest to farthest from the Sun." },
+      "items": {
+        "tr": ["Merkür", "Venüs", "Dünya", "Mars"],
+        "en": ["Mercury", "Venus", "Earth", "Mars"]
+      },
+      "explain": {
+        "tr": "Güneş'ten uzaklaştıkça sıra Merkür, Venüs, Dünya ve Mars'tır.",
+        "en": "Moving away from the Sun, the order is Mercury, Venus, Earth and Mars."
+      }
+    },
+    {
+      "id": "science:university:001",
+      "level": "university",
+      "type": "choice",
+      "q": { "tr": "DNA'da adenin bazı hangi bazla eşleşir?", "en": "In DNA, adenine pairs with which base?" },
+      "options": {
+        "tr": ["Timin", "Guanin", "Sitozin", "Urasil"],
+        "en": ["Thymine", "Guanine", "Cytosine", "Uracil"]
+      },
+      "explain": {
+        "tr": "DNA'da adenin timinle, guanin sitozinle eşleşir. Urasil DNA'da değil RNA'da bulunur.",
+        "en": "In DNA adenine pairs with thymine and guanine with cytosine. Uracil is found in RNA, not DNA."
+      }
+    },
+    {
+      "id": "science:masters:001",
+      "level": "masters",
+      "type": "choice",
+      "q": {
+        "tr": "Heisenberg belirsizlik ilkesine göre hangi iki nicelik aynı anda sınırsız kesinlikle ölçülemez?",
+        "en": "According to Heisenberg's uncertainty principle, which two quantities cannot both be measured with unlimited precision?"
+      },
+      "options": {
+        "tr": ["Konum ve momentum", "Kütle ve hacim", "Sıcaklık ve basınç", "Yük ve direnç"],
+        "en": ["Position and momentum", "Mass and volume", "Temperature and pressure", "Charge and resistance"]
+      },
+      "explain": {
+        "tr": "Konumdaki ve momentumdaki belirsizliklerin çarpımı ħ/2'den küçük olamaz.",
+        "en": "The product of the uncertainties in position and momentum cannot be smaller than ħ/2."
+      }
+    }
+  ]
+}
