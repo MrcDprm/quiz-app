@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { dayKey, previousDay, isDayKey, DAILY_TIME_ZONE } from '../public/src/dates.js';
 import { recordDay, currentStreak, EMPTY_STREAK } from '../public/src/streak.js';
-import { dailyShareText, roundShareText } from '../public/src/share.js';
+import { dailyShareText, roundShareText, shareLinks } from '../public/src/share.js';
 
 test('the daily question changes at midnight in Istanbul', () => {
   assert.equal(dayKey(new Date('2026-09-29T20:59:00Z'), DAILY_TIME_ZONE), '2026-09-29');
@@ -61,4 +61,14 @@ test('share texts are short and include the site', () => {
     roundShareText({ lang: 'en', topic: 'geography', level: 'high', results: [true, false, true], score: 38 }),
     'Quiz App · Geography · High School\n🟩🟥🟩 2/3 · 38 points\nquiz.miracdeprem.com',
   );
+});
+
+test('share links carry the encoded text', () => {
+  const text = 'Quiz App · 7/10 & more #1\nquiz.miracdeprem.com';
+  const links = shareLinks(text);
+  assert.deepEqual(links.map((link) => link.id), ['whatsapp', 'x', 'linkedin', 'telegram', 'facebook', 'instagram']);
+  const whatsapp = new URL(links[0].href);
+  assert.equal(whatsapp.searchParams.get('text'), text);
+  assert.ok(links.every((link) => link.href.startsWith('https://')));
+  assert.equal(links.find((link) => link.id === 'instagram').copyFirst, true);
 });

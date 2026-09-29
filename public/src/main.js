@@ -2,7 +2,7 @@
 import { AREAS, LEVELS } from './topics.js';
 import { DAILY_TIME_ZONE, dayKey } from './dates.js';
 import { currentStreak, recordDay } from './streak.js';
-import { dailyShareText, formatDay, roundShareText } from './share.js';
+import { dailyShareText, formatDay, roundShareText, shareLinks } from './share.js';
 import { BADGES, earnedBadges, recordRound, selectionKey, updateMistakes } from './progress.js';
 import { loadSettings, saveSettings, topicsOf } from './storage.js';
 import { translate } from './i18n.js';
@@ -61,6 +61,13 @@ const el = {
   shareResult: $('share-result'),
   resultShareStatus: $('result-share-status'),
   newBadges: $('new-badges'),
+  shareDialog: $('share-dialog'),
+  shareText: $('share-text'),
+  shareTargets: $('share-targets'),
+  shareStatus: $('share-status'),
+  shareNative: $('share-native'),
+  shareCopy: $('share-copy'),
+  shareClose: $('share-close'),
   changeTopic: $('change-topic'),
   themeToggle: $('theme-toggle'),
   langButtons: document.querySelectorAll('[data-lang]'),
@@ -144,28 +151,48 @@ function goHome() {
   showScreen('setup');
 }
 
-// Telefonda sistemin paylaşım menüsü açılır, masaüstünde metin panoya kopyalanır.
-async function share(text, status) {
-  if (navigator.share && matchMedia('(pointer: coarse)').matches) {
-    try {
-      await navigator.share({ text });
-      return;
-    } catch {
-      // Kullanıcı paylaşımı kapattıysa panoya kopyalamaya geç
-    }
-  }
+// Paylaşım penceresi: metin görünür ve düzenlenmeden kopyalanabilir, altında platform bağlantıları var.
+function openShare(text) {
+  el.shareText.value = text;
+  el.shareStatus.textContent = '';
+  el.shareTargets.replaceChildren(
+    ...shareLinks(text).map(({ id, label, href, copyFirst }) => {
+      const link = node('a', 'share-target', label);
+      link.href = href;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.dataset.id = id;
+      if (copyFirst) link.dataset.copyFirst = '';
+      return link;
+    }),
+  );
+  el.shareNative.hidden = !navigator.share; // telefonda sistemin paylaşım menüsü (Instagram dahil)
+  el.shareDialog.showModal();
+  el.shareText.select();
+}
+
+async function copyText(message) {
   try {
-    await navigator.clipboard.writeText(text);
-    status.textContent = t('copied');
+    await navigator.clipboard.writeText(el.shareText.value);
+    el.shareStatus.textContent = message;
   } catch {
-    status.textContent = t('copyFailed');
+    el.shareText.select(); // kopyalanamazsa metin seçili kalır, kullanıcı elle kopyalar
+    el.shareStatus.textContent = t('copyFailed');
+  }
+}
+
+async function shareNative() {
+  try {
+    await navigator.share({ text: el.shareText.value });
+  } catch {
+    // Kullanıcı sistem menüsünü kapattı; pencere açık kalır
   }
 }
 
 function shareDaily() {
   const { date, correct } = settings.daily;
   const streak = currentStreak(settings.streak, localToday());
-  share(dailyShareText({ lang: settings.lang, date, correct, streak }), el.dailyShareStatus);
+  openShare(dailyShareText({ lang: settings.lang, date, correct, streak }));
 }
 
 // ---------- Tur ayarı ----------
@@ -559,7 +586,14 @@ el.jokerFifty.addEventListener('click', () => useJoker('fifty'));
 el.jokerTime.addEventListener('click', () => useJoker('time'));
 el.playAgain.addEventListener('click', startRound);
 el.changeTopic.addEventListener('click', goHome);
-el.shareResult.addEventListener('click', () => lastShare && share(lastShare(), el.resultShareStatus));
+el.shareResult.addEventListener('click', () => lastShare && openShare(lastShare()));
+el.shareTargets.addEventListener('click', (event) => {
+  const link = event.target.closest('[data-copy-first]');
+  if (link) copyText(t('instagramHint'));
+});
+el.shareCopy.addEventListener('click', () => copyText(t('copied')));
+el.shareNative.addEventListener('click', shareNative);
+el.shareClose.addEventListener('click', () => el.shareDialog.close());
 el.dailyStart.addEventListener('click', startDaily);
 el.dailyShare.addEventListener('click', shareDaily);
 el.reviewStart.addEventListener('click', startReview);

@@ -146,6 +146,19 @@
       </section>
     </main>
 
+    <dialog class="share-dialog" id="share-dialog" aria-labelledby="share-title">
+      <h2 class="share-title" id="share-title" data-i18n="shareTitle"></h2>
+      <label class="sr-only" for="share-text" data-i18n="shareText"></label>
+      <textarea class="share-text" id="share-text" rows="4" readonly></textarea>
+      <div class="share-targets" id="share-targets"></div>
+      <p class="notice" id="share-status" role="status"></p>
+      <div class="share-actions">
+        <button type="button" class="btn btn-secondary" id="share-native" data-i18n="shareMore" hidden></button>
+        <button type="button" class="btn btn-secondary" id="share-copy" data-i18n="copy"></button>
+        <button type="button" class="btn btn-ghost" id="share-close" data-i18n="close"></button>
+      </div>
+    </dialog>
+
     <footer class="footer">
       <nav class="footer-projects" data-i18n-aria="jsProjects">
         <a href="https://tictactoe.miracdeprem.com">Tic-Tac-Toe</a>
