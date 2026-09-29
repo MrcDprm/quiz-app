@@ -3,23 +3,44 @@
 export const LANGS = ['tr', 'en'];
 export const MIXED = 'mixed';
 
+// Her alan aynı eğitim seviyelerini kullanır: yazılımla ilkokulda da, meslek lisesinde de uğraşılır.
+export const LEVELS = ['primary', 'middle', 'high', 'university', 'masters'];
+
 export const AREAS = {
   general: {
-    levels: ['primary', 'middle', 'high', 'university', 'masters'],
     topics: ['math', 'science', 'history', 'geography', 'literature', 'general'],
   },
   software: {
-    levels: ['beginner', 'intermediate', 'advanced'],
-    topics: ['javascript', 'python', 'sql', 'git', 'html-css', 'security', 'algorithms', 'csharp'],
+    topics: ['basics', 'algorithms', 'html-css', 'python', 'javascript', 'sql', 'git', 'security', 'csharp'],
+    // Her konunun sorulduğu seviye aralığı: ilkokulda kodlamaya giriş, ortaokulda ilk diller,
+    // lisede (meslek liseleri dahil) veritabanı, sürüm kontrolü ve güvenlik.
+    ranges: {
+      basics: ['primary', 'high'],
+      algorithms: ['middle', 'masters'],
+      'html-css': ['middle', 'masters'],
+      python: ['middle', 'masters'],
+      javascript: ['high', 'masters'],
+      sql: ['high', 'masters'],
+      git: ['high', 'masters'],
+      security: ['high', 'masters'],
+      csharp: ['high', 'masters'],
+    },
   },
 };
 
-export const ALL_LEVELS = Object.values(AREAS).flatMap((area) => area.levels);
+function inRange(level, [from, to]) {
+  const index = LEVELS.indexOf(level);
+  return index >= LEVELS.indexOf(from) && index <= LEVELS.indexOf(to);
+}
 
-// Seçim geçerli mi: alan var mı, konu ve seviye o alana ait mi. Karışık tur sadece genel alanda.
+/** Seçilen alan ve seviyede sorulabilen konular ("Karışık" hariç). */
+export function topicsFor(area, level) {
+  const { topics, ranges } = AREAS[area];
+  return ranges ? topics.filter((topic) => inRange(level, ranges[topic])) : topics;
+}
+
+// Seçim geçerli mi: alan ve seviye var mı, konu o alanda ve o seviyede soruluyor mu.
 export function isValidSelection({ area, topic, level }) {
-  if (!Object.hasOwn(AREAS, area)) return false;
-  const { topics, levels } = AREAS[area];
-  const topicOk = topics.includes(topic) || (area === 'general' && topic === MIXED);
-  return topicOk && levels.includes(level);
+  if (!Object.hasOwn(AREAS, area) || !LEVELS.includes(level)) return false;
+  return topic === MIXED || topicsFor(area, level).includes(topic);
 }

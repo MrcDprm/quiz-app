@@ -16,7 +16,7 @@ Cevaplar sunucuda kalır, bu yüzden tarayıcıdan bakılarak hile yapılamaz.
 
 **Sorular**
 - [ ] Genel konular (Matematik, Fen, Tarih, Coğrafya, Edebiyat ve Sanat, Genel Kültür), 5 seviyede: İlkokul, Ortaokul, Lise, Üniversite, Yüksek Lisans
-- [ ] Uzmanlık dalları: Yazılım → JavaScript, Python, SQL, Git, HTML ve CSS, Web Güvenliği, Algoritmalar, C# (Başlangıç / Orta / İleri)
+- [ ] Yazılım alanı, aynı beş seviyeyle: ilkokulda Kodlamaya Giriş; ortaokulda Algoritmalar, HTML ve CSS, Python; lisede (meslek liseleri dahil) JavaScript, SQL, Git, Web Güvenliği ve C# da açılır
 - [ ] Wikidata'dan alınan gerçek verilerle (kişiler, ülkeler, kitaplar ve filmler, elementler) şablonlardan anlık üretilen sorular; matematik soruları da üreteçle hazırlanır
 - [ ] Soru tipleri:
   - Çoktan seçmeli

@@ -16,7 +16,7 @@ Answers stay on the server, so you can't cheat by inspecting the browser.
 
 **Questions**
 - [ ] General subjects (Maths, Science, History, Geography, Literature and Art, General Knowledge) at 5 levels: Primary, Middle School, High School, University, Master's
-- [ ] Specialist tracks: Software → JavaScript, Python, SQL, Git, HTML and CSS, Web Security, Algorithms, C# (Beginner / Intermediate / Advanced)
+- [ ] Software area with the same five levels: Coding Basics in primary school; Algorithms, HTML and CSS and Python from middle school; JavaScript, SQL, Git, Web Security and C# from high school (including vocational high schools)
 - [ ] Questions generated on the fly from templates, using real data from Wikidata (people, countries, books and films, elements); maths questions come from generators too
 - [ ] Question types:
   - Multiple choice

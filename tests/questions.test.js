@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { isValidSelection } from '../public/src/topics.js';
+import { isValidSelection, topicsFor } from '../public/src/topics.js';
 import { isValidQuestion, buildQuestion, makeRef, parseRef, toPublic } from '../lib/questions.js';
 
 const CHOICE = {
@@ -23,21 +23,32 @@ const ORDER = {
 
 const CODE = {
   ...CHOICE,
-  id: 'python:beginner:001',
-  level: 'beginner',
+  id: 'python:middle:001',
+  level: 'middle',
   type: 'code',
   code: 'print(1 + 1)',
   q: { tr: 'Bu kod ne yazdırır?', en: 'What does this code print?' },
   options: { tr: ['2', '11', '1 + 1', 'Hata'], en: ['2', '11', '1 + 1', 'Error'] },
 };
 
-test('selections must match an area, its topics and its levels', () => {
+test('selections must match an area, a level and a topic taught at that level', () => {
   assert.equal(isValidSelection({ area: 'general', topic: 'science', level: 'high' }), true);
   assert.equal(isValidSelection({ area: 'general', topic: 'mixed', level: 'masters' }), true);
-  assert.equal(isValidSelection({ area: 'software', topic: 'sql', level: 'advanced' }), true);
-  assert.equal(isValidSelection({ area: 'software', topic: 'mixed', level: 'advanced' }), false);
-  assert.equal(isValidSelection({ area: 'software', topic: 'sql', level: 'high' }), false);
+  assert.equal(isValidSelection({ area: 'software', topic: 'sql', level: 'high' }), true);
+  assert.equal(isValidSelection({ area: 'software', topic: 'basics', level: 'primary' }), true);
+  assert.equal(isValidSelection({ area: 'software', topic: 'mixed', level: 'primary' }), true);
+  assert.equal(isValidSelection({ area: 'software', topic: 'sql', level: 'primary' }), false);
+  assert.equal(isValidSelection({ area: 'software', topic: 'basics', level: 'masters' }), false);
+  assert.equal(isValidSelection({ area: 'software', topic: 'sql', level: 'advanced' }), false);
   assert.equal(isValidSelection({ area: 'constructor', topic: 'sql', level: 'high' }), false);
+});
+
+test('software topics open up level by level', () => {
+  assert.deepEqual(topicsFor('software', 'primary'), ['basics']);
+  assert.deepEqual(topicsFor('software', 'middle'), ['basics', 'algorithms', 'html-css', 'python']);
+  assert.equal(topicsFor('software', 'high').length, 9);
+  assert.ok(!topicsFor('software', 'university').includes('basics'));
+  assert.equal(topicsFor('general', 'primary').length, 6);
 });
 
 test('well-formed questions pass validation', () => {

@@ -1,5 +1,5 @@
 // Arayüz: tur ayarı, soru ekranı, süre çubuğu ve sonuç. Kurallar ve cevaplar sunucuda (bkz. lib/).
-import { AREAS } from './topics.js';
+import { AREAS, LEVELS } from './topics.js';
 import { loadSettings, saveSettings, topicsOf } from './storage.js';
 import { translate } from './i18n.js';
 import { applyTheme, nextTheme } from './theme.js';
@@ -85,15 +85,15 @@ function renderSetup() {
       option.selected = value === selected;
       return option;
     });
-  el.topic.replaceChildren(...options(topicsOf(settings.area), 'topic', settings.topic));
-  el.level.replaceChildren(...options(AREAS[settings.area].levels, 'level', settings.level));
+  el.level.replaceChildren(...options(LEVELS, 'level', settings.level));
+  el.topic.replaceChildren(...options(topicsOf(settings.area, settings.level), 'topic', settings.topic));
 }
 
-function chooseArea(area) {
-  if (area === settings.area) return;
-  settings.area = area;
-  settings.topic = topicsOf(area)[0];
-  settings.level = AREAS[area].levels[0];
+// Alan ya da seviye değişince seçili konu artık sunulmuyorsa listenin ilk konusuna geçilir.
+function updateSelection(changes) {
+  Object.assign(settings, changes);
+  const topics = topicsOf(settings.area, settings.level);
+  if (!topics.includes(settings.topic)) settings.topic = topics[0];
   saveSettings(settings);
   renderSetup();
 }
@@ -364,16 +364,13 @@ function renderLanguage() {
 
 el.areaGroup.addEventListener('click', (event) => {
   const button = event.target.closest('[data-area]');
-  if (button) chooseArea(button.dataset.area);
+  if (button) updateSelection({ area: button.dataset.area });
 });
 el.topic.addEventListener('change', () => {
   settings.topic = el.topic.value;
   saveSettings(settings);
 });
-el.level.addEventListener('change', () => {
-  settings.level = el.level.value;
-  saveSettings(settings);
-});
+el.level.addEventListener('change', () => updateSelection({ level: el.level.value }));
 el.setupForm.addEventListener('submit', (event) => {
   event.preventDefault();
   startRound();

@@ -1,6 +1,6 @@
 // Ayarları tarayıcıda saklar.
 // Okunan veriye güvenilmez: bozuk, eksik ya da beklenmeyen değer varsa varsayılan kullanılır.
-import { AREAS, LANGS, MIXED } from './topics.js';
+import { AREAS, LANGS, LEVELS, MIXED, topicsFor } from './topics.js';
 
 export const STORAGE_KEY = 'quiz-settings';
 export const THEMES = ['dark', 'light'];
@@ -24,20 +24,22 @@ function readJson(storage) {
 
 const oneOf = (value, allowed, fallback) => (allowed.includes(value) ? value : fallback);
 
-/** Alana göre seçilebilen konular: genel alanda "Karışık" da var. */
-export function topicsOf(area) {
-  return area === 'general' ? [...AREAS.general.topics, MIXED] : AREAS[area].topics;
+/** Açılır listedeki konular: o alanda ve seviyede sorulanlar, en sonda "Karışık". */
+export function topicsOf(area, level) {
+  return [...topicsFor(area, level), MIXED];
 }
 
 export function loadSettings(storage = browserStorage(), fallbackLang = 'tr') {
   const saved = readJson(storage);
   const area = oneOf(saved.area, Object.keys(AREAS), 'general');
+  const level = oneOf(saved.level, LEVELS, LEVELS[0]);
+  const topics = topicsOf(area, level);
   return {
     lang: oneOf(saved.lang, LANGS, fallbackLang),
     theme: oneOf(saved.theme, THEMES, 'dark'),
     area,
-    topic: oneOf(saved.topic, topicsOf(area), topicsOf(area)[0]),
-    level: oneOf(saved.level, AREAS[area].levels, AREAS[area].levels[0]),
+    level,
+    topic: oneOf(saved.topic, topics, topics[0]),
   };
 }
 
