@@ -49,6 +49,20 @@
           <p class="tagline" data-i18n="tagline"></p>
         </div>
 
+        <section class="card daily" aria-labelledby="daily-title">
+          <div class="daily-head">
+            <h2 class="daily-title" id="daily-title" data-i18n="dailyTitle"></h2>
+            <span class="daily-date" id="daily-date"></span>
+          </div>
+          <p class="daily-text" id="daily-text"></p>
+          <div class="daily-actions">
+            <button type="button" class="btn btn-primary" id="daily-start" data-i18n="dailyStart"></button>
+            <button type="button" class="btn btn-secondary" id="daily-share" data-i18n="share" hidden></button>
+          </div>
+          <p class="notice" id="daily-share-status" role="status"></p>
+          <p class="streak-line"><span id="streak"></span> <span class="best-streak" id="best-streak"></span></p>
+        </section>
+
         <form class="card setup" id="setup-form">
           <div class="field">
             <span class="field-label" id="area-label" data-i18n="area"></span>
@@ -99,14 +113,16 @@
       <!-- Sonuç -->
       <section class="screen" id="result-screen" hidden>
         <div class="card result">
-          <h2 class="result-title" data-i18n="resultTitle"></h2>
+          <h2 class="result-title" id="result-title"></h2>
           <p class="result-score" id="result-score"></p>
           <p class="result-correct" id="result-correct"></p>
           <p class="result-grid" id="result-grid" aria-hidden="true"></p>
           <div class="result-actions">
             <button type="button" class="btn btn-primary" id="play-again" data-i18n="playAgain"></button>
+            <button type="button" class="btn btn-secondary" id="share-result" data-i18n="share"></button>
             <button type="button" class="btn btn-ghost" id="change-topic" data-i18n="changeTopic"></button>
           </div>
+          <p class="notice" id="result-share-status" role="status"></p>
         </div>
         <h3 class="review-title" data-i18n="review"></h3>
         <ol class="review" id="review"></ol>

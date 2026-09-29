@@ -1,5 +1,8 @@
 // Arayüz: tur ayarı, soru ekranı, süre çubuğu ve sonuç. Kurallar ve cevaplar sunucuda (bkz. lib/).
 import { AREAS, LEVELS } from './topics.js';
+import { DAILY_TIME_ZONE, dayKey } from './dates.js';
+import { currentStreak, recordDay } from './streak.js';
+import { dailyShareText, formatDay, roundShareText } from './share.js';
 import { loadSettings, saveSettings, topicsOf } from './storage.js';
 import { translate } from './i18n.js';
 import { applyTheme, nextTheme } from './theme.js';
@@ -8,6 +11,8 @@ import { post } from './api-client.js';
 const browserLang = navigator.language?.toLowerCase().startsWith('tr') ? 'tr' : 'en';
 const settings = loadSettings(undefined, browserLang);
 const t = (key, params) => translate(settings.lang, key, params);
+const dailyToday = () => dayKey(new Date(), DAILY_TIME_ZONE); // günün sorusu İstanbul saatiyle değişir
+const localToday = () => dayKey(new Date()); // seri, kullanıcının kendi günüyle sayılır
 
 const $ = (id) => document.getElementById(id);
 const el = {
@@ -18,6 +23,13 @@ const el = {
   level: $('level'),
   start: $('start'),
   setupStatus: $('setup-status'),
+  dailyDate: $('daily-date'),
+  dailyText: $('daily-text'),
+  dailyStart: $('daily-start'),
+  dailyShare: $('daily-share'),
+  dailyShareStatus: $('daily-share-status'),
+  streak: $('streak'),
+  bestStreak: $('best-streak'),
   roundCount: $('round-count'),
   roundScore: $('round-score'),
   timer: $('timer'),
@@ -32,11 +44,14 @@ const el = {
   jokerTime: $('joker-time'),
   confirmOrder: $('confirm-order'),
   next: $('next'),
+  resultTitle: $('result-title'),
   resultScore: $('result-score'),
   resultCorrect: $('result-correct'),
   resultGrid: $('result-grid'),
   review: $('review'),
   playAgain: $('play-again'),
+  shareResult: $('share-result'),
+  resultShareStatus: $('result-share-status'),
   changeTopic: $('change-topic'),
   themeToggle: $('theme-toggle'),
   langButtons: document.querySelectorAll('[data-lang]'),
@@ -44,6 +59,7 @@ const el = {
 
 // Açık turun istemcideki kopyası. Doğru cevap burada hiçbir zaman cevaptan önce bulunmaz.
 let round = null;
+let lastShare = null; // sonuç ekranındaki "Paylaş" düğmesinin metnini üreten fonksiyon
 let timerId = null;
 
 /** Metinli bir öğe oluşturur; kullanıcıya giden her metin textContent ile yazılır (XSS yok). */
@@ -64,6 +80,53 @@ function setBusy(button, busy) {
 }
 
 const isBusy = (button) => button.getAttribute('aria-disabled') === 'true';
+
+// ---------- Ana sayfa: günün sorusu ve seri ----------
+
+function renderHome() {
+  const today = dailyToday();
+  const solved = settings.daily?.date === today;
+  el.dailyDate.textContent = formatDay(today, settings.lang);
+  el.dailyText.textContent = solved
+    ? `${t(settings.daily.correct ? 'dailyCorrect' : 'dailyWrong')} ${t('dailyNext')}`
+    : t('dailyIntro');
+  el.dailyStart.hidden = solved;
+  el.dailyShare.hidden = !solved;
+  el.dailyShareStatus.textContent = '';
+
+  const streak = currentStreak(settings.streak, localToday());
+  el.streak.textContent = streak > 0 ? t('streak', { count: streak }) : t('streakNone');
+  el.bestStreak.textContent = settings.streak.best > 0 ? `· ${t('bestStreak', { best: settings.streak.best })}` : '';
+}
+
+function goHome() {
+  renderHome();
+  showScreen('setup');
+}
+
+// Telefonda sistemin paylaşım menüsü açılır, masaüstünde metin panoya kopyalanır.
+async function share(text, status) {
+  if (navigator.share && matchMedia('(pointer: coarse)').matches) {
+    try {
+      await navigator.share({ text });
+      return;
+    } catch {
+      // Kullanıcı paylaşımı kapattıysa panoya kopyalamaya geç
+    }
+  }
+  try {
+    await navigator.clipboard.writeText(text);
+    status.textContent = t('copied');
+  } catch {
+    status.textContent = t('copyFailed');
+  }
+}
+
+function shareDaily() {
+  const { date, correct } = settings.daily;
+  const streak = currentStreak(settings.streak, localToday());
+  share(dailyShareText({ lang: settings.lang, date, correct, streak }), el.dailyShareStatus);
+}
 
 // ---------- Tur ayarı ----------
 
@@ -98,22 +161,37 @@ function updateSelection(changes) {
   renderSetup();
 }
 
-async function startRound() {
-  if (isBusy(el.start)) return;
-  setBusy(el.start, true);
-  el.setupStatus.textContent = t('loading');
-  const { area, topic, level, lang } = settings;
-  const { data, error } = await post('/api/round', { area, topic, level, lang });
-  setBusy(el.start, false);
+// Normal tur ve günün sorusu aynı yoldan başlar; farkları mode alanında tutulur.
+async function begin(button, status, path, body, extra) {
+  if (isBusy(button)) return;
+  setBusy(button, true);
+  status.textContent = t('loading');
+  const { data, error } = await post(path, body);
+  setBusy(button, false);
   if (error) {
-    el.setupStatus.textContent = t(`error_${error}`);
-    showScreen('setup'); // "Yeni tur" sonuç ekranından basıldıysa mesaj görünsün
+    goHome(); // "Yeni tur" sonuç ekranından basıldıysa mesaj ana sayfada görünsün
+    status.textContent = t(`error_${error}`);
     return;
   }
-  el.setupStatus.textContent = '';
-  round = { token: data.token, question: data.question, score: data.score, history: [], answered: false, busy: false };
+  status.textContent = '';
+  round = { token: data.token, question: data.question, score: data.score, history: [], answered: false, busy: false, ...extra(data) };
   showScreen('round');
   renderQuestion();
+}
+
+function startRound() {
+  const { area, topic, level, lang } = settings;
+  begin(el.start, el.setupStatus, '/api/round', { area, topic, level, lang }, () => ({ mode: 'round', topic, level }));
+}
+
+// Günün sorusunda joker yok: iki joker de kullanılmış sayılır ve gizlenir.
+function startDaily() {
+  begin(el.dailyStart, el.dailyShareStatus, '/api/daily', { lang: settings.lang }, (data) => ({
+    mode: 'daily',
+    date: data.date,
+    usedFifty: true,
+    usedTime: true,
+  }));
 }
 
 // ---------- Soru ----------
@@ -312,7 +390,7 @@ function showRoundError(error) {
   updateJokers();
   const back = node('button', 'btn btn-secondary', t('changeTopic'));
   back.type = 'button';
-  back.addEventListener('click', () => showScreen('setup'));
+  back.addEventListener('click', goHome);
   el.feedback.append(back);
   back.focus();
 }
@@ -327,6 +405,24 @@ function answerText(question, answer) {
 
 function showResult(summary) {
   stopTimer();
+  const results = round.history.map((entry) => entry.result.correct);
+  settings.streak = recordDay(settings.streak, localToday());
+  if (round.mode === 'daily') {
+    settings.daily = { date: round.date, correct: results[0] };
+    lastShare = () =>
+      dailyShareText({ lang: settings.lang, date: round.date, correct: results[0], streak: settings.streak.count });
+  } else {
+    const { topic, level } = round;
+    lastShare = () => roundShareText({ lang: settings.lang, topic, level, results, score: summary.score });
+  }
+  saveSettings(settings);
+
+  const daily = round.mode === 'daily';
+  el.resultTitle.textContent = daily ? `${t('dailyTitle')} · ${formatDay(round.date, settings.lang)}` : t('resultTitle');
+  el.changeTopic.dataset.i18n = daily ? 'backHome' : 'changeTopic';
+  el.changeTopic.textContent = t(el.changeTopic.dataset.i18n);
+  el.playAgain.hidden = daily;
+  el.resultShareStatus.textContent = '';
   el.resultScore.textContent = t('resultScore', { score: summary.score });
   el.resultCorrect.textContent = t('resultCorrect', { correct: summary.correct, total: summary.total });
   el.resultGrid.textContent = round.history.map((entry) => (entry.result.correct ? '🟩' : '🟥')).join('');
@@ -357,6 +453,7 @@ function renderLanguage() {
   for (const item of document.querySelectorAll('[data-i18n-aria]')) item.setAttribute('aria-label', t(item.dataset.i18nAria));
   for (const button of el.langButtons) button.setAttribute('aria-pressed', String(button.dataset.lang === settings.lang));
   renderSetup();
+  renderHome();
   el.setupStatus.textContent = '';
 }
 
@@ -389,7 +486,10 @@ el.next.addEventListener('click', goNext);
 el.jokerFifty.addEventListener('click', () => useJoker('fifty'));
 el.jokerTime.addEventListener('click', () => useJoker('time'));
 el.playAgain.addEventListener('click', startRound);
-el.changeTopic.addEventListener('click', () => showScreen('setup'));
+el.changeTopic.addEventListener('click', goHome);
+el.shareResult.addEventListener('click', () => lastShare && share(lastShare(), el.resultShareStatus));
+el.dailyStart.addEventListener('click', startDaily);
+el.dailyShare.addEventListener('click', shareDaily);
 
 // Klavye: 1-4 şık seçer, Enter sonraki soruya geçer. Kısayol tuşları ve form alanları hariç.
 document.addEventListener('keydown', (event) => {
