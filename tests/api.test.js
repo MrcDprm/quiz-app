@@ -195,3 +195,9 @@ test('a round avoids questions the player has already seen', async () => {
   assert.equal((await call(api.round, { ...START, seen: 'nope' })).status, 400);
   assert.equal((await call(api.round, { ...START, seen: Array(51).fill('science:high:001') })).status, 400);
 });
+
+test('a full list of long seen ids still fits in the request', async () => {
+  const { api } = setup();
+  const seen = Array.from({ length: 50 }, (_, i) => `gen:era:university:Q${String(i).padStart(60, "0")}`);
+  assert.equal((await call(api.round, { ...START, seen })).status, 200);
+});

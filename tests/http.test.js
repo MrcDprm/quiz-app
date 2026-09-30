@@ -46,7 +46,7 @@ test('readJson accepts only small json objects', async () => {
   assert.equal(await readJson(post('[1,2]')), null);
   assert.equal(await readJson(post('null')), null);
   assert.equal(await readJson(post({ a: 1 }, { 'content-type': 'text/plain' })), null);
-  assert.equal(await readJson(post({ big: 'x'.repeat(5000) })), null);
+  assert.equal(await readJson(post({ big: 'x'.repeat(9000) })), null);
 });
 
 test('pick keeps only allowed and valid fields', () => {
