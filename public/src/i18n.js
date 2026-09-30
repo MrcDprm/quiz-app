@@ -1,7 +1,6 @@
 // Arayüz metinleri (Türkçe / İngilizce). {name} yer tutucuları çağrılırken doldurulur.
 export const MESSAGES = {
   tr: {
-    pageTitle: 'Bilgi Yarışması · Miraç Deprem',
     title: 'Bilgi Yarışması',
     tagline: 'Seviyene uygun sorularla bilgini test et. Her turda 10 soru.',
     area: 'Alan',
@@ -134,7 +133,6 @@ export const MESSAGES = {
     source: 'Kaynak kodu',
   },
   en: {
-    pageTitle: 'Quiz App · Miraç Deprem',
     title: 'Quiz App',
     tagline: 'Test yourself with questions that match your level. 10 questions per round.',
     area: 'Area',

@@ -1,5 +1,5 @@
 // Arayüz: tur ayarı, soru ekranı, süre çubuğu ve sonuç. Kurallar ve cevaplar sunucuda (bkz. lib/).
-import { AREAS, LEVELS } from './topics.js';
+import { AREAS, LEVELS, MIXED } from './topics.js';
 import { DAILY_TIME_ZONE, dayKey } from './dates.js';
 import { currentStreak, recordDay } from './streak.js';
 import { dailyShareText, formatDay, roundShareText, shareLinks } from './share.js';
@@ -9,10 +9,26 @@ import { translate } from './i18n.js';
 import { applyTheme, nextTheme } from './theme.js';
 import { post } from './api-client.js';
 import { enableDrag } from './order-drag.js';
+import { pageMeta, pathFor, routeFromPath } from './routes.js';
 import { initFeedback } from './feedback.js';
 
 const browserLang = navigator.language?.toLowerCase().startsWith('tr') ? 'tr' : 'en';
 const settings = loadSettings(undefined, browserLang);
+// Adresteki ?lang=en / ?lang=tr kayıtlı tercihten önce gelir (paylaşılan ve Google'dan gelen linkler)
+const urlLang = new URLSearchParams(window.location.search).get('lang');
+if (urlLang === 'tr' || urlLang === 'en') settings.lang = urlLang;
+// /matematik/ortaokul gibi bir adresle gelindiyse o konu ve seviye seçili açılır
+const route = routeFromPath(window.location.pathname);
+if (route) {
+  settings.area = route.area;
+  settings.topic = route.topic;
+  // Sadece konu verilmişse kayıtlı seviye kullanılır; o seviyede sorulmuyorsa ilk uygun seviye seçilir
+  settings.level = route.level ?? (topicsOf(route.area, settings.level).includes(route.topic)
+    ? settings.level
+    : LEVELS.find((level) => topicsOf(route.area, level).includes(route.topic)));
+}
+// Adreste görünen seçim: ana adresle gelindiyse oyuncu bir seçim yapana kadar boş kalır
+let addressRoute = route;
 const t = (key, params) => translate(settings.lang, key, params);
 const dailyToday = () => dayKey(new Date(), DAILY_TIME_ZONE); // günün sorusu İstanbul saatiyle değişir
 const localToday = () => dayKey(new Date()); // seri, kullanıcının kendi günüyle sayılır
@@ -198,6 +214,26 @@ function shareDaily() {
   openShare(dailyShareText({ lang: settings.lang, date, correct, streak }));
 }
 
+// ---------- Adres ve sekme başlığı ----------
+
+/**
+ * Adres (/matematik/ortaokul) ve sekme başlığı güncellenir. replaceState geçmişe kayıt eklemez;
+ * geri tuşunun davranışı değişmez. "Karışık" seçiminin ayrı adresi yoktur.
+ */
+function updateAddress() {
+  const target = `${pathFor(addressRoute)}${settings.lang === 'en' ? '?lang=en' : ''}`;
+  if (`${window.location.pathname}${window.location.search}` !== target) window.history.replaceState(null, '', target);
+  const meta = pageMeta(addressRoute, settings.lang);
+  document.title = meta.title;
+  document.querySelector('meta[name="description"]')?.setAttribute('content', meta.description);
+}
+
+/** Oyuncu seçim yapınca adres o seçime uyar. */
+function followSelection() {
+  addressRoute = settings.topic === MIXED ? null : { area: settings.area, topic: settings.topic, level: settings.level };
+  updateAddress();
+}
+
 // ---------- Tur ayarı ----------
 
 function renderSetup() {
@@ -230,6 +266,7 @@ function updateSelection(changes) {
   if (!topics.includes(settings.topic)) settings.topic = topics[0];
   saveSettings(settings);
   renderSetup();
+  followSelection();
 }
 
 // Normal tur ve günün sorusu aynı yoldan başlar; farkları mode alanında tutulur.
@@ -574,7 +611,7 @@ function showResult(summary) {
 
 function renderLanguage() {
   document.documentElement.lang = settings.lang;
-  document.title = t('pageTitle');
+  updateAddress();
   for (const item of document.querySelectorAll('[data-i18n]')) item.textContent = t(item.dataset.i18n);
   for (const item of document.querySelectorAll('[data-i18n-aria]')) item.setAttribute('aria-label', t(item.dataset.i18nAria));
   for (const button of el.langButtons) button.setAttribute('aria-pressed', String(button.dataset.lang === settings.lang));
@@ -593,6 +630,7 @@ el.topic.addEventListener('change', () => {
   settings.topic = el.topic.value;
   saveSettings(settings);
   renderBestScore();
+  followSelection();
 });
 el.level.addEventListener('change', () => updateSelection({ level: el.level.value }));
 el.setupForm.addEventListener('submit', (event) => {
