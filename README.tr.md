@@ -60,7 +60,7 @@ Yarışmanın tamamı sunucuda (Vercel Functions) çalışıyor.
 | Jetonu tekrar kullanmak | Her jeton **bir kez** kullanılabiliyor; kullanılanları Upstash Redis hatırlıyor. "Sahte cevap gönder, doğruyu öğren, sonra doğruyu seç" hilesi çalışmıyor. |
 | Süre ve puan | Sunucuda ölçülüp hesaplanıyor. Tarayıcıdaki süre çubuğu sadece gösterim. |
 | Bayrak resimleri | Sorunun içinde data URL olarak gidiyor; içlerindeki ülke kodları temizlendi. Dosya adı cevabı ele veremiyor. |
-| Kötüye kullanım | IP başına dakikada 120 istek sınırı, her alanın sunucuda doğrulanması, aynı kaynak kontrolü ve genel hata mesajları. |
+| Kötüye kullanım | IP başına dakikada 120 istek sınırı, her alanın sunucuda doğrulanması, aynı kaynak kontrolü (sadece günün sorusu, onu ana sayfasında gösteren [miracdeprem.com](https://www.miracdeprem.com) için tam adresli bir CORS izin listesiyle açıktır) ve genel hata mesajları. |
 
 **Bilinen sınırlar:** Hesap sistemi olmadığı için bazı şeyler zorlanamıyor:
 - Günün sorusundaki "günde bir deneme" tarayıcı başına geçerli.

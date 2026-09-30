@@ -60,7 +60,7 @@ The whole quiz runs on the server (Vercel Functions).
 | Replaying a token | Every token works **once**. Upstash Redis remembers used ones, so you cannot send a fake answer, learn the right one and answer again. |
 | Time and score | Measured and calculated on the server; the timer bar in the browser is only a display. |
 | Flag images | Sent inside the question as data URLs, cleaned of any country code, so a file name cannot give the answer away. |
-| Abuse | Rate limiting (120 requests per minute per IP), server-side validation of every field, a same-origin check and generic error messages. |
+| Abuse | Rate limiting (120 requests per minute per IP), server-side validation of every field, a same-origin check (only the question of the day is also open to [miracdeprem.com](https://www.miracdeprem.com), which shows it on its home page, via an exact-origin CORS allow-list) and generic error messages. |
 
 **Known limits.** There are no accounts, so some things cannot be enforced:
 - The daily "one try" is per browser.

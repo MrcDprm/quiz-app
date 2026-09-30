@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { createMemoryStore } from '../lib/store.js';
 import {
   json, fail, isSameOrigin, clientIp, readJson, pick, oneOf, optional, endpoint, RATE_LIMIT,
+  allowedCrossOrigin, preflight,
 } from '../lib/http.js';
 
 const HOST = 'quiz.miracdeprem.com';
@@ -86,4 +87,52 @@ test('optional fields may be missing but must be valid when sent', () => {
   assert.deepEqual(pick({ lang: 'tr' }, schema), { lang: 'tr' });
   assert.deepEqual(pick({ lang: 'tr', seen: ['a'] }, schema), { lang: 'tr', seen: ['a'] });
   assert.equal(pick({ lang: 'tr', seen: 'a' }, schema), null);
+});
+
+const PORTFOLIO = 'https://www.miracdeprem.com';
+
+function options(origin) {
+  return new Request(`https://${HOST}/api/daily`, { method: 'OPTIONS', headers: { host: HOST, origin } });
+}
+
+test('only the listed site counts as an allowed cross origin', () => {
+  assert.equal(allowedCrossOrigin(post({}, { origin: PORTFOLIO })), PORTFOLIO);
+  assert.equal(allowedCrossOrigin(post({}, { origin: 'https://evil.example' })), null);
+  assert.equal(allowedCrossOrigin(post({}, { origin: 'https://miracdeprem.com.evil.example' })), null);
+  assert.equal(allowedCrossOrigin(post({})), null);
+});
+
+test('extra origins can be added with an environment variable', (t) => {
+  t.after(() => { delete process.env.EXTRA_ORIGINS; });
+  process.env.EXTRA_ORIGINS = 'https://preview.example, https://other.example';
+  assert.equal(allowedCrossOrigin(post({}, { origin: 'https://preview.example' })), 'https://preview.example');
+  assert.equal(allowedCrossOrigin(post({}, { origin: 'https://evil.example' })), null);
+});
+
+test('preflight says yes only to the listed site', () => {
+  const allowed = preflight(options(PORTFOLIO));
+  assert.equal(allowed.status, 204);
+  assert.equal(allowed.headers.get('access-control-allow-origin'), PORTFOLIO);
+  assert.equal(allowed.headers.get('access-control-allow-methods'), 'POST, OPTIONS');
+  assert.equal(allowed.headers.get('access-control-allow-headers'), 'Content-Type');
+  const refused = preflight(options('https://evil.example'));
+  assert.equal(refused.status, 403);
+  assert.equal(refused.headers.get('access-control-allow-origin'), null);
+});
+
+test('a cors endpoint answers the listed site with its exact origin', async () => {
+  const handler = endpoint(async () => json({ ok: true }), { getStore: createMemoryStore, cors: true });
+  const response = await handler(post({}, { origin: PORTFOLIO }));
+  assert.equal(response.status, 200);
+  assert.equal(response.headers.get('access-control-allow-origin'), PORTFOLIO);
+  assert.equal(response.headers.get('vary'), 'Origin');
+  assert.equal((await handler(post({}, { origin: 'https://evil.example' }))).status, 403);
+  const own = await handler(post({}));
+  assert.equal(own.status, 200);
+  assert.equal(own.headers.get('access-control-allow-origin'), null);
+});
+
+test('endpoints without cors still refuse the listed site', async () => {
+  const handler = endpoint(async () => json({ ok: true }), { getStore: createMemoryStore });
+  assert.equal((await handler(post({}, { origin: PORTFOLIO }))).status, 403);
 });

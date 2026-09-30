@@ -201,3 +201,21 @@ test('a full list of long seen ids still fits in the request', async () => {
   const seen = Array.from({ length: 50 }, (_, i) => `gen:era:university:Q${String(i).padStart(60, "0")}`);
   assert.equal((await call(api.round, { ...START, seen })).status, 200);
 });
+
+test('the portfolio can play the daily question, but cannot start a round', async () => {
+  const { api } = setup();
+  const fromPortfolio = (body) =>
+    new Request(`https://${HOST}/api/x`, {
+      method: 'POST',
+      headers: { host: HOST, origin: 'https://www.miracdeprem.com', 'content-type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+  const daily = await api.daily(fromPortfolio({ lang: 'tr' }));
+  assert.equal(daily.status, 200);
+  assert.equal(daily.headers.get('access-control-allow-origin'), 'https://www.miracdeprem.com');
+  const { token } = await daily.json();
+  const answered = await api.answer(fromPortfolio({ token, choice: answerOf(token) }));
+  assert.equal(answered.status, 200);
+  assert.equal((await answered.json()).result.correct, true);
+  assert.equal((await api.round(fromPortfolio(START))).status, 403);
+});
