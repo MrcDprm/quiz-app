@@ -1,5 +1,6 @@
-// Yerel geliştirme sunucusu: public/ klasörünü sunar, /api/* isteklerini
-// Vercel'deki aynı fonksiyonlara yönlendirir. Sadece geliştirme içindir.
+// Yerel geliştirme sunucusu: public/ klasörünü sunar, /api/* isteklerini Vercel'deki aynı fonksiyonlara
+// yönlendirir ve vercel.json'daki "rewrites" kurallarını uygular (/matematik/ortaokul → api/page.js).
+// Sadece geliştirme içindir.
 import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
 import { Readable } from 'node:stream';
@@ -8,7 +9,7 @@ import { extname, join, resolve, sep } from 'node:path';
 const PORT = Number(process.env.PORT) || 5173;
 const ROOT = resolve(import.meta.dirname, '..');
 const PUBLIC_DIR = join(ROOT, 'public');
-const API_NAMES = ['round', 'daily', 'review', 'answer', 'joker'];
+const API_NAMES = ['round', 'daily', 'review', 'answer', 'joker', 'page'];
 const TYPES = {
   '.html': 'text/html; charset=utf-8',
   '.css': 'text/css; charset=utf-8',
@@ -23,6 +24,25 @@ try {
   process.loadEnvFile(join(ROOT, '.env'));
 } catch {
   console.warn('No .env file found; copy .env.example to .env first.');
+}
+
+// vercel.json'daki "/:topic(a|b)/:level(c|d)" gibi kaynak kalıpları düzenli ifadeye çevrilir.
+const vercel = JSON.parse(await readFile(join(ROOT, 'vercel.json'), 'utf8'));
+const rewrites = (vercel.rewrites ?? []).map((rule) => ({
+  ...rule,
+  regex: new RegExp(`^${rule.source.replace(/:(\w+)(\(([^)]+)\))?/g, (m, name, group, re) => `(?<${name}>${re ?? '[^/]+'})`)}$`),
+}));
+
+/** Vercel gibi: kural eşleşirse hedef adres; istekteki sorgu parametreleri (?lang=en) korunur. */
+function rewriteTarget(pathname, search) {
+  for (const rule of rewrites) {
+    const match = pathname.match(rule.regex);
+    if (!match) continue;
+    const target = new URL(rule.destination.replace(/:(\w+)/g, (m, name) => match.groups?.[name] ?? ''), 'http://localhost');
+    for (const [key, value] of new URLSearchParams(search)) if (!target.searchParams.has(key)) target.searchParams.set(key, value);
+    return target;
+  }
+  return null;
 }
 
 // Node'un isteğini Vercel'in kullandığı Web Request nesnesine çevirir.
@@ -67,9 +87,16 @@ async function handleStatic(res, pathname) {
 
 createServer(async (req, res) => {
   try {
-    const { pathname } = new URL(req.url, 'http://localhost');
+    const { pathname, search } = new URL(req.url, 'http://localhost');
     const match = pathname.match(/^\/api\/([a-z]+)$/);
-    await (match ? handleApi(req, res, match[1]) : handleStatic(res, pathname));
+    if (match) return await handleApi(req, res, match[1]);
+    // Sayfa adresleri (/, /matematik …) ve sitemap.xml sayfa fonksiyonundan gelir
+    const target = req.method === 'GET' ? rewriteTarget(pathname, search) : null;
+    if (target) {
+      const { GET } = await import('../api/page.js');
+      return sendResponse(res, await GET(new Request(target)));
+    }
+    await handleStatic(res, pathname);
   } catch (error) {
     console.error(error);
     if (!res.headersSent) res.writeHead(500);

@@ -8,6 +8,12 @@
       "maxDuration": 10
     }
   },
+  "rewrites": [
+    { "source": "/", "destination": "/api/page" },
+    { "source": "/sitemap.xml", "destination": "/api/page?sitemap=1" },
+    { "source": "/:topic(matematik|fen-bilimleri|tarih|cografya|edebiyat-ve-sanat|genel-kultur|kodlamaya-giris|algoritmalar|html-css|python|javascript|sql|git|web-guvenligi|csharp)", "destination": "/api/page?topic=:topic" },
+    { "source": "/:topic(matematik|fen-bilimleri|tarih|cografya|edebiyat-ve-sanat|genel-kultur|kodlamaya-giris|algoritmalar|html-css|python|javascript|sql|git|web-guvenligi|csharp)/:level(ilkokul|ortaokul|lise|universite|yuksek-lisans)", "destination": "/api/page?topic=:topic&level=:level" }
+  ],
   "headers": [
     {
       "source": "/(.*)",
