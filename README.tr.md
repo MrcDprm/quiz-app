@@ -46,6 +46,7 @@ Cevaplar, sen cevaplamadan önce tarayıcıya hiç gelmez. Bu yüzden geliştiri
   - Cevap için 1-4 tuşları, devam için Enter.
   - Ekran okuyucu duyuruları.
   - "Hareketi azalt" ayarına uyar.
+- **Geri bildirim:** Küçük bir düğme; ad (isteğe bağlı), e-posta ya da telefon ve mesaj içeren formu açar. Mesaj portfolyo sitem üzerinden doğrudan bana ulaşır.
 
 ## Hile nasıl önleniyor
 

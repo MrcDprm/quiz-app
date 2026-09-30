@@ -46,6 +46,7 @@ Answers never reach the browser before you answer, so the quiz cannot be cheated
   - Keys 1–4 to answer and Enter to continue.
   - Screen-reader announcements.
   - Respects "reduce motion".
+- **Feedback:** a small button opens a form (name optional, email or phone, message) that sends straight to me through my portfolio site.
 
 ## How cheating is prevented
 
