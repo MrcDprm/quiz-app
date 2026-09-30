@@ -34,6 +34,7 @@ Answers never reach the browser before you answer, so the quiz cannot be cheated
   - A timer and a speed bonus.
   - Two jokers: 50:50 and +10 seconds.
   - The correct answer and an explanation after every question, and a full review at the end.
+- **An address for every topic and level:** for example [/matematik/ortaokul](https://quiz.miracdeprem.com/matematik/ortaokul) or [/python/lise](https://quiz.miracdeprem.com/python/lise) opens the quiz with that choice, in Turkish or English (`?lang=en`).
 - **No repeats:** questions you have already seen in a topic are not asked again until the pool runs out.
 - **Daily question:** the same question for everyone, one try a day. The result can be shared to WhatsApp, X, LinkedIn, Telegram, Facebook or Instagram, or simply copied.
 - **Progress, all stored in your own browser:**
@@ -114,7 +115,7 @@ public/                 The only folder that is served: page, styles, browser mo
   src/main.js           Screens, timer, answers, results
   src/progress.js       Statistics, mistakes list, seen questions, badges
   src/storage.js        Settings in localStorage, validated on every read
-api/                    Vercel Functions: round, daily, review, answer, joker
+api/                    Vercel Functions: round, daily, review, answer, joker, and page (serves every address with its own title)
 lib/
   quiz.js               Round rules: timing, scoring, jokers
   token.js              AES-256-GCM round tokens
@@ -122,7 +123,7 @@ lib/
   http.js               Validation, origin check, rate limit, generic errors
   catalog.js            Loads the bank, mixes bank and generated questions, skips seen ones
   generators.js         Template engine; templates/ has people, countries, works, elements, maths
-data/                   Question bank, data for the generators, flags (never served)
+data/                   Question bank, data for the generators, flags and the page template app.html (never served)
 scripts/                Local server and the Wikidata fetch script
 tests/                  Unit tests
 ```

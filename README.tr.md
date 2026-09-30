@@ -34,6 +34,7 @@ Cevaplar, sen cevaplamadan önce tarayıcıya hiç gelmez. Bu yüzden geliştiri
   - Süre ve hız bonusu.
   - İki joker: 50:50 ve +10 saniye.
   - Her sorudan sonra doğru cevap ve açıklama; turun sonunda bütün soruların özeti.
+- **Her konu ve seviyenin kendi adresi:** örneğin [/matematik/ortaokul](https://quiz.miracdeprem.com/matematik/ortaokul) ya da [/python/lise](https://quiz.miracdeprem.com/python/lise) yarışmayı o seçimle açar; Türkçe ya da İngilizce (`?lang=en`).
 - **Tekrar yok:** Bir konuda gördüğün sorular, havuz bitene kadar tekrar sorulmaz.
 - **Günün sorusu:** Herkese aynı soru, günde bir deneme. Sonuç WhatsApp, X, LinkedIn, Telegram, Facebook ya da Instagram'da paylaşılabilir veya kopyalanabilir.
 - **İlerleme** (hepsi kendi tarayıcında saklanır):
@@ -114,7 +115,7 @@ public/                 Yayınlanan tek klasör: sayfa, stiller, tarayıcı mod�
   src/main.js           Ekranlar, süre, cevaplar, sonuç
   src/progress.js       İstatistik, Hatalarım listesi, görülen sorular, rozetler
   src/storage.js        localStorage'daki ayarlar; her okumada doğrulanır
-api/                    Vercel Functions: round, daily, review, answer, joker
+api/                    Vercel Functions: round, daily, review, answer, joker ve her adresi kendi başlığıyla sunan page
 lib/
   quiz.js               Tur kuralları: süre, puan, jokerler
   token.js              AES-256-GCM tur jetonları
@@ -122,7 +123,7 @@ lib/
   http.js               Doğrulama, kaynak kontrolü, rate limit, genel hata mesajları
   catalog.js            Bankayı yükler, banka ve üretilmiş soruları karıştırır, görülenleri atlar
   generators.js         Şablon motoru; templates/ içinde kişi, ülke, eser, element, matematik şablonları
-data/                   Soru bankası, üreteç verileri, bayraklar (yayınlanmaz)
+data/                   Soru bankası, üreteç verileri, bayraklar ve sayfa şablonu app.html (yayınlanmaz)
 scripts/                Yerel sunucu ve Wikidata veri betiği
 tests/                  Birim testleri
 ```
