@@ -160,7 +160,33 @@
       </div>
     </dialog>
 
+    <dialog class="fb-dialog" id="fb-dialog" aria-labelledby="fb-title">
+      <form class="fb-form" id="fb-form" novalidate>
+        <h2 class="fb-title" id="fb-title" data-i18n="feedbackTitle"></h2>
+        <p class="fb-intro" data-i18n="feedbackIntro"></p>
+        <label class="fb-label" for="fb-name" data-i18n="feedbackName"></label>
+        <input class="fb-input" id="fb-name" type="text" maxlength="100" autocomplete="name" />
+        <label class="fb-label" for="fb-contact" data-i18n="feedbackContact"></label>
+        <input class="fb-input" id="fb-contact" type="text" maxlength="255" autocomplete="email" required />
+        <label class="fb-label" for="fb-message" data-i18n="feedbackMessage"></label>
+        <textarea class="fb-input" id="fb-message" rows="4" maxlength="2000" required></textarea>
+        <div class="fb-hp" aria-hidden="true">
+          <label for="fb-website">Website</label>
+          <input id="fb-website" type="text" tabindex="-1" autocomplete="off" />
+        </div>
+        <p class="fb-status" id="fb-status" role="status"></p>
+        <div class="fb-actions">
+          <button type="button" class="btn btn-ghost" id="fb-close" data-i18n="feedbackClose"></button>
+          <button type="submit" class="btn btn-primary" id="fb-submit" data-i18n="feedbackSend"></button>
+        </div>
+      </form>
+    </dialog>
+
     <footer class="footer">
+      <button type="button" class="fb-open" id="fb-open">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z" /></svg>
+        <span data-i18n="feedback"></span>
+      </button>
       <nav class="footer-projects" data-i18n-aria="jsProjects">
         <a href="https://tictactoe.miracdeprem.com">Tic-Tac-Toe</a>
         <a href="https://hangman.miracdeprem.com">Hangman</a>

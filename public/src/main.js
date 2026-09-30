@@ -9,6 +9,7 @@ import { translate } from './i18n.js';
 import { applyTheme, nextTheme } from './theme.js';
 import { post } from './api-client.js';
 import { enableDrag } from './order-drag.js';
+import { initFeedback } from './feedback.js';
 
 const browserLang = navigator.language?.toLowerCase().startsWith('tr') ? 'tr' : 'en';
 const settings = loadSettings(undefined, browserLang);
@@ -669,3 +670,4 @@ el.themeToggle.addEventListener('click', () => {
 
 applyTheme(settings.theme);
 renderLanguage();
+initFeedback(t);

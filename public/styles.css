@@ -961,3 +961,118 @@ select:hover {
     width: 100%;
   }
 }
+
+/* ---------- Geri bildirim penceresi ---------- */
+/* Düğme alt bilginin içinde durur; geniş ekranda sağ alt köşeye sabitlenir.
+   Telefonda sabitlenmez ki oyun düğmelerinin üstüne binmesin. */
+.fb-open {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid rgb(var(--c-line) / 0.8);
+  border-radius: 999px;
+  background: rgb(var(--c-surface) / 0.85);
+  color: rgb(var(--c-muted));
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, opacity 0.15s;
+}
+.fb-open:hover,
+.fb-open:focus-visible {
+  border-color: rgb(var(--c-accent) / 0.6);
+  color: rgb(var(--c-accent));
+  opacity: 1;
+}
+.fb-open svg {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+@media (min-width: 641px) {
+  .fb-open {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    z-index: 20;
+    backdrop-filter: blur(6px);
+    opacity: 0.7;
+  }
+}
+
+.fb-dialog {
+  width: min(26rem, calc(100vw - 2rem));
+  padding: 1.25rem;
+  border: 1px solid rgb(var(--c-line));
+  border-radius: 1rem;
+  background: rgb(var(--c-surface));
+  color: rgb(var(--c-ink));
+}
+.fb-dialog::backdrop {
+  background: rgb(0 0 0 / 0.55);
+  backdrop-filter: blur(2px);
+}
+.fb-form {
+  display: grid;
+  gap: 0.35rem;
+}
+.fb-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+}
+.fb-intro {
+  margin: 0 0 0.4rem;
+  color: rgb(var(--c-muted));
+  font-size: 0.9rem;
+}
+.fb-label {
+  margin-top: 0.4rem;
+  color: rgb(var(--c-subtle));
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+.fb-input {
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid rgb(var(--c-line) / 0.8);
+  border-radius: 0.5rem;
+  background: rgb(var(--c-elevated));
+  color: rgb(var(--c-ink));
+  font: inherit;
+}
+.fb-input:hover {
+  border-color: rgb(var(--c-accent) / 0.6);
+}
+textarea.fb-input {
+  min-height: 6rem;
+  resize: vertical;
+}
+/* Botlar için tuzak alan: ekranda ve ekran okuyucuda görünmez */
+.fb-hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.fb-status {
+  min-height: 1.4em;
+  margin: 0.4rem 0 0;
+  color: rgb(var(--c-muted));
+  font-size: 0.85rem;
+}
+.fb-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.3rem;
+}
+.fb-actions .btn:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
