@@ -3,7 +3,7 @@
 [English](README.md) | **Türkçe**
 
 Bilgini ara ara test edebileceğin bir yarışma platformu:
-- İlkokuldan yüksek lisansa kadar seviyene uygun sorular.
+- Kategoriye göre kolay, orta ve zor sorular.
 - Yazılım alanı.
 - Herkese aynı gelen günün sorusu.
 - Gerçek veriden üretilen binlerce soru.
@@ -16,12 +16,9 @@ Cevaplar, sen cevaplamadan önce tarayıcıya hiç gelmez. Bu yüzden geliştiri
 
 ## Özellikler
 
-- **Her alanda beş seviye:** İlkokul, Ortaokul, Lise, Üniversite ve Yüksek Lisans.
-  - **Genel konular:** Matematik, Fen Bilimleri, Tarih, Coğrafya, Edebiyat ve Sanat, Genel Kültür ya da hepsi karışık.
-  - **Yazılım:** Konular seviye seviye açılır.
-    - İlkokulda Kodlamaya Giriş.
-    - Ortaokulda Algoritmalar, HTML ve CSS ile Python eklenir.
-    - Lisede (meslek liseleri dahil) JavaScript, SQL, Git, Web Güvenliği ve C# eklenir.
+- **Kategoriler ve üç zorluk:** Bir kategori kartı seçilir, ardından Kolay, Orta ya da Zor.
+  - **Genel:** Tarih, Coğrafya, Fen Bilimleri, Matematik, Edebiyat ve Sanat, Genel Kültür ya da hepsi karışık.
+  - **Yazılım:** Kodlamaya Giriş, Algoritmalar, HTML ve CSS, Python, JavaScript, SQL, Git, Web Güvenliği ve C# ya da hepsi karışık.
 - **İki kaynaktan sorular:**
   - **Elle yazılmış 796 soruluk banka:** Türkçe ve İngilizce, her birinde kısa bir açıklama var. "Bu kod ne yazdırır?" sorularının hepsi, kod gerçekten Python, Node.js ya da .NET ile çalıştırılarak doğrulandı.
   - **Gerçek veriden üretilen sorular:** Şablonlar kişilerden (Wikidata), 129 ülkeden, ünlü eserlerden ve kimyasal elementlerden yeni sorular kurar. Matematik soruları her seferinde yeni sayılarla gelir.
@@ -34,12 +31,12 @@ Cevaplar, sen cevaplamadan önce tarayıcıya hiç gelmez. Bu yüzden geliştiri
   - Süre ve hız bonusu.
   - İki joker: 50:50 ve +10 saniye.
   - Her sorudan sonra doğru cevap ve açıklama; turun sonunda bütün soruların özeti.
-- **Her konu ve seviyenin kendi adresi:** örneğin [/matematik/ortaokul](https://quiz.miracdeprem.com/matematik/ortaokul) ya da [/python/lise](https://quiz.miracdeprem.com/python/lise) yarışmayı o seçimle açar; Türkçe ya da İngilizce (`?lang=en`).
+- **Her kategori ve zorluğun kendi adresi:** örneğin [/matematik/kolay](https://quiz.miracdeprem.com/matematik/kolay) ya da [/python/zor](https://quiz.miracdeprem.com/python/zor) yarışmayı o seçimle açar; Türkçe ya da İngilizce (`?lang=en`). Okul seviyelerini kullanan ilk sürümün adresleri karşılık gelen zorluğa yönlendirilir.
 - **Tekrar yok:** Bir konuda gördüğün sorular, havuz bitene kadar tekrar sorulmaz.
 - **Günün sorusu:** Herkese aynı soru, günde bir deneme. Sonuç WhatsApp, X, LinkedIn, Telegram, Facebook ya da Instagram'da paylaşılabilir veya kopyalanabilir.
 - **İlerleme** (hepsi kendi tarayıcında saklanır):
   - Günlük seri.
-  - Başarı istatistikleri ve konu-seviye başına en iyi puan.
+  - Başarı istatistikleri ve kategori-zorluk başına en iyi puan; kategori kartlarında görünür.
   - 11 rozet.
   - Yanlış yaptığın soruları doğru cevaplayana kadar tekrar soran **"Hatalarım"** turu.
 - **Türkçe ve İngilizce**, [portfolyo sitemle](https://www.miracdeprem.com) uyumlu koyu ve açık tema.
@@ -80,7 +77,7 @@ Yarışmanın tamamı sunucuda (Vercel Functions) çalışıyor.
 - HTML, CSS, JavaScript (ES modülleri, framework yok, derleme adımı yok)
 - API için Vercel Functions (Node.js); Upstash Redis (REST API'si üzerinden, SDK'sız)
 - AES-256-GCM jetonları ve güvenli rastgele sayılar için `node:crypto`
-- `node --test`: 142 birim testi
+- `node --test`: 162 birim testi
 - **Hiç npm bağımlılığı yok**
 
 ## Kurulum ve Çalıştırma
