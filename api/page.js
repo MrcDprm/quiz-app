@@ -21,9 +21,11 @@ async function respond(request) {
   const topic = (params.get('topic') ?? '').toLowerCase();
   const difficulty = (params.get('difficulty') ?? '').toLowerCase();
   const lang = params.get('lang') === 'en' ? 'en' : 'tr';
+  const room = params.get('room');
   // Sadece harf, rakam ve tire kabul edilir; geri kalan her şey bilinmeyen adres sayılır
   let pathname = '/';
-  if (topic) pathname = SEGMENT.test(topic) && (!difficulty || SEGMENT.test(difficulty)) ? `/${topic}${difficulty ? `/${difficulty}` : ''}` : '/-';
+  if (room) pathname = room === '1' ? '/oda' : /^\d{6}$/.test(room) ? `/oda/${room}` : '/-';
+  else if (topic) pathname = SEGMENT.test(topic) && (!difficulty || SEGMENT.test(difficulty)) ? `/${topic}${difficulty ? `/${difficulty}` : ''}` : '/-';
   const moved = legacyRedirect(pathname);
   if (moved) {
     return new Response(null, { status: 308, headers: { Location: `${moved}${lang === 'en' ? '?lang=en' : ''}`, 'Cache-Control': CACHE } });

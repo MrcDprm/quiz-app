@@ -69,6 +69,7 @@ export function pathFor(route) {
 /** Bütün sayfalar: ana sayfa, her konu ve konunun her zorluğu. */
 export const SITEMAP_PATHS = [
   '/',
+  '/oda',
   ...Object.keys(TOPIC_SLUGS).flatMap((topic) => [
     pathFor({ topic, difficulty: null }),
     ...DIFFICULTIES.map((difficulty) => pathFor({ topic, difficulty })),

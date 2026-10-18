@@ -1152,3 +1152,417 @@ textarea.fb-input {
   opacity: 0.6;
   cursor: wait;
 }
+
+/* ---------- Birlikte oynama ---------- */
+.together {
+  display: grid;
+  gap: 0.6rem;
+}
+.together-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+}
+.together-text {
+  margin: 0;
+  color: rgb(var(--c-muted));
+}
+.together-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+.together-actions .btn {
+  min-height: 2.75rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.room-entry {
+  display: grid;
+  gap: 1rem;
+}
+.room-entry-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.room-entry-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+}
+.room-entry-head .btn {
+  text-decoration: none;
+}
+.room-form {
+  display: grid;
+  gap: 1rem;
+}
+.room-form[hidden] {
+  display: none;
+}
+.text-input {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid rgb(var(--c-line) / 0.8);
+  border-radius: 0.55rem;
+  background: rgb(var(--c-elevated));
+  color: rgb(var(--c-ink));
+  /* 16 px altı yazı iPhone'da odaklanınca sayfayı yakınlaştırır */
+  font: inherit;
+  font-size: max(1rem, 16px);
+}
+.text-input:hover,
+.text-input:focus {
+  border-color: rgb(var(--c-accent) / 0.6);
+}
+.code-input {
+  font-family: var(--font-mono);
+  font-size: 1.6rem;
+  letter-spacing: 0.35em;
+  text-align: center;
+}
+.field-hint {
+  margin: 0.15rem 0 0;
+  color: rgb(var(--c-subtle));
+  font-size: 0.82rem;
+}
+.segment:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  min-height: 2.75rem;
+  cursor: pointer;
+}
+.toggle input {
+  flex: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  accent-color: rgb(var(--c-accent));
+}
+.room-more {
+  border: 1px solid rgb(var(--c-line) / 0.7);
+  border-radius: 0.6rem;
+  padding: 0 0.85rem;
+}
+.room-more[open] {
+  padding-bottom: 0.6rem;
+}
+.room-more summary {
+  min-height: 2.75rem;
+  display: flex;
+  align-items: center;
+  color: rgb(var(--c-muted));
+  cursor: pointer;
+}
+.room-more .field-hint {
+  margin: -0.3rem 0 0.4rem 1.9rem;
+}
+
+.room {
+  display: grid;
+  gap: 0.9rem;
+}
+.room-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  color: rgb(var(--c-subtle));
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+}
+.room-lead {
+  margin: 0;
+  font-size: 1.05rem;
+}
+.room-code-big {
+  margin: 0;
+  padding: 0.75rem 0;
+  border: 1px dashed rgb(var(--c-accent) / 0.6);
+  border-radius: 0.75rem;
+  background: rgb(var(--c-accent) / 0.08);
+  color: rgb(var(--c-accent));
+  font-family: var(--font-mono);
+  font-size: clamp(2.4rem, 12vw, 3.4rem);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+.room-subtitle {
+  margin: 0.25rem 0 0;
+  font-family: var(--font-display);
+  font-size: 1rem;
+}
+.room-empty,
+.room-waiting {
+  margin: 0;
+  color: rgb(var(--c-muted));
+}
+.room-players {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.room-player {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.3rem 0.4rem 0.3rem 0.75rem;
+  border: 1px solid rgb(var(--c-line) / 0.8);
+  border-radius: 999px;
+  background: rgb(var(--c-elevated) / 0.6);
+}
+.room-player.you {
+  border-color: rgb(var(--c-accent) / 0.6);
+}
+.room-player-name {
+  padding-right: 0.35rem;
+}
+.room-kick {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+  color: rgb(var(--c-subtle));
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.room-kick:hover {
+  background: rgb(var(--c-bad) / 0.15);
+  color: rgb(var(--c-bad));
+}
+.room-leave {
+  justify-self: center;
+}
+.room-connection {
+  margin-top: 0.75rem;
+}
+
+/* Oda: soru, sonuç, sıralama. Şık renkleri iki temada da okunur; şekil rengi tamamlar. */
+.room {
+  --opt-0: 232 93 117;
+  --opt-1: 86 140 245;
+  --opt-2: 232 170 60;
+  --opt-3: 70 180 120;
+}
+[data-theme='light'] .room {
+  --opt-0: 196 48 78;
+  --opt-1: 40 92 200;
+  --opt-2: 168 104 8;
+  --opt-3: 24 128 72;
+}
+.room-timer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 0.6rem;
+}
+.room-timer .timer {
+  margin: 0;
+}
+.room-timer-text {
+  min-width: 3.5rem;
+  color: rgb(var(--c-muted));
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  text-align: right;
+}
+.room-prompt {
+  margin: 0.25rem 0 0;
+}
+.room-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+.room-option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 4rem;
+  padding: 0.7rem 0.8rem;
+  border: 2px solid rgb(var(--opt) / 0.55);
+  border-radius: 0.75rem;
+  background: rgb(var(--opt) / 0.14);
+  color: rgb(var(--c-ink));
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.1s, background-color 0.15s, opacity 0.15s;
+}
+.room-option:not(:disabled):hover {
+  background: rgb(var(--opt) / 0.24);
+}
+.room-option:not(:disabled):active {
+  transform: scale(0.98);
+}
+.room-option:disabled {
+  cursor: default;
+}
+.opt-0 { --opt: var(--opt-0); }
+.opt-1 { --opt: var(--opt-1); }
+.opt-2 { --opt: var(--opt-2); }
+.opt-3 { --opt: var(--opt-3); }
+.room-shape {
+  flex: none;
+  color: rgb(var(--opt));
+  font-size: 1.3rem;
+  line-height: 1;
+}
+.room-option-text {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+/* Sınıf modu: telefonda sadece renk ve şekil, büyük dokunma alanı */
+.shapes-only .room-option {
+  justify-content: center;
+  min-height: 6.5rem;
+  background: rgb(var(--opt) / 0.85);
+}
+.shapes-only .room-shape {
+  color: rgb(255 255 255);
+  font-size: 2.6rem;
+}
+/* Cevap verildi: seçilen öne çıkar, diğerleri soluklaşır */
+.room-option.chosen {
+  border-color: rgb(var(--opt));
+  box-shadow: inset 0 0 0 2px rgb(var(--opt));
+}
+.room-options:has(.chosen) .room-option:not(.chosen):not(.correct) {
+  opacity: 0.45;
+}
+.room-option.correct {
+  border-color: rgb(var(--c-good));
+  background: rgb(var(--c-good) / 0.18);
+  opacity: 1;
+}
+.room-option.wrong {
+  border-color: rgb(var(--c-bad));
+  box-shadow: inset 0 0 0 2px rgb(var(--c-bad));
+  opacity: 1;
+}
+.room-option.correct.chosen {
+  box-shadow: inset 0 0 0 2px rgb(var(--c-good));
+}
+.room-count {
+  margin-left: auto;
+  padding-left: 0.4rem;
+  color: rgb(var(--c-muted));
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+.room-status {
+  margin: 0;
+  color: rgb(var(--c-muted));
+  text-align: center;
+}
+.room-paused {
+  margin: 0;
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  background: rgb(var(--c-accent) / 0.12);
+  color: rgb(var(--c-accent));
+  font-weight: 600;
+  text-align: center;
+}
+.room-verdict {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  text-align: center;
+}
+.room-verdict.good {
+  color: rgb(var(--c-good));
+}
+.room-verdict.bad {
+  color: rgb(var(--c-bad));
+}
+.room-explain {
+  margin: 0;
+  color: rgb(var(--c-muted));
+}
+.room-tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgb(var(--c-line) / 0.6);
+}
+.room-tools .btn {
+  min-height: 2.75rem;
+}
+.room-end:hover {
+  color: rgb(var(--c-bad));
+}
+.room-ranking {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.room-rank {
+  display: grid;
+  grid-template-columns: 2.4rem 1fr auto;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid rgb(var(--c-line) / 0.7);
+  border-radius: 0.6rem;
+  background: rgb(var(--c-elevated) / 0.6);
+}
+.room-rank.you {
+  border-color: rgb(var(--c-accent) / 0.7);
+  background: rgb(var(--c-accent) / 0.1);
+}
+.room-rank-place {
+  font-family: var(--font-mono);
+  text-align: center;
+}
+.room-rank-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.room-rank-score {
+  font-family: var(--font-mono);
+}
+.room-final-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  text-align: center;
+}
+.room-final-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+.room-final-actions .btn {
+  min-height: 2.75rem;
+}
+@media (max-width: 360px) {
+  .room-options {
+    grid-template-columns: 1fr;
+  }
+}

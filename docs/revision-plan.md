@@ -34,7 +34,7 @@ Working notes for the second version of Quiz App. The README describes the live 
 
 ## Part 3: Live game (Kahoot-style)
 
-Runs as a small WebSocket service (`live/`) on an always-on server (Oracle Cloud, next to Zarf), sharing the question code with the main app. Mobile first.
+Runs as a small Node.js service (`live/`) on an always-on server (Oracle Cloud, next to Zarf, behind Caddy at `quiz-ws.miracdeprem.com`), sharing the question code with the main app. Server-Sent Events carry the room state to the phones and answers come back as POST requests, so no dependency is needed. Mobile first. The page lives at `quiz.miracdeprem.com/oda`.
 
 - **Room:** the host picks category, difficulty and number of questions and gets a 6-digit code (and a link / QR code). Players join with the code and a nickname, no account.
 - **Room settings:** every option below is chosen on the "create room" screen. Each has a default, so the host can also just tap "Create" and change nothing. Settings are grouped on one mobile-friendly screen (toggles and segmented buttons, "Advanced" section folded).
