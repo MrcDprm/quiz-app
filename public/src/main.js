@@ -1,5 +1,5 @@
 // Arayüz: tur ayarı, soru ekranı, süre çubuğu ve sonuç. Kurallar ve cevaplar sunucuda (bkz. lib/).
-import { AREAS, DIFFICULTIES, MIXED } from './topics.js';
+import { AREAS, DIFFICULTIES, MIXED, topicsFor } from './topics.js';
 import { DAILY_TIME_ZONE, dayKey } from './dates.js';
 import { currentStreak, recordDay } from './streak.js';
 import { dailyShareText, formatDay, roundShareText, shareLinks } from './share.js';
@@ -11,6 +11,7 @@ import { post } from './api-client.js';
 import { enableDrag } from './order-drag.js';
 import { pageMeta, pathFor, routeFromPath } from './routes.js';
 import { initFeedback } from './feedback.js';
+import { initRooms, roomFromPath } from './room.js';
 
 const browserLang = navigator.language?.toLowerCase().startsWith('tr') ? 'tr' : 'en';
 const settings = loadSettings(undefined, browserLang);
@@ -32,7 +33,13 @@ const localToday = () => dayKey(new Date()); // seri, kullanıcının kendi gün
 
 const $ = (id) => document.getElementById(id);
 const el = {
-  screens: { setup: $('setup-screen'), round: $('round-screen'), result: $('result-screen') },
+  screens: {
+    setup: $('setup-screen'),
+    round: $('round-screen'),
+    result: $('result-screen'),
+    roomEntry: $('room-entry-screen'),
+    room: $('room-screen'),
+  },
   setupForm: $('setup-form'),
   areaGroup: $('area-group'),
   topicGroup: $('topic-group'),
@@ -222,6 +229,11 @@ function shareDaily() {
  * geri tuşunun davranışı değişmez. "Karışık" seçiminin ayrı adresi yoktur.
  */
 function updateAddress() {
+  // Oda ekranlarında adres ve başlık room.js'e aittir (/oda, /oda/482913)
+  if (roomFromPath(window.location.pathname)) {
+    document.title = `${t('togetherTitle')} · ${t('title')}`;
+    return;
+  }
   const target = `${pathFor(addressRoute)}${settings.lang === 'en' ? '?lang=en' : ''}`;
   if (`${window.location.pathname}${window.location.search}` !== target) window.history.replaceState(null, '', target);
   const meta = pageMeta(addressRoute, settings.lang);
@@ -645,6 +657,7 @@ function renderLanguage() {
   renderSetup();
   renderHome();
   el.setupStatus.textContent = '';
+  rooms.refresh();
 }
 
 // ---------- Olaylar ----------
@@ -739,6 +752,52 @@ el.themeToggle.addEventListener('click', () => {
   applyTheme(settings.theme);
 });
 
+// ---------- Birlikte oynama ----------
+
+// Odadan ana sayfaya dönüş: adres oyuncunun son seçimine döner
+function homeFromRoom() {
+  window.history.pushState(null, '', `${pathFor(addressRoute)}${settings.lang === 'en' ? '?lang=en' : ''}`);
+  updateAddress();
+  goHome();
+}
+
+const rooms = initRooms({
+  t,
+  getLang: () => settings.lang,
+  // "Karışık"ın odası yok: alanın ilk konusu seçili gelir
+  getSelection: () => ({
+    area: settings.area,
+    topic: settings.topic === MIXED ? topicsFor(settings.area)[0] : settings.topic,
+    difficulty: settings.difficulty,
+  }),
+  showScreen,
+  goHome: homeFromRoom,
+});
+
+for (const link of document.querySelectorAll('[data-room-mode]')) {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    rooms.openEntry(link.dataset.roomMode);
+  });
+}
+$('room-entry-back').addEventListener('click', (event) => {
+  event.preventDefault();
+  homeFromRoom();
+});
+
+// Geri/ileri tuşu: /oda adresine dönülürse oda ekranı, başka adrese gidilirse ana sayfa (oda oturumu saklı kalır)
+window.addEventListener('popstate', () => {
+  const roomRoute = roomFromPath(window.location.pathname);
+  if (roomRoute) return rooms.openFromPath(roomRoute);
+  if (!el.screens.roomEntry.hidden || !el.screens.room.hidden) {
+    rooms.suspend();
+    updateAddress();
+    goHome();
+  }
+});
+
 applyTheme(settings.theme);
 renderLanguage();
 initFeedback(t);
+const startRoom = roomFromPath(window.location.pathname);
+if (startRoom) rooms.openFromPath(startRoom);

@@ -85,6 +85,15 @@
           <p class="best-score" id="best-score"></p>
         </form>
 
+        <section class="card together" aria-labelledby="together-title">
+          <h2 class="together-title" id="together-title" data-i18n="togetherTitle"></h2>
+          <p class="together-text" data-i18n="togetherIntro"></p>
+          <div class="together-actions">
+            <a class="btn btn-primary" href="/oda" data-room-mode="create" data-i18n="togetherCreate"></a>
+            <a class="btn btn-secondary" href="/oda" data-room-mode="join" data-i18n="togetherJoin"></a>
+          </div>
+        </section>
+
         <section class="card progress" aria-labelledby="progress-title">
           <h2 class="progress-title" id="progress-title" data-i18n="progressTitle"></h2>
           <dl class="stats">
@@ -99,6 +108,82 @@
           <h3 class="badges-title" data-i18n="badges"></h3>
           <ul class="badges" id="badges"></ul>
         </section>
+      </section>
+
+      <!-- Birlikte oynama: oda kur / katıl -->
+      <section class="screen" id="room-entry-screen" hidden>
+        <div class="card room-entry">
+          <div class="room-entry-head">
+            <h1 class="room-entry-title" data-i18n="togetherTitle"></h1>
+            <a class="btn btn-ghost" href="/" id="room-entry-back" data-i18n="backHome"></a>
+          </div>
+          <div class="segmented" role="tablist" id="room-tabs">
+            <button type="button" class="segment" role="tab" id="room-tab-create" aria-controls="room-create" data-tab="create" data-i18n="togetherCreate"></button>
+            <button type="button" class="segment" role="tab" id="room-tab-join" aria-controls="room-join" data-tab="join" data-i18n="togetherJoin"></button>
+          </div>
+
+          <form class="room-form" id="room-create" role="tabpanel" aria-labelledby="room-tab-create" novalidate>
+            <label class="toggle">
+              <input type="checkbox" id="room-host-plays" checked />
+              <span data-i18n="roomHostPlays"></span>
+            </label>
+            <div class="field" id="room-host-name-field">
+              <label class="field-label" for="room-host-name" data-i18n="roomName"></label>
+              <input class="text-input" id="room-host-name" type="text" maxlength="20" autocomplete="nickname" enterkeyhint="done" />
+            </div>
+            <div class="field">
+              <label class="field-label" for="room-topic" data-i18n="topic"></label>
+              <select class="text-input" id="room-topic"></select>
+            </div>
+            <div class="field">
+              <span class="field-label" id="room-difficulty-label" data-i18n="difficulty"></span>
+              <div class="segmented" role="radiogroup" aria-labelledby="room-difficulty-label" data-setting="difficulty"></div>
+            </div>
+            <div class="field">
+              <span class="field-label" id="room-count-label" data-i18n="roomCount"></span>
+              <div class="segmented" role="radiogroup" aria-labelledby="room-count-label" data-setting="count"></div>
+            </div>
+            <div class="field">
+              <span class="field-label" id="room-seconds-label" data-i18n="roomSeconds"></span>
+              <div class="segmented" role="radiogroup" aria-labelledby="room-seconds-label" data-setting="seconds"></div>
+            </div>
+            <div class="field">
+              <span class="field-label" id="room-advance-label" data-i18n="roomAdvance"></span>
+              <div class="segmented" role="radiogroup" aria-labelledby="room-advance-label" data-setting="advance"></div>
+              <p class="field-hint" id="room-advance-hint"></p>
+            </div>
+            <details class="room-more">
+              <summary data-i18n="roomMore"></summary>
+              <label class="toggle"><input type="checkbox" data-toggle="questionOnPhones" /><span data-i18n="roomQuestionOnPhones"></span></label>
+              <p class="field-hint" data-i18n="roomQuestionOnPhonesHint"></p>
+              <label class="toggle"><input type="checkbox" data-toggle="revealOnPhones" /><span data-i18n="roomRevealOnPhones"></span></label>
+              <label class="toggle"><input type="checkbox" data-toggle="leaderboardEach" /><span data-i18n="roomLeaderboardEach"></span></label>
+              <label class="toggle"><input type="checkbox" data-toggle="speedBonus" /><span data-i18n="roomSpeedBonus"></span></label>
+              <label class="toggle"><input type="checkbox" data-toggle="lateJoin" /><span data-i18n="roomLateJoin"></span></label>
+            </details>
+            <button type="submit" class="btn btn-primary btn-wide" id="room-create-submit" data-i18n="roomCreateSubmit"></button>
+            <p class="notice" id="room-create-status" role="status"></p>
+          </form>
+
+          <form class="room-form" id="room-join" role="tabpanel" aria-labelledby="room-tab-join" novalidate hidden>
+            <div class="field">
+              <label class="field-label" for="room-code" data-i18n="roomCode"></label>
+              <input class="text-input code-input" id="room-code" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="6" autocomplete="off" placeholder="000000" />
+            </div>
+            <div class="field">
+              <label class="field-label" for="room-join-name" data-i18n="roomName"></label>
+              <input class="text-input" id="room-join-name" type="text" maxlength="20" autocomplete="nickname" enterkeyhint="go" />
+            </div>
+            <button type="submit" class="btn btn-primary btn-wide" id="room-join-submit" data-i18n="roomJoinSubmit"></button>
+            <p class="notice" id="room-join-status" role="status"></p>
+          </form>
+        </div>
+      </section>
+
+      <!-- Birlikte oynama: oda (lobi, soru, sonuç, sıralama, final); içerik room.js'te kurulur -->
+      <section class="screen" id="room-screen" hidden>
+        <div class="card room" id="room-view" aria-live="polite"></div>
+        <p class="notice room-connection" id="room-connection" role="status"></p>
       </section>
 
       <!-- Soru -->
