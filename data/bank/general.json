@@ -2,8 +2,8 @@
   "topic": "general",
   "questions": [
     {
-      "id": "general:primary:001",
-      "level": "primary",
+      "id": "general:easy:001",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bir yılda kaç ay vardır?",
@@ -29,8 +29,8 @@
       }
     },
     {
-      "id": "general:primary:002",
-      "level": "primary",
+      "id": "general:easy:002",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Gökkuşağında kaç renk vardır?",
@@ -56,8 +56,8 @@
       }
     },
     {
-      "id": "general:primary:003",
-      "level": "primary",
+      "id": "general:easy:003",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Futbol takımında sahada kaç oyuncu bulunur?",
@@ -83,8 +83,8 @@
       }
     },
     {
-      "id": "general:primary:004",
-      "level": "primary",
+      "id": "general:easy:004",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Hangisi bir çalgı değildir?",
@@ -110,8 +110,8 @@
       }
     },
     {
-      "id": "general:primary:005",
-      "level": "primary",
+      "id": "general:easy:005",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Olimpiyat halkalarının sayısı kaçtır?",
@@ -137,8 +137,8 @@
       }
     },
     {
-      "id": "general:primary:006",
-      "level": "primary",
+      "id": "general:easy:006",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Kırmızı Yarımay’ın görevi nedir?",
@@ -164,8 +164,8 @@
       }
     },
     {
-      "id": "general:primary:007",
-      "level": "primary",
+      "id": "general:easy:007",
+      "difficulty": "easy",
       "type": "order",
       "q": {
         "tr": "Hayvanları küçükten büyüğe sırala.",
@@ -191,8 +191,8 @@
       }
     },
     {
-      "id": "general:primary:008",
-      "level": "primary",
+      "id": "general:easy:008",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Trafik ışığında hangi renk “dur” anlamına gelir?",
@@ -218,8 +218,8 @@
       }
     },
     {
-      "id": "general:middle:001",
-      "level": "middle",
+      "id": "general:easy:009",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Nobel Ödülleri hangi ülkede verilir (Barış Ödülü hariç)?",
@@ -245,8 +245,8 @@
       }
     },
     {
-      "id": "general:middle:002",
-      "level": "middle",
+      "id": "general:easy:010",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Türkiye’nin para birimi hangisidir?",
@@ -272,8 +272,8 @@
       }
     },
     {
-      "id": "general:middle:003",
-      "level": "middle",
+      "id": "general:easy:011",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "İnsan vücudundaki en büyük organ hangisidir?",
@@ -299,8 +299,8 @@
       }
     },
     {
-      "id": "general:middle:004",
-      "level": "middle",
+      "id": "general:easy:012",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Olimpiyat Oyunları ilk olarak hangi ülkede düzenlendi?",
@@ -326,8 +326,8 @@
       }
     },
     {
-      "id": "general:middle:005",
-      "level": "middle",
+      "id": "general:easy:013",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Dünya Sağlık Örgütü’nün kısaltması hangisidir?",
@@ -353,8 +353,8 @@
       }
     },
     {
-      "id": "general:middle:006",
-      "level": "middle",
+      "id": "general:easy:014",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Satrançta yalnızca çapraz hareket eden taş hangisidir?",
@@ -380,8 +380,8 @@
       }
     },
     {
-      "id": "general:middle:007",
-      "level": "middle",
+      "id": "general:easy:015",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Kağıt ilk olarak hangi ülkede icat edildi?",
@@ -407,8 +407,8 @@
       }
     },
     {
-      "id": "general:middle:008",
-      "level": "middle",
+      "id": "general:easy:016",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "İnternetteki web sitelerinin adreslerini IP adreslerine çeviren sisteme ne denir?",
@@ -434,8 +434,8 @@
       }
     },
     {
-      "id": "general:high:001",
-      "level": "high",
+      "id": "general:medium:001",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Birleşmiş Milletler’in genel merkezi hangi şehirdedir?",
@@ -461,8 +461,8 @@
       }
     },
     {
-      "id": "general:high:002",
-      "level": "high",
+      "id": "general:medium:002",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Enflasyon neyi ifade eder?",
@@ -488,8 +488,8 @@
       }
     },
     {
-      "id": "general:high:003",
-      "level": "high",
+      "id": "general:medium:003",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Kuvvetler ayrılığı ilkesinde hangi üç erk ayrılır?",
@@ -515,8 +515,8 @@
       }
     },
     {
-      "id": "general:high:004",
-      "level": "high",
+      "id": "general:medium:004",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Yenilenebilir enerji kaynağı hangisidir?",
@@ -542,8 +542,8 @@
       }
     },
     {
-      "id": "general:high:005",
-      "level": "high",
+      "id": "general:medium:005",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Hangi ülke hem Avrupa hem Asya’da toprağı olan ülkelerdendir?",
@@ -569,8 +569,8 @@
       }
     },
     {
-      "id": "general:high:006",
-      "level": "high",
+      "id": "general:medium:006",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Paralimpik Oyunları kimlerin katıldığı uluslararası spor organizasyonudur?",
@@ -596,8 +596,8 @@
       }
     },
     {
-      "id": "general:high:007",
-      "level": "high",
+      "id": "general:medium:007",
+      "difficulty": "medium",
       "type": "order",
       "q": {
         "tr": "Bu icatları ortaya çıkış sırasına göre sırala.",
@@ -623,8 +623,8 @@
       }
     },
     {
-      "id": "general:high:008",
-      "level": "high",
+      "id": "general:medium:008",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Anayasa Mahkemesi’nin temel görevi nedir?",
@@ -650,8 +650,8 @@
       }
     },
     {
-      "id": "general:university:001",
-      "level": "university",
+      "id": "general:hard:001",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "GSYH (Gayri Safi Yurt İçi Hasıla) neyi ölçer?",
@@ -677,8 +677,8 @@
       }
     },
     {
-      "id": "general:university:002",
-      "level": "university",
+      "id": "general:hard:002",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Merkez bankaları enflasyonu düşürmek için genellikle ne yapar?",
@@ -704,8 +704,8 @@
       }
     },
     {
-      "id": "general:university:003",
-      "level": "university",
+      "id": "general:hard:003",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Paris İklim Anlaşması’nın temel hedefi nedir?",
@@ -731,8 +731,8 @@
       }
     },
     {
-      "id": "general:university:004",
-      "level": "university",
+      "id": "general:hard:004",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Placebo etkisi nedir?",
@@ -758,8 +758,8 @@
       }
     },
     {
-      "id": "general:university:005",
-      "level": "university",
+      "id": "general:hard:005",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Korelasyon ile nedensellik arasındaki fark nedir?",
@@ -785,8 +785,8 @@
       }
     },
     {
-      "id": "general:university:006",
-      "level": "university",
+      "id": "general:hard:006",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Açık kaynak yazılımın temel özelliği nedir?",
@@ -812,8 +812,8 @@
       }
     },
     {
-      "id": "general:masters:001",
-      "level": "masters",
+      "id": "general:hard:007",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Mahkûm ikilemi oyun kuramında neyi gösterir?",
@@ -839,8 +839,8 @@
       }
     },
     {
-      "id": "general:masters:002",
-      "level": "masters",
+      "id": "general:hard:008",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Thomas Kuhn’un “paradigma değişimi” kavramı neyi açıklar?",
@@ -866,8 +866,8 @@
       }
     },
     {
-      "id": "general:masters:003",
-      "level": "masters",
+      "id": "general:hard:009",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Pareto verimliliği neyi ifade eder?",
@@ -893,8 +893,8 @@
       }
     },
     {
-      "id": "general:masters:004",
-      "level": "masters",
+      "id": "general:hard:010",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bilimsel bir kuramın “yanlışlanabilir” olması (Popper) ne demektir?",
@@ -920,8 +920,8 @@
       }
     },
     {
-      "id": "general:masters:005",
-      "level": "masters",
+      "id": "general:hard:011",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Ortak malların trajedisi (tragedy of the commons) neyi anlatır?",
@@ -947,8 +947,8 @@
       }
     },
     {
-      "id": "general:masters:006",
-      "level": "masters",
+      "id": "general:hard:012",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Doğrulama yanlılığı (confirmation bias) nedir?",

@@ -58,8 +58,8 @@ test('share texts are short and include the site', () => {
     'Bilgi Yarışması · Günün sorusu · 30 Eylül 2026\n✅ 🔥5\nquiz.miracdeprem.com',
   );
   assert.equal(
-    roundShareText({ lang: 'en', topic: 'geography', level: 'high', results: [true, false, true], score: 38 }),
-    'Quiz App · Geography · High School\n🟩🟥🟩 2/3 · 38 points\nquiz.miracdeprem.com',
+    roundShareText({ lang: 'en', topic: 'geography', difficulty: 'medium', results: [true, false, true], score: 38 }),
+    'Quiz App · Geography · Medium\n🟩🟥🟩 2/3 · 38 points\nquiz.miracdeprem.com',
   );
 });
 

@@ -2,8 +2,8 @@
   "topic": "git",
   "questions": [
     {
-      "id": "git:high:001",
-      "level": "high",
+      "id": "git:easy:001",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bir klasörü Git deposuna çeviren komut hangisidir?",
@@ -29,8 +29,8 @@
       }
     },
     {
-      "id": "git:high:002",
-      "level": "high",
+      "id": "git:easy:002",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Değişiklikleri bir sonraki commit’e eklemek (hazırlamak) için hangi komut kullanılır?",
@@ -56,8 +56,8 @@
       }
     },
     {
-      "id": "git:high:003",
-      "level": "high",
+      "id": "git:easy:003",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Hazırlanan değişiklikleri bir mesajla kaydeden komut hangisidir?",
@@ -83,8 +83,8 @@
       }
     },
     {
-      "id": "git:high:004",
-      "level": "high",
+      "id": "git:easy:004",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Yerel commit’leri GitHub gibi uzak depoya gönderen komut hangisidir?",
@@ -110,8 +110,8 @@
       }
     },
     {
-      "id": "git:high:005",
-      "level": "high",
+      "id": "git:easy:005",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Hangi dosyaların değiştiğini ve hazırlandığını gösteren komut hangisidir?",
@@ -137,8 +137,8 @@
       }
     },
     {
-      "id": "git:high:006",
-      "level": "high",
+      "id": "git:easy:006",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Git’in izlemesini istemediğiniz dosyalar hangi dosyaya yazılır?",
@@ -164,8 +164,8 @@
       }
     },
     {
-      "id": "git:high:007",
-      "level": "high",
+      "id": "git:easy:007",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Uzak bir depoyu bilgisayara ilk kez indiren komut hangisidir?",
@@ -191,8 +191,8 @@
       }
     },
     {
-      "id": "git:high:008",
-      "level": "high",
+      "id": "git:easy:008",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Commit geçmişini listeleyen komut hangisidir?",
@@ -218,8 +218,8 @@
       }
     },
     {
-      "id": "git:university:001",
-      "level": "university",
+      "id": "git:medium:001",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Ana koddan bağımsız çalışmak için ayrı bir geliştirme hattı açmaya ne denir?",
@@ -245,8 +245,8 @@
       }
     },
     {
-      "id": "git:university:002",
-      "level": "university",
+      "id": "git:medium:002",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Aynı satır iki dalda farklı değiştirilip birleştirilmeye çalışılırsa ne olur?",
@@ -272,8 +272,8 @@
       }
     },
     {
-      "id": "git:university:003",
-      "level": "university",
+      "id": "git:medium:003",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Yarım kalan değişiklikleri commit’lemeden geçici olarak saklayan komut hangisidir?",
@@ -299,8 +299,8 @@
       }
     },
     {
-      "id": "git:university:004",
-      "level": "university",
+      "id": "git:medium:004",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Yayınlanmış bir commit’i geçmişi silmeden geri almak için hangisi kullanılır?",
@@ -326,8 +326,8 @@
       }
     },
     {
-      "id": "git:university:005",
-      "level": "university",
+      "id": "git:medium:005",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "GitHub’da bir dalın ana dala birleştirilmesi için açılan istek hangisidir?",
@@ -353,8 +353,8 @@
       }
     },
     {
-      "id": "git:university:006",
-      "level": "university",
+      "id": "git:medium:006",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Belirli bir sürümü (ör. v1.0.0) işaretlemek için ne kullanılır?",
@@ -380,8 +380,8 @@
       }
     },
     {
-      "id": "git:university:007",
-      "level": "university",
+      "id": "git:medium:007",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Uzak depodaki değişiklikleri birleştirmeden sadece indiren komut hangisidir?",
@@ -407,8 +407,8 @@
       }
     },
     {
-      "id": "git:university:008",
-      "level": "university",
+      "id": "git:medium:008",
+      "difficulty": "medium",
       "type": "order",
       "q": {
         "tr": "Tipik bir Git iş akışını sırala.",
@@ -434,8 +434,8 @@
       }
     },
     {
-      "id": "git:masters:001",
-      "level": "masters",
+      "id": "git:hard:001",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "rebase ile merge arasındaki temel fark nedir?",
@@ -461,8 +461,8 @@
       }
     },
     {
-      "id": "git:masters:002",
-      "level": "masters",
+      "id": "git:hard:002",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Hatayı ilk getiren commit’i ikili aramayla bulan Git komutu hangisidir?",
@@ -488,8 +488,8 @@
       }
     },
     {
-      "id": "git:masters:003",
-      "level": "masters",
+      "id": "git:hard:003",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "reset --hard ile kaybolmuş gibi görünen commit’leri bulmaya yarayan kayıt hangisidir?",
@@ -515,8 +515,8 @@
       }
     },
     {
-      "id": "git:masters:004",
-      "level": "masters",
+      "id": "git:hard:004",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Git bir dosyanın içeriğini hangi nesne türüyle saklar?",
@@ -542,8 +542,8 @@
       }
     },
     {
-      "id": "git:masters:005",
-      "level": "masters",
+      "id": "git:hard:005",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Commit’lerin gerçekten kimden geldiğini doğrulamak için ne kullanılır?",
@@ -569,8 +569,8 @@
       }
     },
     {
-      "id": "git:masters:006",
-      "level": "masters",
+      "id": "git:hard:006",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Yanlışlıkla commit’lenmiş bir API anahtarı için doğru ilk adım nedir?",
@@ -596,8 +596,8 @@
       }
     },
     {
-      "id": "git:masters:007",
-      "level": "masters",
+      "id": "git:hard:007",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Büyük ikili dosyaları (video, model) Git’te verimli saklamak için ne kullanılır?",
@@ -623,8 +623,8 @@
       }
     },
     {
-      "id": "git:masters:008",
-      "level": "masters",
+      "id": "git:hard:008",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bir depoyu başka bir deponun içine bağımlı olarak eklemenin yolu hangisidir?",
@@ -650,8 +650,8 @@
       }
     },
     {
-      "id": "git:high:009",
-      "level": "high",
+      "id": "git:easy:009",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Hazırlanmamış değişiklikleri satır satır gösteren komut hangisidir?",
@@ -677,8 +677,8 @@
       }
     },
     {
-      "id": "git:high:010",
-      "level": "high",
+      "id": "git:easy:010",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Uzaktaki değişiklikleri indirip mevcut dala birleştiren komut hangisidir?",
@@ -704,8 +704,8 @@
       }
     },
     {
-      "id": "git:high:011",
-      "level": "high",
+      "id": "git:easy:011",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Git ile GitHub arasındaki fark nedir?",
@@ -731,8 +731,8 @@
       }
     },
     {
-      "id": "git:high:012",
-      "level": "high",
+      "id": "git:easy:012",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bir commit mesajı nasıl olmalıdır?",
@@ -758,8 +758,8 @@
       }
     },
     {
-      "id": "git:high:013",
-      "level": "high",
+      "id": "git:easy:013",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Yeni bir dal oluşturup ona geçen komut hangisidir?",
@@ -785,8 +785,8 @@
       }
     },
     {
-      "id": "git:high:014",
-      "level": "high",
+      "id": "git:easy:014",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bir dalı mevcut dala birleştiren komut hangisidir?",
@@ -812,8 +812,8 @@
       }
     },
     {
-      "id": "git:high:015",
-      "level": "high",
+      "id": "git:easy:015",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Hazırlık alanına alınmış bir dosyayı geri çıkarmak için hangi komut kullanılır?",
@@ -839,8 +839,8 @@
       }
     },
     {
-      "id": "git:high:016",
-      "level": "high",
+      "id": "git:easy:016",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Depodaki uzak bağlantıları listeleyen komut hangisidir?",
@@ -866,8 +866,8 @@
       }
     },
     {
-      "id": "git:high:017",
-      "level": "high",
+      "id": "git:easy:017",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": ".env dosyası neden .gitignore’a eklenir?",
@@ -893,8 +893,8 @@
       }
     },
     {
-      "id": "git:high:018",
-      "level": "high",
+      "id": "git:easy:018",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bir dosyanın hangi satırını kimin değiştirdiğini gösteren komut hangisidir?",
@@ -920,8 +920,8 @@
       }
     },
     {
-      "id": "git:high:019",
-      "level": "high",
+      "id": "git:easy:019",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Son commit’e küçük bir düzeltme eklemek (henüz push edilmemişse) için ne kullanılır?",
@@ -947,8 +947,8 @@
       }
     },
     {
-      "id": "git:high:020",
-      "level": "high",
+      "id": "git:easy:020",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Çalışma alanındaki bir dosyanın değişikliklerini son commit’teki hâline döndüren komut hangisidir?",
@@ -974,8 +974,8 @@
       }
     },
     {
-      "id": "git:university:009",
-      "level": "university",
+      "id": "git:medium:009",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Fork ile clone arasındaki fark nedir?",
@@ -1001,8 +1001,8 @@
       }
     },
     {
-      "id": "git:university:010",
-      "level": "university",
+      "id": "git:medium:010",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "git reset --soft HEAD~1 ne yapar?",
@@ -1028,8 +1028,8 @@
       }
     },
     {
-      "id": "git:university:011",
-      "level": "university",
+      "id": "git:medium:011",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Fast-forward birleştirme ne zaman olur?",
@@ -1055,8 +1055,8 @@
       }
     },
     {
-      "id": "git:university:012",
-      "level": "university",
+      "id": "git:medium:012",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Sürekli entegrasyonda (CI) her push’ta genellikle ne çalışır?",
@@ -1082,8 +1082,8 @@
       }
     },
     {
-      "id": "git:university:013",
-      "level": "university",
+      "id": "git:medium:013",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Anlamlı sürümlemede (semver) 2.4.1 → 3.0.0 değişikliği neyi anlatır?",
@@ -1109,8 +1109,8 @@
       }
     },
     {
-      "id": "git:university:014",
-      "level": "university",
+      "id": "git:medium:014",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Conventional Commits biçiminde yeni bir özellik commit’i nasıl başlar?",
@@ -1136,8 +1136,8 @@
       }
     },
     {
-      "id": "git:university:015",
-      "level": "university",
+      "id": "git:medium:015",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Bir dalı birleştirdikten sonra yerelde silmek için hangi komut kullanılır?",
@@ -1163,8 +1163,8 @@
       }
     },
     {
-      "id": "git:university:016",
-      "level": "university",
+      "id": "git:medium:016",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "cherry-pick ne yapar?",
@@ -1190,8 +1190,8 @@
       }
     },
     {
-      "id": "git:university:017",
-      "level": "university",
+      "id": "git:medium:017",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "HEAD neyi gösterir?",
@@ -1217,8 +1217,8 @@
       }
     },
     {
-      "id": "git:university:018",
-      "level": "university",
+      "id": "git:medium:018",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Kod incelemesinde (code review) asıl amaç nedir?",
@@ -1244,8 +1244,8 @@
       }
     },
     {
-      "id": "git:masters:009",
-      "level": "masters",
+      "id": "git:hard:009",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Git bir commit’i nasıl tanımlar?",
@@ -1271,8 +1271,8 @@
       }
     },
     {
-      "id": "git:masters:010",
-      "level": "masters",
+      "id": "git:hard:010",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "git worktree ne sağlar?",
@@ -1298,8 +1298,8 @@
       }
     },
     {
-      "id": "git:masters:011",
-      "level": "masters",
+      "id": "git:hard:011",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Geçmişten gizli bir dosyayı tamamen silmek için hangi araç önerilir?",
@@ -1325,8 +1325,8 @@
       }
     },
     {
-      "id": "git:masters:012",
-      "level": "masters",
+      "id": "git:hard:012",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Trunk tabanlı geliştirme (trunk-based development) neyi önerir?",
@@ -1352,8 +1352,8 @@
       }
     },
     {
-      "id": "git:masters:013",
-      "level": "masters",
+      "id": "git:hard:013",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Monorepo yaklaşımının bir avantajı nedir?",
@@ -1379,8 +1379,8 @@
       }
     },
     {
-      "id": "git:masters:014",
-      "level": "masters",
+      "id": "git:hard:014",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Git hook’ları ne işe yarar?",
@@ -1406,8 +1406,8 @@
       }
     },
     {
-      "id": "git:masters:015",
-      "level": "masters",
+      "id": "git:hard:015",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Squash merge ne yapar?",
@@ -1433,8 +1433,8 @@
       }
     },
     {
-      "id": "git:masters:016",
-      "level": "masters",
+      "id": "git:hard:016",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Git’in yerel geçmişe sahip olması neden “dağıtık” sürüm kontrolü denmesine yol açar?",
@@ -1460,8 +1460,8 @@
       }
     },
     {
-      "id": "git:masters:017",
-      "level": "masters",
+      "id": "git:hard:017",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Dependabot gibi araçlar depoda ne yapar?",

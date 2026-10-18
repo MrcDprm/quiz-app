@@ -2,8 +2,8 @@
   "topic": "csharp",
   "questions": [
     {
-      "id": "csharp:high:001",
-      "level": "high",
+      "id": "csharp:easy:001",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "C#’ta ekrana yazı yazdırıp alt satıra geçen komut hangisidir?",
@@ -29,8 +29,8 @@
       }
     },
     {
-      "id": "csharp:high:002",
-      "level": "high",
+      "id": "csharp:easy:002",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "C#’ta tam sayı tutan temel veri tipi hangisidir?",
@@ -56,8 +56,8 @@
       }
     },
     {
-      "id": "csharp:high:003",
-      "level": "high",
+      "id": "csharp:easy:003",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -84,8 +84,8 @@
       }
     },
     {
-      "id": "csharp:high:004",
-      "level": "high",
+      "id": "csharp:easy:004",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -112,8 +112,8 @@
       }
     },
     {
-      "id": "csharp:high:005",
-      "level": "high",
+      "id": "csharp:easy:005",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Windows Forms’ta bir düğmeye tıklanınca çalışan metot hangi olaya bağlanır?",
@@ -139,8 +139,8 @@
       }
     },
     {
-      "id": "csharp:high:006",
-      "level": "high",
+      "id": "csharp:easy:006",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -167,8 +167,8 @@
       }
     },
     {
-      "id": "csharp:high:007",
-      "level": "high",
+      "id": "csharp:easy:007",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Metni tam sayıya güvenle çeviren ve başarısız olursa hata fırlatmayan metot hangisidir?",
@@ -194,8 +194,8 @@
       }
     },
     {
-      "id": "csharp:high:008",
-      "level": "high",
+      "id": "csharp:easy:008",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -222,8 +222,8 @@
       }
     },
     {
-      "id": "csharp:university:001",
-      "level": "university",
+      "id": "csharp:medium:001",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "C#’ta class ile struct arasındaki temel fark nedir?",
@@ -249,8 +249,8 @@
       }
     },
     {
-      "id": "csharp:university:002",
-      "level": "university",
+      "id": "csharp:medium:002",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Bir listeyi koşula göre süzmek için LINQ’da hangi metot kullanılır?",
@@ -276,8 +276,8 @@
       }
     },
     {
-      "id": "csharp:university:003",
-      "level": "university",
+      "id": "csharp:medium:003",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -304,8 +304,8 @@
       }
     },
     {
-      "id": "csharp:university:004",
-      "level": "university",
+      "id": "csharp:medium:004",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Bir sınıfın uygulaması gereken metotları tanımlayan ama kod içermeyen yapı hangisidir?",
@@ -331,8 +331,8 @@
       }
     },
     {
-      "id": "csharp:university:005",
-      "level": "university",
+      "id": "csharp:medium:005",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "using bloğunun (using var ...) asıl amacı nedir?",
@@ -358,8 +358,8 @@
       }
     },
     {
-      "id": "csharp:university:006",
-      "level": "university",
+      "id": "csharp:medium:006",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -386,8 +386,8 @@
       }
     },
     {
-      "id": "csharp:university:007",
-      "level": "university",
+      "id": "csharp:medium:007",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Bir metodun işlemi beklerken iş parçacığını bloke etmemesi için hangi anahtar kelimeler kullanılır?",
@@ -413,8 +413,8 @@
       }
     },
     {
-      "id": "csharp:university:008",
-      "level": "university",
+      "id": "csharp:medium:008",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "C#’ta null olabilecek bir int nasıl tanımlanır?",
@@ -440,8 +440,8 @@
       }
     },
     {
-      "id": "csharp:masters:001",
-      "level": "masters",
+      "id": "csharp:hard:001",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "C#’ta Span<T>’nin temel faydası nedir?",
@@ -467,8 +467,8 @@
       }
     },
     {
-      "id": "csharp:masters:002",
-      "level": "masters",
+      "id": "csharp:hard:002",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": ".NET’te çöp toplayıcı (GC) nesneleri neden kuşaklara (generation 0, 1, 2) ayırır?",
@@ -494,8 +494,8 @@
       }
     },
     {
-      "id": "csharp:masters:003",
-      "level": "masters",
+      "id": "csharp:hard:003",
+      "difficulty": "hard",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -522,8 +522,8 @@
       }
     },
     {
-      "id": "csharp:masters:004",
-      "level": "masters",
+      "id": "csharp:hard:004",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "LINQ sorgularının \"ertelenmiş çalıştırma\" (deferred execution) özelliği ne demektir?",
@@ -549,8 +549,8 @@
       }
     },
     {
-      "id": "csharp:masters:005",
-      "level": "masters",
+      "id": "csharp:hard:005",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "async metotlarda ConfigureAwait(false) ne işe yarar?",
@@ -576,8 +576,8 @@
       }
     },
     {
-      "id": "csharp:masters:006",
-      "level": "masters",
+      "id": "csharp:hard:006",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "record tipi class’tan hangi açıdan farklıdır?",
@@ -603,8 +603,8 @@
       }
     },
     {
-      "id": "csharp:masters:007",
-      "level": "masters",
+      "id": "csharp:hard:007",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Birden fazla iş parçacığının aynı sayacı güvenle artırması için en uygun yol hangisidir?",
@@ -630,8 +630,8 @@
       }
     },
     {
-      "id": "csharp:masters:008",
-      "level": "masters",
+      "id": "csharp:hard:008",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "C#’ta bir koleksiyonu tembel (lazy) olarak eleman eleman üretmek için ne kullanılır?",
@@ -657,8 +657,8 @@
       }
     },
     {
-      "id": "csharp:high:009",
-      "level": "high",
+      "id": "csharp:easy:009",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -685,8 +685,8 @@
       }
     },
     {
-      "id": "csharp:high:010",
-      "level": "high",
+      "id": "csharp:easy:010",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -713,8 +713,8 @@
       }
     },
     {
-      "id": "csharp:high:011",
-      "level": "high",
+      "id": "csharp:easy:011",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -741,8 +741,8 @@
       }
     },
     {
-      "id": "csharp:high:012",
-      "level": "high",
+      "id": "csharp:easy:012",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -769,8 +769,8 @@
       }
     },
     {
-      "id": "csharp:high:013",
-      "level": "high",
+      "id": "csharp:easy:013",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -797,8 +797,8 @@
       }
     },
     {
-      "id": "csharp:high:014",
-      "level": "high",
+      "id": "csharp:easy:014",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -825,8 +825,8 @@
       }
     },
     {
-      "id": "csharp:high:015",
-      "level": "high",
+      "id": "csharp:easy:015",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "C#’ta tek satırlık yorum hangi işaretle başlar?",
@@ -852,8 +852,8 @@
       }
     },
     {
-      "id": "csharp:high:016",
-      "level": "high",
+      "id": "csharp:easy:016",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -880,8 +880,8 @@
       }
     },
     {
-      "id": "csharp:high:017",
-      "level": "high",
+      "id": "csharp:easy:017",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Windows Forms’ta bir TextBox’taki metne hangi özellikle erişilir?",
@@ -907,8 +907,8 @@
       }
     },
     {
-      "id": "csharp:high:018",
-      "level": "high",
+      "id": "csharp:easy:018",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -935,8 +935,8 @@
       }
     },
     {
-      "id": "csharp:high:019",
-      "level": "high",
+      "id": "csharp:easy:019",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "C#’ta bir metodun değer döndürmediğini hangi anahtar kelime belirtir?",
@@ -962,8 +962,8 @@
       }
     },
     {
-      "id": "csharp:high:020",
-      "level": "high",
+      "id": "csharp:easy:020",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -990,8 +990,8 @@
       }
     },
     {
-      "id": "csharp:university:009",
-      "level": "university",
+      "id": "csharp:medium:009",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -1018,8 +1018,8 @@
       }
     },
     {
-      "id": "csharp:university:010",
-      "level": "university",
+      "id": "csharp:medium:010",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -1046,8 +1046,8 @@
       }
     },
     {
-      "id": "csharp:university:011",
-      "level": "university",
+      "id": "csharp:medium:011",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -1074,8 +1074,8 @@
       }
     },
     {
-      "id": "csharp:university:012",
-      "level": "university",
+      "id": "csharp:medium:012",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -1102,8 +1102,8 @@
       }
     },
     {
-      "id": "csharp:university:013",
-      "level": "university",
+      "id": "csharp:medium:013",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -1130,8 +1130,8 @@
       }
     },
     {
-      "id": "csharp:university:014",
-      "level": "university",
+      "id": "csharp:medium:014",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "C#’ta bir özelliğin (property) dışarıdan okunup içeriden yazılabilmesi nasıl sağlanır?",
@@ -1157,8 +1157,8 @@
       }
     },
     {
-      "id": "csharp:university:015",
-      "level": "university",
+      "id": "csharp:medium:015",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Bir sınıfın aynı adlı ama farklı parametreli metotlarına ne denir?",
@@ -1184,8 +1184,8 @@
       }
     },
     {
-      "id": "csharp:university:016",
-      "level": "university",
+      "id": "csharp:medium:016",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "abstract (soyut) bir sınıf için hangisi doğrudur?",
@@ -1211,8 +1211,8 @@
       }
     },
     {
-      "id": "csharp:university:017",
-      "level": "university",
+      "id": "csharp:medium:017",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -1239,8 +1239,8 @@
       }
     },
     {
-      "id": "csharp:university:018",
-      "level": "university",
+      "id": "csharp:medium:018",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Entity Framework nedir?",
@@ -1266,8 +1266,8 @@
       }
     },
     {
-      "id": "csharp:university:019",
-      "level": "university",
+      "id": "csharp:medium:019",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -1294,8 +1294,8 @@
       }
     },
     {
-      "id": "csharp:masters:009",
-      "level": "masters",
+      "id": "csharp:hard:009",
+      "difficulty": "hard",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -1322,8 +1322,8 @@
       }
     },
     {
-      "id": "csharp:masters:010",
-      "level": "masters",
+      "id": "csharp:hard:010",
+      "difficulty": "hard",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -1350,8 +1350,8 @@
       }
     },
     {
-      "id": "csharp:masters:011",
-      "level": "masters",
+      "id": "csharp:hard:011",
+      "difficulty": "hard",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -1378,8 +1378,8 @@
       }
     },
     {
-      "id": "csharp:masters:012",
-      "level": "masters",
+      "id": "csharp:hard:012",
+      "difficulty": "hard",
       "type": "code",
       "q": {
         "tr": "Bu kod ekrana ne yazdırır?",
@@ -1406,8 +1406,8 @@
       }
     },
     {
-      "id": "csharp:masters:013",
-      "level": "masters",
+      "id": "csharp:hard:013",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Task.WhenAll ne yapar?",
@@ -1433,8 +1433,8 @@
       }
     },
     {
-      "id": "csharp:masters:014",
-      "level": "masters",
+      "id": "csharp:hard:014",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "C#’ta Nullable Reference Types özelliği açıkken string? neyi ifade eder?",
@@ -1460,8 +1460,8 @@
       }
     },
     {
-      "id": "csharp:masters:015",
-      "level": "masters",
+      "id": "csharp:hard:015",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "C#’ta CancellationToken ne için kullanılır?",
@@ -1487,8 +1487,8 @@
       }
     },
     {
-      "id": "csharp:masters:016",
-      "level": "masters",
+      "id": "csharp:hard:016",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bağımlılık enjeksiyonunda (DI) “scoped” yaşam süresi ASP.NET Core’da neyi ifade eder?",
@@ -1514,8 +1514,8 @@
       }
     },
     {
-      "id": "csharp:masters:017",
-      "level": "masters",
+      "id": "csharp:hard:017",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "C#’ta ref struct (ör. Span<T>) neden yığın (heap) üzerine taşınamaz?",
@@ -1541,8 +1541,8 @@
       }
     },
     {
-      "id": "csharp:masters:018",
-      "level": "masters",
+      "id": "csharp:hard:018",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "IAsyncEnumerable<T> ile await foreach ne sağlar?",

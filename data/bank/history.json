@@ -2,8 +2,8 @@
   "topic": "history",
   "questions": [
     {
-      "id": "history:primary:001",
-      "level": "primary",
+      "id": "history:easy:001",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Türkiye Cumhuriyeti’nin kurucusu kimdir?",
@@ -29,8 +29,8 @@
       }
     },
     {
-      "id": "history:primary:002",
-      "level": "primary",
+      "id": "history:easy:002",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Türkiye Büyük Millet Meclisi hangi şehirde açıldı?",
@@ -56,8 +56,8 @@
       }
     },
     {
-      "id": "history:primary:003",
-      "level": "primary",
+      "id": "history:easy:003",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "İstanbul’u 1453’te fetheden padişah kimdir?",
@@ -83,8 +83,8 @@
       }
     },
     {
-      "id": "history:primary:004",
-      "level": "primary",
+      "id": "history:easy:004",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Piramitleriyle ünlü antik uygarlık hangisidir?",
@@ -110,8 +110,8 @@
       }
     },
     {
-      "id": "history:primary:005",
-      "level": "primary",
+      "id": "history:easy:005",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Yazıyı ilk kullanan uygarlıklardan biri olan Sümerler hangi bölgede yaşadı?",
@@ -137,8 +137,8 @@
       }
     },
     {
-      "id": "history:primary:006",
-      "level": "primary",
+      "id": "history:easy:006",
+      "difficulty": "easy",
       "type": "order",
       "q": {
         "tr": "Bu olayları eskiden yeniye sırala.",
@@ -164,8 +164,8 @@
       }
     },
     {
-      "id": "history:primary:007",
-      "level": "primary",
+      "id": "history:easy:007",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Ay’a ayak basan ilk insan kimdir?",
@@ -191,8 +191,8 @@
       }
     },
     {
-      "id": "history:primary:008",
-      "level": "primary",
+      "id": "history:easy:008",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Çanakkale Savaşı hangi savaşın bir parçasıdır?",
@@ -218,8 +218,8 @@
       }
     },
     {
-      "id": "history:middle:001",
-      "level": "middle",
+      "id": "history:easy:009",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Kurtuluş Savaşı’nı başlatan Mustafa Kemal Samsun’a hangi tarihte çıktı?",
@@ -245,8 +245,8 @@
       }
     },
     {
-      "id": "history:middle:002",
-      "level": "middle",
+      "id": "history:easy:010",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Osmanlı Devleti hangi beylik olarak kuruldu?",
@@ -272,8 +272,8 @@
       }
     },
     {
-      "id": "history:middle:003",
-      "level": "middle",
+      "id": "history:easy:011",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Malazgirt Savaşı (1071) sonucunda hangi bölgenin kapıları Türklere açıldı?",
@@ -299,8 +299,8 @@
       }
     },
     {
-      "id": "history:middle:004",
-      "level": "middle",
+      "id": "history:easy:012",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Matbaayı Avrupa’da yaygınlaştıran kişi kimdir?",
@@ -326,8 +326,8 @@
       }
     },
     {
-      "id": "history:middle:005",
-      "level": "middle",
+      "id": "history:easy:013",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Kristof Kolomb’un 1492’deki yolculuğu sonucunda hangi kıta Avrupalılarca tanındı?",
@@ -353,8 +353,8 @@
       }
     },
     {
-      "id": "history:middle:006",
-      "level": "middle",
+      "id": "history:easy:014",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Lozan Antlaşması’nın önemi nedir?",
@@ -380,8 +380,8 @@
       }
     },
     {
-      "id": "history:middle:007",
-      "level": "middle",
+      "id": "history:easy:015",
+      "difficulty": "easy",
       "type": "order",
       "q": {
         "tr": "Kurtuluş Savaşı dönemindeki bu olayları sırala.",
@@ -407,8 +407,8 @@
       }
     },
     {
-      "id": "history:middle:008",
-      "level": "middle",
+      "id": "history:easy:016",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Roma İmparatorluğu’nun ikiye ayrılmasından sonra doğu yarısına ne ad verilir?",
@@ -434,8 +434,8 @@
       }
     },
     {
-      "id": "history:high:001",
-      "level": "high",
+      "id": "history:medium:001",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Fransız İhtilali’nin (1789) yaydığı düşünceler arasında hangisi öne çıkar?",
@@ -461,8 +461,8 @@
       }
     },
     {
-      "id": "history:high:002",
-      "level": "high",
+      "id": "history:medium:002",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Sanayi Devrimi ilk olarak hangi ülkede başladı?",
@@ -488,8 +488,8 @@
       }
     },
     {
-      "id": "history:high:003",
-      "level": "high",
+      "id": "history:medium:003",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Tanzimat Fermanı (1839) Osmanlı’da neyi amaçlıyordu?",
@@ -515,8 +515,8 @@
       }
     },
     {
-      "id": "history:high:004",
-      "level": "high",
+      "id": "history:medium:004",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "İkinci Dünya Savaşı’ndan sonra dünya barışını korumak için hangi örgüt kuruldu?",
@@ -542,8 +542,8 @@
       }
     },
     {
-      "id": "history:high:005",
-      "level": "high",
+      "id": "history:medium:005",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Soğuk Savaş hangi iki güç arasındaki rekabettir?",
@@ -569,8 +569,8 @@
       }
     },
     {
-      "id": "history:high:006",
-      "level": "high",
+      "id": "history:medium:006",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Berlin Duvarı’nın yıkılması neyin sembolü oldu?",
@@ -596,8 +596,8 @@
       }
     },
     {
-      "id": "history:high:007",
-      "level": "high",
+      "id": "history:medium:007",
+      "difficulty": "medium",
       "type": "order",
       "q": {
         "tr": "Bu çağları eskiden yeniye sırala.",
@@ -623,8 +623,8 @@
       }
     },
     {
-      "id": "history:high:008",
-      "level": "high",
+      "id": "history:medium:008",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Harf İnkılabı ile Türkiye’de hangi alfabe kabul edildi?",
@@ -650,8 +650,8 @@
       }
     },
     {
-      "id": "history:university:001",
-      "level": "university",
+      "id": "history:hard:001",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Westfalya Barışı (1648) modern uluslararası sistemde neyin temelini attı?",
@@ -677,8 +677,8 @@
       }
     },
     {
-      "id": "history:university:002",
-      "level": "university",
+      "id": "history:hard:002",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Magna Carta (1215) neyi sınırlandırmasıyla bilinir?",
@@ -704,8 +704,8 @@
       }
     },
     {
-      "id": "history:university:003",
-      "level": "university",
+      "id": "history:hard:003",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Coğrafi Keşiflerin Osmanlı ekonomisine etkisi ne oldu?",
@@ -731,8 +731,8 @@
       }
     },
     {
-      "id": "history:university:004",
-      "level": "university",
+      "id": "history:hard:004",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Rönesans hangi şehirlerde başlayan bir kültür hareketidir?",
@@ -758,8 +758,8 @@
       }
     },
     {
-      "id": "history:university:005",
-      "level": "university",
+      "id": "history:hard:005",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Osmanlı’da 1876’da ilan edilen ilk anayasa hangisidir?",
@@ -785,8 +785,8 @@
       }
     },
     {
-      "id": "history:university:006",
-      "level": "university",
+      "id": "history:hard:006",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Marshall Planı’nın amacı neydi?",
@@ -812,8 +812,8 @@
       }
     },
     {
-      "id": "history:university:007",
-      "level": "university",
+      "id": "history:hard:007",
+      "difficulty": "hard",
       "type": "order",
       "q": {
         "tr": "Bu belgeleri eskiden yeniye sırala.",
@@ -839,8 +839,8 @@
       }
     },
     {
-      "id": "history:university:008",
-      "level": "university",
+      "id": "history:hard:008",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Osmanlı’da tımar sisteminin temel işlevi neydi?",
@@ -866,8 +866,8 @@
       }
     },
     {
-      "id": "history:masters:001",
-      "level": "masters",
+      "id": "history:hard:009",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Tarih yazımında “uzun süre” (longue durée) yaklaşımı hangi okulla ilişkilidir?",
@@ -893,8 +893,8 @@
       }
     },
     {
-      "id": "history:masters:002",
-      "level": "masters",
+      "id": "history:hard:010",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "“Birincil kaynak” aşağıdakilerden hangisidir?",
@@ -920,8 +920,8 @@
       }
     },
     {
-      "id": "history:masters:003",
-      "level": "masters",
+      "id": "history:hard:011",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Benedict Anderson ulusları nasıl tanımlar?",
@@ -947,8 +947,8 @@
       }
     },
     {
-      "id": "history:masters:004",
-      "level": "masters",
+      "id": "history:hard:012",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Osmanlı’da 1838 Balta Limanı Antlaşması’nın ekonomik sonucu neydi?",
@@ -974,8 +974,8 @@
       }
     },
     {
-      "id": "history:masters:005",
-      "level": "masters",
+      "id": "history:hard:013",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Edward Said’in “Oryantalizm” eseri neyi eleştirir?",
@@ -1001,8 +1001,8 @@
       }
     },
     {
-      "id": "history:masters:006",
-      "level": "masters",
+      "id": "history:hard:014",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Tarihte “karşı-olgusal” (counterfactual) düşünme nedir?",
@@ -1028,8 +1028,8 @@
       }
     },
     {
-      "id": "history:masters:007",
-      "level": "masters",
+      "id": "history:hard:015",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Düyun-u Umumiye İdaresi (1881) neyi yönetiyordu?",
@@ -1055,8 +1055,8 @@
       }
     },
     {
-      "id": "history:masters:008",
-      "level": "masters",
+      "id": "history:hard:016",
+      "difficulty": "hard",
       "type": "order",
       "q": {
         "tr": "Bu imparatorlukları kuruluş sırasına göre sırala.",

@@ -3,7 +3,7 @@
 **English** | [Türkçe](README.tr.md)
 
 A quiz platform for testing yourself now and then:
-- Questions that match your school level, from primary school to a master's degree.
+- Questions by category, in easy, medium and hard.
 - A software track.
 - A daily question that is the same for everyone.
 - Thousands of questions generated from real data.
@@ -16,12 +16,9 @@ Answers never reach the browser before you answer, so the quiz cannot be cheated
 
 ## Features
 
-- **Five levels for every area:** Primary School, Middle School, High School, University and Master's.
-  - **General subjects:** Maths, Science, History, Geography, Literature and Art, General Knowledge, or all of them mixed.
-  - **Software:** topics open up level by level.
-    - Primary school: Coding Basics.
-    - Middle school adds Algorithms, HTML and CSS, and Python.
-    - High school (including vocational high schools) adds JavaScript, SQL, Git, Web Security and C#.
+- **Categories and three difficulties:** pick a category card, then Easy, Medium or Hard.
+  - **General:** History, Geography, Science, Maths, Literature and Art, General Knowledge, or all of them mixed.
+  - **Software:** Coding Basics, Algorithms, HTML and CSS, Python, JavaScript, SQL, Git, Web Security and C#, or all of them mixed.
 - **Questions from two sources:**
   - **A hand-written bank of 796 questions** in Turkish and English, each with a short explanation. Every "what does this code print?" question was checked by actually running the code with Python, Node.js or .NET.
   - **Generated questions from real data.** Templates build new questions from people (Wikidata), 129 countries, famous works and chemical elements. Maths questions get fresh numbers every time.
@@ -34,12 +31,12 @@ Answers never reach the browser before you answer, so the quiz cannot be cheated
   - A timer and a speed bonus.
   - Two jokers: 50:50 and +10 seconds.
   - The correct answer and an explanation after every question, and a full review at the end.
-- **An address for every topic and level:** for example [/matematik/ortaokul](https://quiz.miracdeprem.com/matematik/ortaokul) or [/python/lise](https://quiz.miracdeprem.com/python/lise) opens the quiz with that choice, in Turkish or English (`?lang=en`).
+- **An address for every category and difficulty:** for example [/matematik/kolay](https://quiz.miracdeprem.com/matematik/kolay) or [/python/zor](https://quiz.miracdeprem.com/python/zor) opens the quiz with that choice, in Turkish or English (`?lang=en`). Addresses of the first version, which used school levels, redirect to the matching difficulty.
 - **No repeats:** questions you have already seen in a topic are not asked again until the pool runs out.
 - **Daily question:** the same question for everyone, one try a day. The result can be shared to WhatsApp, X, LinkedIn, Telegram, Facebook or Instagram, or simply copied.
 - **Progress, all stored in your own browser:**
   - Daily streak.
-  - Accuracy statistics and the best score per topic and level.
+  - Accuracy statistics and the best score per category and difficulty, shown on the category cards.
   - 11 badges.
   - A **"My mistakes"** round that repeats the questions you got wrong until you get them right.
 - **Turkish and English**, and a dark and a light theme matching [my portfolio](https://www.miracdeprem.com).
@@ -80,7 +77,7 @@ The whole quiz runs on the server (Vercel Functions).
 - HTML, CSS, JavaScript (ES modules, no framework, no build step)
 - Vercel Functions (Node.js) for the API, Upstash Redis (through its REST API, no SDK)
 - `node:crypto` for AES-256-GCM tokens and secure random numbers
-- `node --test`: 142 unit tests
+- `node --test`: 162 unit tests
 - **No npm dependencies** at all
 
 ## Installation

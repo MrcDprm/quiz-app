@@ -2,8 +2,8 @@
   "topic": "javascript",
   "questions": [
     {
-      "id": "javascript:high:001",
-      "level": "high",
+      "id": "javascript:easy:001",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -30,8 +30,8 @@
       }
     },
     {
-      "id": "javascript:high:002",
-      "level": "high",
+      "id": "javascript:easy:002",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -58,8 +58,8 @@
       }
     },
     {
-      "id": "javascript:high:003",
-      "level": "high",
+      "id": "javascript:easy:003",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "JavaScript’te değeri sonradan değiştirilemeyen değişken hangi anahtar kelimeyle tanımlanır?",
@@ -85,8 +85,8 @@
       }
     },
     {
-      "id": "javascript:high:004",
-      "level": "high",
+      "id": "javascript:easy:004",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -113,8 +113,8 @@
       }
     },
     {
-      "id": "javascript:high:005",
-      "level": "high",
+      "id": "javascript:easy:005",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -141,8 +141,8 @@
       }
     },
     {
-      "id": "javascript:high:006",
-      "level": "high",
+      "id": "javascript:easy:006",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Tarayıcıda bir HTML öğesini kimliğiyle (id) bulan metot hangisidir?",
@@ -168,8 +168,8 @@
       }
     },
     {
-      "id": "javascript:high:007",
-      "level": "high",
+      "id": "javascript:easy:007",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -196,8 +196,8 @@
       }
     },
     {
-      "id": "javascript:high:008",
-      "level": "high",
+      "id": "javascript:easy:008",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Kullanıcı bir düğmeye tıkladığında kod çalıştırmak için hangi metot kullanılır?",
@@ -223,8 +223,8 @@
       }
     },
     {
-      "id": "javascript:university:001",
-      "level": "university",
+      "id": "javascript:medium:001",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -251,8 +251,8 @@
       }
     },
     {
-      "id": "javascript:university:002",
-      "level": "university",
+      "id": "javascript:medium:002",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -279,8 +279,8 @@
       }
     },
     {
-      "id": "javascript:university:003",
-      "level": "university",
+      "id": "javascript:medium:003",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -307,8 +307,8 @@
       }
     },
     {
-      "id": "javascript:university:004",
-      "level": "university",
+      "id": "javascript:medium:004",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Bir Promise’in sonucunu beklemek için async fonksiyon içinde hangi anahtar kelime kullanılır?",
@@ -334,8 +334,8 @@
       }
     },
     {
-      "id": "javascript:university:005",
-      "level": "university",
+      "id": "javascript:medium:005",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -362,8 +362,8 @@
       }
     },
     {
-      "id": "javascript:university:006",
-      "level": "university",
+      "id": "javascript:medium:006",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -390,8 +390,8 @@
       }
     },
     {
-      "id": "javascript:university:007",
-      "level": "university",
+      "id": "javascript:medium:007",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Kullanıcı verisini sayfaya yazarken XSS’i önlemek için hangisi tercih edilir?",
@@ -417,8 +417,8 @@
       }
     },
     {
-      "id": "javascript:university:008",
-      "level": "university",
+      "id": "javascript:medium:008",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -445,8 +445,8 @@
       }
     },
     {
-      "id": "javascript:masters:001",
-      "level": "masters",
+      "id": "javascript:hard:001",
+      "difficulty": "hard",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -473,8 +473,8 @@
       }
     },
     {
-      "id": "javascript:masters:002",
-      "level": "masters",
+      "id": "javascript:hard:002",
+      "difficulty": "hard",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -501,8 +501,8 @@
       }
     },
     {
-      "id": "javascript:masters:003",
-      "level": "masters",
+      "id": "javascript:hard:003",
+      "difficulty": "hard",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -529,8 +529,8 @@
       }
     },
     {
-      "id": "javascript:masters:004",
-      "level": "masters",
+      "id": "javascript:hard:004",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bir nesnenin özelliklerine erişimi yakalayıp değiştirmeye yarayan yerleşik yapı hangisidir?",
@@ -556,8 +556,8 @@
       }
     },
     {
-      "id": "javascript:masters:005",
-      "level": "masters",
+      "id": "javascript:hard:005",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "WeakMap’in Map’ten temel farkı nedir?",
@@ -583,8 +583,8 @@
       }
     },
     {
-      "id": "javascript:masters:006",
-      "level": "masters",
+      "id": "javascript:hard:006",
+      "difficulty": "hard",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -611,8 +611,8 @@
       }
     },
     {
-      "id": "javascript:masters:007",
-      "level": "masters",
+      "id": "javascript:hard:007",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "JavaScript’te bir modülü yalnızca ihtiyaç anında yüklemek için ne kullanılır?",
@@ -638,8 +638,8 @@
       }
     },
     {
-      "id": "javascript:masters:008",
-      "level": "masters",
+      "id": "javascript:hard:008",
+      "difficulty": "hard",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -666,8 +666,8 @@
       }
     },
     {
-      "id": "javascript:high:009",
-      "level": "high",
+      "id": "javascript:easy:009",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -694,8 +694,8 @@
       }
     },
     {
-      "id": "javascript:high:010",
-      "level": "high",
+      "id": "javascript:easy:010",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -722,8 +722,8 @@
       }
     },
     {
-      "id": "javascript:high:011",
-      "level": "high",
+      "id": "javascript:easy:011",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -750,8 +750,8 @@
       }
     },
     {
-      "id": "javascript:high:012",
-      "level": "high",
+      "id": "javascript:easy:012",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -778,8 +778,8 @@
       }
     },
     {
-      "id": "javascript:high:013",
-      "level": "high",
+      "id": "javascript:easy:013",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -806,8 +806,8 @@
       }
     },
     {
-      "id": "javascript:high:014",
-      "level": "high",
+      "id": "javascript:easy:014",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -834,8 +834,8 @@
       }
     },
     {
-      "id": "javascript:high:015",
-      "level": "high",
+      "id": "javascript:easy:015",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -862,8 +862,8 @@
       }
     },
     {
-      "id": "javascript:high:016",
-      "level": "high",
+      "id": "javascript:easy:016",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "JavaScript’te dizideki her elemana sırayla işlem yapan döngü hangisidir?",
@@ -889,8 +889,8 @@
       }
     },
     {
-      "id": "javascript:high:017",
-      "level": "high",
+      "id": "javascript:easy:017",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -917,8 +917,8 @@
       }
     },
     {
-      "id": "javascript:high:018",
-      "level": "high",
+      "id": "javascript:easy:018",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Tarayıcıda veriyi kalıcı olarak (sekme kapansa da) saklayan yapı hangisidir?",
@@ -944,8 +944,8 @@
       }
     },
     {
-      "id": "javascript:high:019",
-      "level": "high",
+      "id": "javascript:easy:019",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -972,8 +972,8 @@
       }
     },
     {
-      "id": "javascript:high:020",
-      "level": "high",
+      "id": "javascript:easy:020",
+      "difficulty": "easy",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -1000,8 +1000,8 @@
       }
     },
     {
-      "id": "javascript:university:009",
-      "level": "university",
+      "id": "javascript:medium:009",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -1028,8 +1028,8 @@
       }
     },
     {
-      "id": "javascript:university:010",
-      "level": "university",
+      "id": "javascript:medium:010",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -1056,8 +1056,8 @@
       }
     },
     {
-      "id": "javascript:university:011",
-      "level": "university",
+      "id": "javascript:medium:011",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -1084,8 +1084,8 @@
       }
     },
     {
-      "id": "javascript:university:012",
-      "level": "university",
+      "id": "javascript:medium:012",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -1112,8 +1112,8 @@
       }
     },
     {
-      "id": "javascript:university:013",
-      "level": "university",
+      "id": "javascript:medium:013",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -1140,8 +1140,8 @@
       }
     },
     {
-      "id": "javascript:university:014",
-      "level": "university",
+      "id": "javascript:medium:014",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -1168,8 +1168,8 @@
       }
     },
     {
-      "id": "javascript:university:015",
-      "level": "university",
+      "id": "javascript:medium:015",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -1196,8 +1196,8 @@
       }
     },
     {
-      "id": "javascript:university:016",
-      "level": "university",
+      "id": "javascript:medium:016",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -1224,8 +1224,8 @@
       }
     },
     {
-      "id": "javascript:university:017",
-      "level": "university",
+      "id": "javascript:medium:017",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -1252,8 +1252,8 @@
       }
     },
     {
-      "id": "javascript:university:018",
-      "level": "university",
+      "id": "javascript:medium:018",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "fetch() fonksiyonu ne döndürür?",
@@ -1279,8 +1279,8 @@
       }
     },
     {
-      "id": "javascript:university:019",
-      "level": "university",
+      "id": "javascript:medium:019",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Olay devretme (event delegation) nedir?",
@@ -1306,8 +1306,8 @@
       }
     },
     {
-      "id": "javascript:university:020",
-      "level": "university",
+      "id": "javascript:medium:020",
+      "difficulty": "medium",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -1334,8 +1334,8 @@
       }
     },
     {
-      "id": "javascript:masters:009",
-      "level": "masters",
+      "id": "javascript:hard:009",
+      "difficulty": "hard",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -1362,8 +1362,8 @@
       }
     },
     {
-      "id": "javascript:masters:010",
-      "level": "masters",
+      "id": "javascript:hard:010",
+      "difficulty": "hard",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -1390,8 +1390,8 @@
       }
     },
     {
-      "id": "javascript:masters:011",
-      "level": "masters",
+      "id": "javascript:hard:011",
+      "difficulty": "hard",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -1418,8 +1418,8 @@
       }
     },
     {
-      "id": "javascript:masters:012",
-      "level": "masters",
+      "id": "javascript:hard:012",
+      "difficulty": "hard",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -1446,8 +1446,8 @@
       }
     },
     {
-      "id": "javascript:masters:013",
-      "level": "masters",
+      "id": "javascript:hard:013",
+      "difficulty": "hard",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -1474,8 +1474,8 @@
       }
     },
     {
-      "id": "javascript:masters:014",
-      "level": "masters",
+      "id": "javascript:hard:014",
+      "difficulty": "hard",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -1502,8 +1502,8 @@
       }
     },
     {
-      "id": "javascript:masters:015",
-      "level": "masters",
+      "id": "javascript:hard:015",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bir fonksiyonun çağrılmasını, olaylar durduktan belli bir süre sonraya ertelemeye ne denir?",
@@ -1529,8 +1529,8 @@
       }
     },
     {
-      "id": "javascript:masters:016",
-      "level": "masters",
+      "id": "javascript:hard:016",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Web Worker’ın temel faydası nedir?",
@@ -1556,8 +1556,8 @@
       }
     },
     {
-      "id": "javascript:masters:017",
-      "level": "masters",
+      "id": "javascript:hard:017",
+      "difficulty": "hard",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -1584,8 +1584,8 @@
       }
     },
     {
-      "id": "javascript:masters:018",
-      "level": "masters",
+      "id": "javascript:hard:018",
+      "difficulty": "hard",
       "type": "code",
       "q": {
         "tr": "Bu kod konsola ne yazdırır?",
@@ -1612,8 +1612,8 @@
       }
     },
     {
-      "id": "javascript:masters:019",
-      "level": "masters",
+      "id": "javascript:hard:019",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "structuredClone ile JSON.parse(JSON.stringify(x)) arasındaki fark nedir?",

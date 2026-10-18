@@ -51,11 +51,11 @@ test('readJson accepts only small json objects', async () => {
 });
 
 test('pick keeps only allowed and valid fields', () => {
-  const schema = { lang: oneOf('tr', 'en'), level: oneOf('lise') };
-  assert.deepEqual(pick({ lang: 'tr', level: 'lise', admin: true }, schema), { lang: 'tr', level: 'lise' });
-  assert.equal(pick({ lang: 'de', level: 'lise' }, schema), null);
+  const schema = { lang: oneOf('tr', 'en'), difficulty: oneOf('easy') };
+  assert.deepEqual(pick({ lang: 'tr', difficulty: 'easy', admin: true }, schema), { lang: 'tr', difficulty: 'easy' });
+  assert.equal(pick({ lang: 'de', difficulty: 'easy' }, schema), null);
   assert.equal(pick({ lang: 'tr' }, schema), null);
-  assert.equal(pick(JSON.parse('{"__proto__": {"x": 1}, "lang": "tr", "level": "lise"}'), schema).x, undefined);
+  assert.equal(pick(JSON.parse('{"__proto__": {"x": 1}, "lang": "tr", "difficulty": "easy"}'), schema).x, undefined);
 });
 
 test('endpoint blocks other origins', async () => {

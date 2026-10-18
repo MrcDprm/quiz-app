@@ -1,7 +1,9 @@
-// Sayfa adresleri (/, /matematik, /matematik/ortaokul …) ve sitemap.xml bu fonksiyondan gelir (bkz. vercel.json rewrites).
+// Sayfa adresleri (/, /tarih, /tarih/kolay …) ve sitemap.xml bu fonksiyondan gelir (bkz. vercel.json rewrites).
+// İlk sürümün seviye adresleri (/tarih/ortaokul) kalıcı olarak yeni zorluk adresine yönlendirilir.
 // Şablon data/app.html: public/ dışında durduğu için doğrudan sunulmaz; <head> bölümü her adres için doldurulur.
 import { readFile } from 'node:fs/promises';
 import { renderPage, renderSitemap } from '../lib/page-seo.js';
+import { legacyRedirect } from '../public/src/routes.js';
 
 const CACHE = 'public, max-age=0, s-maxage=86400, stale-while-revalidate=604800';
 const SEGMENT = /^[a-z0-9-]{1,40}$/;
@@ -17,11 +19,15 @@ async function respond(request) {
 
   template ??= await readFile(new URL('../data/app.html', import.meta.url), 'utf8');
   const topic = (params.get('topic') ?? '').toLowerCase();
-  const level = (params.get('level') ?? '').toLowerCase();
+  const difficulty = (params.get('difficulty') ?? '').toLowerCase();
   const lang = params.get('lang') === 'en' ? 'en' : 'tr';
   // Sadece harf, rakam ve tire kabul edilir; geri kalan her şey bilinmeyen adres sayılır
   let pathname = '/';
-  if (topic) pathname = SEGMENT.test(topic) && (!level || SEGMENT.test(level)) ? `/${topic}${level ? `/${level}` : ''}` : '/-';
+  if (topic) pathname = SEGMENT.test(topic) && (!difficulty || SEGMENT.test(difficulty)) ? `/${topic}${difficulty ? `/${difficulty}` : ''}` : '/-';
+  const moved = legacyRedirect(pathname);
+  if (moved) {
+    return new Response(null, { status: 308, headers: { Location: `${moved}${lang === 'en' ? '?lang=en' : ''}`, 'Cache-Control': CACHE } });
+  }
   const { status, html } = renderPage(template, pathname, lang);
   return new Response(html, {
     status,
