@@ -59,8 +59,8 @@ function readStats(saved) {
   };
 }
 
-// Yanlış cevaplanan soruların kimlikleri ("science:medium:004", "gen:capital:medium:JP").
-const MISTAKE_ID = /^[a-z-]+:[a-z]+:[A-Za-z0-9.:]{1,60}$/;
+// Yanlış cevaplanan soruların kimlikleri ("science:medium:004", "gen:capital:medium:JP", "ai:film-music:hard:0a1b2c3d4e").
+const MISTAKE_ID = /^[a-z-]+:[a-z-]+:[A-Za-z0-9.:]{1,60}$/;
 
 function readIds(saved, max) {
   const ids = Array.isArray(saved) ? saved.filter((id) => typeof id === 'string' && MISTAKE_ID.test(id)) : [];

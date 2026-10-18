@@ -876,6 +876,38 @@ h1 {
   color: rgb(var(--c-muted));
   font-size: 0.92rem;
 }
+/* Yapay zekâ sorusu etiketi ve bildirme bağlantısı: göze batmayan, ama okunur */
+.ai-badge {
+  margin: 0.5rem 0 0;
+  color: rgb(var(--c-subtle));
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+}
+.ai-badge::before {
+  content: '✦ ';
+  color: rgb(var(--c-accent));
+}
+.report-link {
+  justify-self: start;
+  min-height: 2.75rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: rgb(var(--c-muted));
+  font: inherit;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+.report-link:hover {
+  color: rgb(var(--c-accent));
+}
+.report-link[aria-disabled='true'] {
+  text-decoration: none;
+  cursor: default;
+}
+
 .feedback .btn {
   justify-self: start;
 }

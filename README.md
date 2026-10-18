@@ -19,9 +19,10 @@ Answers never reach the browser before you answer, so the quiz cannot be cheated
 - **Categories and three difficulties:** pick a category card, then Easy, Medium or Hard.
   - **General:** History, Geography, Science, Maths, Literature and Art, Sport, Film and Music, General Knowledge, or all of them mixed.
   - **Software:** Coding Basics, Algorithms, HTML and CSS, Python, JavaScript, SQL, Git, Web Security and C#, or all of them mixed.
-- **Questions from two sources:**
+- **Questions from three sources:**
   - **A hand-written bank of 796 questions** in Turkish and English, each with a short explanation. Every "what does this code print?" question was checked by actually running the code with Python, Node.js or .NET.
   - **Generated questions from real data.** Templates build new questions from people and rivers (Wikidata), 129 countries, mountains, famous works, chemical elements, World Cups and Olympic Games, historical events and discoveries. Maths questions get fresh numbers every time. Wrong options are always of the same kind, and a question is never built when two options could both be right.
+  - **An AI question pool that grows every night.** A Vercel cron job asks Gemini for new questions in Turkish and English. Each one passes format checks (four distinct options, no "all of the above", no answer in the question, proper Turkish letters), then a second model (Groq) answers it without seeing the answer and judges whether it is accurate, unambiguous and well translated. Only questions that pass every check enter the pool. A round takes at most 3 of them; they are labelled, and a "Report" button removes a wrong one.
 - **Four question types:**
   - Multiple choice.
   - Flag questions.
@@ -75,9 +76,10 @@ The whole quiz runs on the server (Vercel Functions).
 ## Tech Stack
 
 - HTML, CSS, JavaScript (ES modules, no framework, no build step)
-- Vercel Functions (Node.js) for the API, Upstash Redis (through its REST API, no SDK)
+- Vercel Functions (Node.js) for the API and a nightly cron job, Upstash Redis (through its REST API, no SDK)
+- Gemini writes and Groq checks the AI questions (both called with `fetch`, no SDK)
 - `node:crypto` for AES-256-GCM tokens and secure random numbers
-- `node --test`: 175 unit tests
+- `node --test`: 189 unit tests
 - **No npm dependencies** at all
 
 ## Installation
@@ -93,7 +95,7 @@ Play online at [quiz.miracdeprem.com](https://quiz.miracdeprem.com), or run it l
    ```bash
    node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"
    ```
-   Keep `QUIZ_DEV=1` to use an in-memory store instead of Redis.
+   Keep `QUIZ_DEV=1` to use an in-memory store instead of Redis. The AI pool is optional: without `GEMINI_API_KEY` and `GROQ_API_KEY` the quiz simply uses the bank and the templates.
 3. Start the local server:
    ```bash
    npm run dev
@@ -105,6 +107,11 @@ Run the tests with:
 npm test
 ```
 
+Try the AI pool for one category and difficulty (needs the two keys; nothing is saved):
+```bash
+node scripts/ai-preview.mjs history medium
+```
+
 ### Project structure
 
 ```
@@ -112,7 +119,8 @@ public/                 The only folder that is served: page, styles, browser mo
   src/main.js           Screens, timer, answers, results
   src/progress.js       Statistics, mistakes list, seen questions, badges
   src/storage.js        Settings in localStorage, validated on every read
-api/                    Vercel Functions: round, daily, review, answer, joker, and page (serves every address with its own title)
+api/                    Vercel Functions: round, daily, review, answer, joker, report, page (serves every address with its own title)
+  cron/refill.js        Nightly job that fills the AI pool
 lib/
   quiz.js               Round rules: timing, scoring, jokers
   token.js              AES-256-GCM round tokens
@@ -120,8 +128,9 @@ lib/
   http.js               Validation, origin check, rate limit, generic errors
   catalog.js            Loads the bank, mixes bank and generated questions, skips seen ones
   generators.js         Template engine; templates/ has people, countries, works, elements, maths, sport, rivers, mountains, events, discoveries
+  ai/                   AI pool: prompts, model calls, format checks, the pool in Redis, the nightly refill
 data/                   Question bank, data for the generators, flags and the page template app.html (never served)
-scripts/                Local server and the Wikidata fetch script
+scripts/                Local server, the Wikidata fetch script and the AI pool preview
 tests/                  Unit tests
 ```
 
@@ -133,7 +142,8 @@ tests/                  Unit tests
 - **Generating questions from data.** I wrote a script that pulls famous people from Wikidata with SPARQL. I also learned how to make generated questions fair: wrong options are picked from the same kind of thing, and a question is skipped if two options could both be right.
 - **Testing what I write.** Every code question is run for real before it goes into the bank; this caught several of my own mistakes. A test that checks browser module imports caught a file I had committed empty.
 - **Pointer Events.** One set of pointer events handles mouse, touch and pen for drag and drop. The ↑/↓ buttons stay for keyboard and screen-reader users.
-- **Building without dependencies.** The only external service is Redis, which I call through its REST API with `fetch`. There is nothing to install and no vulnerable package to update.
+- **Not trusting a model either.** The first AI questions were written in Turkish without Turkish letters, and one called Charlemagne the founder of the Holy Roman Empire, which historians dispute. The checking model had approved both. So I added a code check for Turkish letters, asked the checker whether every statement is accurate and told it to reject when in doubt. Now it turns down about half of the hardest questions. The checker is always a different model from the writer.
+- **Building without dependencies.** Redis, Gemini and Groq are all called through their REST APIs with `fetch`. There is nothing to install and no vulnerable package to update.
 
 ## Credits
 
@@ -143,7 +153,7 @@ tests/                  Unit tests
 ## Future Plans
 
 - Accounts, so streaks and statistics follow you across devices and the daily question can have a leaderboard.
-- AI-generated rounds on any topic you type in.
+- AI-generated rounds on any topic you type in, built from the same checked pool process.
 - More specialist areas besides software.
 - Verifiable result links for sharing.
 

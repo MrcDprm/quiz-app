@@ -59,6 +59,7 @@ const el = {
   timer: $('timer'),
   timerAnnounce: $('timer-announce'),
   prompt: $('prompt'),
+  aiBadge: $('ai-badge'),
   code: $('code'),
   codeText: $('code-text'),
   questionImage: $('question-image'),
@@ -336,6 +337,7 @@ function renderQuestion() {
   el.roundCount.textContent = t('questionOf', { index: question.index + 1, total: question.total });
   el.roundScore.textContent = round.score;
   el.prompt.textContent = question.prompt;
+  el.aiBadge.hidden = !question.ai;
   el.questionImage.hidden = !question.image;
   el.questionImage.alt = question.image ? t('flagAlt') : '';
   if (question.image) el.questionImage.src = question.image;
@@ -488,10 +490,24 @@ function renderReveal(choice, result) {
     node('strong', result.correct ? 'verdict good' : 'verdict bad', verdict),
     node('span', 'explain', result.explain),
   );
+  if (question.ai) el.feedback.append(reportButton(result.id));
   updateJokers();
   el.next.textContent = round.next.summary ? t('finish') : t('next');
   el.next.hidden = false;
   el.next.focus();
+}
+
+// Yapay zekâ sorusu yanlış ya da belirsizse oyuncu bildirir; soru havuzdan çıkar.
+function reportButton(id) {
+  const button = node('button', 'report-link', t('reportQuestion'));
+  button.type = 'button';
+  button.addEventListener('click', async () => {
+    if (isBusy(button)) return;
+    setBusy(button, true);
+    const { error } = await post('/api/report', { id });
+    button.textContent = error ? t(`error_${error}`) : t('reported');
+  });
+  return button;
 }
 
 function goNext() {
