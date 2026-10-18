@@ -8,7 +8,7 @@ export const DIFFICULTIES = ['easy', 'medium', 'hard'];
 
 export const AREAS = {
   general: {
-    topics: ['history', 'geography', 'science', 'math', 'literature', 'general'],
+    topics: ['history', 'geography', 'science', 'math', 'literature', 'sport', 'film-music', 'general'],
   },
   software: {
     topics: ['basics', 'algorithms', 'html-css', 'python', 'javascript', 'sql', 'git', 'security', 'csharp'],

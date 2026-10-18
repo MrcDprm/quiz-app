@@ -17,11 +17,11 @@ Cevaplar, sen cevaplamadan önce tarayıcıya hiç gelmez. Bu yüzden geliştiri
 ## Özellikler
 
 - **Kategoriler ve üç zorluk:** Bir kategori kartı seçilir, ardından Kolay, Orta ya da Zor.
-  - **Genel:** Tarih, Coğrafya, Fen Bilimleri, Matematik, Edebiyat ve Sanat, Genel Kültür ya da hepsi karışık.
+  - **Genel:** Tarih, Coğrafya, Fen Bilimleri, Matematik, Edebiyat ve Sanat, Spor, Sinema ve Müzik, Genel Kültür ya da hepsi karışık.
   - **Yazılım:** Kodlamaya Giriş, Algoritmalar, HTML ve CSS, Python, JavaScript, SQL, Git, Web Güvenliği ve C# ya da hepsi karışık.
 - **İki kaynaktan sorular:**
   - **Elle yazılmış 796 soruluk banka:** Türkçe ve İngilizce, her birinde kısa bir açıklama var. "Bu kod ne yazdırır?" sorularının hepsi, kod gerçekten Python, Node.js ya da .NET ile çalıştırılarak doğrulandı.
-  - **Gerçek veriden üretilen sorular:** Şablonlar kişilerden (Wikidata), 129 ülkeden, ünlü eserlerden ve kimyasal elementlerden yeni sorular kurar. Matematik soruları her seferinde yeni sayılarla gelir.
+  - **Gerçek veriden üretilen sorular:** Şablonlar kişilerden ve nehirlerden (Wikidata), 129 ülkeden, dağlardan, ünlü eserlerden, kimyasal elementlerden, Dünya Kupaları ve Olimpiyatlardan, tarihî olaylardan ve buluşlardan yeni sorular kurar. Matematik soruları her seferinde yeni sayılarla gelir. Yanlış şıklar her zaman aynı türden seçilir; iki şıkkın birden doğru olabileceği soru hiç kurulmaz.
 - **Dört soru tipi:**
   - Çoktan seçmeli.
   - Bayrak sorusu.
@@ -77,7 +77,7 @@ Yarışmanın tamamı sunucuda (Vercel Functions) çalışıyor.
 - HTML, CSS, JavaScript (ES modülleri, framework yok, derleme adımı yok)
 - API için Vercel Functions (Node.js); Upstash Redis (REST API'si üzerinden, SDK'sız)
 - AES-256-GCM jetonları ve güvenli rastgele sayılar için `node:crypto`
-- `node --test`: 162 birim testi
+- `node --test`: 175 birim testi
 - **Hiç npm bağımlılığı yok**
 
 ## Kurulum ve Çalıştırma
@@ -119,7 +119,7 @@ lib/
   store.js              Tek kullanımlık jeton ve rate limit (Upstash REST ya da bellek)
   http.js               Doğrulama, kaynak kontrolü, rate limit, genel hata mesajları
   catalog.js            Bankayı yükler, banka ve üretilmiş soruları karıştırır, görülenleri atlar
-  generators.js         Şablon motoru; templates/ içinde kişi, ülke, eser, element, matematik şablonları
+  generators.js         Şablon motoru; templates/ içinde kişi, ülke, eser, element, matematik, spor, nehir, dağ, olay ve buluş şablonları
 data/                   Soru bankası, üreteç verileri, bayraklar ve sayfa şablonu app.html (yayınlanmaz)
 scripts/                Yerel sunucu ve Wikidata veri betiği
 tests/                  Birim testleri
@@ -137,7 +137,7 @@ tests/                  Birim testleri
 
 ## Kaynaklar
 
-- Kişi verileri: [Wikidata](https://www.wikidata.org) (CC0).
+- Kişi ve nehir verileri: [Wikidata](https://www.wikidata.org) (CC0). Ülke, dağ, eser, element, spor, olay ve buluş verileri elle derlendi.
 - Bayraklar: Panayiotis Lipiridis'in [flag-icons](https://github.com/lipis/flag-icons) paketi (MIT). Lisans metni `data/flags/LICENSE` dosyasında.
 
 ## Gelecek Planları

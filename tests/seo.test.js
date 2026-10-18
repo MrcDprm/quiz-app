@@ -16,8 +16,8 @@ test('every topic of every area has a unique address', () => {
   assert.ok([...Object.values(TOPIC_SLUGS), ...Object.values(DIFFICULTY_SLUGS)].every((slug) => /^[a-z0-9-]+$/.test(slug)));
 });
 
-test('sitemap: home, 15 topics and every topic at 3 difficulties', () => {
-  assert.equal(SITEMAP_PATHS.length, 1 + 15 + 15 * 3);
+test('sitemap: home, 17 topics and every topic at 3 difficulties', () => {
+  assert.equal(SITEMAP_PATHS.length, 1 + 17 + 17 * 3);
   assert.equal(new Set(SITEMAP_PATHS).size, SITEMAP_PATHS.length);
   for (const path of SITEMAP_PATHS.slice(1)) {
     const route = routeFromPath(path);
@@ -82,5 +82,5 @@ test('page function: home, unknown combination and sitemap', async () => {
   const odd = await GET(new Request('https://x/api/page?topic=%3Cscript%3E'));
   assert.equal(odd.status, 404);
   const sitemap = await (await GET(new Request('https://x/api/page?sitemap=1'))).text();
-  assert.equal((sitemap.match(/<url>/g) ?? []).length, 2 * (1 + 15 + 15 * 3));
+  assert.equal((sitemap.match(/<url>/g) ?? []).length, 2 * (1 + 17 + 17 * 3));
 });

@@ -11,6 +11,8 @@ export const TOPIC_SLUGS = {
   science: 'fen-bilimleri',
   math: 'matematik',
   literature: 'edebiyat-ve-sanat',
+  sport: 'spor',
+  'film-music': 'sinema-ve-muzik',
   general: 'genel-kultur',
   basics: 'kodlamaya-giris',
   algorithms: 'algoritmalar',
