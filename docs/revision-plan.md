@@ -37,14 +37,16 @@ Working notes for the second version of Quiz App. The README describes the live 
 Runs as a small WebSocket service (`live/`) on an always-on server (Oracle Cloud, next to Zarf), sharing the question code with the main app. Mobile first.
 
 - **Room:** the host picks category, difficulty and number of questions and gets a 6-digit code (and a link / QR code). Players join with the code and a nickname, no account.
-- **Host settings** (sensible defaults, changeable before the game):
-  - Advance: **manual by default**, the host taps "Next question"; optional automatic advance after the reveal.
-  - Time per question: 10 / 20 / 30 / 60 seconds.
+- **Room settings:** every option below is chosen on the "create room" screen. Each has a default, so the host can also just tap "Create" and change nothing. Settings are grouped on one mobile-friendly screen (toggles and segmented buttons, "Advanced" section folded).
+  - Advance: **manual by default**, the host taps "Next question"; or automatic after the reveal.
+  - Time per question: 10 / 20 (default) / 30 / 60 seconds, or no limit (only with manual advance).
   - Question on players' phones: shown (default, for remote play) or only on the host screen (classroom style, phones show coloured answer buttons).
-  - Leaderboard after every question: on (default) / only at the end.
+  - Leaderboard: after every question (default) or only at the end.
   - Speed bonus: on (default) / off.
-  - Host plays too or only moderates.
-- **During the game:** the host can pause, skip a question, end early and remove a player; the room locks when the game starts.
+  - Host: plays too (default) or only moderates.
+  - Late joining: off (default, the room locks when the game starts) / on.
+  - Correct answer and explanation on phones after each question: shown (default) / hidden.
+- **Host tools during the game:** pause and resume, skip a question, end early, remove a player. Shown in a compact menu on the host screen.
 - **Scoring on the server:** answers never reach the phones before the reveal; points depend on correctness and server-measured speed.
 - **Limits:** up to 30 players, nicknames validated and escaped, rate limits, idle rooms close after 30 minutes. Rooms live in memory (a single process).
 
