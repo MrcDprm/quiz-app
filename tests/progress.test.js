@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { EMPTY_STATS, MAX_MISTAKES, MAX_SEEN, recordRound, rememberSeen, updateMistakes, earnedBadges } from '../public/src/progress.js';
 
-const ROUND = { mode: 'round', area: 'general', topic: 'geography', level: 'high', usedJokers: false };
+const ROUND = { mode: 'round', area: 'general', topic: 'geography', difficulty: 'medium', usedJokers: false };
 const results = (correct, total = 10) => Array.from({ length: total }, (_, i) => i < correct);
 
 test('a round adds to the totals and keeps the best score per selection', () => {
@@ -11,8 +11,8 @@ test('a round adds to the totals and keeps the best score per selection', () => 
   assert.equal(stats.rounds, 2);
   assert.equal(stats.answered, 20);
   assert.equal(stats.correct, 12);
-  assert.deepEqual(stats.topics, ['general:geography:high']);
-  assert.deepEqual(stats.best, { 'general:geography:high': 120 });
+  assert.deepEqual(stats.topics, ['general:geography:medium']);
+  assert.deepEqual(stats.best, { 'general:geography:medium': 120 });
 });
 
 test('perfect rounds are counted, with and without jokers', () => {
@@ -50,23 +50,23 @@ test('mistakes are added, removed when answered right and capped', () => {
 
 test('badges follow the stats and the best streak', () => {
   assert.deepEqual(earnedBadges(EMPTY_STATS, { best: 0 }), []);
-  const stats = recordRound(EMPTY_STATS, { ...ROUND, level: 'masters', results: results(10), score: 200 });
-  assert.deepEqual(earnedBadges(stats, { best: 7 }), ['firstRound', 'perfect', 'noJokers', 'streak3', 'streak7', 'masters']);
-  const explorer = { ...EMPTY_STATS, topics: ['general:math:high', 'general:science:high', 'general:history:high', 'general:geography:high', 'software:sql:high'] };
+  const stats = recordRound(EMPTY_STATS, { ...ROUND, difficulty: 'hard', results: results(10), score: 200 });
+  assert.deepEqual(earnedBadges(stats, { best: 7 }), ['firstRound', 'perfect', 'noJokers', 'streak3', 'streak7', 'hard']);
+  const explorer = { ...EMPTY_STATS, topics: ['general:math:medium', 'general:science:medium', 'general:history:medium', 'general:geography:medium', 'software:sql:medium'] };
   assert.ok(earnedBadges(explorer, { best: 0 }).includes('explorer'));
 });
 
 test('mixed rounds do not count as a new topic for the explorer badge', () => {
-  const topics = ['general:math:high', 'general:science:high', 'general:history:high', 'general:mixed:high', 'software:mixed:high'];
+  const topics = ['general:math:medium', 'general:science:medium', 'general:history:medium', 'general:mixed:medium', 'software:mixed:medium'];
   assert.ok(!earnedBadges({ ...EMPTY_STATS, topics }, { best: 0 }).includes('explorer'));
 });
 
 test('seen questions are remembered per selection and reset when the pool is used up', () => {
-  let seen = rememberSeen({}, 'general:math:high', ['a', 'b']);
-  seen = rememberSeen(seen, 'general:math:high', ['b', 'c']);
-  assert.deepEqual(seen['general:math:high'], ['a', 'b', 'c']);
-  seen = rememberSeen(seen, 'general:math:high', ['d'], true);
-  assert.deepEqual(seen['general:math:high'], ['d']);
+  let seen = rememberSeen({}, 'general:math:medium', ['a', 'b']);
+  seen = rememberSeen(seen, 'general:math:medium', ['b', 'c']);
+  assert.deepEqual(seen['general:math:medium'], ['a', 'b', 'c']);
+  seen = rememberSeen(seen, 'general:math:medium', ['d'], true);
+  assert.deepEqual(seen['general:math:medium'], ['d']);
   const many = Array.from({ length: 70 }, (_, i) => `q${i}`);
   assert.equal(rememberSeen({}, 'k', many).k.length, MAX_SEEN);
 });

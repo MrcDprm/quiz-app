@@ -3,7 +3,7 @@
 
 export const MAX_MISTAKES = 100;
 export const MAX_SEEN = 50;
-const MASTERS_TARGET = 8;
+const HARD_TARGET = 8;
 
 export const EMPTY_STATS = Object.freeze({
   rounds: 0,
@@ -12,18 +12,18 @@ export const EMPTY_STATS = Object.freeze({
   dailyCorrect: 0,
   perfect: 0,
   perfectNoJokers: 0,
-  mastersHigh: 0,
+  hardHigh: 0,
   cleared: 0,
   topics: [],
   best: {},
 });
 
-/** Seçimin anahtarı: "general:geography:high". En iyi puan ve keşfedilen konular bununla tutulur. */
-export const selectionKey = ({ area, topic, level }) => `${area}:${topic}:${level}`;
+/** Seçimin anahtarı: "general:geography:easy". En iyi puan ve keşfedilen konular bununla tutulur. */
+export const selectionKey = ({ area, topic, difficulty }) => `${area}:${topic}:${difficulty}`;
 
 /**
  * Biten bir turu istatistiklere işler ve yeni bir nesne döndürür.
- * round: { mode, area, topic, level, results: [true, false, ...], score, usedJokers }
+ * round: { mode, area, topic, difficulty, results: [true, false, ...], score, usedJokers }
  */
 export function recordRound(stats, round) {
   const correct = round.results.filter(Boolean).length;
@@ -40,7 +40,7 @@ export function recordRound(stats, round) {
   next.rounds = stats.rounds + 1;
   next.perfect = stats.perfect + (perfect ? 1 : 0);
   next.perfectNoJokers = stats.perfectNoJokers + (perfect && !round.usedJokers ? 1 : 0);
-  next.mastersHigh = stats.mastersHigh + (round.level === 'masters' && correct >= MASTERS_TARGET ? 1 : 0);
+  next.hardHigh = stats.hardHigh + (round.difficulty === 'hard' && correct >= HARD_TARGET ? 1 : 0);
   if (round.mode === 'round') {
     const key = selectionKey(round);
     next.topics = stats.topics.includes(key) ? stats.topics : [...stats.topics, key];
@@ -82,7 +82,7 @@ export const BADGES = [
   { id: 'streak7', earned: (s, streak) => streak.best >= 7 },
   { id: 'streak30', earned: (s, streak) => streak.best >= 30 },
   { id: 'explorer', earned: (s) => new Set(s.topics.map((key) => key.split(':')[1]).filter((topic) => topic !== 'mixed')).size >= 5 },
-  { id: 'masters', earned: (s) => s.mastersHigh >= 1 },
+  { id: 'hard', earned: (s) => s.hardHigh >= 1 },
   { id: 'daily7', earned: (s) => s.dailyCorrect >= 7 },
   { id: 'cleaner', earned: (s) => s.cleared >= 1 },
   { id: 'hundred', earned: (s) => s.correct >= 100 },

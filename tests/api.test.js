@@ -13,7 +13,7 @@ const KEY = randomBytes(32);
 function question(id, answerText) {
   return {
     id,
-    level: 'high',
+    difficulty: 'medium',
     type: 'choice',
     q: { tr: `Soru ${id}`, en: `Question ${id}` },
     options: { tr: [answerText, 'b', 'c', 'd'], en: [answerText, 'b', 'c', 'd'] },
@@ -22,8 +22,8 @@ function question(id, answerText) {
 }
 
 const FILES = {
-  science: { questions: [question('science:high:001', 'right'), question('science:high:002', 'right')] },
-  general: { questions: [{ ...question('general:middle:001', 'right'), level: 'middle' }] },
+  science: { questions: [question('science:medium:001', 'right'), question('science:medium:002', 'right')] },
+  general: { questions: [{ ...question('general:easy:001', 'right'), difficulty: 'easy' }] },
 };
 
 // Her test kendi saatini, deposunu ve API'sini kurar.
@@ -50,7 +50,7 @@ function post(body) {
   });
 }
 
-const START = { area: 'general', topic: 'science', level: 'high', lang: 'en' };
+const START = { area: 'general', topic: 'science', difficulty: 'medium', lang: 'en' };
 
 // Test, jetonun içini anahtarla açarak doğru cevabı öğrenir (tarayıcı bunu yapamaz).
 const answerOf = (token) => {
@@ -74,7 +74,7 @@ test('a round starts with a question that has no answer in it', async () => {
 
 test('bad round requests are refused', async () => {
   const { api } = setup();
-  assert.equal((await call(api.round, { ...START, level: 'expert' })).status, 400);
+  assert.equal((await call(api.round, { ...START, difficulty: 'expert' })).status, 400);
   assert.equal((await call(api.round, { ...START, lang: 'de' })).status, 400);
   assert.equal((await call(api.round, { area: 'general' })).status, 400);
   assert.equal((await call(api.round, { ...START, topic: 'history' })).status, 404);
@@ -88,7 +88,7 @@ test('a correct answer reveals the result and the next question', async () => {
   assert.equal(body.result.correct, true);
   assert.equal(body.result.points, 20);
   assert.equal(body.result.explain, 'Explanation');
-  assert.match(body.result.id, /^science:high:00[12]$/);
+  assert.match(body.result.id, /^science:medium:00[12]$/);
   assert.equal(body.question.index, 1);
   assert.notEqual(body.token, round.body.token);
 });
@@ -170,35 +170,35 @@ test('the daily question has no jokers', async () => {
 
 test('a review round asks the saved questions again', async () => {
   const { api } = setup();
-  const { status, body } = await call(api.review, { ids: ['science:high:001', 'science:high:999', 'gen:who:high:Q1'], lang: 'en' });
+  const { status, body } = await call(api.review, { ids: ['science:medium:001', 'science:medium:999', 'gen:who:medium:Q1'], lang: 'en' });
   assert.equal(status, 200);
   assert.equal(body.question.total, 1);
   const answered = await call(api.answer, { token: body.token, choice: answerOf(body.token) });
-  assert.equal(answered.body.result.id, 'science:high:001');
+  assert.equal(answered.body.result.id, 'science:medium:001');
 });
 
 test('review requests are validated', async () => {
   const { api } = setup();
   assert.equal((await call(api.review, { ids: [], lang: 'en' })).status, 400);
-  assert.equal((await call(api.review, { ids: Array(11).fill('science:high:001'), lang: 'en' })).status, 400);
-  assert.equal((await call(api.review, { ids: ['science:high:001~5'], lang: 'en' })).status, 400);
-  assert.equal((await call(api.review, { ids: ['nope:high:001'], lang: 'en' })).status, 404);
+  assert.equal((await call(api.review, { ids: Array(11).fill('science:medium:001'), lang: 'en' })).status, 400);
+  assert.equal((await call(api.review, { ids: ['science:medium:001~5'], lang: 'en' })).status, 400);
+  assert.equal((await call(api.review, { ids: ['nope:medium:001'], lang: 'en' })).status, 404);
 });
 
 test('a round avoids questions the player has already seen', async () => {
   const { api } = setup();
-  const fresh = await call(api.round, { ...START, seen: ['science:high:001'] });
+  const fresh = await call(api.round, { ...START, seen: ['science:medium:001'] });
   assert.equal(fresh.body.question.total, 2);
   assert.equal(fresh.body.recycled, true);
   const none = await call(api.round, { ...START, seen: [] });
   assert.equal(none.body.recycled, false);
   assert.equal((await call(api.round, { ...START, seen: 'nope' })).status, 400);
-  assert.equal((await call(api.round, { ...START, seen: Array(51).fill('science:high:001') })).status, 400);
+  assert.equal((await call(api.round, { ...START, seen: Array(51).fill('science:medium:001') })).status, 400);
 });
 
 test('a full list of long seen ids still fits in the request', async () => {
   const { api } = setup();
-  const seen = Array.from({ length: 50 }, (_, i) => `gen:era:university:Q${String(i).padStart(60, "0")}`);
+  const seen = Array.from({ length: 50 }, (_, i) => `gen:era:hard:Q${String(i).padStart(60, "0")}`);
   assert.equal((await call(api.round, { ...START, seen })).status, 200);
 });
 

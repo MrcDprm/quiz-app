@@ -1,5 +1,5 @@
 // Yerel geliştirme sunucusu: public/ klasörünü sunar, /api/* isteklerini Vercel'deki aynı fonksiyonlara
-// yönlendirir ve vercel.json'daki "rewrites" kurallarını uygular (/matematik/ortaokul → api/page.js).
+// yönlendirir ve vercel.json'daki "rewrites" kurallarını uygular (/tarih/kolay → api/page.js).
 // Sadece geliştirme içindir.
 import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
@@ -26,7 +26,7 @@ try {
   console.warn('No .env file found; copy .env.example to .env first.');
 }
 
-// vercel.json'daki "/:topic(a|b)/:level(c|d)" gibi kaynak kalıpları düzenli ifadeye çevrilir.
+// vercel.json'daki "/:topic(a|b)/:difficulty(c|d)" gibi kaynak kalıpları düzenli ifadeye çevrilir.
 const vercel = JSON.parse(await readFile(join(ROOT, 'vercel.json'), 'utf8'));
 const rewrites = (vercel.rewrites ?? []).map((rule) => ({
   ...rule,

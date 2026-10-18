@@ -2,8 +2,8 @@
   "topic": "security",
   "questions": [
     {
-      "id": "security:high:001",
-      "level": "high",
+      "id": "security:easy:001",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Aşağıdaki şifrelerden hangisi en güçlüdür?",
@@ -29,8 +29,8 @@
       }
     },
     {
-      "id": "security:high:002",
-      "level": "high",
+      "id": "security:easy:002",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Adres çubuğunda \"https\" görmek neyi gösterir?",
@@ -56,8 +56,8 @@
       }
     },
     {
-      "id": "security:high:003",
-      "level": "high",
+      "id": "security:easy:003",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Kişiyi kandırarak şifresini sahte bir sayfaya girdirmeye ne denir?",
@@ -83,8 +83,8 @@
       }
     },
     {
-      "id": "security:high:004",
-      "level": "high",
+      "id": "security:easy:004",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "İki adımlı doğrulama (2FA) ne sağlar?",
@@ -110,8 +110,8 @@
       }
     },
     {
-      "id": "security:high:005",
-      "level": "high",
+      "id": "security:easy:005",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Yazılım güncellemeleri güvenlik için neden önemlidir?",
@@ -137,8 +137,8 @@
       }
     },
     {
-      "id": "security:high:006",
-      "level": "high",
+      "id": "security:easy:006",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Şifre yöneticisi kullanmanın faydası nedir?",
@@ -164,8 +164,8 @@
       }
     },
     {
-      "id": "security:high:007",
-      "level": "high",
+      "id": "security:easy:007",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Halka açık Wi-Fi ağlarında hangisinden kaçınmak daha güvenlidir?",
@@ -191,8 +191,8 @@
       }
     },
     {
-      "id": "security:high:008",
-      "level": "high",
+      "id": "security:easy:008",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Tanımadığınız birinden gelen e-postadaki eki açmadan önce ne yapmalısınız?",
@@ -218,8 +218,8 @@
       }
     },
     {
-      "id": "security:university:001",
-      "level": "university",
+      "id": "security:medium:001",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Kullanıcı girdisinin sayfada kod olarak çalıştırılmasıyla oluşan saldırı hangisidir?",
@@ -245,8 +245,8 @@
       }
     },
     {
-      "id": "security:university:002",
-      "level": "university",
+      "id": "security:medium:002",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Şifreler veritabanında nasıl saklanmalıdır?",
@@ -272,8 +272,8 @@
       }
     },
     {
-      "id": "security:university:003",
-      "level": "university",
+      "id": "security:medium:003",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Kullanıcının oturumunu kullanarak onun adına istek gönderten saldırı hangisidir?",
@@ -299,8 +299,8 @@
       }
     },
     {
-      "id": "security:university:004",
-      "level": "university",
+      "id": "security:medium:004",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Oturum çerezinin JavaScript tarafından okunmasını engelleyen bayrak hangisidir?",
@@ -326,8 +326,8 @@
       }
     },
     {
-      "id": "security:university:005",
-      "level": "university",
+      "id": "security:medium:005",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Bir API’ye kısa sürede çok fazla istek atılmasını sınırlayan önleme ne denir?",
@@ -353,8 +353,8 @@
       }
     },
     {
-      "id": "security:university:006",
-      "level": "university",
+      "id": "security:medium:006",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "CORS ayarında Access-Control-Allow-Origin: * neden risklidir?",
@@ -380,8 +380,8 @@
       }
     },
     {
-      "id": "security:university:007",
-      "level": "university",
+      "id": "security:medium:007",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "API anahtarları neden tarayıcıda çalışan koda konmamalıdır?",
@@ -407,8 +407,8 @@
       }
     },
     {
-      "id": "security:university:008",
-      "level": "university",
+      "id": "security:medium:008",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Sıralı (1, 2, 3…) kayıt kimliklerini dışarı açmanın riski nedir?",
@@ -434,8 +434,8 @@
       }
     },
     {
-      "id": "security:masters:001",
-      "level": "masters",
+      "id": "security:hard:001",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bir web kancasının (webhook) gerçekten beklenen servisten geldiği nasıl doğrulanır?",
@@ -461,8 +461,8 @@
       }
     },
     {
-      "id": "security:masters:002",
-      "level": "masters",
+      "id": "security:hard:002",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "AES-GCM gibi kimlik doğrulamalı şifrelemenin (AEAD) sağladığı iki özellik nedir?",
@@ -488,8 +488,8 @@
       }
     },
     {
-      "id": "security:masters:003",
-      "level": "masters",
+      "id": "security:hard:003",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "AES-GCM’de aynı anahtarla aynı nonce’u (IV) iki kez kullanmak neden tehlikelidir?",
@@ -515,8 +515,8 @@
       }
     },
     {
-      "id": "security:masters:004",
-      "level": "masters",
+      "id": "security:hard:004",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Zamanlama saldırılarını önlemek için gizli değerler nasıl karşılaştırılmalıdır?",
@@ -542,8 +542,8 @@
       }
     },
     {
-      "id": "security:masters:005",
-      "level": "masters",
+      "id": "security:hard:005",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "SSRF (Server-Side Request Forgery) saldırısında ne olur?",
@@ -569,8 +569,8 @@
       }
     },
     {
-      "id": "security:masters:006",
-      "level": "masters",
+      "id": "security:hard:006",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Tedarik zinciri saldırılarına karşı hangisi etkili bir önlemdir?",
@@ -596,8 +596,8 @@
       }
     },
     {
-      "id": "security:masters:007",
-      "level": "masters",
+      "id": "security:hard:007",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Kullanıcının yalnızca işi için gereken yetkilere sahip olması ilkesine ne denir?",
@@ -623,8 +623,8 @@
       }
     },
     {
-      "id": "security:masters:008",
-      "level": "masters",
+      "id": "security:hard:008",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "JWT’de \"alg\": \"none\" kabul etmek neden tehlikelidir?",
@@ -650,8 +650,8 @@
       }
     },
     {
-      "id": "security:high:009",
-      "level": "high",
+      "id": "security:easy:009",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bir e-postadaki bağlantının gerçekte nereye gittiğini anlamanın güvenli yolu hangisidir?",
@@ -677,8 +677,8 @@
       }
     },
     {
-      "id": "security:high:010",
-      "level": "high",
+      "id": "security:easy:010",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Fidye yazılımı (ransomware) ne yapar?",
@@ -704,8 +704,8 @@
       }
     },
     {
-      "id": "security:high:011",
-      "level": "high",
+      "id": "security:easy:011",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Güçlü bir parola için hangisi daha etkilidir?",
@@ -731,8 +731,8 @@
       }
     },
     {
-      "id": "security:high:012",
-      "level": "high",
+      "id": "security:easy:012",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Sosyal mühendislik nedir?",
@@ -758,8 +758,8 @@
       }
     },
     {
-      "id": "security:high:013",
-      "level": "high",
+      "id": "security:easy:013",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Güvenlik duvarının (firewall) görevi nedir?",
@@ -785,8 +785,8 @@
       }
     },
     {
-      "id": "security:high:014",
-      "level": "high",
+      "id": "security:easy:014",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bir sitenin sertifika uyarısı verdiği durumda ne yapılmalıdır?",
@@ -812,8 +812,8 @@
       }
     },
     {
-      "id": "security:high:015",
-      "level": "high",
+      "id": "security:easy:015",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Kamu bilgisayarında hesabından çıkmayı unutmak neden risklidir?",
@@ -839,8 +839,8 @@
       }
     },
     {
-      "id": "security:high:016",
-      "level": "high",
+      "id": "security:easy:016",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bir uygulamanın istediği izinler (konum, kamera) için hangisi doğrudur?",
@@ -866,8 +866,8 @@
       }
     },
     {
-      "id": "security:high:017",
-      "level": "high",
+      "id": "security:easy:017",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Hangi bilgi sosyal medyada paylaşılmamalıdır?",
@@ -893,8 +893,8 @@
       }
     },
     {
-      "id": "security:high:018",
-      "level": "high",
+      "id": "security:easy:018",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Kötü amaçlı yazılımlara karşı hangisi iyi bir alışkanlıktır?",
@@ -920,8 +920,8 @@
       }
     },
     {
-      "id": "security:high:019",
-      "level": "high",
+      "id": "security:easy:019",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bir sitede \"Beni hatırla\" seçeneği ortak bilgisayarda neden kullanılmamalıdır?",
@@ -947,8 +947,8 @@
       }
     },
     {
-      "id": "security:high:020",
-      "level": "high",
+      "id": "security:easy:020",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Veri ihlali haberi duyduğun bir sitede hesabın varsa ilk ne yapmalısın?",
@@ -974,8 +974,8 @@
       }
     },
     {
-      "id": "security:university:009",
-      "level": "university",
+      "id": "security:medium:009",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Clickjacking saldırısı nasıl önlenir?",
@@ -1001,8 +1001,8 @@
       }
     },
     {
-      "id": "security:university:010",
-      "level": "university",
+      "id": "security:medium:010",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Yetki kontrolü neden sunucu tarafında yapılmalıdır?",
@@ -1028,8 +1028,8 @@
       }
     },
     {
-      "id": "security:university:011",
-      "level": "university",
+      "id": "security:medium:011",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "IDOR (Güvensiz Doğrudan Nesne Referansı) açığı nedir?",
@@ -1055,8 +1055,8 @@
       }
     },
     {
-      "id": "security:university:012",
-      "level": "university",
+      "id": "security:medium:012",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Parola hash’lerken “tuz” (salt) ne işe yarar?",
@@ -1082,8 +1082,8 @@
       }
     },
     {
-      "id": "security:university:013",
-      "level": "university",
+      "id": "security:medium:013",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "HSTS başlığı ne sağlar?",
@@ -1109,8 +1109,8 @@
       }
     },
     {
-      "id": "security:university:014",
-      "level": "university",
+      "id": "security:medium:014",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "SameSite=Strict çerez ayarı hangi saldırıya karşı yardımcı olur?",
@@ -1136,8 +1136,8 @@
       }
     },
     {
-      "id": "security:university:015",
-      "level": "university",
+      "id": "security:medium:015",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Hata sayfalarında ayrıntılı yığın izi (stack trace) göstermek neden sakıncalıdır?",
@@ -1163,8 +1163,8 @@
       }
     },
     {
-      "id": "security:university:016",
-      "level": "university",
+      "id": "security:medium:016",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Dosya yükleme özelliğinde hangi kontroller yapılmalıdır?",
@@ -1190,8 +1190,8 @@
       }
     },
     {
-      "id": "security:university:017",
-      "level": "university",
+      "id": "security:medium:017",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "OWASP Top 10 nedir?",
@@ -1217,8 +1217,8 @@
       }
     },
     {
-      "id": "security:university:018",
-      "level": "university",
+      "id": "security:medium:018",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Bir API’nin döndürdüğü veride neden sadece gereken alanlar olmalıdır?",
@@ -1244,8 +1244,8 @@
       }
     },
     {
-      "id": "security:masters:009",
-      "level": "masters",
+      "id": "security:hard:009",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Sıfır güven (zero trust) mimarisinin temel ilkesi nedir?",
@@ -1271,8 +1271,8 @@
       }
     },
     {
-      "id": "security:masters:010",
-      "level": "masters",
+      "id": "security:hard:010",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Parolasız kimlik doğrulamada passkey (WebAuthn) neye dayanır?",
@@ -1298,8 +1298,8 @@
       }
     },
     {
-      "id": "security:masters:011",
-      "level": "masters",
+      "id": "security:hard:011",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Güvenli rastgele sayı üretimi için hangisi kullanılmalıdır?",
@@ -1325,8 +1325,8 @@
       }
     },
     {
-      "id": "security:masters:012",
-      "level": "masters",
+      "id": "security:hard:012",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Prototip kirliliği (prototype pollution) saldırısında ne olur?",
@@ -1352,8 +1352,8 @@
       }
     },
     {
-      "id": "security:masters:013",
-      "level": "masters",
+      "id": "security:hard:013",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "ReDoS saldırısı neyi hedefler?",
@@ -1379,8 +1379,8 @@
       }
     },
     {
-      "id": "security:masters:014",
-      "level": "masters",
+      "id": "security:hard:014",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Güvenli yazılım geliştirmede “tehdit modelleme” ne zaman yapılmalıdır?",
@@ -1406,8 +1406,8 @@
       }
     },
     {
-      "id": "security:masters:015",
-      "level": "masters",
+      "id": "security:hard:015",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Anahtar döndürme (key rotation) neden yapılır?",
@@ -1433,8 +1433,8 @@
       }
     },
     {
-      "id": "security:masters:016",
-      "level": "masters",
+      "id": "security:hard:016",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bir web uygulamasında log’lara neden parola ya da token yazılmamalıdır?",
@@ -1460,8 +1460,8 @@
       }
     },
     {
-      "id": "security:masters:017",
-      "level": "masters",
+      "id": "security:hard:017",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Content Security Policy’de nonce ne işe yarar?",

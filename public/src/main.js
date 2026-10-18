@@ -1,5 +1,5 @@
 // Arayüz: tur ayarı, soru ekranı, süre çubuğu ve sonuç. Kurallar ve cevaplar sunucuda (bkz. lib/).
-import { AREAS, LEVELS, MIXED } from './topics.js';
+import { AREAS, DIFFICULTIES, MIXED } from './topics.js';
 import { DAILY_TIME_ZONE, dayKey } from './dates.js';
 import { currentStreak, recordDay } from './streak.js';
 import { dailyShareText, formatDay, roundShareText, shareLinks } from './share.js';
@@ -17,15 +17,12 @@ const settings = loadSettings(undefined, browserLang);
 // Adresteki ?lang=en / ?lang=tr kayıtlı tercihten önce gelir (paylaşılan ve Google'dan gelen linkler)
 const urlLang = new URLSearchParams(window.location.search).get('lang');
 if (urlLang === 'tr' || urlLang === 'en') settings.lang = urlLang;
-// /matematik/ortaokul gibi bir adresle gelindiyse o konu ve seviye seçili açılır
+// /tarih/kolay gibi bir adresle gelindiyse o konu ve zorluk seçili açılır; sadece konu verilmişse kayıtlı zorluk kalır
 const route = routeFromPath(window.location.pathname);
 if (route) {
   settings.area = route.area;
   settings.topic = route.topic;
-  // Sadece konu verilmişse kayıtlı seviye kullanılır; o seviyede sorulmuyorsa ilk uygun seviye seçilir
-  settings.level = route.level ?? (topicsOf(route.area, settings.level).includes(route.topic)
-    ? settings.level
-    : LEVELS.find((level) => topicsOf(route.area, level).includes(route.topic)));
+  settings.difficulty = route.difficulty ?? settings.difficulty;
 }
 // Adreste görünen seçim: ana adresle gelindiyse oyuncu bir seçim yapana kadar boş kalır
 let addressRoute = route;
@@ -38,8 +35,9 @@ const el = {
   screens: { setup: $('setup-screen'), round: $('round-screen'), result: $('result-screen') },
   setupForm: $('setup-form'),
   areaGroup: $('area-group'),
-  topic: $('topic'),
-  level: $('level'),
+  topicGroup: $('topic-group'),
+  difficultyGroup: $('difficulty-group'),
+  difficultyHint: $('difficulty-hint'),
   start: $('start'),
   setupStatus: $('setup-status'),
   dailyDate: $('daily-date'),
@@ -160,9 +158,11 @@ function renderProgress() {
   renderBestScore();
 }
 
+// Başlat düğmesinin altında seçimin özeti; bu seçimde oynanmışsa en iyi puanla.
 function renderBestScore() {
   const best = settings.stats.best[selectionKey(settings)];
-  el.bestScore.textContent = best ? t('bestScore', { score: best }) : '';
+  const names = { topic: t(`topic_${settings.topic}`), difficulty: t(`difficulty_${settings.difficulty}`) };
+  el.bestScore.textContent = best ? t('bestScore', { ...names, score: best }) : t('selection', names);
 }
 
 function goHome() {
@@ -217,7 +217,7 @@ function shareDaily() {
 // ---------- Adres ve sekme başlığı ----------
 
 /**
- * Adres (/matematik/ortaokul) ve sekme başlığı güncellenir. replaceState geçmişe kayıt eklemez;
+ * Adres (/tarih/kolay) ve sekme başlığı güncellenir. replaceState geçmişe kayıt eklemez;
  * geri tuşunun davranışı değişmez. "Karışık" seçiminin ayrı adresi yoktur.
  */
 function updateAddress() {
@@ -230,39 +230,50 @@ function updateAddress() {
 
 /** Oyuncu seçim yapınca adres o seçime uyar. */
 function followSelection() {
-  addressRoute = settings.topic === MIXED ? null : { area: settings.area, topic: settings.topic, level: settings.level };
+  addressRoute = settings.topic === MIXED ? null : { area: settings.area, topic: settings.topic, difficulty: settings.difficulty };
   updateAddress();
 }
 
 // ---------- Tur ayarı ----------
 
+/** Radyo düğmesi gibi davranan bir buton: grupta sadece seçili olan Tab ile odaklanır, oklar seçimi değiştirir. */
+function radio(className, name, value, checked, ...children) {
+  const button = node('button', className);
+  button.type = 'button';
+  button.setAttribute('role', 'radio');
+  button.setAttribute('aria-checked', String(checked));
+  button.tabIndex = checked ? 0 : -1;
+  button.dataset[name] = value;
+  button.append(...children);
+  return button;
+}
+
 function renderSetup() {
   el.areaGroup.replaceChildren(
-    ...Object.keys(AREAS).map((area) => {
-      const button = node('button', 'segment', t(`area_${area}`));
-      button.type = 'button';
-      button.setAttribute('role', 'radio');
-      button.setAttribute('aria-checked', String(area === settings.area));
-      button.dataset.area = area;
-      return button;
+    ...Object.keys(AREAS).map((area) => radio('segment', 'area', area, area === settings.area, t(`area_${area}`))),
+  );
+  // Kategori kartlarında o zorluktaki en iyi puan görünür; oyuncu nerede ne kadar iyi olduğunu görür
+  el.topicGroup.replaceChildren(
+    ...topicsOf(settings.area).map((topic) => {
+      const best = settings.stats.best[selectionKey({ area: settings.area, topic, difficulty: settings.difficulty })];
+      const children = [node('span', 'topic-name', t(`topic_${topic}`))];
+      if (best) children.push(node('span', 'topic-best', t('topicBest', { score: best })));
+      return radio(topic === MIXED ? 'topic-tile mixed' : 'topic-tile', 'topic', topic, topic === settings.topic, ...children);
     }),
   );
-  const options = (values, prefix, selected) =>
-    values.map((value) => {
-      const option = node('option', null, t(`${prefix}_${value}`));
-      option.value = value;
-      option.selected = value === selected;
-      return option;
-    });
-  el.level.replaceChildren(...options(LEVELS, 'level', settings.level));
-  el.topic.replaceChildren(...options(topicsOf(settings.area, settings.level), 'topic', settings.topic));
+  el.difficultyGroup.replaceChildren(
+    ...DIFFICULTIES.map((difficulty) =>
+      radio('segment', 'difficulty', difficulty, difficulty === settings.difficulty, t(`difficulty_${difficulty}`)),
+    ),
+  );
+  el.difficultyHint.textContent = t(`difficultyHint_${settings.difficulty}`);
   renderBestScore();
 }
 
-// Alan ya da seviye değişince seçili konu artık sunulmuyorsa listenin ilk konusuna geçilir.
+// Alan değişince seçili konu o alanda yoksa ilk konuya geçilir.
 function updateSelection(changes) {
   Object.assign(settings, changes);
-  const topics = topicsOf(settings.area, settings.level);
+  const topics = topicsOf(settings.area);
   if (!topics.includes(settings.topic)) settings.topic = topics[0];
   saveSettings(settings);
   renderSetup();
@@ -289,13 +300,13 @@ async function begin(button, status, path, body, extra) {
 
 // Bu seçimde daha önce görülen sorular gönderilir; sunucu önce hiç sorulmamışları seçer.
 function startRound() {
-  const { area, topic, level, lang } = settings;
+  const { area, topic, difficulty, lang } = settings;
   const seen = settings.seen[selectionKey(settings)] ?? [];
-  begin(el.start, el.setupStatus, '/api/round', { area, topic, level, lang, seen }, (data) => ({
+  begin(el.start, el.setupStatus, '/api/round', { area, topic, difficulty, lang, seen }, (data) => ({
     mode: 'round',
     area,
     topic,
-    level,
+    difficulty,
     recycled: data.recycled === true,
   }));
 }
@@ -536,7 +547,7 @@ function answerText(question, answer) {
 
 // Biten turu kaydeder (seri, günün sorusu, hatalar, istatistik) ve yeni kazanılan rozetleri döndürür.
 function recordResult(summary, results) {
-  const { mode, area, topic, level, date } = round;
+  const { mode, area, topic, difficulty, date } = round;
   const badgesBefore = earnedBadges(settings.stats, settings.streak);
   const hadMistakes = settings.mistakes.length > 0;
 
@@ -548,10 +559,10 @@ function recordResult(summary, results) {
   );
   if (mode === 'round') {
     const ids = round.history.map(({ result }) => result.id);
-    settings.seen = rememberSeen(settings.seen, selectionKey({ area, topic, level }), ids, round.recycled);
+    settings.seen = rememberSeen(settings.seen, selectionKey({ area, topic, difficulty }), ids, round.recycled);
   }
   const usedJokers = Boolean(round.usedFifty || round.usedTime);
-  settings.stats = recordRound(settings.stats, { mode, area, topic, level, results, score: summary.score, usedJokers });
+  settings.stats = recordRound(settings.stats, { mode, area, topic, difficulty, results, score: summary.score, usedJokers });
   if (mode === 'review' && hadMistakes && settings.mistakes.length === 0) {
     settings.stats = { ...settings.stats, cleared: settings.stats.cleared + 1 };
   }
@@ -561,14 +572,14 @@ function recordResult(summary, results) {
 
 function showResult(summary) {
   stopTimer();
-  const { mode, topic, level, date } = round;
+  const { mode, topic, difficulty, date } = round;
   const results = round.history.map((entry) => entry.result.correct);
   const newBadges = recordResult(summary, results);
 
   if (mode === 'daily') {
     lastShare = () => dailyShareText({ lang: settings.lang, date, correct: results[0], streak: settings.streak.count });
   } else {
-    lastShare = () => roundShareText({ lang: settings.lang, topic, level, results, score: summary.score });
+    lastShare = () => roundShareText({ lang: settings.lang, topic, difficulty, results, score: summary.score });
   }
   const titles = { daily: `${t('dailyTitle')} · ${formatDay(date ?? dailyToday(), settings.lang)}`, review: t('reviewTitle') };
   el.resultTitle.textContent = titles[mode] ?? t('resultTitle');
@@ -622,17 +633,23 @@ function renderLanguage() {
 
 // ---------- Olaylar ----------
 
-el.areaGroup.addEventListener('click', (event) => {
-  const button = event.target.closest('[data-area]');
-  if (button) updateSelection({ area: button.dataset.area });
-});
-el.topic.addEventListener('change', () => {
-  settings.topic = el.topic.value;
-  saveSettings(settings);
-  renderBestScore();
-  followSelection();
-});
-el.level.addEventListener('change', () => updateSelection({ level: el.level.value }));
+// Alan, kategori ve zorluk grupları: tıklama ve ok tuşları aynı seçimi yapar.
+for (const [group, name] of [[el.areaGroup, 'area'], [el.topicGroup, 'topic'], [el.difficultyGroup, 'difficulty']]) {
+  group.addEventListener('click', (event) => {
+    const button = event.target.closest(`[data-${name}]`);
+    if (button) updateSelection({ [name]: button.dataset[name] });
+  });
+  group.addEventListener('keydown', (event) => {
+    const step = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[event.key];
+    if (!step) return;
+    event.preventDefault();
+    const buttons = [...group.querySelectorAll('[role="radio"]')];
+    const current = buttons.findIndex((button) => button.getAttribute('aria-checked') === 'true');
+    const next = buttons[(current + step + buttons.length) % buttons.length];
+    updateSelection({ [name]: next.dataset[name] });
+    group.querySelector(`[data-${name}="${next.dataset[name]}"]`)?.focus();
+  });
+}
 el.setupForm.addEventListener('submit', (event) => {
   event.preventDefault();
   startRound();
@@ -673,7 +690,7 @@ el.reviewStart.addEventListener('click', startReview);
 document.addEventListener('keydown', (event) => {
   if (!round || el.screens.round.hidden || event.ctrlKey || event.metaKey || event.altKey) return;
   const target = event.target instanceof Element ? event.target : document.body;
-  if (target.closest('select, input, textarea')) return;
+  if (target.closest('input, textarea')) return;
   const number = Number(event.key);
   if (!round.answered && round.question.type !== 'order' && number >= 1 && number <= round.question.options.length) {
     const button = el.options.children[number - 1];

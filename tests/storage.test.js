@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { loadSettings, saveSettings, STORAGE_KEY } from '../public/src/storage.js';
+import { loadSettings, saveSettings, STORAGE_KEY, VERSION } from '../public/src/storage.js';
 import { EMPTY_STATS } from '../public/src/progress.js';
 
 // localStorage yerine geçen küçük bir sahte depo.
@@ -13,14 +13,17 @@ function fakeStorage(initial) {
   };
 }
 
+// Bu sürümde kaydedilmiş ayarlar (sürümsüz kayıt ilk sürümden sayılır ve taşınır)
+const current = (fields) => JSON.stringify({ version: VERSION, ...fields });
+
 test('defaults are used when nothing is saved', () => {
   const settings = loadSettings(fakeStorage(), 'en');
   assert.deepEqual(settings, {
     lang: 'en',
     theme: 'dark',
     area: 'general',
-    level: 'primary',
-    topic: 'math',
+    difficulty: 'easy',
+    topic: 'history',
     streak: { count: 0, best: 0, lastDay: null },
     daily: null,
     stats: { ...EMPTY_STATS, topics: [], best: {} },
@@ -30,38 +33,38 @@ test('defaults are used when nothing is saved', () => {
 });
 
 test('seen questions are kept per valid selection', () => {
-  const saved = JSON.stringify({
-    seen: { 'general:geography:high': ['gen:capital:high:JP', 'geography:high:001', '<b>'], 'x:y:z': ['geography:high:002'] },
+  const saved = current({
+    seen: { 'general:geography:medium': ['gen:capital:medium:JP', 'geography:medium:001', '<b>'], 'x:y:z': ['geography:medium:002'] },
   });
-  assert.deepEqual(loadSettings(fakeStorage(saved)).seen, { 'general:geography:high': ['gen:capital:high:JP', 'geography:high:001'] });
+  assert.deepEqual(loadSettings(fakeStorage(saved)).seen, { 'general:geography:medium': ['gen:capital:medium:JP', 'geography:medium:001'] });
 });
 
 test('stats and mistakes are validated field by field', () => {
-  const saved = JSON.stringify({
+  const saved = current({
     stats: {
       rounds: 3,
       correct: -1,
       perfect: 'lots',
-      topics: ['general:geography:high', 'general:geography:high', 'software:sql:primary', '<script>'],
-      best: { 'general:geography:high': 142, 'nope:x:y': 99, 'general:math:high': -5 },
+      topics: ['general:geography:medium', 'general:geography:medium', 'software:history:easy', '<script>'],
+      best: { 'general:geography:medium': 142, 'nope:x:y': 99, 'general:math:medium': -5 },
     },
-    mistakes: ['science:high:004', 'gen:capital:high:JP', 'science:high:004', '<img>', 42, 'x~1'],
+    mistakes: ['science:medium:004', 'gen:capital:medium:JP', 'science:medium:004', '<img>', 42, 'x~1'],
   });
   const { stats, mistakes } = loadSettings(fakeStorage(saved));
   assert.equal(stats.rounds, 3);
   assert.equal(stats.correct, 0);
   assert.equal(stats.perfect, 0);
-  assert.deepEqual(stats.topics, ['general:geography:high']);
-  assert.deepEqual(stats.best, { 'general:geography:high': 142 });
-  assert.deepEqual(mistakes, ['science:high:004', 'gen:capital:high:JP']);
+  assert.deepEqual(stats.topics, ['general:geography:medium']);
+  assert.deepEqual(stats.best, { 'general:geography:medium': 142 });
+  assert.deepEqual(mistakes, ['science:medium:004', 'gen:capital:medium:JP']);
 });
 
 test('corrupted or unexpected values fall back to defaults', () => {
-  const saved = JSON.stringify({
+  const saved = current({
     lang: 'de',
     theme: 'neon',
     area: 'constructor',
-    level: 7,
+    difficulty: 7,
     topic: '<img src=x>',
     streak: { count: -3, best: 'many', lastDay: 'yesterday' },
     daily: { date: '2026-09-30', correct: 'yes' },
@@ -69,15 +72,43 @@ test('corrupted or unexpected values fall back to defaults', () => {
   const settings = loadSettings(fakeStorage(saved), 'tr');
   assert.equal(settings.lang, 'tr');
   assert.equal(settings.area, 'general');
-  assert.equal(settings.topic, 'math');
+  assert.equal(settings.topic, 'history');
+  assert.equal(settings.difficulty, 'easy');
   assert.deepEqual(settings.streak, { count: 0, best: 0, lastDay: null });
   assert.equal(settings.daily, null);
   assert.equal(loadSettings(fakeStorage('{not json'), 'en').lang, 'en');
 });
 
-test('a topic not taught at the saved level is replaced', () => {
-  const saved = JSON.stringify({ area: 'software', level: 'primary', topic: 'sql' });
+test('a topic from another area is replaced by the first topic of the area', () => {
+  const saved = current({ area: 'software', difficulty: 'hard', topic: 'history' });
   assert.equal(loadSettings(fakeStorage(saved)).topic, 'basics');
+});
+
+test('settings saved by the first version move to difficulties', () => {
+  const saved = JSON.stringify({
+    area: 'software',
+    topic: 'javascript',
+    level: 'high',
+    stats: {
+      rounds: 4,
+      mastersHigh: 2,
+      topics: ['general:history:primary', 'general:history:middle', 'software:javascript:high', 'software:javascript:primary'],
+      best: { 'general:history:primary': 140, 'general:history:middle': 120, 'software:javascript:masters': 90, 'nope:x:high': 5 },
+    },
+    mistakes: ['history:middle:004'],
+    seen: { 'general:history:middle': ['history:middle:001'] },
+  });
+  const settings = loadSettings(fakeStorage(saved));
+  // JavaScript liseden başlıyordu: lise Kolay oldu
+  assert.equal(settings.difficulty, 'easy');
+  assert.equal(settings.stats.rounds, 4);
+  assert.equal(settings.stats.hardHigh, 2);
+  // İki seviye aynı zorluğa düştü: tek kayıt, büyük puan
+  assert.deepEqual(settings.stats.topics, ['general:history:easy', 'software:javascript:easy']);
+  assert.deepEqual(settings.stats.best, { 'general:history:easy': 140, 'software:javascript:hard': 90 });
+  // Eski soru kimlikleri artık yok
+  assert.deepEqual(settings.mistakes, []);
+  assert.deepEqual(settings.seen, {});
 });
 
 test('only known fields are written back', () => {
@@ -85,7 +116,7 @@ test('only known fields are written back', () => {
   const settings = { ...loadSettings(storage), extra: 'secret', daily: { date: '2026-09-30', correct: true } };
   assert.equal(saveSettings(settings, storage), true);
   const written = JSON.parse(storage.raw());
-  assert.deepEqual(Object.keys(written).sort(), ['area', 'daily', 'lang', 'level', 'mistakes', 'seen', 'stats', 'streak', 'theme', 'topic']);
+  assert.deepEqual(Object.keys(written).sort(), ['area', 'daily', 'difficulty', 'lang', 'mistakes', 'seen', 'stats', 'streak', 'theme', 'topic', 'version']);
   assert.deepEqual(loadSettings(storage).daily, { date: '2026-09-30', correct: true });
 });
 

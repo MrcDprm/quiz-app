@@ -2,8 +2,8 @@
   "topic": "geography",
   "questions": [
     {
-      "id": "geography:primary:001",
-      "level": "primary",
+      "id": "geography:easy:001",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Dünya’nın en büyük okyanusu hangisidir?",
@@ -29,8 +29,8 @@
       }
     },
     {
-      "id": "geography:primary:002",
-      "level": "primary",
+      "id": "geography:easy:002",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Türkiye’nin en yüksek dağı hangisidir?",
@@ -56,8 +56,8 @@
       }
     },
     {
-      "id": "geography:primary:003",
-      "level": "primary",
+      "id": "geography:easy:003",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Türkiye’yi çevreleyen denizlerden hangisi kuzeydedir?",
@@ -83,8 +83,8 @@
       }
     },
     {
-      "id": "geography:primary:004",
-      "level": "primary",
+      "id": "geography:easy:004",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Pusulanın ibresi hangi yönü gösterir?",
@@ -110,8 +110,8 @@
       }
     },
     {
-      "id": "geography:primary:005",
-      "level": "primary",
+      "id": "geography:easy:005",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Güneş hangi yönden doğar?",
@@ -137,8 +137,8 @@
       }
     },
     {
-      "id": "geography:primary:006",
-      "level": "primary",
+      "id": "geography:easy:006",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Dünya’nın en büyük kıtası hangisidir?",
@@ -164,8 +164,8 @@
       }
     },
     {
-      "id": "geography:middle:001",
-      "level": "middle",
+      "id": "geography:easy:007",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Tamamı Türkiye sınırları içinde kalan en uzun nehir hangisidir?",
@@ -191,8 +191,8 @@
       }
     },
     {
-      "id": "geography:middle:002",
-      "level": "middle",
+      "id": "geography:easy:008",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Ekvator’un özelliği nedir?",
@@ -218,8 +218,8 @@
       }
     },
     {
-      "id": "geography:middle:003",
-      "level": "middle",
+      "id": "geography:easy:009",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Dünya’daki mevsimlerin temel nedeni nedir?",
@@ -245,8 +245,8 @@
       }
     },
     {
-      "id": "geography:middle:004",
-      "level": "middle",
+      "id": "geography:easy:010",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Dünya’nın en uzun nehri olarak genellikle hangisi kabul edilir?",
@@ -272,8 +272,8 @@
       }
     },
     {
-      "id": "geography:middle:005",
-      "level": "middle",
+      "id": "geography:easy:011",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Sahra hangi kıtadadır?",
@@ -299,8 +299,8 @@
       }
     },
     {
-      "id": "geography:middle:006",
-      "level": "middle",
+      "id": "geography:easy:012",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Türkiye’nin en büyük gölü hangisidir?",
@@ -326,8 +326,8 @@
       }
     },
     {
-      "id": "geography:high:001",
-      "level": "high",
+      "id": "geography:medium:001",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Levha hareketlerinin sonucu olarak oluşan doğal afet hangisidir?",
@@ -353,8 +353,8 @@
       }
     },
     {
-      "id": "geography:high:002",
-      "level": "high",
+      "id": "geography:medium:002",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Akdeniz ikliminin özelliği nedir?",
@@ -380,8 +380,8 @@
       }
     },
     {
-      "id": "geography:high:003",
-      "level": "high",
+      "id": "geography:medium:003",
+      "difficulty": "medium",
       "type": "order",
       "q": {
         "tr": "Atmosfer katmanlarını yerden yukarıya doğru sırala.",
@@ -407,8 +407,8 @@
       }
     },
     {
-      "id": "geography:high:004",
-      "level": "high",
+      "id": "geography:medium:004",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Karstik arazilerde (ör. Pamukkale travertenleri) hangi kayaç yaygındır?",
@@ -434,8 +434,8 @@
       }
     },
     {
-      "id": "geography:high:005",
-      "level": "high",
+      "id": "geography:medium:005",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Nüfus piramidinin tabanı genişse ülke için ne söylenebilir?",
@@ -461,8 +461,8 @@
       }
     },
     {
-      "id": "geography:high:006",
-      "level": "high",
+      "id": "geography:medium:006",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Muson yağmurları en çok hangi bölgede görülür?",
@@ -488,8 +488,8 @@
       }
     },
     {
-      "id": "geography:university:001",
-      "level": "university",
+      "id": "geography:hard:001",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Coğrafi Bilgi Sistemleri (CBS/GIS) temel olarak ne yapar?",
@@ -515,8 +515,8 @@
       }
     },
     {
-      "id": "geography:university:002",
-      "level": "university",
+      "id": "geography:hard:002",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Kentleşmede \"ısı adası\" etkisi nedir?",
@@ -542,8 +542,8 @@
       }
     },
     {
-      "id": "geography:university:003",
-      "level": "university",
+      "id": "geography:hard:003",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Harita projeksiyonlarının hepsinde kaçınılmaz olan nedir?",
@@ -569,8 +569,8 @@
       }
     },
     {
-      "id": "geography:university:004",
-      "level": "university",
+      "id": "geography:hard:004",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Demografik dönüşüm modelinin son aşamasında ne görülür?",
@@ -596,8 +596,8 @@
       }
     },
     {
-      "id": "geography:university:005",
-      "level": "university",
+      "id": "geography:hard:005",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Kuzey Anadolu Fay Hattı nasıl bir faydır?",
@@ -623,8 +623,8 @@
       }
     },
     {
-      "id": "geography:university:006",
-      "level": "university",
+      "id": "geography:hard:006",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "El Niño olayı nedir?",
@@ -650,8 +650,8 @@
       }
     },
     {
-      "id": "geography:masters:001",
-      "level": "masters",
+      "id": "geography:hard:007",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Merkez-çevre (core-periphery) modeli ne açıklar?",
@@ -677,8 +677,8 @@
       }
     },
     {
-      "id": "geography:masters:002",
-      "level": "masters",
+      "id": "geography:hard:008",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Uzaktan algılamada NDVI indeksi neyi ölçmek için kullanılır?",
@@ -704,8 +704,8 @@
       }
     },
     {
-      "id": "geography:masters:003",
-      "level": "masters",
+      "id": "geography:hard:009",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Christaller’in merkezi yerler kuramı neyi açıklar?",
@@ -731,8 +731,8 @@
       }
     },
     {
-      "id": "geography:masters:004",
-      "level": "masters",
+      "id": "geography:hard:010",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Antroposen kavramı neyi ifade eder?",
@@ -758,8 +758,8 @@
       }
     },
     {
-      "id": "geography:masters:005",
-      "level": "masters",
+      "id": "geography:hard:011",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Türkiye’de kentleşmeyi en çok hangi göç türü şekillendirmiştir?",
@@ -785,8 +785,8 @@
       }
     },
     {
-      "id": "geography:masters:006",
-      "level": "masters",
+      "id": "geography:hard:012",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Ekolojik ayak izi neyi ölçer?",

@@ -2,8 +2,8 @@
   "topic": "html-css",
   "questions": [
     {
-      "id": "html-css:middle:001",
-      "level": "middle",
+      "id": "html-css:easy:001",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "HTML’nin açılımındaki \"M\" harfi neyi ifade eder?",
@@ -29,8 +29,8 @@
       }
     },
     {
-      "id": "html-css:middle:002",
-      "level": "middle",
+      "id": "html-css:easy:002",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bir web sayfasına bağlantı (link) eklemek için hangi etiket kullanılır?",
@@ -56,8 +56,8 @@
       }
     },
     {
-      "id": "html-css:middle:003",
-      "level": "middle",
+      "id": "html-css:easy:003",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Sayfaya resim eklemek için hangi etiket kullanılır?",
@@ -83,8 +83,8 @@
       }
     },
     {
-      "id": "html-css:middle:004",
-      "level": "middle",
+      "id": "html-css:easy:004",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "En büyük başlık etiketi hangisidir?",
@@ -110,8 +110,8 @@
       }
     },
     {
-      "id": "html-css:middle:005",
-      "level": "middle",
+      "id": "html-css:easy:005",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Web sayfasının renk ve yazı tipi gibi görünüşünü hangi dil belirler?",
@@ -137,8 +137,8 @@
       }
     },
     {
-      "id": "html-css:middle:006",
-      "level": "middle",
+      "id": "html-css:easy:006",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Numarasız (madde işaretli) liste hangi etiketle oluşturulur?",
@@ -164,8 +164,8 @@
       }
     },
     {
-      "id": "html-css:middle:007",
-      "level": "middle",
+      "id": "html-css:easy:007",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "CSS’te yazının rengini değiştiren özellik hangisidir?",
@@ -191,8 +191,8 @@
       }
     },
     {
-      "id": "html-css:middle:008",
-      "level": "middle",
+      "id": "html-css:easy:008",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Resmin yüklenemediği durumda gösterilen ve ekran okuyucuların okuduğu özellik hangisidir?",
@@ -218,8 +218,8 @@
       }
     },
     {
-      "id": "html-css:high:001",
-      "level": "high",
+      "id": "html-css:medium:001",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "CSS’te id seçicisi hangi karakterle yazılır?",
@@ -245,8 +245,8 @@
       }
     },
     {
-      "id": "html-css:high:002",
-      "level": "high",
+      "id": "html-css:medium:002",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Kutu modelinde (box model) içerik ile kenarlık (border) arasındaki boşluğa ne denir?",
@@ -272,8 +272,8 @@
       }
     },
     {
-      "id": "html-css:high:003",
-      "level": "high",
+      "id": "html-css:medium:003",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Öğeleri tek bir satırda ya da sütunda kolayca hizalamak için hangi CSS düzeni kullanılır?",
@@ -299,8 +299,8 @@
       }
     },
     {
-      "id": "html-css:high:004",
-      "level": "high",
+      "id": "html-css:medium:004",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Sayfanın telefon gibi dar ekranlarda farklı görünmesini sağlayan CSS yapısı hangisidir?",
@@ -326,8 +326,8 @@
       }
     },
     {
-      "id": "html-css:high:005",
-      "level": "high",
+      "id": "html-css:medium:005",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Bir form alanının etiketini ekran okuyuculara bağlayan etiket hangisidir?",
@@ -353,8 +353,8 @@
       }
     },
     {
-      "id": "html-css:high:006",
-      "level": "high",
+      "id": "html-css:medium:006",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "HTML5’te sayfanın ana içeriğini belirten anlamsal (semantic) etiket hangisidir?",
@@ -380,8 +380,8 @@
       }
     },
     {
-      "id": "html-css:high:007",
-      "level": "high",
+      "id": "html-css:medium:007",
+      "difficulty": "medium",
       "type": "order",
       "q": {
         "tr": "CSS seçicilerini özgüllüğü (specificity) düşükten yükseğe sırala.",
@@ -407,8 +407,8 @@
       }
     },
     {
-      "id": "html-css:high:008",
-      "level": "high",
+      "id": "html-css:medium:008",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Bir öğeyi gizleyip yerini de boşaltan CSS kuralı hangisidir?",
@@ -434,8 +434,8 @@
       }
     },
     {
-      "id": "html-css:university:001",
-      "level": "university",
+      "id": "html-css:hard:001",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "İki boyutlu (satır ve sütun) düzenler için tasarlanmış CSS sistemi hangisidir?",
@@ -461,8 +461,8 @@
       }
     },
     {
-      "id": "html-css:university:002",
-      "level": "university",
+      "id": "html-css:hard:002",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "box-sizing: border-box ne değiştirir?",
@@ -488,8 +488,8 @@
       }
     },
     {
-      "id": "html-css:university:003",
-      "level": "university",
+      "id": "html-css:hard:003",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "CSS değişkenleri (custom properties) nasıl tanımlanır?",
@@ -515,8 +515,8 @@
       }
     },
     {
-      "id": "html-css:university:004",
-      "level": "university",
+      "id": "html-css:hard:004",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Klavye kullanıcıları için odaklanan öğeyi belirgin gösteren seçici hangisidir?",
@@ -542,8 +542,8 @@
       }
     },
     {
-      "id": "html-css:university:005",
-      "level": "university",
+      "id": "html-css:hard:005",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Ekran okuyucuya öğenin işlevini anlatmak için hangi özellik kullanılır?",
@@ -569,8 +569,8 @@
       }
     },
     {
-      "id": "html-css:university:006",
-      "level": "university",
+      "id": "html-css:hard:006",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Content Security Policy (CSP) başlığı ne işe yarar?",
@@ -596,8 +596,8 @@
       }
     },
     {
-      "id": "html-css:university:007",
-      "level": "university",
+      "id": "html-css:hard:007",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Kaydırınca belli bir noktada ekrana yapışan konumlandırma hangisidir?",
@@ -623,8 +623,8 @@
       }
     },
     {
-      "id": "html-css:university:008",
-      "level": "university",
+      "id": "html-css:hard:008",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Kapsayıcının genişliğine göre stil değiştiren yeni CSS özelliği hangisidir?",
@@ -650,8 +650,8 @@
       }
     },
     {
-      "id": "html-css:masters:001",
-      "level": "masters",
+      "id": "html-css:hard:009",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Tarayıcının sayfayı çizme sırası doğru hangisidir?",
@@ -677,8 +677,8 @@
       }
     },
     {
-      "id": "html-css:masters:002",
-      "level": "masters",
+      "id": "html-css:hard:010",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Animasyonda yeniden yerleşim (reflow) tetiklemeden en performanslı özellikler hangileridir?",
@@ -704,8 +704,8 @@
       }
     },
     {
-      "id": "html-css:masters:003",
-      "level": "masters",
+      "id": "html-css:hard:011",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Cumulative Layout Shift (CLS) neyi ölçer?",
@@ -731,8 +731,8 @@
       }
     },
     {
-      "id": "html-css:masters:004",
-      "level": "masters",
+      "id": "html-css:hard:012",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "CSS @layer kuralı neyi çözer?",
@@ -758,8 +758,8 @@
       }
     },
     {
-      "id": "html-css:masters:005",
-      "level": "masters",
+      "id": "html-css:hard:013",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Shadow DOM’un Web Components’taki temel faydası nedir?",
@@ -785,8 +785,8 @@
       }
     },
     {
-      "id": "html-css:masters:006",
-      "level": "masters",
+      "id": "html-css:hard:014",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "rel=\"noopener\" neden target=\"_blank\" bağlantılarında kullanılır?",
@@ -812,8 +812,8 @@
       }
     },
     {
-      "id": "html-css:masters:007",
-      "level": "masters",
+      "id": "html-css:hard:015",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "WCAG’ye göre normal metin için en az kontrast oranı kaçtır (AA seviyesi)?",
@@ -839,8 +839,8 @@
       }
     },
     {
-      "id": "html-css:masters:008",
-      "level": "masters",
+      "id": "html-css:hard:016",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "srcset ve sizes özellikleri ne işe yarar?",
@@ -866,8 +866,8 @@
       }
     },
     {
-      "id": "html-css:middle:009",
-      "level": "middle",
+      "id": "html-css:easy:009",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bir paragraf hangi etiketle yazılır?",
@@ -893,8 +893,8 @@
       }
     },
     {
-      "id": "html-css:middle:010",
-      "level": "middle",
+      "id": "html-css:easy:010",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Metni kalın yapan anlamsal HTML etiketi hangisidir?",
@@ -920,8 +920,8 @@
       }
     },
     {
-      "id": "html-css:middle:011",
-      "level": "middle",
+      "id": "html-css:easy:011",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Sayfanın tarayıcı sekmesinde görünen başlığı hangi etiketle belirlenir?",
@@ -947,8 +947,8 @@
       }
     },
     {
-      "id": "html-css:middle:012",
-      "level": "middle",
+      "id": "html-css:easy:012",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "CSS’te arka plan rengini değiştiren özellik hangisidir?",
@@ -974,8 +974,8 @@
       }
     },
     {
-      "id": "html-css:middle:013",
-      "level": "middle",
+      "id": "html-css:easy:013",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "CSS’te yazı boyutunu belirleyen özellik hangisidir?",
@@ -1001,8 +1001,8 @@
       }
     },
     {
-      "id": "html-css:middle:014",
-      "level": "middle",
+      "id": "html-css:easy:014",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "CSS’te sınıf seçicisi hangi karakterle başlar?",
@@ -1028,8 +1028,8 @@
       }
     },
     {
-      "id": "html-css:middle:015",
-      "level": "middle",
+      "id": "html-css:easy:015",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Kullanıcıdan metin almak için hangi form öğesi kullanılır?",
@@ -1055,8 +1055,8 @@
       }
     },
     {
-      "id": "html-css:middle:016",
-      "level": "middle",
+      "id": "html-css:easy:016",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Numaralı liste hangi etiketle oluşturulur?",
@@ -1082,8 +1082,8 @@
       }
     },
     {
-      "id": "html-css:middle:017",
-      "level": "middle",
+      "id": "html-css:easy:017",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bir satır sonu (alt satıra geçme) eklemek için hangi etiket kullanılır?",
@@ -1109,8 +1109,8 @@
       }
     },
     {
-      "id": "html-css:middle:018",
-      "level": "middle",
+      "id": "html-css:easy:018",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bir HTML dosyası hangi uzantıyla kaydedilir?",
@@ -1136,8 +1136,8 @@
       }
     },
     {
-      "id": "html-css:middle:019",
-      "level": "middle",
+      "id": "html-css:easy:019",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bir tabloda satır oluşturan etiket hangisidir?",
@@ -1163,8 +1163,8 @@
       }
     },
     {
-      "id": "html-css:middle:020",
-      "level": "middle",
+      "id": "html-css:easy:020",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Yorum satırı HTML’de nasıl yazılır?",
@@ -1190,8 +1190,8 @@
       }
     },
     {
-      "id": "html-css:high:009",
-      "level": "high",
+      "id": "html-css:medium:009",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "margin: 0 auto; genellikle ne için kullanılır?",
@@ -1217,8 +1217,8 @@
       }
     },
     {
-      "id": "html-css:high:010",
-      "level": "high",
+      "id": "html-css:medium:010",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Flexbox’ta öğeleri ana eksende ortalayan özellik hangisidir?",
@@ -1244,8 +1244,8 @@
       }
     },
     {
-      "id": "html-css:high:011",
-      "level": "high",
+      "id": "html-css:medium:011",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "rem birimi neye göredir?",
@@ -1271,8 +1271,8 @@
       }
     },
     {
-      "id": "html-css:high:012",
-      "level": "high",
+      "id": "html-css:medium:012",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Bir bağlantının üzerine gelince stil değiştirmek için hangi sözde sınıf kullanılır?",
@@ -1298,8 +1298,8 @@
       }
     },
     {
-      "id": "html-css:high:013",
-      "level": "high",
+      "id": "html-css:medium:013",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Telefonlarda sayfanın doğru ölçeklenmesi için head’e hangi etiket eklenir?",
@@ -1325,8 +1325,8 @@
       }
     },
     {
-      "id": "html-css:high:014",
-      "level": "high",
+      "id": "html-css:medium:014",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "z-index özelliği neyi belirler?",
@@ -1352,8 +1352,8 @@
       }
     },
     {
-      "id": "html-css:high:015",
-      "level": "high",
+      "id": "html-css:medium:015",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Bir form alanını zorunlu yapan HTML özelliği hangisidir?",
@@ -1379,8 +1379,8 @@
       }
     },
     {
-      "id": "html-css:high:016",
-      "level": "high",
+      "id": "html-css:medium:016",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "CSS’te bir öğeye yuvarlak köşe veren özellik hangisidir?",
@@ -1406,8 +1406,8 @@
       }
     },
     {
-      "id": "html-css:high:017",
-      "level": "high",
+      "id": "html-css:medium:017",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Klavye kullanıcıları için sekme (Tab) sırasına öğe eklemek için hangisi kullanılır?",
@@ -1433,8 +1433,8 @@
       }
     },
     {
-      "id": "html-css:high:018",
-      "level": "high",
+      "id": "html-css:medium:018",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Bir öğenin taşan içeriğini kaydırma çubuğuyla gösteren kural hangisidir?",
@@ -1460,8 +1460,8 @@
       }
     },
     {
-      "id": "html-css:high:019",
-      "level": "high",
+      "id": "html-css:medium:019",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Bir bağlantıyı yeni sekmede açmak için hangi özellik kullanılır?",
@@ -1487,8 +1487,8 @@
       }
     },
     {
-      "id": "html-css:university:009",
-      "level": "university",
+      "id": "html-css:hard:017",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "CSS Grid’de grid-template-columns: repeat(3, 1fr) ne yapar?",
@@ -1514,8 +1514,8 @@
       }
     },
     {
-      "id": "html-css:university:010",
-      "level": "university",
+      "id": "html-css:hard:018",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "clamp(1rem, 2.5vw, 2rem) ne yapar?",
@@ -1541,8 +1541,8 @@
       }
     },
     {
-      "id": "html-css:university:011",
-      "level": "university",
+      "id": "html-css:hard:019",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "prefers-reduced-motion medya sorgusu ne için kullanılır?",
@@ -1568,8 +1568,8 @@
       }
     },
     {
-      "id": "html-css:university:012",
-      "level": "university",
+      "id": "html-css:hard:020",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "prefers-color-scheme: dark ne zaman eşleşir?",
@@ -1595,8 +1595,8 @@
       }
     },
     {
-      "id": "html-css:university:013",
-      "level": "university",
+      "id": "html-css:hard:021",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bir sayfada kaç tane <h1> olması önerilir?",
@@ -1622,8 +1622,8 @@
       }
     },
     {
-      "id": "html-css:university:014",
-      "level": "university",
+      "id": "html-css:hard:022",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "loading=\"lazy\" özelliği resimlerde ne yapar?",
@@ -1649,8 +1649,8 @@
       }
     },
     {
-      "id": "html-css:university:015",
-      "level": "university",
+      "id": "html-css:hard:023",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "CSS’te :is() ve :where() arasındaki fark nedir?",
@@ -1676,8 +1676,8 @@
       }
     },
     {
-      "id": "html-css:university:016",
-      "level": "university",
+      "id": "html-css:hard:024",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bir düğmenin (button) type özelliği form içinde belirtilmezse varsayılan nedir?",
@@ -1703,8 +1703,8 @@
       }
     },
     {
-      "id": "html-css:university:017",
-      "level": "university",
+      "id": "html-css:hard:025",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Semantik HTML’de gezinme bağlantıları hangi etiketle sarılır?",
@@ -1730,8 +1730,8 @@
       }
     },
     {
-      "id": "html-css:masters:009",
-      "level": "masters",
+      "id": "html-css:hard:026",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Render-blocking kaynaklar sayfa yüklemesini nasıl etkiler?",
@@ -1757,8 +1757,8 @@
       }
     },
     {
-      "id": "html-css:masters:010",
-      "level": "masters",
+      "id": "html-css:hard:027",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "<script type=\"module\"> için varsayılan davranış hangisidir?",
@@ -1784,8 +1784,8 @@
       }
     },
     {
-      "id": "html-css:masters:011",
-      "level": "masters",
+      "id": "html-css:hard:028",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Largest Contentful Paint (LCP) neyi ölçer?",
@@ -1811,8 +1811,8 @@
       }
     },
     {
-      "id": "html-css:masters:012",
-      "level": "masters",
+      "id": "html-css:hard:029",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Interaction to Next Paint (INP) neyi değerlendirir?",
@@ -1838,8 +1838,8 @@
       }
     },
     {
-      "id": "html-css:masters:013",
-      "level": "masters",
+      "id": "html-css:hard:030",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "font-display: swap ne sağlar?",
@@ -1865,8 +1865,8 @@
       }
     },
     {
-      "id": "html-css:masters:014",
-      "level": "masters",
+      "id": "html-css:hard:031",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "CSS contain özelliği ne işe yarar?",
@@ -1892,8 +1892,8 @@
       }
     },
     {
-      "id": "html-css:masters:015",
-      "level": "masters",
+      "id": "html-css:hard:032",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "ARIA’nın “ilk kuralı” nedir?",
@@ -1919,8 +1919,8 @@
       }
     },
     {
-      "id": "html-css:masters:016",
-      "level": "masters",
+      "id": "html-css:hard:033",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Subresource Integrity (SRI) ne sağlar?",
@@ -1946,8 +1946,8 @@
       }
     },
     {
-      "id": "html-css:masters:017",
-      "level": "masters",
+      "id": "html-css:hard:034",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "CSS’te :has() seçicisinin yeniliği nedir?",

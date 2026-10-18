@@ -1,11 +1,11 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { isValidSelection, topicsFor } from '../public/src/topics.js';
+import { OLD_LEVELS, areaOf, difficultyFromLevel, isValidSelection, topicsFor } from '../public/src/topics.js';
 import { isValidQuestion, buildQuestion, makeRef, parseRef, toPublic } from '../lib/questions.js';
 
 const CHOICE = {
-  id: 'science:high:001',
-  level: 'high',
+  id: 'science:medium:001',
+  difficulty: 'medium',
   type: 'choice',
   q: { tr: 'Suyun kimyasal formülü nedir?', en: 'What is the chemical formula of water?' },
   options: { tr: ['H2O', 'CO2', 'O2', 'NaCl'], en: ['H2O', 'CO2', 'O2', 'NaCl'] },
@@ -13,8 +13,8 @@ const CHOICE = {
 };
 
 const ORDER = {
-  id: 'history:high:001',
-  level: 'high',
+  id: 'history:medium:001',
+  difficulty: 'medium',
   type: 'order',
   q: { tr: 'Eskiden yeniye sırala.', en: 'Order from oldest to newest.' },
   items: { tr: ['A', 'B', 'C', 'D'], en: ['A', 'B', 'C', 'D'] },
@@ -23,32 +23,41 @@ const ORDER = {
 
 const CODE = {
   ...CHOICE,
-  id: 'python:middle:001',
-  level: 'middle',
+  id: 'python:easy:001',
+  difficulty: 'easy',
   type: 'code',
   code: 'print(1 + 1)',
   q: { tr: 'Bu kod ne yazdırır?', en: 'What does this code print?' },
   options: { tr: ['2', '11', '1 + 1', 'Hata'], en: ['2', '11', '1 + 1', 'Error'] },
 };
 
-test('selections must match an area, a level and a topic taught at that level', () => {
-  assert.equal(isValidSelection({ area: 'general', topic: 'science', level: 'high' }), true);
-  assert.equal(isValidSelection({ area: 'general', topic: 'mixed', level: 'masters' }), true);
-  assert.equal(isValidSelection({ area: 'software', topic: 'sql', level: 'high' }), true);
-  assert.equal(isValidSelection({ area: 'software', topic: 'basics', level: 'primary' }), true);
-  assert.equal(isValidSelection({ area: 'software', topic: 'mixed', level: 'primary' }), true);
-  assert.equal(isValidSelection({ area: 'software', topic: 'sql', level: 'primary' }), false);
-  assert.equal(isValidSelection({ area: 'software', topic: 'basics', level: 'masters' }), false);
-  assert.equal(isValidSelection({ area: 'software', topic: 'sql', level: 'advanced' }), false);
-  assert.equal(isValidSelection({ area: 'constructor', topic: 'sql', level: 'high' }), false);
+test('selections must match an area, a difficulty and a topic of that area', () => {
+  assert.equal(isValidSelection({ area: 'general', topic: 'science', difficulty: 'medium' }), true);
+  assert.equal(isValidSelection({ area: 'general', topic: 'mixed', difficulty: 'hard' }), true);
+  assert.equal(isValidSelection({ area: 'software', topic: 'sql', difficulty: 'easy' }), true);
+  assert.equal(isValidSelection({ area: 'software', topic: 'basics', difficulty: 'hard' }), true);
+  assert.equal(isValidSelection({ area: 'software', topic: 'science', difficulty: 'easy' }), false);
+  assert.equal(isValidSelection({ area: 'software', topic: 'sql', difficulty: 'advanced' }), false);
+  assert.equal(isValidSelection({ area: 'software', topic: 'sql', difficulty: 'high' }), false);
+  assert.equal(isValidSelection({ area: 'constructor', topic: 'sql', difficulty: 'medium' }), false);
 });
 
-test('software topics open up level by level', () => {
-  assert.deepEqual(topicsFor('software', 'primary'), ['basics']);
-  assert.deepEqual(topicsFor('software', 'middle'), ['basics', 'algorithms', 'html-css', 'python']);
-  assert.equal(topicsFor('software', 'high').length, 9);
-  assert.ok(!topicsFor('software', 'university').includes('basics'));
-  assert.equal(topicsFor('general', 'primary').length, 6);
+test('every topic is played at every difficulty', () => {
+  assert.equal(topicsFor('software').length, 9);
+  assert.equal(topicsFor('general').length, 6);
+  assert.equal(areaOf('sql'), 'software');
+  assert.equal(areaOf('history'), 'general');
+  assert.equal(areaOf('mixed'), null);
+});
+
+test('old school levels map to a difficulty inside each topic\'s own range', () => {
+  // Genel konular beş seviyede soruluyordu
+  assert.deepEqual(OLD_LEVELS.map((level) => difficultyFromLevel('history', level)), ['easy', 'easy', 'medium', 'hard', 'hard']);
+  // JavaScript liseden başlıyordu: lise artık Kolay
+  assert.deepEqual(OLD_LEVELS.map((level) => difficultyFromLevel('javascript', level)), [null, null, 'easy', 'medium', 'hard']);
+  assert.deepEqual(OLD_LEVELS.map((level) => difficultyFromLevel('python', level)), [null, 'easy', 'medium', 'hard', 'hard']);
+  assert.deepEqual(OLD_LEVELS.map((level) => difficultyFromLevel('basics', level)), ['easy', 'medium', 'hard', null, null]);
+  assert.equal(difficultyFromLevel('history', 'phd'), null);
 });
 
 test('well-formed questions pass validation', () => {
@@ -61,7 +70,7 @@ test('broken questions are rejected', () => {
   const broken = [
     null,
     { ...CHOICE, id: 'Science 1' },
-    { ...CHOICE, level: 'expert' },
+    { ...CHOICE, difficulty: 'expert' },
     { ...CHOICE, type: 'image' },
     { ...CHOICE, q: { tr: 'Sadece Türkçe' } },
     { ...CHOICE, explain: { tr: ' ', en: 'x' } },
@@ -77,7 +86,7 @@ test('broken questions are rejected', () => {
 });
 
 test('refs round-trip and reject garbage', () => {
-  assert.deepEqual(parseRef(makeRef('science:high:001', 42)), { id: 'science:high:001', seed: 42 });
+  assert.deepEqual(parseRef(makeRef('science:medium:001', 42)), { id: 'science:medium:001', seed: 42 });
   for (const ref of [null, '', 'x', 'x~', 'x~-1', 'x~1.5', 'x~1~2', '~5', 'x~99999999999']) {
     assert.equal(parseRef(ref), null);
   }

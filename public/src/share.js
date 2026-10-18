@@ -40,11 +40,11 @@ export function dailyShareText({ lang, date, correct, streak }) {
   return `${t('title')} · ${t('dailyTitle')} · ${formatDay(date, lang)}\n${correct ? '✅' : '❌'}${fire}\n${SITE}`;
 }
 
-export function roundShareText({ lang, topic, level, results, score }) {
+export function roundShareText({ lang, topic, difficulty, results, score }) {
   const t = (key, params) => translate(lang, key, params);
   const correct = results.filter(Boolean).length;
   return [
-    `${t('title')} · ${t(`topic_${topic}`)} · ${t(`level_${level}`)}`,
+    `${t('title')} · ${t(`topic_${topic}`)} · ${t(`difficulty_${difficulty}`)}`,
     `${grid(results)} ${correct}/${results.length} · ${t('resultScore', { score })}`,
     SITE,
   ].join('\n');

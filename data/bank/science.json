@@ -2,8 +2,8 @@
   "topic": "science",
   "questions": [
     {
-      "id": "science:primary:001",
-      "level": "primary",
+      "id": "science:easy:001",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bitkiler kendi besinlerini hangi olayla üretir?",
@@ -29,8 +29,8 @@
       }
     },
     {
-      "id": "science:primary:002",
-      "level": "primary",
+      "id": "science:easy:002",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Saf su deniz seviyesinde kaç derecede kaynar?",
@@ -56,8 +56,8 @@
       }
     },
     {
-      "id": "science:primary:003",
-      "level": "primary",
+      "id": "science:easy:003",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Güneş’e en yakın gezegen hangisidir?",
@@ -83,8 +83,8 @@
       }
     },
     {
-      "id": "science:primary:004",
-      "level": "primary",
+      "id": "science:easy:004",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Hangisi bir memelidir?",
@@ -110,8 +110,8 @@
       }
     },
     {
-      "id": "science:primary:005",
-      "level": "primary",
+      "id": "science:easy:005",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Suyun katı hâline ne denir?",
@@ -137,8 +137,8 @@
       }
     },
     {
-      "id": "science:primary:006",
-      "level": "primary",
+      "id": "science:easy:006",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Mıknatısın çektiği madde hangisidir?",
@@ -164,8 +164,8 @@
       }
     },
     {
-      "id": "science:primary:007",
-      "level": "primary",
+      "id": "science:easy:007",
+      "difficulty": "easy",
       "type": "order",
       "q": {
         "tr": "Kelebeğin yaşam döngüsünü sırala.",
@@ -191,8 +191,8 @@
       }
     },
     {
-      "id": "science:primary:008",
-      "level": "primary",
+      "id": "science:easy:008",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "İnsan vücudunda kanı pompalayan organ hangisidir?",
@@ -218,8 +218,8 @@
       }
     },
     {
-      "id": "science:middle:001",
-      "level": "middle",
+      "id": "science:easy:009",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Hücrede enerji üretiminden sorumlu organel hangisidir?",
@@ -245,8 +245,8 @@
       }
     },
     {
-      "id": "science:middle:002",
-      "level": "middle",
+      "id": "science:easy:010",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Maddenin katı hâlden doğrudan gaz hâline geçmesine ne denir?",
@@ -272,8 +272,8 @@
       }
     },
     {
-      "id": "science:middle:003",
-      "level": "middle",
+      "id": "science:easy:011",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Kuvvetin birimi nedir?",
@@ -299,8 +299,8 @@
       }
     },
     {
-      "id": "science:middle:004",
-      "level": "middle",
+      "id": "science:easy:012",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Ay tutulması sırasında hangisi ortada yer alır?",
@@ -326,8 +326,8 @@
       }
     },
     {
-      "id": "science:middle:005",
-      "level": "middle",
+      "id": "science:easy:013",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Asitlerin pH değeri için hangisi doğrudur?",
@@ -353,8 +353,8 @@
       }
     },
     {
-      "id": "science:middle:006",
-      "level": "middle",
+      "id": "science:easy:014",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Kalıtsal bilgiyi taşıyan molekül hangisidir?",
@@ -380,8 +380,8 @@
       }
     },
     {
-      "id": "science:middle:007",
-      "level": "middle",
+      "id": "science:easy:015",
+      "difficulty": "easy",
       "type": "order",
       "q": {
         "tr": "Canlılardaki yapılanma düzeylerini küçükten büyüğe sırala.",
@@ -407,8 +407,8 @@
       }
     },
     {
-      "id": "science:middle:008",
-      "level": "middle",
+      "id": "science:easy:016",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Işığın bir ortamdan başka bir ortama geçerken yön değiştirmesine ne denir?",
@@ -434,8 +434,8 @@
       }
     },
     {
-      "id": "science:high:001",
-      "level": "high",
+      "id": "science:medium:001",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Işığın boşluktaki hızı yaklaşık kaçtır?",
@@ -461,8 +461,8 @@
       }
     },
     {
-      "id": "science:high:002",
-      "level": "high",
+      "id": "science:medium:002",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Newton’un ikinci yasası hangisidir?",
@@ -488,8 +488,8 @@
       }
     },
     {
-      "id": "science:high:003",
-      "level": "high",
+      "id": "science:medium:003",
+      "difficulty": "medium",
       "type": "order",
       "q": {
         "tr": "Gezegenleri Güneş’e en yakından en uzağa sırala.",
@@ -515,8 +515,8 @@
       }
     },
     {
-      "id": "science:high:004",
-      "level": "high",
+      "id": "science:medium:004",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Periyodik tabloda aynı sütundaki (grup) elementlerin ortak özelliği nedir?",
@@ -542,8 +542,8 @@
       }
     },
     {
-      "id": "science:high:005",
-      "level": "high",
+      "id": "science:medium:005",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Bitki hücresini hayvan hücresinden ayıran yapı hangisidir?",
@@ -569,8 +569,8 @@
       }
     },
     {
-      "id": "science:high:006",
-      "level": "high",
+      "id": "science:medium:006",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Enerjinin korunumu yasası neyi söyler?",
@@ -596,8 +596,8 @@
       }
     },
     {
-      "id": "science:high:007",
-      "level": "high",
+      "id": "science:medium:007",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Evrim teorisini doğal seçilim kavramıyla açıklayan bilim insanı kimdir?",
@@ -623,8 +623,8 @@
       }
     },
     {
-      "id": "science:high:008",
-      "level": "high",
+      "id": "science:medium:008",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Ohm yasasına göre direnç sabitken gerilim iki katına çıkarsa akım ne olur?",
@@ -650,8 +650,8 @@
       }
     },
     {
-      "id": "science:university:001",
-      "level": "university",
+      "id": "science:hard:001",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "DNA’da adenin bazı hangi bazla eşleşir?",
@@ -677,8 +677,8 @@
       }
     },
     {
-      "id": "science:university:002",
-      "level": "university",
+      "id": "science:hard:002",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Termodinamiğin ikinci yasasına göre yalıtılmış bir sistemde entropi nasıl değişir?",
@@ -704,8 +704,8 @@
       }
     },
     {
-      "id": "science:university:003",
-      "level": "university",
+      "id": "science:hard:003",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Kovalent bağ nasıl oluşur?",
@@ -731,8 +731,8 @@
       }
     },
     {
-      "id": "science:university:004",
-      "level": "university",
+      "id": "science:hard:004",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Protein sentezinin gerçekleştiği organel hangisidir?",
@@ -758,8 +758,8 @@
       }
     },
     {
-      "id": "science:university:005",
-      "level": "university",
+      "id": "science:hard:005",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Özel görelilikte hareket eden bir saat durgun bir gözlemciye göre nasıl işler?",
@@ -785,8 +785,8 @@
       }
     },
     {
-      "id": "science:university:006",
-      "level": "university",
+      "id": "science:hard:006",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Enzimler kimyasal tepkimeleri nasıl hızlandırır?",
@@ -812,8 +812,8 @@
       }
     },
     {
-      "id": "science:university:007",
-      "level": "university",
+      "id": "science:hard:007",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bir yıldızın ömrünün sonunda çok büyük kütleli ise neye dönüşebilir?",
@@ -839,8 +839,8 @@
       }
     },
     {
-      "id": "science:university:008",
-      "level": "university",
+      "id": "science:hard:008",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Avogadro sayısı yaklaşık kaçtır?",
@@ -866,8 +866,8 @@
       }
     },
     {
-      "id": "science:masters:001",
-      "level": "masters",
+      "id": "science:hard:009",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Heisenberg belirsizlik ilkesine göre hangi iki nicelik aynı anda sınırsız kesinlikle ölçülemez?",
@@ -893,8 +893,8 @@
       }
     },
     {
-      "id": "science:masters:002",
-      "level": "masters",
+      "id": "science:hard:010",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "CRISPR-Cas9 teknolojisi ne için kullanılır?",
@@ -920,8 +920,8 @@
       }
     },
     {
-      "id": "science:masters:003",
-      "level": "masters",
+      "id": "science:hard:011",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Standart Model’de kütle kazanımını açıklayan mekanizmayla ilişkili parçacık hangisidir?",
@@ -947,8 +947,8 @@
       }
     },
     {
-      "id": "science:masters:004",
-      "level": "masters",
+      "id": "science:hard:012",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Kuantum dolanıklığında iki parçacık için hangisi doğrudur?",
@@ -974,8 +974,8 @@
       }
     },
     {
-      "id": "science:masters:005",
-      "level": "masters",
+      "id": "science:hard:013",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Gibbs serbest enerjisi (ΔG) negatif olan bir tepkime için ne söylenebilir?",
@@ -1001,8 +1001,8 @@
       }
     },
     {
-      "id": "science:masters:006",
-      "level": "masters",
+      "id": "science:hard:014",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Epigenetik değişiklikler neyi etkiler?",
@@ -1028,8 +1028,8 @@
       }
     },
     {
-      "id": "science:masters:007",
-      "level": "masters",
+      "id": "science:hard:015",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Evrendeki madde-enerjinin büyük kısmını oluşturduğu düşünülen ama doğrudan gözlenemeyen bileşen hangisidir?",

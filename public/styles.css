@@ -566,18 +566,62 @@ h1 {
   content: '// ';
 }
 
-select {
-  width: 100%;
-  padding: 0.55rem 0.7rem;
+/* Kategori kartları: telefonda iki, geniş ekranda üç sütun. Dokunma alanı en az 3.25rem. */
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+@media (min-width: 560px) {
+  .topic-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.topic-tile {
+  display: grid;
+  align-content: center;
+  gap: 0.15rem;
+  min-height: 3.25rem;
+  padding: 0.6rem 0.75rem;
   border: 1px solid rgb(var(--c-line) / 0.8);
-  border-radius: 0.5rem;
-  background: rgb(var(--c-elevated));
+  border-radius: 0.6rem;
+  background: rgb(var(--c-elevated) / 0.6);
   color: rgb(var(--c-ink));
   font: inherit;
+  text-align: left;
   cursor: pointer;
+  transition: border-color 0.15s, background-color 0.15s;
 }
-select:hover {
-  border-color: rgb(var(--c-accent) / 0.6);
+.topic-tile:hover {
+  border-color: rgb(var(--c-accent) / 0.5);
+}
+.topic-tile[aria-checked='true'] {
+  border-color: rgb(var(--c-accent) / 0.8);
+  background: rgb(var(--c-accent) / 0.12);
+  box-shadow: inset 0 0 0 1px rgb(var(--c-accent) / 0.4);
+}
+.topic-tile.mixed {
+  border-style: dashed;
+}
+.topic-name {
+  font-weight: 600;
+  line-height: 1.25;
+}
+.topic-tile[aria-checked='true'] .topic-name {
+  color: rgb(var(--c-accent));
+}
+.topic-best {
+  color: rgb(var(--c-subtle));
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+}
+.difficulty-hint {
+  margin: 0.15rem 0 0;
+  color: rgb(var(--c-muted));
+  font-size: 0.85rem;
+}
+.segment {
+  min-height: 2.75rem;
 }
 
 .segmented {

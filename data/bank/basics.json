@@ -2,8 +2,8 @@
   "topic": "basics",
   "questions": [
     {
-      "id": "basics:primary:001",
-      "level": "primary",
+      "id": "basics:easy:001",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bir işi adım adım anlatan talimatlar dizisine ne denir?",
@@ -29,8 +29,8 @@
       }
     },
     {
-      "id": "basics:primary:002",
-      "level": "primary",
+      "id": "basics:easy:002",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bir komutun belirli sayıda tekrar edilmesine ne denir?",
@@ -56,8 +56,8 @@
       }
     },
     {
-      "id": "basics:primary:003",
-      "level": "primary",
+      "id": "basics:easy:003",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Programdaki hataya genellikle ne ad verilir?",
@@ -83,8 +83,8 @@
       }
     },
     {
-      "id": "basics:primary:004",
-      "level": "primary",
+      "id": "basics:easy:004",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Blokları sürükleyip bırakarak kod yazılan, çocuklar için tasarlanmış dil hangisidir?",
@@ -110,8 +110,8 @@
       }
     },
     {
-      "id": "basics:primary:005",
-      "level": "primary",
+      "id": "basics:easy:005",
+      "difficulty": "easy",
       "type": "order",
       "q": {
         "tr": "Diş fırçalama algoritmasını doğru sıraya koy.",
@@ -137,8 +137,8 @@
       }
     },
     {
-      "id": "basics:primary:006",
-      "level": "primary",
+      "id": "basics:easy:006",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "“Eğer yağmur yağıyorsa şemsiye al.” cümlesi programlamada neye örnektir?",
@@ -164,8 +164,8 @@
       }
     },
     {
-      "id": "basics:primary:007",
-      "level": "primary",
+      "id": "basics:easy:007",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bilgisayarın beyni olarak bilinen parça hangisidir?",
@@ -191,8 +191,8 @@
       }
     },
     {
-      "id": "basics:primary:008",
-      "level": "primary",
+      "id": "basics:easy:008",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Scratch’te bir karakter 10 adım ileri gidip bunu 4 kez tekrarlarsa toplam kaç adım gider?",
@@ -218,8 +218,8 @@
       }
     },
     {
-      "id": "basics:middle:001",
-      "level": "middle",
+      "id": "basics:medium:001",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Program çalışırken değeri değişebilen, veri saklayan isimli alana ne denir?",
@@ -245,8 +245,8 @@
       }
     },
     {
-      "id": "basics:middle:002",
-      "level": "middle",
+      "id": "basics:medium:002",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Bilgisayarlar veriyi temelde hangi sayı sistemiyle saklar?",
@@ -272,8 +272,8 @@
       }
     },
     {
-      "id": "basics:middle:003",
-      "level": "middle",
+      "id": "basics:medium:003",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "1 bayt kaç bitten oluşur?",
@@ -299,8 +299,8 @@
       }
     },
     {
-      "id": "basics:middle:004",
-      "level": "middle",
+      "id": "basics:medium:004",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Belirli bir işi yapan ve istenildiğinde çağrılabilen kod bloğuna ne denir?",
@@ -326,8 +326,8 @@
       }
     },
     {
-      "id": "basics:middle:005",
-      "level": "middle",
+      "id": "basics:medium:005",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Aşağıdakilerden hangisi bir programlama dili değildir?",
@@ -353,8 +353,8 @@
       }
     },
     {
-      "id": "basics:middle:006",
-      "level": "middle",
+      "id": "basics:medium:006",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Onluk sistemdeki 5 sayısının ikili (binary) karşılığı nedir?",
@@ -380,8 +380,8 @@
       }
     },
     {
-      "id": "basics:middle:007",
-      "level": "middle",
+      "id": "basics:medium:007",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Bir koşul doğru değilse çalışacak kısmı hangi anahtar kelime belirtir?",
@@ -407,8 +407,8 @@
       }
     },
     {
-      "id": "basics:middle:008",
-      "level": "middle",
+      "id": "basics:medium:008",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Kodun içine yazılan ama çalıştırılmayan açıklama satırlarına ne denir?",
@@ -434,8 +434,8 @@
       }
     },
     {
-      "id": "basics:high:001",
-      "level": "high",
+      "id": "basics:hard:001",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Yazılan kodu makinenin çalıştırabileceği koda bütün hâlinde çeviren programa ne denir?",
@@ -461,8 +461,8 @@
       }
     },
     {
-      "id": "basics:high:002",
-      "level": "high",
+      "id": "basics:hard:002",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Doğru ya da yanlış (true/false) değer alan veri tipine ne denir?",
@@ -488,8 +488,8 @@
       }
     },
     {
-      "id": "basics:high:003",
-      "level": "high",
+      "id": "basics:hard:003",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Metin (karakter dizisi) tutan veri tipine genellikle ne ad verilir?",
@@ -515,8 +515,8 @@
       }
     },
     {
-      "id": "basics:high:004",
-      "level": "high",
+      "id": "basics:hard:004",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Onaltılık (hexadecimal) sistemde \"F\" hangi sayıya karşılık gelir?",
@@ -542,8 +542,8 @@
       }
     },
     {
-      "id": "basics:high:005",
-      "level": "high",
+      "id": "basics:hard:005",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bir dizinin (array) ilk elemanının indeksi çoğu programlama dilinde kaçtır?",
@@ -569,8 +569,8 @@
       }
     },
     {
-      "id": "basics:high:006",
-      "level": "high",
+      "id": "basics:hard:006",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Kendi kendini çağıran fonksiyona ne denir?",
@@ -596,8 +596,8 @@
       }
     },
     {
-      "id": "basics:high:007",
-      "level": "high",
+      "id": "basics:hard:007",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Nesne yönelimli programlamada nesnelerin şablonuna ne denir?",
@@ -623,8 +623,8 @@
       }
     },
     {
-      "id": "basics:high:008",
-      "level": "high",
+      "id": "basics:hard:008",
+      "difficulty": "hard",
       "type": "order",
       "q": {
         "tr": "Yazılım geliştirme adımlarını doğru sıraya koy.",
@@ -650,8 +650,8 @@
       }
     },
     {
-      "id": "basics:primary:009",
-      "level": "primary",
+      "id": "basics:easy:009",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bilgisayara bilgi girmemizi sağlayan araç hangisidir?",
@@ -677,8 +677,8 @@
       }
     },
     {
-      "id": "basics:primary:010",
-      "level": "primary",
+      "id": "basics:easy:010",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Robotun “2 adım ileri, sağa dön, 2 adım ileri” komutlarına ne denir?",
@@ -704,8 +704,8 @@
       }
     },
     {
-      "id": "basics:primary:011",
-      "level": "primary",
+      "id": "basics:easy:011",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bir kutuya “puan” adını verip içine 5 koyarsak bu kutuya programlamada ne denir?",
@@ -731,8 +731,8 @@
       }
     },
     {
-      "id": "basics:primary:012",
-      "level": "primary",
+      "id": "basics:easy:012",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "İnternette tanımadığın biri adresini sorarsa ne yapmalısın?",
@@ -758,8 +758,8 @@
       }
     },
     {
-      "id": "basics:primary:013",
-      "level": "primary",
+      "id": "basics:easy:013",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Scratch’te oyunu başlatmak için genellikle hangi bayrağa tıklanır?",
@@ -785,8 +785,8 @@
       }
     },
     {
-      "id": "basics:primary:014",
-      "level": "primary",
+      "id": "basics:easy:014",
+      "difficulty": "easy",
       "type": "order",
       "q": {
         "tr": "Sabah okula hazırlanma algoritmasını sırala.",
@@ -812,8 +812,8 @@
       }
     },
     {
-      "id": "basics:primary:015",
-      "level": "primary",
+      "id": "basics:easy:015",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bilgisayarı güvenli kullanmak için hangisi doğrudur?",
@@ -839,8 +839,8 @@
       }
     },
     {
-      "id": "basics:primary:016",
-      "level": "primary",
+      "id": "basics:easy:016",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bir labirentte robotu çıkışa ulaştırmak için “duvar varsa sağa dön” demek neye örnektir?",
@@ -866,8 +866,8 @@
       }
     },
     {
-      "id": "basics:primary:017",
-      "level": "primary",
+      "id": "basics:easy:017",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bilgisayarın dosyaları kalıcı olarak sakladığı parça hangisidir?",
@@ -893,8 +893,8 @@
       }
     },
     {
-      "id": "basics:primary:018",
-      "level": "primary",
+      "id": "basics:easy:018",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Kodlama yaparken bir hata bulduğunda en iyi yol hangisidir?",
@@ -920,8 +920,8 @@
       }
     },
     {
-      "id": "basics:primary:019",
-      "level": "primary",
+      "id": "basics:easy:019",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bir karakter kareyi çizmek için “10 adım git, 90° dön” komutunu kaç kez tekrarlamalıdır?",
@@ -947,8 +947,8 @@
       }
     },
     {
-      "id": "basics:primary:020",
-      "level": "primary",
+      "id": "basics:easy:020",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "İnternetteki bir bilginin doğru olup olmadığını anlamak için ne yapılmalıdır?",
@@ -974,8 +974,8 @@
       }
     },
     {
-      "id": "basics:middle:009",
-      "level": "middle",
+      "id": "basics:medium:009",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "“Eğer puan > 50 ise ‘Geçti’ yaz, değilse ‘Kaldı’ yaz.” puan 50 olursa ne yazılır?",
@@ -1001,8 +1001,8 @@
       }
     },
     {
-      "id": "basics:middle:010",
-      "level": "middle",
+      "id": "basics:medium:010",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "İkili sistemdeki 1010 sayısı onluk sistemde kaçtır?",
@@ -1028,8 +1028,8 @@
       }
     },
     {
-      "id": "basics:middle:011",
-      "level": "middle",
+      "id": "basics:medium:011",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "1 kilobayt yaklaşık kaç bayttır?",
@@ -1055,8 +1055,8 @@
       }
     },
     {
-      "id": "basics:middle:012",
-      "level": "middle",
+      "id": "basics:medium:012",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Program yazarken ne yapacağını plana dökmek için kullanılan, insan diline yakın taslağa ne denir?",
@@ -1082,8 +1082,8 @@
       }
     },
     {
-      "id": "basics:middle:013",
-      "level": "middle",
+      "id": "basics:medium:013",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Bir koşul içinde “ve” (AND) kullanıldığında sonuç ne zaman doğru olur?",
@@ -1109,8 +1109,8 @@
       }
     },
     {
-      "id": "basics:middle:014",
-      "level": "middle",
+      "id": "basics:medium:014",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Aşağıdakilerden hangisi bir işletim sistemidir?",
@@ -1136,8 +1136,8 @@
       }
     },
     {
-      "id": "basics:middle:015",
-      "level": "middle",
+      "id": "basics:medium:015",
+      "difficulty": "medium",
       "type": "order",
       "q": {
         "tr": "Bir oyun karakterinin zıplama algoritmasını sırala.",
@@ -1163,8 +1163,8 @@
       }
     },
     {
-      "id": "basics:middle:016",
-      "level": "middle",
+      "id": "basics:medium:016",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Tekrar sayısını bilmeden “koşul doğru olduğu sürece” çalışan döngü hangisidir?",
@@ -1190,8 +1190,8 @@
       }
     },
     {
-      "id": "basics:middle:017",
-      "level": "middle",
+      "id": "basics:medium:017",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Bir web sitesinin adresine ne denir?",
@@ -1217,8 +1217,8 @@
       }
     },
     {
-      "id": "basics:middle:018",
-      "level": "middle",
+      "id": "basics:medium:018",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Bilgisayarın çalışırken geçici olarak veri tuttuğu, kapanınca silinen bellek hangisidir?",
@@ -1244,8 +1244,8 @@
       }
     },
     {
-      "id": "basics:middle:019",
-      "level": "middle",
+      "id": "basics:medium:019",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Ekrandaki renkler genellikle hangi üç ışık renginin karışımıyla oluşur?",
@@ -1271,8 +1271,8 @@
       }
     },
     {
-      "id": "basics:middle:020",
-      "level": "middle",
+      "id": "basics:medium:020",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "İki sayının yerini değiştirmek için genellikle ne gerekir?",
@@ -1298,8 +1298,8 @@
       }
     },
     {
-      "id": "basics:high:009",
-      "level": "high",
+      "id": "basics:hard:009",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bir programın aynı girdiye her zaman aynı çıktıyı vermesi hangi test için önemlidir?",
@@ -1325,8 +1325,8 @@
       }
     },
     {
-      "id": "basics:high:010",
-      "level": "high",
+      "id": "basics:hard:010",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Kaynak kodunu satır satır okuyup çalıştıran programa ne denir?",
@@ -1352,8 +1352,8 @@
       }
     },
     {
-      "id": "basics:high:011",
-      "level": "high",
+      "id": "basics:hard:011",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Nesne yönelimli programlamada bir sınıfın başka bir sınıfın özelliklerini devralmasına ne denir?",
@@ -1379,8 +1379,8 @@
       }
     },
     {
-      "id": "basics:high:012",
-      "level": "high",
+      "id": "basics:hard:012",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Verinin dışarıdan doğrudan değiştirilmesini engelleyip metotlarla erişilmesini sağlayan ilke hangisidir?",
@@ -1406,8 +1406,8 @@
       }
     },
     {
-      "id": "basics:high:013",
-      "level": "high",
+      "id": "basics:hard:013",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bir dizinin elemanlarını sırayla toplayan döngünün başında toplam değişkeni kaça eşitlenir?",
@@ -1433,8 +1433,8 @@
       }
     },
     {
-      "id": "basics:high:014",
-      "level": "high",
+      "id": "basics:hard:014",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Sonsuz döngüye ne yol açar?",
@@ -1460,8 +1460,8 @@
       }
     },
     {
-      "id": "basics:high:015",
-      "level": "high",
+      "id": "basics:hard:015",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Sürüm kontrol sistemi Git ne işe yarar?",
@@ -1487,8 +1487,8 @@
       }
     },
     {
-      "id": "basics:high:016",
-      "level": "high",
+      "id": "basics:hard:016",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "API (Uygulama Programlama Arayüzü) nedir?",
@@ -1514,8 +1514,8 @@
       }
     },
     {
-      "id": "basics:high:017",
-      "level": "high",
+      "id": "basics:hard:017",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Kodu küçük parçalara bölüp her birini ayrı test etmeye ne denir?",
@@ -1541,8 +1541,8 @@
       }
     },
     {
-      "id": "basics:high:018",
-      "level": "high",
+      "id": "basics:hard:018",
+      "difficulty": "hard",
       "type": "order",
       "q": {
         "tr": "Bir kullanıcının giriş yapma akışını sırala.",
@@ -1568,8 +1568,8 @@
       }
     },
     {
-      "id": "basics:high:019",
-      "level": "high",
+      "id": "basics:hard:019",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bir fonksiyona gönderilen değerlere ne denir?",

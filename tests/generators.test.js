@@ -20,17 +20,17 @@ const PEOPLE = [
 const generators = createGenerators({ people: PEOPLE });
 
 test('"who" asks what a person is known for, with one right answer', () => {
-  const question = generators.build('gen:who:primary:Q4', 42, 'tr');
+  const question = generators.build('gen:who:easy:Q4', 42, 'tr');
   assert.equal(question.prompt, 'Napolyon en çok hangi alanda tanınır?');
   assert.equal(question.options[question.answer], 'Siyasetçi');
   assert.equal(new Set(question.options).size, 4);
-  assert.equal(question.id, 'gen:who:primary:Q4');
+  assert.equal(question.id, 'gen:who:easy:Q4');
 });
 
 test('"who" never offers another of the person\'s fields as a wrong answer', () => {
   const labels = ['Bilim insanı', 'Filozof'];
   for (let seed = 0; seed < 30; seed++) {
-    const question = generators.build('gen:who:primary:Q1', seed, 'tr');
+    const question = generators.build('gen:who:easy:Q1', seed, 'tr');
     const wrong = question.options.filter((_, i) => i !== question.answer);
     assert.ok(!wrong.includes('Filozof'));
     assert.ok(labels.includes(question.options[question.answer]));
@@ -38,12 +38,12 @@ test('"who" never offers another of the person\'s fields as a wrong answer', () 
 });
 
 test('"who" is only built for people with a single field', () => {
-  assert.equal(generators.build('gen:who:primary:Q3', 1, 'en'), null);
+  assert.equal(generators.build('gen:who:easy:Q3', 1, 'en'), null);
 });
 
 test('"which" has exactly one person from the asked field', () => {
   for (let seed = 0; seed < 30; seed++) {
-    const question = generators.build('gen:which:primary:Q6', seed, 'en');
+    const question = generators.build('gen:which:easy:Q6', seed, 'en');
     assert.equal(question.prompt, 'Which of these people is a painter or sculptor?');
     assert.equal(question.options[question.answer], 'Vincent van Gogh');
     assert.ok(!question.options.includes('Leonardo da Vinci'));
@@ -51,46 +51,46 @@ test('"which" has exactly one person from the asked field', () => {
 });
 
 test('"era" orders people who lived at least a century apart', () => {
-  const question = generators.build('gen:era:primary:Q5.Q1.Q4.Q2', 3, 'en');
+  const question = generators.build('gen:era:easy:Q5.Q1.Q4.Q2', 3, 'en');
   assert.equal(question.type, 'order');
   assert.deepEqual(question.answer.map((i) => question.items[i]), ['Aristotle', 'Leonardo da Vinci', 'Napoleon', 'Lionel Messi']);
   assert.equal(question.explain, 'Aristotle (384 BC), Leonardo da Vinci (1452), Napoleon (1769), Lionel Messi (1987)');
-  assert.match(generators.build('gen:era:primary:Q5.Q1.Q4.Q2', 3, 'tr').explain, /^Aristoteles \(MÖ 384\)/);
-  assert.equal(generators.build('gen:era:primary:Q1.Q2.Q4.Q7', 3, 'en'), null);
+  assert.match(generators.build('gen:era:easy:Q5.Q1.Q4.Q2', 3, 'tr').explain, /^Aristoteles \(MÖ 384\)/);
+  assert.equal(generators.build('gen:era:easy:Q1.Q2.Q4.Q7', 3, 'en'), null);
 });
 
 test('the same id and seed always build the same question', () => {
-  assert.deepEqual(generators.build('gen:which:primary:Q5', 9, 'tr'), generators.build('gen:which:primary:Q5', 9, 'tr'));
+  assert.deepEqual(generators.build('gen:which:easy:Q5', 9, 'tr'), generators.build('gen:which:easy:Q5', 9, 'tr'));
 });
 
 test('unknown or malformed ids give null', () => {
-  for (const id of ['gen:who:primary:Q99', 'gen:nope:primary:Q4', 'gen:who:expert:Q4', 'gen:who:primary:4', 'gen:who:primary:Q4.Q5.Q6.Q7.Q1', 'gen:constructor:primary:Q4']) {
+  for (const id of ['gen:who:easy:Q99', 'gen:nope:easy:Q4', 'gen:who:expert:Q4', 'gen:who:easy:4', 'gen:who:easy:Q4.Q5.Q6.Q7.Q1', 'gen:constructor:easy:Q4']) {
     assert.equal(generators.build(id, 1, 'en'), null);
   }
 });
 
-test('pick follows the topic and level', () => {
-  const ids = generators.pick('general', 'primary', mulberry32(1), 5);
+test('pick follows the topic and difficulty', () => {
+  const ids = generators.pick('general', 'easy', mulberry32(1), 5);
   assert.ok(ids.length > 0 && ids.length <= 5);
-  assert.ok(ids.every((id) => /^gen:(who|which|era):primary:/.test(id)));
-  assert.ok(generators.pick('history', 'primary', mulberry32(1), 5).every((id) => id.startsWith('gen:era:')));
-  assert.deepEqual(generators.pick('science', 'primary', mulberry32(1), 5), []);
+  assert.ok(ids.every((id) => /^gen:(who|which|era):easy:/.test(id)));
+  assert.ok(generators.pick('history', 'easy', mulberry32(1), 5).every((id) => id.startsWith('gen:era:')));
+  assert.deepEqual(generators.pick('science', 'easy', mulberry32(1), 5), []);
   assert.deepEqual(generators.pick('general', 'beginner', mulberry32(1), 5), []);
 });
 
 test('invalid people are skipped', (t) => {
   t.mock.method(console, 'warn', () => {});
   const broken = createGenerators({ people: [...PEOPLE, { id: 'X', name: {}, born: 'old', groups: ['wizard'] }] });
-  assert.equal(broken.build('gen:who:primary:Q4', 1, 'en').options.length, 4);
+  assert.equal(broken.build('gen:who:easy:Q4', 1, 'en').options.length, 4);
 });
 
-test('the real data builds clean questions for every topic and level', async () => {
+test('the real data builds clean questions for every topic and difficulty', async () => {
   const real = createGenerators(await readGeneratedFiles());
   const random = mulberry32(2026);
   for (const topic of ['general', 'history', 'geography', 'literature', 'science']) {
-    for (const level of ['primary', 'middle', 'high', 'university', 'masters']) {
-      const ids = real.pick(topic, level, random, 20);
-      assert.ok(ids.length >= 5, `too few questions for ${topic}/${level}`);
+    for (const difficulty of ['easy', 'easy', 'medium', 'hard', 'hard']) {
+      const ids = real.pick(topic, difficulty, random, 20);
+      assert.ok(ids.length >= 5, `too few questions for ${topic}/${difficulty}`);
       for (const id of ids) {
         for (const lang of ['tr', 'en']) {
           const question = real.build(id, 7, lang);
@@ -106,8 +106,8 @@ test('the real data builds clean questions for every topic and level', async () 
 
 test('generated questions already seen are not produced again', async () => {
   const real = createGenerators(await readGeneratedFiles());
-  const first = real.pick('geography', 'high', mulberry32(1), 10);
-  const second = real.pick('geography', 'high', mulberry32(1), 10, new Set(first));
+  const first = real.pick('geography', 'medium', mulberry32(1), 10);
+  const second = real.pick('geography', 'medium', mulberry32(1), 10, new Set(first));
   assert.equal(second.length, 10);
   assert.ok(second.every((id) => !first.includes(id)));
 });

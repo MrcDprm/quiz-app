@@ -2,8 +2,8 @@
   "topic": "literature",
   "questions": [
     {
-      "id": "literature:primary:001",
-      "level": "primary",
+      "id": "literature:easy:001",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Masallar genellikle hangi sözle başlar?",
@@ -29,8 +29,8 @@
       }
     },
     {
-      "id": "literature:primary:002",
-      "level": "primary",
+      "id": "literature:easy:002",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "İstiklal Marşı’nın şairi kimdir?",
@@ -56,8 +56,8 @@
       }
     },
     {
-      "id": "literature:primary:003",
-      "level": "primary",
+      "id": "literature:easy:003",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Nasreddin Hoca hikâyeleri hangi özelliğiyle bilinir?",
@@ -83,8 +83,8 @@
       }
     },
     {
-      "id": "literature:primary:004",
-      "level": "primary",
+      "id": "literature:easy:004",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Ana renkler hangileridir (boya karışımında)?",
@@ -110,8 +110,8 @@
       }
     },
     {
-      "id": "literature:primary:005",
-      "level": "primary",
+      "id": "literature:easy:005",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Keloğlan hangi tür eserlerin kahramanıdır?",
@@ -137,8 +137,8 @@
       }
     },
     {
-      "id": "literature:primary:006",
-      "level": "primary",
+      "id": "literature:easy:006",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Piyano hangi tür çalgıdır?",
@@ -164,8 +164,8 @@
       }
     },
     {
-      "id": "literature:middle:001",
-      "level": "middle",
+      "id": "literature:easy:007",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Dede Korkut Hikâyeleri hangi türe örnektir?",
@@ -191,8 +191,8 @@
       }
     },
     {
-      "id": "literature:middle:002",
-      "level": "middle",
+      "id": "literature:easy:008",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Şiirde dize sonlarındaki ses benzerliğine ne denir?",
@@ -218,8 +218,8 @@
       }
     },
     {
-      "id": "literature:middle:003",
-      "level": "middle",
+      "id": "literature:easy:009",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Yunus Emre hangi alanda tanınır?",
@@ -245,8 +245,8 @@
       }
     },
     {
-      "id": "literature:middle:004",
-      "level": "middle",
+      "id": "literature:easy:010",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Mimar Sinan’ın “ustalık eserim” dediği cami hangisidir?",
@@ -272,8 +272,8 @@
       }
     },
     {
-      "id": "literature:middle:005",
-      "level": "middle",
+      "id": "literature:easy:011",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bir öyküde olayların geçtiği yer ve zamana ne denir?",
@@ -299,8 +299,8 @@
       }
     },
     {
-      "id": "literature:middle:006",
-      "level": "middle",
+      "id": "literature:easy:012",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Hacivat ile Karagöz hangi sanatın karakterleridir?",
@@ -326,8 +326,8 @@
       }
     },
     {
-      "id": "literature:high:001",
-      "level": "high",
+      "id": "literature:medium:001",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Tanzimat edebiyatının ilk yerli romanı olarak kabul edilen eser hangisidir?",
@@ -353,8 +353,8 @@
       }
     },
     {
-      "id": "literature:high:002",
-      "level": "high",
+      "id": "literature:medium:002",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Garip (Birinci Yeni) akımının öncülerinden biri kimdir?",
@@ -380,8 +380,8 @@
       }
     },
     {
-      "id": "literature:high:003",
-      "level": "high",
+      "id": "literature:medium:003",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Realizm (gerçekçilik) akımının temel özelliği nedir?",
@@ -407,8 +407,8 @@
       }
     },
     {
-      "id": "literature:high:004",
-      "level": "high",
+      "id": "literature:medium:004",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Empresyonizm (izlenimcilik) resimde neyi öne çıkarır?",
@@ -434,8 +434,8 @@
       }
     },
     {
-      "id": "literature:high:005",
-      "level": "high",
+      "id": "literature:medium:005",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Divan edebiyatında en çok kullanılan ölçü hangisidir?",
@@ -461,8 +461,8 @@
       }
     },
     {
-      "id": "literature:high:006",
-      "level": "high",
+      "id": "literature:medium:006",
+      "difficulty": "medium",
       "type": "order",
       "q": {
         "tr": "Bu sanat dönemlerini eskiden yeniye sırala.",
@@ -488,8 +488,8 @@
       }
     },
     {
-      "id": "literature:university:001",
-      "level": "university",
+      "id": "literature:hard:001",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bilinç akışı tekniğiyle bilinen yazar kimdir?",
@@ -515,8 +515,8 @@
       }
     },
     {
-      "id": "literature:university:002",
-      "level": "university",
+      "id": "literature:hard:002",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Büyülü gerçekçilik en çok hangi edebiyatla özdeşleşmiştir?",
@@ -542,8 +542,8 @@
       }
     },
     {
-      "id": "literature:university:003",
-      "level": "university",
+      "id": "literature:hard:003",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "İkinci Yeni şiirinin temel özelliği nedir?",
@@ -569,8 +569,8 @@
       }
     },
     {
-      "id": "literature:university:004",
-      "level": "university",
+      "id": "literature:hard:004",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Kafkaesk kavramı neyi anlatır?",
@@ -596,8 +596,8 @@
       }
     },
     {
-      "id": "literature:university:005",
-      "level": "university",
+      "id": "literature:hard:005",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Brecht’in epik tiyatrosunda \"yabancılaştırma efekti\" neyi amaçlar?",
@@ -623,8 +623,8 @@
       }
     },
     {
-      "id": "literature:university:006",
-      "level": "university",
+      "id": "literature:hard:006",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Osman Hamdi Bey sanat dışında hangi alanda da öncüdür?",
@@ -650,8 +650,8 @@
       }
     },
     {
-      "id": "literature:masters:001",
-      "level": "masters",
+      "id": "literature:hard:007",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Roland Barthes’ın “Yazarın Ölümü” makalesi neyi savunur?",
@@ -677,8 +677,8 @@
       }
     },
     {
-      "id": "literature:masters:002",
-      "level": "masters",
+      "id": "literature:hard:008",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Mikhail Bakhtin’in “çok seslilik” (polifoni) kavramı hangi yazar üzerinden geliştirilmiştir?",
@@ -704,8 +704,8 @@
       }
     },
     {
-      "id": "literature:masters:003",
-      "level": "masters",
+      "id": "literature:hard:009",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Walter Benjamin “aura” kavramını hangi bağlamda tartışır?",
@@ -731,8 +731,8 @@
       }
     },
     {
-      "id": "literature:masters:004",
-      "level": "masters",
+      "id": "literature:hard:010",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Metinlerarasılık (intertextuality) kavramını ortaya atan kuramcı kimdir?",
@@ -758,8 +758,8 @@
       }
     },
     {
-      "id": "literature:masters:005",
-      "level": "masters",
+      "id": "literature:hard:011",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Ahmet Hamdi Tanpınar’ın eserlerinde öne çıkan temel tema hangisidir?",
@@ -785,8 +785,8 @@
       }
     },
     {
-      "id": "literature:masters:006",
-      "level": "masters",
+      "id": "literature:hard:012",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Rus biçimcilerinin “yabancılaştırma” (ostranenie) kavramı ne anlama gelir?",

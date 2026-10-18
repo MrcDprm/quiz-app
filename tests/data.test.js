@@ -14,7 +14,7 @@ for (const topic of TOPICS) {
     for (const raw of questions) {
       assert.ok(isValidQuestion(raw), `invalid question: ${raw?.id}`);
       assert.ok(raw.id.startsWith(`${topic}:`), `wrong file: ${raw.id}`);
-      assert.ok(raw.id.split(':')[1] === raw.level, `id and level differ: ${raw.id}`);
+      assert.ok(raw.id.split(':')[1] === raw.difficulty, `id and difficulty differ: ${raw.id}`);
       assert.ok(!ids.has(raw.id), `duplicate id: ${raw.id}`);
       ids.add(raw.id);
     }

@@ -1,11 +1,13 @@
 // Ayarları tarayıcıda saklar.
 // Okunan veriye güvenilmez: bozuk, eksik ya da beklenmeyen değer varsa varsayılan kullanılır.
-import { AREAS, LANGS, LEVELS, MIXED, isValidSelection, topicsFor } from './topics.js';
+import { AREAS, DIFFICULTIES, LANGS, MIXED, OLD_LEVELS, difficultyFromLevel, isValidSelection, topicsFor } from './topics.js';
 import { isDayKey } from './dates.js';
 import { EMPTY_STATS, MAX_MISTAKES, MAX_SEEN } from './progress.js';
 
 export const STORAGE_KEY = 'quiz-settings';
 export const THEMES = ['dark', 'light'];
+// 2: okul seviyeleri yerine zorluk (kategori + zorluk sürümü)
+export const VERSION = 2;
 
 /** Gizli sekmede ya da çerezler engelliyken localStorage'a erişmek bile hata fırlatabilir. */
 function browserStorage() {
@@ -39,10 +41,10 @@ function readStreak(saved) {
 
 const asObject = (value) => (value && typeof value === 'object' && !Array.isArray(value) ? value : {});
 
-// "general:geography:high" gibi bir seçim anahtarı gerçekten geçerli mi?
+// "general:geography:easy" gibi bir seçim anahtarı gerçekten geçerli mi?
 const isSelectionKey = (key) => {
-  const [area, topic, level] = String(key).split(':');
-  return isValidSelection({ area, topic, level });
+  const [area, topic, difficulty] = String(key).split(':');
+  return isValidSelection({ area, topic, difficulty });
 };
 
 function readStats(saved) {
@@ -57,7 +59,7 @@ function readStats(saved) {
   };
 }
 
-// Yanlış cevaplanan soruların kimlikleri ("science:high:004", "gen:capital:high:JP").
+// Yanlış cevaplanan soruların kimlikleri ("science:medium:004", "gen:capital:medium:JP").
 const MISTAKE_ID = /^[a-z-]+:[a-z]+:[A-Za-z0-9.:]{1,60}$/;
 
 function readIds(saved, max) {
@@ -65,7 +67,7 @@ function readIds(saved, max) {
   return [...new Set(ids)].slice(-max);
 }
 
-// Seçim başına görülen sorular: { "general:geography:high": [kimlikler] }
+// Seçim başına görülen sorular: { "general:geography:easy": [kimlikler] }
 function readSeen(saved) {
   const entries = Object.entries(asObject(saved)).filter(([key]) => isSelectionKey(key)).slice(0, 100);
   return Object.fromEntries(entries.map(([key, ids]) => [key, readIds(ids, MAX_SEEN)]));
@@ -78,21 +80,54 @@ function readDaily(saved) {
     : null;
 }
 
-/** Açılır listedeki konular: o alanda ve seviyede sorulanlar, en sonda "Karışık". */
-export function topicsOf(area, level) {
-  return [...topicsFor(area, level), MIXED];
+/** Eski anahtar ("general:history:middle") → yeni ("general:history:easy"); çevrilemezse null. */
+function migrateKey(key) {
+  const [area, topic, level] = String(key).split(':');
+  if (!OLD_LEVELS.includes(level)) return null;
+  const difficulty = difficultyFromLevel(topic, level);
+  const next = `${area}:${topic}:${difficulty}`;
+  return difficulty && isSelectionKey(next) ? next : null;
+}
+
+/**
+ * İlk sürümde kaydedilmiş ayarları yeni biçime çevirir. Keşfedilen konular ve en iyi puanlar taşınır
+ * (iki seviye aynı zorluğa düşerse büyük puan kalır). Eski soru kimlikleri artık var olmadığı için
+ * "Hatalarım" ve görülen sorular listesi sıfırlanır; sayılar, seri ve rozet sayaçları olduğu gibi kalır.
+ */
+export function migrate(saved) {
+  if (saved.version >= VERSION) return saved;
+  const stats = asObject(saved.stats);
+  const topics = (Array.isArray(stats.topics) ? stats.topics : []).map(migrateKey).filter(Boolean);
+  const best = {};
+  for (const [key, score] of Object.entries(asObject(stats.best))) {
+    const next = migrateKey(key);
+    if (next && count(score) === score) best[next] = Math.max(best[next] ?? 0, score);
+  }
+  const { mastersHigh, ...rest } = stats;
+  return {
+    ...saved,
+    version: VERSION,
+    difficulty: saved.level ? difficultyFromLevel(saved.topic, saved.level) : saved.difficulty,
+    stats: { ...rest, hardHigh: mastersHigh, topics, best },
+    mistakes: [],
+    seen: {},
+  };
+}
+
+/** Kategori kartları: alandaki konular, en sonda "Karışık". */
+export function topicsOf(area) {
+  return [...topicsFor(area), MIXED];
 }
 
 export function loadSettings(storage = browserStorage(), fallbackLang = 'tr') {
-  const saved = readJson(storage);
+  const saved = migrate(asObject(readJson(storage)));
   const area = oneOf(saved.area, Object.keys(AREAS), 'general');
-  const level = oneOf(saved.level, LEVELS, LEVELS[0]);
-  const topics = topicsOf(area, level);
+  const topics = topicsOf(area);
   return {
     lang: oneOf(saved.lang, LANGS, fallbackLang),
     theme: oneOf(saved.theme, THEMES, 'dark'),
     area,
-    level,
+    difficulty: oneOf(saved.difficulty, DIFFICULTIES, DIFFICULTIES[0]),
     topic: oneOf(saved.topic, topics, topics[0]),
     streak: readStreak(saved.streak),
     daily: readDaily(saved.daily),
@@ -104,9 +139,12 @@ export function loadSettings(storage = browserStorage(), fallbackLang = 'tr') {
 
 /** Sadece bilinen alanlar yazılır. Kaydedilemezse (depolama dolu/kapalı) uygulama yine çalışır. */
 export function saveSettings(settings, storage = browserStorage()) {
-  const { lang, theme, area, topic, level, streak, daily, stats, mistakes, seen } = settings;
+  const { lang, theme, area, topic, difficulty, streak, daily, stats, mistakes, seen } = settings;
   try {
-    storage.setItem(STORAGE_KEY, JSON.stringify({ lang, theme, area, topic, level, streak, daily, stats, mistakes, seen }));
+    storage.setItem(
+      STORAGE_KEY,
+      JSON.stringify({ version: VERSION, lang, theme, area, topic, difficulty, streak, daily, stats, mistakes, seen }),
+    );
     return true;
   } catch {
     return false;

@@ -2,8 +2,8 @@
   "topic": "math",
   "questions": [
     {
-      "id": "math:primary:001",
-      "level": "primary",
+      "id": "math:easy:001",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bir üçgenin kaç kenarı vardır?",
@@ -29,8 +29,8 @@
       }
     },
     {
-      "id": "math:primary:002",
-      "level": "primary",
+      "id": "math:easy:002",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Hangisi çift sayıdır?",
@@ -56,8 +56,8 @@
       }
     },
     {
-      "id": "math:primary:003",
-      "level": "primary",
+      "id": "math:easy:003",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "1 saat kaç dakikadır?",
@@ -83,8 +83,8 @@
       }
     },
     {
-      "id": "math:primary:004",
-      "level": "primary",
+      "id": "math:easy:004",
+      "difficulty": "easy",
       "type": "order",
       "q": {
         "tr": "Sayıları küçükten büyüğe sırala.",
@@ -110,8 +110,8 @@
       }
     },
     {
-      "id": "math:middle:001",
-      "level": "middle",
+      "id": "math:easy:005",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Asal sayı hangisidir?",
@@ -137,8 +137,8 @@
       }
     },
     {
-      "id": "math:middle:002",
-      "level": "middle",
+      "id": "math:easy:006",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Bir üçgenin iç açılarının toplamı kaç derecedir?",
@@ -164,8 +164,8 @@
       }
     },
     {
-      "id": "math:middle:003",
-      "level": "middle",
+      "id": "math:easy:007",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "Yarıçapı r olan çemberin çevresi nedir?",
@@ -191,8 +191,8 @@
       }
     },
     {
-      "id": "math:middle:004",
-      "level": "middle",
+      "id": "math:easy:008",
+      "difficulty": "easy",
       "type": "choice",
       "q": {
         "tr": "3/4 kesri yüzde kaça eşittir?",
@@ -218,8 +218,8 @@
       }
     },
     {
-      "id": "math:high:001",
-      "level": "high",
+      "id": "math:medium:001",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "Bir fonksiyonun türevi neyi ifade eder?",
@@ -245,8 +245,8 @@
       }
     },
     {
-      "id": "math:high:002",
-      "level": "high",
+      "id": "math:medium:002",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "log₁₀(1000) kaçtır?",
@@ -272,8 +272,8 @@
       }
     },
     {
-      "id": "math:high:003",
-      "level": "high",
+      "id": "math:medium:003",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "x² − 5x + 6 = 0 denkleminin kökleri nelerdir?",
@@ -299,8 +299,8 @@
       }
     },
     {
-      "id": "math:high:004",
-      "level": "high",
+      "id": "math:medium:004",
+      "difficulty": "medium",
       "type": "choice",
       "q": {
         "tr": "sin²x + cos²x ifadesi neye eşittir?",
@@ -326,8 +326,8 @@
       }
     },
     {
-      "id": "math:university:001",
-      "level": "university",
+      "id": "math:hard:001",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "f(x) = x² fonksiyonunun türevi nedir?",
@@ -353,8 +353,8 @@
       }
     },
     {
-      "id": "math:university:002",
-      "level": "university",
+      "id": "math:hard:002",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "∫ 1/x dx integrali nedir?",
@@ -380,8 +380,8 @@
       }
     },
     {
-      "id": "math:university:003",
-      "level": "university",
+      "id": "math:hard:003",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "lim (x→0) sin(x)/x kaçtır?",
@@ -407,8 +407,8 @@
       }
     },
     {
-      "id": "math:university:004",
-      "level": "university",
+      "id": "math:hard:004",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "2 × 2’lik [[1, 2], [3, 4]] matrisinin determinantı kaçtır?",
@@ -434,8 +434,8 @@
       }
     },
     {
-      "id": "math:university:005",
-      "level": "university",
+      "id": "math:hard:005",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Adil bir zar iki kez atıldığında iki kez 6 gelme olasılığı nedir?",
@@ -461,8 +461,8 @@
       }
     },
     {
-      "id": "math:university:006",
-      "level": "university",
+      "id": "math:hard:006",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Euler özdeşliği e^(iπ) + 1 neye eşittir?",
@@ -488,8 +488,8 @@
       }
     },
     {
-      "id": "math:university:007",
-      "level": "university",
+      "id": "math:hard:007",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bir matrisin tersinin olması için gerekli ve yeterli koşul nedir?",
@@ -515,8 +515,8 @@
       }
     },
     {
-      "id": "math:university:008",
-      "level": "university",
+      "id": "math:hard:008",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Normal dağılımda verilerin yaklaşık yüzde kaçı ortalamanın ±1 standart sapma içinde kalır?",
@@ -542,8 +542,8 @@
       }
     },
     {
-      "id": "math:masters:001",
-      "level": "masters",
+      "id": "math:hard:009",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Gödel’in eksiklik teoremi neyi gösterir?",
@@ -569,8 +569,8 @@
       }
     },
     {
-      "id": "math:masters:002",
-      "level": "masters",
+      "id": "math:hard:010",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bir matrisin özdeğeri λ için hangisi doğrudur?",
@@ -596,8 +596,8 @@
       }
     },
     {
-      "id": "math:masters:003",
-      "level": "masters",
+      "id": "math:hard:011",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Hangi küme sayılamaz (sayılamayan sonsuz) bir kümedir?",
@@ -623,8 +623,8 @@
       }
     },
     {
-      "id": "math:masters:004",
-      "level": "masters",
+      "id": "math:hard:012",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Fourier dönüşümü bir sinyali neye ayrıştırır?",
@@ -650,8 +650,8 @@
       }
     },
     {
-      "id": "math:masters:005",
-      "level": "masters",
+      "id": "math:hard:013",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bayes teoremi neyi hesaplamaya yarar?",
@@ -677,8 +677,8 @@
       }
     },
     {
-      "id": "math:masters:006",
-      "level": "masters",
+      "id": "math:hard:014",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Riemann hipotezi hangi fonksiyonun sıfırlarıyla ilgilidir?",
@@ -704,8 +704,8 @@
       }
     },
     {
-      "id": "math:masters:007",
-      "level": "masters",
+      "id": "math:hard:015",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bir grafın Euler devresine sahip olması için bağlantılı olmasının yanında hangi koşul gerekir?",
@@ -731,8 +731,8 @@
       }
     },
     {
-      "id": "math:masters:008",
-      "level": "masters",
+      "id": "math:hard:016",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Merkezi limit teoremi neyi söyler?",
@@ -758,8 +758,8 @@
       }
     },
     {
-      "id": "math:university:009",
-      "level": "university",
+      "id": "math:hard:017",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "eˣ fonksiyonunun türevi nedir?",
@@ -785,8 +785,8 @@
       }
     },
     {
-      "id": "math:university:010",
-      "level": "university",
+      "id": "math:hard:018",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "sin x fonksiyonunun türevi nedir?",
@@ -812,8 +812,8 @@
       }
     },
     {
-      "id": "math:university:011",
-      "level": "university",
+      "id": "math:hard:019",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "∫₀¹ x dx integralinin değeri kaçtır?",
@@ -839,8 +839,8 @@
       }
     },
     {
-      "id": "math:university:012",
-      "level": "university",
+      "id": "math:hard:020",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Zincir kuralına göre (x² + 1)³ fonksiyonunun türevi nedir?",
@@ -866,8 +866,8 @@
       }
     },
     {
-      "id": "math:university:013",
-      "level": "university",
+      "id": "math:hard:021",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "1 + 1/2 + 1/4 + 1/8 + … sonsuz geometrik serisinin toplamı kaçtır?",
@@ -893,8 +893,8 @@
       }
     },
     {
-      "id": "math:university:014",
-      "level": "university",
+      "id": "math:hard:022",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "∑ 1/n (harmonik seri) için hangisi doğrudur?",
@@ -920,8 +920,8 @@
       }
     },
     {
-      "id": "math:university:015",
-      "level": "university",
+      "id": "math:hard:023",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bir fonksiyonun yerel maksimum noktasında birinci türev ne olur?",
@@ -947,8 +947,8 @@
       }
     },
     {
-      "id": "math:university:016",
-      "level": "university",
+      "id": "math:hard:024",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "5 kişiden 2 kişilik kaç farklı ekip seçilebilir?",
@@ -974,8 +974,8 @@
       }
     },
     {
-      "id": "math:university:017",
-      "level": "university",
+      "id": "math:hard:025",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bir olayın beklenen değeri (expected value) neyi ifade eder?",
@@ -1001,8 +1001,8 @@
       }
     },
     {
-      "id": "math:university:018",
-      "level": "university",
+      "id": "math:hard:026",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "İki vektörün iç çarpımı (dot product) sıfırsa vektörler için ne söylenebilir?",
@@ -1028,8 +1028,8 @@
       }
     },
     {
-      "id": "math:university:019",
-      "level": "university",
+      "id": "math:hard:027",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Karmaşık sayılarda i² kaça eşittir?",
@@ -1055,8 +1055,8 @@
       }
     },
     {
-      "id": "math:university:020",
-      "level": "university",
+      "id": "math:hard:028",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "L’Hôpital kuralı ne zaman kullanılır?",
@@ -1082,8 +1082,8 @@
       }
     },
     {
-      "id": "math:masters:009",
-      "level": "masters",
+      "id": "math:hard:029",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bir vektör uzayının boyutu neyi ifade eder?",
@@ -1109,8 +1109,8 @@
       }
     },
     {
-      "id": "math:masters:010",
-      "level": "masters",
+      "id": "math:hard:030",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bir grup (group) yapısında bulunması gerekmeyen özellik hangisidir?",
@@ -1136,8 +1136,8 @@
       }
     },
     {
-      "id": "math:masters:011",
-      "level": "masters",
+      "id": "math:hard:031",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Kompakt bir kümede sürekli bir fonksiyon için hangisi doğrudur (Weierstrass)?",
@@ -1163,8 +1163,8 @@
       }
     },
     {
-      "id": "math:masters:012",
-      "level": "masters",
+      "id": "math:hard:032",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bir Markov zincirinin temel özelliği nedir?",
@@ -1190,8 +1190,8 @@
       }
     },
     {
-      "id": "math:masters:013",
-      "level": "masters",
+      "id": "math:hard:033",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Tekil değer ayrışımı (SVD) hangi alanda yaygın kullanılır?",
@@ -1217,8 +1217,8 @@
       }
     },
     {
-      "id": "math:masters:014",
-      "level": "masters",
+      "id": "math:hard:034",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Lagrange çarpanları yöntemi ne için kullanılır?",
@@ -1244,8 +1244,8 @@
       }
     },
     {
-      "id": "math:masters:015",
-      "level": "masters",
+      "id": "math:hard:035",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Olasılıkta büyük sayılar yasası neyi söyler?",
@@ -1271,8 +1271,8 @@
       }
     },
     {
-      "id": "math:masters:016",
-      "level": "masters",
+      "id": "math:hard:036",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "RSA şifrelemesinin güvenliği hangi problemin zorluğuna dayanır?",
@@ -1298,8 +1298,8 @@
       }
     },
     {
-      "id": "math:masters:017",
-      "level": "masters",
+      "id": "math:hard:037",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Fermat’nın küçük teoremine göre p asal ve a, p’ye bölünmüyorsa aᵖ⁻¹ mod p kaçtır?",
@@ -1325,8 +1325,8 @@
       }
     },
     {
-      "id": "math:masters:018",
-      "level": "masters",
+      "id": "math:hard:038",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Diferansiyel denklem dy/dx = y’nin genel çözümü nedir?",
@@ -1352,8 +1352,8 @@
       }
     },
     {
-      "id": "math:masters:019",
-      "level": "masters",
+      "id": "math:hard:039",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Bir grafın kromatik sayısı neyi ifade eder?",
@@ -1379,8 +1379,8 @@
       }
     },
     {
-      "id": "math:masters:020",
-      "level": "masters",
+      "id": "math:hard:040",
+      "difficulty": "hard",
       "type": "choice",
       "q": {
         "tr": "Monte Carlo yöntemiyle π nasıl tahmin edilebilir?",
