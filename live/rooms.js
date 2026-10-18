@@ -280,6 +280,7 @@ export function createRooms({ now = Date.now, randomBytes, loadQuestions, onChan
       for (const room of rooms.values()) {
         if (now() - room.lastActivity > IDLE_MS) {
           rooms.delete(room.code);
+          onChange(room); // sunucu bu odanın açık bağlantılarını kapatır
           continue;
         }
         if (room.paused) continue;
