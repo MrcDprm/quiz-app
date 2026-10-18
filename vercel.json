@@ -6,8 +6,13 @@
     "api/*.js": {
       "includeFiles": "data/**",
       "maxDuration": 10
+    },
+    "api/cron/*.js": {
+      "includeFiles": "data/**",
+      "maxDuration": 300
     }
   },
+  "crons": [{ "path": "/api/cron/refill", "schedule": "0 3 * * *" }],
   "rewrites": [
     { "source": "/", "destination": "/api/page" },
     { "source": "/sitemap.xml", "destination": "/api/page?sitemap=1" },
