@@ -17,9 +17,9 @@ test('every topic of every area has a unique address', () => {
 });
 
 test('sitemap: home, 17 topics and every topic at 3 difficulties', () => {
-  assert.equal(SITEMAP_PATHS.length, 1 + 17 + 17 * 3);
+  assert.equal(SITEMAP_PATHS.length, 2 + 17 + 17 * 3); // ana sayfa, /oda, konular ve zorluklar
   assert.equal(new Set(SITEMAP_PATHS).size, SITEMAP_PATHS.length);
-  for (const path of SITEMAP_PATHS.slice(1)) {
+  for (const path of SITEMAP_PATHS.filter((item) => item !== '/' && item !== '/oda')) {
     const route = routeFromPath(path);
     assert.ok(route, path);
     if (route.difficulty) assert.ok(isValidSelection(route), path);
@@ -82,5 +82,20 @@ test('page function: home, unknown combination and sitemap', async () => {
   const odd = await GET(new Request('https://x/api/page?topic=%3Cscript%3E'));
   assert.equal(odd.status, 404);
   const sitemap = await (await GET(new Request('https://x/api/page?sitemap=1'))).text();
-  assert.equal((sitemap.match(/<url>/g) ?? []).length, 2 * (1 + 17 + 17 * 3));
+  assert.equal((sitemap.match(/<url>/g) ?? []).length, 2 * (2 + 17 + 17 * 3));
+});
+
+test('the play-with-friends page is indexed, a room address is not', async () => {
+  const room = renderPage(TEMPLATE, '/oda', 'tr');
+  assert.equal(room.status, 200);
+  assert.match(room.html, /Arkadaşlarınla Bilgi Yarışması/);
+  assert.ok(room.html.includes('<link rel="canonical" href="https://quiz.miracdeprem.com/oda" />'));
+  assert.doesNotMatch(room.html, /noindex/);
+  const code = renderPage(TEMPLATE, '/oda/482913', 'en');
+  assert.equal(code.status, 200);
+  assert.match(code.html, /noindex/);
+  assert.match(code.html, /Multiplayer Quiz with Friends/);
+  assert.equal((await GET(new Request('https://x/api/page?room=482913'))).status, 200);
+  assert.equal((await GET(new Request('https://x/api/page?room=1'))).status, 200);
+  assert.equal((await GET(new Request('https://x/api/page?room=%3Cx%3E'))).status, 404);
 });

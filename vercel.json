@@ -16,6 +16,8 @@
   "rewrites": [
     { "source": "/", "destination": "/api/page" },
     { "source": "/sitemap.xml", "destination": "/api/page?sitemap=1" },
+    { "source": "/oda", "destination": "/api/page?room=1" },
+    { "source": "/oda/:code(\\d{6})", "destination": "/api/page?room=:code" },
     { "source": "/:topic(matematik|fen-bilimleri|tarih|cografya|edebiyat-ve-sanat|spor|sinema-ve-muzik|genel-kultur|kodlamaya-giris|algoritmalar|html-css|python|javascript|sql|git|web-guvenligi|csharp)", "destination": "/api/page?topic=:topic" },
     { "source": "/:topic(matematik|fen-bilimleri|tarih|cografya|edebiyat-ve-sanat|spor|sinema-ve-muzik|genel-kultur|kodlamaya-giris|algoritmalar|html-css|python|javascript|sql|git|web-guvenligi|csharp)/:difficulty(kolay|orta|zor|ilkokul|ortaokul|lise|universite|yuksek-lisans)", "destination": "/api/page?topic=:topic&difficulty=:difficulty" }
   ],
@@ -25,7 +27,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://www.miracdeprem.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+          "value": "default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://www.miracdeprem.com https://quiz-ws.miracdeprem.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
         },
         { "key": "X-Content-Type-Options", "value": "nosniff" },
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
