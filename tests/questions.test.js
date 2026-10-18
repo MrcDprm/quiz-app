@@ -44,7 +44,7 @@ test('selections must match an area, a difficulty and a topic of that area', () 
 
 test('every topic is played at every difficulty', () => {
   assert.equal(topicsFor('software').length, 9);
-  assert.equal(topicsFor('general').length, 6);
+  assert.equal(topicsFor('general').length, 8);
   assert.equal(areaOf('sql'), 'software');
   assert.equal(areaOf('history'), 'general');
   assert.equal(areaOf('mixed'), null);

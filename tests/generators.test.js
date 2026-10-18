@@ -87,8 +87,8 @@ test('invalid people are skipped', (t) => {
 test('the real data builds clean questions for every topic and difficulty', async () => {
   const real = createGenerators(await readGeneratedFiles());
   const random = mulberry32(2026);
-  for (const topic of ['general', 'history', 'geography', 'literature', 'science']) {
-    for (const difficulty of ['easy', 'easy', 'medium', 'hard', 'hard']) {
+  for (const topic of ['general', 'history', 'geography', 'literature', 'science', 'sport', 'film-music']) {
+    for (const difficulty of ['easy', 'medium', 'hard']) {
       const ids = real.pick(topic, difficulty, random, 20);
       assert.ok(ids.length >= 5, `too few questions for ${topic}/${difficulty}`);
       for (const id of ids) {

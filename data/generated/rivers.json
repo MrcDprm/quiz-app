@@ -1,0 +1,961 @@
+{
+ "source": "Wikidata",
+ "license": "CC0-1.0",
+ "fetchedAt": "2026-10-18",
+ "items": [
+  {
+   "id": "Q3392",
+   "name": {
+    "tr": "Nil",
+    "en": "Nile"
+   },
+   "km": 6650,
+   "tier": 1
+  },
+  {
+   "id": "Q3783",
+   "name": {
+    "tr": "Amazon Nehri",
+    "en": "Amazon River"
+   },
+   "km": 6400,
+   "tier": 1
+  },
+  {
+   "id": "Q1653",
+   "name": {
+    "tr": "Tuna",
+    "en": "Danube"
+   },
+   "km": 2850,
+   "tier": 1
+  },
+  {
+   "id": "Q584",
+   "name": {
+    "tr": "Ren Nehri",
+    "en": "Rhine"
+   },
+   "km": 1233,
+   "tier": 1
+  },
+  {
+   "id": "Q626",
+   "name": {
+    "tr": "Volga Nehri",
+    "en": "Volga"
+   },
+   "km": 3530,
+   "tier": 1
+  },
+  {
+   "id": "Q1497",
+   "name": {
+    "tr": "Mississippi Nehri",
+    "en": "Mississippi River"
+   },
+   "km": 3766,
+   "tier": 1
+  },
+  {
+   "id": "Q5089",
+   "name": {
+    "tr": "Ganj Nehri",
+    "en": "Ganges"
+   },
+   "km": 2525,
+   "tier": 1
+  },
+  {
+   "id": "Q3503",
+   "name": {
+    "tr": "Kongo Nehri",
+    "en": "River Congo"
+   },
+   "km": 4700,
+   "tier": 2
+  },
+  {
+   "id": "Q5413",
+   "name": {
+    "tr": "Yangtze",
+    "en": "Yangtze River"
+   },
+   "km": 6300,
+   "tier": 2
+  },
+  {
+   "id": "Q7348",
+   "name": {
+    "tr": "İndus Nehri",
+    "en": "Indus River"
+   },
+   "km": 3180,
+   "tier": 2
+  },
+  {
+   "id": "Q3542",
+   "name": {
+    "tr": "Nijer Nehri",
+    "en": "Niger River"
+   },
+   "km": 4180,
+   "tier": 2
+  },
+  {
+   "id": "Q7355",
+   "name": {
+    "tr": "Sarı Irmak",
+    "en": "Yellow River"
+   },
+   "km": 5464,
+   "tier": 2
+  },
+  {
+   "id": "Q34589",
+   "name": {
+    "tr": "Fırat",
+    "en": "Euphrates"
+   },
+   "km": 2800,
+   "tier": 2
+  },
+  {
+   "id": "Q1471",
+   "name": {
+    "tr": "Sen Nehri",
+    "en": "Seine"
+   },
+   "km": 777,
+   "tier": 2
+  },
+  {
+   "id": "Q19686",
+   "name": {
+    "tr": "Thames Nehri",
+    "en": "River Thames"
+   },
+   "km": 334,
+   "tier": 2
+  },
+  {
+   "id": "Q35591",
+   "name": {
+    "tr": "Dicle Nehri",
+    "en": "Tigris"
+   },
+   "km": 1850,
+   "tier": 2
+  },
+  {
+   "id": "Q40855",
+   "name": {
+    "tr": "Dinyeper",
+    "en": "Dnieper"
+   },
+   "km": 2285,
+   "tier": 3
+  },
+  {
+   "id": "Q40059",
+   "name": {
+    "tr": "Şeria Nehri",
+    "en": "Jordan River"
+   },
+   "km": 252,
+   "tier": 3
+  },
+  {
+   "id": "Q1644",
+   "name": {
+    "tr": "Elbe Nehri",
+    "en": "Elbe"
+   },
+   "km": 1094,
+   "tier": 3
+  },
+  {
+   "id": "Q548",
+   "name": {
+    "tr": "Vistül",
+    "en": "Vistula"
+   },
+   "km": 1047,
+   "tier": 3
+  },
+  {
+   "id": "Q41179",
+   "name": {
+    "tr": "Mekong",
+    "en": "Mekong River"
+   },
+   "km": 4350,
+   "tier": 3
+  },
+  {
+   "id": "Q6862",
+   "name": {
+    "tr": "Amur Nehri",
+    "en": "Amur River"
+   },
+   "km": 2824,
+   "tier": 3
+  },
+  {
+   "id": "Q45403",
+   "name": {
+    "tr": "Brahmaputra Nehri",
+    "en": "Brahmaputra River"
+   },
+   "km": 2900,
+   "tier": 3
+  },
+  {
+   "id": "Q46841",
+   "name": {
+    "tr": "Lena Nehri",
+    "en": "Lena River"
+   },
+   "km": 4294,
+   "tier": 3
+  },
+  {
+   "id": "Q973",
+   "name": {
+    "tr": "Obi Nehri",
+    "en": "Ob"
+   },
+   "km": 3650,
+   "tier": 3
+  },
+  {
+   "id": "Q80240",
+   "name": {
+    "tr": "Ural Nehri",
+    "en": "Ural River"
+   },
+   "km": 2428,
+   "tier": 3
+  },
+  {
+   "id": "Q1229",
+   "name": {
+    "tr": "Don Nehri",
+    "en": "Don"
+   },
+   "km": 1870,
+   "tier": 3
+  },
+  {
+   "id": "Q5419",
+   "name": {
+    "tr": "Missouri Nehri",
+    "en": "Missouri River"
+   },
+   "km": 3726,
+   "tier": 3
+  },
+  {
+   "id": "Q643",
+   "name": {
+    "tr": "Po Nehri",
+    "en": "Po"
+   },
+   "km": 652,
+   "tier": 3
+  },
+  {
+   "id": "Q1469",
+   "name": {
+    "tr": "Loire Nehri",
+    "en": "Loire"
+   },
+   "km": 1006,
+   "tier": 3
+  },
+  {
+   "id": "Q552",
+   "name": {
+    "tr": "Oder",
+    "en": "Oder"
+   },
+   "km": 854,
+   "tier": 3
+  },
+  {
+   "id": "Q602",
+   "name": {
+    "tr": "Rhône Nehri",
+    "en": "Rhône"
+   },
+   "km": 812,
+   "tier": 3
+  },
+  {
+   "id": "Q131210",
+   "name": {
+    "tr": "Dinyester",
+    "en": "Dniester"
+   },
+   "km": 1352,
+   "tier": 3
+  },
+  {
+   "id": "Q13712",
+   "name": {
+    "tr": "Tiber Nehri",
+    "en": "Tiber"
+   },
+   "km": 405,
+   "tier": 3
+  },
+  {
+   "id": "Q78707",
+   "name": {
+    "tr": "Yenisey",
+    "en": "Yenisei"
+   },
+   "km": 3487,
+   "tier": 3
+  },
+  {
+   "id": "Q134750",
+   "name": {
+    "tr": "Saint Lawrence Nehri",
+    "en": "St. Lawrence River"
+   },
+   "km": 3058,
+   "tier": 3
+  },
+  {
+   "id": "Q8493",
+   "name": {
+    "tr": "Ceyhun",
+    "en": "Amu Darya"
+   },
+   "km": 2620,
+   "tier": 3
+  },
+  {
+   "id": "Q14294",
+   "name": {
+    "tr": "Tejo Nehri",
+    "en": "Tagus River"
+   },
+   "km": 1007,
+   "tier": 3
+  },
+  {
+   "id": "Q131792",
+   "name": {
+    "tr": "Orinoco",
+    "en": "Orinoco River"
+   },
+   "km": 2140,
+   "tier": 3
+  },
+  {
+   "id": "Q1265",
+   "name": {
+    "tr": "Kolorado Nehri",
+    "en": "Colorado River"
+   },
+   "km": 2334,
+   "tier": 3
+  },
+  {
+   "id": "Q132726",
+   "name": {
+    "tr": "Yamuna Nehri",
+    "en": "Yamuna"
+   },
+   "km": 1376,
+   "tier": 3
+  },
+  {
+   "id": "Q645",
+   "name": {
+    "tr": "Neva Nehri",
+    "en": "Neva"
+   },
+   "km": 74,
+   "tier": 4
+  },
+  {
+   "id": "Q128102",
+   "name": {
+    "tr": "İrtiş Nehri",
+    "en": "Irtysh"
+   },
+   "km": 4248,
+   "tier": 4
+  },
+  {
+   "id": "Q882739",
+   "name": {
+    "tr": "Mavi Nil",
+    "en": "Blue Nile"
+   },
+   "km": 1783,
+   "tier": 4
+  },
+  {
+   "id": "Q41986",
+   "name": {
+    "tr": "Maas Nehri",
+    "en": "Meuse"
+   },
+   "km": 950,
+   "tier": 4
+  },
+  {
+   "id": "Q8197",
+   "name": {
+    "tr": "Daugava Nehri",
+    "en": "Daugava"
+   },
+   "km": 1020,
+   "tier": 4
+  },
+  {
+   "id": "Q104437",
+   "name": {
+    "tr": "Yukon Nehri",
+    "en": "Yukon River"
+   },
+   "km": 3190,
+   "tier": 4
+  },
+  {
+   "id": "Q483159",
+   "name": {
+    "tr": "Seyhun",
+    "en": "Syr Darya"
+   },
+   "km": 2212,
+   "tier": 4
+  },
+  {
+   "id": "Q2251",
+   "name": {
+    "tr": "Kolumbiya Nehri",
+    "en": "Columbia River"
+   },
+   "km": 2000,
+   "tier": 4
+  },
+  {
+   "id": "Q3140",
+   "name": {
+    "tr": "Hudson Nehri",
+    "en": "Hudson River"
+   },
+   "km": 492,
+   "tier": 4
+  },
+  {
+   "id": "Q10965",
+   "name": {
+    "tr": "Ebro",
+    "en": "Ebro"
+   },
+   "km": 910,
+   "tier": 4
+  },
+  {
+   "id": "Q160636",
+   "name": {
+    "tr": "Rio Grande",
+    "en": "Rio Grande"
+   },
+   "km": 3051,
+   "tier": 4
+  },
+  {
+   "id": "Q1670",
+   "name": {
+    "tr": "Main",
+    "en": "Main"
+   },
+   "km": 524,
+   "tier": 4
+  },
+  {
+   "id": "Q173017",
+   "name": {
+    "tr": "Limpopo Nehri",
+    "en": "Limpopo River"
+   },
+   "km": 1750,
+   "tier": 4
+  },
+  {
+   "id": "Q4915",
+   "name": {
+    "tr": "Ohio Nehri",
+    "en": "Ohio River"
+   },
+   "km": 1579,
+   "tier": 4
+  },
+  {
+   "id": "Q14299",
+   "name": {
+    "tr": "Douro Nehri",
+    "en": "Douro River"
+   },
+   "km": 897,
+   "tier": 4
+  },
+  {
+   "id": "Q127892",
+   "name": {
+    "tr": "Paraná Nehri",
+    "en": "Paraná River"
+   },
+   "km": 4880,
+   "tier": 4
+  },
+  {
+   "id": "Q4814791",
+   "name": {
+    "tr": "Beyaz Nil",
+    "en": "White Nile"
+   },
+   "km": 2620,
+   "tier": 4
+  },
+  {
+   "id": "Q1667",
+   "name": {
+    "tr": "Moselle Nehri",
+    "en": "Moselle"
+   },
+   "km": 544,
+   "tier": 4
+  },
+  {
+   "id": "Q35827",
+   "name": {
+    "tr": "Río de la Plata",
+    "en": "Río de la Plata"
+   },
+   "km": 290,
+   "tier": 4
+  },
+  {
+   "id": "Q134350",
+   "name": {
+    "tr": "Tisza Nehri",
+    "en": "Tisza"
+   },
+   "km": 966,
+   "tier": 4
+  },
+  {
+   "id": "Q181475",
+   "name": {
+    "tr": "Turuncu Nehir",
+    "en": "Orange River"
+   },
+   "km": 2200,
+   "tier": 4
+  },
+  {
+   "id": "Q183078",
+   "name": {
+    "tr": "Murray Nehri",
+    "en": "Murray River"
+   },
+   "km": 2508,
+   "tier": 4
+  },
+  {
+   "id": "Q131574",
+   "name": {
+    "tr": "Vltava",
+    "en": "Vltava"
+   },
+   "km": 430,
+   "tier": 4
+  },
+  {
+   "id": "Q191314",
+   "name": {
+    "tr": "Godavari Nehri",
+    "en": "Godavari River"
+   },
+   "km": 1465,
+   "tier": 4
+  },
+  {
+   "id": "Q26076",
+   "name": {
+    "tr": "İravadi Nehri",
+    "en": "Irrawaddy River"
+   },
+   "km": 2170,
+   "tier": 4
+  },
+  {
+   "id": "Q175117",
+   "name": {
+    "tr": "Moskova Nehri",
+    "en": "Moskva River"
+   },
+   "km": 473,
+   "tier": 4
+  },
+  {
+   "id": "Q3569",
+   "name": {
+    "tr": "Sénégal Nehri",
+    "en": "Senegal River"
+   },
+   "km": 1050,
+   "tier": 4
+  },
+  {
+   "id": "Q18278",
+   "name": {
+    "tr": "Uruguay Nehri",
+    "en": "Uruguay River"
+   },
+   "km": 1790,
+   "tier": 4
+  },
+  {
+   "id": "Q162737",
+   "name": {
+    "tr": "Angara Nehri",
+    "en": "Angara"
+   },
+   "km": 1779,
+   "tier": 4
+  },
+  {
+   "id": "Q5077",
+   "name": {
+    "tr": "Garonne Nehri",
+    "en": "Garonne"
+   },
+   "km": 647,
+   "tier": 4
+  },
+  {
+   "id": "Q14383",
+   "name": {
+    "tr": "Sava",
+    "en": "Sava"
+   },
+   "km": 945,
+   "tier": 4
+  },
+  {
+   "id": "Q79082",
+   "name": {
+    "tr": "Kama Nehri",
+    "en": "Kama"
+   },
+   "km": 1805,
+   "tier": 4
+  },
+  {
+   "id": "Q160819",
+   "name": {
+    "tr": "Gambiya Nehri",
+    "en": "Gambia River"
+   },
+   "km": 1130,
+   "tier": 4
+  },
+  {
+   "id": "Q118771",
+   "name": {
+    "tr": "Rio Negro",
+    "en": "Rio Negro"
+   },
+   "km": 2250,
+   "tier": 4
+  },
+  {
+   "id": "Q172089",
+   "name": {
+    "tr": "Oka Nehri",
+    "en": "Oka"
+   },
+   "km": 1500,
+   "tier": 4
+  },
+  {
+   "id": "Q179396",
+   "name": {
+    "tr": "Paraguay Nehri",
+    "en": "Paraguay River"
+   },
+   "km": 2621,
+   "tier": 4
+  },
+  {
+   "id": "Q193499",
+   "name": {
+    "tr": "Krişna Nehri",
+    "en": "Krishna River"
+   },
+   "km": 1400,
+   "tier": 4
+  },
+  {
+   "id": "Q3411",
+   "name": {
+    "tr": "Mackenzie Nehri",
+    "en": "Mackenzie River"
+   },
+   "km": 1738,
+   "tier": 4
+  },
+  {
+   "id": "Q8168",
+   "name": {
+    "tr": "Peçora Nehri",
+    "en": "Pechora"
+   },
+   "km": 1809,
+   "tier": 4
+  },
+  {
+   "id": "Q118251",
+   "name": {
+    "tr": "Madeira Nehri",
+    "en": "Madeira River"
+   },
+   "km": 1450,
+   "tier": 4
+  },
+  {
+   "id": "Q156557",
+   "name": {
+    "tr": "Kura Nehri",
+    "en": "Kura River"
+   },
+   "km": 1360,
+   "tier": 4
+  },
+  {
+   "id": "Q179751",
+   "name": {
+    "tr": "Aras Nehri",
+    "en": "Aras River"
+   },
+   "km": 1072,
+   "tier": 4
+  },
+  {
+   "id": "Q5622",
+   "name": {
+    "tr": "Neman Nehri",
+    "en": "Neman"
+   },
+   "km": 937,
+   "tier": 4
+  },
+  {
+   "id": "Q14309",
+   "name": {
+    "tr": "Vadilkebir",
+    "en": "Guadalquivir"
+   },
+   "km": 657,
+   "tier": 4
+  },
+  {
+   "id": "Q14369",
+   "name": {
+    "tr": "İnn Nehri",
+    "en": "Inn"
+   },
+   "km": 517,
+   "tier": 4
+  },
+  {
+   "id": "Q78879",
+   "name": {
+    "tr": "Kolıma",
+    "en": "Kolyma"
+   },
+   "km": 2129,
+   "tier": 4
+  },
+  {
+   "id": "Q37620",
+   "name": {
+    "tr": "Schelde Nehri",
+    "en": "Scheldt"
+   },
+   "km": 355,
+   "tier": 4
+  },
+  {
+   "id": "Q188773",
+   "name": {
+    "tr": "Okavango Nehri",
+    "en": "Okavango River"
+   },
+   "km": 1600,
+   "tier": 4
+  },
+  {
+   "id": "Q191829",
+   "name": {
+    "tr": "Magdalena Nehri",
+    "en": "Magdalena River"
+   },
+   "km": 1528,
+   "tier": 4
+  },
+  {
+   "id": "Q1673",
+   "name": {
+    "tr": "Neckar Nehri",
+    "en": "Neckar"
+   },
+   "km": 362,
+   "tier": 4
+  },
+  {
+   "id": "Q13696",
+   "name": {
+    "tr": "Adige Nehri",
+    "en": "Adige"
+   },
+   "km": 410,
+   "tier": 4
+  },
+  {
+   "id": "Q166966",
+   "name": {
+    "tr": "Şattülarap",
+    "en": "Shatt al-Arab"
+   },
+   "km": 200,
+   "tier": 4
+  },
+  {
+   "id": "Q192415",
+   "name": {
+    "tr": "Volta Nehri",
+    "en": "Volta River"
+   },
+   "km": 1500,
+   "tier": 4
+  },
+  {
+   "id": "Q8187",
+   "name": {
+    "tr": "Kuzey Dvina Nehri",
+    "en": "Northern Dvina"
+   },
+   "km": 744,
+   "tier": 4
+  },
+  {
+   "id": "Q171649",
+   "name": {
+    "tr": "Ubangi Nehri",
+    "en": "Ubangi River"
+   },
+   "km": 1060,
+   "tier": 4
+  },
+  {
+   "id": "Q118850",
+   "name": {
+    "tr": "Chao Phraya",
+    "en": "Chao Phraya River"
+   },
+   "km": 372,
+   "tier": 4
+  },
+  {
+   "id": "Q171009",
+   "name": {
+    "tr": "Drava",
+    "en": "Drava"
+   },
+   "km": 720,
+   "tier": 4
+  },
+  {
+   "id": "Q179444",
+   "name": {
+    "tr": "Potomac Irmağı",
+    "en": "Potomac River"
+   },
+   "km": 665,
+   "tier": 4
+  },
+  {
+   "id": "Q216875",
+   "name": {
+    "tr": "Çenab Nehri",
+    "en": "Chenab River"
+   },
+   "km": 1974,
+   "tier": 4
+  },
+  {
+   "id": "Q1675",
+   "name": {
+    "tr": "Aare",
+    "en": "Aare"
+   },
+   "km": 295,
+   "tier": 4
+  },
+  {
+   "id": "Q1684",
+   "name": {
+    "tr": "Spree",
+    "en": "Spree"
+   },
+   "km": 382,
+   "tier": 4
+  },
+  {
+   "id": "Q26422",
+   "name": {
+    "tr": "Saluen",
+    "en": "Salween River"
+   },
+   "km": 2815,
+   "tier": 4
+  },
+  {
+   "id": "Q93360",
+   "name": {
+    "tr": "Bío-Bío Nehri",
+    "en": "Bío Bío River"
+   },
+   "km": 380,
+   "tier": 4
+  },
+  {
+   "id": "Q142148",
+   "name": {
+    "tr": "São Francisco Nehri",
+    "en": "São Francisco River"
+   },
+   "km": 2814,
+   "tier": 4
+  },
+  {
+   "id": "Q201463",
+   "name": {
+    "tr": "İnci Irmağı",
+    "en": "Pearl River"
+   },
+   "km": 2400,
+   "tier": 4
+  }
+ ]
+}

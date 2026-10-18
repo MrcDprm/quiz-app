@@ -89,6 +89,11 @@ const PEOPLE_GROUPS = {
   royalty: ['Q116', 'Q12097', 'Q39018'],
 };
 const PEOPLE_PER_GROUP = 70;
+// Wikidata'da bozuk girilmiş etiketler (2026-10 itibarıyla "X. LouisVI" gibi)
+const LABEL_FIXES = {
+  Q7732: { tr: 'XVI. Louis' },
+  Q7738: { tr: 'XV. Louis' },
+};
 const MIN_SITELINKS = 60;
 
 async function fetchPeople() {
@@ -119,7 +124,7 @@ async function fetchPeople() {
   const people = [];
   for (const row of rows) {
     const id = qid(row.item);
-    const name = { tr: cleanLabel(row.tr), en: cleanLabel(row.en) };
+    const name = { tr: cleanLabel(row.tr), en: cleanLabel(row.en), ...LABEL_FIXES[id] };
     const born = yearOf(row.born);
     if (!name.tr || !name.en || born === null || born > 2015) continue;
     const groups = [...new Set(row.jobs.value.split(' ').map((uri) => groupOf.get(uri.split('/').pop())))];
@@ -129,7 +134,34 @@ async function fetchPeople() {
   await save('people', people);
 }
 
-const DATASETS = { people: fetchPeople };
+// --- Nehirler --------------------------------------------------------------
+
+// Tanınırlık katmanı Wikipedia dil sayısından: 1 = herkes bilir, 4 = coğrafya meraklısı.
+const riverTier = (links) => (links >= 180 ? 1 : links >= 130 ? 2 : links >= 100 ? 3 : 4);
+
+async function fetchRivers() {
+  // Gruplamadan ve etiketleri isteğe bağlı alan basit sorgu: gruplayan sürümü Wikidata zaman aşımına düşürüyor.
+  // Bir nehrin birden fazla uzunluk kaydı olabilir; en büyüğü alınır.
+  const rows = await sparql(`
+    SELECT ?item ?en ?tr ?km ?links WHERE {
+      ?item wdt:P31 wd:Q4022; wdt:P2043 ?km; wikibase:sitelinks ?links.
+      FILTER(?links >= 75)
+      OPTIONAL { ?item rdfs:label ?en. FILTER(lang(?en) = 'en') }
+      OPTIONAL { ?item rdfs:label ?tr. FILTER(lang(?tr) = 'tr') }
+    } ORDER BY DESC(?links) LIMIT 300`);
+  const byId = new Map();
+  for (const row of rows) {
+    const id = qid(row.item);
+    const name = { tr: cleanLabel(row.tr), en: cleanLabel(row.en) };
+    const km = Math.round(Number(row.km.value));
+    // 20 km'den kısa kayıtlar çoğunlukla hatalı birimdir (metre girilmiş); atlanır
+    if (!name.tr || !name.en || !(km >= 20 && km <= 7500)) continue;
+    if (km > (byId.get(id)?.km ?? 0)) byId.set(id, { id, name, km, tier: riverTier(Number(row.links.value)) });
+  }
+  await save('rivers', [...byId.values()]);
+}
+
+const DATASETS = { people: fetchPeople, rivers: fetchRivers };
 
 const names = process.argv.slice(2);
 for (const name of names.length ? names : Object.keys(DATASETS)) {
