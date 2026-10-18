@@ -19,9 +19,10 @@ Cevaplar, sen cevaplamadan önce tarayıcıya hiç gelmez. Bu yüzden geliştiri
 - **Kategoriler ve üç zorluk:** Bir kategori kartı seçilir, ardından Kolay, Orta ya da Zor.
   - **Genel:** Tarih, Coğrafya, Fen Bilimleri, Matematik, Edebiyat ve Sanat, Spor, Sinema ve Müzik, Genel Kültür ya da hepsi karışık.
   - **Yazılım:** Kodlamaya Giriş, Algoritmalar, HTML ve CSS, Python, JavaScript, SQL, Git, Web Güvenliği ve C# ya da hepsi karışık.
-- **İki kaynaktan sorular:**
+- **Üç kaynaktan sorular:**
   - **Elle yazılmış 796 soruluk banka:** Türkçe ve İngilizce, her birinde kısa bir açıklama var. "Bu kod ne yazdırır?" sorularının hepsi, kod gerçekten Python, Node.js ya da .NET ile çalıştırılarak doğrulandı.
   - **Gerçek veriden üretilen sorular:** Şablonlar kişilerden ve nehirlerden (Wikidata), 129 ülkeden, dağlardan, ünlü eserlerden, kimyasal elementlerden, Dünya Kupaları ve Olimpiyatlardan, tarihî olaylardan ve buluşlardan yeni sorular kurar. Matematik soruları her seferinde yeni sayılarla gelir. Yanlış şıklar her zaman aynı türden seçilir; iki şıkkın birden doğru olabileceği soru hiç kurulmaz.
+  - **Her gece büyüyen yapay zekâ soru havuzu:** Bir Vercel cron görevi Gemini'den Türkçe ve İngilizce yeni sorular ister. Her soru önce biçim denetiminden geçer (dört farklı şık, "hepsi/hiçbiri" yok, cevap soruda geçmiyor, Türkçe karakterler doğru); sonra ikinci bir model (Groq) soruyu cevabı görmeden çözer, doğru, tek anlamlı ve iyi çevrilmiş olup olmadığına karar verir. Sadece her denetimden geçen soru havuza girer. Bir tura en fazla 3 tanesi girer; etiketlidir ve "Bildir" düğmesi hatalı soruyu kaldırır.
 - **Dört soru tipi:**
   - Çoktan seçmeli.
   - Bayrak sorusu.
@@ -75,9 +76,10 @@ Yarışmanın tamamı sunucuda (Vercel Functions) çalışıyor.
 ## Kullanılan Teknolojiler
 
 - HTML, CSS, JavaScript (ES modülleri, framework yok, derleme adımı yok)
-- API için Vercel Functions (Node.js); Upstash Redis (REST API'si üzerinden, SDK'sız)
+- API ve gece görevi için Vercel Functions (Node.js); Upstash Redis (REST API'si üzerinden, SDK'sız)
+- Yapay zekâ sorularını Gemini yazar, Groq denetler (ikisi de `fetch` ile, SDK'sız)
 - AES-256-GCM jetonları ve güvenli rastgele sayılar için `node:crypto`
-- `node --test`: 175 birim testi
+- `node --test`: 189 birim testi
 - **Hiç npm bağımlılığı yok**
 
 ## Kurulum ve Çalıştırma
@@ -93,7 +95,7 @@ Yarışmanın tamamı sunucuda (Vercel Functions) çalışıyor.
    ```bash
    node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"
    ```
-   Redis yerine bellek içi depo kullanmak için `QUIZ_DEV=1` satırını bırak.
+   Redis yerine bellek içi depo kullanmak için `QUIZ_DEV=1` satırını bırak. Yapay zekâ havuzu isteğe bağlıdır: `GEMINI_API_KEY` ve `GROQ_API_KEY` yoksa yarışma banka ve şablonlarla çalışır.
 3. Yerel sunucuyu başlat:
    ```bash
    npm run dev
@@ -105,6 +107,11 @@ Testleri çalıştırmak için:
 npm test
 ```
 
+Yapay zekâ havuzunu bir kategori ve zorluk için denemek için (iki anahtar gerekir; hiçbir şey kaydedilmez):
+```bash
+node scripts/ai-preview.mjs history medium
+```
+
 ### Proje yapısı
 
 ```
@@ -112,7 +119,8 @@ public/                 Yayınlanan tek klasör: sayfa, stiller, tarayıcı mod�
   src/main.js           Ekranlar, süre, cevaplar, sonuç
   src/progress.js       İstatistik, Hatalarım listesi, görülen sorular, rozetler
   src/storage.js        localStorage'daki ayarlar; her okumada doğrulanır
-api/                    Vercel Functions: round, daily, review, answer, joker ve her adresi kendi başlığıyla sunan page
+api/                    Vercel Functions: round, daily, review, answer, joker, report ve her adresi kendi başlığıyla sunan page
+  cron/refill.js        Yapay zekâ havuzunu dolduran gece görevi
 lib/
   quiz.js               Tur kuralları: süre, puan, jokerler
   token.js              AES-256-GCM tur jetonları
@@ -120,8 +128,9 @@ lib/
   http.js               Doğrulama, kaynak kontrolü, rate limit, genel hata mesajları
   catalog.js            Bankayı yükler, banka ve üretilmiş soruları karıştırır, görülenleri atlar
   generators.js         Şablon motoru; templates/ içinde kişi, ülke, eser, element, matematik, spor, nehir, dağ, olay ve buluş şablonları
+  ai/                   Yapay zekâ havuzu: talimatlar, model çağrıları, biçim denetimi, Redis'teki havuz, gece doldurma
 data/                   Soru bankası, üreteç verileri, bayraklar ve sayfa şablonu app.html (yayınlanmaz)
-scripts/                Yerel sunucu ve Wikidata veri betiği
+scripts/                Yerel sunucu, Wikidata veri betiği ve yapay zekâ havuzu önizlemesi
 tests/                  Birim testleri
 ```
 
@@ -133,7 +142,8 @@ tests/                  Birim testleri
 - **Veriden soru üretmek.** SPARQL ile Wikidata'dan tanınmış kişileri çeken bir betik yazdım. Üretilen soruların adil olmasını da öğrendim: yanlış şıklar aynı türden seçiliyor, iki şıkkın birden doğru olabileceği sorular hiç sorulmuyor.
 - **Yazdığımı test etmek.** Her kod sorusu bankaya girmeden önce gerçekten çalıştırıldı; bu, kendi yaptığım birkaç hatayı yakaladı. Tarayıcı modüllerinin içe aktarmalarını denetleyen bir test de boş commit'lediğim bir dosyayı yakaladı.
 - **Pointer Events.** Sürükle-bırakta tek bir olay kümesi fareyi, dokunmatik ekranı ve kalemi birlikte yönetiyor. Klavye ve ekran okuyucu kullananlar için ↑/↓ düğmeleri de kaldı.
-- **Bağımlılıksız geliştirmek.** Tek dış hizmet Redis; onu da REST API'si üzerinden `fetch` ile çağırıyorum. Kurulacak paket yok, güncellenmesi gereken açıklı bir paket de yok.
+- **Modele de güvenmemek.** İlk yapay zekâ soruları Türkçe karakter kullanılmadan yazılmıştı; biri de Charlemagne'ı Kutsal Roma İmparatorluğu'nun kurucusu diye anıyordu, oysa bu tarihçiler arasında tartışmalı. Denetleyen model ikisini de onaylamıştı. Türkçe harfler için bir kod denetimi ekledim, denetleyiciye her ifadenin doğru olup olmadığını sordurdum ve şüphede kalırsa reddetmesini istedim. Artık en zor soruların yaklaşık yarısını geri çeviriyor. Denetleyen model hiçbir zaman soruyu yazanla aynı değil.
+- **Bağımlılıksız geliştirmek.** Redis, Gemini ve Groq'un hepsini REST API'leri üzerinden `fetch` ile çağırıyorum. Kurulacak paket yok, güncellenmesi gereken açıklı bir paket de yok.
 
 ## Kaynaklar
 
@@ -143,7 +153,7 @@ tests/                  Birim testleri
 ## Gelecek Planları
 
 - Hesap sistemi: seri ve istatistiklerin cihazlar arasında taşınması ve günün sorusu için liderlik tablosu.
-- Yazdığın herhangi bir konuda yapay zekâyla üretilen turlar.
+- Yazdığın herhangi bir konuda, aynı denetimden geçen yapay zekâ turları.
 - Yazılım dışında yeni uzmanlık alanları.
 - Paylaşım için doğrulanabilir sonuç linkleri.
 
