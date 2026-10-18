@@ -17,11 +17,11 @@ Answers never reach the browser before you answer, so the quiz cannot be cheated
 ## Features
 
 - **Categories and three difficulties:** pick a category card, then Easy, Medium or Hard.
-  - **General:** History, Geography, Science, Maths, Literature and Art, General Knowledge, or all of them mixed.
+  - **General:** History, Geography, Science, Maths, Literature and Art, Sport, Film and Music, General Knowledge, or all of them mixed.
   - **Software:** Coding Basics, Algorithms, HTML and CSS, Python, JavaScript, SQL, Git, Web Security and C#, or all of them mixed.
 - **Questions from two sources:**
   - **A hand-written bank of 796 questions** in Turkish and English, each with a short explanation. Every "what does this code print?" question was checked by actually running the code with Python, Node.js or .NET.
-  - **Generated questions from real data.** Templates build new questions from people (Wikidata), 129 countries, famous works and chemical elements. Maths questions get fresh numbers every time.
+  - **Generated questions from real data.** Templates build new questions from people and rivers (Wikidata), 129 countries, mountains, famous works, chemical elements, World Cups and Olympic Games, historical events and discoveries. Maths questions get fresh numbers every time. Wrong options are always of the same kind, and a question is never built when two options could both be right.
 - **Four question types:**
   - Multiple choice.
   - Flag questions.
@@ -77,7 +77,7 @@ The whole quiz runs on the server (Vercel Functions).
 - HTML, CSS, JavaScript (ES modules, no framework, no build step)
 - Vercel Functions (Node.js) for the API, Upstash Redis (through its REST API, no SDK)
 - `node:crypto` for AES-256-GCM tokens and secure random numbers
-- `node --test`: 162 unit tests
+- `node --test`: 175 unit tests
 - **No npm dependencies** at all
 
 ## Installation
@@ -119,7 +119,7 @@ lib/
   store.js              Single-use tokens and rate limiting (Upstash REST or memory)
   http.js               Validation, origin check, rate limit, generic errors
   catalog.js            Loads the bank, mixes bank and generated questions, skips seen ones
-  generators.js         Template engine; templates/ has people, countries, works, elements, maths
+  generators.js         Template engine; templates/ has people, countries, works, elements, maths, sport, rivers, mountains, events, discoveries
 data/                   Question bank, data for the generators, flags and the page template app.html (never served)
 scripts/                Local server and the Wikidata fetch script
 tests/                  Unit tests
@@ -137,7 +137,7 @@ tests/                  Unit tests
 
 ## Credits
 
-- Data about people: [Wikidata](https://www.wikidata.org) (CC0).
+- Data about people and rivers: [Wikidata](https://www.wikidata.org) (CC0). Countries, mountains, works, elements, sport, events and discoveries are curated by hand.
 - Flags: [flag-icons](https://github.com/lipis/flag-icons) by Panayiotis Lipiridis (MIT); the licence is in `data/flags/LICENSE`.
 
 ## Future Plans
