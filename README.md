@@ -45,6 +45,10 @@ Answers never reach the browser before you answer, so the quiz cannot be cheated
   - Keys 1–4 to answer and Enter to continue.
   - Screen-reader announcements.
   - Respects "reduce motion".
+- **Play with friends:** create a room, share the 6-digit code or link, and everyone answers the same question at the same time on their own phone.
+  - The host chooses everything when creating the room: number of questions, time per question or no limit, manual or automatic advance, whether phones show the question (or only coloured answer buttons, for a classroom), whether phones show the right answer, a ranking after every question, a speed bonus, whether the host plays too and whether people can join late.
+  - During the game the host can pause, skip a question, reveal early, end the game and remove a player.
+  - Answers never reach the phones before the reveal, and points are calculated on the server.
 - **Feedback:** a small button opens a form (name optional, email or phone, message) that sends straight to me through my portfolio site.
 
 ## How cheating is prevented
@@ -77,9 +81,10 @@ The whole quiz runs on the server (Vercel Functions).
 
 - HTML, CSS, JavaScript (ES modules, no framework, no build step)
 - Vercel Functions (Node.js) for the API and a nightly cron job, Upstash Redis (through its REST API, no SDK)
+- Play with friends: a small Node.js server using only the built-in `http` module, Server-Sent Events to the phones and plain POST requests back; it runs on Oracle Cloud behind Caddy as a systemd service
 - Gemini writes and Groq checks the AI questions (both called with `fetch`, no SDK)
 - `node:crypto` for AES-256-GCM tokens and secure random numbers
-- `node --test`: 189 unit tests
+- `node --test`: 213 unit tests
 - **No npm dependencies** at all
 
 ## Installation
@@ -112,6 +117,11 @@ Try the AI pool for one category and difficulty (needs the two keys; nothing is 
 node scripts/ai-preview.mjs history medium
 ```
 
+To try playing with friends locally, start the room server next to `npm run dev` (keep `LIVE_ORIGINS=http://localhost:5173` in `.env`):
+```bash
+npm run live
+```
+
 ### Project structure
 
 ```
@@ -130,6 +140,7 @@ lib/
   generators.js         Template engine; templates/ has people, countries, works, elements, maths, sport, rivers, mountains, events, discoveries
   ai/                   AI pool: prompts, model calls, format checks, the pool in Redis, the nightly refill
 data/                   Question bank, data for the generators, flags and the page template app.html (never served)
+live/                   Room server for playing with friends: rooms.js (game rules), server.js (HTTP and events), questions.js
 scripts/                Local server, the Wikidata fetch script and the AI pool preview
 tests/                  Unit tests
 ```
@@ -142,6 +153,8 @@ tests/                  Unit tests
 - **Generating questions from data.** I wrote a script that pulls famous people from Wikidata with SPARQL. I also learned how to make generated questions fair: wrong options are picked from the same kind of thing, and a question is skipped if two options could both be right.
 - **Testing what I write.** Every code question is run for real before it goes into the bank; this caught several of my own mistakes. A test that checks browser module imports caught a file I had committed empty.
 - **Pointer Events.** One set of pointer events handles mouse, touch and pen for drag and drop. The ↑/↓ buttons stay for keyboard and screen-reader users.
+- **Real-time without WebSockets.** The phones only need to hear from the server, so Server-Sent Events were enough: the browser reconnects by itself and Node's built-in `http` module serves them, so the project still has no dependencies. Answers go back as ordinary POST requests. Vercel functions cannot keep connections open, so this server runs on an always-on Oracle Cloud machine behind Caddy.
+- **Testing with a fake clock.** The room logic takes the time as an argument, so tests can jump 60 seconds ahead and check that a paused question does not run out, or that the speed bonus stays fair after a pause. Playing a whole game with three browser windows found two bugs the unit tests could not: a reload signed the player out, and a tap right after typing a name was lost.
 - **Not trusting a model either.** The first AI questions were written in Turkish without Turkish letters, and one called Charlemagne the founder of the Holy Roman Empire, which historians dispute. The checking model had approved both. So I added a code check for Turkish letters, asked the checker whether every statement is accurate and told it to reject when in doubt. Now it turns down about half of the hardest questions. The checker is always a different model from the writer.
 - **Building without dependencies.** Redis, Gemini and Groq are all called through their REST APIs with `fetch`. There is nothing to install and no vulnerable package to update.
 

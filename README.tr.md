@@ -45,6 +45,10 @@ Cevaplar, sen cevaplamadan önce tarayıcıya hiç gelmez. Bu yüzden geliştiri
   - Cevap için 1-4 tuşları, devam için Enter.
   - Ekran okuyucu duyuruları.
   - "Hareketi azalt" ayarına uyar.
+- **Arkadaşlarınla oyna:** Bir oda kurulur, 6 haneli kod ya da link paylaşılır; herkes aynı soruyu aynı anda kendi telefonunda cevaplar.
+  - Oda kuran her şeyi kurarken seçer: soru sayısı, soru başına süre ya da süresiz, elle ya da kendiliğinden geçiş, sorunun telefonlarda görünüp görünmeyeceği (ya da sınıf için sadece renkli cevap düğmeleri), doğru cevabın telefonlarda gösterilmesi, her sorudan sonra sıralama, hız bonusu, kendisinin de oynayıp oynamayacağı ve geç katılım.
+  - Oyun sırasında moderatör duraklatabilir, soruyu atlayabilir, sonucu erken gösterebilir, oyunu bitirebilir ve oyuncu çıkarabilir.
+  - Cevaplar sonuç gösterilene kadar telefonlara hiç gitmez; puanı sunucu hesaplar.
 - **Geri bildirim:** Küçük bir düğme; ad (isteğe bağlı), e-posta ya da telefon ve mesaj içeren formu açar. Mesaj portfolyo sitem üzerinden doğrudan bana ulaşır.
 
 ## Hile nasıl önleniyor
@@ -77,9 +81,10 @@ Yarışmanın tamamı sunucuda (Vercel Functions) çalışıyor.
 
 - HTML, CSS, JavaScript (ES modülleri, framework yok, derleme adımı yok)
 - API ve gece görevi için Vercel Functions (Node.js); Upstash Redis (REST API'si üzerinden, SDK'sız)
+- Arkadaşlarınla oyna: sadece Node'un yerleşik `http` modülünü kullanan küçük bir sunucu; telefonlara Server-Sent Events, telefonlardan normal POST istekleri. Oracle Cloud'da Caddy'nin arkasında systemd servisi olarak çalışır
 - Yapay zekâ sorularını Gemini yazar, Groq denetler (ikisi de `fetch` ile, SDK'sız)
 - AES-256-GCM jetonları ve güvenli rastgele sayılar için `node:crypto`
-- `node --test`: 189 birim testi
+- `node --test`: 213 birim testi
 - **Hiç npm bağımlılığı yok**
 
 ## Kurulum ve Çalıştırma
@@ -112,6 +117,11 @@ Yapay zekâ havuzunu bir kategori ve zorluk için denemek için (iki anahtar ger
 node scripts/ai-preview.mjs history medium
 ```
 
+Arkadaşlarınla oynamayı yerelde denemek için `npm run dev`'in yanında oda sunucusunu başlat (`.env` içinde `LIVE_ORIGINS=http://localhost:5173` kalsın):
+```bash
+npm run live
+```
+
 ### Proje yapısı
 
 ```
@@ -130,6 +140,7 @@ lib/
   generators.js         Şablon motoru; templates/ içinde kişi, ülke, eser, element, matematik, spor, nehir, dağ, olay ve buluş şablonları
   ai/                   Yapay zekâ havuzu: talimatlar, model çağrıları, biçim denetimi, Redis'teki havuz, gece doldurma
 data/                   Soru bankası, üreteç verileri, bayraklar ve sayfa şablonu app.html (yayınlanmaz)
+live/                   Arkadaşlarınla oyna sunucusu: rooms.js (oyun kuralları), server.js (HTTP ve olay akışı), questions.js
 scripts/                Yerel sunucu, Wikidata veri betiği ve yapay zekâ havuzu önizlemesi
 tests/                  Birim testleri
 ```
@@ -142,6 +153,8 @@ tests/                  Birim testleri
 - **Veriden soru üretmek.** SPARQL ile Wikidata'dan tanınmış kişileri çeken bir betik yazdım. Üretilen soruların adil olmasını da öğrendim: yanlış şıklar aynı türden seçiliyor, iki şıkkın birden doğru olabileceği sorular hiç sorulmuyor.
 - **Yazdığımı test etmek.** Her kod sorusu bankaya girmeden önce gerçekten çalıştırıldı; bu, kendi yaptığım birkaç hatayı yakaladı. Tarayıcı modüllerinin içe aktarmalarını denetleyen bir test de boş commit'lediğim bir dosyayı yakaladı.
 - **Pointer Events.** Sürükle-bırakta tek bir olay kümesi fareyi, dokunmatik ekranı ve kalemi birlikte yönetiyor. Klavye ve ekran okuyucu kullananlar için ↑/↓ düğmeleri de kaldı.
+- **WebSocket olmadan gerçek zamanlı.** Telefonların sadece sunucuyu dinlemesi gerekiyordu; bu yüzden Server-Sent Events yetti: tarayıcı kopan bağlantıyı kendisi yeniden kuruyor, Node'un yerleşik `http` modülü bunu sunabiliyor ve proje hâlâ bağımlılıksız. Cevaplar normal POST istekleriyle gidiyor. Vercel fonksiyonları bağlantıyı açık tutamadığı için bu sunucu Oracle Cloud'daki her zaman açık bir makinede, Caddy'nin arkasında çalışıyor.
+- **Sahte saatle test.** Oda mantığı saati parametre olarak alıyor; testler zamanı 60 saniye ileri sarıp duraklatılan sorunun süresinin dolmadığını, duraklatmadan sonra hız puanının adil kaldığını kontrol edebiliyor. Üç tarayıcı penceresiyle baştan sona oyun oynamak birim testlerin bulamadığı iki hatayı yakaladı: sayfa yenilenince oyuncu odadan düşüyordu, ad yazıp hemen bir seçeneğe dokununca dokunuş kayboluyordu.
 - **Modele de güvenmemek.** İlk yapay zekâ soruları Türkçe karakter kullanılmadan yazılmıştı; biri de Charlemagne'ı Kutsal Roma İmparatorluğu'nun kurucusu diye anıyordu, oysa bu tarihçiler arasında tartışmalı. Denetleyen model ikisini de onaylamıştı. Türkçe harfler için bir kod denetimi ekledim, denetleyiciye her ifadenin doğru olup olmadığını sordurdum ve şüphede kalırsa reddetmesini istedim. Artık en zor soruların yaklaşık yarısını geri çeviriyor. Denetleyen model hiçbir zaman soruyu yazanla aynı değil.
 - **Bağımlılıksız geliştirmek.** Redis, Gemini ve Groq'un hepsini REST API'leri üzerinden `fetch` ile çağırıyorum. Kurulacak paket yok, güncellenmesi gereken açıklı bir paket de yok.
 
