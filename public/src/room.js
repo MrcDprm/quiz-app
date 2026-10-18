@@ -11,7 +11,7 @@ const SESSION_KEY = 'room-session';
 const PREFS_KEY = 'room-prefs';
 const CODE = /^\d{6}$/;
 const TIMEOUT_MS = 10_000;
-const KNOWN_ERRORS = ['not_found', 'started', 'ended', 'full', 'name_taken', 'bad_name', 'rate_limited', 'busy', 'no_questions', 'no_players'];
+const KNOWN_ERRORS = ['not_found', 'started', 'ended', 'full', 'name_taken', 'bad_name', 'rate_limited', 'busy', 'no_questions', 'no_players', 'closed', 'already_answered', 'bad_state'];
 
 // Oda kurma seçenekleri (sunucudaki live/rooms.js SETTINGS ile aynı değerler)
 const CHOICES = {
@@ -296,6 +296,7 @@ export function initRooms({ t, getLang, getSelection, showScreen, goHome }) {
   }
 
   function close(message) {
+    stopTimer();
     clearTimeout(retryTimer);
     source?.close();
     source = null;
@@ -307,6 +308,7 @@ export function initRooms({ t, getLang, getSelection, showScreen, goHome }) {
   }
 
   function leave() {
+    stopTimer();
     clearTimeout(retryTimer);
     source?.close();
     source = null;
@@ -387,13 +389,235 @@ export function initRooms({ t, getLang, getSelection, showScreen, goHome }) {
     el.view.replaceChildren(...parts);
   }
 
-  // Diğer aşamalar (soru, sonuç, sıralama, final) bir sonraki parçada bu tabloya eklenir.
-  const RENDERERS = { lobby: renderLobby };
+  // ---------- Soru ve süre ----------
+
+  // Her şıkkın rengi ve şekli: renk görmeyen de şekilden ayırt eder
+  const SHAPES = ['▲', '◆', '●', '■'];
+  let clockOffset = 0; // sunucu saati − bu cihazın saati
+  let timerId = null;
+  let sending = false; // cevap gönderiliyor
+
+  const isHost = () => state.role === 'host';
+  const plays = () => Boolean(state.you);
+
+  function stopTimer() {
+    clearInterval(timerId);
+    timerId = null;
+  }
+
+  /** Süre çubuğu: kalan süre sunucunun saatine göre hesaplanır (cihaz saati yanlış olsa da doğru). */
+  function timerBar() {
+    const { question, paused } = state;
+    const wrap = node('div', 'room-timer');
+    if (question.deadline === null && question.remainingMs === null) {
+      wrap.append(node('span', 'room-timer-text', t('roomNoLimit')));
+      return wrap;
+    }
+    const total = state.settings.seconds * 1000;
+    const bar = node('div', 'timer');
+    bar.append(node('span', 'timer-fill'));
+    const text = node('span', 'room-timer-text');
+    wrap.append(bar, text);
+    const update = () => {
+      const left = paused || !question.deadline
+        ? question.remainingMs ?? 0
+        : Math.max(0, question.deadline - (Date.now() + clockOffset));
+      bar.style.setProperty('--left', String(Math.min(1, left / total)));
+      bar.classList.toggle('low', left <= 5000);
+      text.textContent = paused ? t('roomPaused') : t('roomSecondsLeft', { seconds: Math.ceil(left / 1000) });
+    };
+    update();
+    if (!paused) timerId = setInterval(update, 200);
+    return wrap;
+  }
+
+  function questionBody() {
+    const { question } = state;
+    const parts = [];
+    if (question.prompt) parts.push(node('h2', 'prompt room-prompt', question.prompt));
+    if (question.image) {
+      const image = node('img', 'question-image');
+      image.src = question.image;
+      image.alt = t('flagAlt');
+      parts.push(image);
+    }
+    if (question.code) parts.push(node('pre', 'code', question.code));
+    if (!question.prompt && plays()) parts.push(node('p', 'room-lead', t('roomLookAtScreen')));
+    return parts;
+  }
+
+  async function sendAnswer(choice) {
+    if (!session || sending || state.phase !== 'question' || state.paused || state.you?.answered) return;
+    sending = true;
+    state.you = { ...state.you, answered: true, choice }; // hemen işaretlenir; sunucu durumu birazdan gelir
+    render();
+    const { error } = await livePost(`/rooms/${session.code}/answer`, { token: session.token, choice });
+    sending = false;
+    if (error) el.connection.textContent = t(`room_error_${error}`);
+  }
+
+  /** Şıklar: soru aşamasında düğme, sonuçta doğru/yanlış ve kaç kişinin seçtiği. */
+  function options() {
+    const { question, phase, you } = state;
+    const grid = node('div', question.options ? 'room-options' : 'room-options shapes-only');
+    const answerable = phase === 'question' && plays() && !you.answered && !state.paused;
+    for (let i = 0; i < question.optionCount; i++) {
+      const option = node('button', `room-option opt-${i}`);
+      option.type = 'button';
+      option.append(node('span', 'room-shape', SHAPES[i]));
+      if (question.options) option.append(node('span', 'room-option-text', question.options[i]));
+      option.setAttribute('aria-label', `${i + 1}. ${question.options?.[i] ?? SHAPES[i]}`);
+      if (phase === 'reveal') {
+        if (question.answer === i) option.classList.add('correct');
+        else if (you?.choice === i) option.classList.add('wrong');
+        option.append(node('span', 'room-count', String(question.counts?.[i] ?? 0)));
+      }
+      if (you?.choice === i) option.classList.add('chosen');
+      option.disabled = !answerable;
+      if (answerable) option.addEventListener('click', () => sendAnswer(i));
+      grid.append(option);
+    }
+    return grid;
+  }
+
+  function hostTools() {
+    const tools = node('div', 'room-tools');
+    if (['question', 'reveal', 'leaderboard'].includes(state.phase)) {
+      tools.append(button('btn btn-ghost', state.paused ? t('roomResume') : t('roomPause'), () => command(state.paused ? 'resume' : 'pause')));
+    }
+    if (state.phase === 'question') tools.append(button('btn btn-ghost', t('roomSkip'), () => command('skip')));
+    tools.append(
+      button('btn btn-ghost room-end', t('roomEnd'), () => {
+        if (window.confirm(t('roomEndConfirm'))) command('end');
+      }),
+    );
+    return tools;
+  }
+
+  function progress() {
+    const bar = node('div', 'round-bar');
+    bar.append(node('span', 'round-count', t('questionOf', { index: state.question.index + 1, total: state.question.total })));
+    if (plays()) bar.append(node('span', 'round-score', t('roomPoints', { score: state.you.score })));
+    return bar;
+  }
+
+  function renderQuestion() {
+    const parts = [progress(), timerBar(), ...questionBody(), options()];
+    if (state.paused) parts.push(node('p', 'room-paused', t('roomPaused')));
+    else if (plays() && state.you.answered) parts.push(node('p', 'room-status', t('roomSentAnswer')));
+    if (isHost()) {
+      parts.push(node('p', 'room-status', t('roomAnswered', { count: state.answeredCount, total: state.players.length })));
+      if (!state.paused) parts.push(button('btn btn-secondary btn-wide', t('roomRevealNow'), () => command('reveal')));
+      parts.push(hostTools());
+    }
+    el.view.replaceChildren(...parts);
+  }
+
+  function nextLabel() {
+    const last = state.question ? state.question.index + 1 >= state.question.total : false;
+    if (state.phase === 'reveal' && state.settings.leaderboardEach && !last) return t('roomShowRanking');
+    return last ? t('roomShowResults') : t('roomNextQuestion');
+  }
+
+  function waitingLine() {
+    if (state.paused) return node('p', 'room-paused', t('roomPaused'));
+    return node('p', 'room-status', t(state.settings.advance === 'auto' ? 'roomAutoNext' : 'roomWaitHost'));
+  }
+
+  function renderReveal() {
+    const { question, you } = state;
+    const parts = [progress(), ...questionBody(), options()];
+    if (question.skipped) parts.push(node('p', 'room-status', t('roomSkipped')));
+    else if (you?.last) {
+      const { correct, answered, points } = you.last;
+      const verdict = correct ? t('roomCorrect', { points }) : answered ? t('roomWrong') : t('roomNoAnswer');
+      parts.push(node('p', correct ? 'room-verdict good' : 'room-verdict bad', verdict));
+      parts.push(node('p', 'room-status', t('roomYourRank', { rank: you.rank, score: you.score })));
+    }
+    if (question.explain) parts.push(node('p', 'explain room-explain', question.explain));
+    if (isHost()) {
+      if (state.settings.advance === 'manual' && !state.paused) parts.push(button('btn btn-primary btn-wide', nextLabel(), () => command('next')));
+      else parts.push(waitingLine());
+      parts.push(hostTools());
+    } else {
+      parts.push(waitingLine());
+    }
+    el.view.replaceChildren(...parts);
+  }
+
+  /** Sıralama listesi: ilk 10; oyuncu ilk 10'da değilse kendi satırı en altta. */
+  function rankingList(limit = 10) {
+    const list = node('ol', 'room-ranking');
+    const ranking = state.ranking ?? [];
+    const rows = ranking.slice(0, limit);
+    const mine = state.you && ranking.find((row) => row.id === state.you.id);
+    if (mine && mine.rank > limit) rows.push(mine);
+    for (const row of rows) {
+      const item = node('li', row.id === state.you?.id ? 'room-rank you' : 'room-rank');
+      item.append(node('span', 'room-rank-place', row.rank <= 3 ? ['🥇', '🥈', '🥉'][row.rank - 1] : `${row.rank}.`));
+      item.append(node('span', 'room-rank-name', row.name));
+      item.append(node('span', 'room-rank-score', String(row.score)));
+      list.append(item);
+    }
+    return list;
+  }
+
+  function renderLeaderboard() {
+    const parts = [header(), node('h2', 'room-subtitle', t('roomRanking')), rankingList()];
+    if (isHost()) {
+      if (state.settings.advance === 'manual' && !state.paused) parts.push(button('btn btn-primary btn-wide', t('roomNextQuestion'), () => command('next')));
+      else parts.push(waitingLine());
+      parts.push(hostTools());
+    } else {
+      parts.push(waitingLine());
+    }
+    el.view.replaceChildren(...parts);
+  }
+
+  function renderFinal() {
+    const parts = [header(), node('h2', 'room-final-title', t('roomFinal'))];
+    if (state.you) parts.push(node('p', 'room-lead', t('roomYourRank', { rank: state.you.rank, score: state.you.score })));
+    parts.push(rankingList(30));
+    const actions = node('div', 'room-final-actions');
+    if (isHost()) actions.append(button('btn btn-primary', t('roomNewRoom'), () => { leaveQuietly(); openEntry('create'); }));
+    actions.append(button('btn btn-secondary', t('backHome'), leave));
+    parts.push(actions);
+    el.view.replaceChildren(...parts);
+  }
+
+  /** Oturumu bitirir ama ana sayfaya gitmez (aynı ekrandan yeni oda kurulur). */
+  function leaveQuietly() {
+    stopTimer();
+    clearTimeout(retryTimer);
+    source?.close();
+    source = null;
+    session = null;
+    state = null;
+    writeStored(SESSION_KEY, null);
+  }
+
+  const RENDERERS = {
+    lobby: renderLobby,
+    question: renderQuestion,
+    reveal: renderReveal,
+    leaderboard: renderLeaderboard,
+    final: renderFinal,
+  };
 
   function render() {
     if (!state) return;
+    stopTimer();
+    clockOffset = state.serverNow - Date.now();
     (RENDERERS[state.phase] ?? renderLobby)();
   }
+
+  // Klavye: 1-4 şık seçer (masaüstünde)
+  document.addEventListener('keydown', (event) => {
+    if (!state || state.phase !== 'question' || event.ctrlKey || event.metaKey || event.altKey) return;
+    if (event.target instanceof Element && event.target.closest('input, textarea, select')) return;
+    const number = Number(event.key);
+    if (number >= 1 && number <= state.question.optionCount) sendAnswer(number - 1);
+  });
 
   // ---------- Olaylar ----------
 
@@ -415,13 +639,17 @@ export function initRooms({ t, getLang, getSelection, showScreen, goHome }) {
     savePrefs();
     renderChoices();
   });
+  // Sadece anahtar, "ben de oynuyorum" ve kategori değişikliği işlenir. Ad alanı odağı kaybedince de
+  // "change" gelir; o an düğmeler yeniden çizilirse kullanıcının tam o sırada yaptığı dokunuş kaybolur.
   el.create.addEventListener('change', (event) => {
     const toggle = event.target.closest('[data-toggle]');
     if (toggle) prefs[toggle.dataset.toggle] = toggle.checked;
-    if (event.target === el.hostPlays) prefs.hostPlays = el.hostPlays.checked;
-    if (event.target === el.topic) [selection.area, selection.topic] = el.topic.value.split(':');
+    else if (event.target === el.hostPlays) {
+      prefs.hostPlays = el.hostPlays.checked;
+      el.hostNameField.hidden = !prefs.hostPlays;
+    } else if (event.target === el.topic) [selection.area, selection.topic] = el.topic.value.split(':');
+    else return;
     savePrefs();
-    renderChoices();
   });
   el.create.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -453,6 +681,7 @@ export function initRooms({ t, getLang, getSelection, showScreen, goHome }) {
     },
     /** Odadan sayfa içinde ayrılınca bağlantı kapanır ama oturum saklı kalır; /oda/kod ile geri dönülebilir. */
     suspend() {
+      stopTimer();
       clearTimeout(retryTimer);
       source?.close();
       source = null;
