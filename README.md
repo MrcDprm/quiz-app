@@ -2,11 +2,11 @@
 
 **English** | [Türkçe](README.tr.md)
 
-A quiz platform for testing yourself now and then:
-- Questions by category, in easy, medium and hard.
-- A software track.
+A free online quiz to test yourself, or to play with friends on your phones:
+- Questions by category, in easy, medium and hard, plus a software track.
+- Play with friends: create a room, share the code, and everyone answers the same question at the same time.
 - A daily question that is the same for everyone.
-- Thousands of questions generated from real data.
+- Thousands of questions generated from real data, and a pool of AI-written questions checked by a second model.
 
 Answers never reach the browser before you answer, so the quiz cannot be cheated by opening the developer tools.
 
@@ -71,11 +71,21 @@ The whole quiz runs on the server (Vercel Functions).
 
 ## Screenshots
 
-| Home: daily question, streak, badges | Ordering question (Turkish, light theme) | Flag question on a phone |
-|---|---|---|
-| ![Home screen with daily question, progress and badges](docs/screenshot-home.png) | ![Chronological ordering question](docs/screenshot-order.png) | ![Flag question on a phone](docs/screenshot-flag-mobile.png) |
+| Home: categories, difficulty, daily question | A chronological ordering question (light theme) |
+|---|---|
+| ![Home screen with category cards, difficulty and the daily question](docs/screenshot-home.png) | ![Ordering question](docs/screenshot-order.png) |
 
-![Result screen with score, grid and review](docs/screenshot-result.png)
+| An AI question with its label and the Report link | Flag question on a phone |
+|---|---|
+| ![AI-written question after answering, with the label and the report link](docs/screenshot-ai.png) | ![Flag question on a phone](docs/screenshot-flag-mobile.png) |
+
+**Play with friends** (phones):
+
+| The host's lobby | A player's question | The host's result screen |
+|---|---|---|
+| ![Room lobby with the code, share button and players](docs/screenshot-room-lobby.png) | ![A player's question with coloured, shaped options](docs/screenshot-room-question.png) | ![Result with the right answer, answer counts and host tools](docs/screenshot-room-reveal.png) |
+
+<p align="center"><img src="docs/screenshot-result.png" width="480" alt="Result screen with score, grid and review"></p>
 
 ## Tech Stack
 

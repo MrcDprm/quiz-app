@@ -14,6 +14,14 @@ The aim is that someone searching for what this project does finds it. The text 
 | günün sorusu | question of the day |
 | yazılım soruları | programming quiz |
 | test çöz |  |
+| arkadaşlarla bilgi yarışması | multiplayer quiz with friends |
+| çok oyunculu bilgi yarışması | multiplayer trivia game |
+| oda kodu ile bilgi yarışması | quiz with a room code |
+| sınıf için bilgi yarışması | classroom quiz game |
+| kolay orta zor genel kültür soruları | easy medium hard trivia questions |
+| tarih soruları, spor soruları, sinema soruları | history quiz, sports quiz, film quiz |
+
+The multiplayer phrases point to https://quiz.miracdeprem.com/oda (its own title, description and canonical; room addresses with a code are `noindex`).
 
 ## Where they are used
 
