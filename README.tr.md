@@ -2,11 +2,11 @@
 
 [English](README.md) | **Türkçe**
 
-Bilgini ara ara test edebileceğin bir yarışma platformu:
-- Kategoriye göre kolay, orta ve zor sorular.
-- Yazılım alanı.
+Bilgini test edebileceğin ya da arkadaşlarınla telefonlarınızda birlikte oynayabileceğin ücretsiz bir online bilgi yarışması:
+- Kategoriye göre kolay, orta ve zor sorular, ayrıca yazılım alanı.
+- Arkadaşlarınla oyna: bir oda kur, kodu paylaş; herkes aynı soruyu aynı anda cevaplasın.
 - Herkese aynı gelen günün sorusu.
-- Gerçek veriden üretilen binlerce soru.
+- Gerçek veriden üretilen binlerce soru ve ikinci bir modelle denetlenen yapay zekâ soruları.
 
 Cevaplar, sen cevaplamadan önce tarayıcıya hiç gelmez. Bu yüzden geliştirici araçlarını açarak hile yapılamaz.
 
@@ -71,11 +71,21 @@ Yarışmanın tamamı sunucuda (Vercel Functions) çalışıyor.
 
 ## Ekran Görüntüleri
 
-| Ana sayfa: günün sorusu, seri, rozetler | Sıralama sorusu (Türkçe, açık tema) | Telefonda bayrak sorusu |
-|---|---|---|
-| ![Günün sorusu, ilerleme ve rozetlerle ana sayfa](docs/screenshot-home.png) | ![Kronolojik sıralama sorusu](docs/screenshot-order.png) | ![Telefonda bayrak sorusu](docs/screenshot-flag-mobile.png) |
+| Ana sayfa: kategoriler, zorluk, günün sorusu | Kronolojik sıralama sorusu (açık tema) |
+|---|---|
+| ![Kategori kartları, zorluk ve günün sorusuyla ana sayfa](docs/screenshot-home.png) | ![Sıralama sorusu](docs/screenshot-order.png) |
 
-![Puan, sonuç ızgarası ve soru özetiyle sonuç ekranı](docs/screenshot-result.png)
+| Etiketli yapay zekâ sorusu ve Bildir bağlantısı | Telefonda bayrak sorusu |
+|---|---|
+| ![Cevaplandıktan sonra yapay zekâ sorusu, etiket ve bildirme bağlantısı](docs/screenshot-ai.png) | ![Telefonda bayrak sorusu](docs/screenshot-flag-mobile.png) |
+
+**Arkadaşlarınla oyna** (telefonda):
+
+| Moderatörün lobisi | Oyuncunun sorusu | Moderatörün sonuç ekranı |
+|---|---|---|
+| ![Oda kodu, paylaş düğmesi ve oyuncularla lobi](docs/screenshot-room-lobby.png) | ![Renkli ve şekilli şıklarla oyuncunun sorusu](docs/screenshot-room-question.png) | ![Doğru cevap, şık sayıları ve moderatör araçlarıyla sonuç](docs/screenshot-room-reveal.png) |
+
+<p align="center"><img src="docs/screenshot-result.png" width="480" alt="Puan, sonuç ızgarası ve soru özetiyle sonuç ekranı"></p>
 
 ## Kullanılan Teknolojiler
 
