@@ -173,13 +173,6 @@ tests/                  Birim testleri
 - Kişi ve nehir verileri: [Wikidata](https://www.wikidata.org) (CC0). Ülke, dağ, eser, element, spor, olay ve buluş verileri elle derlendi.
 - Bayraklar: Panayiotis Lipiridis'in [flag-icons](https://github.com/lipis/flag-icons) paketi (MIT). Lisans metni `data/flags/LICENSE` dosyasında.
 
-## Gelecek Planları
-
-- Hesap sistemi: seri ve istatistiklerin cihazlar arasında taşınması ve günün sorusu için liderlik tablosu.
-- Yazdığın herhangi bir konuda, aynı denetimden geçen yapay zekâ turları.
-- Yazılım dışında yeni uzmanlık alanları.
-- Paylaşım için doğrulanabilir sonuç linkleri.
-
 ## Lisans
 
 [MIT](LICENSE)

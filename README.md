@@ -173,13 +173,6 @@ tests/                  Unit tests
 - Data about people and rivers: [Wikidata](https://www.wikidata.org) (CC0). Countries, mountains, works, elements, sport, events and discoveries are curated by hand.
 - Flags: [flag-icons](https://github.com/lipis/flag-icons) by Panayiotis Lipiridis (MIT); the licence is in `data/flags/LICENSE`.
 
-## Future Plans
-
-- Accounts, so streaks and statistics follow you across devices and the daily question can have a leaderboard.
-- AI-generated rounds on any topic you type in, built from the same checked pool process.
-- More specialist areas besides software.
-- Verifiable result links for sharing.
-
 ## License
 
 [MIT](LICENSE)
