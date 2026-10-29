@@ -1148,7 +1148,7 @@ textarea.fb-input {
   gap: 0.5rem;
   margin-top: 0.3rem;
 }
-.fb-actions .btn:disabled {
+.fb-actions .btn[aria-disabled='true'] {
   opacity: 0.6;
   cursor: wait;
 }
