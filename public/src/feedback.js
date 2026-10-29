@@ -27,6 +27,7 @@ export function initFeedback(t) {
   const status = $('fb-status');
   const submit = $('fb-submit');
   let openedAt = 0;
+  let sending = false;
 
   $('fb-open').addEventListener('click', () => {
     openedAt = Date.now();
@@ -37,6 +38,8 @@ export function initFeedback(t) {
 
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
+    // Gönderim sürerken Enter ile ikinci kez gönderilmesin
+    if (sending) return;
     const data = {
       name: $('fb-name').value.trim(),
       contact: $('fb-contact').value.trim(),
@@ -51,7 +54,9 @@ export function initFeedback(t) {
       return;
     }
 
-    submit.disabled = true;
+    // disabled yerine aria-disabled: Enter ile gönderen kişinin odağı butonda kalır
+    sending = true;
+    submit.setAttribute('aria-disabled', 'true');
     status.textContent = t('feedbackSending');
     try {
       const response = await fetch(FEEDBACK_URL, {
@@ -70,7 +75,8 @@ export function initFeedback(t) {
     } catch {
       status.textContent = t('feedbackFailed');
     } finally {
-      submit.disabled = false;
+      sending = false;
+      submit.removeAttribute('aria-disabled');
     }
   });
 }
