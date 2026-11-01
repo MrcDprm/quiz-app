@@ -40,13 +40,13 @@ Cevaplar, sen cevaplamadan önce tarayıcıya hiç gelmez. Bu yüzden geliştiri
   - Başarı istatistikleri ve kategori-zorluk başına en iyi puan; kategori kartlarında görünür.
   - 11 rozet.
   - Yanlış yaptığın soruları doğru cevaplayana kadar tekrar soran **"Hatalarım"** turu.
-- **Türkçe ve İngilizce**, [portfolyo sitemle](https://www.miracdeprem.com) uyumlu koyu ve açık tema.
+- **Türkçe ve İngilizce**, TV yarışma stüdyosundan gelen sade bir görünüm: tek renk sahne bandı, ampullerden oluşan süre sayacı; renk yalnızca doğru ve yanlış cevapta kullanılıyor.
 - **Erişilebilir:**
   - Cevap için 1-4 tuşları, devam için Enter.
   - Ekran okuyucu duyuruları.
   - "Hareketi azalt" ayarına uyar.
 - **Arkadaşlarınla oyna:** Bir oda kurulur, 6 haneli kod ya da link paylaşılır; herkes aynı soruyu aynı anda kendi telefonunda cevaplar.
-  - Oda kuran her şeyi kurarken seçer: soru sayısı, soru başına süre ya da süresiz, elle ya da kendiliğinden geçiş, sorunun telefonlarda görünüp görünmeyeceği (ya da sınıf için sadece renkli cevap düğmeleri), doğru cevabın telefonlarda gösterilmesi, her sorudan sonra sıralama, hız bonusu, kendisinin de oynayıp oynamayacağı ve geç katılım.
+  - Oda kuran her şeyi kurarken seçer: soru sayısı, soru başına süre ya da süresiz, elle ya da kendiliğinden geçiş, sorunun telefonlarda görünüp görünmeyeceği (ya da sınıf için sadece şekilli cevap düğmeleri), doğru cevabın telefonlarda gösterilmesi, her sorudan sonra sıralama, hız bonusu, kendisinin de oynayıp oynamayacağı ve geç katılım.
   - Oyun sırasında moderatör duraklatabilir, soruyu atlayabilir, sonucu erken gösterebilir, oyunu bitirebilir ve oyuncu çıkarabilir.
   - Cevaplar sonuç gösterilene kadar telefonlara hiç gitmez; puanı sunucu hesaplar.
 - **Geri bildirim:** Küçük bir düğme; ad (isteğe bağlı), e-posta ya da telefon ve mesaj içeren formu açar. Mesaj portfolyo sitem üzerinden doğrudan bana ulaşır.
@@ -71,7 +71,7 @@ Yarışmanın tamamı sunucuda (Vercel Functions) çalışıyor.
 
 ## Ekran Görüntüleri
 
-| Ana sayfa: kategoriler, zorluk, günün sorusu | Kronolojik sıralama sorusu (açık tema) |
+| Ana sayfa: kategoriler, zorluk, günün sorusu | Kronolojik sıralama sorusu |
 |---|---|
 | ![Kategori kartları, zorluk ve günün sorusuyla ana sayfa](docs/screenshot-home.png) | ![Sıralama sorusu](docs/screenshot-order.png) |
 
@@ -83,7 +83,7 @@ Yarışmanın tamamı sunucuda (Vercel Functions) çalışıyor.
 
 | Moderatörün lobisi | Oyuncunun sorusu | Moderatörün sonuç ekranı |
 |---|---|---|
-| ![Oda kodu, paylaş düğmesi ve oyuncularla lobi](docs/screenshot-room-lobby.png) | ![Renkli ve şekilli şıklarla oyuncunun sorusu](docs/screenshot-room-question.png) | ![Doğru cevap, şık sayıları ve moderatör araçlarıyla sonuç](docs/screenshot-room-reveal.png) |
+| ![Oda kodu, paylaş düğmesi ve oyuncularla lobi](docs/screenshot-room-lobby.png) | ![Şekilli şıklarla oyuncunun sorusu](docs/screenshot-room-question.png) | ![Doğru cevap, şık sayıları ve moderatör araçlarıyla sonuç](docs/screenshot-room-reveal.png) |
 
 <p align="center"><img src="docs/screenshot-result.png" width="480" alt="Puan, sonuç ızgarası ve soru özetiyle sonuç ekranı"></p>
 
@@ -94,7 +94,7 @@ Yarışmanın tamamı sunucuda (Vercel Functions) çalışıyor.
 - Arkadaşlarınla oyna: sadece Node'un yerleşik `http` modülünü kullanan küçük bir sunucu; telefonlara Server-Sent Events, telefonlardan normal POST istekleri. Oracle Cloud'da Caddy'nin arkasında systemd servisi olarak çalışır
 - Yapay zekâ sorularını Gemini yazar, Groq denetler (ikisi de `fetch` ile, SDK'sız)
 - AES-256-GCM jetonları ve güvenli rastgele sayılar için `node:crypto`
-- `node --test`: 213 birim testi
+- `node --test`: 215 birim testi
 - **Hiç npm bağımlılığı yok**
 
 ## Kurulum ve Çalıştırma
