@@ -20,7 +20,6 @@ test('defaults are used when nothing is saved', () => {
   const settings = loadSettings(fakeStorage(), 'en');
   assert.deepEqual(settings, {
     lang: 'en',
-    theme: 'dark',
     area: 'general',
     difficulty: 'easy',
     topic: 'history',
@@ -116,7 +115,7 @@ test('only known fields are written back', () => {
   const settings = { ...loadSettings(storage), extra: 'secret', daily: { date: '2026-09-30', correct: true } };
   assert.equal(saveSettings(settings, storage), true);
   const written = JSON.parse(storage.raw());
-  assert.deepEqual(Object.keys(written).sort(), ['area', 'daily', 'difficulty', 'lang', 'mistakes', 'seen', 'stats', 'streak', 'theme', 'topic', 'version']);
+  assert.deepEqual(Object.keys(written).sort(), ['area', 'daily', 'difficulty', 'lang', 'mistakes', 'seen', 'stats', 'streak', 'topic', 'version']);
   assert.deepEqual(loadSettings(storage).daily, { date: '2026-09-30', correct: true });
 });
 
