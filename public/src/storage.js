@@ -5,7 +5,6 @@ import { isDayKey } from './dates.js';
 import { EMPTY_STATS, MAX_MISTAKES, MAX_SEEN } from './progress.js';
 
 export const STORAGE_KEY = 'quiz-settings';
-export const THEMES = ['dark', 'light'];
 // 2: okul seviyeleri yerine zorluk (kategori + zorluk sürümü)
 export const VERSION = 2;
 
@@ -125,7 +124,6 @@ export function loadSettings(storage = browserStorage(), fallbackLang = 'tr') {
   const topics = topicsOf(area);
   return {
     lang: oneOf(saved.lang, LANGS, fallbackLang),
-    theme: oneOf(saved.theme, THEMES, 'dark'),
     area,
     difficulty: oneOf(saved.difficulty, DIFFICULTIES, DIFFICULTIES[0]),
     topic: oneOf(saved.topic, topics, topics[0]),
@@ -139,11 +137,11 @@ export function loadSettings(storage = browserStorage(), fallbackLang = 'tr') {
 
 /** Sadece bilinen alanlar yazılır. Kaydedilemezse (depolama dolu/kapalı) uygulama yine çalışır. */
 export function saveSettings(settings, storage = browserStorage()) {
-  const { lang, theme, area, topic, difficulty, streak, daily, stats, mistakes, seen } = settings;
+  const { lang, area, topic, difficulty, streak, daily, stats, mistakes, seen } = settings;
   try {
     storage.setItem(
       STORAGE_KEY,
-      JSON.stringify({ version: VERSION, lang, theme, area, topic, difficulty, streak, daily, stats, mistakes, seen }),
+      JSON.stringify({ version: VERSION, lang, area, topic, difficulty, streak, daily, stats, mistakes, seen }),
     );
     return true;
   } catch {

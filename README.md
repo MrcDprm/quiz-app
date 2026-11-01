@@ -40,13 +40,13 @@ Answers never reach the browser before you answer, so the quiz cannot be cheated
   - Accuracy statistics and the best score per category and difficulty, shown on the category cards.
   - 11 badges.
   - A **"My mistakes"** round that repeats the questions you got wrong until you get them right.
-- **Turkish and English**, and a dark and a light theme matching [my portfolio](https://www.miracdeprem.com).
+- **Turkish and English**, with a plain look taken from a TV quiz studio: a single-colour stage band and a timer made of bulbs; colour appears only on right and wrong answers.
 - **Accessible:**
   - Keys 1–4 to answer and Enter to continue.
   - Screen-reader announcements.
   - Respects "reduce motion".
 - **Play with friends:** create a room, share the 6-digit code or link, and everyone answers the same question at the same time on their own phone.
-  - The host chooses everything when creating the room: number of questions, time per question or no limit, manual or automatic advance, whether phones show the question (or only coloured answer buttons, for a classroom), whether phones show the right answer, a ranking after every question, a speed bonus, whether the host plays too and whether people can join late.
+  - The host chooses everything when creating the room: number of questions, time per question or no limit, manual or automatic advance, whether phones show the question (or only answer buttons with shapes, for a classroom), whether phones show the right answer, a ranking after every question, a speed bonus, whether the host plays too and whether people can join late.
   - During the game the host can pause, skip a question, reveal early, end the game and remove a player.
   - Answers never reach the phones before the reveal, and points are calculated on the server.
 - **Feedback:** a small button opens a form (name optional, email or phone, message) that sends straight to me through my portfolio site.
@@ -71,7 +71,7 @@ The whole quiz runs on the server (Vercel Functions).
 
 ## Screenshots
 
-| Home: categories, difficulty, daily question | A chronological ordering question (light theme) |
+| Home: categories, difficulty, daily question | A chronological ordering question |
 |---|---|
 | ![Home screen with category cards, difficulty and the daily question](docs/screenshot-home.png) | ![Ordering question](docs/screenshot-order.png) |
 
@@ -83,7 +83,7 @@ The whole quiz runs on the server (Vercel Functions).
 
 | The host's lobby | A player's question | The host's result screen |
 |---|---|---|
-| ![Room lobby with the code, share button and players](docs/screenshot-room-lobby.png) | ![A player's question with coloured, shaped options](docs/screenshot-room-question.png) | ![Result with the right answer, answer counts and host tools](docs/screenshot-room-reveal.png) |
+| ![Room lobby with the code, share button and players](docs/screenshot-room-lobby.png) | ![A player's question with shaped options](docs/screenshot-room-question.png) | ![Result with the right answer, answer counts and host tools](docs/screenshot-room-reveal.png) |
 
 <p align="center"><img src="docs/screenshot-result.png" width="480" alt="Result screen with score, grid and review"></p>
 
@@ -94,7 +94,7 @@ The whole quiz runs on the server (Vercel Functions).
 - Play with friends: a small Node.js server using only the built-in `http` module, Server-Sent Events to the phones and plain POST requests back; it runs on Oracle Cloud behind Caddy as a systemd service
 - Gemini writes and Groq checks the AI questions (both called with `fetch`, no SDK)
 - `node:crypto` for AES-256-GCM tokens and secure random numbers
-- `node --test`: 213 unit tests
+- `node --test`: 215 unit tests
 - **No npm dependencies** at all
 
 ## Installation

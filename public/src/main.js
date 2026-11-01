@@ -6,7 +6,6 @@ import { dailyShareText, formatDay, roundShareText, shareLinks } from './share.j
 import { BADGES, earnedBadges, recordRound, rememberSeen, selectionKey, updateMistakes } from './progress.js';
 import { loadSettings, saveSettings, topicsOf } from './storage.js';
 import { translate } from './i18n.js';
-import { applyTheme, nextTheme } from './theme.js';
 import { post } from './api-client.js';
 import { enableDrag } from './order-drag.js';
 import { pageMeta, pathFor, routeFromPath } from './routes.js';
@@ -94,7 +93,6 @@ const el = {
   shareCopy: $('share-copy'),
   shareClose: $('share-close'),
   changeTopic: $('change-topic'),
-  themeToggle: $('theme-toggle'),
   langButtons: document.querySelectorAll('[data-lang]'),
 };
 
@@ -746,12 +744,6 @@ function renderQuestionLabels() {
   if (round.question.type === 'order' && !round.answered) renderOrder();
 }
 
-el.themeToggle.addEventListener('click', () => {
-  settings.theme = nextTheme(settings.theme);
-  saveSettings(settings);
-  applyTheme(settings.theme);
-});
-
 // ---------- Birlikte oynama ----------
 
 // Odadan ana sayfaya dönüş: adres oyuncunun son seçimine döner
@@ -796,7 +788,7 @@ window.addEventListener('popstate', () => {
   }
 });
 
-applyTheme(settings.theme);
+document.getElementById('footer-year').textContent = new Date().getFullYear();
 renderLanguage();
 initFeedback(t);
 const startRoom = roomFromPath(window.location.pathname);
